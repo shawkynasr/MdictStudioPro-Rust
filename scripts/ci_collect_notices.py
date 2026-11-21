@@ -8,6 +8,7 @@ import shutil
 import subprocess
 import zipfile
 from ci_collect_preview import ROOT, TARGETS
+from ci_upstream_notices import UpstreamNotices, repository, save_recovered
 
 
 def notice_paths(directory):
@@ -43,7 +44,7 @@ def collect_package(output, directory, identity, metadata):
             'license_text_missing': not bool(texts), 'license_declaration_missing': not bool(metadata.get('license') or metadata.get('license_file'))}
 
 
-def collect(root, cargo_metadata, output, target):
+def collect(root, cargo_metadata, output, target, resolver=None):
     if target not in TARGETS:
         raise ValueError('Unknown target')
     output.mkdir(exist_ok=False)
@@ -52,6 +53,7 @@ def collect(root, cargo_metadata, output, target):
     shutil.copytree(root / 'LICENSES', output / 'LICENSES')
     packages = []
     first_party = []
+    contexts = {}
     for p in cargo_metadata['packages']:
         directory = Path(p['manifest_path']).parent.resolve()
         try:
@@ -62,7 +64,9 @@ def collect(root, cargo_metadata, output, target):
         if owned:
             first_party.append({'name':p['name'], 'version':p['version']})
             continue
-        packages.append(collect_package(output, directory, 'rust:' + p['id'], {
+        identity = 'rust:' + p['id']
+        contexts[identity] = (directory, None)
+        packages.append(collect_package(output, directory, identity, {
             'ecosystem':'cargo', 'name':p['name'], 'version':p['version'],
             'license':p.get('license'), 'license_file':p.get('license_file'), 'authors':p.get('authors',[]),
             'repository':p.get('repository'), 'source':p.get('source'),
@@ -80,10 +84,33 @@ def collect(root, cargo_metadata, output, target):
             absent.append({'path':name, 'version':entry['version'], 'scope':'optional, not installed on runner'})
             continue
         package = json.loads((directory / 'package.json').read_text(encoding='utf-8'))
-        packages.append(collect_package(output, directory, 'npm:' + name + '@' + entry['version'], {
+        if package.get('version') != entry['version']:
+            raise ValueError(f'Installed npm version differs from lock: {name}')
+        identity = 'npm:' + name + '@' + entry['version']
+        contexts[identity] = (directory, entry)
+        packages.append(collect_package(output, directory, identity, {
             'ecosystem':'npm', 'name':package['name'], 'version':package['version'],
             'license':package.get('license'), 'repository':package.get('repository'),
             'scope':'build/development dependency' if entry.get('dev') else 'application dependency'}))
+    # Native npm distribution packages use their same-version wrapper's
+    # upstream license set. Require the same repository and declaration too.
+    by_name = {p['name']:p for p in packages if p['ecosystem'] == 'npm'}
+    for package in packages:
+        if not package['license_text_missing']: continue
+        if package['ecosystem'] == 'npm':
+            wrapper = next((parent for prefix, parent in [('@esbuild/', 'esbuild'), ('@rollup/rollup-', 'rollup'), ('@tauri-apps/cli-', '@tauri-apps/cli')] if package['name'].startswith(prefix)), None)
+            parent = by_name.get(wrapper)
+            if parent and parent['version'] == package['version'] and parent['license'] == package['license'] and parent['notice_files']:
+                if repository(parent['repository']) == repository(package['repository']):
+                    package['notice_files'] = [{**f, 'origin':'same_version_distribution_wrapper', 'source_package':parent['id']} for f in parent['notice_files']]
+                    package['license_text_missing'] = False
+                    continue
+        if resolver:
+            directory, entry = contexts[package['id']]
+            try:
+                save_recovered(output, package, resolver.recover(directory, package, entry))
+            except Exception as error:
+                package['upstream_notice_error'] = str(error)
     report = {'schema':'studio-preview-license-inventory-v1', 'target':target,
               'commit':os.environ.get('GITHUB_SHA'), 'packages':packages,
               'first_party_packages':first_party, 'absent_optional_packages':absent,
@@ -99,6 +126,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--target', required=True, choices=sorted(TARGETS))
     parser.add_argument('--archive', action='store_true')
+    parser.add_argument('--fetch-upstream', action='store_true', help='Recover omitted notices only at immutable package source revisions')
     args = parser.parse_args()
     output = ROOT / 'm3-shell-out-ci-legal'
     if args.archive:
@@ -110,7 +138,7 @@ def main():
     command = ['cargo','metadata','--manifest-path',str(ROOT/'m3/desktop/src-tauri/Cargo.toml'),
                '--locked','--format-version','1','--filter-platform',args.target]
     metadata = json.loads(subprocess.run(command,cwd=ROOT,check=True,capture_output=True,text=True,encoding='utf-8').stdout)
-    collect(ROOT,metadata,output,args.target)
+    collect(ROOT,metadata,output,args.target,UpstreamNotices() if args.fetch_upstream else None)
 
 
 if __name__ == '__main__': main()

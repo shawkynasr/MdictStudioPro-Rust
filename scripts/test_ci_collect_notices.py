@@ -39,6 +39,23 @@ class LicenseInventoryTests(unittest.TestCase):
             self.assertFalse(r['legal_compatibility_qualified'])
             with self.assertRaises(FileExistsError):collect(root,metadata,out,'x86_64-pc-windows-msvc')
 
+    def test_native_wrapper_notices_require_same_version_and_repository(self):
+        for child_version in ('1.0','2.0'):
+            with self.subTest(child_version=child_version), tempfile.TemporaryDirectory() as temp:
+                root=Path(temp);metadata,_=self.fixture(root)
+                frontend=root/'m3/desktop'
+                lock=json.loads((frontend/'package-lock.json').read_text())
+                for location,name,version in [('node_modules/esbuild','esbuild','1.0'),('node_modules/@esbuild/darwin-x64','@esbuild/darwin-x64',child_version)]:
+                    directory=frontend/location;directory.mkdir(parents=True)
+                    (directory/'package.json').write_text(json.dumps({'name':name,'version':version,'license':'MIT','repository':'https://github.com/evanw/esbuild'}))
+                    lock['packages'][location]={'version':version}
+                    if name=='esbuild':(directory/'LICENSE').write_bytes(b'original esbuild distribution license')
+                (frontend/'package-lock.json').write_text(json.dumps(lock))
+                report=collect(root,metadata,root/'legal','x86_64-apple-darwin')
+                child=next(p for p in report['packages'] if p['name']=='@esbuild/darwin-x64')
+                self.assertEqual(child['license_text_missing'], child_version!='1.0')
+                if child_version=='1.0':self.assertEqual(child['notice_files'][0]['origin'],'same_version_distribution_wrapper')
+
     def test_missing_notices_and_declarations_remain_visible(self):
         with tempfile.TemporaryDirectory() as temp:
             root=Path(temp);metadata,package=self.fixture(root)

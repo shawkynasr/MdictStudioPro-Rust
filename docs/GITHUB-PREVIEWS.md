@@ -61,3 +61,5 @@ The first `qualify.yml` run passed baseline, all three engine jobs, all three so
 The original XML comparisons and engine sources are unchanged. Later scoped metadata/stylesheet behavior is documented in `M2-METADATA.md` and `M4-DATABASE-CLOSEOUT.md`. Do not change the serializer, normalize newlines, add `continue-on-error`, or remove assertions to hide the archived limitations. The corrected CI workflow still needs a hosted run.
 
 The license collection step precedes native tests and bundling because the CI Tauri override embeds the generated legal resource directory. Archives are added to each target artifact after installer collection. Review actual dependency metadata and missing-license lists from that run before creating the public preview.
+
+Notice recovery uses `--fetch-upstream` and the build job's read-only GitHub token for public upstream API requests. Only approved repositories and exact package revisions are admitted; tokens are not placed in URLs or reports. Network failures do not fabricate notices or claim license clearance. Review the new LEGAL archives for gaps and each recovered file's provenance before publishing.

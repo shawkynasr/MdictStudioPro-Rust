@@ -4,7 +4,7 @@ The current plan is a **new Rust refactor repository** and GitHub Actions builds
 
 Before publishing:
 
-- New project-authored code uses AGPL-3.0-only as selected by the author. Preserve original-project attribution and component-specific notices. Review the generated target-specific LEGAL ZIP and all missing declarations/texts in DEPENDENCIES.json before publishing; this remains pending the new CI run.
+- New project-authored code uses AGPL-3.0-only as selected by the author. Preserve original-project attribution and component-specific notices. Review the generated target-specific LEGAL ZIP and all missing declarations/texts in DEPENDENCIES.json before publishing; the initial run found 36 distinct text gaps and the immutable-source recovery update still needs a new CI run and gap review.
 - Review the exact committed source, retained lockfiles and generated vendor provenance. Exclude private dictionaries, user data, logs with secrets and local caches.
 - Get all four `Rust desktop previews` jobs passing. Review native build and frontend test results and each BUILD file's target and source commit.
 - Test installers as available and label unknown results honestly. Keep clean-machine and new-platform tests pending until observed; community testing is the purpose of the preview.

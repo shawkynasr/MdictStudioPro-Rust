@@ -1512,8 +1512,8 @@
     "documentation": "docs/M3-COMPLETION-REVIEW.md",
     "scope_note": "Older per-slice pending fields are historical. Full M3/original GUI parity and platform release qualification remain open.",
     "current_slice": {
-      "feature": "Author-selected AGPL-3.0-only license and CI-collected dependency notices",
-      "status": "implemented_local_checks_pending_CI_notice_inventory_review",
+      "feature": "Recover omitted dependency notices at immutable upstream package revisions",
+      "status": "implemented_local_checks_pending_CI_gap_review",
       "documentation": "THIRD_PARTY_NOTICES.md",
       "application_code_changed": true,
       "routine_rebuild_required": true,
@@ -1799,8 +1799,10 @@
         "author_choice_received": true,
         "third_party_terms_preserved": true,
         "historical_license_mismatch_documented": true,
-        "dependency_notices_CI_collection": "implemented_pending_hosted_run_and_gap_review",
-        "distribution_compatibility_review_complete": false
+        "dependency_notices_CI_collection": "upstream-revision recovery prepared; new CI run and unresolved-gap review pending",
+        "distribution_compatibility_review_complete": false,
+        "initial_four_platform_review": "docs/evidence/preview-license-review/review.json",
+        "initial_distinct_package_version_text_gaps": 36
       }
     }
   },
