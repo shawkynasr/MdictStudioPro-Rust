@@ -68,7 +68,8 @@ jobs:
       - run: python scripts/prepare_sort_experiment.py
       - run: python scripts/prepare_sort_experiment.py --revision 3 --reuse
       - run: python scripts/patched_interop.py --writer-revision 3 --output interop-out-v3
-      - run: python scripts/metadata_codecs.py --writer-revision 3 --output codec-out-v2
+      - name: Verify archived revision-3 metadata diagnostic (known limitations retained)
+        run: python scripts/ci_legacy_metadata.py --output codec-out-v2
         if: always()
       - run: python scripts/reader_fixtures.py --output reader-out
         if: always()
