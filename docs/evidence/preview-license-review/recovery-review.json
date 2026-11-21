@@ -1,0 +1,69 @@
+{
+  "schema": "studio-license-recovery-review-v1",
+  "status": "33_of_36_distinct_gaps_recovered_three_explicit_supplements_prepared",
+  "targets": [
+    {
+      "target": "aarch64-apple-darwin",
+      "commit": "039e930ce79f96d86db97977c5f48b703acc2de0",
+      "archive_sha256": "c73f182b6e9cac6bbc58fb81c0306dc4c8a5f184597eca109c9b30b8f5841997",
+      "inventory_sha256": "e78bb0dc46a724df2aae5a6bc1d3cb23af4a76bc4c869031f01b9d6cd5c8ac66",
+      "packages": 314,
+      "missing_texts": [
+        "rust:registry+https://github.com/rust-lang/crates.io-index#selectors@0.38.0",
+        "npm:node_modules/is-reference@3.0.3",
+        "npm:node_modules/locate-character@3.0.0"
+      ],
+      "missing_declarations": [],
+      "all_included_notice_hashes_verified": true
+    },
+    {
+      "target": "x86_64-apple-darwin",
+      "commit": "039e930ce79f96d86db97977c5f48b703acc2de0",
+      "archive_sha256": "09142c58436e186a0f08342e552f52f222bbd906f0907e5ebdfac158a41ed22b",
+      "inventory_sha256": "792543f32177467fc3c9c4fd3b7dc5ccd406be4d2b1b8b126471be13294c3b45",
+      "packages": 315,
+      "missing_texts": [
+        "rust:registry+https://github.com/rust-lang/crates.io-index#selectors@0.38.0",
+        "npm:node_modules/is-reference@3.0.3",
+        "npm:node_modules/locate-character@3.0.0"
+      ],
+      "missing_declarations": [],
+      "all_included_notice_hashes_verified": true
+    },
+    {
+      "target": "x86_64-pc-windows-msvc",
+      "commit": "039e930ce79f96d86db97977c5f48b703acc2de0",
+      "archive_sha256": "08da82709219884e156181a26173dbe53cf9914775c1e6ad47c20c43ec6d420c",
+      "inventory_sha256": "f125e6b99da199108c610ebc7d373f28f787aca32c5a612aff97ed8f0198b6c0",
+      "packages": 316,
+      "missing_texts": [
+        "rust:registry+https://github.com/rust-lang/crates.io-index#selectors@0.38.0",
+        "npm:node_modules/is-reference@3.0.3",
+        "npm:node_modules/locate-character@3.0.0"
+      ],
+      "missing_declarations": [],
+      "all_included_notice_hashes_verified": true
+    },
+    {
+      "target": "x86_64-unknown-linux-gnu",
+      "commit": "039e930ce79f96d86db97977c5f48b703acc2de0",
+      "archive_sha256": "1c3113e39a6eeef8e7b00ff786fef75846b51c6047765a8aacc56d2456ffeed5",
+      "inventory_sha256": "73f1ad87c60a0e712f3c16a0af6c6d6bfb74e9a0d8009136cde12568ba069756",
+      "packages": 359,
+      "missing_texts": [
+        "rust:registry+https://github.com/rust-lang/crates.io-index#selectors@0.38.0",
+        "npm:node_modules/is-reference@3.0.3",
+        "npm:node_modules/locate-character@3.0.0"
+      ],
+      "missing_declarations": [],
+      "all_included_notice_hashes_verified": true
+    }
+  ],
+  "remaining_distinct_packages": [
+    "selectors@0.38.0",
+    "is-reference@3.0.3",
+    "locate-character@3.0.0"
+  ],
+  "new_supplement_inventory_requires_CI_verification": true,
+  "legal_compatibility_qualified": false
+}

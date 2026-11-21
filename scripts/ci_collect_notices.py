@@ -9,6 +9,7 @@ import subprocess
 import zipfile
 from ci_collect_preview import ROOT, TARGETS
 from ci_upstream_notices import UpstreamNotices, repository, save_recovered
+from ci_notice_supplements import supplement
 
 
 def notice_paths(directory):
@@ -111,11 +112,15 @@ def collect(root, cargo_metadata, output, target, resolver=None):
                 save_recovered(output, package, resolver.recover(directory, package, entry))
             except Exception as error:
                 package['upstream_notice_error'] = str(error)
+    for package in packages:
+        supplement(root, output, contexts[package['id']][0], package)
     report = {'schema':'studio-preview-license-inventory-v1', 'target':target,
               'commit':os.environ.get('GITHUB_SHA'), 'packages':packages,
               'first_party_packages':first_party, 'absent_optional_packages':absent,
               'missing_license_texts':[p['id'] for p in packages if p['license_text_missing']],
               'missing_license_declarations':[p['id'] for p in packages if p['license_declaration_missing']],
+              'original_upstream_notice_gaps':[p['id'] for p in packages if p.get('original_upstream_notice_missing')],
+              'standard_license_supplements':[p['id'] for p in packages if p.get('license_text_basis')],
               'legal_compatibility_qualified':False}
     (output / 'DEPENDENCIES.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(f"Collected notices for {len(packages)} packages; {len(report['missing_license_texts'])} missing texts; {len(report['missing_license_declarations'])} missing declarations. Review before publishing.")

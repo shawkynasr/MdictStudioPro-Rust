@@ -1512,8 +1512,8 @@
     "documentation": "docs/M3-COMPLETION-REVIEW.md",
     "scope_note": "Older per-slice pending fields are historical. Full M3/original GUI parity and platform release qualification remain open.",
     "current_slice": {
-      "feature": "Recover omitted dependency notices at immutable upstream package revisions",
-      "status": "implemented_local_checks_pending_CI_gap_review",
+      "feature": "Explicit standard-license supplements for final three declared licenses",
+      "status": "implemented_pending_CI_supplement_and_provenance_verification",
       "documentation": "THIRD_PARTY_NOTICES.md",
       "application_code_changed": true,
       "routine_rebuild_required": true,
@@ -1802,7 +1802,10 @@
         "dependency_notices_CI_collection": "upstream-revision recovery prepared; new CI run and unresolved-gap review pending",
         "distribution_compatibility_review_complete": false,
         "initial_four_platform_review": "docs/evidence/preview-license-review/review.json",
-        "initial_distinct_package_version_text_gaps": 36
+        "initial_distinct_package_version_text_gaps": 36,
+        "recovery_review": "docs/evidence/preview-license-review/recovery-review.json",
+        "distinct_unrecovered_upstream_license_files": 3,
+        "explicit_standard_text_supplements": "selectors 0.38.0 MPL-2.0; is-reference 3.0.3 MIT; locate-character 3.0.0 MIT; prepared pending CI verification"
       }
     }
   },
