@@ -66,7 +66,7 @@ jobs:
         working-directory: m3/desktop
         run: npm run tauri -- icon src-tauri/icons/icon.png --output src-tauri/icons/ci
       - name: Test fixed project-link boundary
-        run: cargo test --manifest-path m3/desktop/src-tauri/Cargo.toml --target '${{ matrix.target }}' --locked project_link_tests
+        run: python scripts/ci_test_desktop.py --target '${{ matrix.target }}'
       - name: Bundle preview
         working-directory: m3/desktop
         env:
