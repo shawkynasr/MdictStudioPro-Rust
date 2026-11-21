@@ -22,3 +22,7 @@ This is a community preview. Hosted build/test success does not verify installat
 Use copies of dictionaries and fresh output paths. SQLite is capped at 100,000 records / 32 MiB decoded text; separate large MDX export permits up to 250,000 / 96 MiB, with other limits also applying. Existing outputs are kept. Password-protected and general v3 dictionaries are unsupported; narrower legacy/key-info profiles remain limited to their recorded scope.
 
 Please report your OS/version, architecture, preview tag, exact installer, transfer route, operation and receipt/error through the repository's bug-report issue template. Remove private paths or dictionary content before sharing logs. A failed test is useful feedback.
+
+## License and source
+
+New project-authored Rust/Tauri code: **AGPL-3.0-only**, copyright 2026 Shawky Nasr. Third-party and retained historical components keep their own terms. See LICENSE and THIRD_PARTY_NOTICES.md at this release's source tag. Each target includes a LEGAL ZIP with collected notices and an explicit list of any gaps. The installer also includes these materials in its legal resources.

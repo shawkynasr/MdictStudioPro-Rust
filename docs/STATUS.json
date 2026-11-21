@@ -1512,9 +1512,9 @@
     "documentation": "docs/M3-COMPLETION-REVIEW.md",
     "scope_note": "Older per-slice pending fields are historical. Full M3/original GUI parity and platform release qualification remain open.",
     "current_slice": {
-      "feature": "About dialog, author credit, version and manual official release access",
-      "status": "implemented_local_checks_pending_new_CI_and_GUI_test",
-      "documentation": "docs/ABOUT-AND-UPDATES.md",
+      "feature": "Author-selected AGPL-3.0-only license and CI-collected dependency notices",
+      "status": "implemented_local_checks_pending_CI_notice_inventory_review",
+      "documentation": "THIRD_PARTY_NOTICES.md",
       "application_code_changed": true,
       "routine_rebuild_required": true,
       "clean_machine_qualified": false,
@@ -1791,7 +1791,16 @@
         "about_dialog": "implemented_pending_GUI_test",
         "update_mode": "manual_releases_page",
         "automatic_update_notifications": false,
-        "automatic_installation": false
+        "automatic_installation": false,
+        "windows_build_fix": "TAURI_CONFIG preview override propagated to native tests; hosted rerun pending"
+      },
+      "licensing": {
+        "new_project_code": "AGPL-3.0-only",
+        "author_choice_received": true,
+        "third_party_terms_preserved": true,
+        "historical_license_mismatch_documented": true,
+        "dependency_notices_CI_collection": "implemented_pending_hosted_run_and_gap_review",
+        "distribution_compatibility_review_complete": false
       }
     }
   },

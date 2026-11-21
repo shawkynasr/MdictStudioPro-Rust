@@ -15,6 +15,6 @@ test_missing_and_invalid_input_fail (test_baseline.LegacyCharacterization.test_m
 test_snapshot_integrity (test_baseline.LegacyCharacterization.test_snapshot_integrity) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.443s
+Ran 6 tests in 0.408s
 
 OK

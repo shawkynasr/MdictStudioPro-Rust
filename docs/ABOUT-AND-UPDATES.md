@@ -22,3 +22,7 @@ No signing key was generated and no updater was enabled by this change. Referenc
 ## Validation and remaining checks
 
 The local Node suite and Python contract suite validate existing GUI helpers, configuration boundaries and unchanged backend identities. CI now runs the new native fixed-link allowlist test on all four targets before bundling. Native CI execution and actual browser opening, About focus/Esc, version display and translated layout still need a new build/test. The authoring environment has no Rust toolchain and could not install the locked frontend dependencies offline (uncached npm package); a Svelte production build is therefore pending CI.
+
+## Windows native test configuration fix
+
+The first About build's direct `cargo test` used the development Tauri config rather than the preview override. On Windows, tauri-build therefore requested the nonexistent default `icons/icon.ico` although CI generated `icons/ci/icon.ico`. This was a build-configuration mismatch, not a dictionary converter failure. The native test now runs through `ci_test_desktop.py`, which passes the actual preview override as JSON in `TAURI_CONFIG` (the same merge mechanism used by Tauri CLI), checks that generated icons exist, preserves `--locked` and propagates Cargo failures. Bundling still uses its existing preview override. No fallback icon, test skipping or dependency/lockfile change is introduced. Windows native rerun remains pending.

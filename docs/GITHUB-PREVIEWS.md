@@ -4,7 +4,7 @@ The separate repository is [MdictStudioPro-Rust](https://github.com/shawkynasr/M
 
 > A Rust/Tauri refactor of MdictStudioPro, with new features and improvements. Experimental desktop previews for Windows, macOS and Linux.
 
-Credit and link the [original MdictStudioPro](https://github.com/shawkynasr/MdictStudioPro). Preserve applicable licenses and third-party notices; the final distribution license review is still pending. Do not select a conflicting default license when creating the repository. This workflow does not relicense the retained code or reference sources.
+Credit and link the [original MdictStudioPro](https://github.com/shawkynasr/MdictStudioPro). New project-authored code uses AGPL-3.0-only, as selected by the author. Preserve all component-specific licenses and notices. CI collects dependency license materials; review the new LEGAL archives and reported gaps before publishing. The root license does not relicense retained code or reference sources.
 
 ## First upload
 
@@ -50,4 +50,14 @@ python3 -m unittest discover -s scripts -p test_ci_preview.py -v
 python3 scripts/package.py
 ```
 
-Native compilation requires the platform toolchain, Node and Tauri prerequisites. The first hosted matrix run remains pending; workflow structure and local script tests do not establish that all targets compile or launch.
+Native compilation requires the platform toolchain, Node and Tauri prerequisites. The first hosted matrix run is observed successful in user screenshots (commit `7dbb2fe`, four jobs and four artifacts). Installation and launch of those new installers remain untested. See `docs/evidence/ci-first-preview-run/review.json`.
+
+## Historical qualification workflow diagnostic
+
+The first `qualify.yml` run passed baseline, all three engine jobs, all three sort jobs, the separate patched interoperability suite and reader fixtures; its metadata step exited nonzero. The attached report exactly reproduces the archived revision-3 diagnostic: 91 passed, 10 standard-XML StyleSheet newline comparisons failed, two legacy GB18030 writes unsupported and eight dependent checks blocked. This report and later application metadata profiles are different scopes.
+
+`ci_legacy_metadata.py` now runs the unchanged diagnostic and checks all 111 names, statuses, failure reasons and blocked dependencies against the SHA-256-pinned archived report. Missing checks, new failures, changed outcomes, setup failures and reused outputs remain CI failures. It emits `archived_diagnostic_reproduced` separately; the underlying diagnostic remains **failed**, and unsupported/blocked cases never become passes. This is a regression check for preserved historical behavior, not a claim of universal metadata compatibility. A changed outcome requires review, even if it appears to be an improvement.
+
+The original XML comparisons and engine sources are unchanged. Later scoped metadata/stylesheet behavior is documented in `M2-METADATA.md` and `M4-DATABASE-CLOSEOUT.md`. Do not change the serializer, normalize newlines, add `continue-on-error`, or remove assertions to hide the archived limitations. The corrected CI workflow still needs a hosted run.
+
+The license collection step precedes native tests and bundling because the CI Tauri override embeds the generated legal resource directory. Archives are added to each target artifact after installer collection. Review actual dependency metadata and missing-license lists from that run before creating the public preview.

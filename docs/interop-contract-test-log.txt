@@ -1,5 +1,7 @@
-real_rebuild_offline_passed_native_untested: /workspace/scratch/b05ce165cf6e/mdict-studio-m0-m1/tmp1_oyq4jx/rebuild-out/real-rebuild-report.json
-Ready for staged native tests: /workspace/scratch/b05ce165cf6e/mdict-studio-m0-m1/tmp1_oyq4jx/rebuild-out/verified-dictionaries
+Collected notices for 2 packages; 0 missing texts; 0 missing declarations. Review before publishing.
+Collected notices for 2 packages; 1 missing texts; 1 missing declarations. Review before publishing.
+real_rebuild_offline_passed_native_untested: /workspace/scratch/b05ce165cf6e/mdict-studio-m0-m1/tmpj2uw6vy0/rebuild-out/real-rebuild-report.json
+Ready for staged native tests: /workspace/scratch/b05ce165cf6e/mdict-studio-m0-m1/tmpj2uw6vy0/rebuild-out/verified-dictionaries
 Independent scan: 10000 records
 Independent scan: 20000 records
 Independent scan: 30000 records
@@ -21,7 +23,7 @@ database-backend-tests
 txt-runtime-tests
 python-plugin-wrapper-tests
 adapter-tests
-adapter_tests_passed: /workspace/scratch/b05ce165cf6e/mdict-studio-m0-m1/tmpu083f2x7/m3-shell-out-test/m3-shell-report.json
+adapter_tests_passed: /workspace/scratch/b05ce165cf6e/mdict-studio-m0-m1/tmpveka21ma/m3-shell-out-test/m3-shell-report.json
 adapter-inspect
 adapter-fetch
 adapter-resolve
@@ -34,7 +36,7 @@ database-backend-tests
 txt-runtime-tests
 python-plugin-wrapper-tests
 adapter-tests
-adapter_tests_passed: /workspace/scratch/b05ce165cf6e/mdict-studio-m0-m1/tmpqi8sqrvr/m3-shell-out-test/m3-shell-report.json
+adapter_tests_passed: /workspace/scratch/b05ce165cf6e/mdict-studio-m0-m1/tmpoj_ucss6/m3-shell-out-test/m3-shell-report.json
 adapter-inspect
 adapter-resolve
 export-io-resolve
@@ -46,7 +48,7 @@ database-backend-tests
 txt-runtime-tests
 python-plugin-wrapper-tests
 adapter-tests
-adapter_tests_passed: /workspace/scratch/b05ce165cf6e/mdict-studio-m0-m1/tmpg0fselh3/m3-shell-out-test/m3-shell-report.json
+adapter_tests_passed: /workspace/scratch/b05ce165cf6e/mdict-studio-m0-m1/tmpiuk3v9dk/m3-shell-out-test/m3-shell-report.json
 adapter-inspect
 adapter-fetch
 adapter-resolve
@@ -59,8 +61,8 @@ database-backend-tests
 txt-runtime-tests
 python-plugin-wrapper-tests
 adapter-tests
-adapter_tests_passed: /workspace/scratch/b05ce165cf6e/mdict-studio-m0-m1/tmpftom078f/m3-shell-out-test/m3-shell-report.json
-Sources prepared: /workspace/scratch/b05ce165cf6e/mdict-studio-m0-m1/tmpo5pddw5r/kit
+adapter_tests_passed: /workspace/scratch/b05ce165cf6e/mdict-studio-m0-m1/tmp2k6uyz0s/m3-shell-out-test/m3-shell-report.json
+Sources prepared: /workspace/scratch/b05ce165cf6e/mdict-studio-m0-m1/tmpl968ep5_/kit
 test_cased_and_ignorable_are_independent_properties (test_casing_policy.VersionedCasing.test_cased_and_ignorable_are_independent_properties) ... ok
 test_contexts_cover_new_cased_characters_both_sides_of_sigma (test_casing_policy.VersionedCasing.test_contexts_cover_new_cased_characters_both_sides_of_sigma) ... ok
 test_ranges_preserve_property_membership_and_gaps (test_casing_policy.VersionedCasing.test_ranges_preserve_property_membership_and_gaps) ... ok
@@ -81,11 +83,21 @@ test_results_transfer_once_and_source_identity_remains_bound (test_cc_pack_recei
 test_comparison_requires_full_payload_observations (test_checksum_qualification.ChecksumQualification.test_comparison_requires_full_payload_observations) ... ok
 test_each_site_changes_exactly_one_checksum_byte_and_no_geometry (test_checksum_qualification.ChecksumQualification.test_each_site_changes_exactly_one_checksum_byte_and_no_geometry) ... ok
 test_unrelated_parse_error_or_incomplete_record_scan_is_not_checksum_pass (test_checksum_qualification.ChecksumQualification.test_unrelated_parse_error_or_incomplete_record_scan_is_not_checksum_pass) ... ok
+test_collects_vendor_not_owned_code_and_preserves_notice_bytes (test_ci_collect_notices.LicenseInventoryTests.test_collects_vendor_not_owned_code_and_preserves_notice_bytes) ... ok
+test_missing_notices_and_declarations_remain_visible (test_ci_collect_notices.LicenseInventoryTests.test_missing_notices_and_declarations_remain_visible) ... ok
+test_required_uninstalled_package_fails (test_ci_collect_notices.LicenseInventoryTests.test_required_uninstalled_package_fails) ... ok
+test_exact_historical_observation_retains_failed_status (test_ci_legacy_metadata.HistoricalMetadataCITests.test_exact_historical_observation_retains_failed_status) ... ok
+test_existing_report_directory_cannot_be_reused (test_ci_legacy_metadata.HistoricalMetadataCITests.test_existing_report_directory_cannot_be_reused) ... ok
+test_missing_added_or_changed_checks_fail_even_if_totals_unchanged (test_ci_legacy_metadata.HistoricalMetadataCITests.test_missing_added_or_changed_checks_fail_even_if_totals_unchanged) ... ok
+test_setup_exit_or_revision_drift_fails (test_ci_legacy_metadata.HistoricalMetadataCITests.test_setup_exit_or_revision_drift_fails) ... ok
 test_installer_names_hashes_and_unqualified_report_per_target (test_ci_preview.PreviewCITests.test_installer_names_hashes_and_unqualified_report_per_target) ... ok
 test_missing_installer_aborts_before_creating_output (test_ci_preview.PreviewCITests.test_missing_installer_aborts_before_creating_output) ... ok
 test_preview_does_not_override_production_security (test_ci_preview.PreviewCITests.test_preview_does_not_override_production_security) ... ok
 test_rejects_archive_and_root_lock_drift (test_ci_preview.PreviewCITests.test_rejects_archive_and_root_lock_drift) ... ok
 test_release_is_tag_only_draft_after_matrix_and_locked_builds (test_ci_preview.PreviewCITests.test_release_is_tag_only_draft_after_matrix_and_locked_builds) ... ok
+test_cargo_failure_is_propagated (test_ci_test_desktop.DesktopTestConfiguration.test_cargo_failure_is_propagated) ... ok
+test_missing_generated_icon_stops_before_cargo (test_ci_test_desktop.DesktopTestConfiguration.test_missing_generated_icon_stops_before_cargo) ... ok
+test_windows_cargo_receives_actual_preview_json_and_locked_target (test_ci_test_desktop.DesktopTestConfiguration.test_windows_cargo_receives_actual_preview_json_and_locked_target) ... ok
 test_accepted_set_order_comparison_preserves_all_other_content (test_concise_full.FullConciseContracts.test_accepted_set_order_comparison_preserves_all_other_content) ... ok
 test_isolated_runtime_keeps_admission_and_controller_semantics (test_concise_full.FullConciseContracts.test_isolated_runtime_keeps_admission_and_controller_semantics) ... ok
 test_previously_qualified_sources_and_registry_graph_unchanged (test_concise_full.FullConciseContracts.test_previously_qualified_sources_and_registry_graph_unchanged) ... ok
@@ -388,6 +400,6 @@ test_limit_refusal_options_and_false_dictionary_claim_are_rejected (test_xlsx_sp
 test_mutated_row_content_and_spool_byte_extent_are_rejected (test_xlsx_spool_receipt.RowSpoolReceiptContracts.test_mutated_row_content_and_spool_byte_extent_are_rejected) ... ok
 
 ----------------------------------------------------------------------
-Ran 325 tests in 11.174s
+Ran 335 tests in 11.234s
 
 OK

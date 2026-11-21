@@ -12,6 +12,10 @@ Optional plugins require an external Python interpreter and dependencies. They e
 
 The sidebar About dialog includes author credit, app version and official repository/release links. Updates are currently installed manually; see [About and update delivery](docs/ABOUT-AND-UPDATES.md). This addition needs a new CI build and GUI check.
 
+## License and author
+
+Copyright (c) 2026 **Shawky Nasr** <shawkynasr@126.com> for new project-authored code, except where another notice applies. The new Rust/Tauri implementation is licensed under **AGPL-3.0-only**; see [LICENSE](LICENSE) and [third-party notices](THIRD_PARTY_NOTICES.md). Historical baseline and reference files retain their own terms, including the documented original README/LICENSE discrepancy.
+
 ## Current documentation
 
 - [M3 completion review and remaining work](docs/M3-COMPLETION-REVIEW.md)

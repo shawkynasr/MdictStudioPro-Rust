@@ -65,6 +65,8 @@ jobs:
       - name: Generate platform icons
         working-directory: m3/desktop
         run: npm run tauri -- icon src-tauri/icons/icon.png --output src-tauri/icons/ci
+      - name: Collect project and dependency license notices
+        run: python scripts/ci_collect_notices.py --target '${{ matrix.target }}'
       - name: Test fixed project-link boundary
         run: python scripts/ci_test_desktop.py --target '${{ matrix.target }}'
       - name: Bundle preview
@@ -76,6 +78,8 @@ jobs:
         env:
           STUDIO_TARGET: ${{ matrix.target }}
         run: python scripts/ci_collect_preview.py
+      - name: Archive dependency license notices
+        run: python scripts/ci_collect_notices.py --target '${{ matrix.target }}' --archive
       - uses: actions/upload-artifact@v4
         with:
           name: preview-${{ matrix.target }}

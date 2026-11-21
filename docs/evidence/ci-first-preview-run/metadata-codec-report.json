@@ -1,0 +1,1300 @@
+{
+  "status": "failed",
+  "suite": "metadata-storage-codecs-v1",
+  "harness_revision": 3,
+  "writer_patch_revision": 3,
+  "environment": {
+    "python": "3.12.16 (main, Oct 26 2026, 02:48:44) [GCC 15.2.0]",
+    "os": "Linux",
+    "release": "7.0.0-1020-azure",
+    "machine": "x86_64",
+    "mdict-utils": "1.3.14",
+    "rustc": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
+    "cargo": "cargo 1.100.0 (3acc79c0c 2026-11-05)",
+    "collation": "C"
+  },
+  "checks": {
+    "rust-big5-mdict-utils": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "BIG5",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        },
+        "encoding": "BIG5",
+        "key_blocks": 2,
+        "records": 4
+      },
+      "status": "passed"
+    },
+    "rust-big5-mdict-utils-metadata": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "BIG5",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        }
+      },
+      "status": "passed"
+    },
+    "rust-big5-mdxbuilder": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "BIG5",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        },
+        "encoding": "BIG5",
+        "key_blocks": 2,
+        "records": 4
+      },
+      "status": "passed"
+    },
+    "rust-big5-mdxbuilder-metadata": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "BIG5",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        }
+      },
+      "status": "passed"
+    },
+    "rust-big5-unencodable-body": {
+      "detail": {
+        "error": "invalid data: entry body is not representable in Big5",
+        "rejected": true
+      },
+      "status": "passed"
+    },
+    "rust-big5-unencodable-key": {
+      "detail": {
+        "error": "invalid data: entry key is not representable in Big5",
+        "rejected": true
+      },
+      "status": "passed"
+    },
+    "rust-gb18030-mdict-utils": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "GB18030",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        },
+        "encoding": "GB18030",
+        "key_blocks": 2,
+        "records": 4
+      },
+      "status": "passed"
+    },
+    "rust-gb18030-mdict-utils-metadata": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "GB18030",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        }
+      },
+      "status": "passed"
+    },
+    "rust-gb18030-mdxbuilder": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "GB18030",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        },
+        "encoding": "GB18030",
+        "key_blocks": 2,
+        "records": 4
+      },
+      "status": "passed"
+    },
+    "rust-gb18030-mdxbuilder-metadata": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "GB18030",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        }
+      },
+      "status": "passed"
+    },
+    "rust-gbk-mdict-utils": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "GBK",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        },
+        "encoding": "GBK",
+        "key_blocks": 2,
+        "records": 4
+      },
+      "status": "passed"
+    },
+    "rust-gbk-mdict-utils-metadata": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "GBK",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        }
+      },
+      "status": "passed"
+    },
+    "rust-gbk-mdxbuilder": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "GBK",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        },
+        "encoding": "GBK",
+        "key_blocks": 2,
+        "records": 4
+      },
+      "status": "passed"
+    },
+    "rust-gbk-mdxbuilder-metadata": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "GBK",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        }
+      },
+      "status": "passed"
+    },
+    "rust-gbk-unencodable-body": {
+      "detail": {
+        "error": "invalid data: entry body is not representable in GBK",
+        "rejected": true
+      },
+      "status": "passed"
+    },
+    "rust-gbk-unencodable-key": {
+      "detail": {
+        "error": "invalid data: entry key is not representable in GBK",
+        "rejected": true
+      },
+      "status": "passed"
+    },
+    "rust-mdd-unicode-resources": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>Fonts & images</p>",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "Title": "Resources 中文 العربية & \"quotes\""
+        },
+        "key_blocks": 3,
+        "resources": 3
+      },
+      "status": "passed"
+    },
+    "rust-reserved-metadata": {
+      "detail": {
+        "reserved_and_duplicate_attributes_rejected": true
+      },
+      "status": "passed"
+    },
+    "rust-utf16le-mdict-utils": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "UTF-16",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        },
+        "encoding": "UTF-16",
+        "key_blocks": 2,
+        "records": 4
+      },
+      "status": "passed"
+    },
+    "rust-utf16le-mdict-utils-metadata": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "UTF-16",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        }
+      },
+      "status": "passed"
+    },
+    "rust-utf16le-mdxbuilder": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "UTF-16",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        },
+        "encoding": "UTF-16",
+        "key_blocks": 2,
+        "records": 4
+      },
+      "status": "passed"
+    },
+    "rust-utf16le-mdxbuilder-metadata": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "UTF-16",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        }
+      },
+      "status": "passed"
+    },
+    "rust-utf16le-nul-key": {
+      "detail": {
+        "error": "invalid data: entry keys must not contain a NUL character",
+        "rejected": true
+      },
+      "status": "passed"
+    },
+    "rust-utf8-mdict-utils": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "UTF-8",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        },
+        "encoding": "UTF-8",
+        "key_blocks": 2,
+        "records": 4
+      },
+      "status": "passed"
+    },
+    "rust-utf8-mdict-utils-metadata": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "UTF-8",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        }
+      },
+      "status": "passed"
+    },
+    "rust-utf8-mdxbuilder": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "UTF-8",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        },
+        "encoding": "UTF-8",
+        "key_blocks": 2,
+        "records": 4
+      },
+      "status": "passed"
+    },
+    "rust-utf8-mdxbuilder-metadata": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "UTF-8",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        }
+      },
+      "status": "passed"
+    },
+    "rust-utf8-nul-key": {
+      "detail": {
+        "error": "invalid data: entry keys must not contain a NUL character",
+        "rejected": true
+      },
+      "status": "passed"
+    },
+    "forward-utf8-mdict-utils-records": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "comparison": "exact_multiset"
+      }
+    },
+    "forward-utf8-mdict-utils-xml": {
+      "status": "failed",
+      "error": "Metadata differs: {\"StyleSheet\": {\"expected\": \"1\\n<b class=\\\"sense\\\">& text\\n</b>\", \"actual\": \"1 <b class=\\\"sense\\\">& text </b>\"}}",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 32, in observe\n    checks[name] = {\"status\": \"passed\", \"detail\": action()}\n                                                  ^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 150, in <lambda>\n    step(f\"forward-{label}-xml\", lambda p=path: xml_metadata(p, fixture[\"metadata\"]))\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 111, in xml_metadata\n    return {**compare_metadata(expected, header[\"attributes\"]), \"header\": header}\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 47, in compare_metadata\n    require(not mismatches, \"Metadata differs: \" + json.dumps(mismatches, ensure_ascii=False))\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/patched_interop.py\", line 66, in require\n    raise AssertionError(message)\nAssertionError: Metadata differs: {\"StyleSheet\": {\"expected\": \"1\\n<b class=\\\"sense\\\">& text\\n</b>\", \"actual\": \"1 <b class=\\\"sense\\\">& text </b>\"}}\n"
+    },
+    "forward-utf8-mdict-utils-python-metadata": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Format": "Html"
+        }
+      }
+    },
+    "reverse-utf8-mdict-utils-write": {
+      "status": "passed",
+      "detail": {
+        "sha256": "03be46c8af7b3a2ce62225fb4c8131fd31ade3b70b5a379c8e679563b854f139",
+        "source_policy": "exact binary body plus encoded NUL; no TXT conversion"
+      }
+    },
+    "reverse-utf8-mdict-utils-rust-records": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "comparison": "exact_multiset"
+      }
+    },
+    "reverse-utf8-mdict-utils-python-records": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "comparison": "exact_multiset"
+      }
+    },
+    "reverse-utf8-mdict-utils-rust-metadata": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>"
+        }
+      }
+    },
+    "reverse-utf8-mdict-utils-xml": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>"
+        },
+        "header": {
+          "payload_bytes": 870,
+          "terminated": true,
+          "checksum_valid": true,
+          "attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "UTF-8",
+            "Format": "Html",
+            "Stripkey": "Yes",
+            "CreationDate": "2026-11-21",
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "KeyCaseSensitive": "No",
+            "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+            "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+            "DataSourceFormat": "106",
+            "StyleSheet": "",
+            "Left2Right": "Yes",
+            "RegisterBy": ""
+          }
+        }
+      }
+    },
+    "forward-utf8-mdxbuilder-records": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "comparison": "exact_multiset"
+      }
+    },
+    "forward-utf8-mdxbuilder-xml": {
+      "status": "failed",
+      "error": "Metadata differs: {\"StyleSheet\": {\"expected\": \"1\\n<b class=\\\"sense\\\">& text\\n</b>\", \"actual\": \"1 <b class=\\\"sense\\\">& text </b>\"}}",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 32, in observe\n    checks[name] = {\"status\": \"passed\", \"detail\": action()}\n                                                  ^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 150, in <lambda>\n    step(f\"forward-{label}-xml\", lambda p=path: xml_metadata(p, fixture[\"metadata\"]))\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 111, in xml_metadata\n    return {**compare_metadata(expected, header[\"attributes\"]), \"header\": header}\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 47, in compare_metadata\n    require(not mismatches, \"Metadata differs: \" + json.dumps(mismatches, ensure_ascii=False))\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/patched_interop.py\", line 66, in require\n    raise AssertionError(message)\nAssertionError: Metadata differs: {\"StyleSheet\": {\"expected\": \"1\\n<b class=\\\"sense\\\">& text\\n</b>\", \"actual\": \"1 <b class=\\\"sense\\\">& text </b>\"}}\n"
+    },
+    "forward-utf8-mdxbuilder-python-metadata": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Format": "Html"
+        }
+      }
+    },
+    "reverse-utf8-mdxbuilder-write": {
+      "status": "passed",
+      "detail": {
+        "sha256": "03be46c8af7b3a2ce62225fb4c8131fd31ade3b70b5a379c8e679563b854f139",
+        "source_policy": "exact binary body plus encoded NUL; no TXT conversion"
+      }
+    },
+    "reverse-utf8-mdxbuilder-rust-records": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "comparison": "exact_multiset"
+      }
+    },
+    "reverse-utf8-mdxbuilder-python-records": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "comparison": "exact_multiset"
+      }
+    },
+    "reverse-utf8-mdxbuilder-rust-metadata": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>"
+        }
+      }
+    },
+    "reverse-utf8-mdxbuilder-xml": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>"
+        },
+        "header": {
+          "payload_bytes": 870,
+          "terminated": true,
+          "checksum_valid": true,
+          "attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "UTF-8",
+            "Format": "Html",
+            "Stripkey": "Yes",
+            "CreationDate": "2026-11-21",
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "KeyCaseSensitive": "No",
+            "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+            "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+            "DataSourceFormat": "106",
+            "StyleSheet": "",
+            "Left2Right": "Yes",
+            "RegisterBy": ""
+          }
+        }
+      }
+    },
+    "forward-utf16le-mdict-utils-records": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "comparison": "exact_multiset"
+      }
+    },
+    "forward-utf16le-mdict-utils-xml": {
+      "status": "failed",
+      "error": "Metadata differs: {\"StyleSheet\": {\"expected\": \"1\\n<b class=\\\"sense\\\">& text\\n</b>\", \"actual\": \"1 <b class=\\\"sense\\\">& text </b>\"}}",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 32, in observe\n    checks[name] = {\"status\": \"passed\", \"detail\": action()}\n                                                  ^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 150, in <lambda>\n    step(f\"forward-{label}-xml\", lambda p=path: xml_metadata(p, fixture[\"metadata\"]))\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 111, in xml_metadata\n    return {**compare_metadata(expected, header[\"attributes\"]), \"header\": header}\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 47, in compare_metadata\n    require(not mismatches, \"Metadata differs: \" + json.dumps(mismatches, ensure_ascii=False))\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/patched_interop.py\", line 66, in require\n    raise AssertionError(message)\nAssertionError: Metadata differs: {\"StyleSheet\": {\"expected\": \"1\\n<b class=\\\"sense\\\">& text\\n</b>\", \"actual\": \"1 <b class=\\\"sense\\\">& text </b>\"}}\n"
+    },
+    "forward-utf16le-mdict-utils-python-metadata": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Format": "Html"
+        }
+      }
+    },
+    "reverse-utf16le-mdict-utils-write": {
+      "status": "passed",
+      "detail": {
+        "sha256": "34abefedfba0019edac53ca06b638a98b83a545c2c49a9f2755ea29264dc3d1b",
+        "source_policy": "exact binary body plus encoded NUL; no TXT conversion"
+      }
+    },
+    "reverse-utf16le-mdict-utils-rust-records": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "comparison": "exact_multiset"
+      }
+    },
+    "reverse-utf16le-mdict-utils-python-records": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "comparison": "exact_multiset"
+      }
+    },
+    "reverse-utf16le-mdict-utils-rust-metadata": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>"
+        }
+      }
+    },
+    "reverse-utf16le-mdict-utils-xml": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>"
+        },
+        "header": {
+          "payload_bytes": 872,
+          "terminated": true,
+          "checksum_valid": true,
+          "attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "UTF-16",
+            "Format": "Html",
+            "Stripkey": "Yes",
+            "CreationDate": "2026-11-21",
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "KeyCaseSensitive": "No",
+            "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+            "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+            "DataSourceFormat": "106",
+            "StyleSheet": "",
+            "Left2Right": "Yes",
+            "RegisterBy": ""
+          }
+        }
+      }
+    },
+    "forward-utf16le-mdxbuilder-records": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "comparison": "exact_multiset"
+      }
+    },
+    "forward-utf16le-mdxbuilder-xml": {
+      "status": "failed",
+      "error": "Metadata differs: {\"StyleSheet\": {\"expected\": \"1\\n<b class=\\\"sense\\\">& text\\n</b>\", \"actual\": \"1 <b class=\\\"sense\\\">& text </b>\"}}",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 32, in observe\n    checks[name] = {\"status\": \"passed\", \"detail\": action()}\n                                                  ^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 150, in <lambda>\n    step(f\"forward-{label}-xml\", lambda p=path: xml_metadata(p, fixture[\"metadata\"]))\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 111, in xml_metadata\n    return {**compare_metadata(expected, header[\"attributes\"]), \"header\": header}\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 47, in compare_metadata\n    require(not mismatches, \"Metadata differs: \" + json.dumps(mismatches, ensure_ascii=False))\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/patched_interop.py\", line 66, in require\n    raise AssertionError(message)\nAssertionError: Metadata differs: {\"StyleSheet\": {\"expected\": \"1\\n<b class=\\\"sense\\\">& text\\n</b>\", \"actual\": \"1 <b class=\\\"sense\\\">& text </b>\"}}\n"
+    },
+    "forward-utf16le-mdxbuilder-python-metadata": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Format": "Html"
+        }
+      }
+    },
+    "reverse-utf16le-mdxbuilder-write": {
+      "status": "passed",
+      "detail": {
+        "sha256": "34abefedfba0019edac53ca06b638a98b83a545c2c49a9f2755ea29264dc3d1b",
+        "source_policy": "exact binary body plus encoded NUL; no TXT conversion"
+      }
+    },
+    "reverse-utf16le-mdxbuilder-rust-records": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "comparison": "exact_multiset"
+      }
+    },
+    "reverse-utf16le-mdxbuilder-python-records": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "comparison": "exact_multiset"
+      }
+    },
+    "reverse-utf16le-mdxbuilder-rust-metadata": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>"
+        }
+      }
+    },
+    "reverse-utf16le-mdxbuilder-xml": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>"
+        },
+        "header": {
+          "payload_bytes": 872,
+          "terminated": true,
+          "checksum_valid": true,
+          "attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "UTF-16",
+            "Format": "Html",
+            "Stripkey": "Yes",
+            "CreationDate": "2026-11-21",
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "KeyCaseSensitive": "No",
+            "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+            "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+            "DataSourceFormat": "106",
+            "StyleSheet": "",
+            "Left2Right": "Yes",
+            "RegisterBy": ""
+          }
+        }
+      }
+    },
+    "forward-big5-mdict-utils-records": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "comparison": "exact_multiset"
+      }
+    },
+    "forward-big5-mdict-utils-xml": {
+      "status": "failed",
+      "error": "Metadata differs: {\"StyleSheet\": {\"expected\": \"1\\n<b class=\\\"sense\\\">& text\\n</b>\", \"actual\": \"1 <b class=\\\"sense\\\">& text </b>\"}}",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 32, in observe\n    checks[name] = {\"status\": \"passed\", \"detail\": action()}\n                                                  ^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 150, in <lambda>\n    step(f\"forward-{label}-xml\", lambda p=path: xml_metadata(p, fixture[\"metadata\"]))\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 111, in xml_metadata\n    return {**compare_metadata(expected, header[\"attributes\"]), \"header\": header}\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 47, in compare_metadata\n    require(not mismatches, \"Metadata differs: \" + json.dumps(mismatches, ensure_ascii=False))\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/patched_interop.py\", line 66, in require\n    raise AssertionError(message)\nAssertionError: Metadata differs: {\"StyleSheet\": {\"expected\": \"1\\n<b class=\\\"sense\\\">& text\\n</b>\", \"actual\": \"1 <b class=\\\"sense\\\">& text </b>\"}}\n"
+    },
+    "forward-big5-mdict-utils-python-metadata": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Format": "Html"
+        }
+      }
+    },
+    "reverse-big5-mdict-utils-write": {
+      "status": "passed",
+      "detail": {
+        "sha256": "feddb4ff5054780f2ecd820c581835bb6582a3a03886d571b6f3adc9458c462f",
+        "source_policy": "exact binary body plus encoded NUL; no TXT conversion"
+      }
+    },
+    "reverse-big5-mdict-utils-rust-records": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "comparison": "exact_multiset"
+      }
+    },
+    "reverse-big5-mdict-utils-python-records": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "comparison": "exact_multiset"
+      }
+    },
+    "reverse-big5-mdict-utils-rust-metadata": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>"
+        }
+      }
+    },
+    "reverse-big5-mdict-utils-xml": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>"
+        },
+        "header": {
+          "payload_bytes": 868,
+          "terminated": true,
+          "checksum_valid": true,
+          "attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "BIG5",
+            "Format": "Html",
+            "Stripkey": "Yes",
+            "CreationDate": "2026-11-21",
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "KeyCaseSensitive": "No",
+            "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+            "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+            "DataSourceFormat": "106",
+            "StyleSheet": "",
+            "Left2Right": "Yes",
+            "RegisterBy": ""
+          }
+        }
+      }
+    },
+    "forward-big5-mdxbuilder-records": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "comparison": "exact_multiset"
+      }
+    },
+    "forward-big5-mdxbuilder-xml": {
+      "status": "failed",
+      "error": "Metadata differs: {\"StyleSheet\": {\"expected\": \"1\\n<b class=\\\"sense\\\">& text\\n</b>\", \"actual\": \"1 <b class=\\\"sense\\\">& text </b>\"}}",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 32, in observe\n    checks[name] = {\"status\": \"passed\", \"detail\": action()}\n                                                  ^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 150, in <lambda>\n    step(f\"forward-{label}-xml\", lambda p=path: xml_metadata(p, fixture[\"metadata\"]))\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 111, in xml_metadata\n    return {**compare_metadata(expected, header[\"attributes\"]), \"header\": header}\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 47, in compare_metadata\n    require(not mismatches, \"Metadata differs: \" + json.dumps(mismatches, ensure_ascii=False))\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/patched_interop.py\", line 66, in require\n    raise AssertionError(message)\nAssertionError: Metadata differs: {\"StyleSheet\": {\"expected\": \"1\\n<b class=\\\"sense\\\">& text\\n</b>\", \"actual\": \"1 <b class=\\\"sense\\\">& text </b>\"}}\n"
+    },
+    "forward-big5-mdxbuilder-python-metadata": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Format": "Html"
+        }
+      }
+    },
+    "reverse-big5-mdxbuilder-write": {
+      "status": "passed",
+      "detail": {
+        "sha256": "feddb4ff5054780f2ecd820c581835bb6582a3a03886d571b6f3adc9458c462f",
+        "source_policy": "exact binary body plus encoded NUL; no TXT conversion"
+      }
+    },
+    "reverse-big5-mdxbuilder-rust-records": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "comparison": "exact_multiset"
+      }
+    },
+    "reverse-big5-mdxbuilder-python-records": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "comparison": "exact_multiset"
+      }
+    },
+    "reverse-big5-mdxbuilder-rust-metadata": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>"
+        }
+      }
+    },
+    "reverse-big5-mdxbuilder-xml": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>"
+        },
+        "header": {
+          "payload_bytes": 868,
+          "terminated": true,
+          "checksum_valid": true,
+          "attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "BIG5",
+            "Format": "Html",
+            "Stripkey": "Yes",
+            "CreationDate": "2026-11-21",
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "KeyCaseSensitive": "No",
+            "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+            "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+            "DataSourceFormat": "106",
+            "StyleSheet": "",
+            "Left2Right": "Yes",
+            "RegisterBy": ""
+          }
+        }
+      }
+    },
+    "forward-gbk-mdict-utils-records": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "comparison": "exact_multiset"
+      }
+    },
+    "forward-gbk-mdict-utils-xml": {
+      "status": "failed",
+      "error": "Metadata differs: {\"StyleSheet\": {\"expected\": \"1\\n<b class=\\\"sense\\\">& text\\n</b>\", \"actual\": \"1 <b class=\\\"sense\\\">& text </b>\"}}",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 32, in observe\n    checks[name] = {\"status\": \"passed\", \"detail\": action()}\n                                                  ^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 150, in <lambda>\n    step(f\"forward-{label}-xml\", lambda p=path: xml_metadata(p, fixture[\"metadata\"]))\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 111, in xml_metadata\n    return {**compare_metadata(expected, header[\"attributes\"]), \"header\": header}\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 47, in compare_metadata\n    require(not mismatches, \"Metadata differs: \" + json.dumps(mismatches, ensure_ascii=False))\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/patched_interop.py\", line 66, in require\n    raise AssertionError(message)\nAssertionError: Metadata differs: {\"StyleSheet\": {\"expected\": \"1\\n<b class=\\\"sense\\\">& text\\n</b>\", \"actual\": \"1 <b class=\\\"sense\\\">& text </b>\"}}\n"
+    },
+    "forward-gbk-mdict-utils-python-metadata": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Format": "Html"
+        }
+      }
+    },
+    "reverse-gbk-mdict-utils-write": {
+      "status": "passed",
+      "detail": {
+        "sha256": "44ff1bcacd3ef02236b9c3bc14f09032de6c107834da8b96d5dd1f3f96d4c742",
+        "source_policy": "exact binary body plus encoded NUL; no TXT conversion"
+      }
+    },
+    "reverse-gbk-mdict-utils-rust-records": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "comparison": "exact_multiset"
+      }
+    },
+    "reverse-gbk-mdict-utils-python-records": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "comparison": "exact_multiset"
+      }
+    },
+    "reverse-gbk-mdict-utils-rust-metadata": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>"
+        }
+      }
+    },
+    "reverse-gbk-mdict-utils-xml": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>"
+        },
+        "header": {
+          "payload_bytes": 866,
+          "terminated": true,
+          "checksum_valid": true,
+          "attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "GBK",
+            "Format": "Html",
+            "Stripkey": "Yes",
+            "CreationDate": "2026-11-21",
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "KeyCaseSensitive": "No",
+            "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+            "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+            "DataSourceFormat": "106",
+            "StyleSheet": "",
+            "Left2Right": "Yes",
+            "RegisterBy": ""
+          }
+        }
+      }
+    },
+    "forward-gbk-mdxbuilder-records": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "comparison": "exact_multiset"
+      }
+    },
+    "forward-gbk-mdxbuilder-xml": {
+      "status": "failed",
+      "error": "Metadata differs: {\"StyleSheet\": {\"expected\": \"1\\n<b class=\\\"sense\\\">& text\\n</b>\", \"actual\": \"1 <b class=\\\"sense\\\">& text </b>\"}}",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 32, in observe\n    checks[name] = {\"status\": \"passed\", \"detail\": action()}\n                                                  ^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 150, in <lambda>\n    step(f\"forward-{label}-xml\", lambda p=path: xml_metadata(p, fixture[\"metadata\"]))\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 111, in xml_metadata\n    return {**compare_metadata(expected, header[\"attributes\"]), \"header\": header}\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 47, in compare_metadata\n    require(not mismatches, \"Metadata differs: \" + json.dumps(mismatches, ensure_ascii=False))\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/patched_interop.py\", line 66, in require\n    raise AssertionError(message)\nAssertionError: Metadata differs: {\"StyleSheet\": {\"expected\": \"1\\n<b class=\\\"sense\\\">& text\\n</b>\", \"actual\": \"1 <b class=\\\"sense\\\">& text </b>\"}}\n"
+    },
+    "forward-gbk-mdxbuilder-python-metadata": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Format": "Html"
+        }
+      }
+    },
+    "reverse-gbk-mdxbuilder-write": {
+      "status": "passed",
+      "detail": {
+        "sha256": "44ff1bcacd3ef02236b9c3bc14f09032de6c107834da8b96d5dd1f3f96d4c742",
+        "source_policy": "exact binary body plus encoded NUL; no TXT conversion"
+      }
+    },
+    "reverse-gbk-mdxbuilder-rust-records": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "comparison": "exact_multiset"
+      }
+    },
+    "reverse-gbk-mdxbuilder-python-records": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "comparison": "exact_multiset"
+      }
+    },
+    "reverse-gbk-mdxbuilder-rust-metadata": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>"
+        }
+      }
+    },
+    "reverse-gbk-mdxbuilder-xml": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>"
+        },
+        "header": {
+          "payload_bytes": 866,
+          "terminated": true,
+          "checksum_valid": true,
+          "attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "GBK",
+            "Format": "Html",
+            "Stripkey": "Yes",
+            "CreationDate": "2026-11-21",
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "KeyCaseSensitive": "No",
+            "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+            "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+            "DataSourceFormat": "106",
+            "StyleSheet": "",
+            "Left2Right": "Yes",
+            "RegisterBy": ""
+          }
+        }
+      }
+    },
+    "forward-gb18030-mdict-utils-records": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "comparison": "exact_multiset"
+      }
+    },
+    "forward-gb18030-mdict-utils-xml": {
+      "status": "failed",
+      "error": "Metadata differs: {\"StyleSheet\": {\"expected\": \"1\\n<b class=\\\"sense\\\">& text\\n</b>\", \"actual\": \"1 <b class=\\\"sense\\\">& text </b>\"}}",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 32, in observe\n    checks[name] = {\"status\": \"passed\", \"detail\": action()}\n                                                  ^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 150, in <lambda>\n    step(f\"forward-{label}-xml\", lambda p=path: xml_metadata(p, fixture[\"metadata\"]))\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 111, in xml_metadata\n    return {**compare_metadata(expected, header[\"attributes\"]), \"header\": header}\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 47, in compare_metadata\n    require(not mismatches, \"Metadata differs: \" + json.dumps(mismatches, ensure_ascii=False))\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/patched_interop.py\", line 66, in require\n    raise AssertionError(message)\nAssertionError: Metadata differs: {\"StyleSheet\": {\"expected\": \"1\\n<b class=\\\"sense\\\">& text\\n</b>\", \"actual\": \"1 <b class=\\\"sense\\\">& text </b>\"}}\n"
+    },
+    "forward-gb18030-mdict-utils-python-metadata": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Format": "Html"
+        }
+      }
+    },
+    "reverse-gb18030-mdict-utils-write": {
+      "status": "unsupported",
+      "error": "mdict-utils 1.3.14 writer rejects GB18030; reverse interoperability is unproven"
+    },
+    "reverse-gb18030-mdict-utils-rust-records": {
+      "status": "blocked",
+      "dependencies": [
+        "reverse-gb18030-mdict-utils-write"
+      ]
+    },
+    "reverse-gb18030-mdict-utils-python-records": {
+      "status": "blocked",
+      "dependencies": [
+        "reverse-gb18030-mdict-utils-write"
+      ]
+    },
+    "reverse-gb18030-mdict-utils-rust-metadata": {
+      "status": "blocked",
+      "dependencies": [
+        "reverse-gb18030-mdict-utils-write"
+      ]
+    },
+    "reverse-gb18030-mdict-utils-xml": {
+      "status": "blocked",
+      "dependencies": [
+        "reverse-gb18030-mdict-utils-write"
+      ]
+    },
+    "forward-gb18030-mdxbuilder-records": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "comparison": "exact_multiset"
+      }
+    },
+    "forward-gb18030-mdxbuilder-xml": {
+      "status": "failed",
+      "error": "Metadata differs: {\"StyleSheet\": {\"expected\": \"1\\n<b class=\\\"sense\\\">& text\\n</b>\", \"actual\": \"1 <b class=\\\"sense\\\">& text </b>\"}}",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 32, in observe\n    checks[name] = {\"status\": \"passed\", \"detail\": action()}\n                                                  ^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 150, in <lambda>\n    step(f\"forward-{label}-xml\", lambda p=path: xml_metadata(p, fixture[\"metadata\"]))\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 111, in xml_metadata\n    return {**compare_metadata(expected, header[\"attributes\"]), \"header\": header}\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/metadata_codecs.py\", line 47, in compare_metadata\n    require(not mismatches, \"Metadata differs: \" + json.dumps(mismatches, ensure_ascii=False))\n  File \"/home/runner/work/MdictStudioPro-Rust/MdictStudioPro-Rust/scripts/patched_interop.py\", line 66, in require\n    raise AssertionError(message)\nAssertionError: Metadata differs: {\"StyleSheet\": {\"expected\": \"1\\n<b class=\\\"sense\\\">& text\\n</b>\", \"actual\": \"1 <b class=\\\"sense\\\">& text </b>\"}}\n"
+    },
+    "forward-gb18030-mdxbuilder-python-metadata": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Format": "Html"
+        }
+      }
+    },
+    "reverse-gb18030-mdxbuilder-write": {
+      "status": "unsupported",
+      "error": "mdict-utils 1.3.14 writer rejects GB18030; reverse interoperability is unproven"
+    },
+    "reverse-gb18030-mdxbuilder-rust-records": {
+      "status": "blocked",
+      "dependencies": [
+        "reverse-gb18030-mdxbuilder-write"
+      ]
+    },
+    "reverse-gb18030-mdxbuilder-python-records": {
+      "status": "blocked",
+      "dependencies": [
+        "reverse-gb18030-mdxbuilder-write"
+      ]
+    },
+    "reverse-gb18030-mdxbuilder-rust-metadata": {
+      "status": "blocked",
+      "dependencies": [
+        "reverse-gb18030-mdxbuilder-write"
+      ]
+    },
+    "reverse-gb18030-mdxbuilder-xml": {
+      "status": "blocked",
+      "dependencies": [
+        "reverse-gb18030-mdxbuilder-write"
+      ]
+    },
+    "mdd-python-records": {
+      "status": "passed",
+      "detail": {
+        "records": 3,
+        "comparison": "exact_multiset"
+      }
+    },
+    "mdd-xml-metadata": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Resources 中文 العربية & \"quotes\"",
+          "Description": "<p>Fonts & images</p>"
+        },
+        "header": {
+          "payload_bytes": 434,
+          "terminated": true,
+          "checksum_valid": true,
+          "attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "StripKey": "No",
+            "Description": "<p>Fonts & images</p>",
+            "Title": "Resources 中文 العربية & \"quotes\""
+          }
+        }
+      }
+    },
+    "mdd-python-metadata": {
+      "status": "passed",
+      "detail": {
+        "attributes": {
+          "Title": "Resources 中文 العربية & \"quotes\"",
+          "Description": "<p>Fonts & images</p>"
+        }
+      }
+    }
+  },
+  "not_proven": [
+    "native_readers",
+    "all_codepoint_mapping_equivalence",
+    "source_file_decoding",
+    "large_files",
+    "non_C_locale",
+    "stylesheet_rendering"
+  ],
+  "source_sha256": {
+    "baseline/codec-cases.json": "ecbde455eda3d9726c7ae8633c07eec62acbb64a5ece735c0b692c71e09552bb",
+    "Cargo.lock": "b1993e21cd4be1fd4937914bb7458cefb730e21927fbe058046e4aee3bd81e35",
+    "experiments/legacy-sort/Cargo.lock": "832527875540ca97c9af5ee227c0f38d3f03eed9c16c26a0c63fed51285f7a8e",
+    "baseline/legacy/MdictStudio.py": "387fadfc20b1936827b58f40f36fa9f09cc34b43ca984be81ce4eaa1c592e79b",
+    "scripts/patched_interop.py": "0f4b8670b59246c202a140f9981d8a9713e176102cd7d01d83214fc435ec4cb1",
+    "experiments/legacy-sort/src/main.rs": "da255961b02bf7f3ffaf44436a314359b40f92fa73fd3ce70aa09e62ce30e398",
+    "experiments/legacy-sort/src/lib.rs": "df3d1f673203cf949ff5814dad8d0940bfa877281188d71666145c1d3d032448",
+    "experiments/legacy-sort/src/codec.rs": "9b611b9c35626117fff31eca526bcd7f8ddd63ab18faee0b718c23efa718423c",
+    "scripts/metadata_codecs.py": "0574b3537309257ae33e13d2b0d3efe147776a3a5f40ed702ba8f46edae5378a",
+    "vendor/mdictlib-0.2.8-studio-sort-v3/src/write/mod.rs": "0fc384d91a668b4c0d1b0b960f9a5253ee14cd934a532b73a151450bafa6dff5",
+    "vendor/mdictlib-0.2.8-studio-sort-v3/src/write/studio_legacy_sort.rs": "b4591373d3479923c6bcacedaee4044099b8e68dc5fd7ac8715ffaa7fa497fca"
+  },
+  "rust_report": "rust/rust-codec-report.json",
+  "artifact_sha256": {
+    "python-utf16le-mdxbuilder.mdx": "34abefedfba0019edac53ca06b638a98b83a545c2c49a9f2755ea29264dc3d1b",
+    "python-utf8-mdxbuilder.mdx": "03be46c8af7b3a2ce62225fb4c8131fd31ade3b70b5a379c8e679563b854f139",
+    "python-big5-mdict-utils.mdx": "feddb4ff5054780f2ecd820c581835bb6582a3a03886d571b6f3adc9458c462f",
+    "python-gbk-mdict-utils.mdx": "44ff1bcacd3ef02236b9c3bc14f09032de6c107834da8b96d5dd1f3f96d4c742",
+    "python-utf16le-mdict-utils.mdx": "34abefedfba0019edac53ca06b638a98b83a545c2c49a9f2755ea29264dc3d1b",
+    "python-gbk-mdxbuilder.mdx": "44ff1bcacd3ef02236b9c3bc14f09032de6c107834da8b96d5dd1f3f96d4c742",
+    "python-utf8-mdict-utils.mdx": "03be46c8af7b3a2ce62225fb4c8131fd31ade3b70b5a379c8e679563b854f139",
+    "python-big5-mdxbuilder.mdx": "feddb4ff5054780f2ecd820c581835bb6582a3a03886d571b6f3adc9458c462f",
+    "rust/gbk-mdict-utils.mdx": "eadf2957b27411210178d7f8bc7412f259c05793cabb10d8c7a8b9a2e07044e2",
+    "rust/big5-mdict-utils.mdx": "8fbd83e51cefee56a0a7e5a32edabd8ed15f3448cc285fd6cd5c6d1c02f036fe",
+    "rust/utf8-mdxbuilder.mdx": "4da907f12ceae5c5b1f87f5b851f8652220de9f27575c3dcf601f8c4925d0aa0",
+    "rust/utf16le-mdict-utils.mdx": "59a120d1e8523dbd734091e2351a9da07e342933fdd35dcee5ecf7dabd136b70",
+    "rust/unicode-resources.mdd": "bf085659098ea5e08064846e03c7c8b3c9afb17ceb38b448c0a8a63e93f60cec",
+    "rust/gb18030-mdict-utils.mdx": "2d927dbfd37c59eda2a10abc79e4a554d45797c920f0ae4fac4b3a0f9492fbf8",
+    "rust/gb18030-mdxbuilder.mdx": "2d927dbfd37c59eda2a10abc79e4a554d45797c920f0ae4fac4b3a0f9492fbf8",
+    "rust/utf16le-mdxbuilder.mdx": "59a120d1e8523dbd734091e2351a9da07e342933fdd35dcee5ecf7dabd136b70",
+    "rust/utf8-mdict-utils.mdx": "4da907f12ceae5c5b1f87f5b851f8652220de9f27575c3dcf601f8c4925d0aa0",
+    "rust/big5-mdxbuilder.mdx": "8fbd83e51cefee56a0a7e5a32edabd8ed15f3448cc285fd6cd5c6d1c02f036fe",
+    "rust/gbk-mdxbuilder.mdx": "eadf2957b27411210178d7f8bc7412f259c05793cabb10d8c7a8b9a2e07044e2"
+  },
+  "counts": {
+    "passed": 91,
+    "failed": 10,
+    "unsupported": 2,
+    "blocked": 8
+  }
+}
