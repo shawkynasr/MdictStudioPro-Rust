@@ -1,0 +1,13 @@
+{
+  "source":"Read-only local structural audit of user-attached dictionaries",
+  "files":{"structural-audit.json":"193fa493a84ae050d55750aa0ff597dd5b3f21a4c24702ec0c351d310e38b858"},
+  "auditor_sha256":"0eb36ddcb0fa2721c0de7b5378b7614c49cf613de0dbe2ee1fc3f2c4d3f54203",
+  "input_sha256":{
+    "CC-CEDICT 092026.mdx":"d57bcbc1169e7eabbe552e069bee64fa5599d5ff4e37d78f1caf00bfe24a0eca",
+    "CC-CEDICT 092026.mdd":"aa441e386c9e4aa1e04a464726061edd80f7f801eb8e2c302114eb25df24ad72",
+    "almaanyEnAr-ArEn.mdx":"098e8333fc0afc758a1c90160922221894dec6d4631a615bbf62e433b34f8376",
+    "新华成语词典（第2版）.mdx":"97914398293a71f5cadf5852b8df4f35e4453237692bce9b50bd46ac0393be1c"
+  },
+  "MDX_records":296110,"MDD_resources":17,"originals_modified":false,
+  "native_rendering":"NOT_RUN","Rust_comparison":"NOT_RUN","mdict_utils":"unavailable in this environment"
+}

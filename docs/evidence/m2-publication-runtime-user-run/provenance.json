@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-05",
+  "files": {
+    "m2-publication-runtime-report.json": "1ffeb074d6fd0352dfe81cbc9af8e9b1d34c7aed128b342295abb9c861a292c1"
+  },
+  "source_snapshots": {
+    "qualified/m2/publication-runtime/Cargo.toml": "a73fc2877d36759726767dc76d7fe8654aac1f4a10c19b32d5bfc2eaacaec7b8",
+    "qualified/m2/publication-runtime/src/lib.rs": "6530264fd990f80540226799584d861795233435bcc24cab67b38385cbc43c0c",
+    "qualified/m2/publication-runtime/src/main.rs": "0fae16d4a537e44ad8eb2d10eedd19f9f22fb77980fd7b85bfd69067ac393463",
+    "qualified/m2/publication-runtime/src/runner.rs": "3dc3ef04f23e2b35da25a47296d5c0218407c01e1a0d25bac592eb146ce2e6cc",
+    "qualified/m2/publication-runtime/src/tests.rs": "909922519029a4e54b93b4e509b052421ff060ee977de1821f8570f2fde17a7e",
+    "qualified/scripts/m2_publication_runtime.py": "e62d1a1e7ad138e20b3e66f8e6bf26ce4ab818b2ef29c3df997d0a896b9cce11",
+    "qualified/scripts/publication_runtime_lock.py": "d099fe9159b77e5b624323295a60cb4fe9825f1b193d0038fa58fff99eb22fbf",
+    "qualified/scripts/test_m2_publication_runtime.py": "540e9ce26f56130ee2e6719ef45286a132f2a0da7e2611f7cc1d23792d7e4d5b",
+    "qualified/m2/publication-runtime/Cargo.lock": "42579c03c1b6354bb0d82a19b94c10df7eeb43fd40557851a9b76f2ecb35357c"
+  },
+  "report_library_file_id": "libfile_4da27843ebd48191a9ea59076625d70c",
+  "result": "m2_shared_larger_publication_runtime_first_gate_passed_converter_sizing_pending",
+  "review_summary": {
+    "wire_records_recomputed": 196608,
+    "export_hashes_recomputed": 4,
+    "extracted_file_hashes_recomputed": 4,
+    "controller_exchanges": 3331,
+    "failed": 8,
+    "succeeded": 9,
+    "cancelled": 16,
+    "API_refusals": 6,
+    "reader_pages": 2,
+    "scenarios": 2,
+    "max_observed_RSS_bytes": 108470272,
+    "review": "reported recipe digests, export/extraction hashes, controller states and logical ledgers recomputed; actual output files and successful Rust test stdout not attached"
+  },
+  "assessment": "Accepted first shared larger-publication-runtime gate. Source-bound Rust test/build receipts and two controller scenarios passed: 9 successful publications, 8 expected failures, 16 precancelled jobs and 6 expected API refusals. Reviewed 3331 exchanges, recomputed recipe digests for 196608 reported physical records plus four export and four extraction file hashes. Reader-plus-packing and reader-plus-export admission was observed in both scenarios; all final reservations, handles and retained reader reply bytes were zero. Maximum RSS 108470272 bytes (103.45 MiB rounded). All 190 protected sources and nine new source identities match; 66 packages. First E0223 failure remains retained.",
+  "successful_Rust_test_stdout_attached": false,
+  "output_files_attached": false,
+  "note": "No actual user output files or successful Rust test stdout were attached. Full wire decoding, input identity and stage cleanup were checked by the exact-source-bound Mac harness. Review separately recomputed reported recipe digests/hashes, controller state transitions and logical reservation arithmetic. Successful test command covers the 13 registered source-bound tests; individual test output was not inspected.",
+  "not_qualified": [
+    "M2 completion",
+    "all candidate cap combinations",
+    "hard process memory/disk enforcement",
+    "streaming dictionary writer",
+    "larger converter sizing/admission",
+    "index-building admission",
+    "representative real-input pipelines",
+    "GUI and additional-platform runtime qualification"
+  ]
+}

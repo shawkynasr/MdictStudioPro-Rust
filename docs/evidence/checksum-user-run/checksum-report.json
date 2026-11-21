@@ -1,0 +1,530 @@
+{
+  "status": "strict_checksum_matrix_and_real_scans_passed_M1_open",
+  "engine_revision": 6,
+  "checksum_policy": "Verify",
+  "native_readers": "NOT_RUN_DO_NOT_IMPORT",
+  "checks": {
+    "mdx-valid": {
+      "status": "passed",
+      "verify": {
+        "checksum_policy": "Verify",
+        "diagnostic_fingerprint_fnv1a64": "fd096e19a38160fa",
+        "payload_bytes": 65536,
+        "records": 128,
+        "scope": "all physical keys and payloads materialized; fingerprint is non-cryptographic",
+        "status": "validated"
+      },
+      "skip": {
+        "checksum_policy": "Skip",
+        "diagnostic_fingerprint_fnv1a64": "fd096e19a38160fa",
+        "payload_bytes": 65536,
+        "records": 128,
+        "scope": "all physical keys and payloads materialized; fingerprint is non-cryptographic",
+        "status": "validated"
+      }
+    },
+    "mdx-xml_checksum": {
+      "status": "passed_strict_rejection",
+      "mutated_offset": 438,
+      "verify": {
+        "actual": 504383803,
+        "checksum_policy": "Verify",
+        "context": "header xml",
+        "error": "checksum mismatch for header xml: expected 0x1e10493a, got 0x1e10493b",
+        "error_debug": "ChecksumMismatch { context: \"header xml\", expected: 504383802, actual: 504383803 }",
+        "error_kind": "ChecksumMismatch",
+        "expected": 504383802,
+        "phase": "open",
+        "status": "rejected"
+      },
+      "skip": {
+        "checksum_policy": "Skip",
+        "diagnostic_fingerprint_fnv1a64": "fd096e19a38160fa",
+        "payload_bytes": 65536,
+        "records": 128,
+        "scope": "all physical keys and payloads materialized; fingerprint is non-cryptographic",
+        "status": "validated"
+      },
+      "independent_error": "XML header checksum mismatch"
+    },
+    "mdx-key_header_checksum": {
+      "status": "passed_strict_rejection",
+      "mutated_offset": 482,
+      "verify": {
+        "actual": 516031053,
+        "checksum_policy": "Verify",
+        "context": "keyword section header",
+        "error": "checksum mismatch for keyword section header: expected 0x1fc2024d, got 0x1ec2024d",
+        "error_debug": "ChecksumMismatch { context: \"keyword section header\", expected: 532808269, actual: 516031053 }",
+        "error_kind": "ChecksumMismatch",
+        "expected": 532808269,
+        "phase": "open",
+        "status": "rejected"
+      },
+      "skip": {
+        "checksum_policy": "Skip",
+        "diagnostic_fingerprint_fnv1a64": "fd096e19a38160fa",
+        "payload_bytes": 65536,
+        "records": 128,
+        "scope": "all physical keys and payloads materialized; fingerprint is non-cryptographic",
+        "status": "validated"
+      },
+      "independent_error": "Key-section checksum mismatch"
+    },
+    "mdx-key_info_checksum": {
+      "status": "passed_strict_rejection",
+      "mutated_offset": 490,
+      "verify": {
+        "actual": 2963104734,
+        "checksum_policy": "Verify",
+        "context": "keyword index block",
+        "error": "checksum mismatch for keyword index block: expected 0xb19d63de, got 0xb09d63de",
+        "error_debug": "ChecksumMismatch { context: \"keyword index block\", expected: 2979881950, actual: 2963104734 }",
+        "error_kind": "ChecksumMismatch",
+        "expected": 2979881950,
+        "phase": "open",
+        "status": "rejected"
+      },
+      "skip": {
+        "checksum_policy": "Skip",
+        "diagnostic_fingerprint_fnv1a64": "fd096e19a38160fa",
+        "payload_bytes": 65536,
+        "records": 128,
+        "scope": "all physical keys and payloads materialized; fingerprint is non-cryptographic",
+        "status": "validated"
+      },
+      "independent_error": "Block ADLER32 mismatch"
+    },
+    "mdx-first_key_checksum": {
+      "status": "passed_strict_rejection",
+      "mutated_offset": 639,
+      "verify": {
+        "actual": 3240240727,
+        "checksum_policy": "Verify",
+        "context": "key block",
+        "error": "checksum mismatch for key block: expected 0xc0222657, got 0xc1222657",
+        "error_debug": "ChecksumMismatch { context: \"key block\", expected: 3223463511, actual: 3240240727 }",
+        "error_kind": "ChecksumMismatch",
+        "expected": 3223463511,
+        "phase": "keys",
+        "status": "rejected"
+      },
+      "skip": {
+        "checksum_policy": "Skip",
+        "diagnostic_fingerprint_fnv1a64": "fd096e19a38160fa",
+        "payload_bytes": 65536,
+        "records": 128,
+        "scope": "all physical keys and payloads materialized; fingerprint is non-cryptographic",
+        "status": "validated"
+      },
+      "independent_error": "Block ADLER32 mismatch"
+    },
+    "mdx-last_key_checksum": {
+      "status": "passed_strict_rejection",
+      "mutated_offset": 1716,
+      "verify": {
+        "actual": 1232020029,
+        "checksum_policy": "Verify",
+        "context": "key block",
+        "error": "checksum mismatch for key block: expected 0x486f223d, got 0x496f223d",
+        "error_debug": "ChecksumMismatch { context: \"key block\", expected: 1215242813, actual: 1232020029 }",
+        "error_kind": "ChecksumMismatch",
+        "expected": 1215242813,
+        "phase": "records",
+        "status": "rejected"
+      },
+      "skip": {
+        "checksum_policy": "Skip",
+        "diagnostic_fingerprint_fnv1a64": "fd096e19a38160fa",
+        "payload_bytes": 65536,
+        "records": 128,
+        "scope": "all physical keys and payloads materialized; fingerprint is non-cryptographic",
+        "status": "validated"
+      },
+      "independent_error": "Block ADLER32 mismatch"
+    },
+    "mdx-first_record_checksum": {
+      "status": "passed_strict_rejection",
+      "mutated_offset": 2132,
+      "verify": {
+        "actual": 3426269736,
+        "checksum_policy": "Verify",
+        "context": "record block",
+        "error": "checksum mismatch for record block: expected 0xcd38ba28, got 0xcc38ba28",
+        "error_debug": "ChecksumMismatch { context: \"record block\", expected: 3443046952, actual: 3426269736 }",
+        "error_kind": "ChecksumMismatch",
+        "expected": 3443046952,
+        "phase": "records",
+        "status": "rejected"
+      },
+      "skip": {
+        "checksum_policy": "Skip",
+        "diagnostic_fingerprint_fnv1a64": "fd096e19a38160fa",
+        "payload_bytes": 65536,
+        "records": 128,
+        "scope": "all physical keys and payloads materialized; fingerprint is non-cryptographic",
+        "status": "validated"
+      },
+      "independent_error": "Block ADLER32 mismatch"
+    },
+    "mdx-last_record_checksum": {
+      "status": "passed_strict_rejection",
+      "mutated_offset": 51633,
+      "verify": {
+        "actual": 1087657223,
+        "checksum_policy": "Verify",
+        "context": "record block",
+        "error": "checksum mismatch for record block: expected 0x41d45507, got 0x40d45507",
+        "error_debug": "ChecksumMismatch { context: \"record block\", expected: 1104434439, actual: 1087657223 }",
+        "error_kind": "ChecksumMismatch",
+        "expected": 1104434439,
+        "phase": "records",
+        "status": "rejected"
+      },
+      "skip": {
+        "checksum_policy": "Skip",
+        "diagnostic_fingerprint_fnv1a64": "fd096e19a38160fa",
+        "payload_bytes": 65536,
+        "records": 128,
+        "scope": "all physical keys and payloads materialized; fingerprint is non-cryptographic",
+        "status": "validated"
+      },
+      "independent_error": "Block ADLER32 mismatch"
+    },
+    "mdx-last_record_zlib_trailer": {
+      "status": "passed_strict_rejection",
+      "mutated_offset": 52443,
+      "verify": {
+        "checksum_policy": "Verify",
+        "error": "invalid data: invalid or oversized zlib block in record block: Adler32Mismatch",
+        "error_debug": "InvalidData(\"invalid or oversized zlib block in record block: Adler32Mismatch\")",
+        "error_kind": "InvalidData",
+        "phase": "records",
+        "status": "rejected"
+      },
+      "skip": {
+        "checksum_policy": "Skip",
+        "diagnostic_fingerprint_fnv1a64": "fd096e19a38160fa",
+        "payload_bytes": 65536,
+        "records": 128,
+        "scope": "all physical keys and payloads materialized; fingerprint is non-cryptographic",
+        "status": "validated"
+      },
+      "independent_error": "Error -3 while decompressing data: incorrect data check"
+    },
+    "mdx-strict-rebuild-integration": {
+      "status": "passed",
+      "clean_source_and_output_verified": true,
+      "corrupted_source_refused_without_publication": true
+    },
+    "mdd-valid": {
+      "status": "passed",
+      "verify": {
+        "checksum_policy": "Verify",
+        "diagnostic_fingerprint_fnv1a64": "dd9492c999260f52",
+        "payload_bytes": 65536,
+        "records": 16,
+        "scope": "all physical keys and payloads materialized; fingerprint is non-cryptographic",
+        "status": "validated"
+      },
+      "skip": {
+        "checksum_policy": "Skip",
+        "diagnostic_fingerprint_fnv1a64": "dd9492c999260f52",
+        "payload_bytes": 65536,
+        "records": 16,
+        "scope": "all physical keys and payloads materialized; fingerprint is non-cryptographic",
+        "status": "validated"
+      }
+    },
+    "mdd-xml_checksum": {
+      "status": "passed_strict_rejection",
+      "mutated_offset": 364,
+      "verify": {
+        "actual": 2094284232,
+        "checksum_policy": "Verify",
+        "context": "header xml",
+        "error": "checksum mismatch for header xml: expected 0x7cd43dc9, got 0x7cd43dc8",
+        "error_debug": "ChecksumMismatch { context: \"header xml\", expected: 2094284233, actual: 2094284232 }",
+        "error_kind": "ChecksumMismatch",
+        "expected": 2094284233,
+        "phase": "open",
+        "status": "rejected"
+      },
+      "skip": {
+        "checksum_policy": "Skip",
+        "diagnostic_fingerprint_fnv1a64": "dd9492c999260f52",
+        "payload_bytes": 65536,
+        "records": 16,
+        "scope": "all physical keys and payloads materialized; fingerprint is non-cryptographic",
+        "status": "validated"
+      },
+      "independent_error": "XML header checksum mismatch"
+    },
+    "mdd-key_header_checksum": {
+      "status": "passed_strict_rejection",
+      "mutated_offset": 408,
+      "verify": {
+        "actual": 167117084,
+        "checksum_policy": "Verify",
+        "context": "keyword section header",
+        "error": "checksum mismatch for keyword section header: expected 0x08f6011c, got 0x09f6011c",
+        "error_debug": "ChecksumMismatch { context: \"keyword section header\", expected: 150339868, actual: 167117084 }",
+        "error_kind": "ChecksumMismatch",
+        "expected": 150339868,
+        "phase": "open",
+        "status": "rejected"
+      },
+      "skip": {
+        "checksum_policy": "Skip",
+        "diagnostic_fingerprint_fnv1a64": "dd9492c999260f52",
+        "payload_bytes": 65536,
+        "records": 16,
+        "scope": "all physical keys and payloads materialized; fingerprint is non-cryptographic",
+        "status": "validated"
+      },
+      "independent_error": "Key-section checksum mismatch"
+    },
+    "mdd-key_info_checksum": {
+      "status": "passed_strict_rejection",
+      "mutated_offset": 416,
+      "verify": {
+        "actual": 2418362592,
+        "checksum_policy": "Verify",
+        "context": "keyword index block",
+        "error": "checksum mismatch for keyword index block: expected 0x912548e0, got 0x902548e0",
+        "error_debug": "ChecksumMismatch { context: \"keyword index block\", expected: 2435139808, actual: 2418362592 }",
+        "error_kind": "ChecksumMismatch",
+        "expected": 2435139808,
+        "phase": "open",
+        "status": "rejected"
+      },
+      "skip": {
+        "checksum_policy": "Skip",
+        "diagnostic_fingerprint_fnv1a64": "dd9492c999260f52",
+        "payload_bytes": 65536,
+        "records": 16,
+        "scope": "all physical keys and payloads materialized; fingerprint is non-cryptographic",
+        "status": "validated"
+      },
+      "independent_error": "Block ADLER32 mismatch"
+    },
+    "mdd-first_key_checksum": {
+      "status": "passed_strict_rejection",
+      "mutated_offset": 530,
+      "verify": {
+        "actual": 3669435295,
+        "checksum_policy": "Verify",
+        "context": "key block",
+        "error": "checksum mismatch for key block: expected 0xdbb7239f, got 0xdab7239f",
+        "error_debug": "ChecksumMismatch { context: \"key block\", expected: 3686212511, actual: 3669435295 }",
+        "error_kind": "ChecksumMismatch",
+        "expected": 3686212511,
+        "phase": "keys",
+        "status": "rejected"
+      },
+      "skip": {
+        "checksum_policy": "Skip",
+        "diagnostic_fingerprint_fnv1a64": "dd9492c999260f52",
+        "payload_bytes": 65536,
+        "records": 16,
+        "scope": "all physical keys and payloads materialized; fingerprint is non-cryptographic",
+        "status": "validated"
+      },
+      "independent_error": "Block ADLER32 mismatch"
+    },
+    "mdd-last_key_checksum": {
+      "status": "passed_strict_rejection",
+      "mutated_offset": 793,
+      "verify": {
+        "actual": 2918000299,
+        "checksum_policy": "Verify",
+        "context": "key block",
+        "error": "checksum mismatch for key block: expected 0xaced26ab, got 0xaded26ab",
+        "error_debug": "ChecksumMismatch { context: \"key block\", expected: 2901223083, actual: 2918000299 }",
+        "error_kind": "ChecksumMismatch",
+        "expected": 2901223083,
+        "phase": "records",
+        "status": "rejected"
+      },
+      "skip": {
+        "checksum_policy": "Skip",
+        "diagnostic_fingerprint_fnv1a64": "dd9492c999260f52",
+        "payload_bytes": 65536,
+        "records": 16,
+        "scope": "all physical keys and payloads materialized; fingerprint is non-cryptographic",
+        "status": "validated"
+      },
+      "independent_error": "Block ADLER32 mismatch"
+    },
+    "mdd-first_record_checksum": {
+      "status": "passed_strict_rejection",
+      "mutated_offset": 1172,
+      "verify": {
+        "actual": 4279036273,
+        "checksum_policy": "Verify",
+        "context": "record block",
+        "error": "checksum mismatch for record block: expected 0xfe0ce971, got 0xff0ce971",
+        "error_debug": "ChecksumMismatch { context: \"record block\", expected: 4262259057, actual: 4279036273 }",
+        "error_kind": "ChecksumMismatch",
+        "expected": 4262259057,
+        "phase": "records",
+        "status": "rejected"
+      },
+      "skip": {
+        "checksum_policy": "Skip",
+        "diagnostic_fingerprint_fnv1a64": "dd9492c999260f52",
+        "payload_bytes": 65536,
+        "records": 16,
+        "scope": "all physical keys and payloads materialized; fingerprint is non-cryptographic",
+        "status": "validated"
+      },
+      "independent_error": "Block ADLER32 mismatch"
+    },
+    "mdd-last_record_checksum": {
+      "status": "passed_strict_rejection",
+      "mutated_offset": 62897,
+      "verify": {
+        "actual": 951514294,
+        "checksum_policy": "Verify",
+        "context": "record block",
+        "error": "checksum mismatch for record block: expected 0x39b6f4b6, got 0x38b6f4b6",
+        "error_debug": "ChecksumMismatch { context: \"record block\", expected: 968291510, actual: 951514294 }",
+        "error_kind": "ChecksumMismatch",
+        "expected": 968291510,
+        "phase": "records",
+        "status": "rejected"
+      },
+      "skip": {
+        "checksum_policy": "Skip",
+        "diagnostic_fingerprint_fnv1a64": "dd9492c999260f52",
+        "payload_bytes": 65536,
+        "records": 16,
+        "scope": "all physical keys and payloads materialized; fingerprint is non-cryptographic",
+        "status": "validated"
+      },
+      "independent_error": "Block ADLER32 mismatch"
+    },
+    "mdd-last_record_zlib_trailer": {
+      "status": "passed_strict_rejection",
+      "mutated_offset": 67007,
+      "verify": {
+        "checksum_policy": "Verify",
+        "error": "invalid data: invalid or oversized zlib block in record block: Adler32Mismatch",
+        "error_debug": "InvalidData(\"invalid or oversized zlib block in record block: Adler32Mismatch\")",
+        "error_kind": "InvalidData",
+        "phase": "records",
+        "status": "rejected"
+      },
+      "skip": {
+        "checksum_policy": "Skip",
+        "diagnostic_fingerprint_fnv1a64": "dd9492c999260f52",
+        "payload_bytes": 65536,
+        "records": 16,
+        "scope": "all physical keys and payloads materialized; fingerprint is non-cryptographic",
+        "status": "validated"
+      },
+      "independent_error": "Error -3 while decompressing data: incorrect data check"
+    },
+    "mdd-strict-rebuild-integration": {
+      "status": "passed",
+      "clean_source_and_output_verified": true,
+      "corrupted_source_refused_without_publication": true
+    }
+  },
+  "real_cases": [
+    {
+      "id": "cc-cedict-mdx",
+      "path": "/Users/shawky/Downloads/mdict-studio-m0-m1/real-corpus-inputs/CC-CEDICT 092026.mdx",
+      "source_sha256": "d57bcbc1169e7eabbe552e069bee64fa5599d5ff4e37d78f1caf00bfe24a0eca",
+      "result": {
+        "checksum_policy": "Verify",
+        "diagnostic_fingerprint_fnv1a64": "feba56f716d00140",
+        "payload_bytes": 73532159,
+        "records": 202884,
+        "scope": "all physical keys and payloads materialized; fingerprint is non-cryptographic",
+        "status": "validated"
+      }
+    },
+    {
+      "id": "cc-cedict-mdd",
+      "path": "/Users/shawky/Downloads/mdict-studio-m0-m1/real-corpus-inputs/CC-CEDICT 092026.mdd",
+      "source_sha256": "aa441e386c9e4aa1e04a464726061edd80f7f801eb8e2c302114eb25df24ad72",
+      "result": {
+        "checksum_policy": "Verify",
+        "diagnostic_fingerprint_fnv1a64": "893f8b8905a37abb",
+        "payload_bytes": 473210,
+        "records": 17,
+        "scope": "all physical keys and payloads materialized; fingerprint is non-cryptographic",
+        "status": "validated"
+      }
+    },
+    {
+      "id": "almaany-mdx",
+      "path": "/Users/shawky/Downloads/mdict-studio-m0-m1/real-corpus-inputs/almaanyEnAr-ArEn.mdx",
+      "source_sha256": "098e8333fc0afc758a1c90160922221894dec6d4631a615bbf62e433b34f8376",
+      "result": {
+        "checksum_policy": "Verify",
+        "diagnostic_fingerprint_fnv1a64": "c5600faa4c47d307",
+        "payload_bytes": 21318649,
+        "records": 82812,
+        "scope": "all physical keys and payloads materialized; fingerprint is non-cryptographic",
+        "status": "validated"
+      }
+    },
+    {
+      "id": "chinese-idioms-mdx",
+      "path": "/Users/shawky/Downloads/mdict-studio-m0-m1/real-corpus-inputs/新华成语词典（第2版）.mdx",
+      "source_sha256": "97914398293a71f5cadf5852b8df4f35e4453237692bce9b50bd46ac0393be1c",
+      "result": {
+        "checksum_policy": "Verify",
+        "diagnostic_fingerprint_fnv1a64": "ba35bba6aa8e5a6b",
+        "payload_bytes": 7946125,
+        "records": 10414,
+        "scope": "all physical keys and payloads materialized; fingerprint is non-cryptographic",
+        "status": "validated"
+      }
+    }
+  ],
+  "not_proven": [
+    "fresh_TXT_XLSX_pack_parity",
+    "general_metadata_sort_policy",
+    "encrypted_and_v1_checksum_matrix",
+    "persistent_key_index_checksum_policy",
+    "all_import_paths_integrated",
+    "M1_completion"
+  ],
+  "source_sha256": {
+    "vendor/mdictlib-0.2.8-studio-sort-v6/src/write/mod.rs": "fb7876fbc75d2e4d5ca69b7768afa551d16f6e3ba8fec05eb027b621132560a2",
+    "vendor/mdictlib-0.2.8-studio-sort-v6/src/write/studio_legacy_sort.rs": "96908b9c995cf4f28c89eaef4a15cd96f908e81bc3c73c47f3a5acc066215af5",
+    "experiments/real-rebuild/src/main.rs": "7d922082795818460c00fce62b49c1b61d473a885b3a40c2f20147688dc63b65",
+    "experiments/real-rebuild/src/strict.rs": "5962ffbc934ecb25e04683cebeb7b4d06b8bd80d23bddccc8d5a8377e998af09",
+    "experiments/real-rebuild/Cargo.lock": "0490f412f73e66fd7b719da2dd71470eeb315aaa9028837ae185f3437a8e867f",
+    "scripts/checksum_qualification.py": "d1c8a9426ff0da191d68ee8b4eb5b46900585b980123a64423d4027fc8f996dd"
+  },
+  "input_integrity": {
+    "/Users/shawky/Downloads/mdict-studio-m0-m1/checksum-out/valid/stress.mdx": {
+      "before": "f1200b411180762780061d8372e66a0c1ac28ca596bc2637b296ff5040f8d52a",
+      "after": "f1200b411180762780061d8372e66a0c1ac28ca596bc2637b296ff5040f8d52a"
+    },
+    "/Users/shawky/Downloads/mdict-studio-m0-m1/checksum-out/valid/stress.mdd": {
+      "before": "955416567a73d8397b2f3b38ac693062400a018b6b05d8003912754b34915f3c",
+      "after": "955416567a73d8397b2f3b38ac693062400a018b6b05d8003912754b34915f3c"
+    },
+    "/Users/shawky/Downloads/mdict-studio-m0-m1/real-corpus-inputs/CC-CEDICT 092026.mdx": {
+      "before": "d57bcbc1169e7eabbe552e069bee64fa5599d5ff4e37d78f1caf00bfe24a0eca",
+      "after": "d57bcbc1169e7eabbe552e069bee64fa5599d5ff4e37d78f1caf00bfe24a0eca"
+    },
+    "/Users/shawky/Downloads/mdict-studio-m0-m1/real-corpus-inputs/CC-CEDICT 092026.mdd": {
+      "before": "aa441e386c9e4aa1e04a464726061edd80f7f801eb8e2c302114eb25df24ad72",
+      "after": "aa441e386c9e4aa1e04a464726061edd80f7f801eb8e2c302114eb25df24ad72"
+    },
+    "/Users/shawky/Downloads/mdict-studio-m0-m1/real-corpus-inputs/almaanyEnAr-ArEn.mdx": {
+      "before": "098e8333fc0afc758a1c90160922221894dec6d4631a615bbf62e433b34f8376",
+      "after": "098e8333fc0afc758a1c90160922221894dec6d4631a615bbf62e433b34f8376"
+    },
+    "/Users/shawky/Downloads/mdict-studio-m0-m1/real-corpus-inputs/新华成语词典（第2版）.mdx": {
+      "before": "97914398293a71f5cadf5852b8df4f35e4453237692bce9b50bd46ac0393be1c",
+      "after": "97914398293a71f5cadf5852b8df4f35e4453237692bce9b50bd46ac0393be1c"
+    }
+  }
+}

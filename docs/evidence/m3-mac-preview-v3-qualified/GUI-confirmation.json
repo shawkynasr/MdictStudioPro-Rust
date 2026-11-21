@@ -1,0 +1,24 @@
+{
+  "status": "accepted_scoped_preview_launch_database_plugin_screen_and_settings",
+  "date": "2026-11-20",
+  "basis": [
+    "User Yes in response to Finder/Terminal-close/database/plugin-screen/restart sequence",
+    "Two supplied screenshots"
+  ],
+  "observed": [
+    "310-record database",
+    "Blue styled Legal Latin definition",
+    "Arabic RTL interface",
+    "Simplified plugin page visible"
+  ],
+  "settings_restart": "user attestation",
+  "Finder_launch_and_terminal_closed": "user attestation; not independently visible in screenshots",
+  "standalone_python_interpreter_configured": false,
+  "standalone_plugin_execution_tested": false,
+  "screenshot_sha256": {
+    "截屏2026-11-20 19.16.46.png": "a9d22671eff42ef2b7a5f74451050a43e1c4a3ba4300b1f24485143460493c83",
+    "截屏2026-11-20 19.17.20.png": "32bb0a3e57f7030d9efc97e2907aaa6a126d4e4e5b98522d5bbbda04cc25f608"
+  },
+  "M3_complete": false,
+  "production_release_ready": false
+}

@@ -1,0 +1,5 @@
+[workspace]
+members = ["crates/studio-engine-probe"]
+exclude = ["experiments/real-rebuild", "experiments/native-controls", "experiments/legacy-sort", "experiments/safari-probe", "reference/safari-mdx", "reference/safari-mdx-util", "vendor/mdictlib-0.2.8-studio-sort", "vendor/mdictlib-0.2.8-studio-sort-v2", "vendor/mdictlib-0.2.8-studio-sort-v3", "vendor/mdictlib-0.2.8-studio-sort-v4", "vendor/mdictlib-0.2.8-studio-sort-v5", "vendor/mdictlib-0.2.8-studio-sort-v6"]
+resolver = "2"
+

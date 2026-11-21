@@ -1,0 +1,14 @@
+{
+  "schema": "studio-settings-dialog-review-v1",
+  "status": "accepted_scoped_build_and_observed_modal_interactions",
+  "report_sha256": "fbf9f763fd050022f23bd2070c365c03dbbd20368c6549d344e633762f0e768a",
+  "matched_delivered_source_identities": 245,
+  "protected_source_identities": 324,
+  "all_seven_resolved_locks_exact": true,
+  "copied_bundle_matches": true,
+  "executable_sha256": "0f9c2e71ac7672cb61928c1b89a273f0ac4a61958ca1b46b23b26be11b169c8c",
+  "Svelte": "0 errors and 0 warnings",
+  "build_stages_passed": 8,
+  "M3_complete": false,
+  "production_release_ready": false
+}

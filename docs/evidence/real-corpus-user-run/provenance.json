@@ -1,0 +1,20 @@
+{
+  "source": "User-uploaded Rust/Python real corpus report",
+  "local_rerun": false,
+  "files": {
+    "corpus-report.json": "d0204b661b3c332b8cd6678884263bc91a92a941b590fc28bcdbd4006ae4fb9f"
+  },
+  "observed": {
+    "cases_passed": 4,
+    "MDX_records": 296110,
+    "MDD_resources": 17,
+    "sampled_lookups_passed": 36,
+    "metadata_differences": 0,
+    "changed_inputs": 0
+  },
+  "native_rendering": "NOT_RUN",
+  "reader_versions_reported_by_user": {
+    "MDict for macOS": "2.2.6 (build 200)",
+    "GoldenDict": "26.6.1-7548db1682 (master) at 2026-06-29T06:51:41Z"
+  }
+}

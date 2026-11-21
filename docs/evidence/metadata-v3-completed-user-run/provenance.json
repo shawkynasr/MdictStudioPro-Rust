@@ -1,0 +1,23 @@
+{
+  "source": "User-uploaded completed revision-3 codec report and log",
+  "local_rerun": false,
+  "files": {
+    "metadata-codec-report.json": "b84757a766692b396da65e38891ff75eaa45b35bbe929211868ee0563ef72a67",
+    "metadata-codecs.log": "f4c76e3f16e951865120578c90dd511c45cb24051518d1f87c925578000ac038"
+  },
+  "observed": {
+    "writer_revision": 3,
+    "harness_revision": 3,
+    "passed": 91,
+    "failed": 10,
+    "unsupported": 2,
+    "blocked": 8,
+    "rust_passed": 28,
+    "UTF16_bidirectional_samples": "passed"
+  },
+  "limits": [
+    "Ten standard XML stylesheet newline comparisons failed",
+    "Reverse GB18030 remains unproven because original Python writer rejects output",
+    "Native reader applications, real dictionary corpus and large-file testing remain open"
+  ]
+}

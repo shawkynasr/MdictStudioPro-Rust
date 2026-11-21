@@ -1,0 +1,6 @@
+和
+<head><meta charset="utf-8"><link rel="stylesheet" type="text/css" href="jybcb.css"></head><div class="edugycd"><div class="dict-title-group"><span class="index">和</span><span class="radical">口部 部外 5 畫 總筆畫 8 畫</span></div><span class="bopomo">(一) ㄏㄜˊ (二) ㄏㄜˋ</span><span class="hanyu">(一) hé (二) hè</span><span class="article">釋義：<span class="mean">(一) [名]<br />1. 平安。<br />2. 如：「和氣」。 <img class="pic-inline" src="sample.png"></span><span class="mean">(二) [動] 隨聲相應。</span></span><span class="polyref"><b>相似詞：</b>平和</span><span class="polyref"><b>相反詞：</b>爭</span></div>
+</>
+字
+<head><meta charset="utf-8"><link rel="stylesheet" type="text/css" href="jybcb.css"></head><div class="edugycd"><div class="dict-title-group"><span class="index">字</span></div><span class="bopomo">ㄗˋ</span><span class="hanyu">zì</span><span class="article">釋義：<span class="mean">文字。<br />9868._104_0.gif <img class="pic-inline" src="4e00_.png"></span></span></div>
+</>

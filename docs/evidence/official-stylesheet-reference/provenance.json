@@ -1,0 +1,9 @@
+{
+  "source": "User-built official MdxBuilder reference plus user-reported native results",
+  "local_reader_execution": false,
+  "files": {
+    "official-stylesheet.zip": "04dd014a2b637b4dd685329f0619992a9e5623c828b013987ee3f8f297dec3de",
+    "reference-header.json": "3752847170a16e31e34053fa0accade117c45d887e949f1cdf6a2d5e2757b5d3",
+    "native-observations.json": "5424fe7ac578846cabb5c5ce91962736ea34daacd95f3cf6d66799d46f7ece8d"
+  }
+}

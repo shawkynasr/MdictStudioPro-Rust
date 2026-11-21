@@ -1,0 +1,105 @@
+name: Rust desktop previews
+on:
+  push:
+    branches: [main, master]
+    tags: ['v*-preview.*']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: preview-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ !startsWith(github.ref, 'refs/tags/') }}
+jobs:
+  build:
+    name: ${{ matrix.target }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-2022
+            target: x86_64-pc-windows-msvc
+            bundles: nsis
+          - os: macos-15-intel
+            target: x86_64-apple-darwin
+            bundles: dmg
+          - os: macos-15
+            target: aarch64-apple-darwin
+            bundles: dmg
+          - os: ubuntu-22.04
+            target: x86_64-unknown-linux-gnu
+            bundles: deb,appimage
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.12.0'
+          cache: npm
+          cache-dependency-path: m3/desktop/package-lock.json
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target }}
+      - name: Linux dependencies
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libwebkit2gtk-4.1-dev build-essential curl wget file libxdo-dev libssl-dev librsvg2-dev libayatana-appindicator3-dev patchelf libfuse2
+      - name: Recreate checksum-pinned vendor source
+        run: python scripts/ci_prepare_desktop.py
+      - name: Install locked frontend dependencies
+        working-directory: m3/desktop
+        run: npm ci
+      - name: Frontend tests
+        working-directory: m3/desktop
+        run: npm test
+      - name: Generate platform icons
+        working-directory: m3/desktop
+        run: npm run tauri -- icon src-tauri/icons/icon.png --output src-tauri/icons/ci
+      - name: Bundle preview
+        working-directory: m3/desktop
+        env:
+          APPIMAGE_EXTRACT_AND_RUN: '1'
+        run: npm run tauri -- build --config src-tauri/tauri.ci.conf.json --target '${{ matrix.target }}' --bundles '${{ matrix.bundles }}' --ci -- --locked
+      - name: Collect installers and build identities
+        env:
+          STUDIO_TARGET: ${{ matrix.target }}
+        run: python scripts/ci_collect_preview.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: preview-${{ matrix.target }}
+          path: m3-shell-out-ci-assets/*
+          if-no-files-found: error
+          retention-days: 14
+  draft-prerelease:
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v') && contains(github.ref_name, '-preview.')
+    needs: build
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: preview-*
+          path: preview-assets
+          merge-multiple: true
+      - name: Create draft community preview
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        shell: bash
+        run: |
+          gh release create "$RELEASE_TAG" preview-assets/* --verify-tag --draft --prerelease --title "Mdict Studio Pro Rust $RELEASE_TAG" --notes-file docs/releases/preview-template.md

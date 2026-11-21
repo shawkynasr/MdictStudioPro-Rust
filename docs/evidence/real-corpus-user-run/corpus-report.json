@@ -1,0 +1,460 @@
+{
+  "status": "passed_reader_comparison_only",
+  "cases": [
+    {
+      "id": "cc-cedict-mdx",
+      "path": "/Users/shawky/Downloads/mdict-studio-m0-m1/real-corpus-inputs/CC-CEDICT 092026.mdx",
+      "tags": [
+        "real",
+        "Chinese-English",
+        "UTF-8",
+        "duplicates"
+      ],
+      "status": "passed",
+      "engines": {
+        "r": {
+          "status": "passed",
+          "records": 202884,
+          "attributes": {
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "CreationDate": "2026-9-17",
+            "DataSourceFormat": "106",
+            "Description": "Description:\n<link href=\"/cedict_ts.css\" rel=\"stylesheet\" type=\"text/css\"/><div class=\"cc_wrapper\"><div class=\"cc_header\"><span class=\"cc_title\">CC-CEDICT</span></div><table width=\"100%\"><tr><td valign=\"top\"><img src=\"/mdbg-dic.png\" alt=\"Logo\" /></td></tr><tr><td><p class=\"cc_def\">Original Entries: 125072</p><p class=\"cc_def\">Link Count: 77812</p><p class=\"cc_def\">Merged Entries: 202884</p><p class=\"cc_def\">Database Date: 2026-09-17T05:48:14Z</p><p class=\"cc_def\">License: CC BY-SA 4.0</p><p class=\"cc_def\">Publisher: MDBG</p><p class=\"cc_def\">CSS Compiler: shbf@PDAWIKI</p><p class=\"cc_def\">数据源：<a href=\"https://www.mdbg.net/chinese/dictionary?page=cc-cedict\">CC-CEDICT</a><br><p class=\"cc_def\">Tool：<a href=\"https://github.com/shawkynasr/MdictStudioPro\">Mdict Studio Pro</a><br>\n<br>仅供个人学习使用<br></br>2026年09月17日 Shawky制作(初版)</p><br><br></td></tr></table></div>",
+            "Encoding": "UTF-8",
+            "Encrypted": "No",
+            "Format": "Html",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "Left2Right": "Yes",
+            "RegisterBy": "",
+            "RequiredEngineVersion": "2.0",
+            "Stripkey": "Yes",
+            "StyleSheet": "",
+            "Title": "CC-CEDICT 092026"
+          },
+          "elapsed_seconds": 6.552
+        },
+        "p": {
+          "status": "passed",
+          "records": 202884,
+          "attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "UTF-8",
+            "Format": "Html",
+            "Stripkey": "Yes",
+            "CreationDate": "2026-9-17",
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "KeyCaseSensitive": "No",
+            "Description": "Description:\n<link href=\"/cedict_ts.css\" rel=\"stylesheet\" type=\"text/css\"/><div class=\"cc_wrapper\"><div class=\"cc_header\"><span class=\"cc_title\">CC-CEDICT</span></div><table width=\"100%\"><tr><td valign=\"top\"><img src=\"/mdbg-dic.png\" alt=\"Logo\" /></td></tr><tr><td><p class=\"cc_def\">Original Entries: 125072</p><p class=\"cc_def\">Link Count: 77812</p><p class=\"cc_def\">Merged Entries: 202884</p><p class=\"cc_def\">Database Date: 2026-09-17T05:48:14Z</p><p class=\"cc_def\">License: CC BY-SA 4.0</p><p class=\"cc_def\">Publisher: MDBG</p><p class=\"cc_def\">CSS Compiler: shbf@PDAWIKI</p><p class=\"cc_def\">数据源：<a href=\"https://www.mdbg.net/chinese/dictionary?page=cc-cedict\">CC-CEDICT</a><br><p class=\"cc_def\">Tool：<a href=\"https://github.com/shawkynasr/MdictStudioPro\">Mdict Studio Pro</a><br>\n<br>仅供个人学习使用<br></br>2026年09月17日 Shawky制作(初版)</p><br><br></td></tr></table></div>",
+            "Title": "CC-CEDICT 092026",
+            "DataSourceFormat": "106",
+            "StyleSheet": "",
+            "Left2Right": "Yes",
+            "RegisterBy": ""
+          },
+          "elapsed_seconds": 4.19
+        }
+      },
+      "companions": [
+        {
+          "path": "/Users/shawky/Downloads/mdict-studio-m0-m1/baseline/../real-corpus-inputs/CC-CEDICT 092026.mdd",
+          "present": true
+        }
+      ],
+      "sha256": "d57bcbc1169e7eabbe552e069bee64fa5599d5ff4e37d78f1caf00bfe24a0eca",
+      "size_bytes": 9268701,
+      "different_key_payload_counts": 0,
+      "metadata_differences": {},
+      "lookups": {
+        "110": {
+          "status": "passed",
+          "records": 1
+        },
+        "字": {
+          "status": "passed",
+          "records": 1
+        },
+        "119": {
+          "status": "passed",
+          "records": 1
+        },
+        "11区": {
+          "status": "passed",
+          "records": 1
+        },
+        "11區": {
+          "status": "passed",
+          "records": 1
+        },
+        "120": {
+          "status": "passed",
+          "records": 1
+        },
+        "2019冠状病毒病": {
+          "status": "passed",
+          "records": 1
+        },
+        "2019冠狀病毒病": {
+          "status": "passed",
+          "records": 1
+        },
+        "21三体综合症": {
+          "status": "passed",
+          "records": 1
+        }
+      },
+      "sha256_after": "d57bcbc1169e7eabbe552e069bee64fa5599d5ff4e37d78f1caf00bfe24a0eca"
+    },
+    {
+      "id": "cc-cedict-mdd",
+      "path": "/Users/shawky/Downloads/mdict-studio-m0-m1/real-corpus-inputs/CC-CEDICT 092026.mdd",
+      "tags": [
+        "real",
+        "resources",
+        "fonts",
+        "CSS"
+      ],
+      "status": "passed",
+      "engines": {
+        "r": {
+          "status": "passed",
+          "records": 17,
+          "attributes": {
+            "CreationDate": "2026-9-18",
+            "Description": "",
+            "Encoding": "",
+            "Encrypted": "No",
+            "Format": "",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RegisterBy": "",
+            "RequiredEngineVersion": "2.0",
+            "Stripkey": "No",
+            "Title": "CC-CEDICT 092026"
+          },
+          "elapsed_seconds": 0.242
+        },
+        "p": {
+          "status": "passed",
+          "records": 17,
+          "attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "",
+            "Format": "",
+            "CreationDate": "2026-9-18",
+            "KeyCaseSensitive": "No",
+            "Stripkey": "No",
+            "Description": "",
+            "Title": "CC-CEDICT 092026",
+            "RegisterBy": ""
+          },
+          "elapsed_seconds": 0.181
+        }
+      },
+      "companions": [],
+      "sha256": "aa441e386c9e4aa1e04a464726061edd80f7f801eb8e2c302114eb25df24ad72",
+      "size_bytes": 322814,
+      "different_key_payload_counts": 0,
+      "metadata_differences": {},
+      "lookups": {
+        "\\cedict_ts.css": {
+          "status": "passed",
+          "records": 1
+        },
+        "\\HelveticaNowMicroMed.ttf": {
+          "status": "passed",
+          "records": 1
+        },
+        "\\HelveticaNowMicroMed.woff": {
+          "status": "passed",
+          "records": 1
+        },
+        "\\HelveticaNowMicroMed.woff2": {
+          "status": "passed",
+          "records": 1
+        },
+        "\\Merriweather-Italic-py.ttf": {
+          "status": "passed",
+          "records": 1
+        },
+        "\\Merriweather-Italic-py.woff": {
+          "status": "passed",
+          "records": 1
+        },
+        "\\Merriweather-Italic-py.woff2": {
+          "status": "passed",
+          "records": 1
+        },
+        "\\MyriadPro-Regular.ttf": {
+          "status": "passed",
+          "records": 1
+        },
+        "\\MyriadPro-Regular.woff": {
+          "status": "passed",
+          "records": 1
+        }
+      },
+      "sha256_after": "aa441e386c9e4aa1e04a464726061edd80f7f801eb8e2c302114eb25df24ad72"
+    },
+    {
+      "id": "almaany-mdx",
+      "path": "/Users/shawky/Downloads/mdict-studio-m0-m1/real-corpus-inputs/almaanyEnAr-ArEn.mdx",
+      "tags": [
+        "real",
+        "English-Arabic",
+        "UTF-8",
+        "duplicates"
+      ],
+      "status": "passed",
+      "engines": {
+        "r": {
+          "status": "passed",
+          "records": 82812,
+          "attributes": {
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "CreationDate": "2023-11-2",
+            "DataSourceFormat": "106",
+            "Description": "Almaany English-Arabic and Arabic-English Dictionary\n<hr>\n<p style=\"color:red;text-align:center;\"> compiled by Wissam. </p>",
+            "Encoding": "UTF-8",
+            "Encrypted": "No",
+            "Format": "Html",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "Left2Right": "Yes",
+            "RegisterBy": "",
+            "RequiredEngineVersion": "2.0",
+            "Stripkey": "Yes",
+            "StyleSheet": "",
+            "Title": "Almaany English ↔ Arabic"
+          },
+          "elapsed_seconds": 2.209
+        },
+        "p": {
+          "status": "passed",
+          "records": 82812,
+          "attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "UTF-8",
+            "Format": "Html",
+            "Stripkey": "Yes",
+            "CreationDate": "2023-11-2",
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "KeyCaseSensitive": "No",
+            "Description": "Almaany English-Arabic and Arabic-English Dictionary\n<hr>\n<p style=\"color:red;text-align:center;\"> compiled by Wissam. </p>",
+            "Title": "Almaany English ↔ Arabic",
+            "DataSourceFormat": "106",
+            "StyleSheet": "",
+            "Left2Right": "Yes",
+            "RegisterBy": ""
+          },
+          "elapsed_seconds": 1.492
+        }
+      },
+      "companions": [
+        {
+          "path": "/Users/shawky/Downloads/mdict-studio-m0-m1/baseline/../real-corpus-inputs/almaanyEnAr-ArEn.css",
+          "present": true
+        },
+        {
+          "path": "/Users/shawky/Downloads/mdict-studio-m0-m1/baseline/../real-corpus-inputs/fonts/amiri-regular.ttf",
+          "present": false
+        }
+      ],
+      "sha256": "098e8333fc0afc758a1c90160922221894dec6d4631a615bbf62e433b34f8376",
+      "size_bytes": 3543120,
+      "different_key_payload_counts": 0,
+      "metadata_differences": {},
+      "lookups": {
+        "abacus": {
+          "status": "passed",
+          "records": 1
+        },
+        "abandon": {
+          "status": "passed",
+          "records": 1
+        },
+        "Abandonment": {
+          "status": "passed",
+          "records": 1
+        },
+        "Abraham's balm": {
+          "status": "passed",
+          "records": 1
+        },
+        "Abrasive machine": {
+          "status": "passed",
+          "records": 1
+        },
+        "Abu Dhabi": {
+          "status": "passed",
+          "records": 1
+        },
+        "Ac cipitridae": {
+          "status": "passed",
+          "records": 1
+        },
+        "Achilles' heel": {
+          "status": "passed",
+          "records": 1
+        },
+        "Achilles' tendon": {
+          "status": "passed",
+          "records": 1
+        },
+        "Adam": {
+          "status": "passed",
+          "records": 1
+        }
+      },
+      "sha256_after": "098e8333fc0afc758a1c90160922221894dec6d4631a615bbf62e433b34f8376"
+    },
+    {
+      "id": "chinese-idioms-mdx",
+      "path": "/Users/shawky/Downloads/mdict-studio-m0-m1/real-corpus-inputs/新华成语词典（第2版）.mdx",
+      "tags": [
+        "real",
+        "Chinese",
+        "UTF-8",
+        "external-CSS"
+      ],
+      "status": "passed",
+      "engines": {
+        "r": {
+          "status": "passed",
+          "records": 10414,
+          "attributes": {
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "CreationDate": "2024-7-7",
+            "DataSourceFormat": "106",
+            "Description": "",
+            "Encoding": "UTF-8",
+            "Encrypted": "No",
+            "Format": "Html",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "Left2Right": "Yes",
+            "RegisterBy": "",
+            "RequiredEngineVersion": "2.0",
+            "Stripkey": "Yes",
+            "StyleSheet": "",
+            "Title": ""
+          },
+          "elapsed_seconds": 0.79
+        },
+        "p": {
+          "status": "passed",
+          "records": 10414,
+          "attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "UTF-8",
+            "Format": "Html",
+            "Stripkey": "Yes",
+            "CreationDate": "2024-7-7",
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "KeyCaseSensitive": "No",
+            "Description": "",
+            "Title": "",
+            "DataSourceFormat": "106",
+            "StyleSheet": "",
+            "Left2Right": "Yes",
+            "RegisterBy": ""
+          },
+          "elapsed_seconds": 0.355
+        }
+      },
+      "companions": [
+        {
+          "path": "/Users/shawky/Downloads/mdict-studio-m0-m1/baseline/../real-corpus-inputs/xhcycd.css",
+          "present": true
+        }
+      ],
+      "sha256": "97914398293a71f5cadf5852b8df4f35e4453237692bce9b50bd46ac0393be1c",
+      "size_bytes": 2626692,
+      "different_key_payload_counts": 0,
+      "metadata_differences": {},
+      "lookups": {
+        "一世之雄": {
+          "status": "passed",
+          "records": 1
+        },
+        "一丘之貉": {
+          "status": "passed",
+          "records": 1
+        },
+        "一丝一毫": {
+          "status": "passed",
+          "records": 1
+        },
+        "一丝不挂": {
+          "status": "passed",
+          "records": 1
+        },
+        "一丝不苟": {
+          "status": "passed",
+          "records": 1
+        },
+        "一举一动": {
+          "status": "passed",
+          "records": 1
+        },
+        "一举两全": {
+          "status": "passed",
+          "records": 1
+        },
+        "一举两得": {
+          "status": "passed",
+          "records": 1
+        }
+      },
+      "sha256_after": "97914398293a71f5cadf5852b8df4f35e4453237692bce9b50bd46ac0393be1c"
+    }
+  ],
+  "environment": {
+    "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 17.0.0 (clang-1700.6.4.2)]",
+    "os": "macOS-15.8.1-x86_64-i386-64bit-Mach-O",
+    "mdict-utils": "1.3.14",
+    "rustc": "rustc 1.98.1 (48a229cea 2026-09-01)",
+    "cargo": "cargo 1.98.1 (797e8a9bc 2026-08-05)"
+  },
+  "comparison": "exact UTF-8 keys and SHA-256 payload multisets with duplicate counts; no whitespace/Unicode normalization",
+  "not_proven": [
+    "native_reader_rendering",
+    "pack_or_unpack_parity",
+    "large_file_resource_limits",
+    "all_lookup_keys",
+    "metadata_contract_resolution"
+  ],
+  "writer_source_sha256": "0fc384d91a668b4c0d1b0b960f9a5253ee14cd934a532b73a151450bafa6dff5",
+  "source_sha256": {
+    "Cargo.lock": "b1993e21cd4be1fd4937914bb7458cefb730e21927fbe058046e4aee3bd81e35",
+    "experiments/legacy-sort/Cargo.lock": "832527875540ca97c9af5ee227c0f38d3f03eed9c16c26a0c63fed51285f7a8e",
+    "experiments/legacy-sort/src/readers.rs": "cdf36557aae66853115816044151f70b851f8b13ac3cf055a2377bd0201975d9",
+    "scripts/real_corpus.py": "4bab44e3ff035963ebf6c67440f9f7632f1ff28ad8cc28e8eba103869f20d02e"
+  },
+  "declared_tags": {
+    "real": 4,
+    "Chinese-English": 1,
+    "UTF-8": 3,
+    "duplicates": 2,
+    "resources": 1,
+    "fonts": 1,
+    "CSS": 1,
+    "English-Arabic": 1,
+    "Chinese": 1,
+    "external-CSS": 1
+  }
+}

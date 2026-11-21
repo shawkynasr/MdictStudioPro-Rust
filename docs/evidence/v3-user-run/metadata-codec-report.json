@@ -1,0 +1,47 @@
+{
+  "status": "blocked",
+  "suite": "metadata-storage-codecs-v1",
+  "harness_revision": 2,
+  "writer_patch_revision": 3,
+  "environment": {
+    "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 17.0.0 (clang-1700.6.4.2)]",
+    "os": "Darwin",
+    "release": "24.6.0",
+    "machine": "x86_64",
+    "mdict-utils": "1.3.14",
+    "rustc": "rustc 1.98.1 (48a229cea 2026-09-01)",
+    "cargo": "cargo 1.98.1 (797e8a9bc 2026-08-05)",
+    "collation": "C"
+  },
+  "checks": {},
+  "not_proven": [
+    "native_readers",
+    "all_codepoint_mapping_equivalence",
+    "source_file_decoding",
+    "large_files",
+    "non_C_locale",
+    "stylesheet_rendering"
+  ],
+  "source_sha256": {
+    "baseline/codec-cases.json": "ecbde455eda3d9726c7ae8633c07eec62acbb64a5ece735c0b692c71e09552bb",
+    "Cargo.lock": "b1993e21cd4be1fd4937914bb7458cefb730e21927fbe058046e4aee3bd81e35",
+    "experiments/legacy-sort/Cargo.lock": "832527875540ca97c9af5ee227c0f38d3f03eed9c16c26a0c63fed51285f7a8e",
+    "baseline/legacy/MdictStudio.py": "387fadfc20b1936827b58f40f36fa9f09cc34b43ca984be81ce4eaa1c592e79b",
+    "scripts/patched_interop.py": "6190ee4591734a53319d58a9008fc6c067d4b9c3e6e77624175fe3ea165de194",
+    "experiments/legacy-sort/src/main.rs": "c140b90f285d6794b31e75cdc7d9768ef9aa749bcd62f4b83909736769bee686",
+    "experiments/legacy-sort/src/lib.rs": "6b0178f81698d0706dce5210cebfd62d74ad69d5207ce0f51abaa82db7e3714b",
+    "experiments/legacy-sort/src/codec.rs": "a749ce9003379e07265cb24e392aaca58a610cb78b1bdf52bd992fc31b94cfe9",
+    "scripts/metadata_codecs.py": "2155f0e09c3addf3f72da6f09bcf4b505386c1901005937240a83ca81b651580",
+    "vendor/mdictlib-0.2.8-studio-sort-v3/src/write/mod.rs": "0fc384d91a668b4c0d1b0b960f9a5253ee14cd934a532b73a151450bafa6dff5",
+    "vendor/mdictlib-0.2.8-studio-sort-v3/src/write/studio_legacy_sort.rs": "b4591373d3479923c6bcacedaee4044099b8e68dc5fd7ac8715ffaa7fa497fca"
+  },
+  "setup_error": "'tuple' object has no attribute 'writer_revision'",
+  "setup_traceback": "Traceback (most recent call last):\n  File \"/Users/shawky/Downloads/mdict-studio-m0-m1/scripts/metadata_codecs.py\", line 136, in main\n    rust_report = rust(\"codec\", forward)\n  File \"/Users/shawky/Downloads/mdict-studio-m0-m1/scripts/metadata_codecs.py\", line 94, in rust\n    return json.loads(run(*experiment_command(args.writer_revision, *args)))\n                                              ^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'tuple' object has no attribute 'writer_revision'\n",
+  "artifact_sha256": {},
+  "counts": {
+    "passed": 0,
+    "failed": 0,
+    "unsupported": 0,
+    "blocked": 0
+  }
+}

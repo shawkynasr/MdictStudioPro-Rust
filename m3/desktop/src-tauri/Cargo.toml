@@ -1,0 +1,21 @@
+[workspace]
+members = ["."]
+resolver = "2"
+
+[package]
+name = "mdict-studio-desktop"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "=2.12.1", features = [] }
+tauri-plugin-dialog = "2"
+studio-native-adapter = { path = "../../native-adapter" }
+serde_json = "=1.0.154"
+
+[patch.crates-io]
+mdictlib = { path = "../../../vendor/mdictlib-0.2.8-studio-sort-v6" }

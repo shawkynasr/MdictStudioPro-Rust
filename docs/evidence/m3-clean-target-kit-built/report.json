@@ -1,0 +1,15 @@
+{
+  "schema": "studio-clean-target-testkit-v1",
+  "status": "kit_built_target_test_pending",
+  "archive": "/Users/shawky/Downloads/mdict-studio-m0-m1/m3-shell-out-clean-test-kit-1/Mdict-preview-v6-Intel-test.zip",
+  "archive_bytes": 6046901,
+  "archive_sha256": "f66bf138c43dd98b4ae83c02681e8a30a5983103fc046997e7e3e6f1ade46407",
+  "executable_sha256": "2fdde5759b44256afcf8fddf9e52c2dad59f17c756742e588c478c3bda9b140d",
+  "input_sha256": "463a04e1ad8ff8c3142e1456dc0fb529de2fa62affbe3dd70d4f70afd8e42dec",
+  "bundle_copy_and_archive_roundtrip_equal": true,
+  "target_launch_tested": false,
+  "clean_machine_qualified": false,
+  "signing_or_notarization_added": false,
+  "M3_complete": false,
+  "production_release_ready": false
+}

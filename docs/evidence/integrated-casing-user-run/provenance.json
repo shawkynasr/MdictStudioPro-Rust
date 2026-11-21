@@ -1,0 +1,12 @@
+{
+  "source": "User-uploaded integrated casing report; source snapshots match reported SHA-256",
+  "local_Rust_execution": false,
+  "scope": "Four MDX cases, 166 records and 192 queries each; separate-process adapter reopen and three negative policy refusals; no native tests",
+  "files": {
+    "integrated-casing-report.json": "ebfbfebe1e3b3afb27ce3616492b7dd15ad22e0476e4853ca219ee3856f0de9e",
+    "qualified-main.rs": "c1e977b2e69cf402f36cf48d291e0d19139c33aa9d839e16300235f5ee958897",
+    "qualified-casing.rs": "851da9b996f07bde6c60688094bdeece0e389802c6d6e8a62aff41d2dd624465",
+    "qualified-integrated.rs": "0e39d2449aa61c888346bd252b539098af9d216fd5e6692b3e2add4baa63323c",
+    "qualified-integrated_casing.py": "386b9f534bd641f40e1630f0d7603b5a330f9eabe8c1c6793f9ad3c99aa7b40a"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-06",
+  "converter": "moe_concise",
+  "archive": {
+    "archive": "dict_concised_2014_20260929.zip",
+    "archive_sha256": "5bab99dac44ad7a6ccdcf481e770e8aca05ede7445c4cc25b8199e0e5df64cf2",
+    "library_file_id": "libfile_9f8f1d75dbdc819182c373d1600b0cba",
+    "member": "dict_concised_2014_20260929.xlsx",
+    "source_bytes": 7080113,
+    "source_sha256": "af2e9ba3655799080e0f7214646bde11ca5cc5e16226bca1e9a461285e05eec6"
+  },
+  "worksheet": "辭典匯出_1150929",
+  "data_rows": 45178,
+  "rectangle_cells": 677685,
+  "expected_entries": 44445,
+  "expected_file_bytes": 25093253,
+  "local_raw_python_output_sha256": "21bdacff977b6f72189f77d86ae06c6c5917ed3a1ab9a056f673781d9b76a6f8",
+  "normalized_record_digest": {
+    "records": 44445,
+    "key_bytes": 302310,
+    "payload_bytes": 24524273,
+    "framed_records_sha256": "7320b7c207df51802f4a59c2ce9c3469f37b544d8202fa80f43a9dbe415b3511"
+  },
+  "comparison": "Only existing accepted Python set-valued reference-order normalization; record keys, record order, multiplicity and all other HTML remain exact.",
+  "legacy_oracle_sha256": {
+    "baseline/legacy/base_plugin.py": "0620c3d88502191b4b297c918394cc9ae886e943e83b06bf377fa1284b044b49",
+    "baseline/legacy/excel_utils.py": "b0a837e2197a5d0d42599171716b903ef813dc52512e55c1ccbe93f2f0bd2302",
+    "baseline/legacy/plugins/cccedict_plugin.py": "4c3fc461a044e702678ce7fbf0e2b251969d5932c4bf2d2070d6f58c2eeb139c",
+    "baseline/legacy/plugins/edudict_plugin.py": "2505bdaf5733f905d8fba1f68dd22e1c7b123484599d1f18bcf7c6cb576aa923",
+    "baseline/legacy/plugins/WFG_desgin_Plugin.py": "9d476ee0fb38603c7b6e6634c9987ab7a26077dbf15357718e9e93293da09ba2",
+    "baseline/legacy/plugins/concise_plugin.py": "25b37d4f801e4ddfef03557a54fa8a20ad5bbbac79f8eddc19135ae6562abc6a",
+    "baseline/legacy/plugins/idiom_plugin.py": "53dce8296c31f92c1e83a4cb7f2773c7e97d6ae85f00811724a11adf83768bc1",
+    "baseline/legacy/plugins/mini_plugin.py": "aca858af532a8f409b5b55d6d3632b63466d8d67af910390f65e3623561c00f5"
+  },
+  "native_run": false
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "studio-normal-quit-GUI-v1",
+  "date": "2026-11-21",
+  "status": "accepted_scoped_user_reported_normal_Quit",
+  "app": "m3-shell-out-mac-preview-v5/Mdict Studio Pro Preview.app",
+  "basis": "User reported Command-Q closed the app during the requested SlowPlugin check, no output folder was created, and subsequently affirmed reopen/no resume behavior",
+  "app_closed": true,
+  "destination_not_published": true,
+  "reopen_and_no_resume": "user confirmation in conversation",
+  "elapsed_time": "not supplied",
+  "hidden_temporary_cleanup_verified": false,
+  "orphan_process_absence_verified": false,
+  "force_quit_or_crash_tested": false,
+  "M3_complete": false,
+  "production_release_ready": false
+}

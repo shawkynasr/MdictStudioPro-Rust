@@ -1,0 +1,11 @@
+{
+  "source": "User-uploaded standard stress report; source snapshots from delivered package matched to reported SHA-256 values",
+  "local_Rust_execution": false,
+  "files": {
+    "stress-report.json": "a516cd8980754c07945ffa9f749fdd3f8df7ba8f4dbaac3be249751a5645d844",
+    "qualified-main.rs": "96a3107b9011be23021b3d3fc807c101bbffb4e32b2074108eb93ddce1e69513",
+    "qualified-stress.rs": "accd134a5f7211d9fdfe3abd13156afe952a0489fe05bb7ce03e0badcaf59408"
+  },
+  "scope": "48 MiB decoded text plus 16 MiB binary resources; direct Rust processes only; debug build",
+  "default_checksum_observation": "reader accepted checksum-only mutation; independent auditor rejected"
+}

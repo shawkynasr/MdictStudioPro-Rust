@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-21",
+  "status": "confirmed_active_bridge_and_stage_survived_force_quit",
+  "basis": "User pasted armed/check/cleanup results and explicitly confirmed reopening normally",
+  "native_report_attachment": "not supplied; exact pasted report objects retained",
+  "reopen_user_confirmed": true,
+  "automatic_recovery_passed": false,
+  "app": "preview v5",
+  "next": "docs/M3-PARENT-DEATH.md",
+  "M3_complete": false,
+  "production_release_ready": false
+}

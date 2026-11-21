@@ -1,0 +1,12 @@
+{
+  "package_version": 150,
+  "screenshots_confirm": [
+    "app* case-sensitive: three records, both pages",
+    "aPp* Unicode lowercase: four records, both pages",
+    "a?b pattern: a%b and a_b",
+    "a%b pattern: only a%b",
+    "a?b Exact: zero results",
+    "snapshot-open notice and previews remain correct"
+  ],
+  "jsonl_export_qualified": false
+}

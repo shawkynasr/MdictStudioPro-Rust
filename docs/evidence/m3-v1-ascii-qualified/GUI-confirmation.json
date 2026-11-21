@@ -1,0 +1,23 @@
+{
+  "schema": "studio-mdx-v1-ascii-GUI-v1",
+  "status": "accepted_scoped_v1_2_ASCII_JSONL_and_SQLite",
+  "date": "2026-11-20",
+  "basis": "User supplied large_export/export_jsonl and database/mdx_to_db job receipts",
+  "source_sha256": "d3f9ba094f76d20bf5ddc06249a619d8dc0efec149285241e14aaa688bf0ca35",
+  "records": 310,
+  "JSONL": {
+    "bytes": 40115,
+    "key_bytes": 6092,
+    "payload_bytes": 25501,
+    "framed_records_sha256": "3884aaf41b9755e1844709b7817cbfc86e38eb3ddda12ab5ce9883a41a0be01f"
+  },
+  "SQLite": {
+    "bytes": 69632,
+    "rows_sha256": "9ca5ad384605ffab80c9c02c233eab28d51eb02d4a47cac02178fbaf250f0286",
+    "sqlite_version": "3.54.1"
+  },
+  "original_metadata_and_numeric_stylesheet_preserved": true,
+  "non_ASCII_legacy_support": false,
+  "M3_complete": false,
+  "production_release_ready": false
+}

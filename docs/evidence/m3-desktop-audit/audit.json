@@ -1,0 +1,226 @@
+{
+  "schema": "studio-desktop-feature-audit-v1",
+  "date": "2026-11-19",
+  "status": "audit_complete_bounded_local_Mac_preview_accepted",
+  "M3_complete": false,
+  "production_release_ready": false,
+  "audited_package_version": 177,
+  "scope": "Bounded macOS development application; no full original-app parity claim. Existing accepted checkpoints remain accepted within their recorded profiles.",
+  "features": [
+    {
+      "feature": "MDX build from TXT/JSONL",
+      "status": "accepted_scoped",
+      "finding": "Canonical/legacy TXT and bounded/block profiles; UTF-8/UTF-16 reader checks. No generic arbitrary-size guarantee.",
+      "evidence": [
+        "m3/STATUS.json",
+        "docs/M3-TXT-BUILD.md",
+        "docs/evidence/m3-plugin-options-qualified/m3-shell-report.json"
+      ]
+    },
+    {
+      "feature": "MDD build from resource folder/manifest",
+      "status": "accepted_scoped",
+      "finding": "Paired dictionary/resource GUI attestation; bounded portable resource policy.",
+      "evidence": [
+        "m3/STATUS.json",
+        "docs/M3-FOLDER-MDD.md",
+        "docs/evidence/m3-plugin-options-qualified/m3-shell-report.json"
+      ]
+    },
+    {
+      "feature": "MDX TXT/JSONL export and MDD extraction",
+      "status": "accepted_scoped",
+      "finding": "GUI confirmation includes exact 17-resource comparison; native export gate passed.",
+      "evidence": [
+        "docs/evidence/m3-extract-user-confirmation/confirmation.json",
+        "docs/evidence/m3-plugin-options-qualified/m3-shell-report.json"
+      ]
+    },
+    {
+      "feature": "Six built-in converters",
+      "status": "native_qualified_GUI_compiled",
+      "finding": "All six native converter profiles qualified under M2. GUI routes compile; no claim of six separate fresh GUI runs.",
+      "evidence": [
+        "docs/M2-CLOSEOUT.md",
+        "docs/evidence/m3-plugin-options-qualified/m3-shell-report.json"
+      ]
+    },
+    {
+      "feature": "Indexed lookup, duplicate selection and redirects",
+      "status": "accepted_scoped",
+      "finding": "Single-hop/chain/duplicate/cycle/missing GUI cases retained.",
+      "evidence": [
+        "docs/evidence/m3-redirect-user-confirmation/confirmation.json",
+        "docs/evidence/m3-plugin-options-qualified/m3-shell-report.json"
+      ]
+    },
+    {
+      "feature": "Title/description copy edit",
+      "status": "accepted_scoped",
+      "finding": "Five records and edited metadata reported correct in both independent readers.",
+      "evidence": [
+        "docs/evidence/m3-metadata-user-confirmation/confirmation.json"
+      ]
+    },
+    {
+      "feature": "Numeric stylesheet export",
+      "status": "accepted_scoped",
+      "finding": "Uploaded 36-byte fixture export compared exactly.",
+      "evidence": [
+        "docs/evidence/m3-stylesheet-export-user-confirmation/confirmation.json"
+      ]
+    },
+    {
+      "feature": "Database workspaces",
+      "status": "complete_bounded_M4",
+      "finding": "Three closeout checkpoints accepted after separately reviewed Cargo seed normalization.",
+      "evidence": [
+        "docs/evidence/m4-database-final-qualified/decision.json"
+      ]
+    },
+    {
+      "feature": "Trusted Python converter isolation",
+      "status": "accepted_scoped",
+      "finding": "Dedicated authenticated socket, stdout/stderr and sidecars; original failure/cancel/no-clobber GUI fixtures. Not a Python sandbox.",
+      "evidence": [
+        "docs/evidence/m3-python-plugin-user-confirmation/confirmation.json",
+        "docs/evidence/m3-plugin-options-qualified/m3-shell-report.json"
+      ]
+    },
+    {
+      "feature": "Scalar options and local presets",
+      "status": "accepted_scoped",
+      "finding": "Native option delivery, exact six-record GUI output, save/restart/load user confirmation and frontend tests.",
+      "evidence": [
+        "docs/evidence/m3-plugin-options-qualified/gui-output-review.json",
+        "docs/evidence/m3-plugin-presets-qualified/restart-confirmation.json",
+        "docs/evidence/m3-plugin-presets-qualified/report.json"
+      ]
+    },
+    {
+      "feature": "Job errors, cancellation and interpreter guidance",
+      "status": "accepted_scoped",
+      "finding": "40 frontend tests/build; user error/detail/preflight text accepted. New color mapping lacks screenshot attestation.",
+      "evidence": [
+        "docs/evidence/m3-job-feedback-qualified/report.json",
+        "docs/evidence/m3-job-feedback-qualified/GUI-confirmation.json"
+      ]
+    },
+    {
+      "feature": "Localization, RTL, appearance and static previews",
+      "status": "implemented_partial_manual_coverage",
+      "finding": "EN/ZH/AR implementation, light/dark user screenshots and scoped previews; not exhaustive locale/accessibility/browser security qualification.",
+      "evidence": [
+        "docs/evidence/m3-ui-light-dark-user-confirmation/confirmation.json",
+        "docs/M3-PREVIEW.md",
+        "docs/evidence/m3-plugin-options-qualified/m3-shell-report.json"
+      ]
+    },
+    {
+      "feature": "Automatic plugin/class discovery and schema-generated forms",
+      "status": "deferred",
+      "finding": "Current explicit file/class + scalar-map options and presets are not full legacy plugin discovery or arbitrary options_schema compatibility.",
+      "evidence": [
+        "docs/BASELINE.md",
+        "docs/M3-PYTHON-PLUGINS.md",
+        "docs/M3-PLUGIN-OPTIONS.md"
+      ]
+    },
+    {
+      "feature": "Morphology",
+      "status": "deferred_missing_contract",
+      "finding": "Original app had selectors only. User has no addflex.py/wordforms.txt; no executable format to reproduce.",
+      "evidence": [
+        "docs/BASELINE.md",
+        "baseline/legacy/MdictStudio.py"
+      ]
+    },
+    {
+      "feature": "Dictionary JS/audio/SVG and full resource behavior",
+      "status": "deferred",
+      "finding": "Preview intentionally static; no claim of arbitrary website/plugin behavior or multi-volume MDD.",
+      "evidence": [
+        "docs/M3-PREVIEW.md",
+        "m3/STATUS.json"
+      ]
+    },
+    {
+      "feature": "Additional sort/rebuild flags, larger envelopes, MDX v3",
+      "status": "deferred",
+      "finding": "Existing profile contracts and caps remain. Additional writer policies require independent qualification.",
+      "evidence": [
+        "docs/M4-DATABASE-CLOSEOUT.md",
+        "docs/M2-CLOSEOUT.md"
+      ]
+    },
+    {
+      "feature": "Resolved frontend/desktop dependencies",
+      "status": "reviewed_exact_lock_bytes_retained",
+      "finding": "Actual Mac desktop/frontend lock bytes retained; seven exact seed/resolved bindings enforced by passing offline build.",
+      "evidence": [
+        "docs/evidence/m3-mac-lock-capture/review.json",
+        "m3/packaging/mac-lock-bindings.json"
+      ]
+    },
+    {
+      "feature": "Standalone Mac application",
+      "status": "accepted_scoped_local_Intel_Mac_preview",
+      "finding": "Eight-stage locked offline .app build passed; user-run launch, eight-record Database load, styled static previews and Arabic/Light quit/reopen persistence accepted. Terminal closure not independently verified. No external Python portability or production distribution claim.",
+      "evidence": [
+        "docs/evidence/m3-mac-preview-build-qualified/report.json",
+        "docs/evidence/m3-mac-preview-build-qualified/GUI-confirmation.json"
+      ]
+    },
+    {
+      "feature": "Full M3, original-app parity and production release",
+      "status": "open",
+      "finding": "No current completion decision for full M3. macOS signing/notarization/updater, Windows/Linux, crash recovery and hard memory enforcement remain separate.",
+      "evidence": [
+        "docs/STATUS.json",
+        "docs/M2-CLOSEOUT.md"
+      ]
+    }
+  ],
+  "evidence_sha256": {
+    "m3/STATUS.json": "1c4a94aa81089c6d180f9526c6a0766892b0b64155aeeb045e2e7fd627900cf6",
+    "docs/M3-TXT-BUILD.md": "1e41ea8b0b1d29aecc0c96525e4c889d5137879c86582bf8feb6d84852febb04",
+    "docs/evidence/m3-plugin-options-qualified/m3-shell-report.json": "a36f6eda88cf10338bb0f1f9eae860bec07c935fecccf9d38b3086cddda01a89",
+    "docs/M3-FOLDER-MDD.md": "782b0ab53ae67d9c3be81b4fcf30df9b18348748ca432a98436641f31b3e7756",
+    "docs/evidence/m3-extract-user-confirmation/confirmation.json": "d153cef0f2b4984a3cd8ffd35a0ce16a4cf1cf2102d4fb240cabdaf6f3a61c02",
+    "docs/M2-CLOSEOUT.md": "b7273fc145bfee57c3367a6d52c5eafb352efadd3e4d6d14a6459385b1f14114",
+    "docs/evidence/m3-redirect-user-confirmation/confirmation.json": "080ca5e479d9c8b78843a5832de1bfc75847e023dcbcd44e350466431d3bc1d9",
+    "docs/evidence/m3-metadata-user-confirmation/confirmation.json": "9f99ea97900fe2caa2e9ffccea62361f5768400ddd9fe431955eb3a8d18ec06b",
+    "docs/evidence/m3-stylesheet-export-user-confirmation/confirmation.json": "c61b8d062e0ef72e2a307af46eaaa896814ceb9c6aa42b72abbf15d8f4b0c9ea",
+    "docs/evidence/m4-database-final-qualified/decision.json": "e1278ebaf3f76e244a7ff7c0bedba014df10e6e7aafd62551ccc1679c2b067ad",
+    "docs/evidence/m3-python-plugin-user-confirmation/confirmation.json": "8f39fe567d50577125cc2e5e97356934c604c41f3046b0f5876312a2966918d0",
+    "docs/evidence/m3-plugin-options-qualified/gui-output-review.json": "469ac07a999577ec615cd411f1a9f50d5d86ca1c6c08bdc2e9f93a20c157e584",
+    "docs/evidence/m3-plugin-presets-qualified/restart-confirmation.json": "aa5e62caab5c0aaa46f7dd09f07bd83053f816c1857c7bb8f8c5a18050cc22d3",
+    "docs/evidence/m3-plugin-presets-qualified/report.json": "eef8ba34f464bdddfb0593cb8e6284fe760815ad5855d5b0a8584b66d45e2cbd",
+    "docs/evidence/m3-job-feedback-qualified/report.json": "ec80638c25d70510e27bef7e31541b60fd18bd40f410e99504de05bee79b6b2a",
+    "docs/evidence/m3-job-feedback-qualified/GUI-confirmation.json": "543133900271191f31ffd98d191ee64a81d5511719f0f3cf831aaf1d350d1e7e",
+    "docs/evidence/m3-ui-light-dark-user-confirmation/confirmation.json": "70e489978309a7efef2ef6ef8b3bf06b6f557095a4d501f8fa87df8c109643ac",
+    "docs/M3-PREVIEW.md": "4fbbb99a7f8a6e167fa95a6a1d93735a83292ad92a9d16b50674dc1dc532a1a4",
+    "docs/BASELINE.md": "7a0eb620878b86079e934f6eb2c27117b42e9eed5e1259fdaf75733f1cc01b05",
+    "docs/M3-PYTHON-PLUGINS.md": "86b3b209118e002a34deb9042f4f1f4ab0a3f9e01d20897a9a1defd1cd01cae9",
+    "docs/M3-PLUGIN-OPTIONS.md": "6d56889590fde516d18ebd769a8824c56ea0ce659e5bc6b1830f9bba854e86ed",
+    "baseline/legacy/MdictStudio.py": "387fadfc20b1936827b58f40f36fa9f09cc34b43ca984be81ce4eaa1c592e79b",
+    "docs/M4-DATABASE-CLOSEOUT.md": "12d53110f3ba385a83116b25db8685a539493e96635dc5f47f0cc8941f8b0910",
+    "m3/desktop/package.json": "51f9752912f40d37ad422775fd907124fd7768a81f3dd3f1a93e1702ca0e6cf3",
+    "m3/desktop/src-tauri/Cargo.toml": "486ea093363b399a969e2b425cb9dd52e2efa903c53770eebc9b18fc01f85bea",
+    "m3/desktop/src-tauri/tauri.conf.json": "8aab0f644a0e15aab96ea1792d16ee899875882d0dce97106a192af0e97dae06",
+    "docs/M3-SHELL.md": "4ce3e7d9ecf5d5baffc205d6de6720f4acabe7054ac15cb2da5db51e6cca385d",
+    "docs/STATUS.json": "6114dea583709faea8c45fabba8e08b4799dcf90aaaf65ae0f187cd0d51aefbb"
+  },
+  "next_required_steps": [],
+  "not_required_now": [
+    "Repeat completed Database closeout",
+    "Repeat all independent dictionary-reader runs",
+    "Invent unsupported Morphology data or add new convenience features"
+  ],
+  "followup_lock_review": "docs/evidence/m3-mac-lock-capture/review.json",
+  "preview_build_report": "docs/evidence/m3-mac-preview-build-qualified/report.json",
+  "preview_GUI_confirmation": "docs/evidence/m3-mac-preview-build-qualified/GUI-confirmation.json",
+  "unqualified_followup": "docs/M3-PLUGIN-SIMPLE.md",
+  "plugin_discovery_followup": "docs/evidence/m3-plugin-discovery-qualified/GUI-confirmation.json",
+  "completion_review": "docs/evidence/m3-completion-review/decision.json"
+}

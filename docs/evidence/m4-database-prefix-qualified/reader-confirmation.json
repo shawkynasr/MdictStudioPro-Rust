@@ -1,0 +1,22 @@
+{
+  "schema": "studio-gui-prefix-attestation-v1",
+  "evidence": "User screenshots reviewed in conversation; screenshots not copied into package",
+  "app_prefix": {
+    "total": 3,
+    "first_page": [
+      "apple #1",
+      "application #2"
+    ],
+    "second_page": [
+      "apple #4"
+    ],
+    "second_definition_displayed": true
+  },
+  "case_sensitive_App_total": 1,
+  "literal_a_percent_result": "a%b",
+  "literal_a_underscore_result": "a_b",
+  "Chinese_prefix_result": "字典",
+  "Arabic_prefix_result": "مرحبا",
+  "exact_app_total": 0,
+  "scope": "Test fixture prefix-test.db; not arbitrary-size database qualification"
+}

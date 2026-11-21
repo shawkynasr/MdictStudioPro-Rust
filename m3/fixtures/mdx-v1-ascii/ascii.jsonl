@@ -1,0 +1,5 @@
+{"key":"apple","text":"`1`fruit"}
+{"key":"duplicate","text":"first"}
+{"key":"duplicate","text":"second"}
+{"key":"empty","text":""}
+{"key":"last","text":"last definition"}

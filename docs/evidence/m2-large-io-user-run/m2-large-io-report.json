@@ -1,0 +1,2788 @@
+{
+  "status": "m2_larger_packing_export_first_gate_passed_runtime_integration_pending",
+  "stage": "complete",
+  "M2_complete": false,
+  "production_readiness": false,
+  "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 17.0.0 (clang-1700.6.4.2)]",
+  "platform": "macOS-15.8.2-x86_64-i386-64bit-Mach-O",
+  "steps": [
+    {
+      "name": "refresh-large-io",
+      "returncode": 0
+    },
+    {
+      "name": "large-io-tests",
+      "returncode": 0
+    },
+    {
+      "name": "build-large-io",
+      "returncode": 0
+    },
+    {
+      "name": "pack-utf8",
+      "returncode": 0,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/mdx.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/large-utf8.mdx",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf8"
+        }
+      },
+      "input_sha256": "a74b7ad0ca35873f21def4915c37850147b5a404f93f7286f0a80f278b442ff3",
+      "file_sha256": "d136fa51dd7fff8bfd92b316a2d7bed98d36f206f4950a3b593e930d35fef12c",
+      "reply": {
+        "phases": [
+          "input_snapshot",
+          "load_records",
+          "builder_entries",
+          "encode_dictionary",
+          "encoded_dictionary",
+          "snapshot",
+          "header",
+          "verify_records",
+          "publish_file"
+        ],
+        "status": "succeeded",
+        "summary": {
+          "file_bytes": 527913,
+          "framed_records_sha256": "c55ba74ca39ee5acece09cdb4a7f95806fd15f434498e9fa9deeee82401c392d",
+          "key_bytes": 720793,
+          "metadata": {
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "Copyright": "Example\n2026",
+            "CustomNote": "保持 & حفظ",
+            "Description": "Line one\nLine two\tأهلاً",
+            "Encoding": "UTF-8",
+            "Encrypted": "No",
+            "Format": "Html",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "StyleSheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "Title": "Larger 字 العربية & \"title\""
+          },
+          "operation": "pack_mdx",
+          "payload_bytes": 16285447,
+          "profile": "large-dictionary-io-v1",
+          "records": 65536,
+          "source_sha256": "a74b7ad0ca35873f21def4915c37850147b5a404f93f7286f0a80f278b442ff3"
+        }
+      },
+      "peak_RSS_bytes": 76771328
+    },
+    {
+      "name": "export_jsonl-utf8",
+      "returncode": 0,
+      "request": {
+        "request": {
+          "operation": "export_jsonl",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/large-utf8.mdx",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/utf8.jsonl"
+        }
+      },
+      "input_sha256": "d136fa51dd7fff8bfd92b316a2d7bed98d36f206f4950a3b593e930d35fef12c",
+      "file_sha256": "a78d6318ceb32f78fc8cb655cd98a21dd62c1166413e6b35feb1f4e524d7cfa6",
+      "reply": {
+        "phases": [
+          "snapshot",
+          "header",
+          "export_records",
+          "publish_file"
+        ],
+        "status": "succeeded",
+        "summary": {
+          "file_bytes": 18546333,
+          "framed_records_sha256": "c55ba74ca39ee5acece09cdb4a7f95806fd15f434498e9fa9deeee82401c392d",
+          "key_bytes": 720793,
+          "metadata": {
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "Copyright": "Example\n2026",
+            "CustomNote": "保持 & حفظ",
+            "Description": "Line one\nLine two\tأهلاً",
+            "Encoding": "UTF-8",
+            "Encrypted": "No",
+            "Format": "Html",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "StyleSheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "Title": "Larger 字 العربية & \"title\""
+          },
+          "operation": "export_jsonl",
+          "payload_bytes": 16285447,
+          "profile": "large-dictionary-io-v1",
+          "records": 65536,
+          "source_sha256": "d136fa51dd7fff8bfd92b316a2d7bed98d36f206f4950a3b593e930d35fef12c"
+        }
+      },
+      "peak_RSS_bytes": 3997696
+    },
+    {
+      "name": "export_txt-utf8",
+      "returncode": 0,
+      "request": {
+        "request": {
+          "operation": "export_txt",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/large-utf8.mdx",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/utf8.txt"
+        }
+      },
+      "input_sha256": "d136fa51dd7fff8bfd92b316a2d7bed98d36f206f4950a3b593e930d35fef12c",
+      "file_sha256": "0b5f216d787109a09b005850adddf0ce52d8eeae1b75a12f6357877ccedf34d5",
+      "reply": {
+        "phases": [
+          "snapshot",
+          "header",
+          "export_records",
+          "publish_file"
+        ],
+        "status": "succeeded",
+        "summary": {
+          "file_bytes": 17399456,
+          "framed_records_sha256": "c55ba74ca39ee5acece09cdb4a7f95806fd15f434498e9fa9deeee82401c392d",
+          "key_bytes": 720793,
+          "metadata": {
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "Copyright": "Example\n2026",
+            "CustomNote": "保持 & حفظ",
+            "Description": "Line one\nLine two\tأهلاً",
+            "Encoding": "UTF-8",
+            "Encrypted": "No",
+            "Format": "Html",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "StyleSheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "Title": "Larger 字 العربية & \"title\""
+          },
+          "operation": "export_txt",
+          "payload_bytes": 16285447,
+          "profile": "large-dictionary-io-v1",
+          "records": 65536,
+          "source_sha256": "d136fa51dd7fff8bfd92b316a2d7bed98d36f206f4950a3b593e930d35fef12c"
+        }
+      },
+      "peak_RSS_bytes": 3817472
+    },
+    {
+      "name": "repack-utf8",
+      "returncode": 0,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/utf8.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/repacked-utf8.mdx",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf8"
+        }
+      },
+      "input_sha256": "a78d6318ceb32f78fc8cb655cd98a21dd62c1166413e6b35feb1f4e524d7cfa6",
+      "file_sha256": "d136fa51dd7fff8bfd92b316a2d7bed98d36f206f4950a3b593e930d35fef12c",
+      "reply": {
+        "phases": [
+          "input_snapshot",
+          "load_records",
+          "builder_entries",
+          "encode_dictionary",
+          "encoded_dictionary",
+          "snapshot",
+          "header",
+          "verify_records",
+          "publish_file"
+        ],
+        "status": "succeeded",
+        "summary": {
+          "file_bytes": 527913,
+          "framed_records_sha256": "c55ba74ca39ee5acece09cdb4a7f95806fd15f434498e9fa9deeee82401c392d",
+          "key_bytes": 720793,
+          "metadata": {
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "Copyright": "Example\n2026",
+            "CustomNote": "保持 & حفظ",
+            "Description": "Line one\nLine two\tأهلاً",
+            "Encoding": "UTF-8",
+            "Encrypted": "No",
+            "Format": "Html",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "StyleSheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "Title": "Larger 字 العربية & \"title\""
+          },
+          "operation": "pack_mdx",
+          "payload_bytes": 16285447,
+          "profile": "large-dictionary-io-v1",
+          "records": 65536,
+          "source_sha256": "a78d6318ceb32f78fc8cb655cd98a21dd62c1166413e6b35feb1f4e524d7cfa6"
+        }
+      },
+      "peak_RSS_bytes": 74805248
+    },
+    {
+      "name": "pack-utf16",
+      "returncode": 0,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/mdx.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/large-utf16.mdx",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf16"
+        }
+      },
+      "input_sha256": "a74b7ad0ca35873f21def4915c37850147b5a404f93f7286f0a80f278b442ff3",
+      "file_sha256": "d3f0f1e90cb69674891b862ed681d3c28aedab029ab981bc3f8734b0521a8615",
+      "reply": {
+        "phases": [
+          "input_snapshot",
+          "load_records",
+          "builder_entries",
+          "encode_dictionary",
+          "encoded_dictionary",
+          "snapshot",
+          "header",
+          "verify_records",
+          "publish_file"
+        ],
+        "status": "succeeded",
+        "summary": {
+          "file_bytes": 719085,
+          "framed_records_sha256": "c55ba74ca39ee5acece09cdb4a7f95806fd15f434498e9fa9deeee82401c392d",
+          "key_bytes": 720793,
+          "metadata": {
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "Copyright": "Example\n2026",
+            "CustomNote": "保持 & حفظ",
+            "Description": "Line one\nLine two\tأهلاً",
+            "Encoding": "UTF-16",
+            "Encrypted": "No",
+            "Format": "Html",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "StyleSheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "Title": "Larger 字 العربية & \"title\""
+          },
+          "operation": "pack_mdx",
+          "payload_bytes": 16285447,
+          "profile": "large-dictionary-io-v1",
+          "records": 65536,
+          "source_sha256": "a74b7ad0ca35873f21def4915c37850147b5a404f93f7286f0a80f278b442ff3"
+        }
+      },
+      "peak_RSS_bytes": 105115648
+    },
+    {
+      "name": "export_jsonl-utf16",
+      "returncode": 0,
+      "request": {
+        "request": {
+          "operation": "export_jsonl",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/large-utf16.mdx",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/utf16.jsonl"
+        }
+      },
+      "input_sha256": "d3f0f1e90cb69674891b862ed681d3c28aedab029ab981bc3f8734b0521a8615",
+      "file_sha256": "a78d6318ceb32f78fc8cb655cd98a21dd62c1166413e6b35feb1f4e524d7cfa6",
+      "reply": {
+        "phases": [
+          "snapshot",
+          "header",
+          "export_records",
+          "publish_file"
+        ],
+        "status": "succeeded",
+        "summary": {
+          "file_bytes": 18546333,
+          "framed_records_sha256": "c55ba74ca39ee5acece09cdb4a7f95806fd15f434498e9fa9deeee82401c392d",
+          "key_bytes": 720793,
+          "metadata": {
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "Copyright": "Example\n2026",
+            "CustomNote": "保持 & حفظ",
+            "Description": "Line one\nLine two\tأهلاً",
+            "Encoding": "UTF-16",
+            "Encrypted": "No",
+            "Format": "Html",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "StyleSheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "Title": "Larger 字 العربية & \"title\""
+          },
+          "operation": "export_jsonl",
+          "payload_bytes": 16285447,
+          "profile": "large-dictionary-io-v1",
+          "records": 65536,
+          "source_sha256": "d3f0f1e90cb69674891b862ed681d3c28aedab029ab981bc3f8734b0521a8615"
+        }
+      },
+      "peak_RSS_bytes": 4231168
+    },
+    {
+      "name": "export_txt-utf16",
+      "returncode": 0,
+      "request": {
+        "request": {
+          "operation": "export_txt",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/large-utf16.mdx",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/utf16.txt"
+        }
+      },
+      "input_sha256": "d3f0f1e90cb69674891b862ed681d3c28aedab029ab981bc3f8734b0521a8615",
+      "file_sha256": "0b5f216d787109a09b005850adddf0ce52d8eeae1b75a12f6357877ccedf34d5",
+      "reply": {
+        "phases": [
+          "snapshot",
+          "header",
+          "export_records",
+          "publish_file"
+        ],
+        "status": "succeeded",
+        "summary": {
+          "file_bytes": 17399456,
+          "framed_records_sha256": "c55ba74ca39ee5acece09cdb4a7f95806fd15f434498e9fa9deeee82401c392d",
+          "key_bytes": 720793,
+          "metadata": {
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "Copyright": "Example\n2026",
+            "CustomNote": "保持 & حفظ",
+            "Description": "Line one\nLine two\tأهلاً",
+            "Encoding": "UTF-16",
+            "Encrypted": "No",
+            "Format": "Html",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "StyleSheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "Title": "Larger 字 العربية & \"title\""
+          },
+          "operation": "export_txt",
+          "payload_bytes": 16285447,
+          "profile": "large-dictionary-io-v1",
+          "records": 65536,
+          "source_sha256": "d3f0f1e90cb69674891b862ed681d3c28aedab029ab981bc3f8734b0521a8615"
+        }
+      },
+      "peak_RSS_bytes": 3825664
+    },
+    {
+      "name": "repack-utf16",
+      "returncode": 0,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/utf16.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/repacked-utf16.mdx",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf16"
+        }
+      },
+      "input_sha256": "a78d6318ceb32f78fc8cb655cd98a21dd62c1166413e6b35feb1f4e524d7cfa6",
+      "file_sha256": "d3f0f1e90cb69674891b862ed681d3c28aedab029ab981bc3f8734b0521a8615",
+      "reply": {
+        "phases": [
+          "input_snapshot",
+          "load_records",
+          "builder_entries",
+          "encode_dictionary",
+          "encoded_dictionary",
+          "snapshot",
+          "header",
+          "verify_records",
+          "publish_file"
+        ],
+        "status": "succeeded",
+        "summary": {
+          "file_bytes": 719085,
+          "framed_records_sha256": "c55ba74ca39ee5acece09cdb4a7f95806fd15f434498e9fa9deeee82401c392d",
+          "key_bytes": 720793,
+          "metadata": {
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "Copyright": "Example\n2026",
+            "CustomNote": "保持 & حفظ",
+            "Description": "Line one\nLine two\tأهلاً",
+            "Encoding": "UTF-16",
+            "Encrypted": "No",
+            "Format": "Html",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "StyleSheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "Title": "Larger 字 العربية & \"title\""
+          },
+          "operation": "pack_mdx",
+          "payload_bytes": 16285447,
+          "profile": "large-dictionary-io-v1",
+          "records": 65536,
+          "source_sha256": "a78d6318ceb32f78fc8cb655cd98a21dd62c1166413e6b35feb1f4e524d7cfa6"
+        }
+      },
+      "peak_RSS_bytes": 104964096
+    },
+    {
+      "name": "pack-mdd",
+      "returncode": 0,
+      "request": {
+        "request": {
+          "operation": "pack_mdd",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/mdd.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/large.mdd",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "resource_root": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/resources"
+        }
+      },
+      "input_sha256": "333879015cb34ea78ae0d15f2db0af9a0d8c0fac379e2a4b57dd159bdb9f3b90",
+      "file_sha256": "7fba67200fd1109a6e464e72a184873ffc9f0b68da114522cd55f179f33b2d15",
+      "reply": {
+        "phases": [
+          "input_snapshot",
+          "load_records",
+          "builder_resources",
+          "encode_dictionary",
+          "encoded_dictionary",
+          "snapshot",
+          "header",
+          "verify_records",
+          "publish_file"
+        ],
+        "status": "succeeded",
+        "summary": {
+          "file_bytes": 414504,
+          "framed_records_sha256": "9c2d3078ed96733518f2df144b01ff67b74e30f148da2902f728df53ab1cbf99",
+          "key_bytes": 720793,
+          "metadata": {
+            "Compact": "No",
+            "Compat": "No",
+            "Copyright": "Example\n2026",
+            "CustomNote": "保持 & حفظ",
+            "Description": "Line one\nLine two\tأهلاً",
+            "Encoding": "",
+            "Encrypted": "No",
+            "Format": "",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "StyleSheet": "",
+            "Title": "Larger 字 العربية & \"title\""
+          },
+          "operation": "pack_mdd",
+          "payload_bytes": 16776960,
+          "profile": "large-dictionary-io-v1",
+          "records": 65536,
+          "source_sha256": "333879015cb34ea78ae0d15f2db0af9a0d8c0fac379e2a4b57dd159bdb9f3b90"
+        }
+      },
+      "peak_RSS_bytes": 62132224
+    },
+    {
+      "name": "pack-boundary",
+      "returncode": 0,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/boundary.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/boundary.mdx",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf16"
+        }
+      },
+      "input_sha256": "6b1cc8567d11d2aec4f089c78a3593e860f3ac94b887dd09629b36b71d6bdf1d",
+      "file_sha256": "f2230f1517c2e3bade6103d85ec9c85701cc77869d6e5120b87b0f1786e08b81",
+      "reply": {
+        "phases": [
+          "input_snapshot",
+          "load_records",
+          "builder_entries",
+          "encode_dictionary",
+          "encoded_dictionary",
+          "snapshot",
+          "header",
+          "verify_records",
+          "publish_file"
+        ],
+        "status": "succeeded",
+        "summary": {
+          "file_bytes": 3069,
+          "framed_records_sha256": "b88436e4cf28573e8353d4100ab67fb37ba3b89b011999a587b5ff92144e865a",
+          "key_bytes": 8,
+          "metadata": {
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "Copyright": "Example\n2026",
+            "CustomNote": "保持 & حفظ",
+            "Description": "Line one\nLine two\tأهلاً",
+            "Encoding": "UTF-16",
+            "Encrypted": "No",
+            "Format": "Html",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "StyleSheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "Title": "Larger 字 العربية & \"title\""
+          },
+          "operation": "pack_mdx",
+          "payload_bytes": 1048576,
+          "profile": "large-dictionary-io-v1",
+          "records": 1,
+          "source_sha256": "6b1cc8567d11d2aec4f089c78a3593e860f3ac94b887dd09629b36b71d6bdf1d"
+        }
+      },
+      "peak_RSS_bytes": 18972672
+    },
+    {
+      "name": "limit-records",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/small.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/limit-records",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf8"
+        },
+        "tighten": {
+          "records": 1
+        }
+      },
+      "input_sha256": "4c1f6c564f55a94ac4b583442136f2190d59e33aaa9c384e9490228f7fc74279",
+      "reply": {
+        "error": {
+          "code": "limit_exceeded",
+          "detail": "limit_exceeded",
+          "message": "Record count or payload cap exceeded"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 2646016
+    },
+    {
+      "name": "limit-decoded_bytes",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/small.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/limit-decoded_bytes",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf8"
+        },
+        "tighten": {
+          "decoded_bytes": 2
+        }
+      },
+      "input_sha256": "4c1f6c564f55a94ac4b583442136f2190d59e33aaa9c384e9490228f7fc74279",
+      "reply": {
+        "error": {
+          "code": "limit_exceeded",
+          "detail": "limit_exceeded",
+          "message": "Aggregate decoded key/payload cap exceeded"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 2686976
+    },
+    {
+      "name": "limit-entry_bytes",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/small.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/limit-entry_bytes",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf8"
+        },
+        "tighten": {
+          "entry_bytes": 1
+        }
+      },
+      "input_sha256": "4c1f6c564f55a94ac4b583442136f2190d59e33aaa9c384e9490228f7fc74279",
+      "reply": {
+        "error": {
+          "code": "limit_exceeded",
+          "detail": "limit_exceeded",
+          "message": "Record count or payload cap exceeded"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 2674688
+    },
+    {
+      "name": "limit-plan_charge",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/small.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/limit-plan_charge",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf8"
+        },
+        "tighten": {
+          "plan_charge": 1
+        }
+      },
+      "input_sha256": "4c1f6c564f55a94ac4b583442136f2190d59e33aaa9c384e9490228f7fc74279",
+      "reply": {
+        "error": {
+          "code": "limit_exceeded",
+          "detail": "limit_exceeded",
+          "message": "Descriptor plan cap exceeded"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 2682880
+    },
+    {
+      "name": "limit-input_bytes",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/small.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/limit-input_bytes",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf8"
+        },
+        "tighten": {
+          "input_bytes": 1
+        }
+      },
+      "input_sha256": "4c1f6c564f55a94ac4b583442136f2190d59e33aaa9c384e9490228f7fc74279",
+      "reply": {
+        "error": {
+          "code": "limit_exceeded",
+          "detail": "limit_exceeded",
+          "message": "Input file exceeds cap"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 1916928
+    },
+    {
+      "name": "limit-output_bytes",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/small.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/limit-output_bytes",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf8"
+        },
+        "tighten": {
+          "output_bytes": 8
+        }
+      },
+      "input_sha256": "4c1f6c564f55a94ac4b583442136f2190d59e33aaa9c384e9490228f7fc74279",
+      "reply": {
+        "error": {
+          "code": "limit_exceeded",
+          "detail": "limit_exceeded",
+          "message": "Encoded dictionary exceeds output cap"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 3399680
+    },
+    {
+      "name": "limits-cannot-grow",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/small.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/grow",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf8"
+        },
+        "tighten": {
+          "decoded_bytes": 33554433
+        }
+      },
+      "input_sha256": "4c1f6c564f55a94ac4b583442136f2190d59e33aaa9c384e9490228f7fc74279",
+      "reply": {
+        "error": {
+          "code": "invalid_input",
+          "detail": "limits",
+          "message": "Only lower IO ceilings are supported"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 1478656
+    },
+    {
+      "name": "bad-json",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/bad-json",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/bad-json",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf8"
+        }
+      },
+      "input_sha256": "a6fb08fda1acb957b6116bd37811a1fe41a01611c0631edbf786d6889a27a55c",
+      "reply": {
+        "error": {
+          "code": "invalid_input",
+          "detail": "source_json",
+          "message": "EOF while parsing an object at line 2 column 0"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 2756608
+    },
+    {
+      "name": "bad-utf8",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/bad-utf8",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/bad-utf8",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf8"
+        }
+      },
+      "input_sha256": "e4688624e5f1ad0629505e6768e3bb36244f2f3e33e751215afa820334a76ed3",
+      "reply": {
+        "error": {
+          "code": "invalid_encoding",
+          "detail": "source_utf8",
+          "message": "JSONL must be strict UTF-8"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 2637824
+    },
+    {
+      "name": "missing-lf",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/missing-lf",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/missing-lf",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf8"
+        }
+      },
+      "input_sha256": "25fccc0a98a7420ca5569ce8f44039cbd750c845ef647f4afb2b5c46da6fb524",
+      "reply": {
+        "error": {
+          "code": "invalid_input",
+          "detail": "source_line",
+          "message": "Every source record/line requires a final LF"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 2719744
+    },
+    {
+      "name": "missing-text",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/missing-text",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/missing-text",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf8"
+        }
+      },
+      "input_sha256": "aea675dd38991def142c2ca86e7e6ffcc169fcc788217dc6b8ebcd3ed3f41369",
+      "reply": {
+        "error": {
+          "code": "invalid_input",
+          "detail": "source_json",
+          "message": "Missing MDX text"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 2621440
+    },
+    {
+      "name": "nul",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/nul",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/nul",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf8"
+        }
+      },
+      "input_sha256": "f8c5870641e999e37fec5a1fa269da20cb97ba01580fced0417f285e01f45a24",
+      "reply": {
+        "error": {
+          "code": "invalid_input",
+          "detail": "definition",
+          "message": "NUL is not representable"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 2658304
+    },
+    {
+      "name": "unknown-style",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/unknown-style",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/unknown-style",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf8"
+        }
+      },
+      "input_sha256": "a201c43d94f12f9e9d1f189c5dd41e81a1a7d289585cd6e30565f909e3204d78",
+      "reply": {
+        "error": {
+          "code": "invalid_input",
+          "detail": "stylesheet_marker",
+          "message": "Numeric definition marker has no stylesheet rule"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 2654208
+    },
+    {
+      "name": "over-entry",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/over-entry",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/over-entry",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf8"
+        }
+      },
+      "input_sha256": "1d31239c5e98b734b13fbddc822f68e2c0107361dd7744b2fad552792918c818",
+      "reply": {
+        "error": {
+          "code": "limit_exceeded",
+          "detail": "limit_exceeded",
+          "message": "Record count or payload cap exceeded"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 4767744
+    },
+    {
+      "name": "resource-escape",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "pack_mdd",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/escape.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/escape",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "resource_root": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/resources"
+        }
+      },
+      "input_sha256": "46319c2109f05ec6d2ad79deeeffc49aaffa0e9fce728606abc470d846d05db4",
+      "reply": {
+        "error": {
+          "code": "unsafe_path",
+          "detail": "resource_path",
+          "message": "Resource path contains traversal, ambiguous or nonportable components"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 2666496
+    },
+    {
+      "name": "resource-absolute",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "pack_mdd",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/absolute.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/absolute",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "resource_root": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/resources"
+        }
+      },
+      "input_sha256": "c1a6f0b179ecef6d44ca0ef7312f0b7d7b872e3e319bf64e2d57ef7da5227c4f",
+      "reply": {
+        "error": {
+          "code": "invalid_input",
+          "detail": "resource_reference",
+          "message": "Resource references must be relative to selected root"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 2707456
+    },
+    {
+      "name": "resource-symlink",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "pack_mdd",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/symlink.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/symlink",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "resource_root": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/resources"
+        }
+      },
+      "input_sha256": "f261867e6975aeb71f71fd9c72630098eee4329040d275c4caad91dcb04b8f94",
+      "reply": {
+        "error": {
+          "code": "io",
+          "detail": "io",
+          "message": "Too many levels of symbolic links (os error 62)"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 2752512
+    },
+    {
+      "name": "metadata-override",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/small.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/override",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "StripKey": "Yes"
+            }
+          },
+          "encoding": "utf8"
+        }
+      },
+      "input_sha256": "4c1f6c564f55a94ac4b583442136f2190d59e33aaa9c384e9490228f7fc74279",
+      "reply": {
+        "error": {
+          "code": "invalid_input",
+          "detail": "metadata_override",
+          "message": "Extra metadata cannot override structural/profile attributes"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 1646592
+    },
+    {
+      "name": "existing",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/small.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/existing",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf8"
+        }
+      },
+      "input_sha256": "4c1f6c564f55a94ac4b583442136f2190d59e33aaa9c384e9490228f7fc74279",
+      "reply": {
+        "error": {
+          "code": "destination_exists",
+          "detail": "destination_exists",
+          "message": "Destination exists"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 1495040
+    },
+    {
+      "name": "cancel-input_snapshot",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/small.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/cancel-input_snapshot",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf8"
+        },
+        "cancel_phase": "input_snapshot",
+        "cancel_after": 0
+      },
+      "input_sha256": "4c1f6c564f55a94ac4b583442136f2190d59e33aaa9c384e9490228f7fc74279",
+      "reply": {
+        "error": {
+          "code": "cancelled",
+          "detail": "cancelled",
+          "message": "Bounded reader cancelled"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 1961984
+    },
+    {
+      "name": "cancel-load_records",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/small.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/cancel-load_records",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf8"
+        },
+        "cancel_phase": "load_records",
+        "cancel_after": 0
+      },
+      "input_sha256": "4c1f6c564f55a94ac4b583442136f2190d59e33aaa9c384e9490228f7fc74279",
+      "reply": {
+        "error": {
+          "code": "cancelled",
+          "detail": "cancelled",
+          "message": "Bounded reader cancelled"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 2666496
+    },
+    {
+      "name": "cancel-builder_entries",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/small.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/cancel-builder_entries",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf8"
+        },
+        "cancel_phase": "builder_entries",
+        "cancel_after": 0
+      },
+      "input_sha256": "4c1f6c564f55a94ac4b583442136f2190d59e33aaa9c384e9490228f7fc74279",
+      "reply": {
+        "error": {
+          "code": "cancelled",
+          "detail": "cancelled",
+          "message": "Bounded reader cancelled"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 2682880
+    },
+    {
+      "name": "cancel-encode_dictionary",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/small.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/cancel-encode_dictionary",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf8"
+        },
+        "cancel_phase": "encode_dictionary",
+        "cancel_after": 0
+      },
+      "input_sha256": "4c1f6c564f55a94ac4b583442136f2190d59e33aaa9c384e9490228f7fc74279",
+      "reply": {
+        "error": {
+          "code": "cancelled",
+          "detail": "cancelled",
+          "message": "Bounded reader cancelled"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 2695168
+    },
+    {
+      "name": "cancel-encoded_dictionary",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/small.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/cancel-encoded_dictionary",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf8"
+        },
+        "cancel_phase": "encoded_dictionary",
+        "cancel_after": 0
+      },
+      "input_sha256": "4c1f6c564f55a94ac4b583442136f2190d59e33aaa9c384e9490228f7fc74279",
+      "reply": {
+        "error": {
+          "code": "cancelled",
+          "detail": "cancelled",
+          "message": "Bounded reader cancelled"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 3264512
+    },
+    {
+      "name": "cancel-verify_records",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/small.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/cancel-verify_records",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf8"
+        },
+        "cancel_phase": "verify_records",
+        "cancel_after": 0
+      },
+      "input_sha256": "4c1f6c564f55a94ac4b583442136f2190d59e33aaa9c384e9490228f7fc74279",
+      "reply": {
+        "error": {
+          "code": "cancelled",
+          "detail": "cancelled",
+          "message": "Bounded reader cancelled"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 3874816
+    },
+    {
+      "name": "cancel-publish_file",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/small.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/cancel-publish_file",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf8"
+        },
+        "cancel_phase": "publish_file",
+        "cancel_after": 0
+      },
+      "input_sha256": "4c1f6c564f55a94ac4b583442136f2190d59e33aaa9c384e9490228f7fc74279",
+      "reply": {
+        "error": {
+          "code": "cancelled",
+          "detail": "cancelled",
+          "message": "Bounded reader cancelled"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 3768320
+    },
+    {
+      "name": "cancel-export-export_records",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "export_jsonl",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/large-utf8.mdx",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/cancel-export-export_records"
+        },
+        "cancel_phase": "export_records",
+        "cancel_after": 10
+      },
+      "input_sha256": "d136fa51dd7fff8bfd92b316a2d7bed98d36f206f4950a3b593e930d35fef12c",
+      "reply": {
+        "error": {
+          "code": "cancelled",
+          "detail": "cancelled",
+          "message": "Bounded reader cancelled"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 2617344
+    },
+    {
+      "name": "cancel-export-publish_file",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "export_jsonl",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/large-utf8.mdx",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/cancel-export-publish_file"
+        },
+        "cancel_phase": "publish_file",
+        "cancel_after": 0
+      },
+      "input_sha256": "d136fa51dd7fff8bfd92b316a2d7bed98d36f206f4950a3b593e930d35fef12c",
+      "reply": {
+        "error": {
+          "code": "cancelled",
+          "detail": "cancelled",
+          "message": "Bounded reader cancelled"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 3792896
+    },
+    {
+      "name": "pack-key-newline",
+      "returncode": 0,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/key-newline.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/key-newline.mdx",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf8"
+        }
+      },
+      "input_sha256": "da2f0c72d3710f42b38de3f11504e5445a970b1d57de52f8218447fc3476280e",
+      "file_sha256": "93236f4762a71dc09d3e2cce334b88ed974121520c88ce4e1687a94b468d3ff7",
+      "reply": {
+        "phases": [
+          "input_snapshot",
+          "load_records",
+          "builder_entries",
+          "encode_dictionary",
+          "encoded_dictionary",
+          "snapshot",
+          "header",
+          "verify_records",
+          "publish_file"
+        ],
+        "status": "succeeded",
+        "summary": {
+          "file_bytes": 1013,
+          "framed_records_sha256": "531bc234c224ba55b6b123f34322c473c1421601d215090379a3a6b8477b9299",
+          "key_bytes": 9,
+          "metadata": {
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "Copyright": "Example\n2026",
+            "CustomNote": "保持 & حفظ",
+            "Description": "Line one\nLine two\tأهلاً",
+            "Encoding": "UTF-8",
+            "Encrypted": "No",
+            "Format": "Html",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "StyleSheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "Title": "Larger 字 العربية & \"title\""
+          },
+          "operation": "pack_mdx",
+          "payload_bytes": 4,
+          "profile": "large-dictionary-io-v1",
+          "records": 1,
+          "source_sha256": "da2f0c72d3710f42b38de3f11504e5445a970b1d57de52f8218447fc3476280e"
+        }
+      },
+      "peak_RSS_bytes": 3706880
+    },
+    {
+      "name": "txt-refuse-key-newline",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "export_txt",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/key-newline.mdx",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/key-newline.txt"
+        }
+      },
+      "input_sha256": "93236f4762a71dc09d3e2cce334b88ed974121520c88ce4e1687a94b468d3ff7",
+      "reply": {
+        "error": {
+          "code": "unrepresentable_source",
+          "detail": "txt_grammar",
+          "message": "Canonical TXT cannot represent this key/body without changing it"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 2387968
+    },
+    {
+      "name": "json-preserve-key-newline",
+      "returncode": 0,
+      "request": {
+        "request": {
+          "operation": "export_jsonl",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/key-newline.mdx",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/key-newline.jsonl"
+        }
+      },
+      "input_sha256": "93236f4762a71dc09d3e2cce334b88ed974121520c88ce4e1687a94b468d3ff7",
+      "file_sha256": "da2f0c72d3710f42b38de3f11504e5445a970b1d57de52f8218447fc3476280e",
+      "reply": {
+        "phases": [
+          "snapshot",
+          "header",
+          "export_records",
+          "publish_file"
+        ],
+        "status": "succeeded",
+        "summary": {
+          "file_bytes": 35,
+          "framed_records_sha256": "531bc234c224ba55b6b123f34322c473c1421601d215090379a3a6b8477b9299",
+          "key_bytes": 9,
+          "metadata": {
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "Copyright": "Example\n2026",
+            "CustomNote": "保持 & حفظ",
+            "Description": "Line one\nLine two\tأهلاً",
+            "Encoding": "UTF-8",
+            "Encrypted": "No",
+            "Format": "Html",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "StyleSheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "Title": "Larger 字 العربية & \"title\""
+          },
+          "operation": "export_jsonl",
+          "payload_bytes": 4,
+          "profile": "large-dictionary-io-v1",
+          "records": 1,
+          "source_sha256": "93236f4762a71dc09d3e2cce334b88ed974121520c88ce4e1687a94b468d3ff7"
+        }
+      },
+      "peak_RSS_bytes": 2482176
+    },
+    {
+      "name": "pack-delimiter-body",
+      "returncode": 0,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/delimiter-body.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/delimiter-body.mdx",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf8"
+        }
+      },
+      "input_sha256": "eb7e6e3374e84028bdabb1a151acc84ca44da9658c9b262923ad9f6eb4273859",
+      "file_sha256": "2961884fe8854991d1b05b130105ab2495cf0202fb0504cd67826bf2488afc35",
+      "reply": {
+        "phases": [
+          "input_snapshot",
+          "load_records",
+          "builder_entries",
+          "encode_dictionary",
+          "encoded_dictionary",
+          "snapshot",
+          "header",
+          "verify_records",
+          "publish_file"
+        ],
+        "status": "succeeded",
+        "summary": {
+          "file_bytes": 997,
+          "framed_records_sha256": "7bf649a89a8849db9f3dc465940db72043e5292a936e32c73aa73800cef763b0",
+          "key_bytes": 3,
+          "metadata": {
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "Copyright": "Example\n2026",
+            "CustomNote": "保持 & حفظ",
+            "Description": "Line one\nLine two\tأهلاً",
+            "Encoding": "UTF-8",
+            "Encrypted": "No",
+            "Format": "Html",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "StyleSheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "Title": "Larger 字 العربية & \"title\""
+          },
+          "operation": "pack_mdx",
+          "payload_bytes": 14,
+          "profile": "large-dictionary-io-v1",
+          "records": 1,
+          "source_sha256": "eb7e6e3374e84028bdabb1a151acc84ca44da9658c9b262923ad9f6eb4273859"
+        }
+      },
+      "peak_RSS_bytes": 3784704
+    },
+    {
+      "name": "txt-refuse-delimiter-body",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "export_txt",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/delimiter-body.mdx",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/delimiter-body.txt"
+        }
+      },
+      "input_sha256": "2961884fe8854991d1b05b130105ab2495cf0202fb0504cd67826bf2488afc35",
+      "reply": {
+        "error": {
+          "code": "unrepresentable_source",
+          "detail": "txt_grammar",
+          "message": "Canonical TXT cannot represent this key/body without changing it"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 2412544
+    },
+    {
+      "name": "json-preserve-delimiter-body",
+      "returncode": 0,
+      "request": {
+        "request": {
+          "operation": "export_jsonl",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/delimiter-body.mdx",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/delimiter-body.jsonl"
+        }
+      },
+      "input_sha256": "2961884fe8854991d1b05b130105ab2495cf0202fb0504cd67826bf2488afc35",
+      "file_sha256": "eb7e6e3374e84028bdabb1a151acc84ca44da9658c9b262923ad9f6eb4273859",
+      "reply": {
+        "phases": [
+          "snapshot",
+          "header",
+          "export_records",
+          "publish_file"
+        ],
+        "status": "succeeded",
+        "summary": {
+          "file_bytes": 40,
+          "framed_records_sha256": "7bf649a89a8849db9f3dc465940db72043e5292a936e32c73aa73800cef763b0",
+          "key_bytes": 3,
+          "metadata": {
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "Copyright": "Example\n2026",
+            "CustomNote": "保持 & حفظ",
+            "Description": "Line one\nLine two\tأهلاً",
+            "Encoding": "UTF-8",
+            "Encrypted": "No",
+            "Format": "Html",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "StyleSheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "Title": "Larger 字 العربية & \"title\""
+          },
+          "operation": "export_jsonl",
+          "payload_bytes": 14,
+          "profile": "large-dictionary-io-v1",
+          "records": 1,
+          "source_sha256": "2961884fe8854991d1b05b130105ab2495cf0202fb0504cd67826bf2488afc35"
+        }
+      },
+      "peak_RSS_bytes": 2498560
+    },
+    {
+      "name": "pack-cr-body",
+      "returncode": 0,
+      "request": {
+        "request": {
+          "operation": "pack_mdx",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/inputs/cr-body.jsonl",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/cr-body.mdx",
+          "metadata": {
+            "title": "Larger 字 العربية & \"title\"",
+            "description": "Line one\nLine two\tأهلاً",
+            "stylesheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "extra": {
+              "Copyright": "Example\n2026",
+              "CustomNote": "保持 & حفظ"
+            }
+          },
+          "encoding": "utf8"
+        }
+      },
+      "input_sha256": "b076b4d9eca5d72d78a6b82137f5c44f06283458dcd23ba11c330137e202f0c3",
+      "file_sha256": "ad0b2be158e7b7caab4d07e2105906058f98df04957a621e73c159326f65226d",
+      "reply": {
+        "phases": [
+          "input_snapshot",
+          "load_records",
+          "builder_entries",
+          "encode_dictionary",
+          "encoded_dictionary",
+          "snapshot",
+          "header",
+          "verify_records",
+          "publish_file"
+        ],
+        "status": "succeeded",
+        "summary": {
+          "file_bytes": 986,
+          "framed_records_sha256": "59057b710a4eaa875d4c3703b1592d576303199ce1a097b49c7120382ee5d4dd",
+          "key_bytes": 3,
+          "metadata": {
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "Copyright": "Example\n2026",
+            "CustomNote": "保持 & حفظ",
+            "Description": "Line one\nLine two\tأهلاً",
+            "Encoding": "UTF-8",
+            "Encrypted": "No",
+            "Format": "Html",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "StyleSheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "Title": "Larger 字 العربية & \"title\""
+          },
+          "operation": "pack_mdx",
+          "payload_bytes": 3,
+          "profile": "large-dictionary-io-v1",
+          "records": 1,
+          "source_sha256": "b076b4d9eca5d72d78a6b82137f5c44f06283458dcd23ba11c330137e202f0c3"
+        }
+      },
+      "peak_RSS_bytes": 3764224
+    },
+    {
+      "name": "txt-refuse-cr-body",
+      "returncode": 1,
+      "request": {
+        "request": {
+          "operation": "export_txt",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/cr-body.mdx",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/cr-body.txt"
+        }
+      },
+      "input_sha256": "ad0b2be158e7b7caab4d07e2105906058f98df04957a621e73c159326f65226d",
+      "reply": {
+        "error": {
+          "code": "unrepresentable_source",
+          "detail": "txt_grammar",
+          "message": "Canonical TXT cannot represent this key/body without changing it"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 2383872
+    },
+    {
+      "name": "json-preserve-cr-body",
+      "returncode": 0,
+      "request": {
+        "request": {
+          "operation": "export_jsonl",
+          "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/cr-body.mdx",
+          "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-large-io-out/outputs/cr-body.jsonl"
+        }
+      },
+      "input_sha256": "ad0b2be158e7b7caab4d07e2105906058f98df04957a621e73c159326f65226d",
+      "file_sha256": "b076b4d9eca5d72d78a6b82137f5c44f06283458dcd23ba11c330137e202f0c3",
+      "reply": {
+        "phases": [
+          "snapshot",
+          "header",
+          "export_records",
+          "publish_file"
+        ],
+        "status": "succeeded",
+        "summary": {
+          "file_bytes": 28,
+          "framed_records_sha256": "59057b710a4eaa875d4c3703b1592d576303199ce1a097b49c7120382ee5d4dd",
+          "key_bytes": 3,
+          "metadata": {
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "Copyright": "Example\n2026",
+            "CustomNote": "保持 & حفظ",
+            "Description": "Line one\nLine two\tأهلاً",
+            "Encoding": "UTF-8",
+            "Encrypted": "No",
+            "Format": "Html",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "StyleSheet": "1\n<span style=\"color:blue\">\n</span>\n",
+            "Title": "Larger 字 العربية & \"title\""
+          },
+          "operation": "export_jsonl",
+          "payload_bytes": 3,
+          "profile": "large-dictionary-io-v1",
+          "records": 1,
+          "source_sha256": "ad0b2be158e7b7caab4d07e2105906058f98df04957a621e73c159326f65226d"
+        }
+      },
+      "peak_RSS_bytes": 2473984
+    }
+  ],
+  "checks": [
+    {
+      "case": "large-utf8.mdx",
+      "wire_record_digest": {
+        "records": 65536,
+        "key_bytes": 720793,
+        "payload_bytes": 16285447,
+        "framed_records_sha256": "c55ba74ca39ee5acece09cdb4a7f95806fd15f434498e9fa9deeee82401c392d"
+      },
+      "file_sha256": "d136fa51dd7fff8bfd92b316a2d7bed98d36f206f4950a3b593e930d35fef12c",
+      "structural_audit": {
+        "file": "large-utf8.mdx",
+        "sha256": "d136fa51dd7fff8bfd92b316a2d7bed98d36f206f4950a3b593e930d35fef12c",
+        "size_bytes": 527913,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "UTF-8",
+          "Encrypted": "No",
+          "Compact": "Yes",
+          "Format": "Html",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 36,
+        "records": 65536,
+        "key_blocks": 81,
+        "record_blocks": 251,
+        "uncompressed_record_bytes": 16350983,
+        "duplicate_headwords": 1,
+        "sample_keys": [
+          " spaced ",
+          "a b",
+          "a-b",
+          "a.b",
+          "ab",
+          "Apple",
+          "apple",
+          "APPLE"
+        ],
+        "script_counts": {
+          "Arabic_keys": 1,
+          "CJK_keys": 1
+        },
+        "redirect_records": 0,
+        "style_markers": 65535,
+        "empty_bodies": 1,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [],
+        "resources": [],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "d136fa51dd7fff8bfd92b316a2d7bed98d36f206f4950a3b593e930d35fef12c"
+      }
+    },
+    {
+      "case": "utf8.jsonl",
+      "independent_export_bytes": {
+        "bytes": 18546333,
+        "sha256": "a78d6318ceb32f78fc8cb655cd98a21dd62c1166413e6b35feb1f4e524d7cfa6"
+      }
+    },
+    {
+      "case": "utf8.txt",
+      "independent_export_bytes": {
+        "bytes": 17399456,
+        "sha256": "0b5f216d787109a09b005850adddf0ce52d8eeae1b75a12f6357877ccedf34d5"
+      }
+    },
+    {
+      "case": "repacked-utf8.mdx",
+      "wire_record_digest": {
+        "records": 65536,
+        "key_bytes": 720793,
+        "payload_bytes": 16285447,
+        "framed_records_sha256": "c55ba74ca39ee5acece09cdb4a7f95806fd15f434498e9fa9deeee82401c392d"
+      },
+      "file_sha256": "d136fa51dd7fff8bfd92b316a2d7bed98d36f206f4950a3b593e930d35fef12c",
+      "structural_audit": {
+        "file": "repacked-utf8.mdx",
+        "sha256": "d136fa51dd7fff8bfd92b316a2d7bed98d36f206f4950a3b593e930d35fef12c",
+        "size_bytes": 527913,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "UTF-8",
+          "Encrypted": "No",
+          "Compact": "Yes",
+          "Format": "Html",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 36,
+        "records": 65536,
+        "key_blocks": 81,
+        "record_blocks": 251,
+        "uncompressed_record_bytes": 16350983,
+        "duplicate_headwords": 1,
+        "sample_keys": [
+          " spaced ",
+          "a b",
+          "a-b",
+          "a.b",
+          "ab",
+          "Apple",
+          "apple",
+          "APPLE"
+        ],
+        "script_counts": {
+          "Arabic_keys": 1,
+          "CJK_keys": 1
+        },
+        "redirect_records": 0,
+        "style_markers": 65535,
+        "empty_bodies": 1,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [],
+        "resources": [],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "d136fa51dd7fff8bfd92b316a2d7bed98d36f206f4950a3b593e930d35fef12c"
+      }
+    },
+    {
+      "case": "large-utf16.mdx",
+      "wire_record_digest": {
+        "records": 65536,
+        "key_bytes": 720793,
+        "payload_bytes": 16285447,
+        "framed_records_sha256": "c55ba74ca39ee5acece09cdb4a7f95806fd15f434498e9fa9deeee82401c392d"
+      },
+      "file_sha256": "d3f0f1e90cb69674891b862ed681d3c28aedab029ab981bc3f8734b0521a8615",
+      "structural_audit": {
+        "file": "large-utf16.mdx",
+        "sha256": "d3f0f1e90cb69674891b862ed681d3c28aedab029ab981bc3f8734b0521a8615",
+        "size_bytes": 719085,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "UTF-16",
+          "Encrypted": "No",
+          "Compact": "Yes",
+          "Format": "Html",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 36,
+        "records": 65536,
+        "key_blocks": 128,
+        "record_blocks": 486,
+        "uncompressed_record_bytes": 31784476,
+        "duplicate_headwords": 1,
+        "sample_keys": [
+          " spaced ",
+          "a b",
+          "a-b",
+          "a.b",
+          "ab",
+          "Apple",
+          "apple",
+          "APPLE"
+        ],
+        "script_counts": {
+          "Arabic_keys": 1,
+          "CJK_keys": 1
+        },
+        "redirect_records": 0,
+        "style_markers": 65535,
+        "empty_bodies": 1,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [],
+        "resources": [],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "d3f0f1e90cb69674891b862ed681d3c28aedab029ab981bc3f8734b0521a8615"
+      }
+    },
+    {
+      "case": "utf16.jsonl",
+      "independent_export_bytes": {
+        "bytes": 18546333,
+        "sha256": "a78d6318ceb32f78fc8cb655cd98a21dd62c1166413e6b35feb1f4e524d7cfa6"
+      }
+    },
+    {
+      "case": "utf16.txt",
+      "independent_export_bytes": {
+        "bytes": 17399456,
+        "sha256": "0b5f216d787109a09b005850adddf0ce52d8eeae1b75a12f6357877ccedf34d5"
+      }
+    },
+    {
+      "case": "repacked-utf16.mdx",
+      "wire_record_digest": {
+        "records": 65536,
+        "key_bytes": 720793,
+        "payload_bytes": 16285447,
+        "framed_records_sha256": "c55ba74ca39ee5acece09cdb4a7f95806fd15f434498e9fa9deeee82401c392d"
+      },
+      "file_sha256": "d3f0f1e90cb69674891b862ed681d3c28aedab029ab981bc3f8734b0521a8615",
+      "structural_audit": {
+        "file": "repacked-utf16.mdx",
+        "sha256": "d3f0f1e90cb69674891b862ed681d3c28aedab029ab981bc3f8734b0521a8615",
+        "size_bytes": 719085,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "UTF-16",
+          "Encrypted": "No",
+          "Compact": "Yes",
+          "Format": "Html",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 36,
+        "records": 65536,
+        "key_blocks": 128,
+        "record_blocks": 486,
+        "uncompressed_record_bytes": 31784476,
+        "duplicate_headwords": 1,
+        "sample_keys": [
+          " spaced ",
+          "a b",
+          "a-b",
+          "a.b",
+          "ab",
+          "Apple",
+          "apple",
+          "APPLE"
+        ],
+        "script_counts": {
+          "Arabic_keys": 1,
+          "CJK_keys": 1
+        },
+        "redirect_records": 0,
+        "style_markers": 65535,
+        "empty_bodies": 1,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [],
+        "resources": [],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "d3f0f1e90cb69674891b862ed681d3c28aedab029ab981bc3f8734b0521a8615"
+      }
+    },
+    {
+      "case": "large.mdd",
+      "wire_record_digest": {
+        "records": 65536,
+        "key_bytes": 720793,
+        "payload_bytes": 16776960,
+        "framed_records_sha256": "9c2d3078ed96733518f2df144b01ff67b74e30f148da2902f728df53ab1cbf99"
+      },
+      "file_sha256": "7fba67200fd1109a6e464e72a184873ffc9f0b68da114522cd55f179f33b2d15",
+      "structural_audit": {
+        "file": "large.mdd",
+        "sha256": "7fba67200fd1109a6e464e72a184873ffc9f0b68da114522cd55f179f33b2d15",
+        "size_bytes": 414504,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "",
+          "Encrypted": "No",
+          "Compact": "No",
+          "Format": "",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 0,
+        "records": 65536,
+        "key_blocks": 128,
+        "record_blocks": 256,
+        "uncompressed_record_bytes": 16776960,
+        "duplicate_headwords": 1,
+        "sample_keys": [],
+        "script_counts": {},
+        "redirect_records": 0,
+        "style_markers": 0,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "7fba67200fd1109a6e464e72a184873ffc9f0b68da114522cd55f179f33b2d15"
+      }
+    },
+    {
+      "case": "boundary.mdx",
+      "wire_record_digest": {
+        "records": 1,
+        "key_bytes": 8,
+        "payload_bytes": 1048576,
+        "framed_records_sha256": "b88436e4cf28573e8353d4100ab67fb37ba3b89b011999a587b5ff92144e865a"
+      },
+      "file_sha256": "f2230f1517c2e3bade6103d85ec9c85701cc77869d6e5120b87b0f1786e08b81",
+      "structural_audit": {
+        "file": "boundary.mdx",
+        "sha256": "f2230f1517c2e3bade6103d85ec9c85701cc77869d6e5120b87b0f1786e08b81",
+        "size_bytes": 3069,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "UTF-16",
+          "Encrypted": "No",
+          "Compact": "Yes",
+          "Format": "Html",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 36,
+        "records": 1,
+        "key_blocks": 1,
+        "record_blocks": 1,
+        "uncompressed_record_bytes": 2097154,
+        "duplicate_headwords": 0,
+        "sample_keys": [
+          "boundary"
+        ],
+        "script_counts": {},
+        "redirect_records": 0,
+        "style_markers": 0,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [],
+        "resources": [],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "f2230f1517c2e3bade6103d85ec9c85701cc77869d6e5120b87b0f1786e08b81"
+      }
+    }
+  ],
+  "native_readers": "NOT_REQUESTED",
+  "scope": "32 MiB aggregate owned-builder input; disk-spooled JSONL packing, per-record MDX exports, no shared runtime integration",
+  "RSS_observation_target_bytes": 402653184,
+  "RSS_is_OS_limit": false,
+  "protected_source_sha256": {
+    "m2/Cargo.lock": "52204c28ecb6334cd1bdc16aa92c680094bad032343dac074a2d3f1bacc892b4",
+    "m2/Cargo.toml": "3ae1cbaf4026d1b8afeffc3c9e7a05ad60e34cf8cc116e8d59dbb6576ca547cb",
+    "m2/studio-cli/Cargo.toml": "fda21775f6b11f7e8775a8d50b0078fb22d9142e7ff234c51e42c8e0cb59b4d5",
+    "m2/studio-cli/src/main.rs": "bf35a6c970224a448906c0ebc1d498d8cff41f3563c905fb2424235e2e5b21d0",
+    "m2/studio-core/Cargo.toml": "5854ebd0acc2b11f62c8001fece7b89d7451ecbee87f70a3adb66059bbbd45cc",
+    "m2/studio-core/src/casing.rs": "279000271dc5c4c6997df2a138da252293ae7aca6fb742fa2c483641d50a842a",
+    "m2/studio-core/src/cedict.rs": "c51b7116ea7d7c6331fa43f8cf820e44664874440e23578c2cff1ae82ab94100",
+    "m2/studio-core/src/engine.rs": "799a776fea81176f135b4f84f543e0c0ce0b2a6a3dba7c0ef416b5fd395ab31e",
+    "m2/studio-core/src/error.rs": "8ea3b09d0f2bbe4b05993e6e3b2189a3cda9c4d3aca1f12022a1e2d046aa3df0",
+    "m2/studio-core/src/job.rs": "219caa620288bc355d3173a2759bcef2ca17167c8e517aa400e6c74cac112334",
+    "m2/studio-core/src/lib.rs": "20a3bdaa8a107bfb76cfa98fea0b4320a2a0fa7530c17f50c1ac278c1311fd88",
+    "m2/studio-core/src/model.rs": "ea349dfa63ae96896f611d39d109111a8e7f0d5a91f2ebada2b9b08f21498404",
+    "m2/studio-core/src/resource_paths.rs": "e1d2bbd02ba6b5c9e14210095944c2445b57e226f53310b425e58f7ec80b1cea",
+    "m2/studio-core/src/resources.rs": "563581bb1995c3c71678895ad3abf0332775ba67f73a7d0a6cb45fda8bfa3edf",
+    "m2/studio-core/src/safe_fs.rs": "ae0a71d5358cf3a4824754a6f42cec58cb29e5ba81e3eb0b92d9cf90feb51739",
+    "m2/studio-core/src/text.rs": "8f3f8d6c9861c8fc8daff58b9eb67c6366f473738788a1f43ab64db315d30ce3",
+    "m2/studio-core/tests/resources.rs": "ac5aa9c6c3b7b648255d25ca4ccf8e4b784a5b350d765a507791c178cdbd6964",
+    "m2/studio-core/tests/text_converters.rs": "d76557f39b08fc78e4eda59421bebf86182a95128d711762fd58c1d1c9688d57",
+    "m2/studio-core/tests/workflows.rs": "06bc2c094cd79d852ad61f7a56e167bad6ee3f6d39076f0cdd7bf0693bd9c8d9",
+    "scripts/m2_foundation.py": "ae8a72f053c2c262ca06717154dfd1b5e2948ef1e641c13c1bf167caa5117990",
+    "baseline/unicode/unicode16-casing.json": "f69d2e55d6b8c8d5fe33f764cc47b829bccc6d73aaff1791e1216328a1c24071",
+    "scripts/m2_text.py": "31dc855b4c0ddc3a8bb6c5f204aac93259b623ebcd86c5c67a0c76483d5b0d1e",
+    "baseline/cases.json": "6755e0e426f3723de47060339404478f1a313c19f073dba12eba03fc6fb1d566",
+    "baseline/source-manifest.json": "1f32ed5a20819ab8e1473e9a30609299815b50761173b83a8999cf513d69001b",
+    "baseline/legacy/plugins/cccedict_plugin.py": "4c3fc461a044e702678ce7fbf0e2b251969d5932c4bf2d2070d6f58c2eeb139c",
+    "baseline/legacy/base_plugin.py": "0620c3d88502191b4b297c918394cc9ae886e943e83b06bf377fa1284b044b49",
+    "baseline/expected/cc_cedict.txt": "8de24ce354f5d017b2e99702d82d2a81c607600386944d0000f2cd9c51ff02d0",
+    "baseline/expected/moe_revised.txt": "32688acf6251bb8536d585a20e82ae668423184ff7017b7aeed96936bb864a4f",
+    "baseline/expected/moe_revised_wfg.txt": "a955bbdeb60344e79f2127bb4ac19c65ff3c9a24b9162a2b85dbe8dc59bd7c04",
+    "baseline/expected/moe_concise.txt": "d6bffa874e702914802c5e8a574e5d83930ab723f2e4655b739b1555b2e6468a",
+    "baseline/expected/moe_idioms.txt": "f1e2fdb6ef77bed7aeee1ee66989fa00c3ac662e80a63712c2295916b157ac0c",
+    "baseline/expected/moe_mini.txt": "0f99434d534f8949d922fffceb012620ef8a64cb783e38325525a71345f888b3",
+    "Cargo.lock": "b1993e21cd4be1fd4937914bb7458cefb730e21927fbe058046e4aee3bd81e35",
+    "experiments/legacy-sort/Cargo.lock": "832527875540ca97c9af5ee227c0f38d3f03eed9c16c26a0c63fed51285f7a8e",
+    "experiments/real-rebuild/Cargo.lock": "0490f412f73e66fd7b719da2dd71470eeb315aaa9028837ae185f3437a8e867f",
+    "baseline/legacy/excel_utils.py": "b0a837e2197a5d0d42599171716b903ef813dc52512e55c1ccbe93f2f0bd2302",
+    "baseline/xlsx-reader-kit/active.xlsx": "14cd7220ebd4a204d1ee1c040d8b239850b8050b65d9cce28436d9dac08f9137",
+    "baseline/xlsx-reader-kit/date.xlsx": "6471da8cfd31b05cea4b337368895d97d9561bed0ee9a85461b9c6e8b2d1bef5",
+    "baseline/xlsx-reader-kit/duration.xlsx": "9d7f914cc909a54da641884e58dc094a1b1e7de5e091ac784766469688774468",
+    "baseline/xlsx-reader-kit/empty.xlsx": "9661fd2c02b0a22c54882e98fce99109013e1ef19025a82a1c047a2360ce0a18",
+    "baseline/xlsx-reader-kit/expected.json": "9f4963e95eda88ff02c04b7cbde5f786d6ebdbe630cde1c40ab000642fc15610",
+    "baseline/xlsx-reader-kit/external.xlsx": "32d56b3587454c78922656f23991899abd319425d57c496b90ca1592901b9841",
+    "baseline/xlsx-reader-kit/formulas.xlsx": "ab483a3ff5511029729637539f72f9b65b7ab6b0469df199b58aae173f6e2670",
+    "baseline/xlsx-reader-kit/headers.xlsx": "00e8e29b07d96047570b2ad250ccbf6c2c101cd08afc62336a7d8783c0b63640",
+    "baseline/xlsx-reader-kit/inline.xlsx": "f31838974f07304b9ee396b920bdc31919d558f74a55b1726a7646145a59d8f8",
+    "baseline/xlsx-reader-kit/invalid.xlsx": "a3989126344744ef800dbc88bf7e744853f3f2eac75c9ab3301f4e845ef22078",
+    "baseline/xlsx-reader-kit/leading.xlsx": "c17f48a55cabb7450264ca3a7b9f3522ceeb7615991aa0c359f19cc7ed938385",
+    "baseline/xlsx-reader-kit/manifest.json": "99b0fc27d71925bcbe7532455c5c0c04d64c8fdde8c2f3c4c5e031bb4996a8a3",
+    "baseline/xlsx-reader-kit/moderate.xlsx": "0cefca1be426be7fbb82bc10b885f7dd2ede473e8f0f02135277fa546465c920",
+    "baseline/xlsx-reader-kit/moe-rows.xlsx": "4d16e493d7686aa4db03b2619e023f81bbd93d9940ff4369fed91192c4fd5f1a",
+    "baseline/xlsx-reader-kit/no-dimension.xlsx": "8e1f8798236f73de5da482844e7dbb5034afedd4270ed0baaa2f00d70196aa60",
+    "baseline/xlsx-reader-kit/normalization.xlsx": "91999a3632fca2f9f8f0491fc1ec940ce6e4e1d4a1b95ebb1f2c34be0834081a",
+    "baseline/xlsx-reader-kit/numbers.xlsx": "7e1e905533434094add4017c921cd12dadd04f6e4aac4bc963f94ba95f500c60",
+    "baseline/xlsx-reader-kit/oversized.xlsx": "753b4bfc03c0a0fbb60855983050307401d22b9d422923f0f55a0943a951f1d0",
+    "baseline/xlsx-reader-kit/shared.xlsx": "f6067f5ab91957f560cd1c5fc0b344349a4d39254d2de4e489ff64b4f15a7fba",
+    "m2/xlsx-reader/Cargo.lock": "cd1e07d14298148b28a05dda63730b3c23337f39a4e5f6f11b3ad7a9c4f33d0b",
+    "m2/xlsx-reader/Cargo.toml": "9f4505aca02e286689f9f5e216c3d96b39d200c6b8d35576b4dbf87357d50cce",
+    "m2/xlsx-reader/src/lib.rs": "c928a923900f8fd400d2218b5a679b9ea6a79aa88ffc6ee51e1dd386aab9d22f",
+    "m2/xlsx-reader/src/main.rs": "d59522e31ca27a21f1ceabb7a33ba9eb4cd9a145a9a2f7bcf2951fc87d9a0df2",
+    "m2/xlsx-reader/src/numbers.rs": "0b93a8a1b152f72cf084c2db2c59293bdcd002cec03670773671d5fed61d1c16",
+    "m2/xlsx-reader/src/package.rs": "9a63a0f2c8e7bf88fb5866f20b17b10c35d5bb3146dd316567e2f413c5ff87bd",
+    "m2/xlsx-reader/src/reader.rs": "374894357b74baa326c02ae38580e1d271fe454948fe39cf52fd3955821ef122",
+    "m2/xlsx-reader/src/xml.rs": "618c8ada474d72b92fc818c8ac5317d588fa1d1e0bb1a23fa26c02b2df2e3d7c",
+    "m2/xlsx-reader/tests/compatibility.rs": "1290a1664165c7bd6ab4ba3d2940cf1290d933170d612a932f00d28df3fc43fd",
+    "scripts/m2_xlsx.py": "472a31551d81f135cfa73875bb25f785c21b85c0e1165513828d7966df32fb41",
+    "scripts/xlsx_fixtures.py": "50d5fc41ef9ec3a891f928059e210f7ee017034049ad61972913c98a45586746",
+    "baseline/capture.py": "4fbce57fc68d819c9675714fd12e12d20453180f515572f23089778865aeed01",
+    "baseline/legacy/plugins/WFG_desgin_Plugin.py": "9d476ee0fb38603c7b6e6634c9987ab7a26077dbf15357718e9e93293da09ba2",
+    "baseline/legacy/plugins/concise_plugin.py": "25b37d4f801e4ddfef03557a54fa8a20ad5bbbac79f8eddc19135ae6562abc6a",
+    "baseline/legacy/plugins/edudict_plugin.py": "2505bdaf5733f905d8fba1f68dd22e1c7b123484599d1f18bcf7c6cb576aa923",
+    "baseline/legacy/plugins/idiom_plugin.py": "53dce8296c31f92c1e83a4cb7f2773c7e97d6ae85f00811724a11adf83768bc1",
+    "baseline/legacy/plugins/mini_plugin.py": "aca858af532a8f409b5b55d6d3632b63466d8d67af910390f65e3623561c00f5",
+    "baseline/moe-converter-kit/expected.json": "16c5b4a1d2dd1c5fc1bc53050b5b8f6150d9ea2049d7077546594eec99ea0871",
+    "m2/xlsx-reader/src/bin/studio-moe.rs": "01795ea2efb091aa084c10247d4e06ea1891ce7f37b0a0723f6fe7b1f7ee1b04",
+    "m2/xlsx-reader/src/moe/layouts.rs": "b06cb5127d404c9afd9963c3b30313ae1413d465db4dd59b8c7f9622f3513f04",
+    "m2/xlsx-reader/src/moe/mini-head.html": "a1affc24fb57a563c85497f525566d69e040d4c89c70d1419ae3fe58599ac7c1",
+    "m2/xlsx-reader/src/moe/mod.rs": "707a136d46101684c2de412cfc912708393c3a17aeded2600716779c99114d56",
+    "m2/xlsx-reader/src/moe/text.rs": "d3fc6c131025e3cfecb150444c48802247b911f7bcb0f68070936097c9f48055",
+    "m2/xlsx-reader/tests/moe.rs": "26dfc34ae541d5c6925f2a7ff11a0e000b0fc57e414edcf8fca6744837a7084d",
+    "scripts/m2_moe.py": "2a4010465fd99806db1a93c73c216d7ab3c99e84ccd6e84c78ddbf960af50a8d",
+    "scripts/moe_fixtures.py": "541a9a76a6fe364249e3b0c0022589d7ae6f58470b63de4e8d5dade7a63be1fa",
+    "m2/application/Cargo.lock": "a3ef3c13d1fce64997c6f917b79a08557aa4788f1abeb309d953ec3764e6da2c",
+    "m2/application/Cargo.toml": "083a6e73f1d2ac2344dd4270806c2650d54006e0407bbe9076e2770587de081e",
+    "m2/application/src/error.rs": "886239afeffff7fdd0af01b4bc80ad10138f517d21de3b0dfd73402f762c65e2",
+    "m2/application/src/job.rs": "a8928aebd1095551dd6001385d7893bf507e82d92a7c0c385abd18e1d8a13054",
+    "m2/application/src/lib.rs": "c4c203582fc13785a57914df28e33d7f9a3f441194ae5f44d8c410e17a8bf3cd",
+    "m2/application/src/main.rs": "e7b3ba54c44c78c78a7fd9d3fe0528ddd37df67dd066e7a6be354e1726753e84",
+    "m2/application/tests/workflows.rs": "2759195a9955a6ff55a22b9496e2a70c79f4ac6b2ecdffc31c43da42819b74d1",
+    "scripts/application_lock.py": "7ab71348a702d2c066a91de9d797c97e36ce27a0e0b70e646189d76ed6738d09",
+    "scripts/m2_application.py": "57d2bd693fbe2c18bd3e30f43d0fb942ab3c003758f806f181e09be7f874d67e",
+    "m2/application/src/bin/studio-jobs-probe.rs": "435c9a49ed42ef188d2be8f759f722f070d43e3be8975ee6c283cad95f11a2c2",
+    "m2/application/src/runner/tests.rs": "9bb13429c4363137377af7e0670fa9ac0036975554455f72a479a395b1947a13",
+    "m2/application/src/runner.rs": "b2a4d68c6c189fd08802cf11535ba6307a2078be5d69409ef79a497f9336e934",
+    "m2/application/tests/background.rs": "f2cdd7e617ea6ce49d7ff9a602385af296aad26449e66cf5d4f65624fa06a948",
+    "scripts/m2_jobs.py": "dc3504670f919ea7b37abb66f704bd5ae7bb3a5bac33bbdd01cfd713c81279c3",
+    "baseline/resource-probe/studio-probe.ttf": "bb3f262bf21c6f63eca131f239113797636761a866d39756943ae702a318fb1f",
+    "m2/application/src/bin/studio-dictionary-jobs-probe.rs": "96e3c982344ffbee55a79dd87d7e7f74028d077a5c305706aaefa856395f8b4e",
+    "m2/application/src/runner/dictionary.rs": "219a46e6c5df7c8274d55ef94b3dfc96abc9c59d272cf6994e4ae89b739de735",
+    "m2/application/tests/dictionary_jobs.rs": "92fd0298f1b25d71adaa64a6c71e9eff463c8706bc34f723abd6a9c2b569be41",
+    "scripts/m2_dictionary_jobs.py": "e614cd4fe3c6b19506bb62bf50a7577cb2cc60f0f634bf6da13d1d4680dbe7e4",
+    "scripts/m2_resources.py": "b82995e769d2943d3d7b107d54b28e7df42d12353151d7cb64363a2f438a9cd2",
+    "scripts/patched_interop.py": "0f4b8670b59246c202a140f9981d8a9713e176102cd7d01d83214fc435ec4cb1",
+    "scripts/v2_audit.py": "0eb36ddcb0fa2721c0de7b5378b7614c49cf613de0dbe2ee1fc3f2c4d3f54203",
+    "m2/v2-import/Cargo.toml": "d441b0ce96872fbceb57802f2330a3ddc0c93a1dabd06b62c6f778aba383ef3e",
+    "m2/v2-import/src/header.rs": "4baca7c9a063df4d8ea127ce9f6c6b57e695832813ca295cff00529ae12088ee",
+    "m2/v2-import/src/lib.rs": "5f8e42fcc9db5952eb8b16d773aa171a321d5217d4859c1b6bfcef96a00cc28c",
+    "m2/v2-import/src/main.rs": "a9b7345656a9dfd95881f46c147ee11b8f696a19ad16c72abe3f285767d9b805",
+    "m2/v2-import/src/mdd.rs": "f58e26346e3365625930c6b802d8b0f9e48391dc62ef5844c60d3ac79f82be45",
+    "m2/v2-import/src/mdx.rs": "f5e405bb3380c71c2dc5863a2cc6e01fb0f64d72ff14aef5befe30f7bb50f3c3",
+    "m2/v2-import/tests/import.rs": "cbfdbeeb4f3734958bd700bd351d5da5dfd9313736d49467c59d02dbd56dc196",
+    "scripts/m2_v2_import.py": "ff012fdb0ef7d13c148700e01ebbe16a6f80ba28c6300e224b888070ae038619",
+    "scripts/v2_import_fixtures.py": "2129017142578de322d45bcaba96520113a0f0cc64053598f4659da401773c15",
+    "scripts/v2_import_lock.py": "a154a1b1b6881a5150a9b50c3e521322b4cec1d14a3877141abba5d8d692c632",
+    "m2/v2-import/Cargo.lock": "a051908d457e9596c0496a32faca03979e9deb9880ee80129061ad25c2c1f928",
+    "m2/v2-import/src/application/runner/tests.rs": "f0f423b54a5190ac0bbabee0d06e0aa83bc93f705d759910387d58161bf222eb",
+    "m2/v2-import/src/application/runner.rs": "18ec195ae41751217ed65d0c75e8161693592bf9bc8af39f7d5011e1142cb458",
+    "m2/v2-import/src/application.rs": "85d140aa3df7a95ae82a975df94c09f6cd930d702af8e6c818fd8bb0c969e553",
+    "m2/v2-import/src/bin/studio-import-jobs.rs": "f9a5c3c505208afadde5c1edeb48d4d5788b41513928b364c328fd8c4d209ff1",
+    "m2/v2-import/tests/application.rs": "3d90c30847fef356561e81fe81ad6db3b7d78a6acc08eca67eb73caaa5d09bb9",
+    "scripts/m2_import_jobs.py": "634256c43e9ba278387ece62cae49e8d12b5b2df618535e44377a53491c7c636",
+    "scripts/test_m2_import_jobs.py": "1ffeec818c708a6bf75e2a841bd740f0420ad08ff4d75f4c28b076f57731fa55",
+    "m2/v2-import/src/application/metadata.rs": "b1da4ffc3f28a5bea62b49b3ae8b34b456e3ff38f9553d314487ddf4c183055c",
+    "m2/v2-import/src/bin/studio-metadata-rebuild.rs": "5ae34297d5d74f10134bef794cbeb5f243124f806de20de7c1191a3049fe1721",
+    "m2/v2-import/tests/metadata.rs": "de50ab3dddcfefdcffdd5000e717cfcb0cae565c0cbb6fad73d15207210cb7a4",
+    "scripts/m2_metadata.py": "e650d808015b7a34bd2aa8fe0d001be1b0ca908d3cb369c5af7a2f58edf93455",
+    "scripts/test_m2_metadata.py": "8a7619ef546dad00b0226be8f5097b388345b5df946117706b044c20bc145147",
+    "m2/v2-import/src/application/metadata/publication/runner/tests.rs": "deba2f18ceb94b4b7dfaa068038c73a39fc04823627f17a07f751e7a629cd8fe",
+    "m2/v2-import/src/application/metadata/publication/runner.rs": "d9fb2307727ef77990d987e34ecb3fb86c13dd6b8b4d07453994ed9d54ad05c0",
+    "m2/v2-import/src/application/metadata/publication.rs": "cdac1aea2c1a964e63144e6cfcfe43d489c581363c84807afdd712e7e2e959f4",
+    "m2/v2-import/src/bin/studio-metadata-jobs.rs": "c615d94616bacb1b9f7375551d87fed308f3c8939a95c2b113b5b188a88220cd",
+    "m2/v2-import/tests/publication.rs": "aba85ab51d3fe121ecc1787de845639fde751bc0a8e79d4f1a2c5b0949b9320e",
+    "scripts/m2_metadata_jobs.py": "e46ede1ab6f4d83e797753be1b5ffecfc72c671a805aa4521a3a5019fbe1b015",
+    "scripts/test_m2_metadata_jobs.py": "6c712400cc29cd858719274cf9b3ca1b56bb4f252bbabab8cd2f16eaddf2641f",
+    "m2/bounded-engine/Cargo.toml": "3aa3485f514067b06a8a81fcafdb8de58fc68f28819075d1fd57c09d945bcbdd",
+    "m2/bounded-engine/src/lib.rs": "a5db8236f6bcc88a99195c2fa3fa1165d018765d5603df743357eba4d933f7db",
+    "m2/bounded-engine/src/main.rs": "1e546a902a50e462317e1bdd9b66d93adabcc2d523a611f57f185515492b40c6",
+    "m2/bounded-engine/tests/reader.rs": "bbaa9a66c59e59f458265e546a3a342ac371af7e0fba57e6b58f7cc9390e9f69",
+    "scripts/bounded_engine_lock.py": "ea3b1073a5585b3adfb954b6627769f12399d8cb6a917d9e05cb8c9c95519b64",
+    "scripts/bounded_fixtures.py": "fd2b5b94c9fca320c225d802a45f6aecc725cf6fa68a1589f1d9226409395731",
+    "scripts/m2_sizing.py": "482cee96a8ed93ce089b9d3963d6a57493947d05716da12a5002dbed1f2e7a1b",
+    "scripts/test_m2_sizing.py": "239428f5bd1187c5b03169b8df52aacb1095606f471dc51a7222b69091bd421c",
+    "m2/bounded-engine/Cargo.lock": "0eb54565fd255f57ebabfaa15f1d88b94ca8c0cd9384f9ee558f9be462692c32",
+    "m2/indexed-engine/Cargo.toml": "8b339faa01f67469900613bcd8b83e033c2204f1ca084feecef7863d27d66f92",
+    "m2/indexed-engine/src/index.rs": "8b5f3cb6724a5aa4ca610142bd041c040fccd28cde2a76af709b4216c6061f43",
+    "m2/indexed-engine/src/lib.rs": "80982758cf35485438f1fe926391b92b05e8fa3178d4db5d49f02563267f4da2",
+    "m2/indexed-engine/src/main.rs": "437227e8a85948cf1828c86cb97ce1114dcb59fea012fb230aa84a3665c581d7",
+    "m2/indexed-engine/src/sha256.rs": "f1565b6ae0bbe306e6671bcf45e2dc486c7d700d3f1972e3a7719551a3901906",
+    "m2/indexed-engine/tests/index.rs": "ab340e4631eedd1bb66c4319ec4d1e27583c53035223622470015f10e9dece33",
+    "scripts/index_engine_lock.py": "4d1a9a4592c449f39fca975637e0f153a482d13ee6effe8d876bedd3d6ccab77",
+    "scripts/index_fixtures.py": "ff26d66ba0836cb74f14e4b622457edcc248bbba5cd7b5d8863ce14896df9f97",
+    "scripts/m2_index.py": "1a943e6320c40eacdda66a98ca272dbc3484b35ae74c95d145d805edddd9bfec",
+    "scripts/test_m2_index.py": "5ca415cb2475d5f1fc64067e3703e2f4a0263c7a4e2accd5855e2a8ce9f4cddc",
+    "m2/indexed-engine/Cargo.lock": "77dd03dd4fe54950bd88f0fcbb22af4f919c7c80c068f56bdcb68d860fae8991",
+    "m2/sessions/Cargo.toml": "419999dc6ee87c598fa4e83f06a569a5d315dcbdadb343e310598874513624fc",
+    "m2/sessions/src/lib.rs": "8ebaefc6d91d5dd20c9fb16f298f9ecc15e45d573ae045a4219a659c87c13dd4",
+    "m2/sessions/src/main.rs": "db7a7de3924ad46ef0586be60e9a3e2ed08815d9b1dfbf8eb3040009a3567b65",
+    "m2/sessions/src/tests.rs": "4f58ec5aa22adbf7f880e93234254b78fbcf5fb4f2d543bbdc7fa21a35368f0e",
+    "scripts/m2_sessions.py": "4d2192fe5369b3d669b7e55d8294f74a2f10a2cd772d0dc664682c37b99edf64",
+    "scripts/session_lock.py": "129181d7ad2d1660c461202c48af1d4a0cf88c3ea3566ba00dac5a0005bd3579",
+    "scripts/test_m2_sessions.py": "5233d6a86998f51129f32afc23ad10505aa66e9df6ffe239484e8d211ae64ea1",
+    "m2/sessions/Cargo.lock": "e6bdfe6bd2fa832b01a3cd344f690ef9fb09f015a9f498299238a36ee15b045c",
+    "m2/stream-extract/Cargo.toml": "0c17c26536130cd1d5d2e671f47d851ddc9d371f8415b97d0f419eac5cb26505",
+    "m2/stream-extract/src/extract.rs": "a813b8a0a3f2daee8742441aca1e96dcfe3f05c11caa1daf651601cc0ee26772",
+    "m2/stream-extract/src/lib.rs": "9ba5eb66c938f8c5370b94d6f81c299c8f97c1c23555a2b319d5b7a65a34809a",
+    "m2/stream-extract/src/main.rs": "e27bae8bcd04620ef1b7fbfa981b7710e8c03050bf279ddc38a8a896c45eed39",
+    "m2/stream-extract/src/tests.rs": "dd4370fe42bb1a8698de8d66b632e511b897f04a4b64cf3ba3adaf01597e32e8",
+    "scripts/m2_stream_extract.py": "2ebf11c3b1c628b63266f6f8f8caea9abc6e1d55975685a8cfb9c3784b395f93",
+    "scripts/stream_extract_lock.py": "d861e3d8888942e11308bdcbe105d18cb75ab3449d82aaa11f63fd8ef31f1fa7",
+    "scripts/stream_mdd_fixtures.py": "e89031629d2df50f207c0a12644e8e76c313fdf6a67ccd2f6f21b1554bd8d4f0",
+    "scripts/test_m2_stream_extract.py": "f90dbd12d6af7c4393a30d3442ab9ed8a154f6d29fec5bc16b9f0f76fecb92c7",
+    "m2/stream-extract/Cargo.lock": "b571f47505d94e51be30fdec89f8938b292eff31db99b04f9dbb96a7280021b7",
+    "m2/extraction-jobs/Cargo.toml": "53a233f245ff0689dca0cc5e15e6eea2f5c8d0a7bac7fad52237a96ac2e2e212",
+    "m2/extraction-jobs/src/lib.rs": "ea9d654b99737ee711c5494f97b78a36446bad5d4759d1a0304314035e2ab2a7",
+    "m2/extraction-jobs/src/main.rs": "0d128772eb70cf52585459e05f35ac4f08a0637b46cbbc17e33fe682af34c99f",
+    "m2/extraction-jobs/src/runner.rs": "1746154682d745400d51651a899a1212feab1c6bead72f8ea1c2a8306a1cbc94",
+    "m2/extraction-jobs/src/tests.rs": "674baa54b8f0675209b7407f42521d834d922068c0b21dbb084749bb9315f278",
+    "scripts/extraction_jobs_lock.py": "c918afcff3dc9e3357c3e0c5fca055badeb8d664f42f35185567b1a7f326c591",
+    "scripts/m2_extraction_jobs.py": "8ac98407a8b8ecf74b40c87d0b81b23ddf28caa23039a668dd78dc7f79c77833",
+    "scripts/test_m2_extraction_jobs.py": "6d199f6f82570de7a7df58bea118d827536a42b825bfa716c2d17f3b00650f8e",
+    "m2/extraction-jobs/Cargo.lock": "65cc769a15fa48a7975f1318431b3db443d7c4429a3a1f223614daa984aeb851"
+  },
+  "source_sha256": {
+    "m2/large-io/Cargo.toml": "262412d6466f3ebea268b1c4018abef06c3f008a3a2fecf4fa72c5369b080cd0",
+    "m2/large-io/src/io.rs": "d2798f47fd4909a5530be10be4ebf6919bf8717e2febaec0a76e6b1537612e1d",
+    "m2/large-io/src/lib.rs": "0daf85d1a007f3859b279c942d5290a253193675a896d54271416039f92dfac7",
+    "m2/large-io/src/main.rs": "5309eb782819fa017beca8c1ecd481c15ccb1866f6def235b441c062087959ca",
+    "m2/large-io/src/tests.rs": "9d8c5e9f9a50f0562013be5b75caf7b610c27658eabef8ef158c5f8fc01ad369",
+    "scripts/large_io_lock.py": "fabc7baf34ad20ef15260347f3b957ad937aa210cbace03f757b7b346ff96f31",
+    "scripts/large_io_oracle.py": "b201edb06a65651a6eb4da5d9609c82bc3d2c33de2b7e2c0e9320ef7ba8262b0",
+    "scripts/m2_large_io.py": "ba2e85c64d0afce60d9a53f8a3c8f7afccf3e1686747efbc95c48e56780754e3",
+    "scripts/test_m2_large_io.py": "41bd756212a4de17bcb50dde85e9a985922cfbb9f554fb3c68fe3c2044dc70d8",
+    "m2/large-io/Cargo.lock": "8a501ec14d9cc08dbcce8874d56f1733d44679de0c20363c0e4e590bde0b0211"
+  },
+  "seed_lock_sha256": "6c6a636f7381a2289275b26b29a9c51975cc57b9847fe997e06dde5c7095ae85",
+  "dependency_lock_contents": "# This file is automatically @generated by Cargo.\n# It is not intended for manual editing.\n# Isolated v2 import seed; registry identities match the accepted application lock.\nversion = 4\n\n[[package]]\nname = \"adler2\"\nversion = \"2.0.1\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"320119579fcad9c21884f5c4861d16174d0e06250625266f50fe6898340abefa\"\n\n[[package]]\nname = \"arbitrary\"\nversion = \"1.5.0\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"3bc62ac97cc33321f50863d514c3bc38a453947a8f9e781137e47c7401020aed\"\ndependencies = [\n \"derive_arbitrary\",\n]\n\n[[package]]\nname = \"atoi_simd\"\nversion = \"0.16.1\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"c2a49e05797ca52e312a0c658938b7d00693ef037799ef7187678f212d7684cf\"\ndependencies = [\n \"debug_unsafe\",\n]\n\n[[package]]\nname = \"bitflags\"\nversion = \"2.13.2\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"3ded4057c258ba199e2d26386d3af3780957ecaee6c4ef4041c6b4b8b97c0b06\"\n\n[[package]]\nname = \"bumpalo\"\nversion = \"3.20.3\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"72f5acc6cb2ba439de613abc23857ec3d78374d8ed5ac84e9d11336e87da8649\"\n\n[[package]]\nname = \"byteorder\"\nversion = \"1.5.0\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"1fd0f2584146f6f2ef48085050886acf353beff7305ebd1ae69500e27c67f64b\"\n\n[[package]]\nname = \"calamine\"\nversion = \"0.31.0\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"da56b262e8a827c6b12c3dde4ea4622e0ff542bd2e9ea5855e4cb523481d77b7\"\ndependencies = [\n \"atoi_simd\",\n \"byteorder\",\n \"codepage\",\n \"encoding_rs\",\n \"fast-float2\",\n \"log\",\n \"quick-xml\",\n \"serde\",\n \"zip\",\n]\n\n[[package]]\nname = \"cfg-if\"\nversion = \"1.0.5\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"4e7648175b45a9a48536d676f68d918270699102aa8dab5496df06904c914600\"\n\n[[package]]\nname = \"codepage\"\nversion = \"0.1.3\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"bdff162541cd8b79de82e2edcc7eff3a8c2a6dc3d75152636028f96d93de3b26\"\ndependencies = [\n \"encoding_rs\",\n]\n\n[[package]]\nname = \"core_detect\"\nversion = \"1.0.0\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"7f8f80099a98041a3d1622845c271458a2d73e688351bf3cb999266764b81d48\"\n\n[[package]]\nname = \"crc32fast\"\nversion = \"1.5.3\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"0ba106e844045ddc02c20768ac4b0b7cb45f2cc2ecbd833ac9f5dacb183c2055\"\ndependencies = [\n \"cfg-if\",\n]\n\n[[package]]\nname = \"debug_unsafe\"\nversion = \"0.1.4\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"7eed2c4702fa172d1ce21078faa7c5203e69f5394d48cc436d25928394a867a2\"\n\n[[package]]\nname = \"derive_arbitrary\"\nversion = \"1.5.0\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"1b034bd7d5f032402a2479444dcc6f74e36a03f31854d41680fb240ef682a1ac\"\ndependencies = [\n \"proc-macro2\",\n \"quote\",\n \"syn 3.0.9\",\n]\n\n[[package]]\nname = \"encoding_rs\"\nversion = \"0.8.42\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"8e985e0451871ad22fb8d2b6b076e2028a502a0d3950998c2c5c0a4f9b5d9679\"\ndependencies = [\n \"cfg-if\",\n \"core_detect\",\n \"multiversion_no_op\",\n \"rustversion\",\n \"scopeguard\",\n \"simdutf8\",\n]\n\n[[package]]\nname = \"equivalent\"\nversion = \"1.0.3\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"00d174d5400e5e8fd687ad1049e2f578285fa914201b1af7e8b112a4546bd826\"\n\n[[package]]\nname = \"errno\"\nversion = \"0.3.14\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"39cab71617ae0d63f51a36d69f866391735b51691dbda63cf6f96d042b63efeb\"\ndependencies = [\n \"libc\",\n \"windows-sys\",\n]\n\n[[package]]\nname = \"fast-float2\"\nversion = \"0.2.4\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"c6e8948ce679d00a02a94739ea185595dca7118ed04feb991127e443bd3d761f\"\n\n[[package]]\nname = \"fastrand\"\nversion = \"2.5.0\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"da7c62ceae207dd37ea5b845da6a0696c799f85e97da1ab5b7910be3c1c80223\"\n\n[[package]]\nname = \"flate2\"\nversion = \"1.1.10\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"6e634e2e0ebac1ee034020da1ca582e17ffe4e0f5e985823721e168928136dcb\"\ndependencies = [\n \"zlib-rs\",\n]\n\n[[package]]\nname = \"getrandom\"\nversion = \"0.4.3\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"300e883d756b2e4ec94e02791f39b04b522276138852cfc41d9fb7e904106099\"\ndependencies = [\n \"cfg-if\",\n \"libc\",\n \"r-efi\",\n]\n\n[[package]]\nname = \"hashbrown\"\nversion = \"0.17.1\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"ed5909b6e89a2db4456e54cd5f673791d7eca6732202bbf2a9cc504fe2f9b84a\"\n\n[[package]]\nname = \"indexmap\"\nversion = \"2.14.2\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"cc4e190f5d26ca7051642629da2c52fc03bde85a03197c99408dcd291734c855\"\ndependencies = [\n \"equivalent\",\n \"hashbrown\",\n]\n\n[[package]]\nname = \"itoa\"\nversion = \"1.0.18\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"8f42a60cbdf9a97f5d2305f08a87dc4e09308d1276d28c869c684d7777685682\"\n\n[[package]]\nname = \"libc\"\nversion = \"0.2.191\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"65cd87c9a6d60536580b316ad985726104730a5151c99845f2490428ef91240a\"\n\n[[package]]\nname = \"linux-raw-sys\"\nversion = \"0.12.1\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"32a66949e030da00e8c7d4434b251670a91556f4144941d37452769c25d58a53\"\n\n[[package]]\nname = \"log\"\nversion = \"0.4.34\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"f9f8bd3e56ce4dfc153cf470fffbfa98c7620958b312ca5c3a4b8d5181fd13c6\"\n\n[[package]]\nname = \"lzokay\"\nversion = \"2.0.1\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"953d350dc065718bb00b61ea2118274ffe2fdf6488f32f720422bcd1c9d6025f\"\ndependencies = [\n \"zerocopy\",\n]\n\n[[package]]\nname = \"mdictlib\"\nversion = \"0.2.8\"\ndependencies = [\n \"encoding_rs\",\n \"lzokay\",\n \"miniz_oxide\",\n \"tempfile\",\n]\n\n[[package]]\nname = \"memchr\"\nversion = \"2.8.3\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"cf8baf1c55e62ffcace7a9f06f4bd9cd3f0c4beb022d3b367256b91b87513d98\"\n\n[[package]]\nname = \"miniz_oxide\"\nversion = \"0.9.1\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"b63fbc4a50860e98e7b2aa7804ded1db5cbc3aff9193adaff57a6931bf7c4b4c\"\ndependencies = [\n \"adler2\",\n]\n\n[[package]]\nname = \"multiversion_no_op\"\nversion = \"1.0.0\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"743fb55ba31b18fb1ecef6bdc9aa2743314978ac084044301a7eee33fb99a20d\"\n\n[[package]]\nname = \"once_cell\"\nversion = \"1.21.4\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"9f7c3e4beb33f85d45ae3e3a1792185706c8e16d043238c593331cc7cd313b50\"\n\n[[package]]\nname = \"proc-macro2\"\nversion = \"1.0.107\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"985e7ec9bb745e6ce6535b544d84d6cd6f7ad8bd711c398938ae983b91a766d9\"\ndependencies = [\n \"unicode-ident\",\n]\n\n[[package]]\nname = \"quick-xml\"\nversion = \"0.38.3\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"42a232e7487fc2ef313d96dde7948e7a3c05101870d8985e4fd8d26aedd27b89\"\ndependencies = [\n \"encoding_rs\",\n \"memchr\",\n]\n\n[[package]]\nname = \"quote\"\nversion = \"1.0.47\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"1fbf4db142a473a8d80c26bbf18454ed458bf8d26c8219c331daecfdbd079001\"\ndependencies = [\n \"proc-macro2\",\n]\n\n[[package]]\nname = \"r-efi\"\nversion = \"6.0.0\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"f8dcc9c7d52a811697d2151c701e0d08956f92b0e24136cf4cf27b57a6a0d9bf\"\n\n[[package]]\nname = \"rustix\"\nversion = \"1.1.6\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"e5e76742e5294153d4dde1207dbec5bdd81eef6fabdc0d2118babadabfd858aa\"\ndependencies = [\n \"bitflags\",\n \"errno\",\n \"libc\",\n \"linux-raw-sys\",\n \"windows-sys\",\n]\n\n[[package]]\nname = \"rustversion\"\nversion = \"1.0.23\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"cf54715a573b99ac80df0bc206da022bcd442c974952c7b9720069370852e21f\"\n\n[[package]]\nname = \"scopeguard\"\nversion = \"1.2.0\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"94143f37725109f92c262ed2cf5e59bce7498c01bcc1502d7b9afe439a4e9f49\"\n\n[[package]]\nname = \"serde\"\nversion = \"1.0.229\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"4148590afebada386688f18773da617792bf2ef03ffc1e4cbd2b1d45b023e0ba\"\ndependencies = [\n \"serde_core\",\n \"serde_derive\",\n]\n\n[[package]]\nname = \"serde_core\"\nversion = \"1.0.229\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"67dca2c9c51e58a4791a4b1ed58308b39c64224d349a935ab5039aa360942a48\"\ndependencies = [\n \"serde_derive\",\n]\n\n[[package]]\nname = \"serde_derive\"\nversion = \"1.0.229\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"e7a5d71263a5a7d47b41f6b3f06ba276f10cc18b0931f1799f710578e2309348\"\ndependencies = [\n \"proc-macro2\",\n \"quote\",\n \"syn 3.0.9\",\n]\n\n[[package]]\nname = \"serde_json\"\nversion = \"1.0.154\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"e7e9cc8b1b85264074fbcc02a88680c4096b1e47df8f739dceb03bf482f04bd6\"\ndependencies = [\n \"itoa\",\n \"memchr\",\n \"serde\",\n \"serde_core\",\n \"zmij\",\n]\n\n[[package]]\nname = \"simd-adler32\"\nversion = \"0.3.10\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"3a219298ac11a56ea9a6d2120044824d6f01aeb034955e7af7bc16858527deea\"\n\n[[package]]\nname = \"simdutf8\"\nversion = \"0.1.5\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"e3a9fe34e3e7a50316060351f37187a3f546bce95496156754b601a5fa71b76e\"\n\n[[package]]\nname = \"studio-application\"\nversion = \"0.1.0\"\ndependencies = [\n \"serde\",\n \"serde_json\",\n \"studio-core\",\n \"studio-xlsx\",\n]\n\n[[package]]\nname = \"studio-core\"\nversion = \"0.1.0\"\ndependencies = [\n \"libc\",\n \"mdictlib\",\n \"serde\",\n \"serde_json\",\n \"tempfile\",\n]\n\n[[package]]\nname = \"studio-large-io\"\nversion = \"0.1.0\"\ndependencies = [\n \"libc\",\n \"mdictlib\",\n \"quick-xml\",\n \"serde\",\n \"serde_json\",\n \"studio-application\",\n \"studio-core\",\n \"studio-v2-import\",\n \"tempfile\",\n]\n\n[[package]]\nname = \"studio-v2-import\"\nversion = \"0.1.0\"\ndependencies = [\n \"mdictlib\",\n \"quick-xml\",\n \"serde\",\n \"serde_json\",\n \"studio-application\",\n \"studio-core\",\n \"tempfile\",\n]\n\n[[package]]\nname = \"studio-xlsx\"\nversion = \"0.1.0\"\ndependencies = [\n \"calamine\",\n \"quick-xml\",\n \"serde\",\n \"serde_json\",\n \"zip\",\n]\n\n[[package]]\nname = \"syn\"\nversion = \"2.0.119\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"872831b642d1a07999a962a351ed35b955ea2cfc8f3862091e2a240a84f17297\"\ndependencies = [\n \"proc-macro2\",\n \"quote\",\n \"unicode-ident\",\n]\n\n[[package]]\nname = \"syn\"\nversion = \"3.0.9\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"d78c8dee4c7bf0e14673097256fed6142ce9d3b85a408189d07482442145823b\"\ndependencies = [\n \"proc-macro2\",\n \"quote\",\n \"unicode-ident\",\n]\n\n[[package]]\nname = \"tempfile\"\nversion = \"3.27.0\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"32497e9a4c7b38532efcdebeef879707aa9f794296a4f0244f6f69e9bc8574bd\"\ndependencies = [\n \"fastrand\",\n \"getrandom\",\n \"once_cell\",\n \"rustix\",\n \"windows-sys\",\n]\n\n[[package]]\nname = \"unicode-ident\"\nversion = \"1.0.27\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"a2c754d6c33795a1c324727428e5a7dedb5b06195f9890bdbcba760d3e246563\"\n\n[[package]]\nname = \"windows-link\"\nversion = \"0.2.1\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"f0805222e57f7521d6a62e36fa9163bc891acd422f971defe97d64e70d0a4fe5\"\n\n[[package]]\nname = \"windows-sys\"\nversion = \"0.61.2\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"ae137229bcbd6cdf0f7b80a31df61766145077ddf49416a728b02cb3921ff3fc\"\ndependencies = [\n \"windows-link\",\n]\n\n[[package]]\nname = \"zerocopy\"\nversion = \"0.8.63\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"e5fe1f8f1b06191a00962174c61aa5005e0bb391a6d80d07e24d115c01a92ed8\"\ndependencies = [\n \"zerocopy-derive\",\n]\n\n[[package]]\nname = \"zerocopy-derive\"\nversion = \"0.8.63\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"863ad3ac83293fb4d740aedbfdc9240dd8d1a50c1099acd76ce80ce7c7230c7f\"\ndependencies = [\n \"proc-macro2\",\n \"quote\",\n \"syn 2.0.119\",\n]\n\n[[package]]\nname = \"zip\"\nversion = \"4.6.1\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"caa8cd6af31c3b31c6631b8f483848b91589021b28fffe50adada48d4f4d2ed1\"\ndependencies = [\n \"arbitrary\",\n \"crc32fast\",\n \"flate2\",\n \"indexmap\",\n \"memchr\",\n \"zopfli\",\n]\n\n[[package]]\nname = \"zlib-rs\"\nversion = \"0.6.8\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"b268e58e7c693d7c271f93ffc4ba3b380412554231c85bf61ca7af91042a4112\"\n\n[[package]]\nname = \"zmij\"\nversion = \"1.0.23\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"29666d0abbfad1e3dc4dcf6144730dd3a3ab225bbbdac83319345b1b44ccfc1b\"\n\n[[package]]\nname = \"zopfli\"\nversion = \"0.8.4\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"aaf7fc5d30c28483d93805c4a5e12b05bbb52407fa67c5f8bd552374cd01fb11\"\ndependencies = [\n \"bumpalo\",\n \"crc32fast\",\n \"log\",\n \"simd-adler32\",\n]\n",
+  "dependency_packages": [
+    {
+      "name": "adler2",
+      "version": "2.0.1",
+      "checksum": "320119579fcad9c21884f5c4861d16174d0e06250625266f50fe6898340abefa"
+    },
+    {
+      "name": "arbitrary",
+      "version": "1.5.0",
+      "checksum": "3bc62ac97cc33321f50863d514c3bc38a453947a8f9e781137e47c7401020aed"
+    },
+    {
+      "name": "atoi_simd",
+      "version": "0.16.1",
+      "checksum": "c2a49e05797ca52e312a0c658938b7d00693ef037799ef7187678f212d7684cf"
+    },
+    {
+      "name": "bitflags",
+      "version": "2.13.2",
+      "checksum": "3ded4057c258ba199e2d26386d3af3780957ecaee6c4ef4041c6b4b8b97c0b06"
+    },
+    {
+      "name": "bumpalo",
+      "version": "3.20.3",
+      "checksum": "72f5acc6cb2ba439de613abc23857ec3d78374d8ed5ac84e9d11336e87da8649"
+    },
+    {
+      "name": "byteorder",
+      "version": "1.5.0",
+      "checksum": "1fd0f2584146f6f2ef48085050886acf353beff7305ebd1ae69500e27c67f64b"
+    },
+    {
+      "name": "calamine",
+      "version": "0.31.0",
+      "checksum": "da56b262e8a827c6b12c3dde4ea4622e0ff542bd2e9ea5855e4cb523481d77b7"
+    },
+    {
+      "name": "cfg-if",
+      "version": "1.0.5",
+      "checksum": "4e7648175b45a9a48536d676f68d918270699102aa8dab5496df06904c914600"
+    },
+    {
+      "name": "codepage",
+      "version": "0.1.3",
+      "checksum": "bdff162541cd8b79de82e2edcc7eff3a8c2a6dc3d75152636028f96d93de3b26"
+    },
+    {
+      "name": "core_detect",
+      "version": "1.0.0",
+      "checksum": "7f8f80099a98041a3d1622845c271458a2d73e688351bf3cb999266764b81d48"
+    },
+    {
+      "name": "crc32fast",
+      "version": "1.5.3",
+      "checksum": "0ba106e844045ddc02c20768ac4b0b7cb45f2cc2ecbd833ac9f5dacb183c2055"
+    },
+    {
+      "name": "debug_unsafe",
+      "version": "0.1.4",
+      "checksum": "7eed2c4702fa172d1ce21078faa7c5203e69f5394d48cc436d25928394a867a2"
+    },
+    {
+      "name": "derive_arbitrary",
+      "version": "1.5.0",
+      "checksum": "1b034bd7d5f032402a2479444dcc6f74e36a03f31854d41680fb240ef682a1ac"
+    },
+    {
+      "name": "encoding_rs",
+      "version": "0.8.42",
+      "checksum": "8e985e0451871ad22fb8d2b6b076e2028a502a0d3950998c2c5c0a4f9b5d9679"
+    },
+    {
+      "name": "equivalent",
+      "version": "1.0.3",
+      "checksum": "00d174d5400e5e8fd687ad1049e2f578285fa914201b1af7e8b112a4546bd826"
+    },
+    {
+      "name": "errno",
+      "version": "0.3.14",
+      "checksum": "39cab71617ae0d63f51a36d69f866391735b51691dbda63cf6f96d042b63efeb"
+    },
+    {
+      "name": "fast-float2",
+      "version": "0.2.4",
+      "checksum": "c6e8948ce679d00a02a94739ea185595dca7118ed04feb991127e443bd3d761f"
+    },
+    {
+      "name": "fastrand",
+      "version": "2.5.0",
+      "checksum": "da7c62ceae207dd37ea5b845da6a0696c799f85e97da1ab5b7910be3c1c80223"
+    },
+    {
+      "name": "flate2",
+      "version": "1.1.10",
+      "checksum": "6e634e2e0ebac1ee034020da1ca582e17ffe4e0f5e985823721e168928136dcb"
+    },
+    {
+      "name": "getrandom",
+      "version": "0.4.3",
+      "checksum": "300e883d756b2e4ec94e02791f39b04b522276138852cfc41d9fb7e904106099"
+    },
+    {
+      "name": "hashbrown",
+      "version": "0.17.1",
+      "checksum": "ed5909b6e89a2db4456e54cd5f673791d7eca6732202bbf2a9cc504fe2f9b84a"
+    },
+    {
+      "name": "indexmap",
+      "version": "2.14.2",
+      "checksum": "cc4e190f5d26ca7051642629da2c52fc03bde85a03197c99408dcd291734c855"
+    },
+    {
+      "name": "itoa",
+      "version": "1.0.18",
+      "checksum": "8f42a60cbdf9a97f5d2305f08a87dc4e09308d1276d28c869c684d7777685682"
+    },
+    {
+      "name": "libc",
+      "version": "0.2.191",
+      "checksum": "65cd87c9a6d60536580b316ad985726104730a5151c99845f2490428ef91240a"
+    },
+    {
+      "name": "linux-raw-sys",
+      "version": "0.12.1",
+      "checksum": "32a66949e030da00e8c7d4434b251670a91556f4144941d37452769c25d58a53"
+    },
+    {
+      "name": "log",
+      "version": "0.4.34",
+      "checksum": "f9f8bd3e56ce4dfc153cf470fffbfa98c7620958b312ca5c3a4b8d5181fd13c6"
+    },
+    {
+      "name": "lzokay",
+      "version": "2.0.1",
+      "checksum": "953d350dc065718bb00b61ea2118274ffe2fdf6488f32f720422bcd1c9d6025f"
+    },
+    {
+      "name": "mdictlib",
+      "version": "0.2.8",
+      "checksum": null
+    },
+    {
+      "name": "memchr",
+      "version": "2.8.3",
+      "checksum": "cf8baf1c55e62ffcace7a9f06f4bd9cd3f0c4beb022d3b367256b91b87513d98"
+    },
+    {
+      "name": "miniz_oxide",
+      "version": "0.9.1",
+      "checksum": "b63fbc4a50860e98e7b2aa7804ded1db5cbc3aff9193adaff57a6931bf7c4b4c"
+    },
+    {
+      "name": "multiversion_no_op",
+      "version": "1.0.0",
+      "checksum": "743fb55ba31b18fb1ecef6bdc9aa2743314978ac084044301a7eee33fb99a20d"
+    },
+    {
+      "name": "once_cell",
+      "version": "1.21.4",
+      "checksum": "9f7c3e4beb33f85d45ae3e3a1792185706c8e16d043238c593331cc7cd313b50"
+    },
+    {
+      "name": "proc-macro2",
+      "version": "1.0.107",
+      "checksum": "985e7ec9bb745e6ce6535b544d84d6cd6f7ad8bd711c398938ae983b91a766d9"
+    },
+    {
+      "name": "quick-xml",
+      "version": "0.38.3",
+      "checksum": "42a232e7487fc2ef313d96dde7948e7a3c05101870d8985e4fd8d26aedd27b89"
+    },
+    {
+      "name": "quote",
+      "version": "1.0.47",
+      "checksum": "1fbf4db142a473a8d80c26bbf18454ed458bf8d26c8219c331daecfdbd079001"
+    },
+    {
+      "name": "r-efi",
+      "version": "6.0.0",
+      "checksum": "f8dcc9c7d52a811697d2151c701e0d08956f92b0e24136cf4cf27b57a6a0d9bf"
+    },
+    {
+      "name": "rustix",
+      "version": "1.1.6",
+      "checksum": "e5e76742e5294153d4dde1207dbec5bdd81eef6fabdc0d2118babadabfd858aa"
+    },
+    {
+      "name": "rustversion",
+      "version": "1.0.23",
+      "checksum": "cf54715a573b99ac80df0bc206da022bcd442c974952c7b9720069370852e21f"
+    },
+    {
+      "name": "scopeguard",
+      "version": "1.2.0",
+      "checksum": "94143f37725109f92c262ed2cf5e59bce7498c01bcc1502d7b9afe439a4e9f49"
+    },
+    {
+      "name": "serde",
+      "version": "1.0.229",
+      "checksum": "4148590afebada386688f18773da617792bf2ef03ffc1e4cbd2b1d45b023e0ba"
+    },
+    {
+      "name": "serde_core",
+      "version": "1.0.229",
+      "checksum": "67dca2c9c51e58a4791a4b1ed58308b39c64224d349a935ab5039aa360942a48"
+    },
+    {
+      "name": "serde_derive",
+      "version": "1.0.229",
+      "checksum": "e7a5d71263a5a7d47b41f6b3f06ba276f10cc18b0931f1799f710578e2309348"
+    },
+    {
+      "name": "serde_json",
+      "version": "1.0.154",
+      "checksum": "e7e9cc8b1b85264074fbcc02a88680c4096b1e47df8f739dceb03bf482f04bd6"
+    },
+    {
+      "name": "simd-adler32",
+      "version": "0.3.10",
+      "checksum": "3a219298ac11a56ea9a6d2120044824d6f01aeb034955e7af7bc16858527deea"
+    },
+    {
+      "name": "simdutf8",
+      "version": "0.1.5",
+      "checksum": "e3a9fe34e3e7a50316060351f37187a3f546bce95496156754b601a5fa71b76e"
+    },
+    {
+      "name": "studio-application",
+      "version": "0.1.0",
+      "checksum": null
+    },
+    {
+      "name": "studio-core",
+      "version": "0.1.0",
+      "checksum": null
+    },
+    {
+      "name": "studio-large-io",
+      "version": "0.1.0",
+      "checksum": null
+    },
+    {
+      "name": "studio-v2-import",
+      "version": "0.1.0",
+      "checksum": null
+    },
+    {
+      "name": "studio-xlsx",
+      "version": "0.1.0",
+      "checksum": null
+    },
+    {
+      "name": "syn",
+      "version": "2.0.119",
+      "checksum": "872831b642d1a07999a962a351ed35b955ea2cfc8f3862091e2a240a84f17297"
+    },
+    {
+      "name": "syn",
+      "version": "3.0.9",
+      "checksum": "d78c8dee4c7bf0e14673097256fed6142ce9d3b85a408189d07482442145823b"
+    },
+    {
+      "name": "tempfile",
+      "version": "3.27.0",
+      "checksum": "32497e9a4c7b38532efcdebeef879707aa9f794296a4f0244f6f69e9bc8574bd"
+    },
+    {
+      "name": "unicode-ident",
+      "version": "1.0.27",
+      "checksum": "a2c754d6c33795a1c324727428e5a7dedb5b06195f9890bdbcba760d3e246563"
+    },
+    {
+      "name": "windows-link",
+      "version": "0.2.1",
+      "checksum": "f0805222e57f7521d6a62e36fa9163bc891acd422f971defe97d64e70d0a4fe5"
+    },
+    {
+      "name": "windows-sys",
+      "version": "0.61.2",
+      "checksum": "ae137229bcbd6cdf0f7b80a31df61766145077ddf49416a728b02cb3921ff3fc"
+    },
+    {
+      "name": "zerocopy",
+      "version": "0.8.63",
+      "checksum": "e5fe1f8f1b06191a00962174c61aa5005e0bb391a6d80d07e24d115c01a92ed8"
+    },
+    {
+      "name": "zerocopy-derive",
+      "version": "0.8.63",
+      "checksum": "863ad3ac83293fb4d740aedbfdc9240dd8d1a50c1099acd76ce80ce7c7230c7f"
+    },
+    {
+      "name": "zip",
+      "version": "4.6.1",
+      "checksum": "caa8cd6af31c3b31c6631b8f483848b91589021b28fffe50adada48d4f4d2ed1"
+    },
+    {
+      "name": "zlib-rs",
+      "version": "0.6.8",
+      "checksum": "b268e58e7c693d7c271f93ffc4ba3b380412554231c85bf61ca7af91042a4112"
+    },
+    {
+      "name": "zmij",
+      "version": "1.0.23",
+      "checksum": "29666d0abbfad1e3dc4dcf6144730dd3a3ab225bbbdac83319345b1b44ccfc1b"
+    },
+    {
+      "name": "zopfli",
+      "version": "0.8.4",
+      "checksum": "aaf7fc5d30c28483d93805c4a5e12b05bbb52407fa67c5f8bd552374cd01fb11"
+    }
+  ],
+  "binary_sha256": "8e8056a8382ae0c1a88d774eed411681d839b81ac61f9c98e94974876a29fcd3"
+}

@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "package_version": 158,
+  "scope": "selected-headword rename only",
+  "uploaded_copy_sha256": "e8e24c83a3dc11a0b1cebefaa8fbfd39b6475bfdf7d950911d9ac04e14b8a37a",
+  "matches_native_utf16_copy_byte_for_byte": true,
+  "user_source_copy_verifier": {
+    "status": "passed",
+    "records": 7,
+    "source_rowid": "3",
+    "output_rowid": "3",
+    "source_sha256": "226896c56ae298980cc1ed0914201426e5554b27d013ebf7a308bf2eb50b0df9",
+    "copy_sha256": "e8e24c83a3dc11a0b1cebefaa8fbfd39b6475bfdf7d950911d9ac04e14b8a37a",
+    "rows_sha256": "75266adc9a992cca1bc992534ab3f57bdf1acfcd8fdde9b06bb5ce11e8cbce55",
+    "unselected_rows_and_metadata_preserved": true,
+    "source_unchanged": true
+  },
+  "records": 7,
+  "selected_rowid": "3",
+  "selected_key": "renamed 字",
+  "selected_text": "`1`DUPLICATE_TWO_BOLD",
+  "entry_delete_qualified": false
+}

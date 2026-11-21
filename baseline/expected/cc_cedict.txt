@@ -1,0 +1,21 @@
+和
+<link rel="stylesheet" type="text/css" href="cedict_ts.css"><div class="cc_wrapper"><div class="cc_header"><span class="cc_trad">和</span><span class="cc_simp">和</span></div><div class="cc_header_pinyin">hé</div><div class="cc_defs"><p class="cc_def">and</p><p class="cc_def">harmony; peace</p></div></div>
+</>
+传
+<link rel="stylesheet" type="text/css" href="cedict_ts.css"><div class="cc_wrapper"><div class="cc_header"><span class="cc_trad">傳</span><span class="cc_simp">传</span></div><div class="cc_header_pinyin">chuán</div><div class="cc_defs"><p class="cc_def">to pass on</p><p class="cc_def"><span class="cc_tag">(old)</span> to transmit</p></div></div>
+</>
+傳
+<link rel="stylesheet" type="text/css" href="cedict_ts.css"><div class="cc_wrapper"><div class="cc_header"><span class="cc_trad">傳</span><span class="cc_simp">传</span></div><div class="cc_header_pinyin">chuán</div><div class="cc_defs"><p class="cc_def">to pass on</p><p class="cc_def"><span class="cc_tag">(old)</span> to transmit</p></div></div>
+</>
+女
+<link rel="stylesheet" type="text/css" href="cedict_ts.css"><div class="cc_wrapper"><div class="cc_header"><span class="cc_trad">女</span><span class="cc_simp">女</span></div><div class="cc_header_pinyin">nǚ</div><div class="cc_defs"><p class="cc_def">woman</p><p class="cc_def">female</p></div></div>
+</>
+綠
+<link rel="stylesheet" type="text/css" href="cedict_ts.css"><div class="cc_wrapper"><div class="cc_header"><span class="cc_trad">绿</span><span class="cc_simp">綠</span></div><div class="cc_header_pinyin">lǜ</div><div class="cc_defs"><p class="cc_def">green</p></div></div>
+</>
+绿
+<link rel="stylesheet" type="text/css" href="cedict_ts.css"><div class="cc_wrapper"><div class="cc_header"><span class="cc_trad">绿</span><span class="cc_simp">綠</span></div><div class="cc_header_pinyin">lǜ</div><div class="cc_defs"><p class="cc_def">green</p></div></div>
+</>
+和
+<link rel="stylesheet" type="text/css" href="cedict_ts.css"><div class="cc_wrapper"><div class="cc_header"><span class="cc_trad">和</span><span class="cc_simp">和</span></div><div class="cc_header_pinyin">hè</div><div class="cc_defs"><p class="cc_def">to join in singing</p></div></div>
+</>

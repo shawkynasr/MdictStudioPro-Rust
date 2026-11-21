@@ -1,0 +1,16 @@
+{
+  "source": "User-uploaded real rebuild report; no local Rust/native execution",
+  "files": {
+    "real-rebuild-report.json": "eb6c03d7e10370324ad8ae3e021e9f84ff26787ce5728b134dfffe9e4ba09166"
+  },
+  "observed": {
+    "cases_passed": 4,
+    "MDX_records": 296110,
+    "MDD_resources": 17,
+    "sampled_lookups_passed": 36,
+    "input_hashes_unchanged": true,
+    "pending": "fonts/amiri-regular.ttf"
+  },
+  "font_located_by_user": "/Users/shawky/Documents/Dict/Ar/almaanyEnAr-ArEn/fonts/amiri-regular.ttf",
+  "native_rebuilt_rendering": "NOT_RUN"
+}

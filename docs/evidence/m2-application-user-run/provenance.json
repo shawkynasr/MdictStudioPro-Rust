@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-30",
+  "files": {
+    "m2-application-report.json": "d59d80c11d246128ea0268f1c980fcd39d6f98260d0a2a0c417d1b5f86bca86a"
+  },
+  "source_snapshots": {
+    "qualified/m2/application/Cargo.lock": "a3ef3c13d1fce64997c6f917b79a08557aa4788f1abeb309d953ec3764e6da2c",
+    "qualified/m2/application/Cargo.toml": "083a6e73f1d2ac2344dd4270806c2650d54006e0407bbe9076e2770587de081e",
+    "qualified/m2/application/src/error.rs": "886239afeffff7fdd0af01b4bc80ad10138f517d21de3b0dfd73402f762c65e2",
+    "qualified/m2/application/src/job.rs": "a8928aebd1095551dd6001385d7893bf507e82d92a7c0c385abd18e1d8a13054",
+    "qualified/m2/application/src/lib.rs": "4145526b08f0d9af1d5871b9094a3caa68c086c747ae4929a40529b642b110a6",
+    "qualified/m2/application/src/main.rs": "e7b3ba54c44c78c78a7fd9d3fe0528ddd37df67dd066e7a6be354e1726753e84",
+    "qualified/m2/application/tests/workflows.rs": "2759195a9955a6ff55a22b9496e2a70c79f4ac6b2ecdffc31c43da42819b74d1",
+    "qualified/scripts/application_lock.py": "7ab71348a702d2c066a91de9d797c97e36ce27a0e0b70e646189d76ed6738d09",
+    "qualified/scripts/m2_application.py": "57d2bd693fbe2c18bd3e30f43d0fb942ab3c003758f806f181e09be7f874d67e"
+  },
+  "report_library_file_id": "libfile_67376f0e530c819180e07c0aaabf96e1",
+  "reviewed_status": "shared_application_conversion_passed_bounded_synthetic_profile",
+  "successful_commands": 39,
+  "controlled_refusals": 10,
+  "conversion_cases": 12,
+  "workbook_boundary_cases": 2,
+  "protected_identities_verified": 81,
+  "joint_lock_packages": 60,
+  "M2_complete": false,
+  "native_reader_tests_requested": false,
+  "successful_Rust_test_log_attached": false
+}

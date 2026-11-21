@@ -1,0 +1,212 @@
+{
+  "archives": [
+    {
+      "archive": "cedict_1_0_ts_utf-8_mdbg.zip",
+      "archive_sha256": "5b6db884de36cf04ac3be268d758cd4512ba3a487c1775348ba8e18ea8f0e25f",
+      "library_file_id": "libfile_0e43eb2fb6c081919478f232a5a1a340",
+      "member": "cedict_ts.u8",
+      "source_bytes": 9871744,
+      "source_sha256": "ff107587bc1d593dd5d7a49c179d4aa749cb89b3a1423876e0cd2dca197b672b"
+    },
+    {
+      "archive": "dict_idioms_2020_20260929.zip",
+      "archive_sha256": "33dc230ceb126cccfe3dc6e17e3b38b99618b8d6c6ff85ee911493065dc2850e",
+      "library_file_id": "libfile_0a1813b53f548191b141c300d96683d8",
+      "member": "dict_idioms_2020_20260929.xlsx",
+      "source_bytes": 5459226,
+      "source_sha256": "fa4395e9a94288b1f21266d3a5121b6c4d6709f22edb8e0f99bdf04df8d26f83"
+    },
+    {
+      "archive": "dict_mini_2019_20260929.zip",
+      "archive_sha256": "f83404ae6ab76c094890352eaee6703c9dad566ab529cdc6f16a72841df35232",
+      "library_file_id": "libfile_2e5ece760c2c8191b713ed9c26139eb6",
+      "member": "dict_mini_2019_20260929.xlsx",
+      "source_bytes": 1160787,
+      "source_sha256": "94546b7d330a6334b828c1a8a516dd2378f9e0dfcf6ea1d301516fe5680c6edd"
+    },
+    {
+      "archive": "dict_concised_2014_20260929.zip",
+      "archive_sha256": "5bab99dac44ad7a6ccdcf481e770e8aca05ede7445c4cc25b8199e0e5df64cf2",
+      "library_file_id": "libfile_9f8f1d75dbdc819182c373d1600b0cba",
+      "member": "dict_concised_2014_20260929.xlsx",
+      "source_bytes": 7080113,
+      "source_sha256": "af2e9ba3655799080e0f7214646bde11ca5cc5e16226bca1e9a461285e05eec6"
+    },
+    {
+      "archive": "dict_revised_2015_20260929.zip",
+      "archive_sha256": "65a24fff76d0fbfa078541f39761bb9f302bdf7ad6bb48be4ce1052d1b49f609",
+      "library_file_id": "libfile_c401300e3ed48191a5de610d12b53897",
+      "member": "dict_revised_2015_20260929.xlsx",
+      "source_bytes": 31188250,
+      "source_sha256": "bbbac6a820cac000cabf789d81b88338d94aa14f1d7eea6e16b495cf5c8dfa80"
+    }
+  ],
+  "cases": [
+    {
+      "converter": "cc_cedict",
+      "profile": "cc",
+      "member": "cedict_ts.u8",
+      "worksheet": null,
+      "receipt": {
+        "comments_count": 30,
+        "converter": "cc_cedict",
+        "entries": 203362,
+        "file_bytes": 76339785,
+        "metrics": {
+          "alias_redirects": 0,
+          "primary_entries": 125369,
+          "skipped_rows_or_lines": 0,
+          "traditional_entries": 77993
+        },
+        "profile": "cc-cedict-owned-chunked-txt-v1",
+        "source_sha256": "ff107587bc1d593dd5d7a49c179d4aa749cb89b3a1423876e0cd2dca197b672b",
+        "txt_profile": "canonical_v1"
+      },
+      "native_output_sha256": "230bf65b44b1e48314afcae4eaccd6002f5ab232d0fb4ff790a00e66250f84e5",
+      "accepted_report": "docs/evidence/m2-cc-full-user-run/m2-cc-full-report.json"
+    },
+    {
+      "converter": "moe_mini",
+      "profile": "small_moe",
+      "member": "dict_mini_2019_20260929.xlsx",
+      "worksheet": "工作表1",
+      "receipt": {
+        "comments_count": 0,
+        "converter": "moe_mini",
+        "entries": 4311,
+        "file_bytes": 13266664,
+        "metrics": {
+          "alias_redirects": 0,
+          "primary_entries": 4311,
+          "skipped_rows_or_lines": 0,
+          "traditional_entries": 0
+        },
+        "profile": "larger-owned-converters-v1",
+        "source_sha256": "94546b7d330a6334b828c1a8a516dd2378f9e0dfcf6ea1d301516fe5680c6edd",
+        "txt_profile": "canonical_v1"
+      },
+      "native_output_sha256": "5c35982a5feaacc67594af57b3d7e8e46647c4953188eb222066f90c0b3cbf8a",
+      "accepted_report": "docs/evidence/m2-official-converters-user-run/m2-official-converters-report.json"
+    },
+    {
+      "converter": "moe_idioms",
+      "profile": "small_moe",
+      "member": "dict_idioms_2020_20260929.xlsx",
+      "worksheet": "成語資料",
+      "receipt": {
+        "comments_count": 0,
+        "converter": "moe_idioms",
+        "entries": 5489,
+        "file_bytes": 20276595,
+        "metrics": {
+          "alias_redirects": 0,
+          "primary_entries": 5489,
+          "skipped_rows_or_lines": 0,
+          "traditional_entries": 0
+        },
+        "profile": "larger-owned-converters-v1",
+        "source_sha256": "fa4395e9a94288b1f21266d3a5121b6c4d6709f22edb8e0f99bdf04df8d26f83",
+        "txt_profile": "canonical_v1"
+      },
+      "native_output_sha256": "f585974bd9f9c2950366cf47cc243a1f7ad9bb15f0e1f12c37cab43dfef0d52c",
+      "accepted_report": "docs/evidence/m2-official-converters-user-run/m2-official-converters-report.json"
+    },
+    {
+      "converter": "moe_concise",
+      "profile": "concise",
+      "member": "dict_concised_2014_20260929.xlsx",
+      "worksheet": "辭典匯出_1150929",
+      "receipt": {
+        "comments_count": 0,
+        "converter": "moe_concise",
+        "entries": 44445,
+        "file_bytes": 25093253,
+        "metrics": {
+          "alias_redirects": 0,
+          "primary_entries": 44445,
+          "skipped_rows_or_lines": 0,
+          "traditional_entries": 0
+        },
+        "profile": "moe-concise-owned-v1",
+        "source_sha256": "af2e9ba3655799080e0f7214646bde11ca5cc5e16226bca1e9a461285e05eec6",
+        "txt_profile": "canonical_v1"
+      },
+      "native_output_sha256": "7241c4f36ec7c5ebcac57c7c4f55bd4e1f209c9a1b25ef056f59d3e048ecde72",
+      "accepted_report": "docs/evidence/m2-concise-full-user-run/m2-concise-full-report.json"
+    },
+    {
+      "converter": "moe_revised",
+      "profile": "grouped_moe",
+      "member": "dict_revised_2015_20260929.xlsx",
+      "worksheet": "1150929辭典匯出",
+      "receipt": {
+        "alias_redirects": 1454,
+        "body_bytes": 123053248,
+        "converter": "moe_revised",
+        "decoded_bytes": 124361971,
+        "entries": 162636,
+        "file_bytes": 125337787,
+        "file_sha256": "c92780c5b7854caba8b3f074fc6d15c8154692a38da27b265c0b966c48a3b598",
+        "framed_records_sha256": "ad4d9a67ac87543586de98e38990295e4c638750333ea33b3770e0931c395962",
+        "groups": 161182,
+        "index_charge_bytes": 54397924,
+        "input_rows": 163909,
+        "key_bytes": 1308723,
+        "largest_group_input_bytes": 11220,
+        "largest_group_rows": 6,
+        "primary_entries": 161182,
+        "skipped_rows": 0,
+        "source_sha256": "bbbac6a820cac000cabf789d81b88338d94aa14f1d7eea6e16b495cf5c8dfa80",
+        "temporary_file_peak_bytes": 301150032,
+        "pipeline_profile": "moe-grouped-disk-rows-txt-v1",
+        "row_digest": {
+          "framed_rows_sha256": "6e1d8eea79e7eb2e8ad513215aa65c30f10ac014c92380f550cefdbf78c8146a",
+          "key_bytes": 40321614,
+          "pairs": 2950362,
+          "rows": 163909,
+          "value_bytes": 44384638
+        },
+        "row_spool_bytes": 102800416
+      },
+      "native_output_sha256": "c92780c5b7854caba8b3f074fc6d15c8154692a38da27b265c0b966c48a3b598",
+      "accepted_report": "docs/evidence/m2-revised-render-user-run/m2-revised-render-report.json"
+    },
+    {
+      "converter": "moe_revised_wfg",
+      "profile": "grouped_moe",
+      "member": "dict_revised_2015_20260929.xlsx",
+      "worksheet": "1150929辭典匯出",
+      "receipt": {
+        "alias_redirects": 0,
+        "body_bytes": 102120975,
+        "converter": "moe_revised_wfg",
+        "decoded_bytes": 103410785,
+        "entries": 161182,
+        "file_bytes": 104377877,
+        "file_sha256": "0f95487c72e946cc24f896bebeb5366e33a4507cd5796da4342c6c1ccfcc1594",
+        "framed_records_sha256": "2dcc4a47efe207f29ac42e2abb456c88a85d112c6ac92cbcdc2ae0264d5d98c3",
+        "groups": 161182,
+        "index_charge_bytes": 54397924,
+        "input_rows": 163909,
+        "key_bytes": 1289810,
+        "largest_group_input_bytes": 11220,
+        "largest_group_rows": 6,
+        "primary_entries": 161182,
+        "skipped_rows": 0,
+        "source_sha256": "bbbac6a820cac000cabf789d81b88338d94aa14f1d7eea6e16b495cf5c8dfa80",
+        "temporary_file_peak_bytes": 280190122,
+        "pipeline_profile": "moe-grouped-disk-rows-txt-v1",
+        "row_digest": {
+          "framed_rows_sha256": "6e1d8eea79e7eb2e8ad513215aa65c30f10ac014c92380f550cefdbf78c8146a",
+          "key_bytes": 40321614,
+          "pairs": 2950362,
+          "rows": 163909,
+          "value_bytes": 44384638
+        },
+        "row_spool_bytes": 102800416
+      },
+      "native_output_sha256": "0f95487c72e946cc24f896bebeb5366e33a4507cd5796da4342c6c1ccfcc1594",
+      "accepted_report": "docs/evidence/m2-revised-render-user-run/m2-revised-render-report.json"
+    }
+  ]
+}

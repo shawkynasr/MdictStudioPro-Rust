@@ -1,0 +1,1240 @@
+["rustc", "--version"]
+rustc 1.98.1 (48a229cea 2026-09-01)
+
+STDERR:
+
+["cargo", "--version"]
+cargo 1.98.1 (797e8a9bc 2026-08-05)
+
+STDERR:
+
+["cargo", "run", "--locked", "--manifest-path", "experiments/legacy-sort/Cargo.toml", "--", "codec", "/Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/rust"]
+{
+  "checks": {
+    "big5-mdict-utils": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "BIG5",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        },
+        "encoding": "BIG5",
+        "key_blocks": 2,
+        "records": 4
+      },
+      "status": "passed"
+    },
+    "big5-mdict-utils-metadata": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "BIG5",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        }
+      },
+      "status": "passed"
+    },
+    "big5-mdxbuilder": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "BIG5",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        },
+        "encoding": "BIG5",
+        "key_blocks": 2,
+        "records": 4
+      },
+      "status": "passed"
+    },
+    "big5-mdxbuilder-metadata": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "BIG5",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        }
+      },
+      "status": "passed"
+    },
+    "big5-unencodable-body": {
+      "detail": {
+        "error": "invalid data: entry body is not representable in Big5",
+        "rejected": true
+      },
+      "status": "passed"
+    },
+    "big5-unencodable-key": {
+      "detail": {
+        "error": "invalid data: entry key is not representable in Big5",
+        "rejected": true
+      },
+      "status": "passed"
+    },
+    "gb18030-mdict-utils": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "GB18030",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        },
+        "encoding": "GB18030",
+        "key_blocks": 2,
+        "records": 4
+      },
+      "status": "passed"
+    },
+    "gb18030-mdict-utils-metadata": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "GB18030",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        }
+      },
+      "status": "passed"
+    },
+    "gb18030-mdxbuilder": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "GB18030",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        },
+        "encoding": "GB18030",
+        "key_blocks": 2,
+        "records": 4
+      },
+      "status": "passed"
+    },
+    "gb18030-mdxbuilder-metadata": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "GB18030",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        }
+      },
+      "status": "passed"
+    },
+    "gbk-mdict-utils": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "GBK",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        },
+        "encoding": "GBK",
+        "key_blocks": 2,
+        "records": 4
+      },
+      "status": "passed"
+    },
+    "gbk-mdict-utils-metadata": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "GBK",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        }
+      },
+      "status": "passed"
+    },
+    "gbk-mdxbuilder": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "GBK",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        },
+        "encoding": "GBK",
+        "key_blocks": 2,
+        "records": 4
+      },
+      "status": "passed"
+    },
+    "gbk-mdxbuilder-metadata": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "GBK",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        }
+      },
+      "status": "passed"
+    },
+    "gbk-unencodable-body": {
+      "detail": {
+        "error": "invalid data: entry body is not representable in GBK",
+        "rejected": true
+      },
+      "status": "passed"
+    },
+    "gbk-unencodable-key": {
+      "detail": {
+        "error": "invalid data: entry key is not representable in GBK",
+        "rejected": true
+      },
+      "status": "passed"
+    },
+    "mdd-unicode-resources": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>Fonts & images</p>",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "Title": "Resources 中文 العربية & \"quotes\""
+        },
+        "key_blocks": 3,
+        "resources": 3
+      },
+      "status": "passed"
+    },
+    "reserved-metadata": {
+      "detail": {
+        "reserved_and_duplicate_attributes_rejected": true
+      },
+      "status": "passed"
+    },
+    "utf16le-mdict-utils": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "UTF-16LE",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        },
+        "encoding": "UTF-16LE",
+        "key_blocks": 2,
+        "records": 4
+      },
+      "status": "passed"
+    },
+    "utf16le-mdict-utils-metadata": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "UTF-16LE",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        }
+      },
+      "status": "passed"
+    },
+    "utf16le-mdxbuilder": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "UTF-16LE",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        },
+        "encoding": "UTF-16LE",
+        "key_blocks": 2,
+        "records": 4
+      },
+      "status": "passed"
+    },
+    "utf16le-mdxbuilder-metadata": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "UTF-16LE",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        }
+      },
+      "status": "passed"
+    },
+    "utf16le-nul-key": {
+      "detail": {
+        "error": "invalid data: entry keys must not contain a NUL character",
+        "rejected": true
+      },
+      "status": "passed"
+    },
+    "utf8-mdict-utils": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "UTF-8",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        },
+        "encoding": "UTF-8",
+        "key_blocks": 2,
+        "records": 4
+      },
+      "status": "passed"
+    },
+    "utf8-mdict-utils-metadata": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "UTF-8",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        }
+      },
+      "status": "passed"
+    },
+    "utf8-mdxbuilder": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "UTF-8",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        },
+        "encoding": "UTF-8",
+        "key_blocks": 2,
+        "records": 4
+      },
+      "status": "passed"
+    },
+    "utf8-mdxbuilder-metadata": {
+      "detail": {
+        "attributes": {
+          "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+          "Encoding": "UTF-8",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "RequiredEngineVersion": "2.0",
+          "StripKey": "No",
+          "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+          "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+        }
+      },
+      "status": "passed"
+    },
+    "utf8-nul-key": {
+      "detail": {
+        "error": "invalid data: entry keys must not contain a NUL character",
+        "rejected": true
+      },
+      "status": "passed"
+    }
+  },
+  "not_proven": [
+    "native_readers",
+    "all_codepoint_mapping_equivalence",
+    "source_file_decoding",
+    "large_files",
+    "non_C_locale"
+  ],
+  "status": "passed",
+  "suite": "metadata-storage-codecs-v1",
+  "writer_patch_revision": 2
+}
+
+STDERR:
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.27
+   Compiling libc v0.2.191
+   Compiling rustversion v1.0.23
+   Compiling cfg-if v1.0.5
+   Compiling rustix v1.1.6
+   Compiling getrandom v0.4.3
+   Compiling zerocopy v0.8.63
+   Compiling serde_core v1.0.229
+   Compiling zmij v1.0.23
+   Compiling bitflags v2.13.2
+   Compiling scopeguard v1.2.0
+   Compiling serde_json v1.0.154
+   Compiling serde v1.0.229
+   Compiling adler2 v2.0.1
+   Compiling once_cell v1.21.4
+   Compiling core_detect v1.0.0
+   Compiling multiversion_no_op v1.0.0
+   Compiling simdutf8 v0.1.5
+   Compiling fastrand v2.5.0
+   Compiling miniz_oxide v0.9.1
+   Compiling itoa v1.0.18
+   Compiling memchr v2.8.3
+   Compiling encoding_rs v0.8.42
+   Compiling syn v2.0.119
+   Compiling syn v3.0.9
+   Compiling errno v0.3.14
+   Compiling tempfile v3.27.0
+   Compiling serde_derive v1.0.229
+   Compiling zerocopy-derive v0.8.63
+   Compiling lzokay v2.0.1
+   Compiling mdictlib v0.2.8 (/Users/shawky/Downloads/mdict-studio-m0-m1/vendor/mdictlib-0.2.8-studio-sort-v2)
+   Compiling studio-engine-probe v0.1.0 (/Users/shawky/Downloads/mdict-studio-m0-m1/crates/studio-engine-probe)
+   Compiling studio-legacy-sort-experiment v0.1.0 (/Users/shawky/Downloads/mdict-studio-m0-m1/experiments/legacy-sort)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 14.87s
+     Running `experiments/legacy-sort/target/debug/studio-legacy-sort-experiment codec /Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/rust`
+
+CHECK forward-utf8-mdict-utils-records
+
+CHECK forward-utf8-mdict-utils-xml
+
+CHECK forward-utf8-mdict-utils-python-metadata
+
+CHECK reverse-utf8-mdict-utils-write
+
+["cargo", "run", "--locked", "--manifest-path", "experiments/legacy-sort/Cargo.toml", "--", "inspect-json", "/Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-utf8-mdict-utils.mdx"]
+{
+  "attributes": {
+    "Compact": "Yes",
+    "Compat": "Yes",
+    "CreationDate": "2026-10-27",
+    "DataSourceFormat": "106",
+    "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+    "Encoding": "UTF-8",
+    "Encrypted": "No",
+    "Format": "Html",
+    "GeneratedByEngineVersion": "2.0",
+    "KeyCaseSensitive": "No",
+    "Left2Right": "Yes",
+    "RegisterBy": "",
+    "RequiredEngineVersion": "2.0",
+    "Stripkey": "Yes",
+    "StyleSheet": "",
+    "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+  },
+  "entries": [
+    {
+      "key": "مرحبا",
+      "text": "<p dir=\"rtl\">أهلاً بالعالم</p>"
+    },
+    {
+      "key": "字",
+      "text": "<p>Chinese 字 & punctuation.</p>"
+    },
+    {
+      "key": "字",
+      "text": "<p>Duplicate entry.</p>"
+    },
+    {
+      "key": "𠀀😀",
+      "text": "<p>Supplementary 𠀀 and emoji 😀</p>"
+    }
+  ],
+  "kind": "mdx"
+}
+
+STDERR:
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.05s
+     Running `experiments/legacy-sort/target/debug/studio-legacy-sort-experiment inspect-json /Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-utf8-mdict-utils.mdx`
+
+CHECK reverse-utf8-mdict-utils-rust-records
+
+CHECK reverse-utf8-mdict-utils-python-records
+
+["cargo", "run", "--locked", "--manifest-path", "experiments/legacy-sort/Cargo.toml", "--", "inspect-json", "/Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-utf8-mdict-utils.mdx"]
+{
+  "attributes": {
+    "Compact": "Yes",
+    "Compat": "Yes",
+    "CreationDate": "2026-10-27",
+    "DataSourceFormat": "106",
+    "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+    "Encoding": "UTF-8",
+    "Encrypted": "No",
+    "Format": "Html",
+    "GeneratedByEngineVersion": "2.0",
+    "KeyCaseSensitive": "No",
+    "Left2Right": "Yes",
+    "RegisterBy": "",
+    "RequiredEngineVersion": "2.0",
+    "Stripkey": "Yes",
+    "StyleSheet": "",
+    "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+  },
+  "entries": [
+    {
+      "key": "مرحبا",
+      "text": "<p dir=\"rtl\">أهلاً بالعالم</p>"
+    },
+    {
+      "key": "字",
+      "text": "<p>Chinese 字 & punctuation.</p>"
+    },
+    {
+      "key": "字",
+      "text": "<p>Duplicate entry.</p>"
+    },
+    {
+      "key": "𠀀😀",
+      "text": "<p>Supplementary 𠀀 and emoji 😀</p>"
+    }
+  ],
+  "kind": "mdx"
+}
+
+STDERR:
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running `experiments/legacy-sort/target/debug/studio-legacy-sort-experiment inspect-json /Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-utf8-mdict-utils.mdx`
+
+CHECK reverse-utf8-mdict-utils-rust-metadata
+
+CHECK reverse-utf8-mdict-utils-xml
+
+CHECK forward-utf8-mdxbuilder-records
+
+CHECK forward-utf8-mdxbuilder-xml
+
+CHECK forward-utf8-mdxbuilder-python-metadata
+
+CHECK reverse-utf8-mdxbuilder-write
+
+["cargo", "run", "--locked", "--manifest-path", "experiments/legacy-sort/Cargo.toml", "--", "inspect-json", "/Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-utf8-mdxbuilder.mdx"]
+{
+  "attributes": {
+    "Compact": "Yes",
+    "Compat": "Yes",
+    "CreationDate": "2026-10-27",
+    "DataSourceFormat": "106",
+    "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+    "Encoding": "UTF-8",
+    "Encrypted": "No",
+    "Format": "Html",
+    "GeneratedByEngineVersion": "2.0",
+    "KeyCaseSensitive": "No",
+    "Left2Right": "Yes",
+    "RegisterBy": "",
+    "RequiredEngineVersion": "2.0",
+    "Stripkey": "Yes",
+    "StyleSheet": "",
+    "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+  },
+  "entries": [
+    {
+      "key": "مرحبا",
+      "text": "<p dir=\"rtl\">أهلاً بالعالم</p>"
+    },
+    {
+      "key": "字",
+      "text": "<p>Chinese 字 & punctuation.</p>"
+    },
+    {
+      "key": "字",
+      "text": "<p>Duplicate entry.</p>"
+    },
+    {
+      "key": "𠀀😀",
+      "text": "<p>Supplementary 𠀀 and emoji 😀</p>"
+    }
+  ],
+  "kind": "mdx"
+}
+
+STDERR:
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running `experiments/legacy-sort/target/debug/studio-legacy-sort-experiment inspect-json /Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-utf8-mdxbuilder.mdx`
+
+CHECK reverse-utf8-mdxbuilder-rust-records
+
+CHECK reverse-utf8-mdxbuilder-python-records
+
+["cargo", "run", "--locked", "--manifest-path", "experiments/legacy-sort/Cargo.toml", "--", "inspect-json", "/Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-utf8-mdxbuilder.mdx"]
+{
+  "attributes": {
+    "Compact": "Yes",
+    "Compat": "Yes",
+    "CreationDate": "2026-10-27",
+    "DataSourceFormat": "106",
+    "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+    "Encoding": "UTF-8",
+    "Encrypted": "No",
+    "Format": "Html",
+    "GeneratedByEngineVersion": "2.0",
+    "KeyCaseSensitive": "No",
+    "Left2Right": "Yes",
+    "RegisterBy": "",
+    "RequiredEngineVersion": "2.0",
+    "Stripkey": "Yes",
+    "StyleSheet": "",
+    "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+  },
+  "entries": [
+    {
+      "key": "مرحبا",
+      "text": "<p dir=\"rtl\">أهلاً بالعالم</p>"
+    },
+    {
+      "key": "字",
+      "text": "<p>Chinese 字 & punctuation.</p>"
+    },
+    {
+      "key": "字",
+      "text": "<p>Duplicate entry.</p>"
+    },
+    {
+      "key": "𠀀😀",
+      "text": "<p>Supplementary 𠀀 and emoji 😀</p>"
+    }
+  ],
+  "kind": "mdx"
+}
+
+STDERR:
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running `experiments/legacy-sort/target/debug/studio-legacy-sort-experiment inspect-json /Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-utf8-mdxbuilder.mdx`
+
+CHECK reverse-utf8-mdxbuilder-rust-metadata
+
+CHECK reverse-utf8-mdxbuilder-xml
+
+CHECK forward-utf16le-mdict-utils-records
+
+CHECK forward-utf16le-mdict-utils-xml
+
+CHECK forward-utf16le-mdict-utils-python-metadata
+
+CHECK reverse-utf16le-mdict-utils-write
+
+["cargo", "run", "--locked", "--manifest-path", "experiments/legacy-sort/Cargo.toml", "--", "inspect-json", "/Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-utf16le-mdict-utils.mdx"]
+
+STDERR:
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running `experiments/legacy-sort/target/debug/studio-legacy-sort-experiment inspect-json /Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-utf16le-mdict-utils.mdx`
+ERROR: I/O error: No such file or directory (os error 2)
+
+CHECK reverse-utf16le-mdict-utils-rust-records
+
+CHECK reverse-utf16le-mdict-utils-python-records
+
+["cargo", "run", "--locked", "--manifest-path", "experiments/legacy-sort/Cargo.toml", "--", "inspect-json", "/Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-utf16le-mdict-utils.mdx"]
+
+STDERR:
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running `experiments/legacy-sort/target/debug/studio-legacy-sort-experiment inspect-json /Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-utf16le-mdict-utils.mdx`
+ERROR: I/O error: No such file or directory (os error 2)
+
+CHECK reverse-utf16le-mdict-utils-rust-metadata
+
+CHECK reverse-utf16le-mdict-utils-xml
+
+CHECK forward-utf16le-mdxbuilder-records
+
+CHECK forward-utf16le-mdxbuilder-xml
+
+CHECK forward-utf16le-mdxbuilder-python-metadata
+
+CHECK reverse-utf16le-mdxbuilder-write
+
+["cargo", "run", "--locked", "--manifest-path", "experiments/legacy-sort/Cargo.toml", "--", "inspect-json", "/Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-utf16le-mdxbuilder.mdx"]
+
+STDERR:
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running `experiments/legacy-sort/target/debug/studio-legacy-sort-experiment inspect-json /Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-utf16le-mdxbuilder.mdx`
+ERROR: I/O error: No such file or directory (os error 2)
+
+CHECK reverse-utf16le-mdxbuilder-rust-records
+
+CHECK reverse-utf16le-mdxbuilder-python-records
+
+["cargo", "run", "--locked", "--manifest-path", "experiments/legacy-sort/Cargo.toml", "--", "inspect-json", "/Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-utf16le-mdxbuilder.mdx"]
+
+STDERR:
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.05s
+     Running `experiments/legacy-sort/target/debug/studio-legacy-sort-experiment inspect-json /Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-utf16le-mdxbuilder.mdx`
+ERROR: I/O error: No such file or directory (os error 2)
+
+CHECK reverse-utf16le-mdxbuilder-rust-metadata
+
+CHECK reverse-utf16le-mdxbuilder-xml
+
+CHECK forward-big5-mdict-utils-records
+
+CHECK forward-big5-mdict-utils-xml
+
+CHECK forward-big5-mdict-utils-python-metadata
+
+CHECK reverse-big5-mdict-utils-write
+
+["cargo", "run", "--locked", "--manifest-path", "experiments/legacy-sort/Cargo.toml", "--", "inspect-json", "/Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-big5-mdict-utils.mdx"]
+{
+  "attributes": {
+    "Compact": "Yes",
+    "Compat": "Yes",
+    "CreationDate": "2026-10-27",
+    "DataSourceFormat": "106",
+    "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+    "Encoding": "BIG5",
+    "Encrypted": "No",
+    "Format": "Html",
+    "GeneratedByEngineVersion": "2.0",
+    "KeyCaseSensitive": "No",
+    "Left2Right": "Yes",
+    "RegisterBy": "",
+    "RequiredEngineVersion": "2.0",
+    "Stripkey": "Yes",
+    "StyleSheet": "",
+    "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+  },
+  "entries": [
+    {
+      "key": "傳",
+      "text": "<p>傳統。</p>"
+    },
+    {
+      "key": "和",
+      "text": "<p>和平。</p>"
+    },
+    {
+      "key": "字",
+      "text": "<p>文字與傳統。</p>"
+    },
+    {
+      "key": "字",
+      "text": "<p>第二個解釋。</p>"
+    }
+  ],
+  "kind": "mdx"
+}
+
+STDERR:
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running `experiments/legacy-sort/target/debug/studio-legacy-sort-experiment inspect-json /Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-big5-mdict-utils.mdx`
+
+CHECK reverse-big5-mdict-utils-rust-records
+
+CHECK reverse-big5-mdict-utils-python-records
+
+["cargo", "run", "--locked", "--manifest-path", "experiments/legacy-sort/Cargo.toml", "--", "inspect-json", "/Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-big5-mdict-utils.mdx"]
+{
+  "attributes": {
+    "Compact": "Yes",
+    "Compat": "Yes",
+    "CreationDate": "2026-10-27",
+    "DataSourceFormat": "106",
+    "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+    "Encoding": "BIG5",
+    "Encrypted": "No",
+    "Format": "Html",
+    "GeneratedByEngineVersion": "2.0",
+    "KeyCaseSensitive": "No",
+    "Left2Right": "Yes",
+    "RegisterBy": "",
+    "RequiredEngineVersion": "2.0",
+    "Stripkey": "Yes",
+    "StyleSheet": "",
+    "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+  },
+  "entries": [
+    {
+      "key": "傳",
+      "text": "<p>傳統。</p>"
+    },
+    {
+      "key": "和",
+      "text": "<p>和平。</p>"
+    },
+    {
+      "key": "字",
+      "text": "<p>文字與傳統。</p>"
+    },
+    {
+      "key": "字",
+      "text": "<p>第二個解釋。</p>"
+    }
+  ],
+  "kind": "mdx"
+}
+
+STDERR:
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running `experiments/legacy-sort/target/debug/studio-legacy-sort-experiment inspect-json /Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-big5-mdict-utils.mdx`
+
+CHECK reverse-big5-mdict-utils-rust-metadata
+
+CHECK reverse-big5-mdict-utils-xml
+
+CHECK forward-big5-mdxbuilder-records
+
+CHECK forward-big5-mdxbuilder-xml
+
+CHECK forward-big5-mdxbuilder-python-metadata
+
+CHECK reverse-big5-mdxbuilder-write
+
+["cargo", "run", "--locked", "--manifest-path", "experiments/legacy-sort/Cargo.toml", "--", "inspect-json", "/Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-big5-mdxbuilder.mdx"]
+{
+  "attributes": {
+    "Compact": "Yes",
+    "Compat": "Yes",
+    "CreationDate": "2026-10-27",
+    "DataSourceFormat": "106",
+    "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+    "Encoding": "BIG5",
+    "Encrypted": "No",
+    "Format": "Html",
+    "GeneratedByEngineVersion": "2.0",
+    "KeyCaseSensitive": "No",
+    "Left2Right": "Yes",
+    "RegisterBy": "",
+    "RequiredEngineVersion": "2.0",
+    "Stripkey": "Yes",
+    "StyleSheet": "",
+    "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+  },
+  "entries": [
+    {
+      "key": "傳",
+      "text": "<p>傳統。</p>"
+    },
+    {
+      "key": "和",
+      "text": "<p>和平。</p>"
+    },
+    {
+      "key": "字",
+      "text": "<p>文字與傳統。</p>"
+    },
+    {
+      "key": "字",
+      "text": "<p>第二個解釋。</p>"
+    }
+  ],
+  "kind": "mdx"
+}
+
+STDERR:
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running `experiments/legacy-sort/target/debug/studio-legacy-sort-experiment inspect-json /Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-big5-mdxbuilder.mdx`
+
+CHECK reverse-big5-mdxbuilder-rust-records
+
+CHECK reverse-big5-mdxbuilder-python-records
+
+["cargo", "run", "--locked", "--manifest-path", "experiments/legacy-sort/Cargo.toml", "--", "inspect-json", "/Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-big5-mdxbuilder.mdx"]
+{
+  "attributes": {
+    "Compact": "Yes",
+    "Compat": "Yes",
+    "CreationDate": "2026-10-27",
+    "DataSourceFormat": "106",
+    "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+    "Encoding": "BIG5",
+    "Encrypted": "No",
+    "Format": "Html",
+    "GeneratedByEngineVersion": "2.0",
+    "KeyCaseSensitive": "No",
+    "Left2Right": "Yes",
+    "RegisterBy": "",
+    "RequiredEngineVersion": "2.0",
+    "Stripkey": "Yes",
+    "StyleSheet": "",
+    "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+  },
+  "entries": [
+    {
+      "key": "傳",
+      "text": "<p>傳統。</p>"
+    },
+    {
+      "key": "和",
+      "text": "<p>和平。</p>"
+    },
+    {
+      "key": "字",
+      "text": "<p>文字與傳統。</p>"
+    },
+    {
+      "key": "字",
+      "text": "<p>第二個解釋。</p>"
+    }
+  ],
+  "kind": "mdx"
+}
+
+STDERR:
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running `experiments/legacy-sort/target/debug/studio-legacy-sort-experiment inspect-json /Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-big5-mdxbuilder.mdx`
+
+CHECK reverse-big5-mdxbuilder-rust-metadata
+
+CHECK reverse-big5-mdxbuilder-xml
+
+CHECK forward-gbk-mdict-utils-records
+
+CHECK forward-gbk-mdict-utils-xml
+
+CHECK forward-gbk-mdict-utils-python-metadata
+
+CHECK reverse-gbk-mdict-utils-write
+
+["cargo", "run", "--locked", "--manifest-path", "experiments/legacy-sort/Cargo.toml", "--", "inspect-json", "/Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-gbk-mdict-utils.mdx"]
+{
+  "attributes": {
+    "Compact": "Yes",
+    "Compat": "Yes",
+    "CreationDate": "2026-10-27",
+    "DataSourceFormat": "106",
+    "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+    "Encoding": "GBK",
+    "Encrypted": "No",
+    "Format": "Html",
+    "GeneratedByEngineVersion": "2.0",
+    "KeyCaseSensitive": "No",
+    "Left2Right": "Yes",
+    "RegisterBy": "",
+    "RequiredEngineVersion": "2.0",
+    "Stripkey": "Yes",
+    "StyleSheet": "",
+    "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+  },
+  "entries": [
+    {
+      "key": "字",
+      "text": "<p>文字与传统。</p>"
+    },
+    {
+      "key": "字",
+      "text": "<p>第二个解释。</p>"
+    },
+    {
+      "key": "汉语",
+      "text": "<p>汉语词典。</p>"
+    },
+    {
+      "key": "绿色",
+      "text": "<p>绿色。</p>"
+    }
+  ],
+  "kind": "mdx"
+}
+
+STDERR:
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.05s
+     Running `experiments/legacy-sort/target/debug/studio-legacy-sort-experiment inspect-json /Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-gbk-mdict-utils.mdx`
+
+CHECK reverse-gbk-mdict-utils-rust-records
+
+CHECK reverse-gbk-mdict-utils-python-records
+
+["cargo", "run", "--locked", "--manifest-path", "experiments/legacy-sort/Cargo.toml", "--", "inspect-json", "/Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-gbk-mdict-utils.mdx"]
+{
+  "attributes": {
+    "Compact": "Yes",
+    "Compat": "Yes",
+    "CreationDate": "2026-10-27",
+    "DataSourceFormat": "106",
+    "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+    "Encoding": "GBK",
+    "Encrypted": "No",
+    "Format": "Html",
+    "GeneratedByEngineVersion": "2.0",
+    "KeyCaseSensitive": "No",
+    "Left2Right": "Yes",
+    "RegisterBy": "",
+    "RequiredEngineVersion": "2.0",
+    "Stripkey": "Yes",
+    "StyleSheet": "",
+    "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+  },
+  "entries": [
+    {
+      "key": "字",
+      "text": "<p>文字与传统。</p>"
+    },
+    {
+      "key": "字",
+      "text": "<p>第二个解释。</p>"
+    },
+    {
+      "key": "汉语",
+      "text": "<p>汉语词典。</p>"
+    },
+    {
+      "key": "绿色",
+      "text": "<p>绿色。</p>"
+    }
+  ],
+  "kind": "mdx"
+}
+
+STDERR:
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running `experiments/legacy-sort/target/debug/studio-legacy-sort-experiment inspect-json /Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-gbk-mdict-utils.mdx`
+
+CHECK reverse-gbk-mdict-utils-rust-metadata
+
+CHECK reverse-gbk-mdict-utils-xml
+
+CHECK forward-gbk-mdxbuilder-records
+
+CHECK forward-gbk-mdxbuilder-xml
+
+CHECK forward-gbk-mdxbuilder-python-metadata
+
+CHECK reverse-gbk-mdxbuilder-write
+
+["cargo", "run", "--locked", "--manifest-path", "experiments/legacy-sort/Cargo.toml", "--", "inspect-json", "/Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-gbk-mdxbuilder.mdx"]
+{
+  "attributes": {
+    "Compact": "Yes",
+    "Compat": "Yes",
+    "CreationDate": "2026-10-27",
+    "DataSourceFormat": "106",
+    "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+    "Encoding": "GBK",
+    "Encrypted": "No",
+    "Format": "Html",
+    "GeneratedByEngineVersion": "2.0",
+    "KeyCaseSensitive": "No",
+    "Left2Right": "Yes",
+    "RegisterBy": "",
+    "RequiredEngineVersion": "2.0",
+    "Stripkey": "Yes",
+    "StyleSheet": "",
+    "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+  },
+  "entries": [
+    {
+      "key": "字",
+      "text": "<p>文字与传统。</p>"
+    },
+    {
+      "key": "字",
+      "text": "<p>第二个解释。</p>"
+    },
+    {
+      "key": "汉语",
+      "text": "<p>汉语词典。</p>"
+    },
+    {
+      "key": "绿色",
+      "text": "<p>绿色。</p>"
+    }
+  ],
+  "kind": "mdx"
+}
+
+STDERR:
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running `experiments/legacy-sort/target/debug/studio-legacy-sort-experiment inspect-json /Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-gbk-mdxbuilder.mdx`
+
+CHECK reverse-gbk-mdxbuilder-rust-records
+
+CHECK reverse-gbk-mdxbuilder-python-records
+
+["cargo", "run", "--locked", "--manifest-path", "experiments/legacy-sort/Cargo.toml", "--", "inspect-json", "/Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-gbk-mdxbuilder.mdx"]
+{
+  "attributes": {
+    "Compact": "Yes",
+    "Compat": "Yes",
+    "CreationDate": "2026-10-27",
+    "DataSourceFormat": "106",
+    "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+    "Encoding": "GBK",
+    "Encrypted": "No",
+    "Format": "Html",
+    "GeneratedByEngineVersion": "2.0",
+    "KeyCaseSensitive": "No",
+    "Left2Right": "Yes",
+    "RegisterBy": "",
+    "RequiredEngineVersion": "2.0",
+    "Stripkey": "Yes",
+    "StyleSheet": "",
+    "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'"
+  },
+  "entries": [
+    {
+      "key": "字",
+      "text": "<p>文字与传统。</p>"
+    },
+    {
+      "key": "字",
+      "text": "<p>第二个解释。</p>"
+    },
+    {
+      "key": "汉语",
+      "text": "<p>汉语词典。</p>"
+    },
+    {
+      "key": "绿色",
+      "text": "<p>绿色。</p>"
+    }
+  ],
+  "kind": "mdx"
+}
+
+STDERR:
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running `experiments/legacy-sort/target/debug/studio-legacy-sort-experiment inspect-json /Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-gbk-mdxbuilder.mdx`
+
+CHECK reverse-gbk-mdxbuilder-rust-metadata
+
+CHECK reverse-gbk-mdxbuilder-xml
+
+CHECK forward-gb18030-mdict-utils-records
+
+CHECK forward-gb18030-mdict-utils-xml
+
+CHECK forward-gb18030-mdict-utils-python-metadata
+
+CHECK reverse-gb18030-mdict-utils-write
+
+["cargo", "run", "--locked", "--manifest-path", "experiments/legacy-sort/Cargo.toml", "--", "inspect-json", "/Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-gb18030-mdict-utils.mdx"]
+
+STDERR:
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running `experiments/legacy-sort/target/debug/studio-legacy-sort-experiment inspect-json /Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-gb18030-mdict-utils.mdx`
+ERROR: I/O error: No such file or directory (os error 2)
+
+CHECK reverse-gb18030-mdict-utils-rust-records
+
+CHECK reverse-gb18030-mdict-utils-python-records
+
+["cargo", "run", "--locked", "--manifest-path", "experiments/legacy-sort/Cargo.toml", "--", "inspect-json", "/Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-gb18030-mdict-utils.mdx"]
+
+STDERR:
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running `experiments/legacy-sort/target/debug/studio-legacy-sort-experiment inspect-json /Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-gb18030-mdict-utils.mdx`
+ERROR: I/O error: No such file or directory (os error 2)
+
+CHECK reverse-gb18030-mdict-utils-rust-metadata
+
+CHECK reverse-gb18030-mdict-utils-xml
+
+CHECK forward-gb18030-mdxbuilder-records
+
+CHECK forward-gb18030-mdxbuilder-xml
+
+CHECK forward-gb18030-mdxbuilder-python-metadata
+
+CHECK reverse-gb18030-mdxbuilder-write
+
+["cargo", "run", "--locked", "--manifest-path", "experiments/legacy-sort/Cargo.toml", "--", "inspect-json", "/Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-gb18030-mdxbuilder.mdx"]
+
+STDERR:
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running `experiments/legacy-sort/target/debug/studio-legacy-sort-experiment inspect-json /Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-gb18030-mdxbuilder.mdx`
+ERROR: I/O error: No such file or directory (os error 2)
+
+CHECK reverse-gb18030-mdxbuilder-rust-records
+
+CHECK reverse-gb18030-mdxbuilder-python-records
+
+["cargo", "run", "--locked", "--manifest-path", "experiments/legacy-sort/Cargo.toml", "--", "inspect-json", "/Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-gb18030-mdxbuilder.mdx"]
+
+STDERR:
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running `experiments/legacy-sort/target/debug/studio-legacy-sort-experiment inspect-json /Users/shawky/Downloads/mdict-studio-m0-m1/codec-out/python-gb18030-mdxbuilder.mdx`
+ERROR: I/O error: No such file or directory (os error 2)
+
+CHECK reverse-gb18030-mdxbuilder-rust-metadata
+
+CHECK reverse-gb18030-mdxbuilder-xml
+
+CHECK mdd-python-records
+
+CHECK mdd-xml-metadata
+
+CHECK mdd-python-metadata
+

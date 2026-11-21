@@ -1,0 +1,35 @@
+[workspace]
+members = ["."]
+resolver = "2"
+
+[package]
+name = "studio-desktop-runtime"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+studio-database = { path = "../../m4/database" }
+libc = "=0.2.191"
+getrandom = "=0.4.3"
+studio-v2-import = { path = "../../m2/v2-import" }
+studio-export-io = { path = "../export-io" }
+studio-core = { path = "../../m2/studio-core" }
+studio-cc-pack-io = { path = "../../m2/cc-pack-io" }
+studio-indexed-engine = { path = "../../m2/indexed-engine" }
+studio-xlsx = { path = "../../m2/xlsx-reader" }
+studio-revised-render = { path = "../../m2/revised-render" }
+studio-xlsx-spool = { path = "../../m2/xlsx-spool" }
+studio-application = { path = "../../m2/application" }
+tempfile = "=3.27.0"
+studio-large-io = { path = "../../m2/large-io" }
+studio-stream-extract = { path = "../../m2/stream-extract" }
+studio-sessions = { package = "studio-desktop-sessions", path = "../indexed-sessions" }
+serde = { version = "=1.0.229", features = ["derive"] }
+serde_json = "=1.0.154"
+
+[dev-dependencies]
+mdictlib = { version = "=0.2.8", features = ["lzo"] }
+
+[patch.crates-io]
+mdictlib = { path = "../../vendor/mdictlib-0.2.8-studio-sort-v6" }

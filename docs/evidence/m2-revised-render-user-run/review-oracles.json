@@ -1,0 +1,103 @@
+{
+  "method": "Fresh captured Python small converters; full source group plan recomputed with original normalization helper, without retaining definitions",
+  "small": {
+    "moe_revised": {
+      "normalized_record_digest": {
+        "records": 13,
+        "key_bytes": 72,
+        "payload_bytes": 13884,
+        "framed_records_sha256": "89bf16d2fddf267107c1fb7d18d6988ee3b315ee88075c88cc4e2795ea081e00"
+      },
+      "file_bytes": 14034,
+      "raw_python_output_sha256": "f9252f0e897c38be035c0bf6aa12823ab311284b43b6ecc3aa5956bfdb63ea71",
+      "entries": 13,
+      "primary_entries": 5,
+      "alias_redirects": 8
+    },
+    "moe_revised_wfg": {
+      "normalized_record_digest": {
+        "records": 5,
+        "key_bytes": 27,
+        "payload_bytes": 14231,
+        "framed_records_sha256": "279487e6aff78104c44fffcb06974152344a565eb76d1766446acf633d4bfd58"
+      },
+      "file_bytes": 14288,
+      "raw_python_output_sha256": "c757e7ead046986d4f650b2c2263613f9356abf557836aa7e66455123b39d0e9",
+      "entries": 5,
+      "primary_entries": 5,
+      "alias_redirects": 0
+    }
+  },
+  "small_group_plan": {
+    "source_sha256": "3764c3f2bedaf81b82a436f612f6141bdd20fd3970afaeed2d798fbe3d75f245",
+    "input_rows": 17,
+    "groups": 5,
+    "skipped_rows": 1,
+    "index_charge_bytes": 67894,
+    "largest_group_rows": 11,
+    "largest_group_input_bytes": 13164
+  },
+  "small_rows": {
+    "worksheet": "Sheet",
+    "headers": [
+      "字詞名",
+      "單字",
+      "成語",
+      "多音排序",
+      "字數",
+      "部首字",
+      "部首",
+      "部首外筆畫數",
+      "部首外筆畫",
+      "總筆畫數",
+      "注音一式",
+      "注音",
+      "漢語拼音",
+      "變體注音",
+      "變體漢語拼音",
+      "變體類型 1:變 2:又音 3:語音 4:讀音",
+      "釋義",
+      "解釋",
+      "相似詞",
+      "相反詞",
+      "多音參見訊息",
+      "異體字",
+      "辭條別名",
+      "主條成語／非主條成語",
+      "編號",
+      "典源文獻名稱",
+      "典源文獻內容",
+      "典源注解",
+      "典故說明",
+      "書證",
+      "用法說明-語義說明",
+      "用法說明-使用類別",
+      "用法說明-例句",
+      "辨識-同",
+      "辨識-異",
+      "辨識-例句",
+      "近義成語",
+      "反義成語",
+      "參考詞語"
+    ],
+    "scanned_data_rows": 17,
+    "skipped_blank_rows": 0,
+    "normalized_charge_bytes": 16970,
+    "row_digest": {
+      "rows": 17,
+      "pairs": 663,
+      "key_bytes": 8721,
+      "value_bytes": 7736,
+      "framed_rows_sha256": "c369b46537897fecfe3bb55af3ff42ecd26c0e6f1d354292ae7154575510fe2e"
+    }
+  },
+  "full_group_plan": {
+    "source_sha256": "bbbac6a820cac000cabf789d81b88338d94aa14f1d7eea6e16b495cf5c8dfa80",
+    "input_rows": 163909,
+    "groups": 161182,
+    "skipped_rows": 0,
+    "index_charge_bytes": 54397924,
+    "largest_group_rows": 6,
+    "largest_group_input_bytes": 11220
+  }
+}

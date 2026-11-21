@@ -1,0 +1,9 @@
+{
+  "source": "User-uploaded stylesheet offline report and crash log; manual rendering statements",
+  "local_reader_execution": false,
+  "files": {
+    "mdict-crash-report.txt": "ecc6a92e669737e2a5200e9509337c45bae75fdc50463ad89a9292cc3d412d85",
+    "stylesheet-controls-report.json": "8b80b6a9f56ffc23e2c188cc83c75e115fe90b40433078f7aeb409769e4d7ef0",
+    "native-observations.json": "2a797fb64d877d8d3fbb8230bf3ae6d8c2d6e4583f69ef8eea4ddc2f3938ee95"
+  }
+}

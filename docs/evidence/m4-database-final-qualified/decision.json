@@ -1,0 +1,84 @@
+{
+  "schema": "studio-m4-database-closeout-decision-v1",
+  "date": "2026-11-19",
+  "decision": "complete_scoped_Mac_Database_milestone_after_reviewed_lock_normalization",
+  "M4_complete": true,
+  "production_release_ready": false,
+  "M3_complete": false,
+  "accepted_checkpoints": 3,
+  "checkpoint_count": 3,
+  "scope": "Bounded Database milestone on the tested Mac; not full M3, original GUI parity or production release readiness",
+  "qualified_package_version": 167,
+  "native_execution": "User Mac macOS 15.8.3 x86_64; no native execution in authoring environment",
+  "original_outer_report_status": "failed",
+  "outer_audit_failure_review": "Original strict final lock hash audit failed after all five outer steps and both native workflow encodings passed. Accept only exact seed/resolved variants verified in the supplied shell receipt; original failed report is retained unchanged apart from explicit inventory filtering. This decision does not relabel the original run as passing.",
+  "native_shell_steps_passed": 15,
+  "workflow_encodings": [
+    "UTF-8",
+    "UTF-16"
+  ],
+  "final_records_each_encoding": 7,
+  "three_duplicate_definitions_preserved": true,
+  "protected_M2_source_identities": 324,
+  "source_files_compared_to_package_167": 184,
+  "source_mismatches": [],
+  "reports": {
+    "closeout-report.json": {
+      "upload": "report(20261119-165901).json",
+      "original_sha256": "d16a8ab0ca8d1737810a0c26baf5afe6b92bf9dbf4916b30c6114d79322fd88a",
+      "retained_sha256": "91b889681fd7c67b35dbe9db4b55ef1db378ac9b66b59081622d2acbb0b2858c"
+    },
+    "workflow-report.json": {
+      "upload": "report(20261119-170006).json",
+      "original_sha256": "db72b501e3e1f4dccad7faae075574aef4f3d4a7c042e6eeff857af391b79321",
+      "retained_sha256": "d652b0c2326b5e77d954eb83312089f16e1c10772c3648387799310d9607fe78"
+    },
+    "shell-report.json": {
+      "upload": "m3-shell-report(20261119-170527).json",
+      "original_sha256": "a017b1eae5b63ca1f40df80cf4089a00f36a42156ca66154286d71cc84bde88e",
+      "retained_sha256": "f2b9d20845e631297907f6385d00ce9d1a4846106a5d14e093102efaf46211a7"
+    }
+  },
+  "reviewed_lock_variants": {
+    "m3/export-io/Cargo.lock": [
+      "a04524c89dfeedbd04074766cdd5edb96feb299b7724b56d85bf5ed3cb6b996b",
+      "1ba4cab619a3816b9c18782ac33fd178b28dd5baaf9baf3b3410288011a98e28"
+    ],
+    "m3/indexed-sessions/Cargo.lock": [
+      "92c4f9704a78ed464e79d17926ac009ec7788a9444eb5700fb06066c815ffb29",
+      "e9a4b52878edc3b45008009f6e08d3d826a169dfe961f2a0433d53d86860513f"
+    ],
+    "m3/native-adapter/Cargo.lock": [
+      "6238de1d88365b93a5b5cfcbacbd76e14d94723deac87c3065c01aa18e64bdc7",
+      "50af5b504bb11d8fe387a80c4a411bd50486e7066da0bd0b7eeba9acd89c9ddb"
+    ],
+    "m3/txt-runtime/Cargo.lock": [
+      "6238de1d88365b93a5b5cfcbacbd76e14d94723deac87c3065c01aa18e64bdc7",
+      "a625ce05b03ba7862f6550b28a6b58a5c965734eebd6371b350717195df57ea7"
+    ]
+  },
+  "input_manifest_sha256": "bf989b02a1e7f8cf5f03f510dc6af7f2f4f80a0406c547292373952a97236c39",
+  "current_audit_manifest_sha256": "07b12ded567f7e95ccf8713540addc848a57ee6c887fb739486c03c532556b13",
+  "prior_reader_confirmation": "docs/evidence/m4-database-workflow-qualified/reader-confirmation.json",
+  "prior_real_sizing": "docs/evidence/m4-database-sizing-real-qualified/report.json",
+  "new_reader_visual_tests_claimed": false,
+  "remaining": [
+    "100000_records_32_MiB_decoded_128_MiB_files",
+    "8_KiB_definition_edits_and_additions",
+    "closed_supported_SQLite_files_only_no_live_WAL_or_MDD_tables",
+    "MDX_v2_rebuild_lookup_flags_No_No",
+    "no_full_resource_database_editing",
+    "timings_not_RSS_or_GUI_paint_guarantees",
+    "no_Windows_Linux_release_qualification",
+    "no_crash_recovery_or_signing_updating_qualification",
+    "MDX_v3_deferred"
+  ],
+  "routine_Mac_rerun_required_for_this_finalization": false,
+  "retained_files_sha256": {
+    "closeout-report.json": "91b889681fd7c67b35dbe9db4b55ef1db378ac9b66b59081622d2acbb0b2858c",
+    "input-manifest.json": "bf989b02a1e7f8cf5f03f510dc6af7f2f4f80a0406c547292373952a97236c39",
+    "normalized-export-io.Cargo.lock": "1ba4cab619a3816b9c18782ac33fd178b28dd5baaf9baf3b3410288011a98e28",
+    "shell-report.json": "f2b9d20845e631297907f6385d00ce9d1a4846106a5d14e093102efaf46211a7",
+    "workflow-report.json": "d652b0c2326b5e77d954eb83312089f16e1c10772c3648387799310d9607fe78"
+  }
+}

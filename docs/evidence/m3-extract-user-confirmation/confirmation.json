@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-12",
+  "basis": "user terminal output and GUI reports in this conversation",
+  "MDX": "five records correct; other MDX exports reported working",
+  "MDD": "GUI extraction reported working",
+  "resource_verifier": {
+    "status": "passed",
+    "expected_files": 17,
+    "actual_files": 17,
+    "payload_bytes": 473210,
+    "missing_paths": [],
+    "unexpected_paths": [],
+    "changed_bytes_paths": []
+  },
+  "scope": "Confirms this 17-file comparison; does not substitute for the full native shell receipt or establish arbitrary corpus qualification"
+}

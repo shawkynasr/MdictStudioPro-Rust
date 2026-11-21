@@ -1,0 +1,339 @@
+{
+  "status": "versioned_casing_candidate_passed_engine_integration_pending_M1_open",
+  "profiles": [
+    "python-unicode-16-root-lower-v1",
+    "rust-unicode-17-root-lower-v1"
+  ],
+  "engine_integrated": false,
+  "native_readers": "NOT_RUN_NO_NEW_DICTIONARIES",
+  "not_proven": [
+    "frozen_policy_integrated_in_writer_and_lookup",
+    "all_possible_Unicode_strings",
+    "official_MdxBuilder_mapping",
+    "native_Unicode_lookup",
+    "M1_completion"
+  ],
+  "environment": {
+    "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 17.0.0 (clang-1700.6.4.2)]",
+    "python_unicode_version": "16.0.0"
+  },
+  "policy": {
+    "file": "unicode16-casing.json",
+    "sha256": "f69d2e55d6b8c8d5fe33f764cc47b829bccc6d73aaff1791e1216328a1c24071",
+    "profile": "python-unicode-16-root-lower-v1",
+    "lower_mappings": 1460,
+    "cased_ranges": 159,
+    "case_ignorable_ranges": 452,
+    "provenance": "Derived from CPython16 lowercase and casing predicates; Case_Ignorable inferred through Final_Sigma behavior, not copied from official UCD files",
+    "status": "candidate_data_upload_for_review_and_hash_freeze"
+  },
+  "source_sha256": {
+    "experiments/real-rebuild/src/main.rs": "0ce334ad102b68268266df5190222052571317d919e992dd8bcace6f40863ecd",
+    "experiments/real-rebuild/src/casing.rs": "ae15590557a3a16a00e67a8ee2f6130f044b19de6ca408d32013f7ca1c8a48b1",
+    "experiments/real-rebuild/Cargo.lock": "0490f412f73e66fd7b719da2dd71470eeb315aaa9028837ae185f3437a8e867f",
+    "scripts/casing_policy.py": "b4b362ccea477c0b39f444d4b6a1e9f0ed6a1a79582f8a3a087092882720d3cb",
+    "docs/evidence/unicode-version-user-run/unicode-profile-report.json": "562f560eafd7a754b941aae1c9543d802c7d580bdf32dc8a8d6fd67eef159c0a"
+  },
+  "legacy_context_failures": [],
+  "scalar_checks": {
+    "scalars_compared": 1112064,
+    "legacy16_differences": 0,
+    "modern17_differences": [
+      {
+        "codepoint": "U+A7CE",
+        "input": "꟎",
+        "python": "꟎",
+        "rust": "꟏"
+      },
+      {
+        "codepoint": "U+A7D2",
+        "input": "꟒",
+        "python": "꟒",
+        "rust": "ꟓ"
+      },
+      {
+        "codepoint": "U+A7D4",
+        "input": "꟔",
+        "python": "꟔",
+        "rust": "ꟕ"
+      },
+      {
+        "codepoint": "U+16EA0",
+        "input": "𖺠",
+        "python": "𖺠",
+        "rust": "𖺻"
+      },
+      {
+        "codepoint": "U+16EA1",
+        "input": "𖺡",
+        "python": "𖺡",
+        "rust": "𖺼"
+      },
+      {
+        "codepoint": "U+16EA2",
+        "input": "𖺢",
+        "python": "𖺢",
+        "rust": "𖺽"
+      },
+      {
+        "codepoint": "U+16EA3",
+        "input": "𖺣",
+        "python": "𖺣",
+        "rust": "𖺾"
+      },
+      {
+        "codepoint": "U+16EA4",
+        "input": "𖺤",
+        "python": "𖺤",
+        "rust": "𖺿"
+      },
+      {
+        "codepoint": "U+16EA5",
+        "input": "𖺥",
+        "python": "𖺥",
+        "rust": "𖻀"
+      },
+      {
+        "codepoint": "U+16EA6",
+        "input": "𖺦",
+        "python": "𖺦",
+        "rust": "𖻁"
+      },
+      {
+        "codepoint": "U+16EA7",
+        "input": "𖺧",
+        "python": "𖺧",
+        "rust": "𖻂"
+      },
+      {
+        "codepoint": "U+16EA8",
+        "input": "𖺨",
+        "python": "𖺨",
+        "rust": "𖻃"
+      },
+      {
+        "codepoint": "U+16EA9",
+        "input": "𖺩",
+        "python": "𖺩",
+        "rust": "𖻄"
+      },
+      {
+        "codepoint": "U+16EAA",
+        "input": "𖺪",
+        "python": "𖺪",
+        "rust": "𖻅"
+      },
+      {
+        "codepoint": "U+16EAB",
+        "input": "𖺫",
+        "python": "𖺫",
+        "rust": "𖻆"
+      },
+      {
+        "codepoint": "U+16EAC",
+        "input": "𖺬",
+        "python": "𖺬",
+        "rust": "𖻇"
+      },
+      {
+        "codepoint": "U+16EAD",
+        "input": "𖺭",
+        "python": "𖺭",
+        "rust": "𖻈"
+      },
+      {
+        "codepoint": "U+16EAE",
+        "input": "𖺮",
+        "python": "𖺮",
+        "rust": "𖻉"
+      },
+      {
+        "codepoint": "U+16EAF",
+        "input": "𖺯",
+        "python": "𖺯",
+        "rust": "𖻊"
+      },
+      {
+        "codepoint": "U+16EB0",
+        "input": "𖺰",
+        "python": "𖺰",
+        "rust": "𖻋"
+      },
+      {
+        "codepoint": "U+16EB1",
+        "input": "𖺱",
+        "python": "𖺱",
+        "rust": "𖻌"
+      },
+      {
+        "codepoint": "U+16EB2",
+        "input": "𖺲",
+        "python": "𖺲",
+        "rust": "𖻍"
+      },
+      {
+        "codepoint": "U+16EB3",
+        "input": "𖺳",
+        "python": "𖺳",
+        "rust": "𖻎"
+      },
+      {
+        "codepoint": "U+16EB4",
+        "input": "𖺴",
+        "python": "𖺴",
+        "rust": "𖻏"
+      },
+      {
+        "codepoint": "U+16EB5",
+        "input": "𖺵",
+        "python": "𖺵",
+        "rust": "𖻐"
+      },
+      {
+        "codepoint": "U+16EB6",
+        "input": "𖺶",
+        "python": "𖺶",
+        "rust": "𖻑"
+      },
+      {
+        "codepoint": "U+16EB7",
+        "input": "𖺷",
+        "python": "𖺷",
+        "rust": "𖻒"
+      },
+      {
+        "codepoint": "U+16EB8",
+        "input": "𖺸",
+        "python": "𖺸",
+        "rust": "𖻓"
+      }
+    ]
+  },
+  "context_checks": {
+    "words_checked": 2017,
+    "legacy16_differences": 0,
+    "examples_of_intentional_policy_differences": [
+      {
+        "legacy16": "꟎",
+        "modern17": "꟏",
+        "word": "꟎"
+      },
+      {
+        "legacy16": "꟎σ",
+        "modern17": "꟏ς",
+        "word": "꟎Σ"
+      },
+      {
+        "legacy16": "꟎σa",
+        "modern17": "꟏σa",
+        "word": "꟎ΣA"
+      },
+      {
+        "legacy16": "aς꟎",
+        "modern17": "aσ꟏",
+        "word": "AΣ꟎"
+      },
+      {
+        "legacy16": "aς꟎a",
+        "modern17": "aσ꟏a",
+        "word": "AΣ꟎A"
+      },
+      {
+        "legacy16": "a꟎σ",
+        "modern17": "a꟏ς",
+        "word": "A꟎Σ"
+      },
+      {
+        "legacy16": "꟒",
+        "modern17": "ꟓ",
+        "word": "꟒"
+      },
+      {
+        "legacy16": "꟒σ",
+        "modern17": "ꟓς",
+        "word": "꟒Σ"
+      },
+      {
+        "legacy16": "꟒σa",
+        "modern17": "ꟓσa",
+        "word": "꟒ΣA"
+      },
+      {
+        "legacy16": "aς꟒",
+        "modern17": "aσꟓ",
+        "word": "AΣ꟒"
+      },
+      {
+        "legacy16": "aς꟒a",
+        "modern17": "aσꟓa",
+        "word": "AΣ꟒A"
+      },
+      {
+        "legacy16": "a꟒σ",
+        "modern17": "aꟓς",
+        "word": "A꟒Σ"
+      },
+      {
+        "legacy16": "꟔",
+        "modern17": "ꟕ",
+        "word": "꟔"
+      },
+      {
+        "legacy16": "꟔σ",
+        "modern17": "ꟕς",
+        "word": "꟔Σ"
+      },
+      {
+        "legacy16": "꟔σa",
+        "modern17": "ꟕσa",
+        "word": "꟔ΣA"
+      },
+      {
+        "legacy16": "aς꟔",
+        "modern17": "aσꟕ",
+        "word": "AΣ꟔"
+      },
+      {
+        "legacy16": "aς꟔a",
+        "modern17": "aσꟕa",
+        "word": "AΣ꟔A"
+      },
+      {
+        "legacy16": "a꟔σ",
+        "modern17": "aꟕς",
+        "word": "A꟔Σ"
+      },
+      {
+        "legacy16": "𖺠",
+        "modern17": "𖺻",
+        "word": "𖺠"
+      },
+      {
+        "legacy16": "𖺠σ",
+        "modern17": "𖺻ς",
+        "word": "𖺠Σ"
+      },
+      {
+        "legacy16": "𖺠σa",
+        "modern17": "𖺻σa",
+        "word": "𖺠ΣA"
+      },
+      {
+        "legacy16": "aς𖺠",
+        "modern17": "aσ𖺻",
+        "word": "AΣ𖺠"
+      },
+      {
+        "legacy16": "aς𖺠a",
+        "modern17": "aσ𖺻a",
+        "word": "AΣ𖺠A"
+      },
+      {
+        "legacy16": "a𖺠σ",
+        "modern17": "a𖺻ς",
+        "word": "A𖺠Σ"
+      }
+    ],
+    "scope": "selected edge words and deterministic generated words; not all possible strings"
+  }
+}

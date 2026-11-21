@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-07",
+  "attached_report_library_file_id": "libfile_3aa07615d9808191ada7ba80fcd09081",
+  "files": {
+    "m2-cc-full-report.json": "4e77e6a633ea7bf8a77d8340571cf655e9b2a9ebec732f7a748395dcde9aa32d"
+  },
+  "source_snapshots": {
+    "qualified/docs/evidence/cc-full-source-reference/reference.json": "c3d8c7696c3ee4c7aa85495a4421b60c9145973b839d1cd21ce4e6cca3ffea11",
+    "qualified/m2/cc-runtime/Cargo.lock": "1df9fdcb0e5d20ab77bacde0035efdfe0a40d9c0a8936301e105e4f1a9cad9c4",
+    "qualified/m2/cc-runtime/Cargo.toml": "4c532ec75433a34e2d3322f03a31c0f91bd27e06c92a4b65cef0459c078bf419",
+    "qualified/m2/cc-runtime/src/converters.rs": "1e83abb3f6cfd19d6d2c5ef77c8861c170e9d2110fb3e08ec07aeb59c00ada28",
+    "qualified/m2/cc-runtime/src/lib.rs": "0300e790f6b795c05c0a64baa9d11c23a498e579fcf035af0a4b59965621574f",
+    "qualified/m2/cc-runtime/src/main.rs": "605d9cfcfb28ed7a77683480efa9a611e890fa64f69d51a04113fcdc7f86017f",
+    "qualified/m2/cc-runtime/src/runner.rs": "3dc3ef04f23e2b35da25a47296d5c0218407c01e1a0d25bac592eb146ce2e6cc",
+    "qualified/m2/cc-runtime/src/tests.rs": "8241a1d1f9f8831fe670091506dfc5ed8145acefa128c46f45d2be2f9309038d",
+    "qualified/m2/cc-runtime/src/txt.rs": "59d3b6d40733f770539fbdee6fb31f41deda71d90c0e156b88623d6eac3ae210",
+    "qualified/scripts/cc_runtime_lock.py": "fdd6ce2ffb7f844dbed65535a334648757c16a47c86808c1ea6eb62f61769cde",
+    "qualified/scripts/m2_cc_full.py": "0fe06b7521c373176bd4c372ab6733c50f0a62ce23558f7d33b25b74307699f7",
+    "qualified/scripts/test_cc_full.py": "08699b40fdf33b92367cadcb7bf4a169af750b9b671ed3eb4129a7a249ef9f0d"
+  },
+  "review_summary": {
+    "primary_rows": 125369,
+    "traditional_entries": 77993,
+    "entries": 203362,
+    "canonical_TXT_bytes": 76339785,
+    "controller_exchanges": 1440,
+    "successful_publications": 1,
+    "expected_job_refusals": 7,
+    "expected_API_refusals": 2,
+    "max_observed_RSS_bytes": 240029696,
+    "all_final_reservations_zero": true,
+    "scope": "Exact native raw output SHA agrees with fresh Mac original Python and independent complete local reference; exact-source-bound harness asserts file preservation and private cleanup. All reported exclusive ledgers and controller exchanges reviewed. Actual native TXT files not attached; no native execution locally or hard RSS claim; Revised/WFG and M2 closeout pending."
+  },
+  "reviewer": "scripts/check_cc_full_receipt.py",
+  "review_method": "Replayed all reported controller exchanges; checked exact 229 protected plus twelve new source identities, legacy Python code and unchanged registry/lock identities; matched native/Mac Python hashes to complete independent original Python reference and rehashed that local full output at acceptance. Private native files are not attached. No refused output, overwrite/source preservation and private snapshot cleanup are assertions of the exact bound Mac harness. Native test/build success are source-bound return-code receipts, not independently executed here.",
+  "qualification_scope": "Complete official CC-CEDICT conversion in exclusive-admission profile, exact canonical TXT parity, seven typed job refusals and two API refusals. Peak native process RSS 228.91 MiB is an observation below the 384 MiB provisional target, not hard RSS enforcement or an all-input memory proof. Reader contention is covered by source-bound native test/build receipts; the full-data controller performs no reader opens.",
+  "source_data_or_dictionary_outputs_bundled": false,
+  "M2_complete": false
+}

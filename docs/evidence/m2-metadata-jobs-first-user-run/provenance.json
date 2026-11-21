@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-03",
+  "files": {
+    "m2-metadata-jobs-report.json": "36027c1c73da5c6c2028f46a7b761d953d4427f70ee15e6edfac1230dc1d806a"
+  },
+  "source_snapshots": {
+    "qualified/m2/v2-import/Cargo.lock": "a051908d457e9596c0496a32faca03979e9deb9880ee80129061ad25c2c1f928",
+    "qualified/m2/v2-import/Cargo.toml": "d441b0ce96872fbceb57802f2330a3ddc0c93a1dabd06b62c6f778aba383ef3e",
+    "qualified/m2/v2-import/src/application/metadata/publication/runner/tests.rs": "deba2f18ceb94b4b7dfaa068038c73a39fc04823627f17a07f751e7a629cd8fe",
+    "qualified/m2/v2-import/src/application/metadata/publication/runner.rs": "d9fb2307727ef77990d987e34ecb3fb86c13dd6b8b4d07453994ed9d54ad05c0",
+    "qualified/m2/v2-import/src/application/metadata/publication.rs": "b47460e5755cebfe85ecb0c0d63446b724f50738e6d0b5be88d0f03e1d06ccff",
+    "qualified/m2/v2-import/src/application/metadata.rs": "b1da4ffc3f28a5bea62b49b3ae8b34b456e3ff38f9553d314487ddf4c183055c",
+    "qualified/m2/v2-import/src/application/runner/tests.rs": "f0f423b54a5190ac0bbabee0d06e0aa83bc93f705d759910387d58161bf222eb",
+    "qualified/m2/v2-import/src/application/runner.rs": "18ec195ae41751217ed65d0c75e8161693592bf9bc8af39f7d5011e1142cb458",
+    "qualified/m2/v2-import/src/application.rs": "85d140aa3df7a95ae82a975df94c09f6cd930d702af8e6c818fd8bb0c969e553",
+    "qualified/m2/v2-import/src/bin/studio-import-jobs.rs": "f9a5c3c505208afadde5c1edeb48d4d5788b41513928b364c328fd8c4d209ff1",
+    "qualified/m2/v2-import/src/bin/studio-metadata-jobs.rs": "c615d94616bacb1b9f7375551d87fed308f3c8939a95c2b113b5b188a88220cd",
+    "qualified/m2/v2-import/src/bin/studio-metadata-rebuild.rs": "5ae34297d5d74f10134bef794cbeb5f243124f806de20de7c1191a3049fe1721",
+    "qualified/m2/v2-import/src/header.rs": "4baca7c9a063df4d8ea127ce9f6c6b57e695832813ca295cff00529ae12088ee",
+    "qualified/m2/v2-import/src/lib.rs": "5f8e42fcc9db5952eb8b16d773aa171a321d5217d4859c1b6bfcef96a00cc28c",
+    "qualified/m2/v2-import/src/main.rs": "a9b7345656a9dfd95881f46c147ee11b8f696a19ad16c72abe3f285767d9b805",
+    "qualified/m2/v2-import/src/mdd.rs": "f58e26346e3365625930c6b802d8b0f9e48391dc62ef5844c60d3ac79f82be45",
+    "qualified/m2/v2-import/src/mdx.rs": "f5e405bb3380c71c2dc5863a2cc6e01fb0f64d72ff14aef5befe30f7bb50f3c3",
+    "qualified/m2/v2-import/tests/application.rs": "3d90c30847fef356561e81fe81ad6db3b7d78a6acc08eca67eb73caaa5d09bb9",
+    "qualified/m2/v2-import/tests/import.rs": "cbfdbeeb4f3734958bd700bd351d5da5dfd9313736d49467c59d02dbd56dc196",
+    "qualified/m2/v2-import/tests/metadata.rs": "de50ab3dddcfefdcffdd5000e717cfcb0cae565c0cbb6fad73d15207210cb7a4",
+    "qualified/m2/v2-import/tests/publication.rs": "cf5fe608b5090741466034a15360608b289a76aa988b7b4500fbed95ae8b2b57",
+    "qualified/scripts/m2_metadata_jobs.py": "e46ede1ab6f4d83e797753be1b5ffecfc72c671a805aa4521a3a5019fbe1b015",
+    "qualified/scripts/test_m2_metadata_jobs.py": "6c712400cc29cd858719274cf9b3ca1b56bb4f252bbabab8cd2f16eaddf2641f"
+  },
+  "report_library_file_id": "libfile_3989d000cb14819191339151b3d8feeb",
+  "result": "m2_metadata_jobs_failed",
+  "diagnosis": "New publication integration test cannot infer the element type of [] in Vec<u8> equality, because serde_json adds numeric PartialEq<Value>; runtime and batch not qualified",
+  "fix": "Replace empty-array equality with Vec::is_empty in the test only",
+  "runtime_source_changed_for_retry": false
+}

@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-28",
+  "source": "User message and attached reader-fixture-report.json",
+  "user_message_verbatim": "app crashing after copied, i couldn't open app again tell remove reader-utf8-mdict-utils.mdx and reader-utf8-mdict-utils.mdd",
+  "status": "native_import_crash_reported_release_blocker",
+  "affected_reader": "MDict for macOS 2.2.6 (build 200)",
+  "reader_candidates_previously_reported": {
+    "MDict for macOS": "2.2.6 (build 200)",
+    "GoldenDict": "26.6.1-7548db1682 (master) at 2026-06-29T06:51:41Z"
+  },
+  "MDX": {
+    "file": "reader-utf8-mdict-utils.mdx",
+    "sha256": "cb95a6357f2dfa046bd0ad866ae8e7267b3e12e14c766ac0db2a2803addc4b22"
+  },
+  "MDD": {
+    "file": "reader-utf8-mdict-utils.mdd",
+    "sha256": "73511f80b6e3df3d473cbee3b19d298559536a1542f452f238689b80df6679d0"
+  },
+  "automated_fixture_checks": "8 passed; these do not establish native-reader compatibility",
+  "native_pair_result": "FAIL_USER_REPORTED_IMPORT_CRASH",
+  "other_native_variants": "NOT_RUN; do not import while investigating this crash",
+  "MDX_or_MDD_cause": "unknown; both were introduced together",
+  "recovery_confirmation": "not yet independently confirmed",
+  "crash_report_received": true,
+  "needed_evidence": [
+    "revision-4 offline test report",
+    "whether app launches after generated fixtures removed"
+  ],
+  "production_engine_selected": false,
+  "second_pair": {
+    "MDX": {
+      "file": "reader-utf16-mdxbuilder.mdx",
+      "sha256": "63647de09222de5dddfda8c0ec0caa9b85ae0da47c37b6079ceef7608c9b0ed8"
+    },
+    "MDD": {
+      "file": "reader-utf16-mdxbuilder.mdd",
+      "sha256": "73511f80b6e3df3d473cbee3b19d298559536a1542f452f238689b80df6679d0"
+    },
+    "result": "FAIL_USER_REPORTED_MDICT_CRASH",
+    "hash_source": "prior reader-fixture-report.json; binaries not attached"
+  },
+  "crash_summary": {
+    "process": "MDict",
+    "version": "2.2.6 (200)",
+    "os": "macOS 15.8.1 (24H32)",
+    "architecture": "x86_64",
+    "time": "2026-10-28 00:09:43.1778 +0300",
+    "thread": 0,
+    "exception": "EXC_BAD_ACCESS / SIGSEGV",
+    "address": "0x90",
+    "strlen_argument_register_rdi": "0x90",
+    "stack_top": [
+      "_platform_strlen",
+      "__vfprintf",
+      "_vsnprintf",
+      "vsnprintf"
+    ],
+    "context": "startup / UIViewController viewDidLoad frames present",
+    "MDict_frames": "unsymbolicated; exact dictionary parsing function unknown",
+    "root_cause": "not established"
+  },
+  "GoldenDict_result": "NOT_RUN; no crash or pass attributed from this log",
+  "source_inspection_hypothesis": {
+    "finding": "mdictlib 0.2.8 header_xml core omits Encrypted; both working real formats declare it",
+    "source": "https://docs.rs/mdictlib/latest/src/mdictlib/write/mod.rs.html",
+    "relationship_to_v3": "the v3 writer differs from the pinned v2 writer only in the UTF-16 label; this does not add Encrypted",
+    "status": "candidate compatibility gap; not proven crash cause",
+    "other_unisolated_dimensions": [
+      "MDD metadata",
+      "shared MDX metadata",
+      "key summaries/order",
+      "block layout",
+      "native reader error handling"
+    ]
+  },
+  "exact_binaries_received": true,
+  "confirmed_binary_findings": {
+    "MDX_records": 13,
+    "MDX_without_encoded_terminal_NUL": 13,
+    "MDD_resources": 2,
+    "structural_checks": "passed",
+    "Encrypted_attribute": "absent_in_both",
+    "MDD_Title_Description_Format_Encoding": "absent",
+    "native_crash_cause": "unconfirmed",
+    "candidate": "isolated revision-4 writer patch; Rust compilation and native behavior unrun",
+    "sort_flag_consistency": "unresolved, unchanged by revision 4"
+  }
+}

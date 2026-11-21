@@ -1,0 +1,136 @@
+{
+  "cc-cedict-mdx": {
+    "source_sha256": "d57bcbc1169e7eabbe552e069bee64fa5599d5ff4e37d78f1caf00bfe24a0eca",
+    "source_bytes": 9268701,
+    "kind": "mdx",
+    "records": 202884,
+    "key_bytes": 1630651,
+    "decoded_bytes": 75162810,
+    "largest_payload_bytes": 2073,
+    "conservative_plan_charge_bytes": 35722742,
+    "manifest_bytes": 84130038,
+    "manifest_sha256": "a48d5d05fbe7476e00809b5fe5c1aa91c4c640ac19ca3f7eee2037480a310690",
+    "expected_sorted_records": {
+      "records": 202884,
+      "key_bytes": 1630651,
+      "payload_bytes": 73532159,
+      "framed_records_sha256": "7c947d3f784a55b4d43ff5f56cf867a57b83b24467724fea7e6a868ccde2d321"
+    },
+    "packing_blockers": [
+      {
+        "limit": "records",
+        "value": 202884,
+        "max": 100000
+      },
+      {
+        "limit": "decoded_bytes",
+        "value": 75162810,
+        "max": 33554432
+      },
+      {
+        "limit": "conservative_plan_charge",
+        "value": 35722742,
+        "max": 16777216
+      }
+    ],
+    "metadata": {
+      "title": "CC-CEDICT 092026",
+      "description": "Description:\n<link href=\"/cedict_ts.css\" rel=\"stylesheet\" type=\"text/css\"/><div class=\"cc_wrapper\"><div class=\"cc_header\"><span class=\"cc_title\">CC-CEDICT</span></div><table width=\"100%\"><tr><td valign=\"top\"><img src=\"/mdbg-dic.png\" alt=\"Logo\" /></td></tr><tr><td><p class=\"cc_def\">Original Entries: 125072</p><p class=\"cc_def\">Link Count: 77812</p><p class=\"cc_def\">Merged Entries: 202884</p><p class=\"cc_def\">Database Date: 2026-09-17T05:48:14Z</p><p class=\"cc_def\">License: CC BY-SA 4.0</p><p class=\"cc_def\">Publisher: MDBG</p><p class=\"cc_def\">CSS Compiler: shbf@PDAWIKI</p><p class=\"cc_def\">数据源：<a href=\"https://www.mdbg.net/chinese/dictionary?page=cc-cedict\">CC-CEDICT</a><br><p class=\"cc_def\">Tool：<a href=\"https://github.com/shawkynasr/MdictStudioPro\">Mdict Studio Pro</a><br>\n<br>仅供个人学习使用<br></br>2026年09月17日 Shawky制作(初版)</p><br><br></td></tr></table></div>",
+      "stylesheet": "",
+      "extra": {
+        "CreationDate": "2026-9-17",
+        "DataSourceFormat": "106",
+        "Left2Right": "Yes",
+        "RegisterBy": ""
+      }
+    }
+  },
+  "cc-cedict-mdd": {
+    "source_sha256": "aa441e386c9e4aa1e04a464726061edd80f7f801eb8e2c302114eb25df24ad72",
+    "source_bytes": 322814,
+    "kind": "mdd",
+    "records": 17,
+    "key_bytes": 340,
+    "decoded_bytes": 473550,
+    "largest_payload_bytes": 114124,
+    "conservative_plan_charge_bytes": 3400,
+    "manifest_bytes": 918,
+    "manifest_sha256": "1953b08b7d07bd6a30354302b8887b4f031192ddfb4c1f629a688e02f60cf9cd",
+    "expected_sorted_records": {
+      "records": 17,
+      "key_bytes": 340,
+      "payload_bytes": 473210,
+      "framed_records_sha256": "3519b0f292f8ebe37c840efb72d8e9b402347526f25848b9063ea6e1c8572cf3"
+    },
+    "packing_blockers": [],
+    "metadata": {
+      "title": "CC-CEDICT 092026",
+      "description": "",
+      "stylesheet": "",
+      "extra": {
+        "CreationDate": "2026-9-18",
+        "RegisterBy": ""
+      }
+    }
+  },
+  "almaany-mdx": {
+    "source_sha256": "098e8333fc0afc758a1c90160922221894dec6d4631a615bbf62e433b34f8376",
+    "source_bytes": 3543120,
+    "kind": "mdx",
+    "records": 82812,
+    "key_bytes": 754444,
+    "decoded_bytes": 22073093,
+    "largest_payload_bytes": 890,
+    "conservative_plan_charge_bytes": 14758808,
+    "manifest_bytes": 25120565,
+    "manifest_sha256": "ad0568506872feacc26a5bae85367b995f2967ec8981cb6948806517872dd0f3",
+    "expected_sorted_records": {
+      "records": 82812,
+      "key_bytes": 754444,
+      "payload_bytes": 21318649,
+      "framed_records_sha256": "ec1fc41d963b6cf615e7330c884872ab594067f951e93bc4d973b8be05400ceb"
+    },
+    "packing_blockers": [],
+    "metadata": {
+      "title": "Almaany English ↔ Arabic",
+      "description": "Almaany English-Arabic and Arabic-English Dictionary\n<hr>\n<p style=\"color:red;text-align:center;\"> compiled by Wissam. </p>",
+      "stylesheet": "",
+      "extra": {
+        "CreationDate": "2023-11-2",
+        "DataSourceFormat": "106",
+        "Left2Right": "Yes",
+        "RegisterBy": ""
+      }
+    }
+  },
+  "chinese-idioms-mdx": {
+    "source_sha256": "97914398293a71f5cadf5852b8df4f35e4453237692bce9b50bd46ac0393be1c",
+    "source_bytes": 2626692,
+    "kind": "mdx",
+    "records": 10414,
+    "key_bytes": 126569,
+    "decoded_bytes": 8072694,
+    "largest_payload_bytes": 2570,
+    "conservative_plan_charge_bytes": 1919378,
+    "manifest_bytes": 8607905,
+    "manifest_sha256": "24d331f631c336bd46da7506817cbe017e41aee404f44274a95c3f29b1a39c69",
+    "expected_sorted_records": {
+      "records": 10414,
+      "key_bytes": 126569,
+      "payload_bytes": 7946125,
+      "framed_records_sha256": "7ff92c0047df04d97b882d3d538192efd1f87e68c190552965c343b269f53619"
+    },
+    "packing_blockers": [],
+    "metadata": {
+      "title": "",
+      "description": "",
+      "stylesheet": "",
+      "extra": {
+        "CreationDate": "2024-7-7",
+        "DataSourceFormat": "106",
+        "Left2Right": "Yes",
+        "RegisterBy": ""
+      }
+    }
+  }
+}

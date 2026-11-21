@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-21",
+  "status": "accepted_reported_Mac_kit_build_target_test_pending",
+  "basis": "Attached report and identical pasted output; archive bytes were not attached",
+  "reported_archive_bytes": 6046901,
+  "reported_archive_sha256": "f66bf138c43dd98b4ae83c02681e8a30a5983103fc046997e7e3e6f1ade46407",
+  "expected_v6_executable_matches": true,
+  "expected_fixture_matches": true,
+  "reported_archive_roundtrip_equal": true,
+  "user_direction": "Move toward experimental GitHub prerelease/community testing; no other Intel Mac available as understood from user response",
+  "target_execution_qualified": false,
+  "clean_machine_qualified": false,
+  "publication_performed": false,
+  "production_release_ready": false
+}

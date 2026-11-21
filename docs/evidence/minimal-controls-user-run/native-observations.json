@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-28",
+  "source": "User statements in this conversation, not automated reader execution",
+  "readers": {
+    "MDict": "macOS 2.2.6 (build 200)",
+    "GoldenDict": "26.6.1-7548db1682 (master), built 2026-06-29T06:51:41Z"
+  },
+  "fixtures": {
+    "01-plain-utf8.mdx": {
+      "entry_lookup": "PASS_USER_REPORTED_BOTH_READERS",
+      "sha256": "b34cce1645575c34a78513bac67f8aef1b17cc4d5889c3fb0ca09d9d4f564099"
+    },
+    "01-plain-utf16.mdx": {
+      "entry_lookup": "PASS_USER_REPORTED_BOTH_READERS",
+      "sha256": "570a77df9901a22732d105ee50b9ca22a80db3edd9db3beac7b47d0f0f13a562"
+    },
+    "02-punctuation-utf8.mdx": {
+      "entry_lookup": "PASS_USER_REPORTED_BOTH_READERS",
+      "sha256": "ad83d9b8dccf490f819c2a2cb1e54138062cc3c2198ef22328c1d09e1f202855"
+    },
+    "02-punctuation-utf16.mdx": {
+      "entry_lookup": "PASS_USER_REPORTED_BOTH_READERS",
+      "sha256": "51134d6a62f057049636a9d9e8e50e7a6432759e46657fdce7b1c49a0fa962a2"
+    },
+    "03-multilingual-utf8.mdx": {
+      "entry_lookup": "PASS_USER_REPORTED_BOTH_READERS",
+      "sha256": "00d2e37d143c6434c54912309164a35151c77d82d9930e1c7e0f85805aca86bf"
+    },
+    "03-multilingual-utf16.mdx": {
+      "entry_lookup": "PASS_USER_REPORTED_BOTH_READERS",
+      "sha256": "9e10a9c3b96bd00ea4e8a5fc9815d2e369664bc2421057fda734d5d71b4a8104"
+    }
+  },
+  "punctuation_utf8_additional_observation": {
+    "aPpLe": "working ok, user reported",
+    "a?b": "no exact entry; GoldenDict shows similar-entry suggestions",
+    "missing": "no entry, user reported"
+  },
+  "not_separately_recorded": [
+    "restart results for every fixture and reader",
+    "visual shaping and font coverage for every multilingual entry",
+    "native result per every one of 58 scripted offline lookups"
+  ],
+  "not_proven": [
+    "stylesheet rendering",
+    "MDD resources",
+    "historical crash cause attribution",
+    "production qualification"
+  ]
+}

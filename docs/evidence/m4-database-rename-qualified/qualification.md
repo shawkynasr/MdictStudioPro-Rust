@@ -1,0 +1,5 @@
+# Selected headword rename qualification
+
+The Mac parent report records all 47 expected results across UTF-8, UTF-16 and sparse legacy sources, including name collisions, unchanged metadata/other rows, invalid keys, stale input and no-clobber. Its required desktop gate covers backend/runtime/adapter rename tests, including an MDX rebuild and reimport. All 156 matching packaged source identities and all 324 protected identities match package 158. Extra Mac build/output identities were omitted. The referenced nested shell report was not attached separately. Original GUI-pending status remains in the report.
+
+The uploaded GUI copy matches the qualified native UTF-16 output byte for byte. Independent inspection confirms seven records, only row #3 renamed to `renamed 字`, unchanged selected definition and all other fixture rows, stored numeric stylesheet and UTF-16 encoding. The user supplied a passed source/copy verifier. Separate GUI confirmation records this evidence. This does not qualify subsequent deletion work.

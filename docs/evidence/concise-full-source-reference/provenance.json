@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-06",
+  "files": {
+    "reference.json": "37253093c8caf9c6a636c4d0f2f1982d4645f2d8c96f5a6219f6441c25576c0c",
+    "python-hashseed17.json": "67881028c9740c43ac3179e6506cc745cf2625fa1f9ddcebd3b2c7f19900c4f4"
+  },
+  "method": "Complete original local Python output measured, then a fresh full conversion under fixed different hash seed compared using the existing accepted reference-field ordering normalization. Source and captured Python code hashes retained in reference.json. Metadata only; original dictionary source and outputs excluded.",
+  "native_qualification": false
+}

@@ -1,0 +1,10 @@
+test_bad_options_fail_before_plugin_code_or_output (test_m3_python_plugin.PythonPluginTests.test_bad_options_fail_before_plugin_code_or_output) ... ok
+test_native_and_python_stdout_do_not_pollute_authenticated_protocol (test_m3_python_plugin.PythonPluginTests.test_native_and_python_stdout_do_not_pollute_authenticated_protocol) ... ok
+test_options_are_delivered_before_convert_and_empty_options_preserve_legacy (test_m3_python_plugin.PythonPluginTests.test_options_are_delivered_before_convert_and_empty_options_preserve_legacy) ... ok
+test_original_cc_cedict_plugin_signature_runs_without_original_input_side_effects (test_m3_python_plugin.PythonPluginTests.test_original_cc_cedict_plugin_signature_runs_without_original_input_side_effects) ... ok
+test_plugin_exception_and_wrong_class_are_structured_failures (test_m3_python_plugin.PythonPluginTests.test_plugin_exception_and_wrong_class_are_structured_failures) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.699s
+
+OK

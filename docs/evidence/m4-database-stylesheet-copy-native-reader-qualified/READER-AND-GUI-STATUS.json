@@ -1,0 +1,31 @@
+{
+  "reader_status": "user_reports_both_encodings_without_issues",
+  "user_confirmed_files": [
+    "utf8/rebuilt.mdx",
+    "utf16/rebuilt.mdx"
+  ],
+  "visual_findings": [
+    {
+      "attachment": "截屏2026-11-18 19.23.08.png",
+      "sha256": "7cb2ff76ad0ff7236cd2b9d52520881a5216b817e995993c3a98e084103e4915",
+      "finding": "MDict marker view displays green MARKER_BLUE_OK."
+    },
+    {
+      "attachment": "截屏2026-11-18 19.24.33.png",
+      "sha256": "5dcbf6ac32984de391038cdd4e9e59523aa28c95c71a66a87583a3d81d3bb3f5",
+      "finding": "GoldenDict UTF-8 title and combined entry show blue inline text, green marker text and bold marker text."
+    },
+    {
+      "attachment": "截屏2026-11-18 19.31.25.png",
+      "sha256": "8c2ecbde420e15019dfb4be4f8845264f75738ed2b85e13d4eea1a4b213bc33c",
+      "finding": "MDict combined view shows blue inline text, green marker text and bold marker text."
+    },
+    {
+      "attachment": "截屏2026-11-18 19.29.39.png",
+      "sha256": "fca1c1eaa4ce8ad64190789f6a5e62f51824fb4249da480ac97774dab9de13c2",
+      "finding": "GUI editor screenshot shows selected replacement stylesheet; cursor directly after closing span. User reports strict missing-final-LF error; no successful GUI copy evidenced."
+    }
+  ],
+  "GUI_save_status": "failed_before_publication; correction_authored_retry_pending",
+  "scope_note": "Reader visual confirmation does not qualify the pending GUI paste correction. Screenshots are not bundled."
+}

@@ -1,0 +1,48 @@
+{
+  "cells": [
+    {
+      "input": "None",
+      "output": ""
+    },
+    {
+      "input": "True",
+      "output": "True"
+    },
+    {
+      "input": "False",
+      "output": "False"
+    },
+    {
+      "input": "1",
+      "output": "1"
+    },
+    {
+      "input": "1.0",
+      "output": "1"
+    },
+    {
+      "input": "1.25",
+      "output": "1.25"
+    },
+    {
+      "input": "' padded '",
+      "output": "padded"
+    },
+    {
+      "input": "' 001 '",
+      "output": "001"
+    },
+    {
+      "input": "'\\n字\\t'",
+      "output": "字"
+    }
+  ],
+  "workbook_rows": [
+    {
+      "label": "字",
+      "col_1": "001",
+      "number": "1",
+      "flag": "True"
+    }
+  ]
+}

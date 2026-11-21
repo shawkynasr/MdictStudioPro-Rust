@@ -1,0 +1,33 @@
+{
+  "source": "User-uploaded m2-resources-report.json, unchanged; all source fingerprints matched before snapshotting",
+  "files": {
+    "m2-resources-report.json": "19ee43935cc7539bea82baa82d3af411bd9aa34788ec8fe08ab6fd8ec519a769"
+  },
+  "source_snapshots": {
+    "qualified/m2/Cargo.lock": "52204c28ecb6334cd1bdc16aa92c680094bad032343dac074a2d3f1bacc892b4",
+    "qualified/m2/Cargo.toml": "3ae1cbaf4026d1b8afeffc3c9e7a05ad60e34cf8cc116e8d59dbb6576ca547cb",
+    "qualified/m2/studio-cli/Cargo.toml": "fda21775f6b11f7e8775a8d50b0078fb22d9142e7ff234c51e42c8e0cb59b4d5",
+    "qualified/m2/studio-cli/src/main.rs": "ff5dc7d35a95e44cd3998d2dfa78c5ed2ebf89bd1ea4580c52b6b9a0406b1826",
+    "qualified/m2/studio-core/Cargo.toml": "5854ebd0acc2b11f62c8001fece7b89d7451ecbee87f70a3adb66059bbbd45cc",
+    "qualified/m2/studio-core/src/casing.rs": "279000271dc5c4c6997df2a138da252293ae7aca6fb742fa2c483641d50a842a",
+    "qualified/m2/studio-core/src/engine.rs": "8c516d856847c84a58c0492c8aa1b92ed35aff78f851453389ac796d7fed22ab",
+    "qualified/m2/studio-core/src/error.rs": "b91d5a0091e0b5759f617f031974e9c545b68dc39c188282e211b29e72207b5d",
+    "qualified/m2/studio-core/src/job.rs": "9cf01d9d51b9593434260664bce37a86359685e3fbc740f1314c6d513894970d",
+    "qualified/m2/studio-core/src/lib.rs": "6afe6506fff50e6e8a4b0f8382a55fb7425bf45309884145666861fb2be38aa2",
+    "qualified/m2/studio-core/src/model.rs": "be9d0969f5a056550ef943881717398239cc1702756d9b4985461bc69581eeb0",
+    "qualified/m2/studio-core/src/resource_paths.rs": "e1d2bbd02ba6b5c9e14210095944c2445b57e226f53310b425e58f7ec80b1cea",
+    "qualified/m2/studio-core/src/resources.rs": "563581bb1995c3c71678895ad3abf0332775ba67f73a7d0a6cb45fda8bfa3edf",
+    "qualified/m2/studio-core/src/safe_fs.rs": "ae0a71d5358cf3a4824754a6f42cec58cb29e5ba81e3eb0b92d9cf90feb51739",
+    "qualified/m2/studio-core/tests/resources.rs": "ac5aa9c6c3b7b648255d25ca4ccf8e4b784a5b350d765a507791c178cdbd6964",
+    "qualified/m2/studio-core/tests/workflows.rs": "06bc2c094cd79d852ad61f7a56e167bad6ee3f6d39076f0cdd7bf0693bd9c8d9",
+    "qualified/scripts/m2_foundation.py": "ae8a72f053c2c262ca06717154dfd1b5e2948ef1e641c13c1bf167caa5117990",
+    "qualified/baseline/unicode/unicode16-casing.json": "f69d2e55d6b8c8d5fe33f764cc47b829bccc6d73aaff1791e1216328a1c24071",
+    "qualified/scripts/m2_resources.py": "b82995e769d2943d3d7b107d54b28e7df42d12353151d7cb64363a2f438a9cd2",
+    "qualified/baseline/resource-probe/studio-probe.ttf": "bb3f262bf21c6f63eca131f239113797636761a866d39756943ae702a318fb1f"
+  },
+  "local_Rust_execution": false,
+  "individual_user_run_logs_received": false,
+  "qualified_platform": "macOS-15.8.2-x86_64",
+  "Linux_runtime_qualified": false,
+  "scope": "Six resources, ten successful commands and three correctly classified controlled refusals; M2 remains partial"
+}

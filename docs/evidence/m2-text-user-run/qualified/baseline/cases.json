@@ -1,0 +1,29 @@
+{
+  "moe_rows": [
+    {"字詞名":"和", "單字":"和", "成語":"和衷共濟", "字數":1, "多音排序":1, "注音一式":"ㄏㄜˊ", "注音":"ㄏㄜˊ", "漢語拼音":"hé", "釋義":"[名]\n1. 平安。\n2. 如：「和氣」。 &sample.png;", "解釋":"&&和ㄏㄜˊ&&\n&sample.png;", "部首字":"口", "部首":"口", "總筆畫數":8, "部首外筆畫數":5, "部首外筆畫":5, "辭條別名":"和平；和諧", "相似詞":"平和", "相反詞":"爭", "典源文獻內容":"《書》：「和衷共濟。」*1*", "典源注解":"1. 同心協力。", "用法說明-例句":"大家和衷共濟。", "近義成語":"同舟共濟、同心協力", "辨識-例句":"和衷共濟 同舟共濟\n○ ㄨ 大家齊心努力。", "編號":1},
+    {"字詞名":"和", "單字":"和", "成語":"和衷共濟", "多音排序":2, "注音一式":"ㄏㄜˋ", "注音":"ㄏㄜˋ", "漢語拼音":"hè", "釋義":"[動] 隨聲相應。", "解釋":"附和。", "辭條別名":"和平"},
+    {"字詞名":"字", "單字":"字", "成語":"一字千金", "字數":1, "注音一式":"ㄗˋ", "注音":"ㄗˋ", "漢語拼音":"zì", "釋義":"文字。_x000D_\n9868._104_0.gif &4e00_.png;", "解釋":"文字。", "編號":2},
+    {"字詞名":"", "單字":"", "成語":"", "釋義":"This row must not create a headword"}
+  ],
+  "cedict": "# Synthetic fixture, not redistributed dictionary data\n和 和 [he2] /and/harmony; peace/\n傳 传 [chuan2] /to pass on/(old) to transmit/\n女 女 [nu:3] /woman/female/\n绿 綠 [lu:4] /green/\n和 和 [he4] /to join in singing/\ninvalid line intentionally skipped\n\n",
+  "sort_keys": ["Apple", "apple", "APPLE", "a-pple", "a pple", "Äpfel", "äpfel", "École", "école", "I", "i", "İ", "ı", "ß", "SS", "字", "和", "مرحبا", "𠀀", "\\images\\A.png", "\\images\\a.png", "a!", "a", "a?", "a.b", "ab"],
+  "engine_entries": [
+    {"key":"apple", "text":"<p>first apple</p>\n<p>second line</p>"},
+    {"key":"apple", "text":"<p>duplicate headword, distinct body</p>"},
+    {"key":"alias", "text":"@@@LINK=apple"},
+    {"key":"和", "text":"<link rel=\"stylesheet\" href=\"css/style.css\"><p>和平</p>"},
+    {"key":"مرحبا", "text":"<p dir=\"rtl\">أهلاً بالعالم</p>"},
+    {"key":"𠀀", "text":"<p>supplementary character</p>"},
+    {"key":"Äpfel", "text":"<p>uppercase accent</p>"},
+    {"key":"äpfel", "text":"<p>lowercase accent</p>"},
+    {"key":"a-b", "text":"<p>punctuation</p>"},
+    {"key":"ab", "text":"<p>plain</p>"},
+    {"key":"a b", "text":"<p>space</p>"}
+  ],
+  "engine_resources": [
+    {"key":"\\css\\style.css", "bytes":[98,111,100,121,123,99,111,108,111,114,58,116,101,97,108,125]},
+    {"key":"\\data\\blob.bin", "bytes":[0,255,128,1,2,0,13,10]},
+    {"key":"\\docs\\my file.txt", "bytes":[115,112,97,99,101,115]},
+    {"key":"\\字\\note.txt", "bytes":[117,110,105,99,111,100,101]}
+  ]
+}

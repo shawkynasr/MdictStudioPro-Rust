@@ -1,0 +1,61 @@
+export type Locale = 'en' | 'zh' | 'ar';
+const en = {
+  build:'Build', extract:'Extract', converters:'Converters', tools:'Dictionary Tools', jobs:'Jobs', settings:'Settings',
+  subtitle:'Your dictionaries. Your computer.', source:'Source', destination:'Destination', choose:'Choose…',
+  operation:'Operation', encoding:'Encoding', title:'Title', description:'Description', stylesheet:'Numeric stylesheet',
+  resourceRoot:'Resource folder', worksheet:'Worksheet (optional)', converter:'Converter', start:'Start job',
+  cancel:'Cancel', take:'Collect receipt', forget:'Dismiss', ready:'Ready', loading:'Connecting to native runtime…',
+  nativeOnly:'Start this interface with Tauri to use native commands.', noJobs:'No jobs yet.',
+  buildGeneric:'MDX · JSONL · bounded profile (100,000 records)', buildBlock:'MDX · JSONL · block spool (250,000 records)',
+  buildMdd:'MDD · resource JSONL + folder', exportTxt:'MDX → TXT', exportJsonl:'MDX → JSONL', extractMdd:'MDD → folder',
+  noOverwrite:'Choose a new destination. Existing outputs are never replaced.', inputHint:"Build from UTF-8 dictionary TXT or a JSONL manifest. Converters produce TXT.",
+  profile:'Profile', index:'New index file', createIndex:'Build index', open:'Open indexed dictionary', close:'Close reader',
+  query:'Headword', search:'Look up', next:'Next page', policy:'Lookup policy', exact:'Raw exact', header:'Dictionary header rules',
+  sourceView:'Definition source', sourceOnly:"Choose Rendered, Split or HTML to inspect definitions. The preview disables scripts and external connections.",
+  noEntries:'No results on this page.', selectEntry:'Select an entry.', active:'Active operations',
+  settingsHint:"Choose the language and appearance for this app.", deferred:'Morphology is a later integration slice.',
+  queued:'Queued', running:'Running', succeeded:'Succeeded', failed:'Failed', cancelled:'Cancelled',
+  cancelling:'Cancellation requested', uncertain:'Publication outcome uncertain. Inspect the destination before retrying.',
+  unknownTotal:'Working…', original:"Local preview", required:'Select source and a new destination.',
+  receipt:'Receipt', cleanup:'Reader cleanup in progress', received:'Receipt collected', light:'Light', dark:'Dark',
+  system:'System', language:'Language', appearance:'Appearance', done:'Done', opened:'Reader opened',
+  indexHint:'Build an index first, then select that exact dictionary/index pair. Index publication uses the same admission budget as other jobs.',
+  manifestHint:'One JSON object per line: {"key":"字","text":"definition"}. MDD uses {"key":"\\\\image.png","file":"image.png"}. Every line ends with LF.',
+  clipping:'Source display is limited to the first 65,536 characters.', session:'Reader',
+};
+type Labels = typeof en;
+const zh: Labels = {
+  build:'构建',extract:'提取',converters:'转换器',tools:'词典工具',jobs:'任务',settings:'设置',subtitle:'你的词典，你的电脑。',
+  source:'源文件',destination:'输出位置',choose:'选择…',operation:'操作',encoding:'编码',title:'标题',description:'描述',stylesheet:'数字样式表',
+  resourceRoot:'资源文件夹',worksheet:'工作表（可选）',converter:'转换器',start:'开始任务',cancel:'取消',take:'领取结果',forget:'移除',ready:'就绪',loading:'连接本地运行时…',
+  nativeOnly:'请通过 Tauri 启动此界面以使用本地命令。',noJobs:'暂无任务。',
+  buildGeneric:'MDX · JSONL · 有界配置（10 万条）',buildBlock:'MDX · JSONL · 分块暂存（25 万条）',buildMdd:'MDD · 资源 JSONL 与文件夹',
+  exportTxt:'MDX → TXT',exportJsonl:'MDX → JSONL',extractMdd:'MDD → 文件夹',noOverwrite:'请选择新的输出位置，不覆盖已有文件。',
+  inputHint:"使用 UTF-8 词典 TXT 或 JSONL 清单构建。转换器输出 TXT。",profile:'配置',index:'新索引文件',createIndex:'构建索引',open:'打开索引词典',close:'关闭词典',
+  query:'词条',search:'查找',next:'下一页',policy:'查找规则',exact:'原始精确匹配',header:'词典头规则',sourceView:'释义源码',
+  sourceOnly:"选择预览、分栏或 HTML 查看释义。预览禁用脚本和外部连接。",noEntries:'本页无结果。',selectEntry:'请选择词条。',active:'活动操作',
+  settingsHint:"选择此应用的语言和外观。", deferred:'词形将在后续接入。',queued:'排队中',running:'运行中',succeeded:'成功',failed:'失败',cancelled:'已取消',
+  cancelling:'已请求取消',uncertain:'发布结果不确定，请检查输出位置后再重试。',unknownTotal:'处理中…',original:"本地预览",required:'请选择源文件和新的输出位置。',
+  receipt:'结果',cleanup:'正在清理词典资源',received:'已领取结果',light:'浅色',dark:'深色',system:'跟随系统',language:'语言',appearance:'外观',done:'完成',opened:'词典已打开',
+  indexHint:'先构建索引，再选择对应的词典与索引。索引任务与其他操作共享资源预算。',
+  manifestHint:'每行一个 JSON 对象：{"key":"字","text":"释义"}。MDD 使用 {"key":"\\\\image.png","file":"image.png"}。每行以 LF 结束。',clipping:'源码最多显示前 65,536 个字符。',session:'词典',
+};
+const ar: Labels = {
+  build:'إنشاء',extract:'استخراج',converters:'المحوّلات',tools:'أدوات القاموس',jobs:'المهام',settings:'الإعدادات',subtitle:'قواميسك، على جهازك.',
+  source:'المصدر',destination:'موقع المخرجات',choose:'اختيار…',operation:'العملية',encoding:'الترميز',title:'العنوان',description:'الوصف',stylesheet:'ورقة الأنماط الرقمية',
+  resourceRoot:'مجلد الموارد',worksheet:'ورقة العمل (اختيارية)',converter:'المحوّل',start:'بدء المهمة',cancel:'إلغاء',take:'استلام النتيجة',forget:'إزالة',ready:'جاهز',loading:'جارٍ الاتصال بالتشغيل المحلي…',
+  nativeOnly:'شغّل الواجهة عبر Tauri لاستخدام الأوامر المحلية.',noJobs:'لا توجد مهام بعد.',
+  buildGeneric:'MDX · JSONL · إعداد محدود (١٠٠ ألف مدخل)',buildBlock:'MDX · JSONL · تجميع كتلي (٢٥٠ ألف مدخل)',buildMdd:'MDD · قائمة JSONL ومجلد موارد',
+  exportTxt:'MDX → TXT',exportJsonl:'MDX → JSONL',extractMdd:'MDD → مجلد',noOverwrite:'اختر موقعًا جديدًا. لا تُستبدل المخرجات الموجودة.',
+  inputHint:"أنشئ القاموس من TXT بترميز UTF-8 أو قائمة JSONL. تنتج المحوّلات ملفات TXT.",profile:'الإعداد',index:'ملف فهرس جديد',createIndex:'إنشاء الفهرس',open:'فتح قاموس مفهرس',close:'إغلاق القاموس',
+  query:'المدخل',search:'بحث',next:'الصفحة التالية',policy:'قاعدة البحث',exact:'مطابقة حرفية',header:'قواعد رأس القاموس',sourceView:'مصدر التعريف',
+  sourceOnly:"اختر المعاينة أو العرض المقسّم أو HTML لفحص التعريفات. تُعطّل المعاينة السكربتات والاتصالات الخارجية.",noEntries:'لا نتائج في هذه الصفحة.',selectEntry:'اختر مدخلًا.',active:'العمليات النشطة',
+  settingsHint:"اختر لغة هذا التطبيق ومظهره.", deferred:'ستُضاف أدوات الصرف لاحقًا.',queued:'في الانتظار',running:'قيد التنفيذ',succeeded:'نجحت',failed:'فشلت',cancelled:'ملغاة',
+  cancelling:'طُلب الإلغاء',uncertain:'نتيجة النشر غير مؤكدة. افحص موقع المخرجات قبل إعادة المحاولة.',unknownTotal:'جارٍ العمل…',original:"نسخة معاينة محلية",required:'اختر المصدر وموقع مخرجات جديدًا.',
+  receipt:'النتيجة',cleanup:'جارٍ تنظيف موارد القاموس',received:'استُلمت النتيجة',light:'فاتح',dark:'داكن',system:'النظام',language:'اللغة',appearance:'المظهر',done:'تم',opened:'فُتح القاموس',
+  indexHint:'أنشئ الفهرس أولًا ثم اختر القاموس والفهرس المتطابقين. تشترك الفهرسة مع المهام الأخرى في ميزانية الموارد.',
+  manifestHint:'كائن JSON في كل سطر: {"key":"字","text":"definition"}. تستخدم موارد MDD الحقل file. ينتهي كل سطر بمحرف LF.',clipping:'يقتصر عرض المصدر على أول 65,536 محرفًا.',session:'القارئ',
+};
+const labels = { en, zh, ar };
+export const translate = (locale: Locale, key: keyof Labels): string => labels[locale][key];
+export type Label = keyof Labels;

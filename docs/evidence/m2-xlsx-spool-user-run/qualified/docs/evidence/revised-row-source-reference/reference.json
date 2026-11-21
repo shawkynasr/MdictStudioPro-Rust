@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-07",
+  "archive": {
+    "archive": "dict_revised_2015_20260929.zip",
+    "archive_sha256": "65a24fff76d0fbfa078541f39761bb9f302bdf7ad6bb48be4ce1052d1b49f609",
+    "library_file_id": "libfile_c401300e3ed48191a5de610d12b53897",
+    "member": "dict_revised_2015_20260929.xlsx",
+    "source_bytes": 31188250,
+    "source_sha256": "bbbac6a820cac000cabf789d81b88338d94aa14f1d7eea6e16b495cf5c8dfa80"
+  },
+  "expected": {
+    "worksheet": "1150929辭典匯出",
+    "headers": [
+      "字詞名",
+      "辭條別名",
+      "字數",
+      "字詞號",
+      "部首字",
+      "總筆畫數",
+      "部首外筆畫數",
+      "多音排序",
+      "注音一式",
+      "變體類型 1:變 2:又音 3:語音 4:讀音 5:或讀",
+      "變體注音",
+      "漢語拼音",
+      "變體漢語拼音",
+      "相似詞",
+      "相反詞",
+      "釋義",
+      "多音參見訊息",
+      "異體字"
+    ],
+    "scanned_data_rows": 163909,
+    "skipped_blank_rows": 0,
+    "normalized_charge_bytes": 84706498,
+    "row_digest": {
+      "rows": 163909,
+      "pairs": 2950362,
+      "key_bytes": 40321614,
+      "value_bytes": 44384638,
+      "framed_rows_sha256": "6e1d8eea79e7eb2e8ad513215aa65c30f10ac014c92380f550cefdbf78c8146a"
+    }
+  },
+  "legacy_normalizer_sha256": {
+    "baseline/legacy/excel_utils.py": "b0a837e2197a5d0d42599171716b903ef813dc52512e55c1ccbe93f2f0bd2302"
+  },
+  "method": "Complete official Revised main workbook iterated with openpyxl read-only/data-only; captured original helper normalizes every value. Full ordered row maps hashed sequentially, no sampling. Source/rows/outputs not bundled.",
+  "native_run": false
+}

@@ -1,0 +1,31 @@
+__pycache__/
+*.pyc
+target/
+out/
+.venv/
+codec-out*/
+interop-out-v3*/
+reader-out*/
+corpus-out*/
+corpus-local.json
+real-corpus-inputs/
+wire-out*/
+minimal-out*/
+style-out*/
+reference-out*/
+style-wire-out*/
+resource-out*/
+rebuild-out*/
+stress-out*/
+checksum-out*/
+
+
+# M3 desktop dependencies, native builds and private test receipts
+**/node_modules/
+**/dist/
+**/src-tauri/gen/
+m3-shell-out*/
+
+# Reproducible CI vendor source and platform icons
+vendor/
+m3/desktop/src-tauri/icons/ci/

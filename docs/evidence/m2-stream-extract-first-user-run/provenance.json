@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-05",
+  "files": {
+    "m2-stream-extract-report.json": "c725fa4d2a29561b3b3bad93e6fa02d4d9169fdd9e66a0bcc8f1651977f930ef"
+  },
+  "source_snapshots": {
+    "qualified/m2/stream-extract/Cargo.toml": "0c17c26536130cd1d5d2e671f47d851ddc9d371f8415b97d0f419eac5cb26505",
+    "qualified/m2/stream-extract/src/extract.rs": "40234e61590fc737aa889492a5346ac4413fcbe3ec73a02ac99cdf7828608ac3",
+    "qualified/m2/stream-extract/src/lib.rs": "9ba5eb66c938f8c5370b94d6f81c299c8f97c1c23555a2b319d5b7a65a34809a",
+    "qualified/m2/stream-extract/src/main.rs": "e27bae8bcd04620ef1b7fbfa981b7710e8c03050bf279ddc38a8a896c45eed39",
+    "qualified/m2/stream-extract/src/tests.rs": "dd4370fe42bb1a8698de8d66b632e511b897f04a4b64cf3ba3adaf01597e32e8",
+    "qualified/scripts/m2_stream_extract.py": "2ebf11c3b1c628b63266f6f8f8caea9abc6e1d55975685a8cfb9c3784b395f93",
+    "qualified/scripts/stream_extract_lock.py": "d861e3d8888942e11308bdcbe105d18cb75ab3449d82aaa11f63fd8ef31f1fa7",
+    "qualified/scripts/stream_mdd_fixtures.py": "e89031629d2df50f207c0a12644e8e76c313fdf6a67ccd2f6f21b1554bd8d4f0",
+    "qualified/scripts/test_m2_stream_extract.py": "f90dbd12d6af7c4393a30d3442ab9ed8a154f6d29fec5bc16b9f0f76fecb92c7",
+    "qualified/m2/stream-extract/Cargo.lock": "b571f47505d94e51be30fdec89f8938b292eff31db99b04f9dbb96a7280021b7"
+  },
+  "report_library_file_id": "libfile_ef024ded1ca48191855b63d32c6c658e",
+  "result": "m2_stream_extract_failed",
+  "diagnosis": "Rust E0308 in new core_error adapter: studio_core::ErrorCode and the reexported application ErrorCode are distinct enums; extraction tests/process matrix were not reached.",
+  "fix": "Map all core error variants explicitly to application error variants, and add a serialized-code/message regression test in the extractor module.",
+  "previous_qualified_sources_changed": false
+}

@@ -1,0 +1,4 @@
+[[permission]]
+identifier = "studio-native"
+description = "Invoke the bounded native adapter from the local main webview."
+commands.allow = ["studio_call"]

@@ -1,0 +1,8 @@
+{
+  "source": "User-uploaded aggregate wrapper-revision-6 report and manual native results",
+  "local_Rust_or_reader_execution": false,
+  "files": {
+    "stylesheet-controls-report.json": "caaf01b7c4c8f3fd332693a76870462460a24fd52002d8e9d9cc4f8f2e9106d1",
+    "native-observations.json": "bfe3d27e298f61147dc24435fd3bc30bb66dcccd130411871455f13a63aede16"
+  }
+}

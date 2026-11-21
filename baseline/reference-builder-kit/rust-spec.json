@@ -1,0 +1,43 @@
+{
+  "profile": "HeaderLiteralC",
+  "cases": [
+    {
+      "name": "04-stylesheet",
+      "stylesheet": "1\r\n<span style=\"color:#9b1c31;font-weight:700;border:2px solid #9b1c31;\">\r\n</span>\r\n2\r\n<span style=\"color:#1d4ed8;text-decoration:underline;\">\r\n</span>",
+      "entries": [
+        {
+          "key": "inline-red",
+          "text": "<span style=\"color:#9b1c31;font-weight:700;border:2px solid #9b1c31;\">STYLE_ONE_OK</span>\r\n"
+        },
+        {
+          "key": "marker-red",
+          "text": "`1`STYLE_ONE_OK\r\n"
+        },
+        {
+          "key": "inline-blue",
+          "text": "<span style=\"color:#1d4ed8;text-decoration:underline;\">STYLE_TWO_OK</span>\r\n"
+        },
+        {
+          "key": "marker-blue",
+          "text": "`2`STYLE_TWO_OK\r\n"
+        },
+        {
+          "key": "plain",
+          "text": "PLAIN_CONTROL_OK\r\n"
+        }
+      ],
+      "queries": [
+        "inline-red",
+        "marker-red",
+        "inline-blue",
+        "marker-blue",
+        "plain",
+        "missing"
+      ]
+    }
+  ],
+  "rendered": {
+    "marker-red": "<span style=\"color:#9b1c31;font-weight:700;border:2px solid #9b1c31;\">STYLE_ONE_OK</span>",
+    "marker-blue": "<span style=\"color:#1d4ed8;text-decoration:underline;\">STYLE_TWO_OK</span>"
+  }
+}

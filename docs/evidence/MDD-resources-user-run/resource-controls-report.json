@@ -1,0 +1,407 @@
+{
+  "status": "offline_MDD_controls_passed_native_untested",
+  "engine_revision": 5,
+  "fixture_wrapper_revision": 7,
+  "native_readers": "NOT_RUN_READY_FOR_STAGED_MANUAL_TEST",
+  "checks": {
+    "06-mdd-resources-utf8.mdx": {
+      "status": "passed",
+      "records": 5,
+      "lookups": 6,
+      "key_blocks": 3,
+      "physical_order": [
+        "combined",
+        "css",
+        "font",
+        "image",
+        "plain"
+      ],
+      "wire": {
+        "status": "passed",
+        "checks": {
+          "structure": true,
+          "explicit_unencrypted_header": true,
+          "header_CRLF_then_NUL": true,
+          "all_MDX_records_have_encoded_terminal_NUL": true
+        },
+        "sha256": "ae93ca57dfac5184aabf9c704e3b1ccc9ec8c787128f1e21a6a8bd136d4e7b5b"
+      },
+      "structural_audit": {
+        "file": "06-mdd-resources-utf8.mdx",
+        "sha256": "ae93ca57dfac5184aabf9c704e3b1ccc9ec8c787128f1e21a6a8bd136d4e7b5b",
+        "size_bytes": 1681,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "UTF-8",
+          "Encrypted": "No",
+          "Compact": "No",
+          "Format": "Html",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 0,
+        "records": 5,
+        "key_blocks": 3,
+        "record_blocks": 5,
+        "uncompressed_record_bytes": 758,
+        "duplicate_headwords": 0,
+        "sample_keys": [
+          "combined",
+          "css",
+          "font",
+          "image",
+          "plain"
+        ],
+        "script_counts": {},
+        "redirect_records": 0,
+        "style_markers": 0,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [
+          "images/green.png",
+          "styles/probe.css"
+        ],
+        "resources": [],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "ae93ca57dfac5184aabf9c704e3b1ccc9ec8c787128f1e21a6a8bd136d4e7b5b"
+      }
+    },
+    "06-mdd-resources-utf8.mdd": {
+      "status": "passed",
+      "resources": 4,
+      "lookups": 5,
+      "key_blocks": 4,
+      "record_blocks": 4,
+      "inventory": [
+        {
+          "key": "\\data\\sentinel.bin",
+          "bytes": 9,
+          "sha256": "1e6b54fbc8c30dcc649805526ae730e59f10789761d03f72cb1aede2abeaaeb3"
+        },
+        {
+          "key": "\\fonts\\studio-probe.ttf",
+          "bytes": 1404,
+          "sha256": "bb3f262bf21c6f63eca131f239113797636761a866d39756943ae702a318fb1f"
+        },
+        {
+          "key": "\\images\\green.png",
+          "bytes": 87,
+          "sha256": "0a8e85b2c59f3e37e147fe5dae41444ddc88bed32134c026ba8cf782841f14fc"
+        },
+        {
+          "key": "\\styles\\probe.css",
+          "bytes": 383,
+          "sha256": "7b638cc41b43cbddef7c9e8745772bfc5ced94b83bfd65fed7d89c96f39552e7"
+        }
+      ],
+      "wire": {
+        "status": "passed",
+        "checks": {
+          "structure": true,
+          "explicit_unencrypted_header": true,
+          "header_CRLF_then_NUL": true,
+          "MDD_has_explicit_empty_encoding": true,
+          "MDD_legacy_metadata_present": true
+        },
+        "sha256": "17033bb72aa795e77e1094d5ad3c5b0acc773e6f9b37bb483630814047358ec5"
+      },
+      "structural_audit": {
+        "file": "06-mdd-resources-utf8.mdd",
+        "sha256": "17033bb72aa795e77e1094d5ad3c5b0acc773e6f9b37bb483630814047358ec5",
+        "size_bytes": 2277,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "",
+          "Encrypted": "No",
+          "Compact": "No",
+          "Format": "",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 0,
+        "records": 4,
+        "key_blocks": 4,
+        "record_blocks": 4,
+        "uncompressed_record_bytes": 1883,
+        "duplicate_headwords": 0,
+        "sample_keys": [],
+        "script_counts": {},
+        "redirect_records": 0,
+        "style_markers": 0,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [],
+        "resources": [
+          {
+            "path": "\\data\\sentinel.bin",
+            "bytes": 9,
+            "sha256": "1e6b54fbc8c30dcc649805526ae730e59f10789761d03f72cb1aede2abeaaeb3"
+          },
+          {
+            "path": "\\fonts\\studio-probe.ttf",
+            "bytes": 1404,
+            "sha256": "bb3f262bf21c6f63eca131f239113797636761a866d39756943ae702a318fb1f"
+          },
+          {
+            "path": "\\images\\green.png",
+            "bytes": 87,
+            "sha256": "0a8e85b2c59f3e37e147fe5dae41444ddc88bed32134c026ba8cf782841f14fc"
+          },
+          {
+            "path": "\\styles\\probe.css",
+            "bytes": 383,
+            "sha256": "7b638cc41b43cbddef7c9e8745772bfc5ced94b83bfd65fed7d89c96f39552e7",
+            "css_url_references": [
+              "../fonts/studio-probe.ttf"
+            ]
+          }
+        ],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "17033bb72aa795e77e1094d5ad3c5b0acc773e6f9b37bb483630814047358ec5"
+      }
+    },
+    "06-mdd-resources-utf16.mdx": {
+      "status": "passed",
+      "records": 5,
+      "lookups": 6,
+      "key_blocks": 5,
+      "physical_order": [
+        "combined",
+        "css",
+        "font",
+        "image",
+        "plain"
+      ],
+      "wire": {
+        "status": "passed",
+        "checks": {
+          "structure": true,
+          "explicit_unencrypted_header": true,
+          "header_CRLF_then_NUL": true,
+          "all_MDX_records_have_encoded_terminal_NUL": true
+        },
+        "sha256": "24aa3c52bf1a5199fe480b183c74c0a379f569e77d42abc9074faf4a9aac4994"
+      },
+      "structural_audit": {
+        "file": "06-mdd-resources-utf16.mdx",
+        "sha256": "24aa3c52bf1a5199fe480b183c74c0a379f569e77d42abc9074faf4a9aac4994",
+        "size_bytes": 1967,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "UTF-16",
+          "Encrypted": "No",
+          "Compact": "No",
+          "Format": "Html",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 0,
+        "records": 5,
+        "key_blocks": 5,
+        "record_blocks": 5,
+        "uncompressed_record_bytes": 1516,
+        "duplicate_headwords": 0,
+        "sample_keys": [
+          "combined",
+          "css",
+          "font",
+          "image",
+          "plain"
+        ],
+        "script_counts": {},
+        "redirect_records": 0,
+        "style_markers": 0,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [
+          "images/green.png",
+          "styles/probe.css"
+        ],
+        "resources": [],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "24aa3c52bf1a5199fe480b183c74c0a379f569e77d42abc9074faf4a9aac4994"
+      }
+    },
+    "06-mdd-resources-utf16.mdd": {
+      "status": "passed",
+      "resources": 4,
+      "lookups": 5,
+      "key_blocks": 4,
+      "record_blocks": 4,
+      "inventory": [
+        {
+          "key": "\\data\\sentinel.bin",
+          "bytes": 9,
+          "sha256": "1e6b54fbc8c30dcc649805526ae730e59f10789761d03f72cb1aede2abeaaeb3"
+        },
+        {
+          "key": "\\fonts\\studio-probe.ttf",
+          "bytes": 1404,
+          "sha256": "bb3f262bf21c6f63eca131f239113797636761a866d39756943ae702a318fb1f"
+        },
+        {
+          "key": "\\images\\green.png",
+          "bytes": 87,
+          "sha256": "0a8e85b2c59f3e37e147fe5dae41444ddc88bed32134c026ba8cf782841f14fc"
+        },
+        {
+          "key": "\\styles\\probe.css",
+          "bytes": 383,
+          "sha256": "7b638cc41b43cbddef7c9e8745772bfc5ced94b83bfd65fed7d89c96f39552e7"
+        }
+      ],
+      "wire": {
+        "status": "passed",
+        "checks": {
+          "structure": true,
+          "explicit_unencrypted_header": true,
+          "header_CRLF_then_NUL": true,
+          "MDD_has_explicit_empty_encoding": true,
+          "MDD_legacy_metadata_present": true
+        },
+        "sha256": "17033bb72aa795e77e1094d5ad3c5b0acc773e6f9b37bb483630814047358ec5"
+      },
+      "structural_audit": {
+        "file": "06-mdd-resources-utf16.mdd",
+        "sha256": "17033bb72aa795e77e1094d5ad3c5b0acc773e6f9b37bb483630814047358ec5",
+        "size_bytes": 2277,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "",
+          "Encrypted": "No",
+          "Compact": "No",
+          "Format": "",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 0,
+        "records": 4,
+        "key_blocks": 4,
+        "record_blocks": 4,
+        "uncompressed_record_bytes": 1883,
+        "duplicate_headwords": 0,
+        "sample_keys": [],
+        "script_counts": {},
+        "redirect_records": 0,
+        "style_markers": 0,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [],
+        "resources": [
+          {
+            "path": "\\data\\sentinel.bin",
+            "bytes": 9,
+            "sha256": "1e6b54fbc8c30dcc649805526ae730e59f10789761d03f72cb1aede2abeaaeb3"
+          },
+          {
+            "path": "\\fonts\\studio-probe.ttf",
+            "bytes": 1404,
+            "sha256": "bb3f262bf21c6f63eca131f239113797636761a866d39756943ae702a318fb1f"
+          },
+          {
+            "path": "\\images\\green.png",
+            "bytes": 87,
+            "sha256": "0a8e85b2c59f3e37e147fe5dae41444ddc88bed32134c026ba8cf782841f14fc"
+          },
+          {
+            "path": "\\styles\\probe.css",
+            "bytes": 383,
+            "sha256": "7b638cc41b43cbddef7c9e8745772bfc5ced94b83bfd65fed7d89c96f39552e7",
+            "css_url_references": [
+              "../fonts/studio-probe.ttf"
+            ]
+          }
+        ],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "17033bb72aa795e77e1094d5ad3c5b0acc773e6f9b37bb483630814047358ec5"
+      }
+    }
+  },
+  "steps": [
+    {
+      "name": "prepare",
+      "returncode": 0,
+      "log": "prepare.log"
+    },
+    {
+      "name": "rust-wrapper-tests",
+      "returncode": 0,
+      "log": "rust-wrapper-tests.log"
+    },
+    {
+      "name": "resource-build",
+      "returncode": 0,
+      "log": "resource-build.log"
+    }
+  ],
+  "not_proven": [
+    "native_MDD_discovery",
+    "native_CSS_image_font_rendering",
+    "all_resource_path_aliases",
+    "real_Arabic_font_rendering",
+    "production_limits",
+    "M1_completion"
+  ],
+  "source_sha256": {
+    "vendor/mdictlib-0.2.8-studio-sort-v5/src/write/mod.rs": "fb7876fbc75d2e4d5ca69b7768afa551d16f6e3ba8fec05eb027b621132560a2",
+    "vendor/mdictlib-0.2.8-studio-sort-v5/src/write/studio_legacy_sort.rs": "7505500b2f4292adb396092e1d8c85c67136e3257561b3cd3dc67c29323a6456",
+    "experiments/native-controls/src/main.rs": "2f3695637a58ac57ad43ed19404329c574756b41783476b22c6aa4868bb9a9bc",
+    "scripts/resource_controls.py": "3e4b78ce0eb1d44f7ee33564796510f72983992b3b2a3a73241dd01ab0584b81",
+    "baseline/resource-probe/studio-probe.ttf": "bb3f262bf21c6f63eca131f239113797636761a866d39756943ae702a318fb1f",
+    "experiments/native-controls/Cargo.lock": "c42a9cf51935a372e4188ad8c5fa8912ed086e8b6225aa8dccd973b6255c124a"
+  },
+  "asset_graph": {
+    "mdx_paths": [
+      "images/green.png",
+      "styles/probe.css"
+    ],
+    "css_font_url": "../fonts/studio-probe.ttf",
+    "resolved_font_key": "fonts/studio-probe.ttf",
+    "sidecar_assets_required": false,
+    "font_expected_glyphs": "A=filled triangle; B=plus; C=diamond"
+  }
+}

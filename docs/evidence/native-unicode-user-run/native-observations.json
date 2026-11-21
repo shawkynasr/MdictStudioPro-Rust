@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-29",
+  "source": "User confirmation in this conversation after the focused native checklist",
+  "user_statements": ["no any crash", "Yes. how long remain for M1?"],
+  "confirmation_question": "Were all required PINNED_* markers and DUP_01–DUP_08 entries visible in both MDict and GoldenDict for all four files, including after restarting the readers?",
+  "result": "PASS_USER_REPORTED_FOCUSED_NATIVE_UNICODE_AND_RESTART",
+  "readers": ["MDict for macOS 2.2.6 (build 200)", "GoldenDict 26.6.1-7548db1682 (master)"],
+  "raw_queries_per_file": 13,
+  "files_confirmed": 4,
+  "required_stored_markers_accessible": true,
+  "all_eight_duplicate_payloads_accessible": true,
+  "crashes_reported": false,
+  "restart_checks": "passed_user_confirmed",
+  "per_query_behavior_results": "not supplied",
+  "exhaustive_166_record_native_verification": false,
+  "scope": "Focused manual checks, not automated observation or proof readers implement Studio policy tags; original staging report and blank checklist remain unchanged. File identities are in the staging report."
+}

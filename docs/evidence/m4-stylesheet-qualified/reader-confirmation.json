@@ -1,0 +1,20 @@
+{
+  "schema": "studio-reader-attestation-v1",
+  "reported_by": "user",
+  "confirmation": "Done",
+  "readers": [
+    "MDict",
+    "GoldenDict"
+  ],
+  "screenshots_show": [
+    "blue numeric marker text",
+    "blue inline CSS control",
+    "bold marker text",
+    "both duplicate definitions",
+    "UTF-8 labelled examples",
+    "UTF-16 labelled examples"
+  ],
+  "automated_records_per_encoding": 7,
+  "scope": "Seven-record stylesheet fixture, not arbitrary input qualification; screenshots not copied into package",
+  "remaining": "Database failure qualification is the next separate step"
+}

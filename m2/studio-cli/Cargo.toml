@@ -1,0 +1,9 @@
+[package]
+name = "studio-cli"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+studio-core = { path = "../studio-core" }
+serde_json = "1"

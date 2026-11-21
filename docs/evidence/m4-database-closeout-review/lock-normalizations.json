@@ -1,0 +1,27 @@
+{
+  "schema": "studio-m4-reviewed-lock-normalizations-v1",
+  "scope": "Exact seed and Mac-resolved hashes only; no registry version/checksum upgrades. Historical input manifest remains retained unchanged.",
+  "accepted_sha256": {
+    "m3/export-io/Cargo.lock": [
+      "a04524c89dfeedbd04074766cdd5edb96feb299b7724b56d85bf5ed3cb6b996b",
+      "1ba4cab619a3816b9c18782ac33fd178b28dd5baaf9baf3b3410288011a98e28"
+    ],
+    "m3/indexed-sessions/Cargo.lock": [
+      "92c4f9704a78ed464e79d17926ac009ec7788a9444eb5700fb06066c815ffb29",
+      "e9a4b52878edc3b45008009f6e08d3d826a169dfe961f2a0433d53d86860513f"
+    ],
+    "m3/native-adapter/Cargo.lock": [
+      "6238de1d88365b93a5b5cfcbacbd76e14d94723deac87c3065c01aa18e64bdc7",
+      "50af5b504bb11d8fe387a80c4a411bd50486e7066da0bd0b7eeba9acd89c9ddb"
+    ],
+    "m3/txt-runtime/Cargo.lock": [
+      "6238de1d88365b93a5b5cfcbacbd76e14d94723deac87c3065c01aa18e64bdc7",
+      "a625ce05b03ba7862f6550b28a6b58a5c965734eebd6371b350717195df57ea7"
+    ]
+  },
+  "basis": {
+    "shell_report": "docs/evidence/m4-database-final-qualified/shell-report.json",
+    "original_shell_report_sha256": "a017b1eae5b63ca1f40df80cf4089a00f36a42156ca66154286d71cc84bde88e",
+    "checks": "All four runner lock verifiers passed no_unapproved_registry_versions; full native and frontend gate passed. Export lock bytes independently reviewed: unused local packages removed, retained package dependency edges and registry package identities/checksums unchanged. Other normalized lock bytes are bound by Mac receipt hashes; not independently supplied."
+  }
+}

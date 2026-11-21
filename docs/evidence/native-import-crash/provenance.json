@@ -1,0 +1,16 @@
+{
+  "source": "User-attached automated fixture report plus separately recorded user crash observation",
+  "files": {
+    "reader-fixture-report.json": "eb256a1d4f8b009a340bbfe6a241f697f7f83100814f2e7c9f02de7d46243a45",
+    "observation.json": "6b23c81a9a148fb63d96eb86dc8c82b1e768a82ca1dbb02b8e83ca843fc344a9",
+    "mdict-crash-report.txt": "abad491114c70d89821f74ef9a5ddc50c9161839a11772b1f2d03282f1acdd8a",
+    "mdict-crash-pair.zip": "92caa5db52396e8bcd8bbf24e78e93783687756c343d5bc7a48d1f8569e6c3f2",
+    "binary-audit.json": "ce21115c4a1c27b62e896a76e9de520852dc2417336a8f7b57a58d3e237f4adc"
+  },
+  "limits": [
+    "Actual generated pair matches prior fixture hashes",
+    "Structural audit passes but legacy record/header contract fails",
+    "Native cause is unconfirmed; revision-4 candidate is uncompiled locally and untested in MDict",
+    "GoldenDict results remain unreported"
+  ]
+}

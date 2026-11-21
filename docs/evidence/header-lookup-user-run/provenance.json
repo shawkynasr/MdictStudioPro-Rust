@@ -1,0 +1,12 @@
+{
+  "source": "User-uploaded header lookup report and final conflict log; qualified sources match reported SHA-256",
+  "local_Rust_execution": false,
+  "result": "Two literal candidates, both aliases and ordering negative control passed; upstream conflict rejection incorrectly failed exact-message assertion",
+  "files": {
+    "header-lookup-report.json": "c284690231cdac3b3c0e821657f1683e8c2d96838294e3dffb6ef981a7f04a39",
+    "conflicting-aliases.log": "07c610eb5be189a4531e8fb0763bf0250fa05c11ac2d52811e0e0f82e7881ecf",
+    "qualified-header_lookup.py": "d509926fa324f140fc559b39e2560c68fa74f4e559cd4778e3d201453291783e",
+    "qualified-policy.rs": "940b70f40b1ec8ee397d0c0ce45e7f4e7176933bf1b6fdf9e4327e1e30b37c62",
+    "qualified-main.rs": "3d61d77790a49cfe5c2c1e127fd03595d5561bd5613e62c0b682334686d1401b"
+  }
+}

@@ -1,0 +1,5 @@
+reader,version,os,fixture_sha256,open,unicode_lookup,duplicate_lookup,case_punctuation_lookup,redirect,resources,result,notes
+MDict,,,,,,,,,,NOT_RUN,
+DictTango,,,,,,,,,,NOT_RUN,
+GoldenDict,,,,,,,,,,NOT_RUN,
+BlueDict,,,,,,,,,,NOT_RUN,

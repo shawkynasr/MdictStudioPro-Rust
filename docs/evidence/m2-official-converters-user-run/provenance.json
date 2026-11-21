@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-06",
+  "attached_report_library_file_id": "libfile_de6ab13f9bc881919fb6c2f6d584469a",
+  "files": {
+    "m2-official-converters-report.json": "811bdb897b85c54f121b85d19181bce74a005be4249c30c3fd38ca92ff545fb7"
+  },
+  "source_snapshots": {
+    "qualified/scripts/m2_official_mini_idioms.py": "1f2811d4eb9683e796b0130e63e0dce36838457f48b7162346c9465455f34fb6",
+    "qualified/scripts/test_official_converter_sources.py": "3f8630d65406c6be33775ca4769bff211e815115d3b1235641e739bc9402c8ef",
+    "qualified/docs/evidence/official-converter-input-inspection/measurements.json": "459fecd50acf3029d9789869a85b95a350d26a03664904cbcf0ff3d966033078"
+  },
+  "review_summary": {
+    "full_official_datasets": 2,
+    "records": 9800,
+    "controller_exchanges": 732,
+    "max_observed_RSS_bytes": 202477568,
+    "all_final_reservations_zero": true,
+    "scope": "Full output hashes cross-checked against retained independent original Python references; actual native output bytes, source preservation and private cleanup represented by exact-source-bound Mac harness; M2 partial"
+  },
+  "reviewer": "scripts/check_official_converters_receipt.py",
+  "review_method": "Every controller exchange replayed. Source, lock and captured Python identities verified; full source and output counts/hashes cross-checked against independently retained local Python inspection. Original local output files were rehashed at acceptance. Actual native output files are not attached; full byte comparisons, unchanged inputs and private scratch cleanup are assertions of the matching Mac harness. No native execution performed locally.",
+  "source_data_or_dictionary_outputs_bundled": false,
+  "M2_complete": false
+}

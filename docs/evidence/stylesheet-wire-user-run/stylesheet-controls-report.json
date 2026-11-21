@@ -1,0 +1,181 @@
+{
+  "status": "offline_stylesheet_controls_passed_native_untested",
+  "writer_revision": 5,
+  "profile": "HeaderLiteralC",
+  "fixture_wrapper_revision": 6,
+  "native_readers": "NOT_RUN_READY_FOR_STAGED_MANUAL_TEST",
+  "steps": [
+    {
+      "name": "prepare",
+      "returncode": 0,
+      "log": "prepare.log"
+    },
+    {
+      "name": "rust-wrapper-tests",
+      "returncode": 0,
+      "log": "rust-wrapper-tests.log"
+    },
+    {
+      "name": "stylesheet-build",
+      "returncode": 0,
+      "log": "stylesheet-build.log"
+    }
+  ],
+  "checks": {
+    "05-stylesheet-wire-utf8.mdx": {
+      "status": "passed",
+      "records": 5,
+      "lookups": 6,
+      "key_blocks": 5,
+      "raw_stylesheet_preserved": false,
+      "raw_stylesheet_matches_selected_contract": true,
+      "python_marker_expansion_matches_inline_controls": true,
+      "standard_XML_stylesheet_matches_raw": false,
+      "XML_contract": "Literal attribute newlines are normalized by standard XML; native behavior remains to be tested",
+      "stylesheet_matches_native_tested_official_reference": true,
+      "definition_text_matches_original_failed_control": true,
+      "wire": {
+        "status": "passed",
+        "checks": {
+          "structure": true,
+          "explicit_unencrypted_header": true,
+          "header_CRLF_then_NUL": true,
+          "all_MDX_records_have_encoded_terminal_NUL": true
+        },
+        "sha256": "6525e312025548361f226a2bbc3835035bbed940b862a49dd25ce54c9971253c"
+      },
+      "structural_audit": {
+        "file": "05-stylesheet-wire-utf8.mdx",
+        "sha256": "6525e312025548361f226a2bbc3835035bbed940b862a49dd25ce54c9971253c",
+        "size_bytes": 1707,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "UTF-8",
+          "Encrypted": "No",
+          "Compact": "Yes",
+          "Format": "Html",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 147,
+        "records": 5,
+        "key_blocks": 5,
+        "record_blocks": 3,
+        "uncompressed_record_bytes": 214,
+        "duplicate_headwords": 0,
+        "sample_keys": [
+          "inline-blue",
+          "inline-red",
+          "marker-blue",
+          "marker-red",
+          "plain"
+        ],
+        "script_counts": {},
+        "redirect_records": 0,
+        "style_markers": 2,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [],
+        "resources": [],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "6525e312025548361f226a2bbc3835035bbed940b862a49dd25ce54c9971253c"
+      }
+    },
+    "05-stylesheet-wire-utf16.mdx": {
+      "status": "passed",
+      "records": 5,
+      "lookups": 6,
+      "key_blocks": 5,
+      "raw_stylesheet_preserved": false,
+      "raw_stylesheet_matches_selected_contract": true,
+      "python_marker_expansion_matches_inline_controls": true,
+      "standard_XML_stylesheet_matches_raw": false,
+      "XML_contract": "Literal attribute newlines are normalized by standard XML; native behavior remains to be tested",
+      "stylesheet_matches_native_tested_official_reference": true,
+      "definition_text_matches_original_failed_control": true,
+      "wire": {
+        "status": "passed",
+        "checks": {
+          "structure": true,
+          "explicit_unencrypted_header": true,
+          "header_CRLF_then_NUL": true,
+          "all_MDX_records_have_encoded_terminal_NUL": true
+        },
+        "sha256": "9a7437ffc9e253ff27c9f3f377879348990c46b1921eb90ba8420a3d66e04f0c"
+      },
+      "structural_audit": {
+        "file": "05-stylesheet-wire-utf16.mdx",
+        "sha256": "9a7437ffc9e253ff27c9f3f377879348990c46b1921eb90ba8420a3d66e04f0c",
+        "size_bytes": 1878,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "UTF-16",
+          "Encrypted": "No",
+          "Compact": "Yes",
+          "Format": "Html",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 147,
+        "records": 5,
+        "key_blocks": 5,
+        "record_blocks": 4,
+        "uncompressed_record_bytes": 428,
+        "duplicate_headwords": 0,
+        "sample_keys": [
+          "inline-blue",
+          "inline-red",
+          "marker-blue",
+          "marker-red",
+          "plain"
+        ],
+        "script_counts": {},
+        "redirect_records": 0,
+        "style_markers": 2,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [],
+        "resources": [],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "9a7437ffc9e253ff27c9f3f377879348990c46b1921eb90ba8420a3d66e04f0c"
+      }
+    }
+  },
+  "not_proven": [
+    "native_stylesheet_rendering",
+    "generic_XML_stylesheet_contract",
+    "MDD_resource_rendering",
+    "production_writer_qualification"
+  ],
+  "source_sha256": {
+    "vendor/mdictlib-0.2.8-studio-sort-v5/src/write/mod.rs": "fb7876fbc75d2e4d5ca69b7768afa551d16f6e3ba8fec05eb027b621132560a2",
+    "vendor/mdictlib-0.2.8-studio-sort-v5/src/write/studio_legacy_sort.rs": "7505500b2f4292adb396092e1d8c85c67136e3257561b3cd3dc67c29323a6456",
+    "experiments/native-controls/src/main.rs": "a9e7cb5d21443f126c8772d5bf8b55d927c1833623a2e51ac25635288a1f5c92",
+    "scripts/stylesheet_controls.py": "efca00bf837e9ed5620e164baa3cd7314a9041356b837ae9ba2301cff71a05b6",
+    "experiments/native-controls/Cargo.lock": "c42a9cf51935a372e4188ad8c5fa8912ed086e8b6225aa8dccd973b6255c124a"
+  },
+  "official_reference_sha256": "4fe44ade9214315f5f75c6b38d136411c57bbec5cb8f03003cea30813535de7d",
+  "candidate_scope": "Rust fixture writer serializes stylesheet as LF plus final LF; all five definition strings unchanged from failed control; engine remains v5"
+}

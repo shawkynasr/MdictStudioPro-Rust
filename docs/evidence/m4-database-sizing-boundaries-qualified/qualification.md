@@ -1,0 +1,5 @@
+# Sizing boundaries and timings, real-dictionary success pending
+
+Both package-162 Mac runs pass the 100,000-record / 31,999,991-decoded-byte synthetic source, complete JSONL export, all 25 sampled lookup requests and admission cleanup. Both safely refuse above-record-count and above-decoded-text synthetic inputs. The selected real dictionaries (CC-CEDICT20277.mdx and 常用词与异读异形规范.mdx) were also refused with limit_exceeded, unchanged sources and no partial outputs. The old diagnostic reports only record count or decoded text, so these reports do not establish which specific bound each real dictionary crossed.
+
+All 175 matching packaged identities, 324 protected identities and the M4 lock match package 162. Extra Mac build/output identities are omitted. Referenced nested shell reports were not attached separately. Each original partial status is preserved. Machine-specific adapter timings do not measure GUI paint, controlled cold caches, RSS or universal performance. Checkpoint 2 remains open for a successful full real-dictionary conversion. The subsequent preflight is not qualified by these old runs.

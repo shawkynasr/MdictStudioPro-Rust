@@ -1,0 +1,11 @@
+{
+  "source": "User-uploaded checksum-report.json; qualified sources matched against reported SHA-256",
+  "local_Rust_execution": false,
+  "scope": "Unencrypted v2 MDX/MDD; 16 isolated corruptions, rebuild integration, four full real-corpus scans",
+  "files": {
+    "checksum-report.json": "1836ffbd6fc5f49dfbcd47ff659aa304dc6156f9f490d10418baf957f496d158",
+    "qualified-main.rs": "7d922082795818460c00fce62b49c1b61d473a885b3a40c2f20147688dc63b65",
+    "qualified-strict.rs": "5962ffbc934ecb25e04683cebeb7b4d06b8bd80d23bddccc8d5a8377e998af09",
+    "qualified-checksum_qualification.py": "d1c8a9426ff0da191d68ee8b4eb5b46900585b980123a64423d4027fc8f996dd"
+  }
+}

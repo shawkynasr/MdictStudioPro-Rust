@@ -1,0 +1,23 @@
+{
+  "schema": "studio-settings-keyboard-GUI-v1",
+  "date": "2026-11-21",
+  "app": "preview v6",
+  "status": "accepted_scoped_user_confirmed_keyboard_and_workspace_checks",
+  "basis": "User said All done in response to the six-step checklist; two screenshots independently show Chinese/Dark Build, retained multilingual name and Settings trigger focus",
+  "screenshot_observations": [
+    "Chinese/Dark main workspace",
+    "keyboard-check 字 مرحبا retained",
+    "Settings trigger visibly focused"
+  ],
+  "user_attested_checks": [
+    "forward/reverse focus stays in dialog",
+    "Done then Space reopens Settings",
+    "Esc closes dialog",
+    "nonempty draft retained",
+    "Extract remains active after Settings closes"
+  ],
+  "Chinese_Settings_dialog_itself_in_screenshots": false,
+  "exhaustive_accessibility_qualified": false,
+  "M3_complete": false,
+  "production_release_ready": false
+}

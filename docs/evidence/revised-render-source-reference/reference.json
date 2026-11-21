@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-07",
+  "archive": {
+    "archive": "dict_revised_2015_20260929.zip",
+    "archive_sha256": "65a24fff76d0fbfa078541f39761bb9f302bdf7ad6bb48be4ce1052d1b49f609",
+    "library_file_id": "libfile_c401300e3ed48191a5de610d12b53897",
+    "member": "dict_revised_2015_20260929.xlsx",
+    "source_bytes": 31188250,
+    "source_sha256": "bbbac6a820cac000cabf789d81b88338d94aa14f1d7eea6e16b495cf5c8dfa80"
+  },
+  "worksheet": "1150929辭典匯出",
+  "input_rows": 163909,
+  "cases": {
+    "moe_revised": {
+      "normalized_record_digest": {
+        "records": 162636,
+        "key_bytes": 1308723,
+        "payload_bytes": 123053248,
+        "framed_records_sha256": "f54fdb3b29b9772dba421c544a7c4119506c7913c160b57534b8aab7ccde7e85"
+      },
+      "raw_python_output_sha256": "a335277bd485c68501cefab13d5058e5478d986f1e5d16ccefd0b2923322e0c5",
+      "file_bytes": 125337787,
+      "entries": 162636,
+      "primary_entries": 161182,
+      "alias_redirects": 1454
+    },
+    "moe_revised_wfg": {
+      "normalized_record_digest": {
+        "records": 161182,
+        "key_bytes": 1289810,
+        "payload_bytes": 102120975,
+        "framed_records_sha256": "2dcc4a47efe207f29ac42e2abb456c88a85d112c6ac92cbcdc2ae0264d5d98c3"
+      },
+      "raw_python_output_sha256": "0f95487c72e946cc24f896bebeb5366e33a4507cd5796da4342c6c1ccfcc1594",
+      "file_bytes": 104377877,
+      "entries": 161182,
+      "primary_entries": 161182,
+      "alias_redirects": 0
+    }
+  },
+  "legacy_oracle_sha256": {
+    "baseline/legacy/base_plugin.py": "0620c3d88502191b4b297c918394cc9ae886e943e83b06bf377fa1284b044b49",
+    "baseline/legacy/excel_utils.py": "b0a837e2197a5d0d42599171716b903ef813dc52512e55c1ccbe93f2f0bd2302",
+    "baseline/legacy/plugins/cccedict_plugin.py": "4c3fc461a044e702678ce7fbf0e2b251969d5932c4bf2d2070d6f58c2eeb139c",
+    "baseline/legacy/plugins/edudict_plugin.py": "2505bdaf5733f905d8fba1f68dd22e1c7b123484599d1f18bcf7c6cb576aa923",
+    "baseline/legacy/plugins/WFG_desgin_Plugin.py": "9d476ee0fb38603c7b6e6634c9987ab7a26077dbf15357718e9e93293da09ba2",
+    "baseline/legacy/plugins/concise_plugin.py": "25b37d4f801e4ddfef03557a54fa8a20ad5bbbac79f8eddc19135ae6562abc6a",
+    "baseline/legacy/plugins/idiom_plugin.py": "53dce8296c31f92c1e83a4cb7f2773c7e97d6ae85f00811724a11adf83768bc1",
+    "baseline/legacy/plugins/mini_plugin.py": "aca858af532a8f409b5b55d6d3632b63466d8d67af910390f65e3623561c00f5"
+  },
+  "comparison": "Existing accepted Revised reference-field set ordering and per-primary alias ordering only; WFG exact raw bytes. All remaining order, multiplicity, keys and HTML exact.",
+  "native_run": false
+}

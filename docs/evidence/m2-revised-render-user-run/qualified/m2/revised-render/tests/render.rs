@@ -1,0 +1,22 @@
+use std::{cell::Cell,path::PathBuf};
+use studio_revised_render::{render_to_txt,Control,Converter,Limits};
+fn fixture()->PathBuf {PathBuf::from(env!("CARGO_MANIFEST_DIR")).join("tests/fixtures/groups.xlsx")}
+#[test]fn grouped_revised_and_wfg_match_existing_whole_table_layout_bytes() {
+ for converter in [Converter::Revised,Converter::Wfg] {
+  let no=||false;let mut old_progress=|_|{};let table=studio_xlsx::read_xlsx(&fixture(),None,&studio_xlsx::Limits::default(),&mut studio_xlsx::ReadControl::new(&no,&mut old_progress)).unwrap();let kind=match converter {Converter::Revised=>studio_xlsx::moe::Converter::Revised,Converter::Wfg=>studio_xlsx::moe::Converter::Wfg};
+  let expected=studio_xlsx::moe::convert(&table,kind,&studio_xlsx::moe::Limits::default(),&mut studio_xlsx::ReadControl::new(&no,&mut old_progress)).unwrap();let mut bytes=String::new();for e in &expected.entries {bytes.push_str(&format!("{}\n{}\n</>\n",e.key,e.text));}
+  let dir=tempfile::tempdir().unwrap();let out=dir.path().join("out.txt");let mut cb=|_|{};let result=render_to_txt(&fixture(),&out,converter,None,&studio_xlsx_spool::Limits::default(),&Limits::default(),&Control::new(&no,&mut cb)).unwrap();assert_eq!(std::fs::read(&out).unwrap(),bytes.as_bytes());assert_eq!(result.entries,expected.entries.len());assert_eq!(result.primary_entries,expected.primary_entries);assert_eq!(result.alias_redirects,expected.alias_redirects);assert_eq!(result.skipped_rows,expected.skipped_rows);assert_eq!(std::fs::read_dir(dir.path()).unwrap().count(),1);
+ }
+}
+#[test]fn cancellation_during_index_group_append_verify_and_precommit_leaves_no_output() {
+ for phase in ["index_rows","render_group","append_record","verify_output","before_publish"] {let dir=tempfile::tempdir().unwrap();let out=dir.path().join("out.txt");let flag=Cell::new(false);let cancelled=||flag.get();let mut cb=|p:studio_revised_render::Progress|if p.phase==phase {flag.set(true);};let result=render_to_txt(&fixture(),&out,Converter::Revised,None,&studio_xlsx_spool::Limits::default(),&Limits::default(),&Control::new(&cancelled,&mut cb));assert_eq!(result.unwrap_err().code,"cancelled");assert!(!out.exists());assert_eq!(std::fs::read_dir(dir.path()).unwrap().count(),0);}
+}
+#[test]fn late_cancel_keeps_commit_and_existing_destination_is_preserved() {
+ let dir=tempfile::tempdir().unwrap();let out=dir.path().join("out.txt");let flag=Cell::new(false);let cancelled=||flag.get();let mut cb=|p:studio_revised_render::Progress|if p.phase=="published" {flag.set(true);};render_to_txt(&fixture(),&out,Converter::Wfg,None,&studio_xlsx_spool::Limits::default(),&Limits::default(),&Control::new(&cancelled,&mut cb)).unwrap();assert!(flag.get()&&out.exists());let before=std::fs::read(&out).unwrap();let no=||false;let mut cb=|_|{};assert_eq!(render_to_txt(&fixture(),&out,Converter::Wfg,None,&studio_xlsx_spool::Limits::default(),&Limits::default(),&Control::new(&no,&mut cb)).unwrap_err().code,"destination_exists");assert_eq!(before,std::fs::read(&out).unwrap());
+}
+#[test]fn bounded_groups_index_entries_and_file_limits_refuse_atomically() {
+ for limits in [Limits {group_rows:1,..Default::default()},Limits {index_charge_bytes:1,..Default::default()},Limits {entries:1,..Default::default()},Limits {output_bytes:4,..Default::default()}] {let dir=tempfile::tempdir().unwrap();let out=dir.path().join("out.txt");let no=||false;let mut cb=|_|{};assert_eq!(render_to_txt(&fixture(),&out,Converter::Revised,None,&studio_xlsx_spool::Limits::default(),&limits,&Control::new(&no,&mut cb)).unwrap_err().code,"limit_exceeded");assert!(!out.exists());assert_eq!(std::fs::read_dir(dir.path()).unwrap().count(),0);}
+}
+#[test]fn corruption_before_reopen_is_detected_without_publication() {
+ let dir=tempfile::tempdir().unwrap();let out=dir.path().join("out.txt");let no=||false;let mut changed=false;let mut cb=|p:studio_revised_render::Progress|if p.phase=="verify_output"&&!changed {let path=std::fs::read_dir(dir.path()).unwrap().next().unwrap().unwrap().path();let mut bytes=std::fs::read(&path).unwrap();let i=bytes.iter().position(|b|*b==b'<').unwrap();bytes[i]=b'!';std::fs::write(path,bytes).unwrap();changed=true;};let error=render_to_txt(&fixture(),&out,Converter::Wfg,None,&studio_xlsx_spool::Limits::default(),&Limits::default(),&Control::new(&no,&mut cb)).unwrap_err();assert_eq!(error.code,"integrity");assert!(!out.exists());assert_eq!(std::fs::read_dir(dir.path()).unwrap().count(),0);
+}

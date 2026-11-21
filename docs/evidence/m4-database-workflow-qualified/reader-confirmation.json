@@ -1,0 +1,19 @@
+{
+  "status": "user_confirmed_both_encodings_tested",
+  "package_version": 161,
+  "encodings": [
+    "UTF-8",
+    "UTF-16"
+  ],
+  "automated_report": "report.json",
+  "screenshots_reviewed": 4,
+  "observed": [
+    "UTF-16 title",
+    "three ordered duplicate definitions rendered blue/bold/blue",
+    "combined inline and numeric styles",
+    "seven-entry list including renamed 字 and excluding inline/marker",
+    "English/Chinese/Arabic display"
+  ],
+  "scope_note": "User confirmed testing both rebuilt encodings after instructions to use MDict and GoldenDict. Cropped screenshots do not independently identify every reader/encoding combination. No screenshots bundled.",
+  "sizing_performance_qualified": false
+}

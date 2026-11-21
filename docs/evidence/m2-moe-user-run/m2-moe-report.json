@@ -1,0 +1,599 @@
+{
+  "status": "m2_five_MOE_ports_synthetic_parity_passed_remaining_M2_work_pending",
+  "M1": "complete_unchanged",
+  "M2_complete": false,
+  "Rust_MOE_ports_runtime_qualified": true,
+  "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 17.0.0 (clang-1700.6.4.2)]",
+  "platform": "macOS-15.8.2-x86_64-i386-64bit-Mach-O",
+  "steps": [
+    {
+      "name": "moe-and-reader-tests",
+      "returncode": 0,
+      "log": "moe-and-reader-tests.log"
+    },
+    {
+      "name": "baseline-moe_revised",
+      "returncode": 0,
+      "log": "baseline-moe_revised.log"
+    },
+    {
+      "name": "baseline-moe_revised-publish",
+      "returncode": 0,
+      "log": "baseline-moe_revised-publish.log"
+    },
+    {
+      "name": "baseline-moe_revised-repeat",
+      "returncode": 0,
+      "log": "baseline-moe_revised-repeat.log"
+    },
+    {
+      "name": "baseline-moe_revised_wfg",
+      "returncode": 0,
+      "log": "baseline-moe_revised_wfg.log"
+    },
+    {
+      "name": "baseline-moe_revised_wfg-publish",
+      "returncode": 0,
+      "log": "baseline-moe_revised_wfg-publish.log"
+    },
+    {
+      "name": "baseline-moe_revised_wfg-repeat",
+      "returncode": 0,
+      "log": "baseline-moe_revised_wfg-repeat.log"
+    },
+    {
+      "name": "baseline-moe_concise",
+      "returncode": 0,
+      "log": "baseline-moe_concise.log"
+    },
+    {
+      "name": "baseline-moe_concise-publish",
+      "returncode": 0,
+      "log": "baseline-moe_concise-publish.log"
+    },
+    {
+      "name": "baseline-moe_concise-repeat",
+      "returncode": 0,
+      "log": "baseline-moe_concise-repeat.log"
+    },
+    {
+      "name": "baseline-moe_idioms",
+      "returncode": 0,
+      "log": "baseline-moe_idioms.log"
+    },
+    {
+      "name": "baseline-moe_idioms-publish",
+      "returncode": 0,
+      "log": "baseline-moe_idioms-publish.log"
+    },
+    {
+      "name": "baseline-moe_idioms-repeat",
+      "returncode": 0,
+      "log": "baseline-moe_idioms-repeat.log"
+    },
+    {
+      "name": "baseline-moe_mini",
+      "returncode": 0,
+      "log": "baseline-moe_mini.log"
+    },
+    {
+      "name": "baseline-moe_mini-publish",
+      "returncode": 0,
+      "log": "baseline-moe_mini-publish.log"
+    },
+    {
+      "name": "baseline-moe_mini-repeat",
+      "returncode": 0,
+      "log": "baseline-moe_mini-repeat.log"
+    },
+    {
+      "name": "no-overwrite",
+      "returncode": 1,
+      "log": "no-overwrite.log",
+      "expected_refusal": "destination_exists"
+    },
+    {
+      "name": "extended-moe_revised",
+      "returncode": 0,
+      "log": "extended-moe_revised.log"
+    },
+    {
+      "name": "extended-moe_revised-publish",
+      "returncode": 0,
+      "log": "extended-moe_revised-publish.log"
+    },
+    {
+      "name": "extended-moe_revised-repeat",
+      "returncode": 0,
+      "log": "extended-moe_revised-repeat.log"
+    },
+    {
+      "name": "extended-moe_revised_wfg",
+      "returncode": 0,
+      "log": "extended-moe_revised_wfg.log"
+    },
+    {
+      "name": "extended-moe_revised_wfg-publish",
+      "returncode": 0,
+      "log": "extended-moe_revised_wfg-publish.log"
+    },
+    {
+      "name": "extended-moe_revised_wfg-repeat",
+      "returncode": 0,
+      "log": "extended-moe_revised_wfg-repeat.log"
+    },
+    {
+      "name": "extended-moe_concise",
+      "returncode": 0,
+      "log": "extended-moe_concise.log"
+    },
+    {
+      "name": "extended-moe_concise-publish",
+      "returncode": 0,
+      "log": "extended-moe_concise-publish.log"
+    },
+    {
+      "name": "extended-moe_concise-repeat",
+      "returncode": 0,
+      "log": "extended-moe_concise-repeat.log"
+    },
+    {
+      "name": "extended-moe_idioms",
+      "returncode": 0,
+      "log": "extended-moe_idioms.log"
+    },
+    {
+      "name": "extended-moe_idioms-publish",
+      "returncode": 0,
+      "log": "extended-moe_idioms-publish.log"
+    },
+    {
+      "name": "extended-moe_idioms-repeat",
+      "returncode": 0,
+      "log": "extended-moe_idioms-repeat.log"
+    },
+    {
+      "name": "extended-moe_mini",
+      "returncode": 0,
+      "log": "extended-moe_mini.log"
+    },
+    {
+      "name": "extended-moe_mini-publish",
+      "returncode": 0,
+      "log": "extended-moe_mini-publish.log"
+    },
+    {
+      "name": "extended-moe_mini-repeat",
+      "returncode": 0,
+      "log": "extended-moe_mini-repeat.log"
+    },
+    {
+      "name": "no-headwords",
+      "returncode": 1,
+      "log": "no-headwords.log",
+      "expected_refusal": "malformed_source"
+    },
+    {
+      "name": "newline-key",
+      "returncode": 1,
+      "log": "newline-key.log",
+      "expected_refusal": "unrepresentable_source"
+    },
+    {
+      "name": "nonascii-image",
+      "returncode": 1,
+      "log": "nonascii-image.log",
+      "expected_refusal": "unsupported_policy"
+    },
+    {
+      "name": "nonascii-number",
+      "returncode": 1,
+      "log": "nonascii-number.log",
+      "expected_refusal": "unsupported_policy"
+    }
+  ],
+  "checks": [
+    {
+      "case": "baseline-moe_revised",
+      "status": "original_plugin_content_and_TXT_publication_match",
+      "entries": 4,
+      "primary_entries": 2,
+      "alias_redirects": 2,
+      "input_sha256": "617d4db5ff38c14a38514290cc86bfc266088a78a4d5e930162c871d94ef0f0f",
+      "output_sha256": "69388437bd1d9eb34747a68ba6e7942142fad8c5df6c1060db6b8a15d38c5dad",
+      "raw_python_bytes_equal": false,
+      "deterministic_repeat": true
+    },
+    {
+      "case": "baseline-moe_revised_wfg",
+      "status": "original_plugin_content_and_TXT_publication_match",
+      "entries": 2,
+      "primary_entries": 2,
+      "alias_redirects": 0,
+      "input_sha256": "617d4db5ff38c14a38514290cc86bfc266088a78a4d5e930162c871d94ef0f0f",
+      "output_sha256": "a955bbdeb60344e79f2127bb4ac19c65ff3c9a24b9162a2b85dbe8dc59bd7c04",
+      "raw_python_bytes_equal": true,
+      "deterministic_repeat": true
+    },
+    {
+      "case": "baseline-moe_concise",
+      "status": "original_plugin_content_and_TXT_publication_match",
+      "entries": 2,
+      "primary_entries": 2,
+      "alias_redirects": 0,
+      "input_sha256": "617d4db5ff38c14a38514290cc86bfc266088a78a4d5e930162c871d94ef0f0f",
+      "output_sha256": "d6bffa874e702914802c5e8a574e5d83930ab723f2e4655b739b1555b2e6468a",
+      "raw_python_bytes_equal": true,
+      "deterministic_repeat": true
+    },
+    {
+      "case": "baseline-moe_idioms",
+      "status": "original_plugin_content_and_TXT_publication_match",
+      "entries": 2,
+      "primary_entries": 2,
+      "alias_redirects": 0,
+      "input_sha256": "617d4db5ff38c14a38514290cc86bfc266088a78a4d5e930162c871d94ef0f0f",
+      "output_sha256": "f1e2fdb6ef77bed7aeee1ee66989fa00c3ac662e80a63712c2295916b157ac0c",
+      "raw_python_bytes_equal": true,
+      "deterministic_repeat": true
+    },
+    {
+      "case": "baseline-moe_mini",
+      "status": "original_plugin_content_and_TXT_publication_match",
+      "entries": 2,
+      "primary_entries": 2,
+      "alias_redirects": 0,
+      "input_sha256": "617d4db5ff38c14a38514290cc86bfc266088a78a4d5e930162c871d94ef0f0f",
+      "output_sha256": "0f99434d534f8949d922fffceb012620ef8a64cb783e38325525a71345f888b3",
+      "raw_python_bytes_equal": true,
+      "deterministic_repeat": true
+    },
+    {
+      "case": "extended-moe_revised",
+      "status": "original_plugin_content_and_TXT_publication_match",
+      "entries": 7,
+      "primary_entries": 3,
+      "alias_redirects": 4,
+      "input_sha256": "6d39581072caef99d8b40b7831f1c79aa24e894ee25ebe2b2d9d8f7fc2a258eb",
+      "output_sha256": "e104b187241813a81b3d81f5418992dc61e19404230501485ac8121963ad8fc8",
+      "raw_python_bytes_equal": false,
+      "deterministic_repeat": true
+    },
+    {
+      "case": "extended-moe_revised_wfg",
+      "status": "original_plugin_content_and_TXT_publication_match",
+      "entries": 3,
+      "primary_entries": 3,
+      "alias_redirects": 0,
+      "input_sha256": "6d39581072caef99d8b40b7831f1c79aa24e894ee25ebe2b2d9d8f7fc2a258eb",
+      "output_sha256": "6cb72b694f8dada6ebb62a8708adfd9e19fe1759006fec5b0e0cb5a2341a1ca0",
+      "raw_python_bytes_equal": true,
+      "deterministic_repeat": true
+    },
+    {
+      "case": "extended-moe_concise",
+      "status": "original_plugin_content_and_TXT_publication_match",
+      "entries": 3,
+      "primary_entries": 3,
+      "alias_redirects": 0,
+      "input_sha256": "6d39581072caef99d8b40b7831f1c79aa24e894ee25ebe2b2d9d8f7fc2a258eb",
+      "output_sha256": "04620935158300ea3a82dba3aace719d219d700a4e1b267e3fcf2242eb993e57",
+      "raw_python_bytes_equal": false,
+      "deterministic_repeat": true
+    },
+    {
+      "case": "extended-moe_idioms",
+      "status": "original_plugin_content_and_TXT_publication_match",
+      "entries": 3,
+      "primary_entries": 3,
+      "alias_redirects": 0,
+      "input_sha256": "6d39581072caef99d8b40b7831f1c79aa24e894ee25ebe2b2d9d8f7fc2a258eb",
+      "output_sha256": "30c724c3bb4007ba91f80a4858e475fd985e841bf4e200a275b063cedf1a4e5b",
+      "raw_python_bytes_equal": true,
+      "deterministic_repeat": true
+    },
+    {
+      "case": "extended-moe_mini",
+      "status": "original_plugin_content_and_TXT_publication_match",
+      "entries": 3,
+      "primary_entries": 3,
+      "alias_redirects": 0,
+      "input_sha256": "6d39581072caef99d8b40b7831f1c79aa24e894ee25ebe2b2d9d8f7fc2a258eb",
+      "output_sha256": "35597ffec36922dbb22fad17b2f37428f61c117ffeed4fd26e3b66c516e7c7a1",
+      "raw_python_bytes_equal": true,
+      "deterministic_repeat": true
+    },
+    {
+      "case": "no-headwords",
+      "status": "expected_refusal",
+      "code": "malformed_source",
+      "input_sha256": "8c5750b8cd2f93bf5b58e9026946d15691d09fc50836100f6ffa8ed311ff3f94"
+    },
+    {
+      "case": "newline-key",
+      "status": "expected_refusal",
+      "code": "unrepresentable_source",
+      "input_sha256": "a41351c8d625c8d62c370e4d9cd825f33438e96bcbdeb7fa98997fd00d224138"
+    },
+    {
+      "case": "nonascii-image",
+      "status": "expected_refusal",
+      "code": "unsupported_policy",
+      "input_sha256": "a197a757958589bbdce35055f931126303fa83a24e747f728b59141473737647"
+    },
+    {
+      "case": "nonascii-number",
+      "status": "expected_refusal",
+      "code": "unsupported_policy",
+      "input_sha256": "9efbe851a1309a5891b78b3cfe62022b823b7dcb87dc805f53b213c604007b72"
+    }
+  ],
+  "profile": "moe-legacy-layout-v1-first-seen",
+  "native_readers": "NOT_REQUESTED",
+  "intentional_difference": "Original unordered set iteration becomes first-seen order; comparator ignores only set-derived reference/alias order",
+  "scope": "bounded synthetic common-cell XLSX conversion; ASCII numeric syntax and marker filenames; not full real MOE corpus",
+  "protected_source_sha256": {
+    "m2/Cargo.lock": "52204c28ecb6334cd1bdc16aa92c680094bad032343dac074a2d3f1bacc892b4",
+    "m2/Cargo.toml": "3ae1cbaf4026d1b8afeffc3c9e7a05ad60e34cf8cc116e8d59dbb6576ca547cb",
+    "m2/studio-cli/Cargo.toml": "fda21775f6b11f7e8775a8d50b0078fb22d9142e7ff234c51e42c8e0cb59b4d5",
+    "m2/studio-cli/src/main.rs": "bf35a6c970224a448906c0ebc1d498d8cff41f3563c905fb2424235e2e5b21d0",
+    "m2/studio-core/Cargo.toml": "5854ebd0acc2b11f62c8001fece7b89d7451ecbee87f70a3adb66059bbbd45cc",
+    "m2/studio-core/src/casing.rs": "279000271dc5c4c6997df2a138da252293ae7aca6fb742fa2c483641d50a842a",
+    "m2/studio-core/src/cedict.rs": "c51b7116ea7d7c6331fa43f8cf820e44664874440e23578c2cff1ae82ab94100",
+    "m2/studio-core/src/engine.rs": "799a776fea81176f135b4f84f543e0c0ce0b2a6a3dba7c0ef416b5fd395ab31e",
+    "m2/studio-core/src/error.rs": "8ea3b09d0f2bbe4b05993e6e3b2189a3cda9c4d3aca1f12022a1e2d046aa3df0",
+    "m2/studio-core/src/job.rs": "219caa620288bc355d3173a2759bcef2ca17167c8e517aa400e6c74cac112334",
+    "m2/studio-core/src/lib.rs": "20a3bdaa8a107bfb76cfa98fea0b4320a2a0fa7530c17f50c1ac278c1311fd88",
+    "m2/studio-core/src/model.rs": "ea349dfa63ae96896f611d39d109111a8e7f0d5a91f2ebada2b9b08f21498404",
+    "m2/studio-core/src/resource_paths.rs": "e1d2bbd02ba6b5c9e14210095944c2445b57e226f53310b425e58f7ec80b1cea",
+    "m2/studio-core/src/resources.rs": "563581bb1995c3c71678895ad3abf0332775ba67f73a7d0a6cb45fda8bfa3edf",
+    "m2/studio-core/src/safe_fs.rs": "ae0a71d5358cf3a4824754a6f42cec58cb29e5ba81e3eb0b92d9cf90feb51739",
+    "m2/studio-core/src/text.rs": "8f3f8d6c9861c8fc8daff58b9eb67c6366f473738788a1f43ab64db315d30ce3",
+    "m2/studio-core/tests/resources.rs": "ac5aa9c6c3b7b648255d25ca4ccf8e4b784a5b350d765a507791c178cdbd6964",
+    "m2/studio-core/tests/text_converters.rs": "d76557f39b08fc78e4eda59421bebf86182a95128d711762fd58c1d1c9688d57",
+    "m2/studio-core/tests/workflows.rs": "06bc2c094cd79d852ad61f7a56e167bad6ee3f6d39076f0cdd7bf0693bd9c8d9",
+    "scripts/m2_foundation.py": "ae8a72f053c2c262ca06717154dfd1b5e2948ef1e641c13c1bf167caa5117990",
+    "baseline/unicode/unicode16-casing.json": "f69d2e55d6b8c8d5fe33f764cc47b829bccc6d73aaff1791e1216328a1c24071",
+    "scripts/m2_text.py": "31dc855b4c0ddc3a8bb6c5f204aac93259b623ebcd86c5c67a0c76483d5b0d1e",
+    "baseline/cases.json": "6755e0e426f3723de47060339404478f1a313c19f073dba12eba03fc6fb1d566",
+    "baseline/source-manifest.json": "1f32ed5a20819ab8e1473e9a30609299815b50761173b83a8999cf513d69001b",
+    "baseline/legacy/plugins/cccedict_plugin.py": "4c3fc461a044e702678ce7fbf0e2b251969d5932c4bf2d2070d6f58c2eeb139c",
+    "baseline/legacy/base_plugin.py": "0620c3d88502191b4b297c918394cc9ae886e943e83b06bf377fa1284b044b49",
+    "baseline/expected/cc_cedict.txt": "8de24ce354f5d017b2e99702d82d2a81c607600386944d0000f2cd9c51ff02d0",
+    "baseline/expected/moe_revised.txt": "32688acf6251bb8536d585a20e82ae668423184ff7017b7aeed96936bb864a4f",
+    "baseline/expected/moe_revised_wfg.txt": "a955bbdeb60344e79f2127bb4ac19c65ff3c9a24b9162a2b85dbe8dc59bd7c04",
+    "baseline/expected/moe_concise.txt": "d6bffa874e702914802c5e8a574e5d83930ab723f2e4655b739b1555b2e6468a",
+    "baseline/expected/moe_idioms.txt": "f1e2fdb6ef77bed7aeee1ee66989fa00c3ac662e80a63712c2295916b157ac0c",
+    "baseline/expected/moe_mini.txt": "0f99434d534f8949d922fffceb012620ef8a64cb783e38325525a71345f888b3",
+    "Cargo.lock": "b1993e21cd4be1fd4937914bb7458cefb730e21927fbe058046e4aee3bd81e35",
+    "experiments/legacy-sort/Cargo.lock": "832527875540ca97c9af5ee227c0f38d3f03eed9c16c26a0c63fed51285f7a8e",
+    "experiments/real-rebuild/Cargo.lock": "0490f412f73e66fd7b719da2dd71470eeb315aaa9028837ae185f3437a8e867f"
+  },
+  "source_sha256": {
+    "baseline/capture.py": "4fbce57fc68d819c9675714fd12e12d20453180f515572f23089778865aeed01",
+    "baseline/cases.json": "6755e0e426f3723de47060339404478f1a313c19f073dba12eba03fc6fb1d566",
+    "baseline/legacy/excel_utils.py": "b0a837e2197a5d0d42599171716b903ef813dc52512e55c1ccbe93f2f0bd2302",
+    "baseline/legacy/plugins/WFG_desgin_Plugin.py": "9d476ee0fb38603c7b6e6634c9987ab7a26077dbf15357718e9e93293da09ba2",
+    "baseline/legacy/plugins/cccedict_plugin.py": "4c3fc461a044e702678ce7fbf0e2b251969d5932c4bf2d2070d6f58c2eeb139c",
+    "baseline/legacy/plugins/concise_plugin.py": "25b37d4f801e4ddfef03557a54fa8a20ad5bbbac79f8eddc19135ae6562abc6a",
+    "baseline/legacy/plugins/edudict_plugin.py": "2505bdaf5733f905d8fba1f68dd22e1c7b123484599d1f18bcf7c6cb576aa923",
+    "baseline/legacy/plugins/idiom_plugin.py": "53dce8296c31f92c1e83a4cb7f2773c7e97d6ae85f00811724a11adf83768bc1",
+    "baseline/legacy/plugins/mini_plugin.py": "aca858af532a8f409b5b55d6d3632b63466d8d67af910390f65e3623561c00f5",
+    "baseline/moe-converter-kit/expected.json": "16c5b4a1d2dd1c5fc1bc53050b5b8f6150d9ea2049d7077546594eec99ea0871",
+    "m2/xlsx-reader/Cargo.lock": "cd1e07d14298148b28a05dda63730b3c23337f39a4e5f6f11b3ad7a9c4f33d0b",
+    "m2/xlsx-reader/Cargo.toml": "9f4505aca02e286689f9f5e216c3d96b39d200c6b8d35576b4dbf87357d50cce",
+    "m2/xlsx-reader/src/bin/studio-moe.rs": "01795ea2efb091aa084c10247d4e06ea1891ce7f37b0a0723f6fe7b1f7ee1b04",
+    "m2/xlsx-reader/src/lib.rs": "c928a923900f8fd400d2218b5a679b9ea6a79aa88ffc6ee51e1dd386aab9d22f",
+    "m2/xlsx-reader/src/main.rs": "d59522e31ca27a21f1ceabb7a33ba9eb4cd9a145a9a2f7bcf2951fc87d9a0df2",
+    "m2/xlsx-reader/src/moe/layouts.rs": "b06cb5127d404c9afd9963c3b30313ae1413d465db4dd59b8c7f9622f3513f04",
+    "m2/xlsx-reader/src/moe/mini-head.html": "a1affc24fb57a563c85497f525566d69e040d4c89c70d1419ae3fe58599ac7c1",
+    "m2/xlsx-reader/src/moe/mod.rs": "707a136d46101684c2de412cfc912708393c3a17aeded2600716779c99114d56",
+    "m2/xlsx-reader/src/moe/text.rs": "d3fc6c131025e3cfecb150444c48802247b911f7bcb0f68070936097c9f48055",
+    "m2/xlsx-reader/src/numbers.rs": "0b93a8a1b152f72cf084c2db2c59293bdcd002cec03670773671d5fed61d1c16",
+    "m2/xlsx-reader/src/package.rs": "9a63a0f2c8e7bf88fb5866f20b17b10c35d5bb3146dd316567e2f413c5ff87bd",
+    "m2/xlsx-reader/src/reader.rs": "374894357b74baa326c02ae38580e1d271fe454948fe39cf52fd3955821ef122",
+    "m2/xlsx-reader/src/xml.rs": "618c8ada474d72b92fc818c8ac5317d588fa1d1e0bb1a23fa26c02b2df2e3d7c",
+    "m2/xlsx-reader/tests/compatibility.rs": "1290a1664165c7bd6ab4ba3d2940cf1290d933170d612a932f00d28df3fc43fd",
+    "m2/xlsx-reader/tests/moe.rs": "26dfc34ae541d5c6925f2a7ff11a0e000b0fc57e414edcf8fca6744837a7084d",
+    "scripts/m2_moe.py": "2a4010465fd99806db1a93c73c216d7ab3c99e84ccd6e84c78ddbf960af50a8d",
+    "scripts/moe_fixtures.py": "541a9a76a6fe364249e3b0c0022589d7ae6f58470b63de4e8d5dade7a63be1fa"
+  },
+  "dependency_packages": [
+    {
+      "name": "arbitrary",
+      "version": "1.5.0",
+      "checksum": "3bc62ac97cc33321f50863d514c3bc38a453947a8f9e781137e47c7401020aed"
+    },
+    {
+      "name": "atoi_simd",
+      "version": "0.16.1",
+      "checksum": "c2a49e05797ca52e312a0c658938b7d00693ef037799ef7187678f212d7684cf"
+    },
+    {
+      "name": "bumpalo",
+      "version": "3.20.3",
+      "checksum": "72f5acc6cb2ba439de613abc23857ec3d78374d8ed5ac84e9d11336e87da8649"
+    },
+    {
+      "name": "byteorder",
+      "version": "1.5.0",
+      "checksum": "1fd0f2584146f6f2ef48085050886acf353beff7305ebd1ae69500e27c67f64b"
+    },
+    {
+      "name": "calamine",
+      "version": "0.31.0",
+      "checksum": "da56b262e8a827c6b12c3dde4ea4622e0ff542bd2e9ea5855e4cb523481d77b7"
+    },
+    {
+      "name": "cfg-if",
+      "version": "1.0.5",
+      "checksum": "4e7648175b45a9a48536d676f68d918270699102aa8dab5496df06904c914600"
+    },
+    {
+      "name": "codepage",
+      "version": "0.1.3",
+      "checksum": "bdff162541cd8b79de82e2edcc7eff3a8c2a6dc3d75152636028f96d93de3b26"
+    },
+    {
+      "name": "core_detect",
+      "version": "1.0.0",
+      "checksum": "7f8f80099a98041a3d1622845c271458a2d73e688351bf3cb999266764b81d48"
+    },
+    {
+      "name": "crc32fast",
+      "version": "1.5.3",
+      "checksum": "0ba106e844045ddc02c20768ac4b0b7cb45f2cc2ecbd833ac9f5dacb183c2055"
+    },
+    {
+      "name": "debug_unsafe",
+      "version": "0.1.4",
+      "checksum": "7eed2c4702fa172d1ce21078faa7c5203e69f5394d48cc436d25928394a867a2"
+    },
+    {
+      "name": "derive_arbitrary",
+      "version": "1.5.0",
+      "checksum": "1b034bd7d5f032402a2479444dcc6f74e36a03f31854d41680fb240ef682a1ac"
+    },
+    {
+      "name": "encoding_rs",
+      "version": "0.8.42",
+      "checksum": "8e985e0451871ad22fb8d2b6b076e2028a502a0d3950998c2c5c0a4f9b5d9679"
+    },
+    {
+      "name": "equivalent",
+      "version": "1.0.3",
+      "checksum": "00d174d5400e5e8fd687ad1049e2f578285fa914201b1af7e8b112a4546bd826"
+    },
+    {
+      "name": "fast-float2",
+      "version": "0.2.4",
+      "checksum": "c6e8948ce679d00a02a94739ea185595dca7118ed04feb991127e443bd3d761f"
+    },
+    {
+      "name": "flate2",
+      "version": "1.1.10",
+      "checksum": "6e634e2e0ebac1ee034020da1ca582e17ffe4e0f5e985823721e168928136dcb"
+    },
+    {
+      "name": "hashbrown",
+      "version": "0.17.1",
+      "checksum": "ed5909b6e89a2db4456e54cd5f673791d7eca6732202bbf2a9cc504fe2f9b84a"
+    },
+    {
+      "name": "indexmap",
+      "version": "2.14.2",
+      "checksum": "cc4e190f5d26ca7051642629da2c52fc03bde85a03197c99408dcd291734c855"
+    },
+    {
+      "name": "itoa",
+      "version": "1.0.18",
+      "checksum": "8f42a60cbdf9a97f5d2305f08a87dc4e09308d1276d28c869c684d7777685682"
+    },
+    {
+      "name": "log",
+      "version": "0.4.34",
+      "checksum": "f9f8bd3e56ce4dfc153cf470fffbfa98c7620958b312ca5c3a4b8d5181fd13c6"
+    },
+    {
+      "name": "memchr",
+      "version": "2.8.3",
+      "checksum": "cf8baf1c55e62ffcace7a9f06f4bd9cd3f0c4beb022d3b367256b91b87513d98"
+    },
+    {
+      "name": "multiversion_no_op",
+      "version": "1.0.0",
+      "checksum": "743fb55ba31b18fb1ecef6bdc9aa2743314978ac084044301a7eee33fb99a20d"
+    },
+    {
+      "name": "proc-macro2",
+      "version": "1.0.107",
+      "checksum": "985e7ec9bb745e6ce6535b544d84d6cd6f7ad8bd711c398938ae983b91a766d9"
+    },
+    {
+      "name": "quick-xml",
+      "version": "0.38.3",
+      "checksum": "42a232e7487fc2ef313d96dde7948e7a3c05101870d8985e4fd8d26aedd27b89"
+    },
+    {
+      "name": "quote",
+      "version": "1.0.47",
+      "checksum": "1fbf4db142a473a8d80c26bbf18454ed458bf8d26c8219c331daecfdbd079001"
+    },
+    {
+      "name": "rustversion",
+      "version": "1.0.23",
+      "checksum": "cf54715a573b99ac80df0bc206da022bcd442c974952c7b9720069370852e21f"
+    },
+    {
+      "name": "scopeguard",
+      "version": "1.2.0",
+      "checksum": "94143f37725109f92c262ed2cf5e59bce7498c01bcc1502d7b9afe439a4e9f49"
+    },
+    {
+      "name": "serde",
+      "version": "1.0.229",
+      "checksum": "4148590afebada386688f18773da617792bf2ef03ffc1e4cbd2b1d45b023e0ba"
+    },
+    {
+      "name": "serde_core",
+      "version": "1.0.229",
+      "checksum": "67dca2c9c51e58a4791a4b1ed58308b39c64224d349a935ab5039aa360942a48"
+    },
+    {
+      "name": "serde_derive",
+      "version": "1.0.229",
+      "checksum": "e7a5d71263a5a7d47b41f6b3f06ba276f10cc18b0931f1799f710578e2309348"
+    },
+    {
+      "name": "serde_json",
+      "version": "1.0.154",
+      "checksum": "e7e9cc8b1b85264074fbcc02a88680c4096b1e47df8f739dceb03bf482f04bd6"
+    },
+    {
+      "name": "simd-adler32",
+      "version": "0.3.10",
+      "checksum": "3a219298ac11a56ea9a6d2120044824d6f01aeb034955e7af7bc16858527deea"
+    },
+    {
+      "name": "simdutf8",
+      "version": "0.1.5",
+      "checksum": "e3a9fe34e3e7a50316060351f37187a3f546bce95496156754b601a5fa71b76e"
+    },
+    {
+      "name": "studio-xlsx",
+      "version": "0.1.0",
+      "checksum": null
+    },
+    {
+      "name": "syn",
+      "version": "3.0.9",
+      "checksum": "d78c8dee4c7bf0e14673097256fed6142ce9d3b85a408189d07482442145823b"
+    },
+    {
+      "name": "unicode-ident",
+      "version": "1.0.27",
+      "checksum": "a2c754d6c33795a1c324727428e5a7dedb5b06195f9890bdbcba760d3e246563"
+    },
+    {
+      "name": "zip",
+      "version": "4.6.1",
+      "checksum": "caa8cd6af31c3b31c6631b8f483848b91589021b28fffe50adada48d4f4d2ed1"
+    },
+    {
+      "name": "zlib-rs",
+      "version": "0.6.8",
+      "checksum": "b268e58e7c693d7c271f93ffc4ba3b380412554231c85bf61ca7af91042a4112"
+    },
+    {
+      "name": "zmij",
+      "version": "1.0.23",
+      "checksum": "29666d0abbfad1e3dc4dcf6144730dd3a3ab225bbbdac83319345b1b44ccfc1b"
+    },
+    {
+      "name": "zopfli",
+      "version": "0.8.4",
+      "checksum": "aaf7fc5d30c28483d93805c4a5e12b05bbb52407fa67c5f8bd552374cd01fb11"
+    }
+  ],
+  "qualified_xlsx_lock_unchanged": true
+}

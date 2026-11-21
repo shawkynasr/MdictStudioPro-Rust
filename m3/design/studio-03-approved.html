@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mdict Studio · Concept 03</title>
+<style>
+*{box-sizing:border-box}
+:root{color-scheme:light;--desktop:#e8edf5;--window:#fafbfd;--sidebar:#edf0f5;--card:#fff;--soft:#f4f6f9;--ink:#273348;--muted:#7c8798;--border:#e1e6ee;--accent:#3379df;--tint:#e8f0fd;--success:#3a8a74;--radius:10px}
+html[data-theme=dark]{color-scheme:dark;--desktop:#141b29;--window:#222a37;--sidebar:#1c2431;--card:#2a3343;--soft:#252e3d;--ink:#e7edf8;--muted:#a0acc0;--border:#364154;--accent:#8ab7ff;--tint:#334967;--success:#89c9b5}
+body{margin:0;padding:25px;background:radial-gradient(ellipse at top,#83a8dc24,transparent 70%),var(--desktop);color:var(--ink);font:13px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer;border:0;background:none}
+button:disabled{opacity:.5;cursor:default}
+input,select{min-width:0}
+:focus-visible{outline:3px solid #78a9f4;outline-offset:3px}
+[hidden]{display:none!important}
+svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.sprite{position:absolute;width:0;height:0;overflow:hidden}
+.previewbar{max-width:1340px;margin:0 auto 18px;display:flex;justify-content:space-between;align-items:center;gap:15px}
+.previewbar b{font-size:14px}
+.previewbar p{font-size:11px;color:var(--muted);margin:6px 0 0;line-height:1.6}
+.controls{display:flex;gap:7px;align-items:center;flex-wrap:wrap}
+select,.smallbutton{border:1px solid var(--border);background:var(--card);border-radius:7px;padding:7px 9px;font-size:11px}
+.window{max-width:1340px;height:790px;margin:auto;border:1px solid #7d8ba345;border-radius:14px;box-shadow:0 30px 90px #162c4a29;background:var(--window);overflow:hidden;display:flex;flex-direction:column}
+.titlebar{height:52px;flex-shrink:0;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 18px;background:var(--soft);gap:20px}
+.windowidentity{display:flex;align-items:center;gap:22px}
+.traffic{display:flex;gap:8px}
+.traffic i{width:12px;height:12px;border-radius:50%;background:#ff6158;border:1px solid #0001}
+.traffic i:nth-child(2){background:#ffbd2e}.traffic i:nth-child(3){background:#28c840}
+.appname{font-size:12px;font-weight:650}
+.caption{display:none;gap:24px;font-size:15px;color:var(--muted);padding-inline-start:15px}
+html[data-os=windows] .caption,html[data-os=linux] .caption{display:flex}
+html[data-os=windows] .traffic,html[data-os=linux] .traffic{display:none}
+html[data-os=windows]{--radius:7px}
+html[data-os=linux]{--radius:12px}
+.titlemeta{font-size:10px;color:var(--muted)}
+.shell{display:grid;grid-template-columns:192px minmax(0,1fr);flex:1;min-height:0}
+.sidebar{padding:25px 12px 14px;background:var(--sidebar);border-inline-end:1px solid var(--border);display:flex;flex-direction:column}
+.brand{display:flex;align-items:center;gap:10px;padding:0 10px 25px}
+.logo{width:35px;height:35px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(145deg,#97c3ff,#3c79d7);color:white;box-shadow:inset 0 1px #ffffff90}
+.brand strong{font-size:15px}
+.brand small{font-size:10px;color:var(--muted);display:block;margin-top:4px}
+.section{font-size:9px;font-weight:650;letter-spacing:1px;color:var(--muted);margin:16px 10px 9px}
+.nav{display:flex;align-items:center;gap:11px;padding:10px 11px;border-radius:7px;width:100%;font-size:12px;text-align:start;margin-bottom:4px;position:relative}
+.nav svg{color:var(--muted);width:17px}
+.nav:hover{background:#8497b115}
+.nav.active{background:var(--card);color:var(--accent);box-shadow:0 1px 3px #00000008}
+.nav.active svg{color:var(--accent)}
+html[data-os=windows] .nav.active:before{content:"";position:absolute;inset-inline-start:0;width:3px;height:17px;border-radius:3px;background:var(--accent)}
+.sidebarbottom{margin-top:auto}
+.local{display:flex;align-items:center;gap:7px;padding:15px 10px 0;border-top:1px solid var(--border);font-size:10px;color:var(--muted);margin-top:12px}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--success);display:inline-block;flex-shrink:0}
+.main{display:flex;flex-direction:column;min-height:0;min-width:0}
+.top{padding:24px 30px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--border)}
+.eyebrow{font-size:9px;letter-spacing:1.2px;font-weight:600;color:var(--muted);margin-bottom:6px}
+h1{font-size:24px;font-weight:650;letter-spacing:-.7px;margin:0}
+.top p{margin:7px 0 0;color:var(--muted);font-size:11px;line-height:1.6}
+.tag{border:1px solid var(--border);border-radius:5px;padding:5px 8px;font-size:10px;color:var(--muted);white-space:nowrap}
+.body{min-height:0;flex:1;position:relative;overflow:auto}
+.buildlayout{display:grid;grid-template-columns:minmax(0,1fr) 252px;min-height:100%}
+.form{padding:24px 30px;min-width:0}
+.formsection{display:flex;align-items:center;justify-content:space-between;margin:0 0 12px;font-size:11px;font-weight:650}
+.formsection small{font-size:10px;font-weight:400;color:var(--muted)}
+.sourcecard{border:1px solid var(--border);border-radius:var(--radius);padding:20px;background:var(--card);display:flex;align-items:center;gap:14px}
+.fileicon{width:42px;height:49px;display:grid;place-items:center;border-radius:7px;color:var(--accent);background:var(--tint);flex-shrink:0}
+.fileicon svg{width:23px;height:23px}
+.filetext{flex:1;min-width:0}
+.filetext b{font-size:12px;display:block;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}
+.filetext small{font-size:10px;color:var(--muted);display:block;margin-top:7px;line-height:1.6}
+.note{font-size:10px;color:var(--muted);line-height:1.8}
+.sourcehint{display:flex;gap:7px;align-items:center;margin:12px 0 25px}
+.sourcehint svg{width:13px;height:13px;color:var(--success)}
+.fields{border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;background:var(--card)}
+.field{display:flex;align-items:center;padding:13px 15px;gap:20px;min-height:50px}
+.field+.field{border-top:1px solid var(--border)}
+.field label{font-size:11px;width:100px;flex-shrink:0;color:var(--muted)}
+.field input,.field select{border:0;background:transparent;flex:1;width:100%;text-align:end;padding:2px;font-size:12px}
+.path{margin-inline-start:auto;font-size:11px;color:var(--muted);overflow-wrap:anywhere}
+.advanced{margin:17px 0;color:var(--muted);font-size:10px;line-height:1.8}
+.advanced summary{cursor:pointer}
+.actions{display:flex;align-items:center;justify-content:space-between;gap:15px;padding-top:18px;border-top:1px solid var(--border);margin-top:23px}
+.primary{background:#3379df;color:#fff;border-radius:7px;border:1px solid #2b6dce;padding:10px 15px;font-size:12px;font-weight:550;white-space:nowrap}
+.primary:hover{background:#2a6fce}
+.summary{border-inline-start:1px solid var(--border);padding:26px 21px;background:var(--soft);min-width:0}
+.summary h2{font-size:12px;margin:0 0 21px}
+.outputtile{border:1px solid var(--border);border-radius:9px;background:var(--card);padding:19px 15px;text-align:center;margin-bottom:23px}
+.outputtile svg{width:30px;height:30px;color:var(--accent);margin-bottom:12px}
+.outputtile b{display:block;font-size:11px;overflow-wrap:anywhere}
+.outputtile small{display:block;margin-top:8px;color:var(--muted);font-size:10px}
+.stat{display:flex;justify-content:space-between;gap:12px;padding:11px 0;font-size:10px;border-bottom:1px solid var(--border)}
+.stat span:first-child{color:var(--muted)}
+.checklist{margin-top:23px}
+.checklist p{display:flex;align-items:center;gap:7px;font-size:10px;line-height:1.6;color:var(--muted)}
+.checklist svg{width:13px;height:13px;color:var(--success)}
+.tools{height:100%;display:grid;grid-template-columns:206px minmax(0,1fr)}
+.wordpanel{padding:18px 12px;border-inline-end:1px solid var(--border);background:var(--soft);overflow:auto}
+.search{border:1px solid var(--border);border-radius:7px;padding:9px;background:var(--card);display:flex;align-items:center;gap:7px}
+.search svg{width:14px;color:var(--muted)}
+.search input{border:0;outline:none;background:none;width:100%;font-size:11px}
+.wordslabel{font-size:10px;color:var(--muted);margin:20px 7px 10px}
+.word{display:block;width:100%;padding:13px 10px;margin-bottom:5px;border:1px solid transparent;border-radius:7px;text-align:start}
+.word:hover{background:#8196b213}
+.word.active{background:var(--tint);border-color:#7d9cc52a}
+.word b{font:22px serif;display:block}
+.word small{display:block;color:var(--muted);font-size:10px;margin-top:7px}
+.reading{display:flex;flex-direction:column;min-height:0;min-width:0}
+.readingbar{padding:14px 18px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
+.segment{display:flex;padding:2px;background:var(--soft);border:1px solid var(--border);border-radius:6px}
+.segment button{padding:5px 9px;font-size:10px;color:var(--muted);border-radius:4px}
+.segment button.active{background:var(--card);color:var(--ink);box-shadow:0 1px 3px #0001}
+.previewarea{display:grid;grid-template-columns:1fr;flex:1;min-height:0}
+.previewarea.split{grid-template-columns:1fr 1fr}
+iframe{width:100%;height:100%;border:0;background:#fff;min-height:0}
+pre{white-space:pre-wrap;word-break:break-word;font:11px/1.9 ui-monospace,SFMono-Regular,Consolas,monospace;margin:0;padding:24px;color:var(--muted);overflow:auto;direction:ltr;text-align:left;border-inline-start:1px solid var(--border)}
+.readingfoot{padding:11px 18px;border-top:1px solid var(--border);font-size:10px;color:var(--muted);line-height:1.7;display:flex;justify-content:space-between;gap:10px}
+.page{padding:28px 30px;max-width:850px;margin:auto}
+.page h2{font-size:21px;margin:0 0 10px}
+.page>p{font-size:12px;color:var(--muted);line-height:1.8;margin:0 0 24px}
+.convertergrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.converter{border:1px solid var(--border);border-radius:var(--radius);background:var(--card);padding:20px;text-align:start}
+.converter:hover{border-color:var(--accent)}
+.converter strong{font-size:12px;display:block;margin:11px 0 7px}
+.converter small{font-size:10px;color:var(--muted);line-height:1.8;display:block}
+.converter svg{color:var(--accent)}
+.jobcard{border:1px solid var(--border);background:var(--card);border-radius:var(--radius);padding:20px;display:flex;justify-content:space-between;gap:18px;align-items:center}
+.jobcard small{display:block;margin-top:8px;color:var(--muted);font-size:10px}
+.jobstate{font-size:11px;color:var(--success)}
+.empty{padding:38px;border:1px dashed var(--border);border-radius:10px;color:var(--muted);text-align:center;line-height:1.9}
+.jobbar{padding:12px 20px;border-top:1px solid var(--border);background:var(--soft);display:flex;align-items:center;gap:16px}
+.progress{flex:1}.progresshead{font-size:10px;display:flex;justify-content:space-between;margin-bottom:7px}
+.track{height:4px;background:var(--border);border-radius:3px;overflow:hidden}
+.fill{height:100%;background:var(--accent);width:0;transition:width .15s linear}
+.footer{height:29px;flex-shrink:0;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:14px;padding:0 16px;background:var(--soft);font-size:9px;color:var(--muted)}
+.footerleft{display:flex;align-items:center;gap:7px}
+dialog{background:var(--card);color:var(--ink);border:1px solid var(--border);border-radius:13px;padding:25px;width:420px;max-width:90vw;box-shadow:0 20px 80px #0003}
+dialog::backdrop{background:#13203755}
+dialog h2{font-size:19px;margin:0 0 13px}
+dialog p{font-size:12px;color:var(--muted);line-height:1.9;white-space:pre-line}
+dialog button{float:inline-end;margin-top:13px}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--card);padding:12px 18px;border-radius:9px;box-shadow:0 6px 30px #0002;font-size:12px;max-width:85vw;z-index:10}
+@media(max-width:1100px){.shell{grid-template-columns:169px minmax(0,1fr)}.buildlayout{grid-template-columns:minmax(0,1fr) 210px}.form{padding:24px}.summary{padding:25px 16px}.top{padding:22px 24px}.sidebar{padding-inline:9px}.tools{grid-template-columns:180px minmax(0,1fr)}}
+@media(max-width:900px){.buildlayout{grid-template-columns:minmax(0,1fr)}.summary{display:none}.previewarea.split{grid-template-columns:1fr;grid-template-rows:1fr 1fr}.previewarea.split pre{border-inline-start:0;border-top:1px solid var(--border)}.titlemeta{display:none}.actions .note{max-width:170px}}
+@media(max-width:740px){body{padding:12px}.shell{grid-template-columns:58px minmax(0,1fr)}.sidebar{padding:22px 6px 12px}.brand{padding:0 5px 20px}.brandcopy,.navtext,.section,.local{display:none}.nav{justify-content:center;padding:11px 5px}.nav svg{width:19px}.tools{grid-template-columns:150px minmax(0,1fr)}.previewbar{align-items:start}.previewbar p{max-width:260px}.top h1{font-size:22px}.page{padding:24px}.field label{width:83px}.titlebar{padding:0 14px}}
+@media(max-width:540px){body{padding:8px}.previewbar{flex-direction:column;gap:11px}.previewbar p{max-width:none}.controls{width:100%}.controls select{flex:1}.tools{grid-template-columns:minmax(0,1fr)}.wordpanel{max-height:135px;border-inline-end:0;border-bottom:1px solid var(--border)}.wordlist{display:flex;gap:5px}.word{min-width:100px;margin-bottom:0;padding:8px}.word b{font-size:18px}.word small,.wordslabel{display:none}.search{margin-bottom:9px}.tools{grid-template-rows:auto minmax(0,1fr)}.top{padding:18px}.top p{max-width:240px}.top .tag{display:none}.form{padding:22px 17px}.sourcecard{padding:16px;gap:10px;flex-wrap:wrap}.sourcecard button{margin-inline-start:auto}.field{gap:8px;padding:12px}.actions .note{display:none}.actions{justify-content:flex-end}.convertergrid{grid-template-columns:1fr}.footer>span{display:none}.readingfoot{font-size:9px}.window{height:820px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<svg class="sprite" xmlns="http://www.w3.org/2000/svg"><defs>
+<symbol id="book" viewBox="0 0 24 24"><path d="M12 5v15M12 5C9 3 5 3 3 4v15c3-1 6 0 9 1 3-1 6-2 9-1V4c-2-1-6-1-9 1Z"/></symbol>
+<symbol id="box" viewBox="0 0 24 24"><path d="m3 7 9-4 9 4v11l-9 4-9-4V7Zm0 0 9 4 9-4M12 11v11M7 5l10 4"/></symbol>
+<symbol id="extract" viewBox="0 0 24 24"><path d="M4 10v10h16V10M12 3v11m-4-4 4 4 4-4M4 6h3M17 6h3"/></symbol>
+<symbol id="convert" viewBox="0 0 24 24"><path d="M4 7h15l-4-4M20 17H5l4 4M19 7v4M5 17v-4"/></symbol>
+<symbol id="database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"/></symbol>
+<symbol id="leaf" viewBox="0 0 24 24"><path d="M5 19C1 6 11 5 20 3c-1 10-2 19-15 16Zm0 0L16 8"/></symbol>
+<symbol id="jobs" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="settings" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16"/><circle cx="8" cy="7" r="2"/><circle cx="16" cy="17" r="2"/></symbol>
+<symbol id="file" viewBox="0 0 24 24"><path d="M13 3H5v18h14V9l-6-6Zm0 0v6h6M8 13h8M8 17h6"/></symbol>
+<symbol id="check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+<symbol id="search" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></symbol>
+</defs></svg>
+
+<header class="previewbar">
+<div><b>03 / Studio, refined</b><p data-t="concept">One workspace, shaped for your platform.</p></div>
+<div class="controls">
+<select id="platform" aria-label="Platform appearance preview" dir="ltr"><option value="macos">macOS</option><option value="windows">Windows</option><option value="linux">Linux</option></select>
+<select id="language" aria-label="Interface language" dir="ltr"><option value="en">English</option><option value="zh">中文</option><option value="ar">العربية</option></select>
+<select id="theme" aria-label="App appearance"><option value="light" data-t="light">Light</option><option value="dark" data-t="dark">Dark</option></select>
+</div>
+</header>
+
+<div class="window">
+<header class="titlebar" dir="ltr">
+<div class="windowidentity"><div class="traffic" aria-hidden="true"><i></i><i></i><i></i></div><span class="appname">Mdict Studio Pro</span></div>
+<div class="controls"><span class="titlemeta" data-t="sample">Design prototype · sample data</span><div class="caption" aria-hidden="true"><span>−</span><span>□</span><span>×</span></div></div>
+</header>
+
+<div class="shell">
+<aside class="sidebar">
+<div class="brand"><div class="logo"><svg><use href="#book"/></svg></div><div class="brandcopy"><strong>Studio</strong><small data-t="personal">Personal workspace</small></div></div>
+<div class="section" data-t="workspace">WORKSPACE</div>
+<button class="nav active" data-page="build"><svg><use href="#box"/></svg><span class="navtext" data-t="build">Build</span></button>
+<button class="nav" data-page="extract"><svg><use href="#extract"/></svg><span class="navtext" data-t="extract">Extract</span></button>
+<button class="nav" data-page="converters"><svg><use href="#convert"/></svg><span class="navtext" data-t="converters">Converters</span></button>
+<div class="section" data-t="data">DATA & LANGUAGE</div>
+<button class="nav" data-page="database"><svg><use href="#database"/></svg><span class="navtext" data-t="database">Database</span></button>
+<button class="nav" data-page="morphology"><svg><use href="#leaf"/></svg><span class="navtext" data-t="morphology">Morphology</span></button>
+<div class="section" data-t="inspect">INSPECT</div>
+<button class="nav" data-page="tools"><svg><use href="#book"/></svg><span class="navtext" data-t="tools">Dictionary Tools</span></button>
+<div class="sidebarbottom">
+<button class="nav" data-page="jobs"><svg><use href="#jobs"/></svg><span class="navtext" data-t="jobs">Jobs</span></button>
+<button class="nav" id="settings"><svg><use href="#settings"/></svg><span class="navtext" data-t="settings">Settings</span></button>
+<div class="local"><span class="dot"></span><span data-t="local">Your files. Your computer.</span></div>
+</div>
+</aside>
+
+<main class="main">
+<header class="top">
+<div><div class="eyebrow" data-t="workspace">WORKSPACE</div><h1 id="heading">Build dictionary</h1><p id="subtitle">From source files to something worth looking up.</p></div>
+<span class="tag" id="topTag">MDX / MDD</span>
+</header>
+<div class="body">
+
+<div class="buildlayout" id="formView">
+<div class="form">
+<div class="formsection"><span data-t="source">Source</span><small data-t="stepOne">01 / Choose input</small></div>
+<div class="sourcecard">
+<div class="fileicon"><svg><use href="#file"/></svg></div>
+<div class="filetext"><b id="filename">Mandarin Notes.txt</b><small id="filehint">Sample dictionary source · UTF-8</small></div>
+<button class="smallbutton" id="choose" data-t="choose">Choose…</button>
+<input type="file" id="fileInput" hidden>
+</div>
+<div class="note sourcehint"><svg><use href="#check"/></svg><span data-t="sourceHint">Demo selection. Your files are not read or uploaded.</span></div>
+<div class="formsection"><span data-t="dictionary">Dictionary</span><small data-t="stepTwo">02 / Configure output</small></div>
+<fieldset id="fields" style="border:0;padding:0;margin:0;min-width:0">
+<div class="fields">
+<div class="field"><label for="name" data-t="name">Name</label><input id="name" value="Mandarin Notes" autocomplete="off"></div>
+<div class="field"><label for="format" data-t="format">Format</label><select id="format"></select></div>
+<div class="field" id="encodingRow"><label for="encoding" data-t="encoding">Encoding</label><select id="encoding"><option>UTF-8</option><option>UTF-16</option></select></div>
+<div class="field"><label data-t="destination">Save to</label><bdi class="path">Documents / Dictionaries</bdi><button class="smallbutton" id="folder" aria-label="Choose sample destination">…</button></div>
+</div>
+<details class="advanced"><summary data-t="advanced">More options</summary><p data-t="advancedText">The final app will expose metadata, stylesheet and compression settings here. This prototype demonstrates the layout.</p></details>
+</fieldset>
+<div class="actions"><span class="note" data-t="demoNote">Simulated operation · no output files</span><button class="primary" id="run">Build dictionary</button></div>
+</div>
+<aside class="summary">
+<h2 data-t="output">Output</h2>
+<div class="outputtile"><svg><use href="#book"/></svg><bdi><b id="outputName">Mandarin Notes.mdx</b></bdi><small id="outputKind">MDict v2 dictionary</small></div>
+<div class="stat"><span data-t="format">Format</span><bdi id="formatSummary">MDX v2</bdi></div>
+<div class="stat"><span data-t="encoding">Encoding</span><bdi id="encodingSummary">UTF-8</bdi></div>
+<div class="stat"><span data-t="location">Location</span><span data-t="localFolder">Local folder</span></div>
+<div class="checklist">
+<p><svg><use href="#check"/></svg><span data-t="duplicates">Keep duplicate entries</span></p>
+<p><svg><use href="#check"/></svg><span data-t="metadata">Preserve dictionary metadata</span></p>
+<p><svg><use href="#check"/></svg><span data-t="background">Work in the background</span></p>
+</div>
+<p class="note" style="margin-top:25px" data-t="summaryNote">A quiet place for output details, without crowding your working area.</p>
+</aside>
+</div>
+
+<div class="tools" id="toolsView" hidden>
+<aside class="wordpanel">
+<label class="search"><svg><use href="#search"/></svg><input id="search" placeholder="Find a headword…" aria-label="Find a headword"></label>
+<div class="wordslabel" data-t="sampleEntries">SAMPLE ENTRIES</div>
+<div class="wordlist" id="wordlist"></div>
+</aside>
+<section class="reading">
+<div class="readingbar">
+<div class="segment"><button class="active" data-layout="render" data-t="rendered">Rendered</button><button data-layout="split" data-t="split">Split</button><button data-layout="source" data-t="html">HTML</button></div>
+<select id="sheet" aria-label="Dictionary preview appearance"><option value="original" data-t="original">Original</option><option value="paper" data-t="paper">Paper simulation</option><option value="dark" data-t="darkPreview">Dark simulation</option></select>
+</div>
+<div class="previewarea" id="previewarea"><iframe sandbox="" referrerpolicy="no-referrer" title="Sample dictionary preview" id="preview"></iframe><pre id="html" hidden></pre></div>
+<div class="readingfoot"><span id="record"></span><button id="inspectButton" data-t="details">Details</button></div>
+</section>
+</div>
+
+<div class="page" id="convertersView" hidden>
+<h2 data-t="chooseConverter">Choose a converter</h2><p data-t="converterLead">A dedicated starting point for each source format.</p>
+<div class="convertergrid" id="convertergrid"></div>
+</div>
+
+<div class="page" id="otherView" hidden>
+<h2 id="otherHeading"></h2><p data-t="planned">This workspace is a layout proposal. Its actions are not connected in this prototype.</p>
+<div class="fields" id="otherRows"></div>
+</div>
+
+<div class="page" id="jobsView" hidden><h2 data-t="recent">Recent jobs</h2><p data-t="jobsLead">Progress stays visible while you move between workspaces.</p><div id="joblist"></div></div>
+
+</div>
+</main>
+</div>
+
+<div class="jobbar" id="jobbar" hidden>
+<svg style="color:var(--accent)"><use href="#jobs"/></svg>
+<div class="progress"><div class="progresshead"><span id="progressText"></span><bdi id="percent">0%</bdi></div><div class="track"><div class="fill" id="fill"></div></div></div>
+<button class="smallbutton" id="cancel" data-t="cancel">Cancel</button>
+</div>
+<footer class="footer"><div class="footerleft"><span class="dot"></span><span id="status">Ready</span></div><span data-t="prototype">Interactive concept · all processing is simulated</span></footer>
+</div>
+
+<dialog id="dialog"><h2 id="dialogTitle"></h2><p id="dialogText"></p><button class="smallbutton" id="close" data-t="done">Done</button></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script>
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const dict={
+en:{
+concept:'One workspace, shaped for your platform.',light:'Light',dark:'Dark',sample:'Design prototype · sample data',personal:'Personal workspace',workspace:'WORKSPACE',build:'Build',extract:'Extract',converters:'Converters',data:'DATA & LANGUAGE',database:'Database',morphology:'Morphology',inspect:'INSPECT',tools:'Dictionary Tools',jobs:'Jobs',settings:'Settings',local:'Your files. Your computer.',
+buildTitle:'Build dictionary',buildLead:'From source files to something worth looking up.',extractTitle:'Extract dictionary',extractLead:'Bring entries and resources back into your workspace.',convertersLead:'Prepare source data before building your dictionary.',toolsLead:'Inspect the meaning, the markup and the details.',databaseLead:'Organize and review dictionary records.',morphologyLead:'Prepare word forms and language rules.',jobsSubtitle:'Your work continues in the background.',
+source:'Source',stepOne:'01 / Choose input',choose:'Choose…',sourceHint:'Demo selection. Your files are not read or uploaded.',dictionary:'Dictionary',stepTwo:'02 / Configure output',name:'Name',format:'Format',encoding:'Encoding',destination:'Save to',advanced:'More options',advancedText:'The final app will expose metadata, stylesheet and compression settings here. This prototype demonstrates the layout.',
+demoNote:'Simulated operation · no output files',output:'Output',location:'Location',localFolder:'Local folder',duplicates:'Keep duplicate entries',metadata:'Preserve dictionary metadata',background:'Work in the background',summaryNote:'A quiet place for output details, without crowding your working area.',
+sampleEntries:'SAMPLE ENTRIES',rendered:'Rendered',split:'Split',html:'HTML',original:'Original',paper:'Paper simulation',darkPreview:'Dark simulation',details:'Details',chooseConverter:'Choose a converter',converterLead:'A dedicated starting point for each source format.',converterNote:'Open a sample conversion setup',planned:'This workspace is a layout proposal. Its actions are not connected in this prototype.',recent:'Recent jobs',jobsLead:'Progress stays visible while you move between workspaces.',cancel:'Cancel',done:'Done',ready:'Ready',prototype:'Interactive concept · all processing is simulated',search:'Find a headword…',noMatch:'No matching sample entries.',
+textSource:'Sample dictionary source · UTF-8',archiveSource:'Sample archive · MDX v2',convertSource:'Sample source · ',dictionaryKind:'MDict v2 dictionary',resourcesKind:'MDict resource archive',exportKind:'Exported working files',resources:'Resources folder',buildAction:'Build dictionary',extractAction:'Extract dictionary',convertAction:'Convert source',convertTitle:'Convert source',
+duplicate:'Duplicate entry',entry:'Dictionary entry',arabic:'Arabic example',running:'In progress',complete:'Complete',cancelled:'Cancelled',emptyJobs:'No jobs yet. Start a sample build to see progress here.',jobNote:'Simulated operation · no files written',preparing:'Preparing source…',processing:'Processing sample…',verifying:'Verifying sample…',finished:'Demo complete. No output files were created.',stopped:'Demo cancelled.',
+settingsText:'Use the controls above the window to compare platform styling, language and app appearance.\n\nDictionary Tools has an independent preview appearance. Platform buttons only simulate visual differences; they do not change your operating system.',
+detailsText:'Static sample content is rendered in a sandboxed iframe.\n\nOriginal keeps the sample styling. Paper and Dark deliberately simulate an appearance override.\n\nThis prototype does not open real MDX or MDD files.',
+folderText:'Sample destination:\nDocuments / Dictionaries\n\nNo folders or files are created.',
+db1:'Import entries',db2:'Browse and filter records',db3:'Export a selection',m1:'Choose a word list',m2:'Configure language rules',m3:'Review generated forms'
+},
+zh:{
+concept:'同一工作区，适配你的平台。',light:'浅色',dark:'深色',sample:'设计原型 · 示例数据',personal:'个人工作区',workspace:'工作区',build:'构建',extract:'提取',converters:'转换器',data:'数据与语言',database:'数据库',morphology:'词形处理',inspect:'检查',tools:'词典工具',jobs:'任务',settings:'设置',local:'你的文件，你的电脑。',
+buildTitle:'构建词典',buildLead:'将源文件整理为值得查阅的词典。',extractTitle:'提取词典',extractLead:'将词条和资源导出到工作区。',convertersLead:'构建词典之前，先整理源数据。',toolsLead:'检查释义、源码与词条详情。',databaseLead:'整理和检查词典记录。',morphologyLead:'处理词形与语言规则。',jobsSubtitle:'任务在后台继续进行。',
+source:'源文件',stepOne:'01 / 选择输入',choose:'选择…',sourceHint:'仅演示选择，不读取或上传文件。',dictionary:'词典',stepTwo:'02 / 配置输出',name:'名称',format:'格式',encoding:'编码',destination:'保存到',advanced:'更多选项',advancedText:'正式应用将在此提供元数据、样式表和压缩设置。本原型展示界面布局。',
+demoNote:'模拟操作 · 不生成文件',output:'输出',location:'位置',localFolder:'本地文件夹',duplicates:'保留重复词条',metadata:'保留词典元数据',background:'后台处理',summaryNote:'集中查看输出详情，让工作区保持简洁。',
+sampleEntries:'示例词条',rendered:'渲染',split:'分栏',html:'HTML',original:'原始样式',paper:'纸张模拟',darkPreview:'深色模拟',details:'详情',chooseConverter:'选择转换器',converterLead:'为每种源格式提供专用入口。',converterNote:'打开示例转换设置',planned:'此工作区仅展示布局，操作尚未连接。',recent:'最近任务',jobsLead:'切换工作区时，仍可查看任务进度。',cancel:'取消',done:'完成',ready:'就绪',prototype:'交互概念 · 所有处理均为模拟',search:'查找词条…',noMatch:'没有匹配的示例词条。',
+textSource:'示例词典源文件 · UTF-8',archiveSource:'示例词典 · MDX v2',convertSource:'示例来源 · ',dictionaryKind:'MDict v2 词典',resourcesKind:'MDict 资源文件',exportKind:'导出的工作文件',resources:'资源文件夹',buildAction:'构建词典',extractAction:'提取词典',convertAction:'转换源文件',convertTitle:'转换源文件',
+duplicate:'重复词条',entry:'词典词条',arabic:'阿拉伯语示例',running:'进行中',complete:'已完成',cancelled:'已取消',emptyJobs:'暂无任务。开始示例构建以查看进度。',jobNote:'模拟操作 · 未写入文件',preparing:'准备源文件…',processing:'处理示例…',verifying:'验证示例…',finished:'演示完成，未创建输出文件。',stopped:'演示已取消。',
+settingsText:'使用窗口上方的控件比较平台样式、语言和界面外观。\n\n词典工具可单独设置预览外观。平台选项仅模拟视觉差异，不会改变操作系统。',
+detailsText:'静态示例内容显示在沙箱 iframe 中。\n\n原始模式保留示例样式。纸张和深色模式模拟外观覆盖。\n\n本原型不会打开真实 MDX 或 MDD 文件。',
+folderText:'示例保存位置：\nDocuments / Dictionaries\n\n不会创建文件或文件夹。',
+db1:'导入词条',db2:'浏览和筛选记录',db3:'导出选定记录',m1:'选择词表',m2:'配置语言规则',m3:'检查生成的词形'
+},
+ar:{
+concept:'مساحة عمل واحدة، بمظهر يناسب منصتك.',light:'فاتح',dark:'داكن',sample:'نموذج تصميم · بيانات تجريبية',personal:'مساحة عمل شخصية',workspace:'مساحة العمل',build:'إنشاء',extract:'استخراج',converters:'المحوّلات',data:'البيانات واللغة',database:'قاعدة البيانات',morphology:'الصرف',inspect:'الفحص',tools:'أدوات القاموس',jobs:'المهام',settings:'الإعدادات',local:'ملفاتك، على جهازك.',
+buildTitle:'إنشاء قاموس',buildLead:'من ملفات المصدر إلى قاموس يستحق الرجوع إليه.',extractTitle:'استخراج قاموس',extractLead:'أعد المداخل والموارد إلى مساحة عملك.',convertersLead:'جهّز البيانات قبل إنشاء القاموس.',toolsLead:'افحص المعنى والتنسيق والتفاصيل.',databaseLead:'نظّم سجلات القاموس وراجعها.',morphologyLead:'جهّز صيغ الكلمات وقواعد اللغة.',jobsSubtitle:'يستمر عملك في الخلفية.',
+source:'المصدر',stepOne:'٠١ / اختيار المدخلات',choose:'اختيار…',sourceHint:'اختيار تجريبي. لا تُقرأ الملفات ولا تُرفع.',dictionary:'القاموس',stepTwo:'٠٢ / إعداد المخرجات',name:'الاسم',format:'الصيغة',encoding:'الترميز',destination:'حفظ في',advanced:'خيارات إضافية',advancedText:'سيوفر التطبيق النهائي إعدادات البيانات الوصفية والأنماط والضغط هنا. يوضح النموذج التخطيط.',
+demoNote:'عملية تجريبية · لا ملفات ناتجة',output:'المخرجات',location:'الموقع',localFolder:'مجلد محلي',duplicates:'حفظ المداخل المكررة',metadata:'حفظ بيانات القاموس الوصفية',background:'العمل في الخلفية',summaryNote:'مكان هادئ لتفاصيل المخرجات دون ازدحام مساحة العمل.',
+sampleEntries:'مداخل تجريبية',rendered:'العرض',split:'تقسيم',html:'HTML',original:'المظهر الأصلي',paper:'محاكاة الورق',darkPreview:'محاكاة داكنة',details:'التفاصيل',chooseConverter:'اختر محوّلًا',converterLead:'نقطة بداية مخصصة لكل صيغة مصدر.',converterNote:'فتح إعداد تحويل تجريبي',planned:'هذه مساحة مقترحة للتصميم. الإجراءات غير متصلة في هذا النموذج.',recent:'المهام الأخيرة',jobsLead:'يبقى التقدم ظاهرًا أثناء التنقل بين مساحات العمل.',cancel:'إلغاء',done:'تم',ready:'جاهز',prototype:'نموذج تفاعلي · جميع العمليات محاكاة',search:'ابحث عن مدخل…',noMatch:'لا توجد مداخل تجريبية مطابقة.',
+textSource:'مصدر قاموس تجريبي · UTF-8',archiveSource:'قاموس تجريبي · MDX v2',convertSource:'مصدر تجريبي · ',dictionaryKind:'قاموس MDict v2',resourcesKind:'ملف موارد MDict',exportKind:'ملفات عمل مُصدَّرة',resources:'مجلد موارد',buildAction:'إنشاء القاموس',extractAction:'استخراج القاموس',convertAction:'تحويل المصدر',convertTitle:'تحويل المصدر',
+duplicate:'مدخل مكرر',entry:'مدخل قاموسي',arabic:'مثال عربي',running:'قيد التنفيذ',complete:'مكتمل',cancelled:'ملغى',emptyJobs:'لا توجد مهام بعد. ابدأ إنشاءً تجريبيًا لمشاهدة التقدم.',jobNote:'عملية تجريبية · لم تُكتب ملفات',preparing:'جارٍ تجهيز المصدر…',processing:'جارٍ معالجة المثال…',verifying:'جارٍ التحقق من المثال…',finished:'اكتملت المحاكاة. لم تُنشأ ملفات.',stopped:'أُلغيت المحاكاة.',
+settingsText:'استخدم عناصر التحكم أعلى النافذة لمقارنة أنماط المنصات واللغة ومظهر التطبيق.\n\nلمعاينة القاموس مظهر مستقل. خيارات المنصة تحاكي الشكل فقط ولا تغيّر نظام التشغيل.',
+detailsText:'يُعرض المحتوى التجريبي الثابت داخل إطار معزول.\n\nيحفظ الوضع الأصلي تنسيق المثال. الورق والوضع الداكن يحاكيان تغيير المظهر.\n\nلا يفتح النموذج ملفات MDX أو MDD حقيقية.',
+folderText:'موقع حفظ تجريبي:\nDocuments / Dictionaries\n\nلا تُنشأ ملفات أو مجلدات.',
+db1:'استيراد المداخل',db2:'تصفح السجلات وتصفيتها',db3:'تصدير مجموعة مختارة',m1:'اختيار قائمة كلمات',m2:'إعداد قواعد اللغة',m3:'مراجعة الصيغ المولّدة'
+}};
+let lang='en',page='build',selected=0,layout='render',converter='CC-CEDICT',busy=false,progress=0,job=null,timer;
+const chosenFiles={};
+const t=k=>dict[lang][k]||dict.en[k]||k;
+const entries=[
+{word:'臺北',pron:'tái běi',type:'entry',id:88310,body:'城市名。位於臺灣北部臺北盆地。',example:'沿著河岸，慢慢認識這座城市。'},
+{word:'臺北',pron:'tái běi',type:'duplicate',id:88311,body:'臺灣北部城市。本記錄示範同名詞條的獨立保存。',example:'相同標題，不同記錄。'},
+{word:'字',pron:'zì',type:'entry',id:88320,body:'記錄語言的書寫符號。',example:'一字一句，皆有其意。'},
+{word:'كتاب',pron:'kitāb',type:'arabic',id:90001,body:'مؤلَّف مكتوب يجمع المعرفة أو القصص بين دفّتيه.',example:'قرأتُ كتابًا عن اللغة والثقافة.'}
+];
+const converterNames=['CC-CEDICT','MOE Concise','MOE Mini','MOE Idioms','MOE Revised','MOE Revised WFG'];
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function dialog(title,text){$('#dialogTitle').textContent=title;$('#dialogText').textContent=text;$('#dialog').showModal()}
+function toast(text){$('#toast').textContent=text;$('#toast').hidden=false;clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('#toast').hidden=true,3500)}
+function formPage(){return ['build','extract','conversion'].includes(page)}
+
+function setPage(next){
+page=next;
+if(formPage()){
+const vals=page==='extract'?['TXT','Resources']:page==='conversion'?['TXT','MDX']:['MDX','MDD'];
+$('#format').replaceChildren(...vals.map(v=>{const o=document.createElement('option');o.value=v;o.textContent=v==='Resources'?t('resources'):v;return o}));
+}
+render();
+}
+function render(){
+document.documentElement.lang=lang==='zh'?'zh-Hans':lang;
+document.documentElement.dir=lang==='ar'?'rtl':'ltr';
+$$('[data-t]').forEach(e=>e.textContent=t(e.dataset.t));
+$$('[data-page]').forEach(b=>{b.classList.toggle('active',b.dataset.page===page||(page==='conversion'&&b.dataset.page==='converters'));b.setAttribute('aria-label',t(b.dataset.page));b.title=t(b.dataset.page);if(b.classList.contains('active'))b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});
+$('#heading').textContent=page==='build'?t('buildTitle'):page==='extract'?t('extractTitle'):page==='conversion'?t('convertTitle'):t(page);
+$('#subtitle').textContent=page==='build'?t('buildLead'):page==='extract'?t('extractLead'):page==='conversion'?converter:page==='jobs'?t('jobsSubtitle'):t(page+'Lead');
+$('#topTag').textContent=page==='tools'?'MDX + MDD':page==='conversion'?converter:'MDX / MDD';
+$('#formView').hidden=!formPage();
+$('#toolsView').hidden=page!=='tools';
+$('#convertersView').hidden=page!=='converters';
+$('#otherView').hidden=!['database','morphology'].includes(page);
+$('#jobsView').hidden=page!=='jobs';
+$('#status').textContent=t(busy?'running':'ready');
+$('#search').placeholder=t('search');$('#search').setAttribute('aria-label',t('search'));
+if(formPage()){
+$('#filename').textContent=chosenFiles[page]||(page==='extract'?'Mandarin Notes.mdx':page==='conversion'?converter+'.xlsx':'Mandarin Notes.txt');
+$('#filehint').textContent=page==='extract'?t('archiveSource'):page==='conversion'?t('convertSource')+converter:t('textSource');
+$('#run').textContent=t(page==='conversion'?'convertAction':page+'Action');
+$('#fields').disabled=busy;$('#choose').disabled=busy;$('#run').disabled=busy;
+const resource=$('#format option[value="Resources"]');if(resource)resource.textContent=t('resources');
+updateOutput();
+}
+$('#otherHeading').textContent=t(page);
+$('#otherRows').replaceChildren();
+if(['database','morphology'].includes(page)){
+const keys=page==='database'?['db1','db2','db3']:['m1','m2','m3'];
+keys.forEach((key,i)=>{const row=document.createElement('div');row.className='field';const num=document.createElement('span'),text=document.createElement('span');num.textContent='0'+(i+1);num.style.color='var(--muted)';text.textContent=t(key);row.append(num,text);$('#otherRows').append(row)});
+}
+renderConverters();renderWords();renderEntry();renderJobs();if(busy)renderProgress();
+}
+function updateOutput(){
+const fmt=$('#format').value||'MDX',name=$('#name').value.trim()||'Untitled';
+$('#outputName').textContent=name+(fmt==='Resources'?' / resources':'.'+fmt.toLowerCase());
+$('#outputKind').textContent=t(page==='extract'?'exportKind':fmt==='MDD'?'resourcesKind':'dictionaryKind');
+$('#formatSummary').textContent=fmt==='Resources'?t('resources'):fmt+(fmt==='MDX'?' v2':'');
+$('#encodingRow').hidden=page==='extract'||fmt==='MDD';
+$('#encodingSummary').textContent=fmt==='Resources'?'—':fmt==='MDD'?'UTF-16':$('#encoding').value;
+}
+function renderConverters(){
+$('#convertergrid').replaceChildren();
+converterNames.forEach(name=>{
+const b=document.createElement('button');b.className='converter';
+b.innerHTML='<svg aria-hidden="true"><use href="#convert"/></svg>';
+const strong=document.createElement('strong'),small=document.createElement('small');
+strong.textContent=name;small.textContent=t('converterNote');b.append(strong,small);
+b.onclick=()=>{converter=name;setPage('conversion')};$('#convertergrid').append(b);
+});
+}
+function renderWords(){
+const q=$('#search').value.toLowerCase().trim();
+$('#wordlist').replaceChildren();
+const matches=entries.map((e,i)=>({e,i})).filter(({e})=>(e.word+' '+e.pron+' '+e.body).toLowerCase().includes(q));
+if(!matches.length){const p=document.createElement('p');p.className='note';p.textContent=t('noMatch');$('#wordlist').append(p)}
+matches.forEach(({e,i})=>{
+const b=document.createElement('button');b.className='word'+(selected===i?' active':'');b.setAttribute('aria-pressed',String(selected===i));
+const title=document.createElement('bdi'),small=document.createElement('small'),strong=document.createElement('b');
+strong.textContent=e.word;title.append(strong);small.textContent=t(e.type)+' · #'+e.id;b.append(title,small);
+b.onclick=()=>{selected=i;renderWords();renderEntry()};$('#wordlist').append(b);
+});
+}
+function renderEntry(){
+const e=entries[selected],arabic=e.type==='arabic';
+const title=e.word==='臺北'?'<ruby>臺<rt>ㄊㄞˊ</rt></ruby><ruby>北<rt>ㄅㄟˇ</rt></ruby>':esc(e.word);
+const html='<article lang="'+(arabic?'ar':'zh-Hant')+'" dir="'+(arabic?'rtl':'ltr')+'">\n  <h1>'+title+'</h1>\n  <p class="pron">'+esc(e.pron)+'</p>\n  <p class="definition">'+esc(e.body)+'</p>\n  <blockquote>'+esc(e.example)+'</blockquote>\n</article>';
+$('#html').textContent=html;$('#record').textContent=t(e.type)+' · #'+e.id;
+const mode=$('#sheet').value,bg=mode==='dark'?'#202a38':mode==='paper'?'#faf6ed':'#fff',ink=mode==='dark'?'#e3ebf7':'#374257',muted=mode==='dark'?'#9cacbf':'#8a95a5';
+$('#preview').title=t('rendered')+' — '+e.word;
+$('#preview').srcdoc='<!doctype html><html><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src \'none\'; style-src \'unsafe-inline\'; base-uri \'none\'; form-action \'none\'"><style>body{margin:0;background:'+bg+';color:'+ink+';font:18px/2 Georgia,serif}article{padding:40px 34px;max-width:640px;margin:auto}h1{font-size:54px;font-weight:400;line-height:1.8;letter-spacing:4px;margin:30px 0 7px}rt{font-size:12px;color:'+muted+';letter-spacing:0}.pron{font:13px sans-serif;color:#6d94c2;margin:0 0 37px;direction:ltr}.definition{margin:0 0 28px}blockquote{font-size:15px;margin:0;border-inline-start:2px solid #9aaacb55;padding:3px 17px;color:'+muted+'}article[dir=rtl] h1{letter-spacing:0}article[dir=rtl] .definition{font-size:23px}article[dir=rtl] blockquote{font-size:20px}</style></head><body>'+html+'</body></html>';
+}
+function setLayout(value){
+layout=value;$('#previewarea').classList.toggle('split',value==='split');
+$('#preview').hidden=value==='source';$('#html').hidden=value==='render';
+$$('[data-layout]').forEach(b=>{b.classList.toggle('active',b.dataset.layout===value);b.setAttribute('aria-pressed',String(b.dataset.layout===value))});
+}
+function renderJobs(){
+$('#joblist').replaceChildren();
+if(!job){const p=document.createElement('div');p.className='empty';p.textContent=t('emptyJobs');$('#joblist').append(p);return}
+const card=document.createElement('div');card.className='jobcard';
+const left=document.createElement('div'),title=document.createElement('b'),small=document.createElement('small'),state=document.createElement('span');
+title.textContent=job.name;small.textContent=t('jobNote');state.className='jobstate';state.textContent=t(job.state);left.append(title,small);card.append(left,state);$('#joblist').append(card);
+}
+function renderProgress(){
+$('#progressText').textContent=t(progress<25?'preparing':progress<80?'processing':'verifying');
+$('#percent').textContent=progress+'%';$('#fill').style.width=progress+'%';
+}
+function run(){
+if(busy)return;
+if(!$('#name').value.trim()){$('#name').focus();return}
+job={name:$('#outputName').textContent,state:'running'};busy=true;progress=0;$('#jobbar').hidden=false;render();
+timer=setInterval(()=>{progress=Math.min(100,progress+4);renderProgress();if(progress===100)finish('complete')},140);
+}
+function finish(state){clearInterval(timer);busy=false;job.state=state;$('#jobbar').hidden=true;render();toast(t(state==='complete'?'finished':'stopped'))}
+
+$$('[data-page]').forEach(b=>b.onclick=()=>setPage(b.dataset.page));
+$$('[data-layout]').forEach(b=>b.onclick=()=>setLayout(b.dataset.layout));
+$('#language').onchange=e=>{lang=e.target.value;render()};
+$('#theme').onchange=e=>document.documentElement.dataset.theme=e.target.value;
+$('#platform').onchange=e=>document.documentElement.dataset.os=e.target.value;
+$('#name').oninput=updateOutput;$('#format').onchange=updateOutput;$('#encoding').onchange=updateOutput;
+$('#choose').onclick=()=>{$('#fileInput').value='';$('#fileInput').click()};
+$('#fileInput').onchange=e=>{if(e.target.files[0]){chosenFiles[page]=e.target.files[0].name;render()}};
+$('#folder').onclick=()=>dialog(t('destination'),t('folderText'));
+$('#run').onclick=run;$('#cancel').onclick=()=>finish('cancelled');
+$('#search').oninput=renderWords;$('#sheet').onchange=renderEntry;
+$('#settings').onclick=()=>dialog(t('settings'),t('settingsText'));
+$('#inspectButton').onclick=()=>dialog(t('details'),t('detailsText'));
+$('#close').onclick=()=>$('#dialog').close();
+document.addEventListener('keydown',e=>{
+if(e.isComposing||$('#dialog').open)return;
+if((e.metaKey||e.ctrlKey)&&e.key==='Enter'&&formPage()){e.preventDefault();run()}
+if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='f'&&page==='tools'){e.preventDefault();$('#search').focus()}
+});
+document.documentElement.dataset.os='macos';setLayout('render');setPage('build');
+</script>
+</body>
+</html>

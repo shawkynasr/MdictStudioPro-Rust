@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-06",
+  "converter": "cc_cedict",
+  "archive": {
+    "archive": "cedict_1_0_ts_utf-8_mdbg.zip",
+    "archive_sha256": "5b6db884de36cf04ac3be268d758cd4512ba3a487c1775348ba8e18ea8f0e25f",
+    "library_file_id": "libfile_0e43eb2fb6c081919478f232a5a1a340",
+    "member": "cedict_ts.u8",
+    "source_bytes": 9871744,
+    "source_sha256": "ff107587bc1d593dd5d7a49c179d4aa749cb89b3a1423876e0cd2dca197b672b"
+  },
+  "primary_entries": 125369,
+  "traditional_entries": 77993,
+  "comments_count": 30,
+  "skipped_lines": 0,
+  "expected_entries": 203362,
+  "expected_file_bytes": 76339785,
+  "raw_python_output_sha256": "230bf65b44b1e48314afcae4eaccd6002f5ab232d0fb4ff790a00e66250f84e5",
+  "record_digest": {
+    "records": 203362,
+    "key_bytes": 1633931,
+    "payload_bytes": 73485682,
+    "framed_records_sha256": "5e9a4cd62babf894bfb631195f4f5707453ba8dbbfe4fa64528c60376d4507b7"
+  },
+  "legacy_oracle_sha256": {
+    "baseline/legacy/base_plugin.py": "0620c3d88502191b4b297c918394cc9ae886e943e83b06bf377fa1284b044b49",
+    "baseline/legacy/excel_utils.py": "b0a837e2197a5d0d42599171716b903ef813dc52512e55c1ccbe93f2f0bd2302",
+    "baseline/legacy/plugins/cccedict_plugin.py": "4c3fc461a044e702678ce7fbf0e2b251969d5932c4bf2d2070d6f58c2eeb139c",
+    "baseline/legacy/plugins/edudict_plugin.py": "2505bdaf5733f905d8fba1f68dd22e1c7b123484599d1f18bcf7c6cb576aa923",
+    "baseline/legacy/plugins/WFG_desgin_Plugin.py": "9d476ee0fb38603c7b6e6634c9987ab7a26077dbf15357718e9e93293da09ba2",
+    "baseline/legacy/plugins/concise_plugin.py": "25b37d4f801e4ddfef03557a54fa8a20ad5bbbac79f8eddc19135ae6562abc6a",
+    "baseline/legacy/plugins/idiom_plugin.py": "53dce8296c31f92c1e83a4cb7f2773c7e97d6ae85f00811724a11adf83768bc1",
+    "baseline/legacy/plugins/mini_plugin.py": "aca858af532a8f409b5b55d6d3632b63466d8d67af910390f65e3623561c00f5"
+  },
+  "comparison": "Exact raw canonical TXT bytes, entry order and all definitions; no normalization",
+  "native_run": false
+}

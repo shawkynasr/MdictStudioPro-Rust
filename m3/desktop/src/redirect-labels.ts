@@ -1,0 +1,5 @@
+import type {Locale} from './i18n';
+const en={follow:'Follow redirect',source:'Stored source',definition:'Resolved definition',targets:'Target records',chain:'Redirect chain',following:'Following redirect…',error:'Redirect failed:',hint:'Uses this reader’s lookup policy. Duplicate targets stay separate. Limits: 16 hops, 256 results, 4,096 visits; failures return no partial definitions.'};
+const zh:Record<keyof typeof en,string>={follow:'跟随重定向',source:'原始正文',definition:'目标释义',targets:'目标条目',chain:'重定向链',following:'正在解析重定向…',error:'重定向失败：',hint:'使用当前阅读器的查询规则，保留重复目标。上限：16 跳、256 个结果、4,096 次访问；失败时不返回部分释义。'};
+const ar:Record<keyof typeof en,string>={follow:'تتبّع الإحالة',source:'النص المخزّن',definition:'التعريف المستهدف',targets:'المداخل المستهدفة',chain:'سلسلة الإحالات',following:'جارٍ تتبّع الإحالة…',error:'تعذّر تتبّع الإحالة:',hint:'يستخدم سياسة البحث للقاموس المفتوح ويحافظ على المداخل المكررة منفصلة. الحدود: 16 خطوة، و256 نتيجة، و4,096 زيارة. لا تُعرض تعريفات جزئية عند الفشل.'};
+export const redirectLabel=(locale:Locale,key:keyof typeof en)=>(locale==='ar'?ar:locale==='zh'?zh:en)[key];

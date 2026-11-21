@@ -1,0 +1,31 @@
+{
+  "worksheet": "辭典匯出_1150929",
+  "headers": [
+    "字詞名",
+    "字詞號",
+    "部首字",
+    "總筆畫數",
+    "部首外筆畫數",
+    "多音排序",
+    "注音一式",
+    "變體類型 1:變 2:又音 3:語音 4:讀音",
+    "變體注音",
+    "漢語拼音",
+    "變體漢語拼音",
+    "相似詞",
+    "相反詞",
+    "釋義",
+    "多音參見訊息"
+  ],
+  "scanned_data_rows": 45178,
+  "skipped_blank_rows": 0,
+  "normalized_charge_bytes": 17958342,
+  "row_digest": {
+    "rows": 45178,
+    "pairs": 677670,
+    "key_bytes": 9487380,
+    "value_bytes": 8470752,
+    "framed_rows_sha256": "98ab6f54f1a6500a3de22953b53af034ac3c0448675f0eed241347a4cb5de0a0"
+  },
+  "source_sha256": "af2e9ba3655799080e0f7214646bde11ca5cc5e16226bca1e9a461285e05eec6"
+}

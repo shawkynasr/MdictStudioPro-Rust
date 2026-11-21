@@ -1,0 +1,23 @@
+[workspace]
+members = ["."]
+resolver = "2"
+
+[package]
+name = "studio-large-io"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+libc = "=0.2.191"
+mdictlib = { version = "=0.2.8", features = ["lzo"] }
+quick-xml = "=0.38.3"
+serde = { version = "=1.0.229", features = ["derive"] }
+serde_json = "=1.0.154"
+studio-application = { path = "../application" }
+studio-core = { path = "../studio-core" }
+studio-v2-import = { path = "../v2-import" }
+tempfile = "=3.27.0"
+
+[patch.crates-io]
+mdictlib = { path = "../../vendor/mdictlib-0.2.8-studio-sort-v6" }

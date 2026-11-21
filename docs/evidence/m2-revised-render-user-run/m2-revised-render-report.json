@@ -1,0 +1,1820 @@
+{
+  "status": "full_Revised_and_WFG_grouped_TXT_publication_passed_application_integration_pending",
+  "stage": "complete",
+  "M2_complete": false,
+  "application_background_integration_qualified": false,
+  "native_readers": "NOT_REQUESTED",
+  "steps": [
+    {
+      "name": "grouped-render-tests",
+      "returncode": 0
+    },
+    {
+      "name": "build-release-grouped-render",
+      "returncode": 0
+    }
+  ],
+  "checks": [
+    {
+      "case": "small-moe_revised",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2/revised-render/tests/fixtures/groups.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/small-moe_revised.txt",
+        "converter": "moe_revised",
+        "worksheet": null
+      },
+      "returncode": 0,
+      "reply": {
+        "late_cancel_observed": false,
+        "progress_phases": [
+          "append_record",
+          "before_publish",
+          "begin",
+          "index_rows",
+          "normalize_rows",
+          "package_preflight",
+          "published",
+          "render_group",
+          "rows_complete",
+          "shared_strings",
+          "snapshot",
+          "verify_output",
+          "verify_rows"
+        ],
+        "receipt": {
+          "alias_redirects": 8,
+          "body_bytes": 13884,
+          "converter": "moe_revised",
+          "decoded_bytes": 13956,
+          "entries": 13,
+          "file_bytes": 14034,
+          "file_sha256": "8577b5ea693c44ab286d54b3a044a8e7ef98f53522d5c377520c572564cf244a",
+          "framed_records_sha256": "d6f19371fe9a5c557c425bf827c25a519e284b4128bfb01767afe87c408e0480",
+          "groups": 5,
+          "index_charge_bytes": 67894,
+          "input_rows": 17,
+          "key_bytes": 72,
+          "largest_group_input_bytes": 13164,
+          "largest_group_rows": 11,
+          "primary_entries": 5,
+          "profile": "moe-grouped-disk-rows-txt-v1",
+          "row_source": {
+            "advertised_expansion_bytes": 57617,
+            "declared_columns": 39,
+            "declared_rows": 18,
+            "headers": [
+              "字詞名",
+              "單字",
+              "成語",
+              "多音排序",
+              "字數",
+              "部首字",
+              "部首",
+              "部首外筆畫數",
+              "部首外筆畫",
+              "總筆畫數",
+              "注音一式",
+              "注音",
+              "漢語拼音",
+              "變體注音",
+              "變體漢語拼音",
+              "變體類型 1:變 2:又音 3:語音 4:讀音",
+              "釋義",
+              "解釋",
+              "相似詞",
+              "相反詞",
+              "多音參見訊息",
+              "異體字",
+              "辭條別名",
+              "主條成語／非主條成語",
+              "編號",
+              "典源文獻名稱",
+              "典源文獻內容",
+              "典源注解",
+              "典故說明",
+              "書證",
+              "用法說明-語義說明",
+              "用法說明-使用類別",
+              "用法說明-例句",
+              "辨識-同",
+              "辨識-異",
+              "辨識-例句",
+              "近義成語",
+              "反義成語",
+              "參考詞語"
+            ],
+            "largest_advertised_part_bytes": 41611,
+            "normalized_charge_bytes": 16970,
+            "parts": 9,
+            "profile": "moe-disk-rows-general-numeric-v1",
+            "row_digest": {
+              "framed_rows_sha256": "c369b46537897fecfe3bb55af3ff42ecd26c0e6f1d354292ae7154575510fe2e",
+              "key_bytes": 8721,
+              "pairs": 663,
+              "rows": 17,
+              "value_bytes": 7736
+            },
+            "row_spool_bytes": 20679,
+            "scanned_data_rows": 17,
+            "shared_index_bytes": 0,
+            "shared_index_reserved_bytes": 0,
+            "shared_string_bytes": 0,
+            "shared_strings": 0,
+            "skipped_blank_rows": 0,
+            "source_sha256": "3764c3f2bedaf81b82a436f612f6141bdd20fd3970afaeed2d798fbe3d75f245",
+            "stored_cells": 494,
+            "temporary_bytes": 28883,
+            "worksheet": "Sheet"
+          },
+          "skipped_rows": 1,
+          "source_sha256": "3764c3f2bedaf81b82a436f612f6141bdd20fd3970afaeed2d798fbe3d75f245",
+          "temporary_file_peak_bytes": 42917,
+          "worksheet": "Sheet"
+        },
+        "status": "succeeded"
+      },
+      "peak_RSS_bytes": 1769472,
+      "output_sha256": "8577b5ea693c44ab286d54b3a044a8e7ef98f53522d5c377520c572564cf244a",
+      "raw_record_digest": {
+        "records": 13,
+        "key_bytes": 72,
+        "payload_bytes": 13884,
+        "framed_records_sha256": "d6f19371fe9a5c557c425bf827c25a519e284b4128bfb01767afe87c408e0480"
+      },
+      "python_output_sha256": "12a731c828eadd145c9f327d6b701e2a143258f77a2ec246269286e389f6008b",
+      "normalized_record_digest": {
+        "records": 13,
+        "key_bytes": 72,
+        "payload_bytes": 13884,
+        "framed_records_sha256": "89bf16d2fddf267107c1fb7d18d6988ee3b315ee88075c88cc4e2795ea081e00"
+      },
+      "raw_python_bytes_equal": false,
+      "records_compared": 13
+    },
+    {
+      "case": "moe_revised-cancel-index_rows",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2/revised-render/tests/fixtures/groups.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/moe_revised-cancel-index_rows.txt",
+        "converter": "moe_revised",
+        "worksheet": null,
+        "cancel_phase": "index_rows"
+      },
+      "returncode": 1,
+      "reply": {
+        "error": {
+          "code": "cancelled",
+          "message": "Conversion cancelled before publication"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 1511424
+    },
+    {
+      "case": "moe_revised-cancel-render_group",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2/revised-render/tests/fixtures/groups.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/moe_revised-cancel-render_group.txt",
+        "converter": "moe_revised",
+        "worksheet": null,
+        "cancel_phase": "render_group"
+      },
+      "returncode": 1,
+      "reply": {
+        "error": {
+          "code": "cancelled",
+          "message": "Conversion cancelled before publication"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 1949696
+    },
+    {
+      "case": "moe_revised-cancel-append_record",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2/revised-render/tests/fixtures/groups.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/moe_revised-cancel-append_record.txt",
+        "converter": "moe_revised",
+        "worksheet": null,
+        "cancel_phase": "append_record"
+      },
+      "returncode": 1,
+      "reply": {
+        "error": {
+          "code": "cancelled",
+          "message": "Conversion cancelled before publication"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 1683456
+    },
+    {
+      "case": "moe_revised-cancel-verify_output",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2/revised-render/tests/fixtures/groups.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/moe_revised-cancel-verify_output.txt",
+        "converter": "moe_revised",
+        "worksheet": null,
+        "cancel_phase": "verify_output"
+      },
+      "returncode": 1,
+      "reply": {
+        "error": {
+          "code": "cancelled",
+          "message": "Conversion cancelled before publication"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 1794048
+    },
+    {
+      "case": "moe_revised-cancel-before_publish",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2/revised-render/tests/fixtures/groups.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/moe_revised-cancel-before_publish.txt",
+        "converter": "moe_revised",
+        "worksheet": null,
+        "cancel_phase": "before_publish"
+      },
+      "returncode": 1,
+      "reply": {
+        "error": {
+          "code": "cancelled",
+          "message": "Conversion cancelled before publication"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 1765376
+    },
+    {
+      "case": "moe_revised-late-cancel",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2/revised-render/tests/fixtures/groups.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/moe_revised-late-cancel.txt",
+        "converter": "moe_revised",
+        "worksheet": null,
+        "cancel_phase": "published"
+      },
+      "returncode": 0,
+      "reply": {
+        "late_cancel_observed": true,
+        "progress_phases": [
+          "append_record",
+          "before_publish",
+          "begin",
+          "index_rows",
+          "normalize_rows",
+          "package_preflight",
+          "published",
+          "render_group",
+          "rows_complete",
+          "shared_strings",
+          "snapshot",
+          "verify_output",
+          "verify_rows"
+        ],
+        "receipt": {
+          "alias_redirects": 8,
+          "body_bytes": 13884,
+          "converter": "moe_revised",
+          "decoded_bytes": 13956,
+          "entries": 13,
+          "file_bytes": 14034,
+          "file_sha256": "8577b5ea693c44ab286d54b3a044a8e7ef98f53522d5c377520c572564cf244a",
+          "framed_records_sha256": "d6f19371fe9a5c557c425bf827c25a519e284b4128bfb01767afe87c408e0480",
+          "groups": 5,
+          "index_charge_bytes": 67894,
+          "input_rows": 17,
+          "key_bytes": 72,
+          "largest_group_input_bytes": 13164,
+          "largest_group_rows": 11,
+          "primary_entries": 5,
+          "profile": "moe-grouped-disk-rows-txt-v1",
+          "row_source": {
+            "advertised_expansion_bytes": 57617,
+            "declared_columns": 39,
+            "declared_rows": 18,
+            "headers": [
+              "字詞名",
+              "單字",
+              "成語",
+              "多音排序",
+              "字數",
+              "部首字",
+              "部首",
+              "部首外筆畫數",
+              "部首外筆畫",
+              "總筆畫數",
+              "注音一式",
+              "注音",
+              "漢語拼音",
+              "變體注音",
+              "變體漢語拼音",
+              "變體類型 1:變 2:又音 3:語音 4:讀音",
+              "釋義",
+              "解釋",
+              "相似詞",
+              "相反詞",
+              "多音參見訊息",
+              "異體字",
+              "辭條別名",
+              "主條成語／非主條成語",
+              "編號",
+              "典源文獻名稱",
+              "典源文獻內容",
+              "典源注解",
+              "典故說明",
+              "書證",
+              "用法說明-語義說明",
+              "用法說明-使用類別",
+              "用法說明-例句",
+              "辨識-同",
+              "辨識-異",
+              "辨識-例句",
+              "近義成語",
+              "反義成語",
+              "參考詞語"
+            ],
+            "largest_advertised_part_bytes": 41611,
+            "normalized_charge_bytes": 16970,
+            "parts": 9,
+            "profile": "moe-disk-rows-general-numeric-v1",
+            "row_digest": {
+              "framed_rows_sha256": "c369b46537897fecfe3bb55af3ff42ecd26c0e6f1d354292ae7154575510fe2e",
+              "key_bytes": 8721,
+              "pairs": 663,
+              "rows": 17,
+              "value_bytes": 7736
+            },
+            "row_spool_bytes": 20679,
+            "scanned_data_rows": 17,
+            "shared_index_bytes": 0,
+            "shared_index_reserved_bytes": 0,
+            "shared_string_bytes": 0,
+            "shared_strings": 0,
+            "skipped_blank_rows": 0,
+            "source_sha256": "3764c3f2bedaf81b82a436f612f6141bdd20fd3970afaeed2d798fbe3d75f245",
+            "stored_cells": 494,
+            "temporary_bytes": 28883,
+            "worksheet": "Sheet"
+          },
+          "skipped_rows": 1,
+          "source_sha256": "3764c3f2bedaf81b82a436f612f6141bdd20fd3970afaeed2d798fbe3d75f245",
+          "temporary_file_peak_bytes": 42917,
+          "worksheet": "Sheet"
+        },
+        "status": "succeeded"
+      },
+      "peak_RSS_bytes": 1830912,
+      "output_sha256": "8577b5ea693c44ab286d54b3a044a8e7ef98f53522d5c377520c572564cf244a",
+      "raw_record_digest": {
+        "records": 13,
+        "key_bytes": 72,
+        "payload_bytes": 13884,
+        "framed_records_sha256": "d6f19371fe9a5c557c425bf827c25a519e284b4128bfb01767afe87c408e0480"
+      },
+      "python_output_sha256": "12a731c828eadd145c9f327d6b701e2a143258f77a2ec246269286e389f6008b",
+      "normalized_record_digest": {
+        "records": 13,
+        "key_bytes": 72,
+        "payload_bytes": 13884,
+        "framed_records_sha256": "89bf16d2fddf267107c1fb7d18d6988ee3b315ee88075c88cc4e2795ea081e00"
+      },
+      "raw_python_bytes_equal": false,
+      "records_compared": 13
+    },
+    {
+      "case": "moe_revised-lower-group-rows",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2/revised-render/tests/fixtures/groups.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/moe_revised-lower-group-rows.txt",
+        "converter": "moe_revised",
+        "worksheet": null,
+        "tighten": {
+          "group_rows": 1
+        }
+      },
+      "returncode": 1,
+      "reply": {
+        "error": {
+          "code": "limit_exceeded",
+          "message": "Group index or per-group row cap exceeded"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 1769472
+    },
+    {
+      "case": "moe_revised-lower-index-charge",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2/revised-render/tests/fixtures/groups.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/moe_revised-lower-index-charge.txt",
+        "converter": "moe_revised",
+        "worksheet": null,
+        "tighten": {
+          "index_charge_bytes": 1
+        }
+      },
+      "returncode": 1,
+      "reply": {
+        "error": {
+          "code": "limit_exceeded",
+          "message": "Group index plan charge exceeded"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 1499136
+    },
+    {
+      "case": "moe_revised-lower-entries",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2/revised-render/tests/fixtures/groups.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/moe_revised-lower-entries.txt",
+        "converter": "moe_revised",
+        "worksheet": null,
+        "tighten": {
+          "entries": 1
+        }
+      },
+      "returncode": 1,
+      "reply": {
+        "error": {
+          "code": "limit_exceeded",
+          "message": "Output record cap exceeded"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 1728512
+    },
+    {
+      "case": "moe_revised-lower-file-bytes",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2/revised-render/tests/fixtures/groups.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/moe_revised-lower-file-bytes.txt",
+        "converter": "moe_revised",
+        "worksheet": null,
+        "tighten": {
+          "output_bytes": 4
+        }
+      },
+      "returncode": 1,
+      "reply": {
+        "error": {
+          "code": "limit_exceeded",
+          "message": "Global TXT output cap exceeded"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 1757184
+    },
+    {
+      "case": "small-moe_revised_wfg",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2/revised-render/tests/fixtures/groups.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/small-moe_revised_wfg.txt",
+        "converter": "moe_revised_wfg",
+        "worksheet": null
+      },
+      "returncode": 0,
+      "reply": {
+        "late_cancel_observed": false,
+        "progress_phases": [
+          "append_record",
+          "before_publish",
+          "begin",
+          "index_rows",
+          "normalize_rows",
+          "package_preflight",
+          "published",
+          "render_group",
+          "rows_complete",
+          "shared_strings",
+          "snapshot",
+          "verify_output",
+          "verify_rows"
+        ],
+        "receipt": {
+          "alias_redirects": 0,
+          "body_bytes": 14231,
+          "converter": "moe_revised_wfg",
+          "decoded_bytes": 14258,
+          "entries": 5,
+          "file_bytes": 14288,
+          "file_sha256": "c757e7ead046986d4f650b2c2263613f9356abf557836aa7e66455123b39d0e9",
+          "framed_records_sha256": "279487e6aff78104c44fffcb06974152344a565eb76d1766446acf633d4bfd58",
+          "groups": 5,
+          "index_charge_bytes": 67894,
+          "input_rows": 17,
+          "key_bytes": 27,
+          "largest_group_input_bytes": 13164,
+          "largest_group_rows": 11,
+          "primary_entries": 5,
+          "profile": "moe-grouped-disk-rows-txt-v1",
+          "row_source": {
+            "advertised_expansion_bytes": 57617,
+            "declared_columns": 39,
+            "declared_rows": 18,
+            "headers": [
+              "字詞名",
+              "單字",
+              "成語",
+              "多音排序",
+              "字數",
+              "部首字",
+              "部首",
+              "部首外筆畫數",
+              "部首外筆畫",
+              "總筆畫數",
+              "注音一式",
+              "注音",
+              "漢語拼音",
+              "變體注音",
+              "變體漢語拼音",
+              "變體類型 1:變 2:又音 3:語音 4:讀音",
+              "釋義",
+              "解釋",
+              "相似詞",
+              "相反詞",
+              "多音參見訊息",
+              "異體字",
+              "辭條別名",
+              "主條成語／非主條成語",
+              "編號",
+              "典源文獻名稱",
+              "典源文獻內容",
+              "典源注解",
+              "典故說明",
+              "書證",
+              "用法說明-語義說明",
+              "用法說明-使用類別",
+              "用法說明-例句",
+              "辨識-同",
+              "辨識-異",
+              "辨識-例句",
+              "近義成語",
+              "反義成語",
+              "參考詞語"
+            ],
+            "largest_advertised_part_bytes": 41611,
+            "normalized_charge_bytes": 16970,
+            "parts": 9,
+            "profile": "moe-disk-rows-general-numeric-v1",
+            "row_digest": {
+              "framed_rows_sha256": "c369b46537897fecfe3bb55af3ff42ecd26c0e6f1d354292ae7154575510fe2e",
+              "key_bytes": 8721,
+              "pairs": 663,
+              "rows": 17,
+              "value_bytes": 7736
+            },
+            "row_spool_bytes": 20679,
+            "scanned_data_rows": 17,
+            "shared_index_bytes": 0,
+            "shared_index_reserved_bytes": 0,
+            "shared_string_bytes": 0,
+            "shared_strings": 0,
+            "skipped_blank_rows": 0,
+            "source_sha256": "3764c3f2bedaf81b82a436f612f6141bdd20fd3970afaeed2d798fbe3d75f245",
+            "stored_cells": 494,
+            "temporary_bytes": 28883,
+            "worksheet": "Sheet"
+          },
+          "skipped_rows": 1,
+          "source_sha256": "3764c3f2bedaf81b82a436f612f6141bdd20fd3970afaeed2d798fbe3d75f245",
+          "temporary_file_peak_bytes": 43171,
+          "worksheet": "Sheet"
+        },
+        "status": "succeeded"
+      },
+      "peak_RSS_bytes": 1855488,
+      "output_sha256": "c757e7ead046986d4f650b2c2263613f9356abf557836aa7e66455123b39d0e9",
+      "raw_record_digest": {
+        "records": 5,
+        "key_bytes": 27,
+        "payload_bytes": 14231,
+        "framed_records_sha256": "279487e6aff78104c44fffcb06974152344a565eb76d1766446acf633d4bfd58"
+      },
+      "python_output_sha256": "c757e7ead046986d4f650b2c2263613f9356abf557836aa7e66455123b39d0e9",
+      "normalized_record_digest": {
+        "records": 5,
+        "key_bytes": 27,
+        "payload_bytes": 14231,
+        "framed_records_sha256": "279487e6aff78104c44fffcb06974152344a565eb76d1766446acf633d4bfd58"
+      },
+      "raw_python_bytes_equal": true,
+      "records_compared": 5
+    },
+    {
+      "case": "moe_revised_wfg-cancel-index_rows",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2/revised-render/tests/fixtures/groups.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/moe_revised_wfg-cancel-index_rows.txt",
+        "converter": "moe_revised_wfg",
+        "worksheet": null,
+        "cancel_phase": "index_rows"
+      },
+      "returncode": 1,
+      "reply": {
+        "error": {
+          "code": "cancelled",
+          "message": "Conversion cancelled before publication"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 1458176
+    },
+    {
+      "case": "moe_revised_wfg-cancel-render_group",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2/revised-render/tests/fixtures/groups.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/moe_revised_wfg-cancel-render_group.txt",
+        "converter": "moe_revised_wfg",
+        "worksheet": null,
+        "cancel_phase": "render_group"
+      },
+      "returncode": 1,
+      "reply": {
+        "error": {
+          "code": "cancelled",
+          "message": "Conversion cancelled before publication"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 1568768
+    },
+    {
+      "case": "moe_revised_wfg-cancel-append_record",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2/revised-render/tests/fixtures/groups.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/moe_revised_wfg-cancel-append_record.txt",
+        "converter": "moe_revised_wfg",
+        "worksheet": null,
+        "cancel_phase": "append_record"
+      },
+      "returncode": 1,
+      "reply": {
+        "error": {
+          "code": "cancelled",
+          "message": "Conversion cancelled before publication"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 1867776
+    },
+    {
+      "case": "moe_revised_wfg-cancel-verify_output",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2/revised-render/tests/fixtures/groups.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/moe_revised_wfg-cancel-verify_output.txt",
+        "converter": "moe_revised_wfg",
+        "worksheet": null,
+        "cancel_phase": "verify_output"
+      },
+      "returncode": 1,
+      "reply": {
+        "error": {
+          "code": "cancelled",
+          "message": "Conversion cancelled before publication"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 1880064
+    },
+    {
+      "case": "moe_revised_wfg-cancel-before_publish",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2/revised-render/tests/fixtures/groups.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/moe_revised_wfg-cancel-before_publish.txt",
+        "converter": "moe_revised_wfg",
+        "worksheet": null,
+        "cancel_phase": "before_publish"
+      },
+      "returncode": 1,
+      "reply": {
+        "error": {
+          "code": "cancelled",
+          "message": "Conversion cancelled before publication"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 1826816
+    },
+    {
+      "case": "moe_revised_wfg-late-cancel",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2/revised-render/tests/fixtures/groups.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/moe_revised_wfg-late-cancel.txt",
+        "converter": "moe_revised_wfg",
+        "worksheet": null,
+        "cancel_phase": "published"
+      },
+      "returncode": 0,
+      "reply": {
+        "late_cancel_observed": true,
+        "progress_phases": [
+          "append_record",
+          "before_publish",
+          "begin",
+          "index_rows",
+          "normalize_rows",
+          "package_preflight",
+          "published",
+          "render_group",
+          "rows_complete",
+          "shared_strings",
+          "snapshot",
+          "verify_output",
+          "verify_rows"
+        ],
+        "receipt": {
+          "alias_redirects": 0,
+          "body_bytes": 14231,
+          "converter": "moe_revised_wfg",
+          "decoded_bytes": 14258,
+          "entries": 5,
+          "file_bytes": 14288,
+          "file_sha256": "c757e7ead046986d4f650b2c2263613f9356abf557836aa7e66455123b39d0e9",
+          "framed_records_sha256": "279487e6aff78104c44fffcb06974152344a565eb76d1766446acf633d4bfd58",
+          "groups": 5,
+          "index_charge_bytes": 67894,
+          "input_rows": 17,
+          "key_bytes": 27,
+          "largest_group_input_bytes": 13164,
+          "largest_group_rows": 11,
+          "primary_entries": 5,
+          "profile": "moe-grouped-disk-rows-txt-v1",
+          "row_source": {
+            "advertised_expansion_bytes": 57617,
+            "declared_columns": 39,
+            "declared_rows": 18,
+            "headers": [
+              "字詞名",
+              "單字",
+              "成語",
+              "多音排序",
+              "字數",
+              "部首字",
+              "部首",
+              "部首外筆畫數",
+              "部首外筆畫",
+              "總筆畫數",
+              "注音一式",
+              "注音",
+              "漢語拼音",
+              "變體注音",
+              "變體漢語拼音",
+              "變體類型 1:變 2:又音 3:語音 4:讀音",
+              "釋義",
+              "解釋",
+              "相似詞",
+              "相反詞",
+              "多音參見訊息",
+              "異體字",
+              "辭條別名",
+              "主條成語／非主條成語",
+              "編號",
+              "典源文獻名稱",
+              "典源文獻內容",
+              "典源注解",
+              "典故說明",
+              "書證",
+              "用法說明-語義說明",
+              "用法說明-使用類別",
+              "用法說明-例句",
+              "辨識-同",
+              "辨識-異",
+              "辨識-例句",
+              "近義成語",
+              "反義成語",
+              "參考詞語"
+            ],
+            "largest_advertised_part_bytes": 41611,
+            "normalized_charge_bytes": 16970,
+            "parts": 9,
+            "profile": "moe-disk-rows-general-numeric-v1",
+            "row_digest": {
+              "framed_rows_sha256": "c369b46537897fecfe3bb55af3ff42ecd26c0e6f1d354292ae7154575510fe2e",
+              "key_bytes": 8721,
+              "pairs": 663,
+              "rows": 17,
+              "value_bytes": 7736
+            },
+            "row_spool_bytes": 20679,
+            "scanned_data_rows": 17,
+            "shared_index_bytes": 0,
+            "shared_index_reserved_bytes": 0,
+            "shared_string_bytes": 0,
+            "shared_strings": 0,
+            "skipped_blank_rows": 0,
+            "source_sha256": "3764c3f2bedaf81b82a436f612f6141bdd20fd3970afaeed2d798fbe3d75f245",
+            "stored_cells": 494,
+            "temporary_bytes": 28883,
+            "worksheet": "Sheet"
+          },
+          "skipped_rows": 1,
+          "source_sha256": "3764c3f2bedaf81b82a436f612f6141bdd20fd3970afaeed2d798fbe3d75f245",
+          "temporary_file_peak_bytes": 43171,
+          "worksheet": "Sheet"
+        },
+        "status": "succeeded"
+      },
+      "peak_RSS_bytes": 1839104,
+      "output_sha256": "c757e7ead046986d4f650b2c2263613f9356abf557836aa7e66455123b39d0e9",
+      "raw_record_digest": {
+        "records": 5,
+        "key_bytes": 27,
+        "payload_bytes": 14231,
+        "framed_records_sha256": "279487e6aff78104c44fffcb06974152344a565eb76d1766446acf633d4bfd58"
+      },
+      "python_output_sha256": "c757e7ead046986d4f650b2c2263613f9356abf557836aa7e66455123b39d0e9",
+      "normalized_record_digest": {
+        "records": 5,
+        "key_bytes": 27,
+        "payload_bytes": 14231,
+        "framed_records_sha256": "279487e6aff78104c44fffcb06974152344a565eb76d1766446acf633d4bfd58"
+      },
+      "raw_python_bytes_equal": true,
+      "records_compared": 5
+    },
+    {
+      "case": "moe_revised_wfg-lower-group-rows",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2/revised-render/tests/fixtures/groups.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/moe_revised_wfg-lower-group-rows.txt",
+        "converter": "moe_revised_wfg",
+        "worksheet": null,
+        "tighten": {
+          "group_rows": 1
+        }
+      },
+      "returncode": 1,
+      "reply": {
+        "error": {
+          "code": "limit_exceeded",
+          "message": "Group index or per-group row cap exceeded"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 1499136
+    },
+    {
+      "case": "moe_revised_wfg-lower-index-charge",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2/revised-render/tests/fixtures/groups.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/moe_revised_wfg-lower-index-charge.txt",
+        "converter": "moe_revised_wfg",
+        "worksheet": null,
+        "tighten": {
+          "index_charge_bytes": 1
+        }
+      },
+      "returncode": 1,
+      "reply": {
+        "error": {
+          "code": "limit_exceeded",
+          "message": "Group index plan charge exceeded"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 1576960
+    },
+    {
+      "case": "moe_revised_wfg-lower-entries",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2/revised-render/tests/fixtures/groups.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/moe_revised_wfg-lower-entries.txt",
+        "converter": "moe_revised_wfg",
+        "worksheet": null,
+        "tighten": {
+          "entries": 1
+        }
+      },
+      "returncode": 1,
+      "reply": {
+        "error": {
+          "code": "limit_exceeded",
+          "message": "Output record cap exceeded"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 1712128
+    },
+    {
+      "case": "moe_revised_wfg-lower-file-bytes",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2/revised-render/tests/fixtures/groups.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/moe_revised_wfg-lower-file-bytes.txt",
+        "converter": "moe_revised_wfg",
+        "worksheet": null,
+        "tighten": {
+          "output_bytes": 4
+        }
+      },
+      "returncode": 1,
+      "reply": {
+        "error": {
+          "code": "limit_exceeded",
+          "message": "Global TXT output cap exceeded"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 1773568
+    },
+    {
+      "case": "unknown-converter",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2/revised-render/tests/fixtures/groups.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/unknown-converter.txt",
+        "converter": "moe_mini",
+        "worksheet": null
+      },
+      "returncode": 1,
+      "reply": {
+        "error": {
+          "code": "invalid_input",
+          "message": "Malformed rendering request"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 880640
+    },
+    {
+      "case": "cannot-grow-entries",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2/revised-render/tests/fixtures/groups.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/cannot-grow-entries.txt",
+        "converter": "moe_revised",
+        "worksheet": null,
+        "tighten": {
+          "entries": 200001
+        }
+      },
+      "returncode": 1,
+      "reply": {
+        "error": {
+          "code": "invalid_input",
+          "message": "Profile limits may only be lowered"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 847872
+    },
+    {
+      "case": "cannot-grow-reader",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2/revised-render/tests/fixtures/groups.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/cannot-grow-reader.txt",
+        "converter": "moe_revised",
+        "worksheet": null,
+        "reader_tighten": {
+          "rows": 200001
+        }
+      },
+      "returncode": 1,
+      "reply": {
+        "error": {
+          "code": "invalid_input",
+          "message": "Limits may only be lowered"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 856064
+    },
+    {
+      "case": "missing-sheet",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2/revised-render/tests/fixtures/groups.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/missing-sheet.txt",
+        "converter": "moe_revised",
+        "worksheet": "missing"
+      },
+      "returncode": 1,
+      "reply": {
+        "error": {
+          "code": "sheet_not_found",
+          "message": "Selected worksheet not found"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 1343488
+    },
+    {
+      "case": "full-moe_revised",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/sources/dict_revised_2015_20260929.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/full-moe_revised.txt",
+        "converter": "moe_revised",
+        "worksheet": "1150929辭典匯出"
+      },
+      "returncode": 0,
+      "reply": {
+        "late_cancel_observed": false,
+        "progress_phases": [
+          "append_record",
+          "before_publish",
+          "begin",
+          "index_rows",
+          "normalize_rows",
+          "package_preflight",
+          "published",
+          "render_group",
+          "rows_complete",
+          "shared_strings",
+          "snapshot",
+          "verify_output",
+          "verify_rows"
+        ],
+        "receipt": {
+          "alias_redirects": 1454,
+          "body_bytes": 123053248,
+          "converter": "moe_revised",
+          "decoded_bytes": 124361971,
+          "entries": 162636,
+          "file_bytes": 125337787,
+          "file_sha256": "c92780c5b7854caba8b3f074fc6d15c8154692a38da27b265c0b966c48a3b598",
+          "framed_records_sha256": "ad4d9a67ac87543586de98e38990295e4c638750333ea33b3770e0931c395962",
+          "groups": 161182,
+          "index_charge_bytes": 54397924,
+          "input_rows": 163909,
+          "key_bytes": 1308723,
+          "largest_group_input_bytes": 11220,
+          "largest_group_rows": 6,
+          "primary_entries": 161182,
+          "profile": "moe-grouped-disk-rows-txt-v1",
+          "row_source": {
+            "advertised_expansion_bytes": 129494214,
+            "declared_columns": 18,
+            "declared_rows": 163910,
+            "headers": [
+              "字詞名",
+              "辭條別名",
+              "字數",
+              "字詞號",
+              "部首字",
+              "總筆畫數",
+              "部首外筆畫數",
+              "多音排序",
+              "注音一式",
+              "變體類型 1:變 2:又音 3:語音 4:讀音 5:或讀",
+              "變體注音",
+              "漢語拼音",
+              "變體漢語拼音",
+              "相似詞",
+              "相反詞",
+              "釋義",
+              "多音參見訊息",
+              "異體字"
+            ],
+            "largest_advertised_part_bytes": 74152456,
+            "normalized_charge_bytes": 84706498,
+            "parts": 11,
+            "profile": "moe-disk-rows-general-numeric-v1",
+            "row_digest": {
+              "framed_rows_sha256": "6e1d8eea79e7eb2e8ad513215aa65c30f10ac014c92380f550cefdbf78c8146a",
+              "key_bytes": 40321614,
+              "pairs": 2950362,
+              "rows": 163909,
+              "value_bytes": 44384638
+            },
+            "row_spool_bytes": 102800416,
+            "scanned_data_rows": 163909,
+            "shared_index_bytes": 9851808,
+            "shared_index_reserved_bytes": 16777216,
+            "shared_string_bytes": 41823579,
+            "shared_strings": 615738,
+            "skipped_blank_rows": 0,
+            "source_sha256": "bbbac6a820cac000cabf789d81b88338d94aa14f1d7eea6e16b495cf5c8dfa80",
+            "stored_cells": 1530428,
+            "temporary_bytes": 175812245,
+            "worksheet": "1150929辭典匯出"
+          },
+          "skipped_rows": 0,
+          "source_sha256": "bbbac6a820cac000cabf789d81b88338d94aa14f1d7eea6e16b495cf5c8dfa80",
+          "temporary_file_peak_bytes": 301150032,
+          "worksheet": "1150929辭典匯出"
+        },
+        "status": "succeeded"
+      },
+      "peak_RSS_bytes": 168136704,
+      "output_sha256": "c92780c5b7854caba8b3f074fc6d15c8154692a38da27b265c0b966c48a3b598",
+      "raw_record_digest": {
+        "records": 162636,
+        "key_bytes": 1308723,
+        "payload_bytes": 123053248,
+        "framed_records_sha256": "ad4d9a67ac87543586de98e38990295e4c638750333ea33b3770e0931c395962"
+      },
+      "python_output_sha256": "1f8c36d08dc9d41f3e349c20d16a81e1959cb0ba004e2a100056d9087cd1e304",
+      "normalized_record_digest": {
+        "records": 162636,
+        "key_bytes": 1308723,
+        "payload_bytes": 123053248,
+        "framed_records_sha256": "f54fdb3b29b9772dba421c544a7c4119506c7913c160b57534b8aab7ccde7e85"
+      },
+      "raw_python_bytes_equal": false,
+      "records_compared": 162636
+    },
+    {
+      "case": "moe_revised-existing-output",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/sources/dict_revised_2015_20260929.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/full-moe_revised.txt",
+        "converter": "moe_revised",
+        "worksheet": "1150929辭典匯出"
+      },
+      "returncode": 1,
+      "reply": {
+        "error": {
+          "code": "destination_exists",
+          "message": "TXT destination exists"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 864256,
+      "existing_output_sha256_preserved": "c92780c5b7854caba8b3f074fc6d15c8154692a38da27b265c0b966c48a3b598"
+    },
+    {
+      "case": "full-moe_revised_wfg",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/sources/dict_revised_2015_20260929.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/full-moe_revised_wfg.txt",
+        "converter": "moe_revised_wfg",
+        "worksheet": "1150929辭典匯出"
+      },
+      "returncode": 0,
+      "reply": {
+        "late_cancel_observed": false,
+        "progress_phases": [
+          "append_record",
+          "before_publish",
+          "begin",
+          "index_rows",
+          "normalize_rows",
+          "package_preflight",
+          "published",
+          "render_group",
+          "rows_complete",
+          "shared_strings",
+          "snapshot",
+          "verify_output",
+          "verify_rows"
+        ],
+        "receipt": {
+          "alias_redirects": 0,
+          "body_bytes": 102120975,
+          "converter": "moe_revised_wfg",
+          "decoded_bytes": 103410785,
+          "entries": 161182,
+          "file_bytes": 104377877,
+          "file_sha256": "0f95487c72e946cc24f896bebeb5366e33a4507cd5796da4342c6c1ccfcc1594",
+          "framed_records_sha256": "2dcc4a47efe207f29ac42e2abb456c88a85d112c6ac92cbcdc2ae0264d5d98c3",
+          "groups": 161182,
+          "index_charge_bytes": 54397924,
+          "input_rows": 163909,
+          "key_bytes": 1289810,
+          "largest_group_input_bytes": 11220,
+          "largest_group_rows": 6,
+          "primary_entries": 161182,
+          "profile": "moe-grouped-disk-rows-txt-v1",
+          "row_source": {
+            "advertised_expansion_bytes": 129494214,
+            "declared_columns": 18,
+            "declared_rows": 163910,
+            "headers": [
+              "字詞名",
+              "辭條別名",
+              "字數",
+              "字詞號",
+              "部首字",
+              "總筆畫數",
+              "部首外筆畫數",
+              "多音排序",
+              "注音一式",
+              "變體類型 1:變 2:又音 3:語音 4:讀音 5:或讀",
+              "變體注音",
+              "漢語拼音",
+              "變體漢語拼音",
+              "相似詞",
+              "相反詞",
+              "釋義",
+              "多音參見訊息",
+              "異體字"
+            ],
+            "largest_advertised_part_bytes": 74152456,
+            "normalized_charge_bytes": 84706498,
+            "parts": 11,
+            "profile": "moe-disk-rows-general-numeric-v1",
+            "row_digest": {
+              "framed_rows_sha256": "6e1d8eea79e7eb2e8ad513215aa65c30f10ac014c92380f550cefdbf78c8146a",
+              "key_bytes": 40321614,
+              "pairs": 2950362,
+              "rows": 163909,
+              "value_bytes": 44384638
+            },
+            "row_spool_bytes": 102800416,
+            "scanned_data_rows": 163909,
+            "shared_index_bytes": 9851808,
+            "shared_index_reserved_bytes": 16777216,
+            "shared_string_bytes": 41823579,
+            "shared_strings": 615738,
+            "skipped_blank_rows": 0,
+            "source_sha256": "bbbac6a820cac000cabf789d81b88338d94aa14f1d7eea6e16b495cf5c8dfa80",
+            "stored_cells": 1530428,
+            "temporary_bytes": 175812245,
+            "worksheet": "1150929辭典匯出"
+          },
+          "skipped_rows": 0,
+          "source_sha256": "bbbac6a820cac000cabf789d81b88338d94aa14f1d7eea6e16b495cf5c8dfa80",
+          "temporary_file_peak_bytes": 280190122,
+          "worksheet": "1150929辭典匯出"
+        },
+        "status": "succeeded"
+      },
+      "peak_RSS_bytes": 164143104,
+      "output_sha256": "0f95487c72e946cc24f896bebeb5366e33a4507cd5796da4342c6c1ccfcc1594",
+      "raw_record_digest": {
+        "records": 161182,
+        "key_bytes": 1289810,
+        "payload_bytes": 102120975,
+        "framed_records_sha256": "2dcc4a47efe207f29ac42e2abb456c88a85d112c6ac92cbcdc2ae0264d5d98c3"
+      },
+      "python_output_sha256": "0f95487c72e946cc24f896bebeb5366e33a4507cd5796da4342c6c1ccfcc1594",
+      "normalized_record_digest": {
+        "records": 161182,
+        "key_bytes": 1289810,
+        "payload_bytes": 102120975,
+        "framed_records_sha256": "2dcc4a47efe207f29ac42e2abb456c88a85d112c6ac92cbcdc2ae0264d5d98c3"
+      },
+      "raw_python_bytes_equal": true,
+      "records_compared": 161182
+    },
+    {
+      "case": "moe_revised_wfg-existing-output",
+      "request": {
+        "source": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/sources/dict_revised_2015_20260929.xlsx",
+        "destination": "/Users/shawky/Downloads/mdict-studio-m0-m1/m2-revised-render-out/outputs/full-moe_revised_wfg.txt",
+        "converter": "moe_revised_wfg",
+        "worksheet": "1150929辭典匯出"
+      },
+      "returncode": 1,
+      "reply": {
+        "error": {
+          "code": "destination_exists",
+          "message": "TXT destination exists"
+        },
+        "status": "failed"
+      },
+      "peak_RSS_bytes": 864256,
+      "existing_output_sha256_preserved": "0f95487c72e946cc24f896bebeb5366e33a4507cd5796da4342c6c1ccfcc1594"
+    }
+  ],
+  "build_profile": "release_for_process_cases_debug_for_tests",
+  "RSS_is_OS_limit": false,
+  "RSS_observation_target_bytes": 268435456,
+  "protected_source_sha256": {
+    "m2/Cargo.lock": "52204c28ecb6334cd1bdc16aa92c680094bad032343dac074a2d3f1bacc892b4",
+    "m2/Cargo.toml": "3ae1cbaf4026d1b8afeffc3c9e7a05ad60e34cf8cc116e8d59dbb6576ca547cb",
+    "m2/studio-cli/Cargo.toml": "fda21775f6b11f7e8775a8d50b0078fb22d9142e7ff234c51e42c8e0cb59b4d5",
+    "m2/studio-cli/src/main.rs": "bf35a6c970224a448906c0ebc1d498d8cff41f3563c905fb2424235e2e5b21d0",
+    "m2/studio-core/Cargo.toml": "5854ebd0acc2b11f62c8001fece7b89d7451ecbee87f70a3adb66059bbbd45cc",
+    "m2/studio-core/src/casing.rs": "279000271dc5c4c6997df2a138da252293ae7aca6fb742fa2c483641d50a842a",
+    "m2/studio-core/src/cedict.rs": "c51b7116ea7d7c6331fa43f8cf820e44664874440e23578c2cff1ae82ab94100",
+    "m2/studio-core/src/engine.rs": "799a776fea81176f135b4f84f543e0c0ce0b2a6a3dba7c0ef416b5fd395ab31e",
+    "m2/studio-core/src/error.rs": "8ea3b09d0f2bbe4b05993e6e3b2189a3cda9c4d3aca1f12022a1e2d046aa3df0",
+    "m2/studio-core/src/job.rs": "219caa620288bc355d3173a2759bcef2ca17167c8e517aa400e6c74cac112334",
+    "m2/studio-core/src/lib.rs": "20a3bdaa8a107bfb76cfa98fea0b4320a2a0fa7530c17f50c1ac278c1311fd88",
+    "m2/studio-core/src/model.rs": "ea349dfa63ae96896f611d39d109111a8e7f0d5a91f2ebada2b9b08f21498404",
+    "m2/studio-core/src/resource_paths.rs": "e1d2bbd02ba6b5c9e14210095944c2445b57e226f53310b425e58f7ec80b1cea",
+    "m2/studio-core/src/resources.rs": "563581bb1995c3c71678895ad3abf0332775ba67f73a7d0a6cb45fda8bfa3edf",
+    "m2/studio-core/src/safe_fs.rs": "ae0a71d5358cf3a4824754a6f42cec58cb29e5ba81e3eb0b92d9cf90feb51739",
+    "m2/studio-core/src/text.rs": "8f3f8d6c9861c8fc8daff58b9eb67c6366f473738788a1f43ab64db315d30ce3",
+    "m2/studio-core/tests/resources.rs": "ac5aa9c6c3b7b648255d25ca4ccf8e4b784a5b350d765a507791c178cdbd6964",
+    "m2/studio-core/tests/text_converters.rs": "d76557f39b08fc78e4eda59421bebf86182a95128d711762fd58c1d1c9688d57",
+    "m2/studio-core/tests/workflows.rs": "06bc2c094cd79d852ad61f7a56e167bad6ee3f6d39076f0cdd7bf0693bd9c8d9",
+    "scripts/m2_foundation.py": "ae8a72f053c2c262ca06717154dfd1b5e2948ef1e641c13c1bf167caa5117990",
+    "baseline/unicode/unicode16-casing.json": "f69d2e55d6b8c8d5fe33f764cc47b829bccc6d73aaff1791e1216328a1c24071",
+    "scripts/m2_text.py": "31dc855b4c0ddc3a8bb6c5f204aac93259b623ebcd86c5c67a0c76483d5b0d1e",
+    "baseline/cases.json": "6755e0e426f3723de47060339404478f1a313c19f073dba12eba03fc6fb1d566",
+    "baseline/source-manifest.json": "1f32ed5a20819ab8e1473e9a30609299815b50761173b83a8999cf513d69001b",
+    "baseline/legacy/plugins/cccedict_plugin.py": "4c3fc461a044e702678ce7fbf0e2b251969d5932c4bf2d2070d6f58c2eeb139c",
+    "baseline/legacy/base_plugin.py": "0620c3d88502191b4b297c918394cc9ae886e943e83b06bf377fa1284b044b49",
+    "baseline/expected/cc_cedict.txt": "8de24ce354f5d017b2e99702d82d2a81c607600386944d0000f2cd9c51ff02d0",
+    "baseline/expected/moe_revised.txt": "32688acf6251bb8536d585a20e82ae668423184ff7017b7aeed96936bb864a4f",
+    "baseline/expected/moe_revised_wfg.txt": "a955bbdeb60344e79f2127bb4ac19c65ff3c9a24b9162a2b85dbe8dc59bd7c04",
+    "baseline/expected/moe_concise.txt": "d6bffa874e702914802c5e8a574e5d83930ab723f2e4655b739b1555b2e6468a",
+    "baseline/expected/moe_idioms.txt": "f1e2fdb6ef77bed7aeee1ee66989fa00c3ac662e80a63712c2295916b157ac0c",
+    "baseline/expected/moe_mini.txt": "0f99434d534f8949d922fffceb012620ef8a64cb783e38325525a71345f888b3",
+    "Cargo.lock": "b1993e21cd4be1fd4937914bb7458cefb730e21927fbe058046e4aee3bd81e35",
+    "experiments/legacy-sort/Cargo.lock": "832527875540ca97c9af5ee227c0f38d3f03eed9c16c26a0c63fed51285f7a8e",
+    "experiments/real-rebuild/Cargo.lock": "0490f412f73e66fd7b719da2dd71470eeb315aaa9028837ae185f3437a8e867f",
+    "baseline/legacy/excel_utils.py": "b0a837e2197a5d0d42599171716b903ef813dc52512e55c1ccbe93f2f0bd2302",
+    "baseline/xlsx-reader-kit/active.xlsx": "14cd7220ebd4a204d1ee1c040d8b239850b8050b65d9cce28436d9dac08f9137",
+    "baseline/xlsx-reader-kit/date.xlsx": "6471da8cfd31b05cea4b337368895d97d9561bed0ee9a85461b9c6e8b2d1bef5",
+    "baseline/xlsx-reader-kit/duration.xlsx": "9d7f914cc909a54da641884e58dc094a1b1e7de5e091ac784766469688774468",
+    "baseline/xlsx-reader-kit/empty.xlsx": "9661fd2c02b0a22c54882e98fce99109013e1ef19025a82a1c047a2360ce0a18",
+    "baseline/xlsx-reader-kit/expected.json": "9f4963e95eda88ff02c04b7cbde5f786d6ebdbe630cde1c40ab000642fc15610",
+    "baseline/xlsx-reader-kit/external.xlsx": "32d56b3587454c78922656f23991899abd319425d57c496b90ca1592901b9841",
+    "baseline/xlsx-reader-kit/formulas.xlsx": "ab483a3ff5511029729637539f72f9b65b7ab6b0469df199b58aae173f6e2670",
+    "baseline/xlsx-reader-kit/headers.xlsx": "00e8e29b07d96047570b2ad250ccbf6c2c101cd08afc62336a7d8783c0b63640",
+    "baseline/xlsx-reader-kit/inline.xlsx": "f31838974f07304b9ee396b920bdc31919d558f74a55b1726a7646145a59d8f8",
+    "baseline/xlsx-reader-kit/invalid.xlsx": "a3989126344744ef800dbc88bf7e744853f3f2eac75c9ab3301f4e845ef22078",
+    "baseline/xlsx-reader-kit/leading.xlsx": "c17f48a55cabb7450264ca3a7b9f3522ceeb7615991aa0c359f19cc7ed938385",
+    "baseline/xlsx-reader-kit/manifest.json": "99b0fc27d71925bcbe7532455c5c0c04d64c8fdde8c2f3c4c5e031bb4996a8a3",
+    "baseline/xlsx-reader-kit/moderate.xlsx": "0cefca1be426be7fbb82bc10b885f7dd2ede473e8f0f02135277fa546465c920",
+    "baseline/xlsx-reader-kit/moe-rows.xlsx": "4d16e493d7686aa4db03b2619e023f81bbd93d9940ff4369fed91192c4fd5f1a",
+    "baseline/xlsx-reader-kit/no-dimension.xlsx": "8e1f8798236f73de5da482844e7dbb5034afedd4270ed0baaa2f00d70196aa60",
+    "baseline/xlsx-reader-kit/normalization.xlsx": "91999a3632fca2f9f8f0491fc1ec940ce6e4e1d4a1b95ebb1f2c34be0834081a",
+    "baseline/xlsx-reader-kit/numbers.xlsx": "7e1e905533434094add4017c921cd12dadd04f6e4aac4bc963f94ba95f500c60",
+    "baseline/xlsx-reader-kit/oversized.xlsx": "753b4bfc03c0a0fbb60855983050307401d22b9d422923f0f55a0943a951f1d0",
+    "baseline/xlsx-reader-kit/shared.xlsx": "f6067f5ab91957f560cd1c5fc0b344349a4d39254d2de4e489ff64b4f15a7fba",
+    "m2/xlsx-reader/Cargo.lock": "cd1e07d14298148b28a05dda63730b3c23337f39a4e5f6f11b3ad7a9c4f33d0b",
+    "m2/xlsx-reader/Cargo.toml": "9f4505aca02e286689f9f5e216c3d96b39d200c6b8d35576b4dbf87357d50cce",
+    "m2/xlsx-reader/src/lib.rs": "c928a923900f8fd400d2218b5a679b9ea6a79aa88ffc6ee51e1dd386aab9d22f",
+    "m2/xlsx-reader/src/main.rs": "d59522e31ca27a21f1ceabb7a33ba9eb4cd9a145a9a2f7bcf2951fc87d9a0df2",
+    "m2/xlsx-reader/src/numbers.rs": "0b93a8a1b152f72cf084c2db2c59293bdcd002cec03670773671d5fed61d1c16",
+    "m2/xlsx-reader/src/package.rs": "9a63a0f2c8e7bf88fb5866f20b17b10c35d5bb3146dd316567e2f413c5ff87bd",
+    "m2/xlsx-reader/src/reader.rs": "374894357b74baa326c02ae38580e1d271fe454948fe39cf52fd3955821ef122",
+    "m2/xlsx-reader/src/xml.rs": "618c8ada474d72b92fc818c8ac5317d588fa1d1e0bb1a23fa26c02b2df2e3d7c",
+    "m2/xlsx-reader/tests/compatibility.rs": "1290a1664165c7bd6ab4ba3d2940cf1290d933170d612a932f00d28df3fc43fd",
+    "scripts/m2_xlsx.py": "472a31551d81f135cfa73875bb25f785c21b85c0e1165513828d7966df32fb41",
+    "scripts/xlsx_fixtures.py": "50d5fc41ef9ec3a891f928059e210f7ee017034049ad61972913c98a45586746",
+    "baseline/capture.py": "4fbce57fc68d819c9675714fd12e12d20453180f515572f23089778865aeed01",
+    "baseline/legacy/plugins/WFG_desgin_Plugin.py": "9d476ee0fb38603c7b6e6634c9987ab7a26077dbf15357718e9e93293da09ba2",
+    "baseline/legacy/plugins/concise_plugin.py": "25b37d4f801e4ddfef03557a54fa8a20ad5bbbac79f8eddc19135ae6562abc6a",
+    "baseline/legacy/plugins/edudict_plugin.py": "2505bdaf5733f905d8fba1f68dd22e1c7b123484599d1f18bcf7c6cb576aa923",
+    "baseline/legacy/plugins/idiom_plugin.py": "53dce8296c31f92c1e83a4cb7f2773c7e97d6ae85f00811724a11adf83768bc1",
+    "baseline/legacy/plugins/mini_plugin.py": "aca858af532a8f409b5b55d6d3632b63466d8d67af910390f65e3623561c00f5",
+    "baseline/moe-converter-kit/expected.json": "16c5b4a1d2dd1c5fc1bc53050b5b8f6150d9ea2049d7077546594eec99ea0871",
+    "m2/xlsx-reader/src/bin/studio-moe.rs": "01795ea2efb091aa084c10247d4e06ea1891ce7f37b0a0723f6fe7b1f7ee1b04",
+    "m2/xlsx-reader/src/moe/layouts.rs": "b06cb5127d404c9afd9963c3b30313ae1413d465db4dd59b8c7f9622f3513f04",
+    "m2/xlsx-reader/src/moe/mini-head.html": "a1affc24fb57a563c85497f525566d69e040d4c89c70d1419ae3fe58599ac7c1",
+    "m2/xlsx-reader/src/moe/mod.rs": "707a136d46101684c2de412cfc912708393c3a17aeded2600716779c99114d56",
+    "m2/xlsx-reader/src/moe/text.rs": "d3fc6c131025e3cfecb150444c48802247b911f7bcb0f68070936097c9f48055",
+    "m2/xlsx-reader/tests/moe.rs": "26dfc34ae541d5c6925f2a7ff11a0e000b0fc57e414edcf8fca6744837a7084d",
+    "scripts/m2_moe.py": "2a4010465fd99806db1a93c73c216d7ab3c99e84ccd6e84c78ddbf960af50a8d",
+    "scripts/moe_fixtures.py": "541a9a76a6fe364249e3b0c0022589d7ae6f58470b63de4e8d5dade7a63be1fa",
+    "m2/application/Cargo.lock": "a3ef3c13d1fce64997c6f917b79a08557aa4788f1abeb309d953ec3764e6da2c",
+    "m2/application/Cargo.toml": "083a6e73f1d2ac2344dd4270806c2650d54006e0407bbe9076e2770587de081e",
+    "m2/application/src/error.rs": "886239afeffff7fdd0af01b4bc80ad10138f517d21de3b0dfd73402f762c65e2",
+    "m2/application/src/job.rs": "a8928aebd1095551dd6001385d7893bf507e82d92a7c0c385abd18e1d8a13054",
+    "m2/application/src/lib.rs": "c4c203582fc13785a57914df28e33d7f9a3f441194ae5f44d8c410e17a8bf3cd",
+    "m2/application/src/main.rs": "e7b3ba54c44c78c78a7fd9d3fe0528ddd37df67dd066e7a6be354e1726753e84",
+    "m2/application/tests/workflows.rs": "2759195a9955a6ff55a22b9496e2a70c79f4ac6b2ecdffc31c43da42819b74d1",
+    "scripts/application_lock.py": "7ab71348a702d2c066a91de9d797c97e36ce27a0e0b70e646189d76ed6738d09",
+    "scripts/m2_application.py": "57d2bd693fbe2c18bd3e30f43d0fb942ab3c003758f806f181e09be7f874d67e",
+    "m2/application/src/bin/studio-jobs-probe.rs": "435c9a49ed42ef188d2be8f759f722f070d43e3be8975ee6c283cad95f11a2c2",
+    "m2/application/src/runner/tests.rs": "9bb13429c4363137377af7e0670fa9ac0036975554455f72a479a395b1947a13",
+    "m2/application/src/runner.rs": "b2a4d68c6c189fd08802cf11535ba6307a2078be5d69409ef79a497f9336e934",
+    "m2/application/tests/background.rs": "f2cdd7e617ea6ce49d7ff9a602385af296aad26449e66cf5d4f65624fa06a948",
+    "scripts/m2_jobs.py": "dc3504670f919ea7b37abb66f704bd5ae7bb3a5bac33bbdd01cfd713c81279c3",
+    "baseline/resource-probe/studio-probe.ttf": "bb3f262bf21c6f63eca131f239113797636761a866d39756943ae702a318fb1f",
+    "m2/application/src/bin/studio-dictionary-jobs-probe.rs": "96e3c982344ffbee55a79dd87d7e7f74028d077a5c305706aaefa856395f8b4e",
+    "m2/application/src/runner/dictionary.rs": "219a46e6c5df7c8274d55ef94b3dfc96abc9c59d272cf6994e4ae89b739de735",
+    "m2/application/tests/dictionary_jobs.rs": "92fd0298f1b25d71adaa64a6c71e9eff463c8706bc34f723abd6a9c2b569be41",
+    "scripts/m2_dictionary_jobs.py": "e614cd4fe3c6b19506bb62bf50a7577cb2cc60f0f634bf6da13d1d4680dbe7e4",
+    "scripts/m2_resources.py": "b82995e769d2943d3d7b107d54b28e7df42d12353151d7cb64363a2f438a9cd2",
+    "scripts/patched_interop.py": "0f4b8670b59246c202a140f9981d8a9713e176102cd7d01d83214fc435ec4cb1",
+    "scripts/v2_audit.py": "0eb36ddcb0fa2721c0de7b5378b7614c49cf613de0dbe2ee1fc3f2c4d3f54203",
+    "m2/v2-import/Cargo.toml": "d441b0ce96872fbceb57802f2330a3ddc0c93a1dabd06b62c6f778aba383ef3e",
+    "m2/v2-import/src/header.rs": "4baca7c9a063df4d8ea127ce9f6c6b57e695832813ca295cff00529ae12088ee",
+    "m2/v2-import/src/lib.rs": "5f8e42fcc9db5952eb8b16d773aa171a321d5217d4859c1b6bfcef96a00cc28c",
+    "m2/v2-import/src/main.rs": "a9b7345656a9dfd95881f46c147ee11b8f696a19ad16c72abe3f285767d9b805",
+    "m2/v2-import/src/mdd.rs": "f58e26346e3365625930c6b802d8b0f9e48391dc62ef5844c60d3ac79f82be45",
+    "m2/v2-import/src/mdx.rs": "f5e405bb3380c71c2dc5863a2cc6e01fb0f64d72ff14aef5befe30f7bb50f3c3",
+    "m2/v2-import/tests/import.rs": "cbfdbeeb4f3734958bd700bd351d5da5dfd9313736d49467c59d02dbd56dc196",
+    "scripts/m2_v2_import.py": "ff012fdb0ef7d13c148700e01ebbe16a6f80ba28c6300e224b888070ae038619",
+    "scripts/v2_import_fixtures.py": "2129017142578de322d45bcaba96520113a0f0cc64053598f4659da401773c15",
+    "scripts/v2_import_lock.py": "a154a1b1b6881a5150a9b50c3e521322b4cec1d14a3877141abba5d8d692c632",
+    "m2/v2-import/Cargo.lock": "a051908d457e9596c0496a32faca03979e9deb9880ee80129061ad25c2c1f928",
+    "m2/v2-import/src/application/runner/tests.rs": "f0f423b54a5190ac0bbabee0d06e0aa83bc93f705d759910387d58161bf222eb",
+    "m2/v2-import/src/application/runner.rs": "18ec195ae41751217ed65d0c75e8161693592bf9bc8af39f7d5011e1142cb458",
+    "m2/v2-import/src/application.rs": "85d140aa3df7a95ae82a975df94c09f6cd930d702af8e6c818fd8bb0c969e553",
+    "m2/v2-import/src/bin/studio-import-jobs.rs": "f9a5c3c505208afadde5c1edeb48d4d5788b41513928b364c328fd8c4d209ff1",
+    "m2/v2-import/tests/application.rs": "3d90c30847fef356561e81fe81ad6db3b7d78a6acc08eca67eb73caaa5d09bb9",
+    "scripts/m2_import_jobs.py": "634256c43e9ba278387ece62cae49e8d12b5b2df618535e44377a53491c7c636",
+    "scripts/test_m2_import_jobs.py": "1ffeec818c708a6bf75e2a841bd740f0420ad08ff4d75f4c28b076f57731fa55",
+    "m2/v2-import/src/application/metadata.rs": "b1da4ffc3f28a5bea62b49b3ae8b34b456e3ff38f9553d314487ddf4c183055c",
+    "m2/v2-import/src/bin/studio-metadata-rebuild.rs": "5ae34297d5d74f10134bef794cbeb5f243124f806de20de7c1191a3049fe1721",
+    "m2/v2-import/tests/metadata.rs": "de50ab3dddcfefdcffdd5000e717cfcb0cae565c0cbb6fad73d15207210cb7a4",
+    "scripts/m2_metadata.py": "e650d808015b7a34bd2aa8fe0d001be1b0ca908d3cb369c5af7a2f58edf93455",
+    "scripts/test_m2_metadata.py": "8a7619ef546dad00b0226be8f5097b388345b5df946117706b044c20bc145147",
+    "m2/v2-import/src/application/metadata/publication/runner/tests.rs": "deba2f18ceb94b4b7dfaa068038c73a39fc04823627f17a07f751e7a629cd8fe",
+    "m2/v2-import/src/application/metadata/publication/runner.rs": "d9fb2307727ef77990d987e34ecb3fb86c13dd6b8b4d07453994ed9d54ad05c0",
+    "m2/v2-import/src/application/metadata/publication.rs": "cdac1aea2c1a964e63144e6cfcfe43d489c581363c84807afdd712e7e2e959f4",
+    "m2/v2-import/src/bin/studio-metadata-jobs.rs": "c615d94616bacb1b9f7375551d87fed308f3c8939a95c2b113b5b188a88220cd",
+    "m2/v2-import/tests/publication.rs": "aba85ab51d3fe121ecc1787de845639fde751bc0a8e79d4f1a2c5b0949b9320e",
+    "scripts/m2_metadata_jobs.py": "e46ede1ab6f4d83e797753be1b5ffecfc72c671a805aa4521a3a5019fbe1b015",
+    "scripts/test_m2_metadata_jobs.py": "6c712400cc29cd858719274cf9b3ca1b56bb4f252bbabab8cd2f16eaddf2641f",
+    "m2/bounded-engine/Cargo.toml": "3aa3485f514067b06a8a81fcafdb8de58fc68f28819075d1fd57c09d945bcbdd",
+    "m2/bounded-engine/src/lib.rs": "a5db8236f6bcc88a99195c2fa3fa1165d018765d5603df743357eba4d933f7db",
+    "m2/bounded-engine/src/main.rs": "1e546a902a50e462317e1bdd9b66d93adabcc2d523a611f57f185515492b40c6",
+    "m2/bounded-engine/tests/reader.rs": "bbaa9a66c59e59f458265e546a3a342ac371af7e0fba57e6b58f7cc9390e9f69",
+    "scripts/bounded_engine_lock.py": "ea3b1073a5585b3adfb954b6627769f12399d8cb6a917d9e05cb8c9c95519b64",
+    "scripts/bounded_fixtures.py": "fd2b5b94c9fca320c225d802a45f6aecc725cf6fa68a1589f1d9226409395731",
+    "scripts/m2_sizing.py": "482cee96a8ed93ce089b9d3963d6a57493947d05716da12a5002dbed1f2e7a1b",
+    "scripts/test_m2_sizing.py": "239428f5bd1187c5b03169b8df52aacb1095606f471dc51a7222b69091bd421c",
+    "m2/bounded-engine/Cargo.lock": "0eb54565fd255f57ebabfaa15f1d88b94ca8c0cd9384f9ee558f9be462692c32",
+    "m2/indexed-engine/Cargo.toml": "8b339faa01f67469900613bcd8b83e033c2204f1ca084feecef7863d27d66f92",
+    "m2/indexed-engine/src/index.rs": "8b5f3cb6724a5aa4ca610142bd041c040fccd28cde2a76af709b4216c6061f43",
+    "m2/indexed-engine/src/lib.rs": "80982758cf35485438f1fe926391b92b05e8fa3178d4db5d49f02563267f4da2",
+    "m2/indexed-engine/src/main.rs": "437227e8a85948cf1828c86cb97ce1114dcb59fea012fb230aa84a3665c581d7",
+    "m2/indexed-engine/src/sha256.rs": "f1565b6ae0bbe306e6671bcf45e2dc486c7d700d3f1972e3a7719551a3901906",
+    "m2/indexed-engine/tests/index.rs": "ab340e4631eedd1bb66c4319ec4d1e27583c53035223622470015f10e9dece33",
+    "scripts/index_engine_lock.py": "4d1a9a4592c449f39fca975637e0f153a482d13ee6effe8d876bedd3d6ccab77",
+    "scripts/index_fixtures.py": "ff26d66ba0836cb74f14e4b622457edcc248bbba5cd7b5d8863ce14896df9f97",
+    "scripts/m2_index.py": "1a943e6320c40eacdda66a98ca272dbc3484b35ae74c95d145d805edddd9bfec",
+    "scripts/test_m2_index.py": "5ca415cb2475d5f1fc64067e3703e2f4a0263c7a4e2accd5855e2a8ce9f4cddc",
+    "m2/indexed-engine/Cargo.lock": "77dd03dd4fe54950bd88f0fcbb22af4f919c7c80c068f56bdcb68d860fae8991",
+    "m2/sessions/Cargo.toml": "419999dc6ee87c598fa4e83f06a569a5d315dcbdadb343e310598874513624fc",
+    "m2/sessions/src/lib.rs": "8ebaefc6d91d5dd20c9fb16f298f9ecc15e45d573ae045a4219a659c87c13dd4",
+    "m2/sessions/src/main.rs": "db7a7de3924ad46ef0586be60e9a3e2ed08815d9b1dfbf8eb3040009a3567b65",
+    "m2/sessions/src/tests.rs": "4f58ec5aa22adbf7f880e93234254b78fbcf5fb4f2d543bbdc7fa21a35368f0e",
+    "scripts/m2_sessions.py": "4d2192fe5369b3d669b7e55d8294f74a2f10a2cd772d0dc664682c37b99edf64",
+    "scripts/session_lock.py": "129181d7ad2d1660c461202c48af1d4a0cf88c3ea3566ba00dac5a0005bd3579",
+    "scripts/test_m2_sessions.py": "5233d6a86998f51129f32afc23ad10505aa66e9df6ffe239484e8d211ae64ea1",
+    "m2/sessions/Cargo.lock": "e6bdfe6bd2fa832b01a3cd344f690ef9fb09f015a9f498299238a36ee15b045c",
+    "m2/stream-extract/Cargo.toml": "0c17c26536130cd1d5d2e671f47d851ddc9d371f8415b97d0f419eac5cb26505",
+    "m2/stream-extract/src/extract.rs": "a813b8a0a3f2daee8742441aca1e96dcfe3f05c11caa1daf651601cc0ee26772",
+    "m2/stream-extract/src/lib.rs": "9ba5eb66c938f8c5370b94d6f81c299c8f97c1c23555a2b319d5b7a65a34809a",
+    "m2/stream-extract/src/main.rs": "e27bae8bcd04620ef1b7fbfa981b7710e8c03050bf279ddc38a8a896c45eed39",
+    "m2/stream-extract/src/tests.rs": "dd4370fe42bb1a8698de8d66b632e511b897f04a4b64cf3ba3adaf01597e32e8",
+    "scripts/m2_stream_extract.py": "2ebf11c3b1c628b63266f6f8f8caea9abc6e1d55975685a8cfb9c3784b395f93",
+    "scripts/stream_extract_lock.py": "d861e3d8888942e11308bdcbe105d18cb75ab3449d82aaa11f63fd8ef31f1fa7",
+    "scripts/stream_mdd_fixtures.py": "e89031629d2df50f207c0a12644e8e76c313fdf6a67ccd2f6f21b1554bd8d4f0",
+    "scripts/test_m2_stream_extract.py": "f90dbd12d6af7c4393a30d3442ab9ed8a154f6d29fec5bc16b9f0f76fecb92c7",
+    "m2/stream-extract/Cargo.lock": "b571f47505d94e51be30fdec89f8938b292eff31db99b04f9dbb96a7280021b7",
+    "m2/extraction-jobs/Cargo.toml": "53a233f245ff0689dca0cc5e15e6eea2f5c8d0a7bac7fad52237a96ac2e2e212",
+    "m2/extraction-jobs/src/lib.rs": "ea9d654b99737ee711c5494f97b78a36446bad5d4759d1a0304314035e2ab2a7",
+    "m2/extraction-jobs/src/main.rs": "0d128772eb70cf52585459e05f35ac4f08a0637b46cbbc17e33fe682af34c99f",
+    "m2/extraction-jobs/src/runner.rs": "1746154682d745400d51651a899a1212feab1c6bead72f8ea1c2a8306a1cbc94",
+    "m2/extraction-jobs/src/tests.rs": "674baa54b8f0675209b7407f42521d834d922068c0b21dbb084749bb9315f278",
+    "scripts/extraction_jobs_lock.py": "c918afcff3dc9e3357c3e0c5fca055badeb8d664f42f35185567b1a7f326c591",
+    "scripts/m2_extraction_jobs.py": "8ac98407a8b8ecf74b40c87d0b81b23ddf28caa23039a668dd78dc7f79c77833",
+    "scripts/test_m2_extraction_jobs.py": "6d199f6f82570de7a7df58bea118d827536a42b825bfa716c2d17f3b00650f8e",
+    "m2/extraction-jobs/Cargo.lock": "65cc769a15fa48a7975f1318431b3db443d7c4429a3a1f223614daa984aeb851",
+    "m2/large-io/Cargo.toml": "262412d6466f3ebea268b1c4018abef06c3f008a3a2fecf4fa72c5369b080cd0",
+    "m2/large-io/src/io.rs": "d2798f47fd4909a5530be10be4ebf6919bf8717e2febaec0a76e6b1537612e1d",
+    "m2/large-io/src/lib.rs": "0daf85d1a007f3859b279c942d5290a253193675a896d54271416039f92dfac7",
+    "m2/large-io/src/main.rs": "5309eb782819fa017beca8c1ecd481c15ccb1866f6def235b441c062087959ca",
+    "m2/large-io/src/tests.rs": "9d8c5e9f9a50f0562013be5b75caf7b610c27658eabef8ef158c5f8fc01ad369",
+    "scripts/large_io_lock.py": "fabc7baf34ad20ef15260347f3b957ad937aa210cbace03f757b7b346ff96f31",
+    "scripts/large_io_oracle.py": "b201edb06a65651a6eb4da5d9609c82bc3d2c33de2b7e2c0e9320ef7ba8262b0",
+    "scripts/m2_large_io.py": "ba2e85c64d0afce60d9a53f8a3c8f7afccf3e1686747efbc95c48e56780754e3",
+    "scripts/test_m2_large_io.py": "41bd756212a4de17bcb50dde85e9a985922cfbb9f554fb3c68fe3c2044dc70d8",
+    "m2/large-io/Cargo.lock": "8a501ec14d9cc08dbcce8874d56f1733d44679de0c20363c0e4e590bde0b0211",
+    "m2/publication-runtime/Cargo.toml": "a73fc2877d36759726767dc76d7fe8654aac1f4a10c19b32d5bfc2eaacaec7b8",
+    "m2/publication-runtime/src/lib.rs": "6530264fd990f80540226799584d861795233435bcc24cab67b38385cbc43c0c",
+    "m2/publication-runtime/src/main.rs": "0fae16d4a537e44ad8eb2d10eedd19f9f22fb77980fd7b85bfd69067ac393463",
+    "m2/publication-runtime/src/runner.rs": "3dc3ef04f23e2b35da25a47296d5c0218407c01e1a0d25bac592eb146ce2e6cc",
+    "m2/publication-runtime/src/tests.rs": "909922519029a4e54b93b4e509b052421ff060ee977de1821f8570f2fde17a7e",
+    "scripts/m2_publication_runtime.py": "e62d1a1e7ad138e20b3e66f8e6bf26ce4ab818b2ef29c3df997d0a896b9cce11",
+    "scripts/publication_runtime_lock.py": "d099fe9159b77e5b624323295a60cb4fe9825f1b193d0038fa58fff99eb22fbf",
+    "scripts/test_m2_publication_runtime.py": "540e9ce26f56130ee2e6719ef45286a132f2a0da7e2611f7cc1d23792d7e4d5b",
+    "m2/publication-runtime/Cargo.lock": "42579c03c1b6354bb0d82a19b94c10df7eeb43fd40557851a9b76f2ecb35357c",
+    "m2/converter-runtime/Cargo.toml": "f92dca465ff4f17e8469faef8ad144b7a5dfad48fc511cc8755e1f38bbbb5746",
+    "m2/converter-runtime/src/converters.rs": "dc63a4e89730734e8e06c5828322f278836dd40e474bdc304aa1ee0ced168fe3",
+    "m2/converter-runtime/src/lib.rs": "b66c656601fe0cc01eb4f6093aa5d3fd4812c8d0fe6363cfce6dbcfe0cdd6c45",
+    "m2/converter-runtime/src/main.rs": "e84bfb54d695ffcac23e3e9c90877354430fed3dedf76f4d0287e0a90a9c5c45",
+    "m2/converter-runtime/src/runner.rs": "3dc3ef04f23e2b35da25a47296d5c0218407c01e1a0d25bac592eb146ce2e6cc",
+    "m2/converter-runtime/src/tests.rs": "7cd43988b4ae54e82bca6ce7447e8f76445caf160f14af86dac8e6d1ef60ca34",
+    "scripts/converter_runtime_fixtures.py": "0fc9f473442f32bccda6198c455951a420024dac7a6af6ecd5136c43b5f0a7d0",
+    "scripts/converter_runtime_lock.py": "5f9ad290c657a2f85f549744f5670f20173ace1ff29bddd270af24d8c2dc89c7",
+    "scripts/m2_converter_runtime.py": "40a5080216c3712ab0939db71dc433bab8cb10df22da48bb8ef621ec156e2c4f",
+    "scripts/test_m2_converter_runtime.py": "d4d1e4757313af32cf2dedce2b068f31b52b5760ff06de059ea080bed2ee57e5",
+    "m2/converter-runtime/Cargo.lock": "e01b9a71f3ce01488d2d7a962285c773df94f13f809f8c2644c48052479f5ad3",
+    "scripts/m2_real_readers.py": "591394c436d88dcee05891bc454253bf2c8ecc06ed4395f41b37116b491fb183",
+    "scripts/real_reader_oracle.py": "36642454c24fa35dd4c888714411549dfdb315c39f8810a46752eeb3d1d800f0",
+    "scripts/test_m2_real_readers.py": "5600c02938627a228d1db05af4505d11ad7cb4d27d298520fadcebc7f81e2f20",
+    "baseline/real-corpus-manifest.json": "37fab4671f7feca7943ceca00693f643a7e32c54c7d9b6b253234c71aa693178",
+    "scripts/m2_official_mini_idioms.py": "1f2811d4eb9683e796b0130e63e0dce36838457f48b7162346c9465455f34fb6",
+    "scripts/test_official_converter_sources.py": "3f8630d65406c6be33775ca4769bff211e815115d3b1235641e739bc9402c8ef",
+    "docs/evidence/official-converter-input-inspection/measurements.json": "459fecd50acf3029d9789869a85b95a350d26a03664904cbcf0ff3d966033078",
+    "docs/evidence/concise-full-source-reference/reference.json": "37253093c8caf9c6a636c4d0f2f1982d4645f2d8c96f5a6219f6441c25576c0c",
+    "m2/concise-runtime/Cargo.lock": "4bb496aa87ce95ab479ec031c523defaed8840349c9b1f6493e10aa6631f9cc5",
+    "m2/concise-runtime/Cargo.toml": "06936ca3471694107c02f65714d8bed6fe2f7befbe09baa5fd5b25f32a844d95",
+    "m2/concise-runtime/src/converters.rs": "aa4217f926301f22bc356703c81021e3f66db218c7a791f064750aba40d2ff9c",
+    "m2/concise-runtime/src/lib.rs": "b66c656601fe0cc01eb4f6093aa5d3fd4812c8d0fe6363cfce6dbcfe0cdd6c45",
+    "m2/concise-runtime/src/main.rs": "3032b12f3196b095db7b1eec676aa689383105c3ee9a20c8d1e01df961d18223",
+    "m2/concise-runtime/src/runner.rs": "3dc3ef04f23e2b35da25a47296d5c0218407c01e1a0d25bac592eb146ce2e6cc",
+    "m2/concise-runtime/src/tests.rs": "7e4ab66e38ad3f49aa75e6825e7adede182612fb776ecd5749cbd686a6d63457",
+    "m2/concise-runtime/tests/fixtures/concise.xlsx": "b7a4137d349c0dfc90ea5bc2b407a234ba50815e4e7fbee28ef3c25550800ab6",
+    "scripts/concise_runtime_lock.py": "2a64961ecf34ee679325947d9b9c3eb658cea066a104e5ae13a9a4f2c831619c",
+    "scripts/m2_concise_full.py": "01369dd9b78711e1b6f7e34f8d78074b5e9541fcc0d5a9f40e72568406b3e864",
+    "scripts/test_concise_full.py": "c83acad31dc0f956a9e90c6715dee3e2dd54d1e6d8718ec61090897ad2c6c468",
+    "docs/evidence/cc-full-source-reference/reference.json": "c3d8c7696c3ee4c7aa85495a4421b60c9145973b839d1cd21ce4e6cca3ffea11",
+    "m2/cc-runtime/Cargo.lock": "1df9fdcb0e5d20ab77bacde0035efdfe0a40d9c0a8936301e105e4f1a9cad9c4",
+    "m2/cc-runtime/Cargo.toml": "4c532ec75433a34e2d3322f03a31c0f91bd27e06c92a4b65cef0459c078bf419",
+    "m2/cc-runtime/src/converters.rs": "1e83abb3f6cfd19d6d2c5ef77c8861c170e9d2110fb3e08ec07aeb59c00ada28",
+    "m2/cc-runtime/src/lib.rs": "0300e790f6b795c05c0a64baa9d11c23a498e579fcf035af0a4b59965621574f",
+    "m2/cc-runtime/src/main.rs": "605d9cfcfb28ed7a77683480efa9a611e890fa64f69d51a04113fcdc7f86017f",
+    "m2/cc-runtime/src/runner.rs": "3dc3ef04f23e2b35da25a47296d5c0218407c01e1a0d25bac592eb146ce2e6cc",
+    "m2/cc-runtime/src/tests.rs": "8241a1d1f9f8831fe670091506dfc5ed8145acefa128c46f45d2be2f9309038d",
+    "m2/cc-runtime/src/txt.rs": "59d3b6d40733f770539fbdee6fb31f41deda71d90c0e156b88623d6eac3ae210",
+    "scripts/cc_runtime_lock.py": "fdd6ce2ffb7f844dbed65535a334648757c16a47c86808c1ea6eb62f61769cde",
+    "scripts/m2_cc_full.py": "0fe06b7521c373176bd4c372ab6733c50f0a62ce23558f7d33b25b74307699f7",
+    "scripts/test_cc_full.py": "08699b40fdf33b92367cadcb7bf4a169af750b9b671ed3eb4129a7a249ef9f0d",
+    "docs/evidence/revised-row-source-reference/reference.json": "5bbfaf5d030ea5876c9414a45631c5b120d422525989985b543619d74ffb0bd5",
+    "m2/xlsx-spool/Cargo.lock": "59a13a6ef61dba5dc3e1beebfa51fed237537d631eaef5fe42ac78e405f5b3b3",
+    "m2/xlsx-spool/Cargo.toml": "0b5341c4b914f271a6e803cedc298791cc18b8c76932d0ce52213f97078a6ebd",
+    "m2/xlsx-spool/src/lib.rs": "b348c6976feaab026ae269f4d0996fe6682f7c4263bbefc155995479a639703c",
+    "m2/xlsx-spool/src/main.rs": "841a8eea6d0f97a779c94fe99b2e473f94de3188aaead94fb46d51f0622e6156",
+    "m2/xlsx-spool/src/package.rs": "8336abb56c8719824c654bd996c038e033566bb94e71225e143ecd9fdde984c6",
+    "m2/xlsx-spool/src/rows.rs": "ef762be07eb1dc58dc6ac3a52dbda1271b80148192d9be753bab0eeb75fc8a65",
+    "m2/xlsx-spool/tests/compatibility.rs": "f36f789ebc20a8e14ffba799508a0c730d5f81ec4bd6f4cc52edb48aff11883d",
+    "scripts/m2_xlsx_spool.py": "23e1c62cc93d8ea4baa1f279aff6d7ca845b109f5fd1e260d9a496c2e79fcd8a",
+    "scripts/test_xlsx_spool.py": "6f4b7ecfa32e12ac721c1016aa495a6239930a5988283cfe8d649820253a84be",
+    "scripts/xlsx_spool_lock.py": "9fdb2cf6fcc763fe067f04ad3e7f10d521ed794ced3b3fe2641debe0dec767e7",
+    "scripts/xlsx_spool_oracle.py": "d19c89eb7095b9ad370c467c68b5e81e87f44e21aecf42a69dbc71fdea8607da"
+  },
+  "source_sha256": {
+    "docs/evidence/revised-render-source-reference/reference.json": "21e08d839d0a7e99f9a4225f70e061bdb88731672cb3d42be2291d1a0549e893",
+    "m2/revised-render/Cargo.lock": "0d28ea8fd4c8d6d0e99421b51114a067634273b16399afbfd84e63e4447e0700",
+    "m2/revised-render/Cargo.toml": "f0ef5fd94c274cf2ca947a210ddff3e3e6e9bed95da0c2bd844e211cb887f4e0",
+    "m2/revised-render/src/lib.rs": "ea79d95b88d43abe5e4c4c42f5c2a0bcc99a0245f8be8ade99fc7ca2ba17a060",
+    "m2/revised-render/src/main.rs": "1c526efc52f47475e81044348d25f97f09387b2e92ceda60799a92126d08384f",
+    "m2/revised-render/src/publication.rs": "63046be511db6f00f05bae640bb4d890425604f838545aee1aa64ad748c1ab74",
+    "m2/revised-render/tests/fixtures/groups.xlsx": "3764c3f2bedaf81b82a436f612f6141bdd20fd3970afaeed2d798fbe3d75f245",
+    "m2/revised-render/tests/render.rs": "5782175282337d73688cfcdcb20503425c031b12d51c7ce50bce01f3f59e4960",
+    "scripts/m2_revised_render.py": "6576b9ad4b95db3e4980a775e4f7ee536c5d2bb22ff365b77b5d9089a892a3c9",
+    "scripts/revised_render_lock.py": "05d0b33ee25e0920fc598154fc55e8b335dff6a7485cfb4d3cd6fb96b8d96f52",
+    "scripts/revised_render_oracle.py": "13ad3181c6ed328d86f40686ae515121ea47743b5a0740491cd4194820ed9577",
+    "scripts/test_revised_render.py": "a3a741f7ae5047913035836fc07b3a78d8a1d9ec3b42831ebf196470bfc995ae"
+  },
+  "legacy_oracle_sha256": {
+    "baseline/legacy/base_plugin.py": "0620c3d88502191b4b297c918394cc9ae886e943e83b06bf377fa1284b044b49",
+    "baseline/legacy/excel_utils.py": "b0a837e2197a5d0d42599171716b903ef813dc52512e55c1ccbe93f2f0bd2302",
+    "baseline/legacy/plugins/cccedict_plugin.py": "4c3fc461a044e702678ce7fbf0e2b251969d5932c4bf2d2070d6f58c2eeb139c",
+    "baseline/legacy/plugins/edudict_plugin.py": "2505bdaf5733f905d8fba1f68dd22e1c7b123484599d1f18bcf7c6cb576aa923",
+    "baseline/legacy/plugins/WFG_desgin_Plugin.py": "9d476ee0fb38603c7b6e6634c9987ab7a26077dbf15357718e9e93293da09ba2",
+    "baseline/legacy/plugins/concise_plugin.py": "25b37d4f801e4ddfef03557a54fa8a20ad5bbbac79f8eddc19135ae6562abc6a",
+    "baseline/legacy/plugins/idiom_plugin.py": "53dce8296c31f92c1e83a4cb7f2773c7e97d6ae85f00811724a11adf83768bc1",
+    "baseline/legacy/plugins/mini_plugin.py": "aca858af532a8f409b5b55d6d3632b63466d8d67af910390f65e3623561c00f5"
+  },
+  "dependency_packages": [
+    {
+      "name": "arbitrary",
+      "version": "1.5.0",
+      "checksum": "3bc62ac97cc33321f50863d514c3bc38a453947a8f9e781137e47c7401020aed"
+    },
+    {
+      "name": "atoi_simd",
+      "version": "0.16.1",
+      "checksum": "c2a49e05797ca52e312a0c658938b7d00693ef037799ef7187678f212d7684cf"
+    },
+    {
+      "name": "bitflags",
+      "version": "2.13.2",
+      "checksum": "3ded4057c258ba199e2d26386d3af3780957ecaee6c4ef4041c6b4b8b97c0b06"
+    },
+    {
+      "name": "bumpalo",
+      "version": "3.20.3",
+      "checksum": "72f5acc6cb2ba439de613abc23857ec3d78374d8ed5ac84e9d11336e87da8649"
+    },
+    {
+      "name": "byteorder",
+      "version": "1.5.0",
+      "checksum": "1fd0f2584146f6f2ef48085050886acf353beff7305ebd1ae69500e27c67f64b"
+    },
+    {
+      "name": "calamine",
+      "version": "0.31.0",
+      "checksum": "da56b262e8a827c6b12c3dde4ea4622e0ff542bd2e9ea5855e4cb523481d77b7"
+    },
+    {
+      "name": "cfg-if",
+      "version": "1.0.5",
+      "checksum": "4e7648175b45a9a48536d676f68d918270699102aa8dab5496df06904c914600"
+    },
+    {
+      "name": "codepage",
+      "version": "0.1.3",
+      "checksum": "bdff162541cd8b79de82e2edcc7eff3a8c2a6dc3d75152636028f96d93de3b26"
+    },
+    {
+      "name": "core_detect",
+      "version": "1.0.0",
+      "checksum": "7f8f80099a98041a3d1622845c271458a2d73e688351bf3cb999266764b81d48"
+    },
+    {
+      "name": "crc32fast",
+      "version": "1.5.3",
+      "checksum": "0ba106e844045ddc02c20768ac4b0b7cb45f2cc2ecbd833ac9f5dacb183c2055"
+    },
+    {
+      "name": "debug_unsafe",
+      "version": "0.1.4",
+      "checksum": "7eed2c4702fa172d1ce21078faa7c5203e69f5394d48cc436d25928394a867a2"
+    },
+    {
+      "name": "derive_arbitrary",
+      "version": "1.5.0",
+      "checksum": "1b034bd7d5f032402a2479444dcc6f74e36a03f31854d41680fb240ef682a1ac"
+    },
+    {
+      "name": "encoding_rs",
+      "version": "0.8.42",
+      "checksum": "8e985e0451871ad22fb8d2b6b076e2028a502a0d3950998c2c5c0a4f9b5d9679"
+    },
+    {
+      "name": "equivalent",
+      "version": "1.0.3",
+      "checksum": "00d174d5400e5e8fd687ad1049e2f578285fa914201b1af7e8b112a4546bd826"
+    },
+    {
+      "name": "errno",
+      "version": "0.3.14",
+      "checksum": "39cab71617ae0d63f51a36d69f866391735b51691dbda63cf6f96d042b63efeb"
+    },
+    {
+      "name": "fast-float2",
+      "version": "0.2.4",
+      "checksum": "c6e8948ce679d00a02a94739ea185595dca7118ed04feb991127e443bd3d761f"
+    },
+    {
+      "name": "fastrand",
+      "version": "2.5.0",
+      "checksum": "da7c62ceae207dd37ea5b845da6a0696c799f85e97da1ab5b7910be3c1c80223"
+    },
+    {
+      "name": "flate2",
+      "version": "1.1.10",
+      "checksum": "6e634e2e0ebac1ee034020da1ca582e17ffe4e0f5e985823721e168928136dcb"
+    },
+    {
+      "name": "getrandom",
+      "version": "0.4.3",
+      "checksum": "300e883d756b2e4ec94e02791f39b04b522276138852cfc41d9fb7e904106099"
+    },
+    {
+      "name": "hashbrown",
+      "version": "0.17.1",
+      "checksum": "ed5909b6e89a2db4456e54cd5f673791d7eca6732202bbf2a9cc504fe2f9b84a"
+    },
+    {
+      "name": "indexmap",
+      "version": "2.14.2",
+      "checksum": "cc4e190f5d26ca7051642629da2c52fc03bde85a03197c99408dcd291734c855"
+    },
+    {
+      "name": "itoa",
+      "version": "1.0.18",
+      "checksum": "8f42a60cbdf9a97f5d2305f08a87dc4e09308d1276d28c869c684d7777685682"
+    },
+    {
+      "name": "libc",
+      "version": "0.2.191",
+      "checksum": "65cd87c9a6d60536580b316ad985726104730a5151c99845f2490428ef91240a"
+    },
+    {
+      "name": "linux-raw-sys",
+      "version": "0.12.1",
+      "checksum": "32a66949e030da00e8c7d4434b251670a91556f4144941d37452769c25d58a53"
+    },
+    {
+      "name": "log",
+      "version": "0.4.34",
+      "checksum": "f9f8bd3e56ce4dfc153cf470fffbfa98c7620958b312ca5c3a4b8d5181fd13c6"
+    },
+    {
+      "name": "memchr",
+      "version": "2.8.3",
+      "checksum": "cf8baf1c55e62ffcace7a9f06f4bd9cd3f0c4beb022d3b367256b91b87513d98"
+    },
+    {
+      "name": "multiversion_no_op",
+      "version": "1.0.0",
+      "checksum": "743fb55ba31b18fb1ecef6bdc9aa2743314978ac084044301a7eee33fb99a20d"
+    },
+    {
+      "name": "once_cell",
+      "version": "1.21.4",
+      "checksum": "9f7c3e4beb33f85d45ae3e3a1792185706c8e16d043238c593331cc7cd313b50"
+    },
+    {
+      "name": "proc-macro2",
+      "version": "1.0.107",
+      "checksum": "985e7ec9bb745e6ce6535b544d84d6cd6f7ad8bd711c398938ae983b91a766d9"
+    },
+    {
+      "name": "quick-xml",
+      "version": "0.38.3",
+      "checksum": "42a232e7487fc2ef313d96dde7948e7a3c05101870d8985e4fd8d26aedd27b89"
+    },
+    {
+      "name": "quote",
+      "version": "1.0.47",
+      "checksum": "1fbf4db142a473a8d80c26bbf18454ed458bf8d26c8219c331daecfdbd079001"
+    },
+    {
+      "name": "r-efi",
+      "version": "6.0.0",
+      "checksum": "f8dcc9c7d52a811697d2151c701e0d08956f92b0e24136cf4cf27b57a6a0d9bf"
+    },
+    {
+      "name": "rustix",
+      "version": "1.1.6",
+      "checksum": "e5e76742e5294153d4dde1207dbec5bdd81eef6fabdc0d2118babadabfd858aa"
+    },
+    {
+      "name": "rustversion",
+      "version": "1.0.23",
+      "checksum": "cf54715a573b99ac80df0bc206da022bcd442c974952c7b9720069370852e21f"
+    },
+    {
+      "name": "scopeguard",
+      "version": "1.2.0",
+      "checksum": "94143f37725109f92c262ed2cf5e59bce7498c01bcc1502d7b9afe439a4e9f49"
+    },
+    {
+      "name": "serde",
+      "version": "1.0.229",
+      "checksum": "4148590afebada386688f18773da617792bf2ef03ffc1e4cbd2b1d45b023e0ba"
+    },
+    {
+      "name": "serde_core",
+      "version": "1.0.229",
+      "checksum": "67dca2c9c51e58a4791a4b1ed58308b39c64224d349a935ab5039aa360942a48"
+    },
+    {
+      "name": "serde_derive",
+      "version": "1.0.229",
+      "checksum": "e7a5d71263a5a7d47b41f6b3f06ba276f10cc18b0931f1799f710578e2309348"
+    },
+    {
+      "name": "serde_json",
+      "version": "1.0.154",
+      "checksum": "e7e9cc8b1b85264074fbcc02a88680c4096b1e47df8f739dceb03bf482f04bd6"
+    },
+    {
+      "name": "simd-adler32",
+      "version": "0.3.10",
+      "checksum": "3a219298ac11a56ea9a6d2120044824d6f01aeb034955e7af7bc16858527deea"
+    },
+    {
+      "name": "simdutf8",
+      "version": "0.1.5",
+      "checksum": "e3a9fe34e3e7a50316060351f37187a3f546bce95496156754b601a5fa71b76e"
+    },
+    {
+      "name": "studio-revised-render",
+      "version": "0.1.0",
+      "checksum": null
+    },
+    {
+      "name": "studio-xlsx",
+      "version": "0.1.0",
+      "checksum": null
+    },
+    {
+      "name": "studio-xlsx-spool",
+      "version": "0.1.0",
+      "checksum": null
+    },
+    {
+      "name": "syn",
+      "version": "3.0.9",
+      "checksum": "d78c8dee4c7bf0e14673097256fed6142ce9d3b85a408189d07482442145823b"
+    },
+    {
+      "name": "tempfile",
+      "version": "3.27.0",
+      "checksum": "32497e9a4c7b38532efcdebeef879707aa9f794296a4f0244f6f69e9bc8574bd"
+    },
+    {
+      "name": "unicode-ident",
+      "version": "1.0.27",
+      "checksum": "a2c754d6c33795a1c324727428e5a7dedb5b06195f9890bdbcba760d3e246563"
+    },
+    {
+      "name": "windows-link",
+      "version": "0.2.1",
+      "checksum": "f0805222e57f7521d6a62e36fa9163bc891acd422f971defe97d64e70d0a4fe5"
+    },
+    {
+      "name": "windows-sys",
+      "version": "0.61.2",
+      "checksum": "ae137229bcbd6cdf0f7b80a31df61766145077ddf49416a728b02cb3921ff3fc"
+    },
+    {
+      "name": "zip",
+      "version": "4.6.1",
+      "checksum": "caa8cd6af31c3b31c6631b8f483848b91589021b28fffe50adada48d4f4d2ed1"
+    },
+    {
+      "name": "zlib-rs",
+      "version": "0.6.8",
+      "checksum": "b268e58e7c693d7c271f93ffc4ba3b380412554231c85bf61ca7af91042a4112"
+    },
+    {
+      "name": "zmij",
+      "version": "1.0.23",
+      "checksum": "29666d0abbfad1e3dc4dcf6144730dd3a3ab225bbbdac83319345b1b44ccfc1b"
+    },
+    {
+      "name": "zopfli",
+      "version": "0.8.4",
+      "checksum": "aaf7fc5d30c28483d93805c4a5e12b05bbb52407fa67c5f8bd552374cd01fb11"
+    }
+  ],
+  "dependency_lock_sha256": "0d28ea8fd4c8d6d0e99421b51114a067634273b16399afbfd84e63e4447e0700",
+  "binary_sha256": "eb42e06d65a1219023602aadabfe159aab1d03b320615e47255aa063744e93f6"
+}

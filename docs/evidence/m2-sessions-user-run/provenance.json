@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-05",
+  "files": {
+    "m2-sessions-report.json": "03adb375739280459f6675c10acbe4b38942350cdff2f64b038086b15ff199ef"
+  },
+  "source_snapshots": {
+    "qualified/m2/sessions/Cargo.toml": "419999dc6ee87c598fa4e83f06a569a5d315dcbdadb343e310598874513624fc",
+    "qualified/m2/sessions/src/lib.rs": "8ebaefc6d91d5dd20c9fb16f298f9ecc15e45d573ae045a4219a659c87c13dd4",
+    "qualified/m2/sessions/src/main.rs": "db7a7de3924ad46ef0586be60e9a3e2ed08815d9b1dfbf8eb3040009a3567b65",
+    "qualified/m2/sessions/src/tests.rs": "4f58ec5aa22adbf7f880e93234254b78fbcf5fb4f2d543bbdc7fa21a35368f0e",
+    "qualified/scripts/m2_sessions.py": "4d2192fe5369b3d669b7e55d8294f74a2f10a2cd772d0dc664682c37b99edf64",
+    "qualified/scripts/session_lock.py": "129181d7ad2d1660c461202c48af1d4a0cf88c3ea3566ba00dac5a0005bd3579",
+    "qualified/scripts/test_m2_sessions.py": "5233d6a86998f51129f32afc23ad10505aa66e9df6ffe239484e8d211ae64ea1",
+    "qualified/m2/sessions/Cargo.lock": "e6bdfe6bd2fa832b01a3cd344f690ef9fb09f015a9f498299238a36ee15b045c"
+  },
+  "report_library_file_id": "libfile_ce56539337c8819192ef8f3f417017e1",
+  "result": "m2_persistent_sessions_background_pages_passed_larger_paths_pending",
+  "assessment": "First persistent indexed-session/background-page gate accepted: successful source-bound Rust test/build commands, five process scenarios, 37 independently recomputed page replies and 497 controller exchanges. All 153 previous sources match; 63-package graph unchanged apart from the local session facade. Final logical reader, handle and reply reservations are zero in every scenario. Maximum observed process RSS 6262784 bytes.",
+  "successful_Rust_test_stdout_attached": false,
+  "not_qualified": [
+    "M2 completion",
+    "full source/cache ceilings",
+    "hard RSS/disk enforcement",
+    "shared global admission with existing conversion/packing workers",
+    "larger extraction/packing/converter paths",
+    "GUI event-loop adapters",
+    "arbitrary filesystem/power-loss cleanup"
+  ],
+  "note": "Rust unit-test acceptance uses the exact-source-bound successful command receipt. Individual successful Rust test logs and real dictionary/cache binaries were not attached. Normal-exit file cleanup/source restore were checked by the bound harness, not separately inspected by this reviewer."
+}

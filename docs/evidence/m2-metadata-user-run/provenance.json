@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-02",
+  "files": {
+    "m2-metadata-report.json": "931f3167b35894d9845ebcf17001a747e2430f5b2228faee9402e40710b18931"
+  },
+  "source_snapshots": {
+    "qualified/m2/v2-import/Cargo.lock": "a051908d457e9596c0496a32faca03979e9deb9880ee80129061ad25c2c1f928",
+    "qualified/m2/v2-import/Cargo.toml": "d441b0ce96872fbceb57802f2330a3ddc0c93a1dabd06b62c6f778aba383ef3e",
+    "qualified/m2/v2-import/src/application/metadata.rs": "b5b9685fc5593e637ae1cd28b3d39122b827c0da17ec8c8423c7ead718f486ff",
+    "qualified/m2/v2-import/src/application/runner/tests.rs": "f0f423b54a5190ac0bbabee0d06e0aa83bc93f705d759910387d58161bf222eb",
+    "qualified/m2/v2-import/src/application/runner.rs": "18ec195ae41751217ed65d0c75e8161693592bf9bc8af39f7d5011e1142cb458",
+    "qualified/m2/v2-import/src/application.rs": "85d140aa3df7a95ae82a975df94c09f6cd930d702af8e6c818fd8bb0c969e553",
+    "qualified/m2/v2-import/src/bin/studio-import-jobs.rs": "f9a5c3c505208afadde5c1edeb48d4d5788b41513928b364c328fd8c4d209ff1",
+    "qualified/m2/v2-import/src/bin/studio-metadata-rebuild.rs": "5ae34297d5d74f10134bef794cbeb5f243124f806de20de7c1191a3049fe1721",
+    "qualified/m2/v2-import/src/header.rs": "4baca7c9a063df4d8ea127ce9f6c6b57e695832813ca295cff00529ae12088ee",
+    "qualified/m2/v2-import/src/lib.rs": "5f8e42fcc9db5952eb8b16d773aa171a321d5217d4859c1b6bfcef96a00cc28c",
+    "qualified/m2/v2-import/src/main.rs": "a9b7345656a9dfd95881f46c147ee11b8f696a19ad16c72abe3f285767d9b805",
+    "qualified/m2/v2-import/src/mdd.rs": "f58e26346e3365625930c6b802d8b0f9e48391dc62ef5844c60d3ac79f82be45",
+    "qualified/m2/v2-import/src/mdx.rs": "f5e405bb3380c71c2dc5863a2cc6e01fb0f64d72ff14aef5befe30f7bb50f3c3",
+    "qualified/m2/v2-import/tests/application.rs": "3d90c30847fef356561e81fe81ad6db3b7d78a6acc08eca67eb73caaa5d09bb9",
+    "qualified/m2/v2-import/tests/import.rs": "cbfdbeeb4f3734958bd700bd351d5da5dfd9313736d49467c59d02dbd56dc196",
+    "qualified/m2/v2-import/tests/metadata.rs": "de50ab3dddcfefdcffdd5000e717cfcb0cae565c0cbb6fad73d15207210cb7a4",
+    "qualified/scripts/m2_metadata.py": "e650d808015b7a34bd2aa8fe0d001be1b0ca908d3cb369c5af7a2f58edf93455",
+    "qualified/scripts/test_m2_metadata.py": "8a7619ef546dad00b0226be8f5097b388345b5df946117706b044c20bc145147"
+  },
+  "report_library_file_id": "libfile_c3f43604f6f881919524d0c10ed5028a",
+  "result": "m2_metadata_rebuild_offline_passed_native_checks_pending",
+  "commands": 36,
+  "case_counts": {
+    "metadata_sections_records_passed": 14,
+    "expected_refusal": 18
+  },
+  "native_files": [
+    {
+      "path": "native/metadata-utf16.mdx",
+      "sha256": "8e65bd1b7d65b191ed22cafce53fbf50b71480b3745f032de81b294497cf2660"
+    },
+    {
+      "path": "native/metadata-utf8.mdx",
+      "sha256": "07466820880e42d5e8efb98f6ceba13a219c13aae1eac35b85fadc83d7e606f8"
+    }
+  ],
+  "native_readers": "pending",
+  "M2_complete": false,
+  "evidence_limits": "Passing command logs, generated dictionary bytes and individual actual JSON were not separately attached. This records the fingerprinted runner assertions; native reader behavior remains untested for these exact outputs."
+}

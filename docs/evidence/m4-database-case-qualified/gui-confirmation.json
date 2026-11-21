@@ -1,0 +1,11 @@
+{
+  "package_version": 149,
+  "screenshots_confirm": [
+    "aPp case-sensitive prefix: zero matches",
+    "aPp Unicode lowercase prefix: four matches, pages IDs 1/2 and 3/4",
+    "aPpLe Unicode lowercase exact: three matches, pages IDs 1/3 and 4",
+    "switch back to case-sensitive: zero matches",
+    "snapshot-open notice and rendered/split previews persist"
+  ],
+  "wildcard_profile_qualified": false
+}

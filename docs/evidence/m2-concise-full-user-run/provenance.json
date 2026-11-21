@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-06",
+  "attached_report_library_file_id": "libfile_98506be8e16c8191a5851e9554f52009",
+  "uploaded_name": "m2-concise-full-report(1).json",
+  "files": {
+    "m2-concise-full-report.json": "f6b8850aa25f460537fc2b5ed1aae8cf2d09b5af7ebb59fb73f0da0904f8cb9a"
+  },
+  "source_snapshots": {
+    "qualified/docs/evidence/concise-full-source-reference/reference.json": "37253093c8caf9c6a636c4d0f2f1982d4645f2d8c96f5a6219f6441c25576c0c",
+    "qualified/m2/concise-runtime/Cargo.lock": "4bb496aa87ce95ab479ec031c523defaed8840349c9b1f6493e10aa6631f9cc5",
+    "qualified/m2/concise-runtime/Cargo.toml": "06936ca3471694107c02f65714d8bed6fe2f7befbe09baa5fd5b25f32a844d95",
+    "qualified/m2/concise-runtime/src/converters.rs": "aa4217f926301f22bc356703c81021e3f66db218c7a791f064750aba40d2ff9c",
+    "qualified/m2/concise-runtime/src/lib.rs": "b66c656601fe0cc01eb4f6093aa5d3fd4812c8d0fe6363cfce6dbcfe0cdd6c45",
+    "qualified/m2/concise-runtime/src/main.rs": "3032b12f3196b095db7b1eec676aa689383105c3ee9a20c8d1e01df961d18223",
+    "qualified/m2/concise-runtime/src/runner.rs": "3dc3ef04f23e2b35da25a47296d5c0218407c01e1a0d25bac592eb146ce2e6cc",
+    "qualified/m2/concise-runtime/src/tests.rs": "7e4ab66e38ad3f49aa75e6825e7adede182612fb776ecd5749cbd686a6d63457",
+    "qualified/m2/concise-runtime/tests/fixtures/concise.xlsx": "b7a4137d349c0dfc90ea5bc2b407a234ba50815e4e7fbee28ef3c25550800ab6",
+    "qualified/scripts/concise_runtime_lock.py": "2a64961ecf34ee679325947d9b9c3eb658cea066a104e5ae13a9a4f2c831619c",
+    "qualified/scripts/m2_concise_full.py": "01369dd9b78711e1b6f7e34f8d78074b5e9541fcc0d5a9f40e72568406b3e864",
+    "qualified/scripts/test_concise_full.py": "c83acad31dc0f956a9e90c6715dee3e2dd54d1e6d8718ec61090897ad2c6c468"
+  },
+  "review_summary": {
+    "source_data_rows": 45178,
+    "entries": 44445,
+    "canonical_TXT_bytes": 25093253,
+    "controller_exchanges": 893,
+    "successful_publications": 1,
+    "expected_job_refusals": 6,
+    "wrong_converter_API_refusals": 1,
+    "max_observed_RSS_bytes": 342503424,
+    "all_final_reservations_zero": true,
+    "scope": "Full normalized digest agrees with two independent local original Python runs; exact-source-bound Mac harness asserts full record comparison and file preservation/cleanup. Actual native TXT files are not attached. Full-size reader overlap and hard RSS enforcement are not qualified; M2 partial."
+  },
+  "reviewer": "scripts/check_concise_full_receipt.py",
+  "review_method": "Replayed every reported controller exchange; checked exact protected/harness/legacy source identities and registry graph/lock; cross-checked full output normalized digest and counts against two independent local full original-Python runs retained before Mac execution. Native output files are not attached. Per-record native comparison, source preservation, no refused output, no-clobber output preservation and private scratch cleanup are assertions in the exact bound Mac harness. No native execution locally.",
+  "qualification_scope": "Single complete official Concise conversion plus six job refusals and one wrong-converter API refusal. Peak process RSS 326.64 MiB is below the provisional 384 MiB observation target but above the 256 MiB logical conversion charge; this charge is not OS enforcement. Full-size concurrent reader/converter work and larger converter sizing remain unqualified.",
+  "source_or_dictionary_outputs_bundled": false,
+  "M2_complete": false
+}

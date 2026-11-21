@@ -1,0 +1,31 @@
+{
+  "schema": "studio-settings-dialog-GUI-v1",
+  "date": "2026-11-20",
+  "status": "accepted_observed_modal_presentation_Esc_and_Tab_navigation",
+  "screenshot_sha256": {
+    "截屏2026-11-20 19.52.09.png": "338f536beffc9700abaff5c58a8fbeb5a6bcb4ef631e17ac53864d552c35daf0",
+    "截屏2026-11-20 19.54.05.png": "89e156021dcbe804e6e823b1c2d96033a38dd07a8f7f1fd0718f601fbd51fcd7",
+    "截屏2026-11-20 19.58.06.png": "f55285886787fb9728d073e6dda16c829f4ede89f7d747b5071a5d46463214a2",
+    "截屏2026-11-20 19.59.28.png": "a4616e49fc564921dbb7b640fb64b858ce52dc21ce409a82c1d6149a4bb9da29"
+  },
+  "observed": [
+    "English Light dialog",
+    "Arabic Dark dialog with RTL",
+    "Dimmed workspace behind modal",
+    "Appearance selector visibly focused"
+  ],
+  "user_attested": [
+    "Explicit Esc closes dialog while app remains open",
+    "Tab navigation inside dialog",
+    "App deliberately quit/reopened to check preferences"
+  ],
+  "not_independently_confirmed": [
+    "Done button close and focus restoration",
+    "Full Tab/Shift+Tab cycle containment",
+    "Preservation of a nonempty temporary Build draft",
+    "Chinese visual review"
+  ],
+  "scope": "Observed checks accepted; not exhaustive accessibility qualification",
+  "M3_complete": false,
+  "production_release_ready": false
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "studio-parent-death-local-v1",
+  "date": "2026-11-21",
+  "status": "local_Python_subprocess_and_contracts_passed_native_pending",
+  "new_parent_death_tests": 3,
+  "wrapper_tests": 6,
+  "all_Python_contracts": 320,
+  "native_Rust_executed": false,
+  "macOS_executed": false,
+  "fresh_app_built": false,
+  "source_sha256": {
+    "m3/txt-runtime/src/python_plugin.rs": "444a2715e284c8b703e1629730abc70d0c1e196ab88e5aea52c6750bf665308c",
+    "m3/txt-runtime/src/plugin_wrapper.py": "3a62e0912e03ba0ccb6ecc10a88034070926e895da7706d7d18553f9cc535467",
+    "scripts/test_m3_parent_death.py": "d116ed5096ee33a94300e816fed5e7b87b9482b86ff9cbb92b71c4c3e784468b",
+    "scripts/test_m3_python_plugin.py": "70caa399eedc14d38bec86924920dd95ded7dcdce91c08effd84490673ee600b",
+    "scripts/m3_parent_death.py": "a3d22c1ba7990897c0d520ec383d5187139692615d5a5844d7455ef7aff8ec8b",
+    "docs/M3-PARENT-DEATH.md": "d79558784cd8ced9239ada980f0fa97e6b2640f3129024b2d4f27d7928608bdb"
+  },
+  "M3_complete": false,
+  "production_release_ready": false
+}

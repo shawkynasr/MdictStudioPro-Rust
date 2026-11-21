@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-03",
+  "files": {
+    "m2-sizing-report.json": "00a6c9d3eb5257079edf51ce5f6cf9c5a72413c71a1b00e8ce9599a12c768722"
+  },
+  "source_snapshots": {
+    "qualified/m2/bounded-engine/Cargo.toml": "3aa3485f514067b06a8a81fcafdb8de58fc68f28819075d1fd57c09d945bcbdd",
+    "qualified/m2/bounded-engine/src/lib.rs": "a5db8236f6bcc88a99195c2fa3fa1165d018765d5603df743357eba4d933f7db",
+    "qualified/m2/bounded-engine/src/main.rs": "1e546a902a50e462317e1bdd9b66d93adabcc2d523a611f57f185515492b40c6",
+    "qualified/m2/bounded-engine/tests/reader.rs": "c4fa19f097e3ab4c5de4d81b4b7703961bc8e4dbc2a3ea57a2311bcd76f0b9ca",
+    "qualified/scripts/bounded_engine_lock.py": "ea3b1073a5585b3adfb954b6627769f12399d8cb6a917d9e05cb8c9c95519b64",
+    "qualified/scripts/bounded_fixtures.py": "fd2b5b94c9fca320c225d802a45f6aecc725cf6fa68a1589f1d9226409395731",
+    "qualified/scripts/m2_sizing.py": "482cee96a8ed93ce089b9d3963d6a57493947d05716da12a5002dbed1f2e7a1b",
+    "qualified/scripts/test_m2_sizing.py": "239428f5bd1187c5b03169b8df52aacb1095606f471dc51a7222b69091bd421c",
+    "qualified/m2/bounded-engine/Cargo.lock": "0eb54565fd255f57ebabfaa15f1d88b94ca8c0cd9384f9ee558f9be462692c32"
+  },
+  "report_library_file_id": "libfile_9325744af4448191911b903db2dc6192",
+  "result": "m2_sizing_failed",
+  "diagnosis": "Rust compiled; shared MDX integration fixture lacks declared Format=Html/Text and is rejected by unchanged header policy before three intended scan/limit tests. Header unit and two integration tests passed. Large-file/RSS batch not reached.",
+  "fix": "Declare Format=Html in the MDX test builder; keep production reader and header policy unchanged.",
+  "runtime_source_changed_for_retry": false
+}

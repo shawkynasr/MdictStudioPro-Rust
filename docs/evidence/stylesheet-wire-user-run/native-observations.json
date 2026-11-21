@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-28",
+  "source": "Manual user test results in this conversation and supplied screenshots inspected here",
+  "encodings": [
+    "UTF-8",
+    "UTF-16"
+  ],
+  "readers": [
+    "MDict for macOS 2.2.6 (build 200)",
+    "GoldenDict 26.6.1-7548db1682"
+  ],
+  "result": "PASS_USER_REPORTED_VISUAL_AND_RESTART_CHECKS_BOTH_READERS_BOTH_ENCODINGS",
+  "fixtures": {
+    "05-stylesheet-wire-utf8.mdx": "6525e312025548361f226a2bbc3835035bbed940b862a49dd25ce54c9971253c",
+    "05-stylesheet-wire-utf16.mdx": "9a7437ffc9e253ff27c9f3f377879348990c46b1921eb90ba8420a3d66e04f0c"
+  },
+  "screenshots_observed": [
+    "marker-blue blue and underlined",
+    "inline-blue blue and underlined",
+    "marker-red red bold with red border",
+    "inline-red red bold with red border",
+    "plain has no inherited color or border"
+  ],
+  "screenshot_scope": "Screenshots substantiate displayed formatting; reader/encoding coverage and restarts also rely on user report",
+  "conclusion_scope": "Final LF correction resolves the observed synthetic fixture issue; broader production compatibility remains unproven"
+}

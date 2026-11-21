@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-06",
+  "method": "Independent fresh captured Python conversion of complete attached workbook under PYTHONHASHSEED=17; normalized comparison uses previously accepted reference-field ordering rule",
+  "source_sha256": "af2e9ba3655799080e0f7214646bde11ca5cc5e16226bca1e9a461285e05eec6",
+  "output_sha256": "163d967358dac82df25329dfca38f273f3338494e6041d429fec049a72a69765",
+  "file_bytes": 25093253,
+  "normalized_record_digest": {
+    "records": 44445,
+    "key_bytes": 302310,
+    "payload_bytes": 24524273,
+    "framed_records_sha256": "7320b7c207df51802f4a59c2ce9c3469f37b544d8202fa80f43a9dbe415b3511"
+  },
+  "raw_matches_first_local_conversion": false,
+  "native_run": false
+}

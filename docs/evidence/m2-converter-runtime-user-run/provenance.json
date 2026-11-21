@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-06",
+  "files": {
+    "m2-converter-runtime-report.json": "d2f73ccc2a8b43ec1525b976a920621144df9335724ec9bb719e94b92b6a6a20",
+    "review-oracles.json": "ede03d16c785ad62a57f5ec05d91aa1b3d70402b119cac353a6153965d23637c"
+  },
+  "source_snapshots": {
+    "qualified/m2/converter-runtime/Cargo.toml": "f92dca465ff4f17e8469faef8ad144b7a5dfad48fc511cc8755e1f38bbbb5746",
+    "qualified/m2/converter-runtime/src/converters.rs": "dc63a4e89730734e8e06c5828322f278836dd40e474bdc304aa1ee0ced168fe3",
+    "qualified/m2/converter-runtime/src/lib.rs": "b66c656601fe0cc01eb4f6093aa5d3fd4812c8d0fe6363cfce6dbcfe0cdd6c45",
+    "qualified/m2/converter-runtime/src/main.rs": "e84bfb54d695ffcac23e3e9c90877354430fed3dedf76f4d0287e0a90a9c5c45",
+    "qualified/m2/converter-runtime/src/runner.rs": "3dc3ef04f23e2b35da25a47296d5c0218407c01e1a0d25bac592eb146ce2e6cc",
+    "qualified/m2/converter-runtime/src/tests.rs": "7cd43988b4ae54e82bca6ce7447e8f76445caf160f14af86dac8e6d1ef60ca34",
+    "qualified/scripts/converter_runtime_fixtures.py": "0fc9f473442f32bccda6198c455951a420024dac7a6af6ecd5136c43b5f0a7d0",
+    "qualified/scripts/converter_runtime_lock.py": "5f9ad290c657a2f85f549744f5670f20173ace1ff29bddd270af24d8c2dc89c7",
+    "qualified/scripts/m2_converter_runtime.py": "40a5080216c3712ab0939db71dc433bab8cb10df22da48bb8ef621ec156e2c4f",
+    "qualified/scripts/test_m2_converter_runtime.py": "d4d1e4757313af32cf2dedce2b068f31b52b5760ff06de059ea080bed2ee57e5",
+    "qualified/m2/converter-runtime/Cargo.lock": "e01b9a71f3ce01488d2d7a962285c773df94f13f809f8c2644c48052479f5ad3"
+  },
+  "report_library_file_id": "libfile_b5a7cd0877e481919ea772641e2fe83d",
+  "result": "m2_larger_six_converter_shared_runtime_first_gate_passed_real_inputs_pending",
+  "review_summary": {
+    "controller_exchanges": 2964,
+    "failed": 35,
+    "succeeded": 6,
+    "cancelled": 48,
+    "API_refusals": 18,
+    "reader_pages": 6,
+    "records_recomputed": 68000,
+    "converters": 6,
+    "max_observed_RSS_bytes": 192593920,
+    "documented_set_order_raw_differences": [
+      "moe_revised",
+      "moe_concise"
+    ],
+    "review": "full local original-Python oracle records recomputed; reported normalized parity and controller/admission states checked; user output files and successful Rust test stdout not attached"
+  },
+  "assessment": "Accepted first larger six-converter/shared-admission gate. Rust test/build/seed receipts and six controller scenarios passed: 6 successful conversions, 35 expected job failures, 48 pre-cancelled jobs, 18 API refusals and 6 reader pages. Independently regenerated full fixture files and ran all captured Python plugins locally, recomputing 68000 normalized records; 2964 controller exchanges and shared weights reviewed. Final reservations and reader retention are zero; max RSS 192593920 bytes (183.67 MiB rounded). All 199 prior source identities and 11 new source identities match; 66 package identities unchanged.",
+  "successful_Rust_test_stdout_attached": false,
+  "output_files_attached": false,
+  "note": "No actual user TXT files or successful individual Rust test stdout were attached. The exact-source-bound Mac harness checked full XLSX/Python parity, byte publication, input identity and cleanup. Review separately regenerated full local Python fixtures/oracles and checked reported parity/digests, metrics, raw equality claims, controller states and logical admission arithmetic. Raw file differences for moe_revised and moe_concise are confined to the previously documented Python set-order comparison; HTML/whitespace are otherwise exact. Original E0753 failure remains retained.",
+  "not_qualified": [
+    "M2 completion",
+    "full candidate size/cell/shape combinations",
+    "streaming converter or hard process RSS/disk enforcement",
+    "representative real-input pipelines",
+    "index-build shared admission",
+    "additional platforms and GUI routing"
+  ]
+}

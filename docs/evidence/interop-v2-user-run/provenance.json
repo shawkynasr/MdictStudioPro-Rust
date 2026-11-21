@@ -1,0 +1,11 @@
+{
+  "source": "User-uploaded revision-2 Python interoperability report (interop-report(1).json)",
+  "local_rerun": false,
+  "files": {"interop-report.json": "0dc5911ac344a6031a9d1316578cca3a0e5d306c85b7ef539dcbe76bf61d6eea"},
+  "observed": {
+    "checks": 14, "passed": 14, "harness_revision": 2, "writer_patch_revision": 2,
+    "python": "3.14.7", "rustc": "1.98.1", "cargo": "1.98.1",
+    "mdict-utils": "1.3.14", "machine": "x86_64", "system": "Darwin 24.6.0", "collation": "C"
+  },
+  "limits": ["Generated binaries, vendor source and full runtime log were not uploaded", "Synthetic UTF-8 MDX/MDD coverage only", "Metadata and storage-codec suite is prepared but not yet run"]
+}

@@ -1,0 +1,357 @@
+{
+  "suite": "independent-v2-structural-audit-v1",
+  "cases": [
+    {
+      "file": "CC-CEDICT 092026.mdx",
+      "sha256": "d57bcbc1169e7eabbe552e069bee64fa5599d5ff4e37d78f1caf00bfe24a0eca",
+      "size_bytes": 9268701,
+      "status": "structural_audit_passed",
+      "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+      "header": {
+        "GeneratedByEngineVersion": "2.0",
+        "Encoding": "UTF-8",
+        "Encrypted": "No",
+        "Compact": "Yes",
+        "Format": "Html",
+        "KeyCaseSensitive": "No",
+        "StripKey": null
+      },
+      "embedded_stylesheet_characters": 0,
+      "records": 202884,
+      "key_blocks": 106,
+      "record_blocks": 1129,
+      "uncompressed_record_bytes": 73735043,
+      "duplicate_headwords": 4057,
+      "sample_keys": [
+        "110",
+        "119",
+        "11区",
+        "11區",
+        "120",
+        "2019冠状病毒病",
+        "2019冠狀病毒病",
+        "21三体综合症"
+      ],
+      "script_counts": {
+        "CJK_keys": 202352
+      },
+      "redirect_records": 0,
+      "style_markers": 0,
+      "empty_bodies": 0,
+      "records_without_terminal_null": 0,
+      "local_asset_references": [
+        "cedict_ts.css"
+      ],
+      "resources": [],
+      "checks": [
+        "header_adler32",
+        "key_section_adler32",
+        "all_key_block_checksums_and_lengths",
+        "physical_key_counts",
+        "key_boundary_summaries",
+        "all_record_block_checksums_and_lengths",
+        "record_offsets",
+        "strict_text_decoding"
+      ],
+      "sha256_after": "d57bcbc1169e7eabbe552e069bee64fa5599d5ff4e37d78f1caf00bfe24a0eca"
+    },
+    {
+      "file": "CC-CEDICT 092026.mdd",
+      "sha256": "aa441e386c9e4aa1e04a464726061edd80f7f801eb8e2c302114eb25df24ad72",
+      "size_bytes": 322814,
+      "status": "structural_audit_passed",
+      "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+      "header": {
+        "GeneratedByEngineVersion": "2.0",
+        "Encoding": "",
+        "Encrypted": "No",
+        "Compact": null,
+        "Format": "",
+        "KeyCaseSensitive": "No",
+        "StripKey": null
+      },
+      "embedded_stylesheet_characters": 0,
+      "records": 17,
+      "key_blocks": 1,
+      "record_blocks": 8,
+      "uncompressed_record_bytes": 473210,
+      "duplicate_headwords": 0,
+      "sample_keys": [],
+      "script_counts": {},
+      "redirect_records": 0,
+      "style_markers": 0,
+      "empty_bodies": 0,
+      "records_without_terminal_null": 0,
+      "local_asset_references": [],
+      "resources": [
+        {
+          "path": "\\cedict_ts.css",
+          "bytes": 5687,
+          "sha256": "86e896de0131073429c1dde0f704d423968f15b7f4d1c09c4fca0e6d457d6e74",
+          "css_url_references": [
+            "./HelveticaNowMicroMed.ttf",
+            "./HelveticaNowMicroMed.woff",
+            "./HelveticaNowMicroMed.woff2",
+            "./MyriadPro-Regular.ttf",
+            "./MyriadPro-Regular.woff",
+            "./MyriadPro-Regular.woff2",
+            "./entry-bullet.png",
+            "./iconfont.eot",
+            "./iconfont.svg",
+            "./iconfont.ttf",
+            "./iconfont.woff",
+            "./iconfont.woff2",
+            "./merriweather-italic-py.ttf",
+            "./merriweather-italic-py.woff",
+            "./merriweather-italic-py.woff2"
+          ]
+        },
+        {
+          "path": "\\HelveticaNowMicroMed.ttf",
+          "bytes": 106992,
+          "sha256": "7ba64fd5d6cad5101db018248b0b11950517d05d36e1b6e00a4674063537f866"
+        },
+        {
+          "path": "\\HelveticaNowMicroMed.woff",
+          "bytes": 46900,
+          "sha256": "21105a97204672ffbc8e277886c0520d6b07fc1921f3c5caa77156e5f564c894"
+        },
+        {
+          "path": "\\HelveticaNowMicroMed.woff2",
+          "bytes": 38728,
+          "sha256": "6351f15c0efe7a132516bb6d69e7342e72ed1e11ad85ea054bcb4063d11a71ab"
+        },
+        {
+          "path": "\\iconfont.eot",
+          "bytes": 4436,
+          "sha256": "788f7c5ba7b425abe717f98292a11c33950528af2431debb657ec225c7a7622b"
+        },
+        {
+          "path": "\\iconfont.svg",
+          "bytes": 14290,
+          "sha256": "85fce6477d19dcf716264f71a9fb21bf5d96da82b132e78f2364a23f1c341f10"
+        },
+        {
+          "path": "\\iconfont.ttf",
+          "bytes": 4268,
+          "sha256": "8c5ce85b498b80a9da3deb68fb0d4d476d2a5666dfe5f5c9afa27b0de91039aa"
+        },
+        {
+          "path": "\\iconfont.woff",
+          "bytes": 2852,
+          "sha256": "c27b2d9d88cef445a8da2f9e8fe0710b744fe81cb5d48199c05c6d38794fb75b"
+        },
+        {
+          "path": "\\iconfont.woff2",
+          "bytes": 2320,
+          "sha256": "8226f31c1da14de3b81386a4225c951ca7bdf0feb981211f033c7c039cbfc4d0"
+        },
+        {
+          "path": "\\mdbg-dic.png",
+          "bytes": 4246,
+          "sha256": "bd5111e16f77c5bef7a72ab955234305bd69e7f0def3048129c1a894bf38dcb1"
+        },
+        {
+          "path": "\\mdbg-logo.png",
+          "bytes": 1619,
+          "sha256": "3484e8922628227f3c448a6d34538303682e179f93f5e44f094901cc6dd5ae59"
+        },
+        {
+          "path": "\\Merriweather-Italic-py.ttf",
+          "bytes": 20604,
+          "sha256": "e41011f00557f892f84b2a69cc911e56c11f8045526a53f791fa537fd804653a"
+        },
+        {
+          "path": "\\Merriweather-Italic-py.woff",
+          "bytes": 9880,
+          "sha256": "1b4bd64dc4a11fcefd866b4257e92de8a1776bad88eaae2f92322c19e34b5a1c"
+        },
+        {
+          "path": "\\Merriweather-Italic-py.woff2",
+          "bytes": 7580,
+          "sha256": "f097aa99e5c7b7a8245273a93ceed2f50a706187b84579286b91895e3c9bb5b8"
+        },
+        {
+          "path": "\\MyriadPro-Regular.ttf",
+          "bytes": 114124,
+          "sha256": "67e218cdd684c6495b44e5567d1dff1c1df32b07a2112fe2989ae2f69a73f93f"
+        },
+        {
+          "path": "\\MyriadPro-Regular.woff",
+          "bytes": 48820,
+          "sha256": "d09779b4482b8e780a559d080c1c5c4b74b0e914276251d5a772e1e2f51d26c7"
+        },
+        {
+          "path": "\\MyriadPro-Regular.woff2",
+          "bytes": 39864,
+          "sha256": "c12bd7d1fe8ef34dbd15b1c612b248d57bdbcf94887cd20d65a464decc8ba400"
+        }
+      ],
+      "checks": [
+        "header_adler32",
+        "key_section_adler32",
+        "all_key_block_checksums_and_lengths",
+        "physical_key_counts",
+        "key_boundary_summaries",
+        "all_record_block_checksums_and_lengths",
+        "record_offsets",
+        "strict_text_decoding"
+      ],
+      "sha256_after": "aa441e386c9e4aa1e04a464726061edd80f7f801eb8e2c302114eb25df24ad72"
+    },
+    {
+      "file": "almaanyEnAr-ArEn.mdx",
+      "sha256": "098e8333fc0afc758a1c90160922221894dec6d4631a615bbf62e433b34f8376",
+      "size_bytes": 3543120,
+      "status": "structural_audit_passed",
+      "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+      "header": {
+        "GeneratedByEngineVersion": "2.0",
+        "Encoding": "UTF-8",
+        "Encrypted": "No",
+        "Compact": "Yes",
+        "Format": "Html",
+        "KeyCaseSensitive": "No",
+        "StripKey": null
+      },
+      "embedded_stylesheet_characters": 0,
+      "records": 82812,
+      "key_blocks": 46,
+      "record_blocks": 328,
+      "uncompressed_record_bytes": 21401461,
+      "duplicate_headwords": 10569,
+      "sample_keys": [
+        "abacus",
+        "abandon",
+        "abandoned",
+        "Abandonment",
+        "abase",
+        "abased",
+        "abasement",
+        "abase oneself"
+      ],
+      "script_counts": {
+        "Arabic_keys": 38644
+      },
+      "redirect_records": 0,
+      "style_markers": 0,
+      "empty_bodies": 0,
+      "records_without_terminal_null": 0,
+      "local_asset_references": [
+        "almaanyEnAr-ArEn.css"
+      ],
+      "resources": [],
+      "checks": [
+        "header_adler32",
+        "key_section_adler32",
+        "all_key_block_checksums_and_lengths",
+        "physical_key_counts",
+        "key_boundary_summaries",
+        "all_record_block_checksums_and_lengths",
+        "record_offsets",
+        "strict_text_decoding"
+      ],
+      "sha256_after": "098e8333fc0afc758a1c90160922221894dec6d4631a615bbf62e433b34f8376"
+    },
+    {
+      "file": "新华成语词典（第2版）.mdx",
+      "sha256": "97914398293a71f5cadf5852b8df4f35e4453237692bce9b50bd46ac0393be1c",
+      "size_bytes": 2626692,
+      "status": "structural_audit_passed",
+      "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+      "header": {
+        "GeneratedByEngineVersion": "2.0",
+        "Encoding": "UTF-8",
+        "Encrypted": "No",
+        "Compact": "Yes",
+        "Format": "Html",
+        "KeyCaseSensitive": "No",
+        "StripKey": null
+      },
+      "embedded_stylesheet_characters": 0,
+      "records": 10414,
+      "key_blocks": 7,
+      "record_blocks": 123,
+      "uncompressed_record_bytes": 7956539,
+      "duplicate_headwords": 2,
+      "sample_keys": [
+        "一世之雄",
+        "一丘之貉",
+        "一丝一毫",
+        "一丝不挂",
+        "一丝不苟",
+        "一举一动",
+        "一举两全",
+        "一举两得"
+      ],
+      "script_counts": {
+        "CJK_keys": 10414
+      },
+      "redirect_records": 0,
+      "style_markers": 0,
+      "empty_bodies": 0,
+      "records_without_terminal_null": 0,
+      "local_asset_references": [
+        "xhcycd.css"
+      ],
+      "resources": [],
+      "checks": [
+        "header_adler32",
+        "key_section_adler32",
+        "all_key_block_checksums_and_lengths",
+        "physical_key_counts",
+        "key_boundary_summaries",
+        "all_record_block_checksums_and_lengths",
+        "record_offsets",
+        "strict_text_decoding"
+      ],
+      "sha256_after": "97914398293a71f5cadf5852b8df4f35e4453237692bce9b50bd46ac0393be1c"
+    }
+  ],
+  "native_readers": "NOT_RUN",
+  "Rust_engine": "NOT_RUN",
+  "mdict_utils": "NOT_RUN",
+  "companion_observations": {
+    "cc_cedict": {
+      "linked_css_in_MDD": true,
+      "CSS_urls_exact_archive_matches": [
+        "HelveticaNowMicroMed.ttf",
+        "HelveticaNowMicroMed.woff",
+        "HelveticaNowMicroMed.woff2",
+        "MyriadPro-Regular.ttf",
+        "MyriadPro-Regular.woff",
+        "MyriadPro-Regular.woff2",
+        "iconfont.eot",
+        "iconfont.svg",
+        "iconfont.ttf",
+        "iconfont.woff",
+        "iconfont.woff2"
+      ],
+      "CSS_urls_case_only_matches": [
+        "merriweather-italic-py.ttf",
+        "merriweather-italic-py.woff",
+        "merriweather-italic-py.woff2"
+      ],
+      "CSS_urls_not_found_in_attached_MDD": [
+        "entry-bullet.png"
+      ],
+      "amiri_present_in_attached_MDD": false
+    },
+    "almaany": {
+      "CSS_attached": true,
+      "CSS_local_urls": [
+        "fonts/amiri-regular.ttf"
+      ],
+      "Amiri_font": "user reports fonts/amiri-regular.ttf is available in their folder; not attached here, so not locally verified"
+    },
+    "chinese_idioms": {
+      "CSS_attached": true,
+      "CSS_local_urls": []
+    }
+  },
+  "limitations": [
+    "Independent stdlib structural audit is not Rust/mdict-utils comparison or native rendering.",
+    "All three MDX files are UTF-8 v2 with empty embedded StyleSheet; they cannot close the marker stylesheet gate.",
+    "CSS font/image references absent from the attached MDD may exist as external files on the user machine."
+  ]
+}

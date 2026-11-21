@@ -1,0 +1,8 @@
+{
+  "source": "User-uploaded aggregate resource report and separate manual native results",
+  "local_Rust_or_native_execution": false,
+  "files": {
+    "resource-controls-report.json": "e871e668bee17e1cd2f770e184ece13509aa7e07508b07ef1f61d39c63c961d6",
+    "native-observations.json": "ba8250739f802847bf4040d1b01370ac5d08c5be402478a4bb39c7fb60775b30"
+  }
+}

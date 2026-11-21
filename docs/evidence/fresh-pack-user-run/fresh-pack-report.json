@@ -1,0 +1,760 @@
+{
+  "status": "fresh_source_pack_subset_passed_M1_open",
+  "checks": {
+    "cc_cedict-mdict-utils": {
+      "status": "passed",
+      "detail": {
+        "mdx": {
+          "records": 7,
+          "comparison": "ordered_exact_with_duplicates_and_final_LF",
+          "rust_sha256": "bbc3d1ee4a9a146267571bb27d2ee1f02602522185f97db8514c545190a20275",
+          "python_sha256": "cf5829fcf5c6e389989ffc3c30d7309b7679d0fd0579aefef776904641faa3d9",
+          "independent_audit": "passed",
+          "legacy_full_strict_scan": "passed",
+          "rust_attributes": {
+            "Description": "Fresh pack <test> & exact payloads",
+            "Encoding": "UTF-8",
+            "Encrypted": "No",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "Title": "Fresh cc_cedict 字 مرحبا"
+          },
+          "python_attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "UTF-8",
+            "Format": "Html",
+            "Stripkey": "Yes",
+            "CreationDate": "2026-10-29",
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "KeyCaseSensitive": "No",
+            "Description": "Fresh pack <test> & exact payloads",
+            "Title": "Fresh cc_cedict 字 مرحبا",
+            "DataSourceFormat": "106",
+            "StyleSheet": "",
+            "Left2Right": "Yes",
+            "RegisterBy": ""
+          },
+          "metadata_compared": [
+            "Title",
+            "Description"
+          ]
+        }
+      }
+    },
+    "cc_cedict-mdxbuilder": {
+      "status": "passed",
+      "detail": {
+        "mdx": {
+          "records": 7,
+          "comparison": "ordered_exact_with_duplicates_and_final_LF",
+          "rust_sha256": "bbc3d1ee4a9a146267571bb27d2ee1f02602522185f97db8514c545190a20275",
+          "python_sha256": "cf5829fcf5c6e389989ffc3c30d7309b7679d0fd0579aefef776904641faa3d9",
+          "independent_audit": "passed",
+          "legacy_full_strict_scan": "passed",
+          "rust_attributes": {
+            "Description": "Fresh pack <test> & exact payloads",
+            "Encoding": "UTF-8",
+            "Encrypted": "No",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "Title": "Fresh cc_cedict 字 مرحبا"
+          },
+          "python_attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "UTF-8",
+            "Format": "Html",
+            "Stripkey": "Yes",
+            "CreationDate": "2026-10-29",
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "KeyCaseSensitive": "No",
+            "Description": "Fresh pack <test> & exact payloads",
+            "Title": "Fresh cc_cedict 字 مرحبا",
+            "DataSourceFormat": "106",
+            "StyleSheet": "",
+            "Left2Right": "Yes",
+            "RegisterBy": ""
+          },
+          "metadata_compared": [
+            "Title",
+            "Description"
+          ]
+        }
+      }
+    },
+    "moe_revised-mdict-utils": {
+      "status": "passed",
+      "detail": {
+        "mdx": {
+          "records": 4,
+          "comparison": "ordered_exact_with_duplicates_and_final_LF",
+          "rust_sha256": "d0a86d0ba2eadf924b2295e330c17ff0a9250f70ef5e09f7d727e1dc5a03966c",
+          "python_sha256": "c37ba8293c755db46aa337c2f88bae1afc899198eaa5af7b3db4717b32780a83",
+          "independent_audit": "passed",
+          "legacy_full_strict_scan": "passed",
+          "rust_attributes": {
+            "Description": "Fresh pack <test> & exact payloads",
+            "Encoding": "UTF-8",
+            "Encrypted": "No",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "Title": "Fresh moe_revised 字 مرحبا"
+          },
+          "python_attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "UTF-8",
+            "Format": "Html",
+            "Stripkey": "Yes",
+            "CreationDate": "2026-10-29",
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "KeyCaseSensitive": "No",
+            "Description": "Fresh pack <test> & exact payloads",
+            "Title": "Fresh moe_revised 字 مرحبا",
+            "DataSourceFormat": "106",
+            "StyleSheet": "",
+            "Left2Right": "Yes",
+            "RegisterBy": ""
+          },
+          "metadata_compared": [
+            "Title",
+            "Description"
+          ]
+        }
+      }
+    },
+    "moe_revised-mdxbuilder": {
+      "status": "passed",
+      "detail": {
+        "mdx": {
+          "records": 4,
+          "comparison": "ordered_exact_with_duplicates_and_final_LF",
+          "rust_sha256": "d0a86d0ba2eadf924b2295e330c17ff0a9250f70ef5e09f7d727e1dc5a03966c",
+          "python_sha256": "c37ba8293c755db46aa337c2f88bae1afc899198eaa5af7b3db4717b32780a83",
+          "independent_audit": "passed",
+          "legacy_full_strict_scan": "passed",
+          "rust_attributes": {
+            "Description": "Fresh pack <test> & exact payloads",
+            "Encoding": "UTF-8",
+            "Encrypted": "No",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "Title": "Fresh moe_revised 字 مرحبا"
+          },
+          "python_attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "UTF-8",
+            "Format": "Html",
+            "Stripkey": "Yes",
+            "CreationDate": "2026-10-29",
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "KeyCaseSensitive": "No",
+            "Description": "Fresh pack <test> & exact payloads",
+            "Title": "Fresh moe_revised 字 مرحبا",
+            "DataSourceFormat": "106",
+            "StyleSheet": "",
+            "Left2Right": "Yes",
+            "RegisterBy": ""
+          },
+          "metadata_compared": [
+            "Title",
+            "Description"
+          ]
+        }
+      }
+    },
+    "moe_revised_wfg-mdict-utils": {
+      "status": "passed",
+      "detail": {
+        "mdx": {
+          "records": 2,
+          "comparison": "ordered_exact_with_duplicates_and_final_LF",
+          "rust_sha256": "6edae59a6d2fccf4314129a38d2f8b7ebf2d1369a2182dd69a5109916a1c47cf",
+          "python_sha256": "a19b4a437b05f137e27a8195ad65a81b1bd04af63e56a6c8fbb72617ecf8a827",
+          "independent_audit": "passed",
+          "legacy_full_strict_scan": "passed",
+          "rust_attributes": {
+            "Description": "Fresh pack <test> & exact payloads",
+            "Encoding": "UTF-8",
+            "Encrypted": "No",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "Title": "Fresh moe_revised_wfg 字 مرحبا"
+          },
+          "python_attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "UTF-8",
+            "Format": "Html",
+            "Stripkey": "Yes",
+            "CreationDate": "2026-10-29",
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "KeyCaseSensitive": "No",
+            "Description": "Fresh pack <test> & exact payloads",
+            "Title": "Fresh moe_revised_wfg 字 مرحبا",
+            "DataSourceFormat": "106",
+            "StyleSheet": "",
+            "Left2Right": "Yes",
+            "RegisterBy": ""
+          },
+          "metadata_compared": [
+            "Title",
+            "Description"
+          ]
+        }
+      }
+    },
+    "moe_revised_wfg-mdxbuilder": {
+      "status": "passed",
+      "detail": {
+        "mdx": {
+          "records": 2,
+          "comparison": "ordered_exact_with_duplicates_and_final_LF",
+          "rust_sha256": "6edae59a6d2fccf4314129a38d2f8b7ebf2d1369a2182dd69a5109916a1c47cf",
+          "python_sha256": "a19b4a437b05f137e27a8195ad65a81b1bd04af63e56a6c8fbb72617ecf8a827",
+          "independent_audit": "passed",
+          "legacy_full_strict_scan": "passed",
+          "rust_attributes": {
+            "Description": "Fresh pack <test> & exact payloads",
+            "Encoding": "UTF-8",
+            "Encrypted": "No",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "Title": "Fresh moe_revised_wfg 字 مرحبا"
+          },
+          "python_attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "UTF-8",
+            "Format": "Html",
+            "Stripkey": "Yes",
+            "CreationDate": "2026-10-29",
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "KeyCaseSensitive": "No",
+            "Description": "Fresh pack <test> & exact payloads",
+            "Title": "Fresh moe_revised_wfg 字 مرحبا",
+            "DataSourceFormat": "106",
+            "StyleSheet": "",
+            "Left2Right": "Yes",
+            "RegisterBy": ""
+          },
+          "metadata_compared": [
+            "Title",
+            "Description"
+          ]
+        }
+      }
+    },
+    "moe_concise-mdict-utils": {
+      "status": "passed",
+      "detail": {
+        "mdx": {
+          "records": 2,
+          "comparison": "ordered_exact_with_duplicates_and_final_LF",
+          "rust_sha256": "b9c4665bab6b34d1280cdecfb3e59d4399e039c0980bc77f9152ded38ada8e5d",
+          "python_sha256": "11737bde6afff278b7ee8fcc9a2f5931b651defa95e3fbfe9d68f86f830703bc",
+          "independent_audit": "passed",
+          "legacy_full_strict_scan": "passed",
+          "rust_attributes": {
+            "Description": "Fresh pack <test> & exact payloads",
+            "Encoding": "UTF-8",
+            "Encrypted": "No",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "Title": "Fresh moe_concise 字 مرحبا"
+          },
+          "python_attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "UTF-8",
+            "Format": "Html",
+            "Stripkey": "Yes",
+            "CreationDate": "2026-10-29",
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "KeyCaseSensitive": "No",
+            "Description": "Fresh pack <test> & exact payloads",
+            "Title": "Fresh moe_concise 字 مرحبا",
+            "DataSourceFormat": "106",
+            "StyleSheet": "",
+            "Left2Right": "Yes",
+            "RegisterBy": ""
+          },
+          "metadata_compared": [
+            "Title",
+            "Description"
+          ]
+        }
+      }
+    },
+    "moe_concise-mdxbuilder": {
+      "status": "passed",
+      "detail": {
+        "mdx": {
+          "records": 2,
+          "comparison": "ordered_exact_with_duplicates_and_final_LF",
+          "rust_sha256": "b9c4665bab6b34d1280cdecfb3e59d4399e039c0980bc77f9152ded38ada8e5d",
+          "python_sha256": "11737bde6afff278b7ee8fcc9a2f5931b651defa95e3fbfe9d68f86f830703bc",
+          "independent_audit": "passed",
+          "legacy_full_strict_scan": "passed",
+          "rust_attributes": {
+            "Description": "Fresh pack <test> & exact payloads",
+            "Encoding": "UTF-8",
+            "Encrypted": "No",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "Title": "Fresh moe_concise 字 مرحبا"
+          },
+          "python_attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "UTF-8",
+            "Format": "Html",
+            "Stripkey": "Yes",
+            "CreationDate": "2026-10-29",
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "KeyCaseSensitive": "No",
+            "Description": "Fresh pack <test> & exact payloads",
+            "Title": "Fresh moe_concise 字 مرحبا",
+            "DataSourceFormat": "106",
+            "StyleSheet": "",
+            "Left2Right": "Yes",
+            "RegisterBy": ""
+          },
+          "metadata_compared": [
+            "Title",
+            "Description"
+          ]
+        }
+      }
+    },
+    "moe_idioms-mdict-utils": {
+      "status": "passed",
+      "detail": {
+        "mdx": {
+          "records": 2,
+          "comparison": "ordered_exact_with_duplicates_and_final_LF",
+          "rust_sha256": "b5851012e2f7b677abfeb84d65ef3d6bd8fceba41642e8a5af237a099970a384",
+          "python_sha256": "4a4e360f852366e266a318feb208e82764e601bf24b04cb5b8cb0fa8ecc0bfb5",
+          "independent_audit": "passed",
+          "legacy_full_strict_scan": "passed",
+          "rust_attributes": {
+            "Description": "Fresh pack <test> & exact payloads",
+            "Encoding": "UTF-8",
+            "Encrypted": "No",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "Title": "Fresh moe_idioms 字 مرحبا"
+          },
+          "python_attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "UTF-8",
+            "Format": "Html",
+            "Stripkey": "Yes",
+            "CreationDate": "2026-10-29",
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "KeyCaseSensitive": "No",
+            "Description": "Fresh pack <test> & exact payloads",
+            "Title": "Fresh moe_idioms 字 مرحبا",
+            "DataSourceFormat": "106",
+            "StyleSheet": "",
+            "Left2Right": "Yes",
+            "RegisterBy": ""
+          },
+          "metadata_compared": [
+            "Title",
+            "Description"
+          ]
+        }
+      }
+    },
+    "moe_idioms-mdxbuilder": {
+      "status": "passed",
+      "detail": {
+        "mdx": {
+          "records": 2,
+          "comparison": "ordered_exact_with_duplicates_and_final_LF",
+          "rust_sha256": "b5851012e2f7b677abfeb84d65ef3d6bd8fceba41642e8a5af237a099970a384",
+          "python_sha256": "4a4e360f852366e266a318feb208e82764e601bf24b04cb5b8cb0fa8ecc0bfb5",
+          "independent_audit": "passed",
+          "legacy_full_strict_scan": "passed",
+          "rust_attributes": {
+            "Description": "Fresh pack <test> & exact payloads",
+            "Encoding": "UTF-8",
+            "Encrypted": "No",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "Title": "Fresh moe_idioms 字 مرحبا"
+          },
+          "python_attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "UTF-8",
+            "Format": "Html",
+            "Stripkey": "Yes",
+            "CreationDate": "2026-10-29",
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "KeyCaseSensitive": "No",
+            "Description": "Fresh pack <test> & exact payloads",
+            "Title": "Fresh moe_idioms 字 مرحبا",
+            "DataSourceFormat": "106",
+            "StyleSheet": "",
+            "Left2Right": "Yes",
+            "RegisterBy": ""
+          },
+          "metadata_compared": [
+            "Title",
+            "Description"
+          ]
+        }
+      }
+    },
+    "moe_mini-mdict-utils": {
+      "status": "passed",
+      "detail": {
+        "mdx": {
+          "records": 2,
+          "comparison": "ordered_exact_with_duplicates_and_final_LF",
+          "rust_sha256": "4794d464070230bfe8427adf7f905e5fecf70a6a7888c0516d77978a0d5dab0c",
+          "python_sha256": "da3459c598bac5a6af26a13fed5ce30015a8060cd1de668a19a4af852e4555bc",
+          "independent_audit": "passed",
+          "legacy_full_strict_scan": "passed",
+          "rust_attributes": {
+            "Description": "Fresh pack <test> & exact payloads",
+            "Encoding": "UTF-8",
+            "Encrypted": "No",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "Title": "Fresh moe_mini 字 مرحبا"
+          },
+          "python_attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "UTF-8",
+            "Format": "Html",
+            "Stripkey": "Yes",
+            "CreationDate": "2026-10-29",
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "KeyCaseSensitive": "No",
+            "Description": "Fresh pack <test> & exact payloads",
+            "Title": "Fresh moe_mini 字 مرحبا",
+            "DataSourceFormat": "106",
+            "StyleSheet": "",
+            "Left2Right": "Yes",
+            "RegisterBy": ""
+          },
+          "metadata_compared": [
+            "Title",
+            "Description"
+          ]
+        }
+      }
+    },
+    "moe_mini-mdxbuilder": {
+      "status": "passed",
+      "detail": {
+        "mdx": {
+          "records": 2,
+          "comparison": "ordered_exact_with_duplicates_and_final_LF",
+          "rust_sha256": "4794d464070230bfe8427adf7f905e5fecf70a6a7888c0516d77978a0d5dab0c",
+          "python_sha256": "da3459c598bac5a6af26a13fed5ce30015a8060cd1de668a19a4af852e4555bc",
+          "independent_audit": "passed",
+          "legacy_full_strict_scan": "passed",
+          "rust_attributes": {
+            "Description": "Fresh pack <test> & exact payloads",
+            "Encoding": "UTF-8",
+            "Encrypted": "No",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "Title": "Fresh moe_mini 字 مرحبا"
+          },
+          "python_attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "UTF-8",
+            "Format": "Html",
+            "Stripkey": "Yes",
+            "CreationDate": "2026-10-29",
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "KeyCaseSensitive": "No",
+            "Description": "Fresh pack <test> & exact payloads",
+            "Title": "Fresh moe_mini 字 مرحبا",
+            "DataSourceFormat": "106",
+            "StyleSheet": "",
+            "Left2Right": "Yes",
+            "RegisterBy": ""
+          },
+          "metadata_compared": [
+            "Title",
+            "Description"
+          ]
+        }
+      }
+    },
+    "boundaries-mdict-utils": {
+      "status": "passed",
+      "detail": {
+        "mdx": {
+          "records": 16,
+          "comparison": "ordered_exact_with_duplicates_and_final_LF",
+          "rust_sha256": "9ed3c7adc21223567773c945964dc37463b3b8e4badd7a430150d7abc5cc3c24",
+          "python_sha256": "be4a87373f9405ef3ac8580f2f853b0b8ed5786602ba97685227cb5a73107a90",
+          "independent_audit": "passed",
+          "legacy_full_strict_scan": "passed",
+          "rust_attributes": {
+            "Description": "Fresh pack <test> & exact payloads",
+            "Encoding": "UTF-8",
+            "Encrypted": "No",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "Title": "Fresh boundaries 字 مرحبا"
+          },
+          "python_attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "UTF-8",
+            "Format": "Html",
+            "Stripkey": "Yes",
+            "CreationDate": "2026-10-29",
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "KeyCaseSensitive": "No",
+            "Description": "Fresh pack <test> & exact payloads",
+            "Title": "Fresh boundaries 字 مرحبا",
+            "DataSourceFormat": "106",
+            "StyleSheet": "",
+            "Left2Right": "Yes",
+            "RegisterBy": ""
+          },
+          "metadata_compared": [
+            "Title",
+            "Description"
+          ]
+        },
+        "mdd": {
+          "records": 4,
+          "comparison": "ordered_exact_with_duplicates_and_final_LF",
+          "rust_sha256": "35f38dfa35476ed2b5d4d58999127076fa805508e728f7c4b99923d79a07730f",
+          "python_sha256": "5855012ef635f7b15e025e2787cf6e53c9efbe90595e5f83a773be97d0f88b5a",
+          "independent_audit": "passed",
+          "legacy_full_strict_scan": "passed",
+          "rust_attributes": {
+            "Description": "Fresh pack <test> & exact payloads",
+            "Encoding": "",
+            "Encrypted": "No",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "Title": "Fresh boundaries 字 مرحبا"
+          },
+          "python_attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "",
+            "Format": "",
+            "CreationDate": "2026-10-29",
+            "KeyCaseSensitive": "No",
+            "Stripkey": "No",
+            "Description": "Fresh pack <test> & exact payloads",
+            "Title": "Fresh boundaries 字 مرحبا",
+            "RegisterBy": ""
+          },
+          "metadata_compared": [
+            "Title",
+            "Description"
+          ]
+        }
+      }
+    },
+    "boundaries-mdxbuilder": {
+      "status": "passed",
+      "detail": {
+        "mdx": {
+          "records": 16,
+          "comparison": "ordered_exact_with_duplicates_and_final_LF",
+          "rust_sha256": "9ed3c7adc21223567773c945964dc37463b3b8e4badd7a430150d7abc5cc3c24",
+          "python_sha256": "be4a87373f9405ef3ac8580f2f853b0b8ed5786602ba97685227cb5a73107a90",
+          "independent_audit": "passed",
+          "legacy_full_strict_scan": "passed",
+          "rust_attributes": {
+            "Description": "Fresh pack <test> & exact payloads",
+            "Encoding": "UTF-8",
+            "Encrypted": "No",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "Title": "Fresh boundaries 字 مرحبا"
+          },
+          "python_attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "UTF-8",
+            "Format": "Html",
+            "Stripkey": "Yes",
+            "CreationDate": "2026-10-29",
+            "Compact": "Yes",
+            "Compat": "Yes",
+            "KeyCaseSensitive": "No",
+            "Description": "Fresh pack <test> & exact payloads",
+            "Title": "Fresh boundaries 字 مرحبا",
+            "DataSourceFormat": "106",
+            "StyleSheet": "",
+            "Left2Right": "Yes",
+            "RegisterBy": ""
+          },
+          "metadata_compared": [
+            "Title",
+            "Description"
+          ]
+        },
+        "mdd": {
+          "records": 4,
+          "comparison": "ordered_exact_with_duplicates_and_final_LF",
+          "rust_sha256": "35f38dfa35476ed2b5d4d58999127076fa805508e728f7c4b99923d79a07730f",
+          "python_sha256": "5855012ef635f7b15e025e2787cf6e53c9efbe90595e5f83a773be97d0f88b5a",
+          "independent_audit": "passed",
+          "legacy_full_strict_scan": "passed",
+          "rust_attributes": {
+            "Description": "Fresh pack <test> & exact payloads",
+            "Encoding": "",
+            "Encrypted": "No",
+            "GeneratedByEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "RequiredEngineVersion": "2.0",
+            "StripKey": "No",
+            "Title": "Fresh boundaries 字 مرحبا"
+          },
+          "python_attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encrypted": "No",
+            "Encoding": "",
+            "Format": "",
+            "CreationDate": "2026-10-29",
+            "KeyCaseSensitive": "No",
+            "Stripkey": "No",
+            "Description": "Fresh pack <test> & exact payloads",
+            "Title": "Fresh boundaries 字 مرحبا",
+            "RegisterBy": ""
+          },
+          "metadata_compared": [
+            "Title",
+            "Description"
+          ]
+        }
+      }
+    }
+  },
+  "scope": "original six converters -> UTF8 LF TXT -> fresh Rust/Python MDX; two legacy C-locale sort profiles; diagnostic MDD",
+  "native_readers": "NOT_RUN_DO_NOT_IMPORT",
+  "not_proven": [
+    "Rust_XLSX_or_plugin_conversion",
+    "UTF16_BOM_CRLF_fresh_source_matrix",
+    "general_metadata_stylesheet_sort_policy",
+    "native_rendering_of_these_files",
+    "production_memory_limits",
+    "M1_completion"
+  ],
+  "source_sha256": {
+    "experiments/real-rebuild/src/main.rs": "fc525a9233b4cc5acb1b18a3787c1ad2066438a4d7957327bca9b4ab0f139d40",
+    "experiments/real-rebuild/src/fresh.rs": "9160b8b31dbe030d93c3418555c82f2e56608ff80a535e6c4ab9c9d6d848e476",
+    "experiments/real-rebuild/src/strict.rs": "5962ffbc934ecb25e04683cebeb7b4d06b8bd80d23bddccc8d5a8377e998af09",
+    "experiments/real-rebuild/Cargo.lock": "0490f412f73e66fd7b719da2dd71470eeb315aaa9028837ae185f3437a8e867f",
+    "vendor/mdictlib-0.2.8-studio-sort-v6/src/write/mod.rs": "fb7876fbc75d2e4d5ca69b7768afa551d16f6e3ba8fec05eb027b621132560a2",
+    "vendor/mdictlib-0.2.8-studio-sort-v6/src/write/studio_legacy_sort.rs": "96908b9c995cf4f28c89eaef4a15cd96f908e81bc3c73c47f3a5acc066215af5",
+    "scripts/fresh_pack.py": "9bd96a76ec400775922a63301077e70f76b0aebdd00bd26944b080cf36dcf40b"
+  },
+  "environment": {
+    "mdict-utils": "1.3.14",
+    "openpyxl": "3.1.5",
+    "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 17.0.0 (clang-1700.6.4.2)]",
+    "collation": "C"
+  },
+  "input_integrity": {
+    "/Users/shawky/Downloads/mdict-studio-m0-m1/baseline/expected/cc_cedict.txt": {
+      "before": "8de24ce354f5d017b2e99702d82d2a81c607600386944d0000f2cd9c51ff02d0",
+      "after": "8de24ce354f5d017b2e99702d82d2a81c607600386944d0000f2cd9c51ff02d0"
+    },
+    "/Users/shawky/Downloads/mdict-studio-m0-m1/baseline/expected/moe_revised.txt": {
+      "before": "32688acf6251bb8536d585a20e82ae668423184ff7017b7aeed96936bb864a4f",
+      "after": "32688acf6251bb8536d585a20e82ae668423184ff7017b7aeed96936bb864a4f"
+    },
+    "/Users/shawky/Downloads/mdict-studio-m0-m1/baseline/expected/moe_revised_wfg.txt": {
+      "before": "a955bbdeb60344e79f2127bb4ac19c65ff3c9a24b9162a2b85dbe8dc59bd7c04",
+      "after": "a955bbdeb60344e79f2127bb4ac19c65ff3c9a24b9162a2b85dbe8dc59bd7c04"
+    },
+    "/Users/shawky/Downloads/mdict-studio-m0-m1/baseline/expected/moe_concise.txt": {
+      "before": "d6bffa874e702914802c5e8a574e5d83930ab723f2e4655b739b1555b2e6468a",
+      "after": "d6bffa874e702914802c5e8a574e5d83930ab723f2e4655b739b1555b2e6468a"
+    },
+    "/Users/shawky/Downloads/mdict-studio-m0-m1/baseline/expected/moe_idioms.txt": {
+      "before": "f1e2fdb6ef77bed7aeee1ee66989fa00c3ac662e80a63712c2295916b157ac0c",
+      "after": "f1e2fdb6ef77bed7aeee1ee66989fa00c3ac662e80a63712c2295916b157ac0c"
+    },
+    "/Users/shawky/Downloads/mdict-studio-m0-m1/baseline/expected/moe_mini.txt": {
+      "before": "0f99434d534f8949d922fffceb012620ef8a64cb783e38325525a71345f888b3",
+      "after": "0f99434d534f8949d922fffceb012620ef8a64cb783e38325525a71345f888b3"
+    },
+    "/Users/shawky/Downloads/mdict-studio-m0-m1/fresh-out/inputs/boundaries.txt": {
+      "before": "3bf8b41f2e2ea68f0810c6240590c69b15a432f00628ba85956c95fd5dc76976",
+      "after": "3bf8b41f2e2ea68f0810c6240590c69b15a432f00628ba85956c95fd5dc76976"
+    }
+  }
+}

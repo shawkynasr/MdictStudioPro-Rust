@@ -1,0 +1,5 @@
+# Single entry addition qualification
+
+The Mac parent report records all 41 expected results across UTF-8, UTF-16 and sparse legacy sources. It includes independent checks of duplicate additions, unchanged existing rows/metadata, empty definitions, exact size boundaries, invalid keys, stale sources, unknown numeric rules and no-clobber. The required desktop gate includes backend/runtime/adapter tests, record-cap refusal, cancellation and an MDX rebuild/reimport preserving duplicate order. All 166 matching packaged identities and all 324 protected identities match package 160. Extra Mac build/output identities were omitted. The referenced nested shell report was not attached separately. Original GUI-pending status is retained.
+
+The uploaded GUI copy matches the native UTF-16 output byte for byte. Independent inspection confirms eight records, all seven original rows unchanged and a new duplicate at #8 with the exact expected bold marker text. Stored stylesheet and UTF-16 encoding match. The user supplied a passed source/copy verifier. GUI confirmation is recorded separately. Subsequent combined-workflow qualification is not implied.

@@ -1,0 +1,17 @@
+{
+  "schema": "studio-reader-attestation-v1",
+  "reported_by": "user",
+  "readers": [
+    "MDict",
+    "GoldenDict"
+  ],
+  "records": 5,
+  "duplicate_headword": "字",
+  "both_duplicate_definitions_displayed": true,
+  "title": "dict22",
+  "description": "hi new world",
+  "arabic_display_confirmed": true,
+  "numeric_stylesheet_nonempty": false,
+  "original_and_rebuilt_binary_comparison": "not available; original MDX not uploaded",
+  "scope": "User confirmation and screenshots; does not qualify the new seven-record numeric stylesheet fixture"
+}

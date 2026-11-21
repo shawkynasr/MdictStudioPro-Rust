@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-28",
+  "source": "User-reported native tests in this conversation and combined-view screenshot inspected here",
+  "result": "PASS_USER_REPORTED_CSS_IMAGE_FONT_BOTH_ENCODINGS_BOTH_READERS",
+  "readers": [
+    "MDict for macOS 2.2.6 (build 200)",
+    "GoldenDict 26.6.1-7548db1682"
+  ],
+  "fixtures": {
+    "06-mdd-resources-utf8.mdx": "ae93ca57dfac5184aabf9c704e3b1ccc9ec8c787128f1e21a6a8bd136d4e7b5b",
+    "06-mdd-resources-utf8.mdd": "17033bb72aa795e77e1094d5ad3c5b0acc773e6f9b37bb483630814047358ec5",
+    "06-mdd-resources-utf16.mdx": "24aa3c52bf1a5199fe480b183c74c0a379f569e77d42abc9074faf4a9aac4994",
+    "06-mdd-resources-utf16.mdd": "17033bb72aa795e77e1094d5ad3c5b0acc773e6f9b37bb483630814047358ec5"
+  },
+  "screenshot_observed": [
+    "green CSS box and black border",
+    "green image square",
+    "embedded ABC appears as triangle plus diamond",
+    "fallback control remains ABC"
+  ],
+  "restart_checks": "Not separately confirmed in latest resource result messages",
+  "scope": "Synthetic MDD resource discovery/rendering only; not real Amiri or full M1 qualification"
+}

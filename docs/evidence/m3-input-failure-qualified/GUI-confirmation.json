@@ -1,0 +1,31 @@
+{
+  "schema": "studio-missing-input-GUI-v1",
+  "date": "2026-11-21",
+  "app": "preview v6",
+  "status": "accepted_scoped_missing_input_error_then_valid_input_success",
+  "basis": "User supplied io: No such file or directory (os error 2), then CC-CEDICT success receipt when using other path",
+  "failure": "io: No such file or directory (os error 2)",
+  "success_receipt": {
+    "profile": "cc",
+    "receipt": {
+      "comments_count": 0,
+      "converter": "cc_cedict",
+      "entries": 3,
+      "file_bytes": 885,
+      "metrics": {
+        "alias_redirects": 0,
+        "primary_entries": 2,
+        "skipped_rows_or_lines": 0,
+        "traditional_entries": 1
+      },
+      "profile": "cc-cedict-owned-chunked-txt-v1",
+      "source_sha256": "463a04e1ad8ff8c3142e1456dc0fb529de2fa62affbe3dd70d4f70afd8e42dec",
+      "txt_profile": "canonical_v1"
+    }
+  },
+  "same_output_filename_explicitly_confirmed": false,
+  "same_session_basis": "Response to checklist; no restart was requested or reported",
+  "partial_output_absence_independently_verified": false,
+  "M3_complete": false,
+  "production_release_ready": false
+}

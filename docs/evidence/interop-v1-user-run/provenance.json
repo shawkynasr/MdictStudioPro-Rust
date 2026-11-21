@@ -1,0 +1,22 @@
+{
+  "source": "User-uploaded first Python interoperability report",
+  "local_rerun": false,
+  "files": {
+    "interop-report.json": "59d052409637174146a4a12ea41a7d21a9d298903bb8fd2b9151830b29077ec2"
+  },
+  "observed": {
+    "checks": 14,
+    "passed": 2,
+    "failed_header_parse": 10,
+    "failed_trailing_lf_expectation": 2,
+    "python": "3.14.7",
+    "rustc": "1.98.1",
+    "machine": "x86_64",
+    "system": "Darwin 24.6.0"
+  },
+  "limits": [
+    "Generated MDX/MDD files and full interop.log not uploaded",
+    "Root cause is based on report, pinned writer source and Python reader source inspection",
+    "No revision-2 runtime evidence yet"
+  ]
+}

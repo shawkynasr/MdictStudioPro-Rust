@@ -1,0 +1,30 @@
+{
+  "schema": "studio-standalone-plugin-GUI-v1",
+  "status": "accepted_scoped_standalone_Python_converter",
+  "date": "2026-11-20",
+  "basis": "User reports running current v5 standalone app; pasted job receipt and attached output(5).txt",
+  "pasted_receipts_identical_counted_as_one": true,
+  "receipt": {
+    "bytes": 203,
+    "callback_logs": [],
+    "destination": "/Users/shawky/Downloads/plugin-result-1795198717326o",
+    "input_sha256": "66417f81f2d2da12dcae7635d4458b7e91fff4425bd8d2a960add9740b5f3e96",
+    "option_fields": 2,
+    "options_sha256": "508848469becdce55606f5e131957f73d2a1fddb80c43a8702b53f115e8ceeb8",
+    "output_sha256": "737ce0b126a6a952729903c679fb7659121dd7a6d909711a35fa33be67cdb45d",
+    "paths": 3,
+    "plugin_sha256": "e70b84fa0ba345547479efab5774394506632c4ea57b799e89656d9b32938644",
+    "profile": "trusted-python-converter-v1",
+    "records": 6,
+    "stderr_tail": "",
+    "stdout_tail": "",
+    "summary": "Folder options fixture completed"
+  },
+  "exact_expected_output": true,
+  "output_bytes": 203,
+  "both_duplicate_definitions_preserved": true,
+  "Python_bundled": false,
+  "all_plugins_or_clean_machine_qualified": false,
+  "M3_complete": false,
+  "production_release_ready": false
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-01",
+  "files": {
+    "m2-v2-import-report.json": "48c6911b6453e74d95d612c39ab84007b624ac12e4db472ae1a39241bea7e724"
+  },
+  "source_snapshots": {
+    "qualified/m2/v2-import/Cargo.toml": "d441b0ce96872fbceb57802f2330a3ddc0c93a1dabd06b62c6f778aba383ef3e",
+    "qualified/m2/v2-import/src/header.rs": "1770523a2cafc4a450847f4307b3ad3c666a4272671a06233542731de6e739fd",
+    "qualified/m2/v2-import/src/lib.rs": "3df560d16dba81d92dc69c9e79ec377b0862dd538f4d4241ed1af29c10ae2392",
+    "qualified/m2/v2-import/src/main.rs": "a9b7345656a9dfd95881f46c147ee11b8f696a19ad16c72abe3f285767d9b805",
+    "qualified/m2/v2-import/src/mdd.rs": "f58e26346e3365625930c6b802d8b0f9e48391dc62ef5844c60d3ac79f82be45",
+    "qualified/m2/v2-import/src/mdx.rs": "f5e405bb3380c71c2dc5863a2cc6e01fb0f64d72ff14aef5befe30f7bb50f3c3",
+    "qualified/m2/v2-import/tests/import.rs": "cbfdbeeb4f3734958bd700bd351d5da5dfd9313736d49467c59d02dbd56dc196",
+    "qualified/scripts/m2_v2_import.py": "ddc5cdfbcc99c331bacd7465d8b52da718ce8b46c61e5bcd0e5a7fd889b6ecda",
+    "qualified/scripts/v2_import_fixtures.py": "75dafb1bad44aaf6facf40701c121b789127384ab0527aed6a1510a856b4dfc2",
+    "qualified/scripts/v2_import_lock.py": "a154a1b1b6881a5150a9b50c3e521322b4cec1d14a3877141abba5d8d692c632",
+    "qualified/m2/v2-import/Cargo.lock": "a051908d457e9596c0496a32faca03979e9deb9880ee80129061ad25c2c1f928"
+  },
+  "report_library_file_id": "libfile_9bedba5dea5c81919028dd5dcf7e1159",
+  "result": "Compiled; five of six integration tests passed; MDD header rejected because preflight required Dictionary instead of Library_Data",
+  "fix_scope": "Kind-specific XML root validation and regression coverage; no engine/dependency version changes",
+  "legacy_writer_matrix_reached": false
+}

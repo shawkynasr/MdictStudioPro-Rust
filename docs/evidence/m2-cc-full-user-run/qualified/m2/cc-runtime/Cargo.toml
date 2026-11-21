@@ -1,0 +1,25 @@
+[workspace]
+members = ["."]
+resolver = "2"
+
+[package]
+name = "studio-cc-runtime"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+studio-application = { path = "../application" }
+tempfile = "=3.27.0"
+studio-large-io = { path = "../large-io" }
+studio-stream-extract = { path = "../stream-extract" }
+studio-sessions = { path = "../sessions" }
+serde = { version = "=1.0.229", features = ["derive"] }
+serde_json = "=1.0.154"
+
+[dev-dependencies]
+studio-indexed-engine = { path = "../indexed-engine" }
+mdictlib = { version = "=0.2.8", features = ["lzo"] }
+
+[patch.crates-io]
+mdictlib = { path = "../../vendor/mdictlib-0.2.8-studio-sort-v6" }

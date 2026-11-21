@@ -1,0 +1,16 @@
+{
+  "package_version": 148,
+  "screenshots_confirm": [
+    "snapshot-open notice and rendered body",
+    "source switch to prefix-test.db with three app matches",
+    "duplicate apple rows 1 and 4",
+    "app second page at offset 2 shows row 4 and Second apple definition",
+    "Previous enabled and Next disabled on last page"
+  ],
+  "user_text_confirms": [
+    "close and reopen snapshot",
+    "normal full application shutdown with snapshot open"
+  ],
+  "GUI_cancellation_observed": false,
+  "new_case_profile_qualified": false
+}

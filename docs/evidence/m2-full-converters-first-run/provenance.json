@@ -1,0 +1,38 @@
+{
+  "status": "failed_Concise_RSS_gate_not_qualified",
+  "report_library_file_id": "libfile_390520dc764481918f4d3c3c0fccf2ab",
+  "files": {
+    "attempted/docs/evidence/full-converter-runtime-plan/reference.json": "546612138cc113d294050668ec1f4208616da10b5050ce86fe955264a95d3c8f",
+    "attempted/m2/full-converter-runtime/Cargo.lock": "26067a61d6f6686c0ed17a393ec8154903a16136e2ba32dedb4365733f3f71f5",
+    "attempted/m2/full-converter-runtime/Cargo.toml": "5a533b785bd6a8484aecedf8d0d71e80767436f93254384b8653575b352ea08a",
+    "attempted/m2/full-converter-runtime/src/converters.rs": "99fece448a38d94c616440088ce63f714c258a2bbc40d2f0fa7bd37f33686b28",
+    "attempted/m2/full-converter-runtime/src/lib.rs": "8561941403573ba4622a00d463599ede97f5700acac18ff685b5c84f804d8f71",
+    "attempted/m2/full-converter-runtime/src/main.rs": "476d4565606308bf09e24a3e0b3c075b66c5beed95a77d5b5c9a042e7202d474",
+    "attempted/m2/full-converter-runtime/src/runner.rs": "3dc3ef04f23e2b35da25a47296d5c0218407c01e1a0d25bac592eb146ce2e6cc",
+    "attempted/m2/full-converter-runtime/src/tests.rs": "7249bcc24639e068e0627e230979f1b463aacf4a398ca3d0ad70d039555963a9",
+    "attempted/m2/full-converter-runtime/src/txt.rs": "59d3b6d40733f770539fbdee6fb31f41deda71d90c0e156b88623d6eac3ae210",
+    "attempted/scripts/full_converter_runtime_lock.py": "a19d605f744871c7186ed4083637fe6760a3032bab261098184a7085adc03b22",
+    "attempted/scripts/m2_full_converters.py": "b1d2f5fbab2712f653c20bfe298b4d46dde2aa641467601552f30df9818cb28d",
+    "attempted/scripts/test_full_converters.py": "05e2a68a386c2255b3d30c18c3c0dc393e388819927198369f7ac99bae3b7e5e",
+    "m2-full-converters-report.json": "e3dec00d9cf8156493eb5cd38aed4520fcb3129da3e6bf947f561f5937a30e55"
+  },
+  "all_277_source_identities_match": true,
+  "native_commands_passed": 2,
+  "completed_full_cases": [
+    "cc_cedict",
+    "moe_mini",
+    "moe_idioms"
+  ],
+  "failure_RSS_value_missing_from_report": true,
+  "M2_complete": false,
+  "review_summary": {
+    "status": "incomplete_attempt_reviewed_not_full_qualification",
+    "native_tests_passed": 31,
+    "completed_case_count": 3,
+    "controller_exchanges": 415,
+    "failure": "Concise RSS threshold",
+    "Concise_peak_RSS": "not retained by first harness",
+    "Revised_WFG_integration": "not reached",
+    "M2_complete": false
+  }
+}

@@ -1,0 +1,51 @@
+
+STDERR:
+   Compiling studio-xlsx v0.1.0 (/Users/shawky/Downloads/mdict-studio-m0-m1/m2/xlsx-reader)
+error[E0425]: cannot find value `py_space` in this scope
+   --> src/moe/layouts.rs:160:113
+    |
+160 | ..._>=lines[0].split(py_space).filter(|s|!s.is_empty()).collect();
+    |                      ^^^^^^^^ not found in this scope
+    |
+help: consider importing this function
+    |
+  1 + use crate::py_space;
+    |
+
+error[E0425]: cannot find value `py_space` in this scope
+   --> src/moe/layouts.rs:165:65
+    |
+165 | ...rim_start_matches(py_space);if rest.is_empty() {break;}let end=rest....
+    |                      ^^^^^^^^ not found in this scope
+    |
+help: consider importing this function
+    |
+  1 + use crate::py_space;
+    |
+
+error[E0425]: cannot find value `py_space` in this scope
+   --> src/moe/layouts.rs:165:120
+    |
+165 | ...let end=rest.find(py_space).unwrap_or(rest.len());marks.push(&rest[....
+    |                      ^^^^^^^^ not found in this scope
+    |
+help: consider importing this function
+    |
+  1 + use crate::py_space;
+    |
+
+error[E0425]: cannot find value `py_space` in this scope
+   --> src/moe/layouts.rs:166:54
+    |
+166 | ...rim_start_matches(py_space);out.push_str("<tr>");for i in 0..headers...
+    |                      ^^^^^^^^ not found in this scope
+    |
+help: consider importing this function
+    |
+  1 + use crate::py_space;
+    |
+
+For more information about this error, try `rustc --explain E0425`.
+error: could not compile `studio-xlsx` (lib test) due to 4 previous errors
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `studio-xlsx` (lib) due to 4 previous errors

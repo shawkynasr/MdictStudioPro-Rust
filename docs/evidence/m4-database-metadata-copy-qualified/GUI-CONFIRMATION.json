@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "scope": "Title/description database-copy GUI output",
+  "user_run_source_copy_verifier": "passed; source unchanged; unselected metadata preserved",
+  "independent_uploaded_copy_check": {
+    "records": 7,
+    "copy_sha256": "893b81258256935171a10e50ca03767ecd0917c5bc088d6357648e9ce5ffc0f3",
+    "rows_sha256": "0510fc0b667d59fb1014cd1d4509991ff51427e09330d6a6f139e53d642c8f8a",
+    "source_sha256": "025c5a54159ad4737a31bfaf605d9e40cf48566b4a5df01e108ed51d54d90aeb",
+    "title": "dict22 edited",
+    "description": "hi new world",
+    "all_fixture_rows_and_expected_attributes_match": true
+  },
+  "limitations": [
+    "Original source database was not attached; direct source-copy comparison is user-run evidence.",
+    "Independent checks compare the attached copy with the known fixture and expected source hash.",
+    "Does not qualify later stylesheet replacement."
+  ]
+}

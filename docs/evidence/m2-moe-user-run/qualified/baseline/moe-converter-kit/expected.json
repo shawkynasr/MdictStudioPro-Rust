@@ -1,0 +1,60 @@
+{
+  "moe_revised": [
+    {
+      "key": "和",
+      "text": "<head><meta charset=\"utf-8\"><link rel=\"stylesheet\" type=\"text/css\" href=\"jybcb.css\"><script src=\"jybcb.js\"></script></head><div class=\"edugycd\"><div class=\"dict-title-group\"><span class=\"index\">和</span><span class=\"radical\">口部 部外 5 畫 總筆畫 8 畫</span></div><span class=\"bopomo\">(一) ㄏㄜˊ (二) ㄏㄜˋ</span><span class=\"hanyu\">(一) hé (二) hè</span><span class=\"article\"><span class=\"mean\"><div style='font-weight:bold; color:#B45E13; margin-bottom:4px;'>(一) ㄏㄜˊ</div><div style=\"margin-top:12px; margin-bottom:4px;\"><span class=\"example\">名</span></div><ol style=\"margin-top:0; padding-left:2em;\"><li>平安。</li><li>如：「<span style=\"color:var(--c-red); font-weight:bold;\">和</span>氣」。 <img class=\"pic-inline\" src=\"sample.png\" alt=\"sample.png\"></li></ol></span><span class=\"mean\"><div style='font-weight:bold; color:#B45E13; margin-bottom:4px;'>(二) ㄏㄜˋ</div><div style=\"margin-top:4px; padding-left:0;\"><span class=\"example\">動</span> 隨聲相應。</div></span></span><span class=\"polyref\"><b>相似詞：</b>平和</span><span class=\"polyref\"><b>相反詞：</b>爭</span><span class=\"polyref\"><b>辭條別名：</b>和平；和平；和諧</span></div>"
+    },
+    {
+      "key": "和諧",
+      "text": "@@@LINK=和"
+    },
+    {
+      "key": "和平",
+      "text": "@@@LINK=和"
+    },
+    {
+      "key": "字",
+      "text": "<head><meta charset=\"utf-8\"><link rel=\"stylesheet\" type=\"text/css\" href=\"jybcb.css\"><script src=\"jybcb.js\"></script></head><div class=\"edugycd\"><div class=\"dict-title-group\"><span class=\"index\">字</span></div><span class=\"bopomo\">ㄗˋ</span><span class=\"hanyu\">zì</span><span class=\"article\"><span class=\"mean\"><ol style=\"margin-top:0; padding-left:2em;\"><li>文<span style=\"color:var(--c-red); font-weight:bold;\">字</span>。</li><li><img src=\"9868._104_0.gif\" class=\"imgchar\" alt=\"未收錄篆<span style=\"color:var(--c-red); font-weight:bold;\">字</span>\" /> <img src=\"4e00_.png\" class=\"imgchar\" alt=\"4e00\" /></li></ol></span></span></div>"
+    }
+  ],
+  "moe_revised_wfg": [
+    {
+      "key": "和",
+      "text": "<link href=\"cbgycd.css\" rel=\"stylesheet\" type=\"text/css\"><script src=\"cbgycd.js\"></script><cbgycd><hr class=\"hr1\"><span class=\"hw\">和</span><sup class=\"homo\">㈠</sup><hr class=\"hr2\"><span class=\"sy\"><span class=\"bs\">口</span><span class=\"bh\">5</span><span class=\"zbh\">8</span></span><span class=\"sy\"><span class=\"zy\">ㄏㄜˊ</span></span><span class=\"sy\"><span class=\"py\">hé</span></span><hr class=\"hr2\"><span class=\"pos\">名</span><span class=\"entry\"><span class=\"num\">①</span>平安。</span><span class=\"entry\"><span class=\"num\">②</span><span class=\"li\">如：「和氣」</span>。 <img class=\"pic-inline\" src=\"sample.png\"></span><span class=\"jy\">平和</span><span class=\"fy\">爭</span><hr class=\"hr3\"><span class=\"hw\">和</span><sup class=\"homo\">㈡</sup><hr class=\"hr2\"><span class=\"sy\"><span class=\"zy\">ㄏㄜˋ</span></span><span class=\"sy\"><span class=\"py\">hè</span></span><hr class=\"hr2\"><span class=\"pos\">動</span><span class=\"entry-single\"> 隨聲相應。</span></cbgycd>"
+    },
+    {
+      "key": "字",
+      "text": "<link href=\"cbgycd.css\" rel=\"stylesheet\" type=\"text/css\"><script src=\"cbgycd.js\"></script><cbgycd><hr class=\"hr1\"><span class=\"hw\">字</span><hr class=\"hr2\"><span class=\"sy\"><span class=\"zy\">ㄗˋ</span></span><span class=\"sy\"><span class=\"py\">zì</span></span><hr class=\"hr2\"><span class=\"entry-single\">文字。</span><span class=\"entry\"><span class=\"num\">(9868)</span>_104_0.gif <img class=\"pic-inline\" src=\"4e00_.png\"></span></cbgycd>"
+    }
+  ],
+  "moe_concise": [
+    {
+      "key": "和",
+      "text": "<head><meta charset=\"utf-8\"><link rel=\"stylesheet\" type=\"text/css\" href=\"jybcb.css\"></head><div class=\"edugycd\"><div class=\"dict-title-group\"><span class=\"index\">和</span><span class=\"radical\">口部 部外 5 畫 總筆畫 8 畫</span></div><span class=\"bopomo\">(一) ㄏㄜˊ (二) ㄏㄜˋ</span><span class=\"hanyu\">(一) hé (二) hè</span><span class=\"article\">釋義：<span class=\"mean\">(一) [名]<br />1. 平安。<br />2. 如：「和氣」。 <img class=\"pic-inline\" src=\"sample.png\"></span><span class=\"mean\">(二) [動] 隨聲相應。</span></span><span class=\"polyref\"><b>相似詞：</b>平和</span><span class=\"polyref\"><b>相反詞：</b>爭</span></div>"
+    },
+    {
+      "key": "字",
+      "text": "<head><meta charset=\"utf-8\"><link rel=\"stylesheet\" type=\"text/css\" href=\"jybcb.css\"></head><div class=\"edugycd\"><div class=\"dict-title-group\"><span class=\"index\">字</span></div><span class=\"bopomo\">ㄗˋ</span><span class=\"hanyu\">zì</span><span class=\"article\">釋義：<span class=\"mean\">文字。<br />9868._104_0.gif <img class=\"pic-inline\" src=\"4e00_.png\"></span></span></div>"
+    }
+  ],
+  "moe_idioms": [
+    {
+      "key": "和衷共濟",
+      "text": "<head><meta charset=\"utf-8\"><link rel=\"stylesheet\" type=\"text/css\" href=\"jybcb.css\"><script src=\"jybcb.js\"></script></head><div class=\"edugycd\"><span class=\"headword\">和衷共濟</span><span class=\"bopomo\">ㄏㄜˊ</span><span class=\"hanyu\">hé</span><div class=\"content-section\"><span class=\"content-title\">釋義</span><span class=\"content-text\">[名]<br />1. 平安。<br />2. 如：「和氣」。 <img class=\"pic-inline\" src=\"sample.png\"></span><span class=\"content-title\">典源文獻內容</span><span class=\"content-text source-content dianyuan-wenxian\">《書》：「和衷共濟。」<sup class=\"source-num\">①</sup></span><span class=\"content-title\">典源注解</span><span class=\"content-text annotated-content\"><ul class=\"annotation-list\" style=\"list-style: none; padding-left: 0;\"><li style=\"margin-bottom: 5px;\"><span class=\"line-num\">①</span> 同心協力。</li></ul></span><span class=\"content-title\">用法說明-例句</span><span class=\"content-text\"><ol class=\"example-list\"><li>大家<em>和衷共濟</em>。</li></ol></span><span class=\"content-title\">辨識-例句</span><span class=\"content-text\"><table class=\"compare-table\"><tr><th>和衷共濟</th><th>同舟共濟</th><th>例句</th></tr><tr><td class=\"mark\">○</td><td class=\"mark\">ㄨ</td><td class=\"sentence\">大家齊心努力。</td></tr></table></span><span class=\"content-title\">近義成語</span><span class=\"content-text reference-content\"><span class=\"jump-word\"><a href=\"entry://同舟共濟\">同舟共濟</a></span>、<span class=\"jump-word\"><a href=\"entry://同心協力\">同心協力</a></span></span></div></div>\n<div class=\"entry-id\" style=\"display:none;\">1</div>"
+    },
+    {
+      "key": "一字千金",
+      "text": "<head><meta charset=\"utf-8\"><link rel=\"stylesheet\" type=\"text/css\" href=\"jybcb.css\"><script src=\"jybcb.js\"></script></head><div class=\"edugycd\"><span class=\"headword\">一字千金</span><span class=\"bopomo\">ㄗˋ</span><span class=\"hanyu\">zì</span><div class=\"content-section\"><span class=\"content-title\">釋義</span><span class=\"content-text\">文字。<br />9868._104_0.gif <img class=\"pic-inline\" src=\"4e00_.png\"></span></div></div>\n<div class=\"entry-id\" style=\"display:none;\">2</div>"
+    }
+  ],
+  "moe_mini": [
+    {
+      "key": "和",
+      "text": "<head>\n        <meta charset=\"utf-8\">\n        <link rel=\"stylesheet\" type=\"text/css\" href=\"jybcb.css\">\n        <style>\n            ruby {\n                display: inline-flex;\n                align-items: center;\n                vertical-align: bottom;\n            }\n            ruby rt {\n                display: block;\n                font-family: \"Bopomofo Custom\", \"Bopomofo\", \"TWK-Mod\", \"DFKai-sb\", sans-serif;\n                font-size: 45%; /* Adjusted slightly from 30% for better dictionary readability */\n                font-weight: 500;\n                line-height: 1;\n                text-align: center;\n                padding-left: 0.1em;\n                position: relative;\n                -webkit-text-orientation: upright;\n                text-orientation: upright;\n                -webkit-writing-mode: vertical-lr;\n                writing-mode: vertical-lr;\n                white-space: nowrap;\n                width: 1.5em;\n                color: inherit;\n            }\n            ruby rt:empty {\n                display: none;\n            }\n        </style>\n        </head><div class=\"edugycd\"><div class=\"dict-title-group\"><span class=\"index\">和</span><span class=\"radical\">口部 部外 5 畫 總筆畫 8 畫</span></div><span class=\"bopomo\">(一) ㄏㄜˊ (二) ㄏㄜˋ</span><span class=\"article\">釋義：<span class=\"mean\">(一) <ruby>和<rt>ㄏㄜˊ</rt></ruby><br />&sample.png;</span><span class=\"mean\">(二) 附和。</span></span></div>"
+    },
+    {
+      "key": "字",
+      "text": "<head>\n        <meta charset=\"utf-8\">\n        <link rel=\"stylesheet\" type=\"text/css\" href=\"jybcb.css\">\n        <style>\n            ruby {\n                display: inline-flex;\n                align-items: center;\n                vertical-align: bottom;\n            }\n            ruby rt {\n                display: block;\n                font-family: \"Bopomofo Custom\", \"Bopomofo\", \"TWK-Mod\", \"DFKai-sb\", sans-serif;\n                font-size: 45%; /* Adjusted slightly from 30% for better dictionary readability */\n                font-weight: 500;\n                line-height: 1;\n                text-align: center;\n                padding-left: 0.1em;\n                position: relative;\n                -webkit-text-orientation: upright;\n                text-orientation: upright;\n                -webkit-writing-mode: vertical-lr;\n                writing-mode: vertical-lr;\n                white-space: nowrap;\n                width: 1.5em;\n                color: inherit;\n            }\n            ruby rt:empty {\n                display: none;\n            }\n        </style>\n        </head><div class=\"edugycd\"><div class=\"dict-title-group\"><span class=\"index\">字</span></div><span class=\"bopomo\">ㄗˋ</span><span class=\"article\">釋義：<span class=\"mean\">文字。</span></span></div>"
+    }
+  ]
+}

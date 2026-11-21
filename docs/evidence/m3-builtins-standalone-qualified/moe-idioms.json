@@ -1,0 +1,33 @@
+{
+  "schema": "studio-builtin-standalone-GUI-v1",
+  "date": "2026-11-20",
+  "status": "accepted_scoped_MOE_Idioms_standalone_fixture",
+  "app": "m3-shell-out-mac-preview-v5/Mdict Studio Pro Preview.app",
+  "basis": "User job receipt and attached moe-idioms-standalone-v5-1; exact baseline byte comparison passed",
+  "receipt": {
+    "profile": "small_moe",
+    "receipt": {
+      "comments_count": 0,
+      "converter": "moe_idioms",
+      "entries": 2,
+      "file_bytes": 2191,
+      "metrics": {
+        "alias_redirects": 0,
+        "primary_entries": 2,
+        "skipped_rows_or_lines": 1,
+        "traditional_entries": 0
+      },
+      "profile": "larger-owned-converters-v1",
+      "source_sha256": "4d16e493d7686aa4db03b2619e023f81bbd93d9940ff4369fed91192c4fd5f1a",
+      "txt_profile": "canonical_v1"
+    }
+  },
+  "exact_expected_output": true,
+  "output_sha256": "f1e2fdb6ef77bed7aeee1ee66989fa00c3ac662e80a63712c2295916b157ac0c",
+  "keys": [
+    "和衷共濟",
+    "一字千金"
+  ],
+  "M3_complete": false,
+  "production_release_ready": false
+}

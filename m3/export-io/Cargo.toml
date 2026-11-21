@@ -1,0 +1,26 @@
+[workspace]
+members = ["."]
+resolver = "2"
+
+[package]
+name = "studio-export-io"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+libc = "=0.2.191"
+mdictlib = { version = "=0.2.8", features = ["lzo"] }
+quick-xml = "=0.38.3"
+serde = { version = "=1.0.229", features = ["derive"] }
+serde_json = "=1.0.154"
+studio-application = { path = "../../m2/application" }
+studio-core = { path = "../../m2/studio-core" }
+studio-v2-import = { path = "../../m2/v2-import" }
+tempfile = "=3.27.0"
+
+[dev-dependencies]
+studio-cc-pack-io = { path = "../../m2/cc-pack-io" }
+
+[patch.crates-io]
+mdictlib = { path = "../../vendor/mdictlib-0.2.8-studio-sort-v6" }

@@ -1,0 +1,180 @@
+test_cased_and_ignorable_are_independent_properties (test_casing_policy.VersionedCasing.test_cased_and_ignorable_are_independent_properties) ... ok
+test_contexts_cover_new_cased_characters_both_sides_of_sigma (test_casing_policy.VersionedCasing.test_contexts_cover_new_cased_characters_both_sides_of_sigma) ... ok
+test_ranges_preserve_property_membership_and_gaps (test_casing_policy.VersionedCasing.test_ranges_preserve_property_membership_and_gaps) ... ok
+test_comparison_requires_full_payload_observations (test_checksum_qualification.ChecksumQualification.test_comparison_requires_full_payload_observations) ... ok
+test_each_site_changes_exactly_one_checksum_byte_and_no_geometry (test_checksum_qualification.ChecksumQualification.test_each_site_changes_exactly_one_checksum_byte_and_no_geometry) ... ok
+test_unrelated_parse_error_or_incomplete_record_scan_is_not_checksum_pass (test_checksum_qualification.ChecksumQualification.test_unrelated_parse_error_or_incomplete_record_scan_is_not_checksum_pass) ... ok
+test_changed_source_or_output_prevents_publication (test_finalize_rebuild.FinalizeRebuild.test_changed_source_or_output_prevents_publication) ... ok
+test_extra_unverified_dictionary_is_not_published (test_finalize_rebuild.FinalizeRebuild.test_extra_unverified_dictionary_is_not_published) ... ok
+test_finalization_copies_only_font_and_preserves_before_report (test_finalize_rebuild.FinalizeRebuild.test_finalization_copies_only_font_and_preserves_before_report) ... ok
+test_boundaries_retain_blank_lines_redirect_and_duplicates (test_fresh_pack.FreshPackContract.test_boundaries_retain_blank_lines_redirect_and_duplicates) ... ok
+test_exact_comparison_does_not_hide_loss_or_normalization (test_fresh_pack.FreshPackContract.test_exact_comparison_does_not_hide_loss_or_normalization) ... ok
+test_sort_ties_preserve_each_duplicate_payload (test_fresh_pack.FreshPackContract.test_sort_ties_preserve_each_duplicate_payload) ... ok
+test_alias_edits_preserve_sections_and_regenerate_header_checksum (test_header_lookup.HeaderLookupContract.test_alias_edits_preserve_sections_and_regenerate_header_checksum) ... ok
+test_engine_and_wrapper_conflict_rejections_both_pass_without_weakening_errors (test_header_lookup.HeaderLookupContract.test_engine_and_wrapper_conflict_rejections_both_pass_without_weakening_errors) ... ok
+test_exact_rows_win_and_case_fallback_preserves_all_duplicates (test_header_lookup.HeaderLookupContract.test_exact_rows_win_and_case_fallback_preserves_all_duplicates) ... ok
+test_flag_only_negative_control_is_actually_out_of_order (test_header_lookup.HeaderLookupContract.test_flag_only_negative_control_is_actually_out_of_order) ... ok
+test_independent_key_block_membership (test_header_lookup.HeaderLookupContract.test_independent_key_block_membership) ... ok
+test_strip_flag_changes_fallback_but_not_stored_keys (test_header_lookup.HeaderLookupContract.test_strip_flag_changes_fallback_but_not_stored_keys) ... ok
+test_embedded_policy_is_exactly_the_reviewed_upload (test_integrated_casing.IntegratedCasing.test_embedded_policy_is_exactly_the_reviewed_upload) ... ok
+test_exact_first_preserves_duplicate_identity_and_order (test_integrated_casing.IntegratedCasing.test_exact_first_preserves_duplicate_identity_and_order) ... ok
+test_fixture_distinguishes_unicode16_from_unicode17 (test_integrated_casing.IntegratedCasing.test_fixture_distinguishes_unicode16_from_unicode17) ... ok
+test_duplicate_multiplicity_is_not_discarded (test_interop_contract.ComparisonContract.test_duplicate_multiplicity_is_not_discarded) ... ok
+test_header_crc_must_cover_the_terminator (test_interop_contract.ComparisonContract.test_header_crc_must_cover_the_terminator) ... ok
+test_header_terminator_is_required_and_counted (test_interop_contract.ComparisonContract.test_header_terminator_is_required_and_counted) ... ok
+test_legacy_fixture_parser_preserves_crlf_and_rejects_incomplete (test_interop_contract.ComparisonContract.test_legacy_fixture_parser_preserves_crlf_and_rejects_incomplete) ... ok
+test_legacy_txt_span_retains_delimiter_preceding_lf (test_interop_contract.ComparisonContract.test_legacy_txt_span_retains_delimiter_preceding_lf) ... ok
+test_reader_utf8_decoding_is_strict (test_interop_contract.ComparisonContract.test_reader_utf8_decoding_is_strict) ... ok
+test_whitespace_and_binary_payloads_are_exact (test_interop_contract.ComparisonContract.test_whitespace_and_binary_payloads_are_exact) ... ok
+test_cli_dispatches_selected_candidate_to_cargo (test_metadata_codecs.MetadataCodecContract.test_cli_dispatches_selected_candidate_to_cargo) ... 
+  test_cli_dispatches_selected_candidate_to_cargo (test_metadata_codecs.MetadataCodecContract.test_cli_dispatches_selected_candidate_to_cargo) (revision=2) ... FAIL
+  test_cli_dispatches_selected_candidate_to_cargo (test_metadata_codecs.MetadataCodecContract.test_cli_dispatches_selected_candidate_to_cargo) (revision=3) ... FAIL
+  test_cli_dispatches_selected_candidate_to_cargo (test_metadata_codecs.MetadataCodecContract.test_cli_dispatches_selected_candidate_to_cargo) (revision=4) ... FAIL
+test_failed_writer_blocks_reads_without_attempting_them (test_metadata_codecs.MetadataCodecContract.test_failed_writer_blocks_reads_without_attempting_them) ... ok
+test_metadata_comparison_catches_newline_normalization (test_metadata_codecs.MetadataCodecContract.test_metadata_comparison_catches_newline_normalization) ... ok
+test_negative_legacy_samples_cannot_encode (test_metadata_codecs.MetadataCodecContract.test_negative_legacy_samples_cannot_encode) ... ok
+test_positive_samples_representable_without_replacement (test_metadata_codecs.MetadataCodecContract.test_positive_samples_representable_without_replacement) ... ok
+test_raw_sources_preserve_bytes_and_two_byte_terminators (test_metadata_codecs.MetadataCodecContract.test_raw_sources_preserve_bytes_and_two_byte_terminators) ... ok
+test_unsupported_writer_is_distinct_from_failed_reader (test_metadata_codecs.MetadataCodecContract.test_unsupported_writer_is_distinct_from_failed_reader) ... ok
+test_utf16_writer_parameter_does_not_change_raw_byte_codec (test_metadata_codecs.MetadataCodecContract.test_utf16_writer_parameter_does_not_change_raw_byte_codec) ... ok
+test_xml_literal_newline_and_reference_have_different_contracts (test_metadata_codecs.MetadataCodecContract.test_xml_literal_newline_and_reference_have_different_contracts) ... ok
+test_exact_duplicate_and_case_fallback_are_distinct (test_minimal_controls.MinimalControls.test_exact_duplicate_and_case_fallback_are_distinct) ... ok
+test_flags_and_cross_block_checks_cannot_be_waived (test_minimal_controls.MinimalControls.test_flags_and_cross_block_checks_cannot_be_waived) ... ok
+test_literal_order_does_not_accept_legacy_punctuation_ties (test_minimal_controls.MinimalControls.test_literal_order_does_not_accept_legacy_punctuation_ties) ... ok
+test_patch_is_reversible_leaving_both_legacy_profiles_intact (test_minimal_controls.MinimalControls.test_patch_is_reversible_leaving_both_legacy_profiles_intact) ... ok
+test_log_reader_rejects_truncation_or_extra_stdout (test_native_unicode.NativeUnicode.test_log_reader_rejects_truncation_or_extra_stdout) ... ok
+test_native_checks_require_payload_access_but_do_not_assert_studio_fallback (test_native_unicode.NativeUnicode.test_native_checks_require_payload_access_but_do_not_assert_studio_fallback) ... ok
+test_actual_crashing_pair_is_not_qualified_by_structural_success (test_native_wire.NativeWireRegression.test_actual_crashing_pair_is_not_qualified_by_structural_success) ... ok
+test_revision4_edits_are_exactly_reversible_and_refuse_double_application (test_native_wire.NativeWireRegression.test_revision4_edits_are_exactly_reversible_and_refuse_double_application) ... ok
+test_binary_resources_and_exact_keys_remain_distinct (test_reader_checks.CorpusContract.test_binary_resources_and_exact_keys_remain_distinct) ... ok
+test_cli_check_executes_complete_comparison_with_stubbed_readers (test_reader_checks.CorpusContract.test_cli_check_executes_complete_comparison_with_stubbed_readers) ... ERROR
+test_duplicate_counts_and_whitespace_are_significant (test_reader_checks.CorpusContract.test_duplicate_counts_and_whitespace_are_significant) ... ok
+test_manifest_discovery_is_read_only_and_refuses_overwrite (test_reader_checks.CorpusContract.test_manifest_discovery_is_read_only_and_refuses_overwrite) ... FAIL
+test_truncated_worker_never_becomes_a_complete_scan (test_reader_checks.CorpusContract.test_truncated_worker_never_becomes_a_complete_scan) ... ok
+test_crlf_variant_changes_only_header_and_recomputes_checksum (test_reader_checks.ReaderFixtureContract.test_crlf_variant_changes_only_header_and_recomputes_checksum) ... ok
+test_css_font_inventory_distinguishes_local_and_remote (test_reader_checks.ReaderFixtureContract.test_css_font_inventory_distinguishes_local_and_remote) ... ok
+test_fixture_has_real_markers_and_matching_inline_controls (test_reader_checks.ReaderFixtureContract.test_fixture_has_real_markers_and_matching_inline_controls) ... ok
+test_independent_auditor_rejects_bad_checksum_and_wrong_size (test_reader_checks.ReaderFixtureContract.test_independent_auditor_rejects_bad_checksum_and_wrong_size) ... ok
+test_case_insensitive_output_collision_is_refused (test_real_rebuild.RealRebuild.test_case_insensitive_output_collision_is_refused) ... ok
+test_companion_font_override_only_writes_output_and_preserves_css (test_real_rebuild.RealRebuild.test_companion_font_override_only_writes_output_and_preserves_css) ... ok
+test_cross_comparison_rejects_lost_duplicate_and_added_payload (test_real_rebuild.RealRebuild.test_cross_comparison_rejects_lost_duplicate_and_added_payload) ... ok
+test_new_stream_scan_requires_complete_end_marker (test_real_rebuild.RealRebuild.test_new_stream_scan_requires_complete_end_marker) ... ok
+test_preserve_order_patch_leaves_prior_diagnostic_source_recoverable (test_real_rebuild.RealRebuild.test_preserve_order_patch_leaves_prior_diagnostic_source_recoverable) ... ok
+test_body_and_stylesheet_newline_differences_remain_visible (test_reference_builder.ReferenceBuilder.test_body_and_stylesheet_newline_differences_remain_visible) ... ok
+test_modified_kit_is_refused_even_if_manifest_is_updated (test_reference_builder.ReferenceBuilder.test_modified_kit_is_refused_even_if_manifest_is_updated) ... ok
+test_source_and_rust_bodies_match_including_CRLF (test_reference_builder.ReferenceBuilder.test_source_and_rust_bodies_match_including_CRLF) ... ok
+test_v3_reference_and_bad_header_checksum_are_rejected (test_reference_builder.ReferenceBuilder.test_v3_reference_and_bad_header_checksum_are_rejected) ... ok
+test_binary_zero_and_ff_bytes_are_not_text_normalized (test_resource_controls.ResourceControls.test_binary_zero_and_ff_bytes_are_not_text_normalized) ... ok
+test_font_has_embedding_permissions_and_no_external_sidecars (test_resource_controls.ResourceControls.test_font_has_embedding_permissions_and_no_external_sidecars) ... ok
+test_resource_graph_resolves_CSS_font_and_refuses_missing_assets (test_resource_controls.ResourceControls.test_resource_graph_resolves_CSS_font_and_refuses_missing_assets) ... ok
+test_fault_mutations_target_known_bounded_geometry (test_stress_qualification.StressQualification.test_fault_mutations_target_known_bounded_geometry) ... ok
+test_mac_and_linux_peak_RSS_units_and_preset_scope (test_stress_qualification.StressQualification.test_mac_and_linux_peak_RSS_units_and_preset_scope) ... ok
+test_monitor_measures_actual_child_and_distinguishes_timeout (test_stress_qualification.StressQualification.test_monitor_measures_actual_child_and_distinguishes_timeout) ... ok
+test_XML_normalization_is_visible_and_not_mistaken_for_native_success (test_stylesheet_controls.StylesheetControls.test_XML_normalization_is_visible_and_not_mistaken_for_native_success) ... ok
+test_candidate_does_not_accept_silently_added_definition_newlines (test_stylesheet_controls.StylesheetControls.test_candidate_does_not_accept_silently_added_definition_newlines) ... ok
+test_marker_loss_and_wrong_expansion_fail_independently (test_stylesheet_controls.StylesheetControls.test_marker_loss_and_wrong_expansion_fail_independently) ... ok
+test_native_reference_requires_one_extra_LF_not_body_changes (test_stylesheet_controls.StylesheetControls.test_native_reference_requires_one_extra_LF_not_body_changes) ... ok
+test_raw_header_extraction_preserves_line_breaks_and_decodes_entities (test_stylesheet_controls.StylesheetControls.test_raw_header_extraction_preserves_line_breaks_and_decodes_entities) ... ok
+test_contextual_lowercase_and_exact_first_are_distinct_contracts (test_unicode_profiles.UnicodeProfiles.test_contextual_lowercase_and_exact_first_are_distinct_contracts) ... ok
+test_fixture_contains_distinguishable_unicode_order_and_normalization_cases (test_unicode_profiles.UnicodeProfiles.test_fixture_contains_distinguishable_unicode_order_and_normalization_cases) ... ok
+test_single_scalar_scan_is_exhaustive_and_detects_wrong_mappings (test_unicode_profiles.UnicodeProfiles.test_single_scalar_scan_is_exhaustive_and_detects_wrong_mappings) ... ok
+
+======================================================================
+ERROR: test_cli_check_executes_complete_comparison_with_stubbed_readers (test_reader_checks.CorpusContract.test_cli_check_executes_complete_comparison_with_stubbed_readers)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/shawky/Downloads/mdict-studio-m0-m1/scripts/test_reader_checks.py", line 80, in test_cli_check_executes_complete_comparison_with_stubbed_readers
+    self.assertEqual(real_corpus.main(),0)
+                     ~~~~~~~~~~~~~~~~^^
+  File "/Users/shawky/Downloads/mdict-studio-m0-m1/scripts/real_corpus.py", line 221, in main
+    return check(args.manifest,args.output,args.timeout)
+  File "/Users/shawky/Downloads/mdict-studio-m0-m1/scripts/real_corpus.py", line 131, in check
+    report={"status":"blocked","cases":[],"environment":{"python":sys.version,"os":platform.platform()},
+                                                                                   ~~~~~~~~~~~~~~~~~^^
+  File "/usr/local/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/platform.py", line 1399, in platform
+    bits, linkage = architecture(sys.executable)
+                    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/platform.py", line 806, in architecture
+    fileout = _syscmd_file(executable, '')
+  File "/usr/local/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/platform.py", line 764, in _syscmd_file
+    return output.decode('latin-1')
+           ^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'decode'. Did you mean: 'encode'?
+
+======================================================================
+FAIL: test_cli_dispatches_selected_candidate_to_cargo (test_metadata_codecs.MetadataCodecContract.test_cli_dispatches_selected_candidate_to_cargo) (revision=2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/shawky/Downloads/mdict-studio-m0-m1/scripts/test_metadata_codecs.py", line 120, in test_cli_dispatches_selected_candidate_to_cargo
+    self.assertEqual(cargo_calls[0][-2:], ["codec", str(out / "rust")])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: ['codec', '/private/var/folders/85/csg00kn97bn83n0fl2[35 chars]ust'] != ['codec', '/var/folders/85/csg00kn97bn83n0fl2zfp4rw00[27 chars]ust']
+
+First differing element 1:
+'/private/var/folders/85/csg00kn97bn83n0fl2[34 chars]rust'
+'/var/folders/85/csg00kn97bn83n0fl2zfp4rw00[26 chars]rust'
+
+  ['codec',
+-  '/private/var/folders/85/csg00kn97bn83n0fl2zfp4rw0000gp/T/tmplwbjcd18/result/rust']
+?   --------
+
++  '/var/folders/85/csg00kn97bn83n0fl2zfp4rw0000gp/T/tmplwbjcd18/result/rust']
+
+======================================================================
+FAIL: test_cli_dispatches_selected_candidate_to_cargo (test_metadata_codecs.MetadataCodecContract.test_cli_dispatches_selected_candidate_to_cargo) (revision=3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/shawky/Downloads/mdict-studio-m0-m1/scripts/test_metadata_codecs.py", line 120, in test_cli_dispatches_selected_candidate_to_cargo
+    self.assertEqual(cargo_calls[0][-2:], ["codec", str(out / "rust")])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: ['codec', '/private/var/folders/85/csg00kn97bn83n0fl2[35 chars]ust'] != ['codec', '/var/folders/85/csg00kn97bn83n0fl2zfp4rw00[27 chars]ust']
+
+First differing element 1:
+'/private/var/folders/85/csg00kn97bn83n0fl2[34 chars]rust'
+'/var/folders/85/csg00kn97bn83n0fl2zfp4rw00[26 chars]rust'
+
+  ['codec',
+-  '/private/var/folders/85/csg00kn97bn83n0fl2zfp4rw0000gp/T/tmpudw9hva4/result/rust']
+?   --------
+
++  '/var/folders/85/csg00kn97bn83n0fl2zfp4rw0000gp/T/tmpudw9hva4/result/rust']
+
+======================================================================
+FAIL: test_cli_dispatches_selected_candidate_to_cargo (test_metadata_codecs.MetadataCodecContract.test_cli_dispatches_selected_candidate_to_cargo) (revision=4)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/shawky/Downloads/mdict-studio-m0-m1/scripts/test_metadata_codecs.py", line 120, in test_cli_dispatches_selected_candidate_to_cargo
+    self.assertEqual(cargo_calls[0][-2:], ["codec", str(out / "rust")])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: ['codec', '/private/var/folders/85/csg00kn97bn83n0fl2[35 chars]ust'] != ['codec', '/var/folders/85/csg00kn97bn83n0fl2zfp4rw00[27 chars]ust']
+
+First differing element 1:
+'/private/var/folders/85/csg00kn97bn83n0fl2[34 chars]rust'
+'/var/folders/85/csg00kn97bn83n0fl2zfp4rw00[26 chars]rust'
+
+  ['codec',
+-  '/private/var/folders/85/csg00kn97bn83n0fl2zfp4rw0000gp/T/tmpvlo0k32z/result/rust']
+?   --------
+
++  '/var/folders/85/csg00kn97bn83n0fl2zfp4rw0000gp/T/tmpvlo0k32z/result/rust']
+
+======================================================================
+FAIL: test_manifest_discovery_is_read_only_and_refuses_overwrite (test_reader_checks.CorpusContract.test_manifest_discovery_is_read_only_and_refuses_overwrite)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/shawky/Downloads/mdict-studio-m0-m1/scripts/test_reader_checks.py", line 59, in test_manifest_discovery_is_read_only_and_refuses_overwrite
+    self.assertEqual(json.loads(manifest.read_text())["cases"][0]["path"],str(path))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '/private/var/folders/85/csg00kn97bn83n0fl2[33 chars].mdx' != '/var/folders/85/csg00kn97bn83n0fl2zfp4rw00[25 chars].mdx'
+- /private/var/folders/85/csg00kn97bn83n0fl2zfp4rw0000gp/T/tmpfoi2tf5y/sample.mdx
+? --------
++ /var/folders/85/csg00kn97bn83n0fl2zfp4rw0000gp/T/tmpfoi2tf5y/sample.mdx
+
+
+----------------------------------------------------------------------
+Ran 77 tests in 1.303s
+
+FAILED (failures=4, errors=1)
+real_rebuild_offline_passed_native_untested: /private/var/folders/85/csg00kn97bn83n0fl2zfp4rw0000gp/T/tmpbaa07g2v/rebuild-out/real-rebuild-report.json
+Ready for staged native tests: /private/var/folders/85/csg00kn97bn83n0fl2zfp4rw0000gp/T/tmpbaa07g2v/rebuild-out/verified-dictionaries
+Sources prepared: /private/var/folders/85/csg00kn97bn83n0fl2zfp4rw0000gp/T/tmpb5f63eno/kit

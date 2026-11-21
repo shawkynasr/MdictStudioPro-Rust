@@ -1,0 +1,13 @@
+{
+  "source": "User-uploaded final regression failure report and Python contract log; retained unchanged",
+  "files": {
+    "m1-closeout-report.json": "2bc00bae275472f56cf17b2b3daf46e937a826b0c00733a6ee823f5ba36326e9",
+    "python-contracts.log": "85af30e751a863b415a7b055c60c801cdd2f87f500218cab67921646b96d4394"
+  },
+  "root_causes": [
+    "test temporary path alias comparisons",
+    "subprocess mock intercepted platform detection"
+  ],
+  "engine_change": false,
+  "corrected_Mac_regression": "pending"
+}

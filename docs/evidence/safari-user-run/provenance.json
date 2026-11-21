@@ -1,0 +1,12 @@
+{
+  "source": "User-uploaded observation report",
+  "local_rerun": false,
+  "files": {
+    "safari-report.json": "0359c6369eee540b203dea615a192dc861d37ea0e37226368170ff5793fb6721"
+  },
+  "limits": [
+    "Experiment Cargo.lock, compiler and target details not supplied",
+    "Full build stopped at root locale validation; generated full-container interoperability was not tested",
+    "Empty source payload means delimiter_removed is not a content-preservation pass"
+  ]
+}

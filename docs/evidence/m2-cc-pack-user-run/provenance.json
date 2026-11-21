@@ -1,0 +1,56 @@
+{
+  "status": "qualified_complete_CC_CEDICT_block_spooled_packing",
+  "report_library_file_id": "libfile_e086fcf66fd48191b09dc8cce2d6d8c9",
+  "files": {
+    "m2-cc-pack-report.json": "97f21a2a846eb212a553d071a1ac3dab0ddc3d9237372829eca0b623c8848a5b"
+  },
+  "source_snapshots": {
+    "qualified/docs/evidence/cc-pack-source-reference/reference.json": "33d61df488e1c1fb454bbb81c7d740be31c30d8326f3f58660b4e0be64dbae91",
+    "qualified/m2/cc-pack-io/Cargo.toml": "c9c82e213fb18545dfdeb88dcbe958c4fe141dc4356869a21ad4345773b12856",
+    "qualified/m2/cc-pack-io/src/block_writer.rs": "58e36ac3e5f57bfe686cc2f7d7f14811b3aaedd2f8eb6f5860c3086bab4ac4a6",
+    "qualified/m2/cc-pack-io/src/io.rs": "3711a75acf0636a02e1afb843e4d1416f0bd09e6c2a76046898e39cbcee722f8",
+    "qualified/m2/cc-pack-io/src/lib.rs": "2c6f2a2725711d4d9d8452a18542cb095eb7fd61864a860a15db57a42324972d",
+    "qualified/m2/cc-pack-io/src/tests.rs": "c71c29dc6aebc716295a76570928433ac55dafa5934657f25bbb994436d00d60",
+    "qualified/m2/cc-pack-runtime/Cargo.lock": "1db991e27abe5296edc105976e0f3832abcf3ab58975b2c3770e5267662ec3a2",
+    "qualified/m2/cc-pack-runtime/Cargo.toml": "144d954d6d9e509fc173eef672831628cef1fc89c5496cc5b64676a4941a4707",
+    "qualified/m2/cc-pack-runtime/src/cc_packing.rs": "c82713a494ede972e99ad13a394836874a72a9b4b2b87823611a4c66a57db421",
+    "qualified/m2/cc-pack-runtime/src/concise.rs": "1a6ebd82faf1b9a986f166013f1586f7b4ee10f07dc7a5ed6b94fe832d30c6a5",
+    "qualified/m2/cc-pack-runtime/src/concise_disk.rs": "f564c5d7bff6396750c584b5374d9020a4757d7891df92d0bf4663c109076c61",
+    "qualified/m2/cc-pack-runtime/src/concise_publication.rs": "80c5cba076d4ea216d45eb9cf33824be2c344cf4464bb8893a21866a2c4d3298",
+    "qualified/m2/cc-pack-runtime/src/concise_text.rs": "4d59872ca2c840c946af1208d4084cf1f8da5e93f942d398cb15680e6a6967de",
+    "qualified/m2/cc-pack-runtime/src/converters.rs": "93fe1937c7b167485450b1dc4a4e085a0744da22a88951e07732dc6bdfebdaf8",
+    "qualified/m2/cc-pack-runtime/src/index_jobs.rs": "ffa1f6c900255292949106be0eb112fe2dfa7266ea8d2fcc4ac99277a3d9a25a",
+    "qualified/m2/cc-pack-runtime/src/lib.rs": "61833a3d0dd1931afd33b70582d3cd26755009cc935b28b87ba8a8084b93021a",
+    "qualified/m2/cc-pack-runtime/src/main.rs": "99a2fa7f8d75f5740f5b8e125e55d522f5ca3ad593295caa5ef9cc4d85e5d525",
+    "qualified/m2/cc-pack-runtime/src/runner.rs": "3dc3ef04f23e2b35da25a47296d5c0218407c01e1a0d25bac592eb146ce2e6cc",
+    "qualified/m2/cc-pack-runtime/src/tests.rs": "633db68118c7c9ac2d642e804e52b8b7c20c553fb71398e2d252f1c3249a940e",
+    "qualified/m2/cc-pack-runtime/src/txt.rs": "59d3b6d40733f770539fbdee6fb31f41deda71d90c0e156b88623d6eac3ae210",
+    "qualified/scripts/cc_pack_lock.py": "0153836b0e6014f13d26d9cd6e29e533226528cd62091b6ea2320e5aa709984b",
+    "qualified/scripts/cc_pack_oracle.py": "c5f732a6efacd5ab7b8b96e208ead6d3ecf61d3e9ea04cf41c3a59b60d82972e",
+    "qualified/scripts/m2_cc_pack.py": "1749bd3791380033878ecb3a39e8f327fed75613cdf8ff9da4481904d6faec7a",
+    "qualified/scripts/test_cc_pack.py": "e07e842b637af9b66bb00d9f6b831277fff53b3c57099a025185669852545ee5"
+  },
+  "review_summary": {
+    "status": "complete_CC_CEDICT_block_spooled_packing_qualified_M2_closeout_pending",
+    "native_library_tests_passed": 5,
+    "native_runtime_tests_passed": 39,
+    "native_commands_passed": 4,
+    "records_each_encoding": 202884,
+    "encodings": [
+      "utf8",
+      "utf16"
+    ],
+    "packed_file_sha256": {
+      "utf8": "1aa87a504a2e0cdedb8f008bd5240a399c0e106dc5385159c9e8d5d0bfff9d39",
+      "utf16": "e7bc680ccaa58a9412335c6edc5dbb6289a777c7f39d565bc4690cc5bceab10c"
+    },
+    "runtime_peak_RSS_bytes": 60010496,
+    "controller_exchanges": 1273,
+    "qualified_source_identities": 324,
+    "dependency_packages": 69,
+    "M2_complete": false,
+    "next_scope": "M2 closeout review"
+  },
+  "M2_complete": false,
+  "source_data_or_dictionary_outputs_bundled": false
+}

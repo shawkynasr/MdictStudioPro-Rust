@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-15",
+  "basis": "Uploaded preview_style.txt inspected and byte-compared",
+  "bytes": 36,
+  "sha256": "0c5d422e16d2f4344943dded6ec0916abcc0e7565a570f7e32a8f0ced166d428",
+  "exact_fixture_match": true,
+  "utf8_bom": false,
+  "final_lf": true,
+  "scope": "Successful GUI export of this numeric stylesheet; not a complete native shell report."
+}

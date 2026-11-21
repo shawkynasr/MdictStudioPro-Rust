@@ -1,0 +1,284 @@
+{
+  "status": "passed",
+  "harness_revision": 3,
+  "writer_patch_revision": 3,
+  "checks": {
+    "rust_default_mdx_to_python": {
+      "status": "passed",
+      "detail": {
+        "records": 11,
+        "comparison": "exact_multiset",
+        "header": {
+          "payload_bytes": 434,
+          "terminated": true,
+          "checksum_valid": true,
+          "attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encoding": "UTF-8",
+            "KeyCaseSensitive": "No",
+            "StripKey": "No",
+            "Title": "Mdict Studio engine qualification",
+            "Description": "Synthetic UTF-8 round-trip fixture"
+          }
+        }
+      }
+    },
+    "rust_default_mdd_to_python": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "comparison": "exact_multiset",
+        "header": {
+          "payload_bytes": 222,
+          "terminated": true,
+          "checksum_valid": true,
+          "attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "StripKey": "No"
+          }
+        }
+      }
+    },
+    "rust_mdict-utils_mdx_to_python": {
+      "status": "passed",
+      "detail": {
+        "records": 26,
+        "comparison": "ordered_exact",
+        "header": {
+          "payload_bytes": 332,
+          "terminated": true,
+          "checksum_valid": true,
+          "attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encoding": "UTF-8",
+            "KeyCaseSensitive": "No",
+            "StripKey": "No",
+            "Title": "Experimental sort qualification"
+          }
+        }
+      }
+    },
+    "rust_mdict-utils_mdd_to_python": {
+      "status": "passed",
+      "detail": {
+        "records": 26,
+        "comparison": "ordered_exact",
+        "header": {
+          "payload_bytes": 222,
+          "terminated": true,
+          "checksum_valid": true,
+          "attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "StripKey": "No"
+          }
+        }
+      }
+    },
+    "rust_mdict-utils_mdx_duplicates_to_python": {
+      "status": "passed",
+      "detail": {
+        "records": 7,
+        "comparison": "exact_multiset",
+        "header": {
+          "payload_bytes": 332,
+          "terminated": true,
+          "checksum_valid": true,
+          "attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encoding": "UTF-8",
+            "KeyCaseSensitive": "No",
+            "StripKey": "No",
+            "Title": "Experimental sort qualification"
+          }
+        }
+      }
+    },
+    "rust_mdict-utils_mdd_duplicates_to_python": {
+      "status": "passed",
+      "detail": {
+        "records": 7,
+        "comparison": "exact_multiset",
+        "header": {
+          "payload_bytes": 222,
+          "terminated": true,
+          "checksum_valid": true,
+          "attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "StripKey": "No"
+          }
+        }
+      }
+    },
+    "rust_mdxbuilder_mdx_to_python": {
+      "status": "passed",
+      "detail": {
+        "records": 26,
+        "comparison": "ordered_exact",
+        "header": {
+          "payload_bytes": 332,
+          "terminated": true,
+          "checksum_valid": true,
+          "attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encoding": "UTF-8",
+            "KeyCaseSensitive": "No",
+            "StripKey": "No",
+            "Title": "Experimental sort qualification"
+          }
+        }
+      }
+    },
+    "rust_mdxbuilder_mdd_to_python": {
+      "status": "passed",
+      "detail": {
+        "records": 26,
+        "comparison": "ordered_exact",
+        "header": {
+          "payload_bytes": 222,
+          "terminated": true,
+          "checksum_valid": true,
+          "attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "StripKey": "No"
+          }
+        }
+      }
+    },
+    "rust_mdxbuilder_mdx_duplicates_to_python": {
+      "status": "passed",
+      "detail": {
+        "records": 7,
+        "comparison": "exact_multiset",
+        "header": {
+          "payload_bytes": 332,
+          "terminated": true,
+          "checksum_valid": true,
+          "attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "Encoding": "UTF-8",
+            "KeyCaseSensitive": "No",
+            "StripKey": "No",
+            "Title": "Experimental sort qualification"
+          }
+        }
+      }
+    },
+    "rust_mdxbuilder_mdd_duplicates_to_python": {
+      "status": "passed",
+      "detail": {
+        "records": 7,
+        "comparison": "exact_multiset",
+        "header": {
+          "payload_bytes": 222,
+          "terminated": true,
+          "checksum_valid": true,
+          "attributes": {
+            "GeneratedByEngineVersion": "2.0",
+            "RequiredEngineVersion": "2.0",
+            "KeyCaseSensitive": "No",
+            "StripKey": "No"
+          }
+        }
+      }
+    },
+    "python_mdict-utils_mdx_to_rust": {
+      "status": "passed",
+      "detail": {
+        "records": 11,
+        "writer": "original_MDictWriterCustomSort",
+        "sha256": "166ce0c833043b3f79e07b6f5bfccf0daf8bdd4396713b480a77ee98b81c2004",
+        "both_readers_agree": true,
+        "source_policy": "legacy TXT body includes delimiter-preceding LF"
+      }
+    },
+    "python_mdict-utils_mdd_to_rust": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "writer": "original_MDictWriterCustomSort",
+        "sha256": "1d4d8dd88dce25cca789c9f8937ce9c8655312820043d2f56f6b078bfdc81221",
+        "both_readers_agree": true,
+        "source_policy": "binary bytes unchanged"
+      }
+    },
+    "python_mdxbuilder_mdx_to_rust": {
+      "status": "passed",
+      "detail": {
+        "records": 11,
+        "writer": "original_MDictWriterCustomSort",
+        "sha256": "166ce0c833043b3f79e07b6f5bfccf0daf8bdd4396713b480a77ee98b81c2004",
+        "both_readers_agree": true,
+        "source_policy": "legacy TXT body includes delimiter-preceding LF"
+      }
+    },
+    "python_mdxbuilder_mdd_to_rust": {
+      "status": "passed",
+      "detail": {
+        "records": 4,
+        "writer": "original_MDictWriterCustomSort",
+        "sha256": "1d4d8dd88dce25cca789c9f8937ce9c8655312820043d2f56f6b078bfdc81221",
+        "both_readers_agree": true,
+        "source_policy": "binary bytes unchanged"
+      }
+    }
+  },
+  "environment": {
+    "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 17.0.0 (clang-1700.6.4.2)]",
+    "os": "Darwin",
+    "release": "24.6.0",
+    "machine": "x86_64",
+    "mdict-utils": "1.3.14",
+    "rustc": "rustc 1.98.1 (48a229cea 2026-09-01)",
+    "cargo": "cargo 1.98.1 (797e8a9bc 2026-08-05)",
+    "collation": "C"
+  },
+  "not_proven": [
+    "reader_apps",
+    "legacy_encodings",
+    "metadata_stylesheets",
+    "large_files",
+    "non_C_locale"
+  ],
+  "source_sha256": {
+    "Cargo.lock": "b1993e21cd4be1fd4937914bb7458cefb730e21927fbe058046e4aee3bd81e35",
+    "experiments/legacy-sort/Cargo.lock": "832527875540ca97c9af5ee227c0f38d3f03eed9c16c26a0c63fed51285f7a8e",
+    "patches/studio_legacy_sort.rs": "b4591373d3479923c6bcacedaee4044099b8e68dc5fd7ac8715ffaa7fa497fca",
+    "vendor/mdictlib-0.2.8-studio-sort-v3/src/write/mod.rs": "0fc384d91a668b4c0d1b0b960f9a5253ee14cd934a532b73a151450bafa6dff5",
+    "vendor/mdictlib-0.2.8-studio-sort-v3/src/write/studio_legacy_sort.rs": "b4591373d3479923c6bcacedaee4044099b8e68dc5fd7ac8715ffaa7fa497fca"
+  },
+  "artifact_sha256": {
+    "python-mdxbuilder.mdx": "166ce0c833043b3f79e07b6f5bfccf0daf8bdd4396713b480a77ee98b81c2004",
+    "python-mdxbuilder.mdd": "1d4d8dd88dce25cca789c9f8937ce9c8655312820043d2f56f6b078bfdc81221",
+    "python-mdict-utils.mdx": "166ce0c833043b3f79e07b6f5bfccf0daf8bdd4396713b480a77ee98b81c2004",
+    "python-mdict-utils.mdd": "1d4d8dd88dce25cca789c9f8937ce9c8655312820043d2f56f6b078bfdc81221",
+    "rust-default/truncated.mdd": "08108ec518e9ebc1c0dc5a1723411d0ed86884c680360256360a6cfb62192ef5",
+    "rust-default/sort.mdx": "af34989180f92ac5d95aa3647f192c5fd2aee38b2a3183c84a31c209083dc4f6",
+    "rust-default/sort.mdd": "bb5f66f83499392fd73d3642dfd0676431909ea04098cee0869f04562e3f2ec3",
+    "rust-default/qualification.mdd": "efd6021679063c1952bc2c52eddc82f25083ebad750c0c27f44535cafa9f3337",
+    "rust-default/qualification.mdx": "e23438961daaf8a959914c0c93e154949015fe44dcd615e3569b4a7958c1f1a6",
+    "rust-default/invalid.mdx": "09f7a7a7630ab5224ac07d2a2aaa49b6395e4097170e4ec5697d12bfe4551405",
+    "rust-patched/mdict-utils-duplicates.mdd": "b6533042fb30692d8654e4f40e19734f07b37182d54bcaf0955457e692957d2a",
+    "rust-patched/mdict-utils-duplicates.mdx": "4a43404ecd774fd32598acaaff8bac06498aab6fa432f3f9261a0dd28e6ed5a6",
+    "rust-patched/mdict-utils.mdd": "3855622b76ca916fd2167fff1db8dbf9079a860c0387690a57094705fb0fe820",
+    "rust-patched/mdict-utils.mdx": "fb6f986b49c35c4b31e209bbf8da645646e331ae8b2e0852a2447702ba390126",
+    "rust-patched/default.mdd": "3855622b76ca916fd2167fff1db8dbf9079a860c0387690a57094705fb0fe820",
+    "rust-patched/default.mdx": "629c93cedc8d1462c296fc1a45e247069cf37d2a43ae5511f2fc871abe263063",
+    "rust-patched/mdxbuilder-duplicates.mdd": "b6533042fb30692d8654e4f40e19734f07b37182d54bcaf0955457e692957d2a",
+    "rust-patched/mdxbuilder-duplicates.mdx": "4a43404ecd774fd32598acaaff8bac06498aab6fa432f3f9261a0dd28e6ed5a6",
+    "rust-patched/mdxbuilder.mdx": "db05f58b08173ac5db528b651574e2cfc6adb4d4e414f1419feaabde397ba5bb",
+    "rust-patched/mdxbuilder.mdd": "9ef49643e8f1dbcca20a76fafb4e3d647b693656188ffcfb2646d7d39133d2ef"
+  }
+}

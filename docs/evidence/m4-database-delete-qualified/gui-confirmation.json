@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "package_version": 159,
+  "scope": "selected-entry deletion only",
+  "uploaded_copy_sha256": "c573c4e3e705700eb1d300317d123177d8743d16a494404a9b59716aab31b7b4",
+  "matches_native_utf16_copy_byte_for_byte": true,
+  "user_source_copy_verifier": {
+    "status": "passed",
+    "records": 6,
+    "source_rowid": "3",
+    "source_sha256": "226896c56ae298980cc1ed0914201426e5554b27d013ebf7a308bf2eb50b0df9",
+    "copy_sha256": "c573c4e3e705700eb1d300317d123177d8743d16a494404a9b59716aab31b7b4",
+    "rows_sha256": "b0afd01f7d7948408fb2ea529a411cb8a067db1ea9c5f93ef2580711ddecdeaa",
+    "unselected_rows_and_metadata_preserved": true,
+    "source_unchanged": true
+  },
+  "records": 6,
+  "deleted_source_rowid": "3",
+  "entry_add_qualified": false
+}

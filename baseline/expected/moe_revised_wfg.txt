@@ -1,0 +1,6 @@
+和
+<link href="cbgycd.css" rel="stylesheet" type="text/css"><script src="cbgycd.js"></script><cbgycd><hr class="hr1"><span class="hw">和</span><sup class="homo">㈠</sup><hr class="hr2"><span class="sy"><span class="bs">口</span><span class="bh">5</span><span class="zbh">8</span></span><span class="sy"><span class="zy">ㄏㄜˊ</span></span><span class="sy"><span class="py">hé</span></span><hr class="hr2"><span class="pos">名</span><span class="entry"><span class="num">①</span>平安。</span><span class="entry"><span class="num">②</span><span class="li">如：「和氣」</span>。 <img class="pic-inline" src="sample.png"></span><span class="jy">平和</span><span class="fy">爭</span><hr class="hr3"><span class="hw">和</span><sup class="homo">㈡</sup><hr class="hr2"><span class="sy"><span class="zy">ㄏㄜˋ</span></span><span class="sy"><span class="py">hè</span></span><hr class="hr2"><span class="pos">動</span><span class="entry-single"> 隨聲相應。</span></cbgycd>
+</>
+字
+<link href="cbgycd.css" rel="stylesheet" type="text/css"><script src="cbgycd.js"></script><cbgycd><hr class="hr1"><span class="hw">字</span><hr class="hr2"><span class="sy"><span class="zy">ㄗˋ</span></span><span class="sy"><span class="py">zì</span></span><hr class="hr2"><span class="entry-single">文字。</span><span class="entry"><span class="num">(9868)</span>_104_0.gif <img class="pic-inline" src="4e00_.png"></span></cbgycd>
+</>

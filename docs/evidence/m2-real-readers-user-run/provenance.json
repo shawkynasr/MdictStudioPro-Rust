@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-06",
+  "files": {
+    "m2-real-readers-report.json": "9d51c73736eabf626b4bb94bc7599007aabbdeccd6a59af492ff80cbdbeb363e"
+  },
+  "source_snapshots": {
+    "qualified/scripts/m2_real_readers.py": "591394c436d88dcee05891bc454253bf2c8ecc06ed4395f41b37116b491fb183",
+    "qualified/scripts/real_reader_oracle.py": "36642454c24fa35dd4c888714411549dfdb315c39f8810a46752eeb3d1d800f0",
+    "qualified/scripts/test_m2_real_readers.py": "5600c02938627a228d1db05af4505d11ad7cb4d27d298520fadcebc7f81e2f20",
+    "qualified/baseline/real-corpus-manifest.json": "37fab4671f7feca7943ceca00693f643a7e32c54c7d9b6b253234c71aa693178"
+  },
+  "report_library_file_id": "libfile_133556c89eb8819186a5dbc89fa8c3d6",
+  "result": "m2_selected_real_reader_index_session_gate_passed_real_converters_and_closeout_pending",
+  "review_summary": {
+    "MDX_entries": 296110,
+    "MDD_resources": 17,
+    "total_records": 296127,
+    "lookup_pages_reviewed": 36,
+    "controller_exchanges": 346,
+    "resource_hashes_recomputed_from_M1_audit": 17,
+    "max_observed_RSS_bytes": 12664832,
+    "review": "M1 corpus identities/extents, resource hashes, redacted page identities and controller ledgers cross-checked; full FNV agreement and body comparisons represented by exact-source-bound Mac harness; actual user files not attached"
+  },
+  "assessment": "First selected real-reader/index/session/extraction gate accepted: three MDX files have 296110 entries and matching MDD has 17 resources. Ten locked build/index command receipts, 36 raw-exact pages and 346 controller exchanges passed; complete independent/native stream agreement and page bytes are enforced by the exact-source-bound harness. M1 source SHA identities, counts and payload extents were cross-checked; all 17 resource hashes and their crypto frame were independently recomputed from retained M1 wire-audit evidence. Final reservations and reader retention are zero. Maximum RSS 12664832 bytes (12.08 MiB rounded). All 210 prior source identities, four new source bindings and 66 dependency identities match.",
+  "output_files_attached": false,
+  "note": "Private dictionaries/caches/extracted files and native successful command stdout are not attached. The report redacts definitions to byte counts/SHA. Reviewer cannot independently re-read every MDX payload or recompute its reported FNV from source files here; full scan/page comparison and stage cleanup are represented by the matching harness and its successful receipts. Resource hashes do have independent retained M1 audit support. Cache construction was serial and outside shared admission.",
+  "not_qualified": [
+    "M2 completion",
+    "real converter source/workbook pipelines",
+    "fresh full dictionary repacking",
+    "header-normalized or native-reader lookup equivalence",
+    "index-build shared admission",
+    "full candidate ceiling combinations",
+    "OS resource enforcement or additional platforms/GUI"
+  ]
+}

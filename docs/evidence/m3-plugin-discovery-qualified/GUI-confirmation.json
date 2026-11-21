@@ -1,0 +1,43 @@
+{
+  "schema": "studio-plugin-discovery-GUI-confirmation-v1",
+  "status": "accepted_scoped_selected_file_discovery_and_scalar_forms",
+  "date": "2026-11-20",
+  "native_report": "docs/evidence/m3-plugin-discovery-qualified/report.json",
+  "class": "OptionsPlugin",
+  "visible_controls": [
+    "Discovered converter classes: OptionsPlugin · Options demo",
+    "Prefix string field",
+    "Uppercase source checkbox",
+    "Reset to schema defaults",
+    "Manual JSON options fallback"
+  ],
+  "screenshot_state": "The supplied controls screenshot shows defaults (Options default, uppercase unchecked), not the earlier run values. No claim that it captures the exact submitted form state.",
+  "conversion": {
+    "exact_expected_output": true,
+    "records": 6,
+    "bytes": 203,
+    "prefix": "字 مرحبا",
+    "uppercase_source": true,
+    "input_sha256": "66417f81f2d2da12dcae7635d4458b7e91fff4425bd8d2a960add9740b5f3e96",
+    "plugin_sha256": "810826cb1ea978cbc1c435b92b6178ca79c7aaad042c46408f685f6373abc039",
+    "options_sha256": "508848469becdce55606f5e131957f73d2a1fddb80c43a8702b53f115e8ceeb8",
+    "output_sha256": "737ce0b126a6a952729903c679fb7659121dd7a6d909711a35fa33be67cdb45d",
+    "receipt_hashes_match": true,
+    "duplicate_definitions_preserved": true,
+    "empty_entry_preserved": true,
+    "receipt_basis": "User pasted native conversion receipt; output independently compared byte-for-byte with the expected fixture."
+  },
+  "screenshots": [
+    {
+      "name": "截屏2026-11-20 13.12.02.png",
+      "sha256": "29c108b8574bab577ac9dbb13560c43411a958493ffe12f5b179d13f6b0d6865"
+    },
+    {
+      "name": "截屏2026-11-20 13.13.26.png",
+      "sha256": "d780a035f16ea4b8564d2304a7a235c0ae03252b6223a4f54bdd9d604fcee178"
+    }
+  ],
+  "scope": "Selected-file class discovery; string/boolean generated controls visibly confirmed, exact two-option fixture conversion verified. Numeric/choice and unsupported-schema paths covered by automated checks, not separate manual GUI runs. No folder scan or arbitrary schema parity claim.",
+  "M3_complete": false,
+  "production_release_ready": false
+}

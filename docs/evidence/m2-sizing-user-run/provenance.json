@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-03",
+  "files": {
+    "m2-sizing-report.json": "0322f6b4585d479ef48f7ef0a283f8517c81377d99084ac614ad39c9e0555215"
+  },
+  "source_snapshots": {
+    "qualified/m2/bounded-engine/Cargo.toml": "3aa3485f514067b06a8a81fcafdb8de58fc68f28819075d1fd57c09d945bcbdd",
+    "qualified/m2/bounded-engine/src/lib.rs": "a5db8236f6bcc88a99195c2fa3fa1165d018765d5603df743357eba4d933f7db",
+    "qualified/m2/bounded-engine/src/main.rs": "1e546a902a50e462317e1bdd9b66d93adabcc2d523a611f57f185515492b40c6",
+    "qualified/m2/bounded-engine/tests/reader.rs": "bbaa9a66c59e59f458265e546a3a342ac371af7e0fba57e6b58f7cc9390e9f69",
+    "qualified/scripts/bounded_engine_lock.py": "ea3b1073a5585b3adfb954b6627769f12399d8cb6a917d9e05cb8c9c95519b64",
+    "qualified/scripts/bounded_fixtures.py": "fd2b5b94c9fca320c225d802a45f6aecc725cf6fa68a1589f1d9226409395731",
+    "qualified/scripts/m2_sizing.py": "482cee96a8ed93ce089b9d3963d6a57493947d05716da12a5002dbed1f2e7a1b",
+    "qualified/scripts/test_m2_sizing.py": "239428f5bd1187c5b03169b8df52aacb1095606f471dc51a7222b69091bd421c",
+    "qualified/m2/bounded-engine/Cargo.lock": "0eb54565fd255f57ebabfaa15f1d88b94ca8c0cd9384f9ee558f9be462692c32"
+  },
+  "report_library_file_id": "libfile_4eba631aab208191b17f67f05e51be21",
+  "result": "m2_bounded_reader_first_sizing_gate_passed_larger_path_integration_pending",
+  "assessment": "First isolated bounded-reader gate accepted: Rust test/build commands succeeded, 8 successful scan/query cases and 21 expected refusals; 133 protected sources unchanged. Largest fixture 262144 MDX entries / 64 MiB logical bodies; max observed reader RSS 4677632 bytes. No full ceiling, OS memory enforcement, persistent indexing, larger application-path integration or M2 completion claim.",
+  "successful_test_command_receipt_only": true,
+  "note": "Successful command stdout and per-query values are not embedded; acceptance uses the source-bound harness receipt. No separate test logs or screenshots were supplied."
+}

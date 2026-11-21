@@ -1,0 +1,15 @@
+{
+  "schema": "studio-force-quit-observation-v1",
+  "status": "observation_complete",
+  "original_app_still_running": false,
+  "recorded_bridge_still_running": false,
+  "destination_exists": false,
+  "recorded_temporary_directory_exists": false,
+  "source_unchanged": true,
+  "plugin_unchanged": true,
+  "reopened_app_tested": false,
+  "processes_signalled": false,
+  "files_deleted": false,
+  "production_release_ready": false,
+  "scope": "One observed fixture bridge; no whole-system orphan or crash-recovery claim"
+}

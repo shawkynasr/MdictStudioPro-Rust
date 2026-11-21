@@ -1,0 +1,25 @@
+{
+  "source": "User-uploaded m2-foundation-report.json; source fingerprints matched current project before snapshotting",
+  "files": {
+    "m2-foundation-report.json": "e5b6e04968a55c758dca50cfb0f6f5370ad3789421c559081ab5bc3f0760b609"
+  },
+  "source_snapshots": {
+    "qualified/m2/Cargo.lock": "4ff76b944f3c9377b2ff741120071fcedf123f9766da005e742982867f2ed85c",
+    "qualified/m2/Cargo.toml": "3ae1cbaf4026d1b8afeffc3c9e7a05ad60e34cf8cc116e8d59dbb6576ca547cb",
+    "qualified/m2/studio-cli/Cargo.toml": "fda21775f6b11f7e8775a8d50b0078fb22d9142e7ff234c51e42c8e0cb59b4d5",
+    "qualified/m2/studio-cli/src/main.rs": "3f9a7014753553043c66a592cddf9ecff76319c42777cacceeb24bfdd77b14c9",
+    "qualified/m2/studio-core/Cargo.toml": "c91f3d28d9d6891a141634bb44294b788249f97426e515693c1f0612b337ae77",
+    "qualified/m2/studio-core/src/casing.rs": "279000271dc5c4c6997df2a138da252293ae7aca6fb742fa2c483641d50a842a",
+    "qualified/m2/studio-core/src/engine.rs": "8c516d856847c84a58c0492c8aa1b92ed35aff78f851453389ac796d7fed22ab",
+    "qualified/m2/studio-core/src/error.rs": "dd76ef2ffa337f56f03eda5d5a5c3c5f53ea8fa64ef23cf6631cb5e964959e9a",
+    "qualified/m2/studio-core/src/job.rs": "6053401934f1d725ed366ed370994eb9ff0b2445531bd799eed51395e31f9dd5",
+    "qualified/m2/studio-core/src/lib.rs": "860064847af93e188db51ec356469ffc5696e4b140ba346530c28ffe6348843f",
+    "qualified/m2/studio-core/src/model.rs": "e6da758d25a2df55075c02b84afe9e8edb1cef0fcd8d143a4a6d075a01d9ab1d",
+    "qualified/m2/studio-core/tests/workflows.rs": "06bc2c094cd79d852ad61f7a56e167bad6ee3f6d39076f0cdd7bf0693bd9c8d9",
+    "qualified/scripts/m2_foundation.py": "ae8a72f053c2c262ca06717154dfd1b5e2948ef1e641c13c1bf167caa5117990",
+    "qualified/baseline/unicode/unicode16-casing.json": "f69d2e55d6b8c8d5fe33f764cc47b829bccc6d73aaff1791e1216328a1c24071"
+  },
+  "local_Rust_execution": false,
+  "individual_user_run_logs_received": false,
+  "scope": "First bounded Studio MDX foundation; ten successful commands, two encodings, 15 records each; M2 remains partial"
+}

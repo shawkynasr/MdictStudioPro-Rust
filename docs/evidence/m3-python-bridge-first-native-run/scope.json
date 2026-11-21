@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-13",
+  "source_bindings_compared": 80,
+  "source_binding_differences": [],
+  "stage": "indexed-sessions-tests",
+  "result": {
+    "passed": 12,
+    "failed": 3
+  },
+  "cause": "Shared redirect fixture omitted declared Format=Html; all three affected tests failed during import before redirect execution.",
+  "export_io_tests_executed": true,
+  "python_bridge_native_tests_executed": false,
+  "fix": "Declare Html content in the fixture; no importer or redirect acceptance rules changed."
+}

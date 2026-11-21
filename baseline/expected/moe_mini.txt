@@ -1,0 +1,66 @@
+和
+<head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="jybcb.css">
+        <style>
+            ruby {
+                display: inline-flex;
+                align-items: center;
+                vertical-align: bottom;
+            }
+            ruby rt {
+                display: block;
+                font-family: "Bopomofo Custom", "Bopomofo", "TWK-Mod", "DFKai-sb", sans-serif;
+                font-size: 45%; /* Adjusted slightly from 30% for better dictionary readability */
+                font-weight: 500;
+                line-height: 1;
+                text-align: center;
+                padding-left: 0.1em;
+                position: relative;
+                -webkit-text-orientation: upright;
+                text-orientation: upright;
+                -webkit-writing-mode: vertical-lr;
+                writing-mode: vertical-lr;
+                white-space: nowrap;
+                width: 1.5em;
+                color: inherit;
+            }
+            ruby rt:empty {
+                display: none;
+            }
+        </style>
+        </head><div class="edugycd"><div class="dict-title-group"><span class="index">和</span><span class="radical">口部 部外 5 畫 總筆畫 8 畫</span></div><span class="bopomo">(一) ㄏㄜˊ (二) ㄏㄜˋ</span><span class="article">釋義：<span class="mean">(一) <ruby>和<rt>ㄏㄜˊ</rt></ruby><br />&sample.png;</span><span class="mean">(二) 附和。</span></span></div>
+</>
+字
+<head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="jybcb.css">
+        <style>
+            ruby {
+                display: inline-flex;
+                align-items: center;
+                vertical-align: bottom;
+            }
+            ruby rt {
+                display: block;
+                font-family: "Bopomofo Custom", "Bopomofo", "TWK-Mod", "DFKai-sb", sans-serif;
+                font-size: 45%; /* Adjusted slightly from 30% for better dictionary readability */
+                font-weight: 500;
+                line-height: 1;
+                text-align: center;
+                padding-left: 0.1em;
+                position: relative;
+                -webkit-text-orientation: upright;
+                text-orientation: upright;
+                -webkit-writing-mode: vertical-lr;
+                writing-mode: vertical-lr;
+                white-space: nowrap;
+                width: 1.5em;
+                color: inherit;
+            }
+            ruby rt:empty {
+                display: none;
+            }
+        </style>
+        </head><div class="edugycd"><div class="dict-title-group"><span class="index">字</span></div><span class="bopomo">ㄗˋ</span><span class="article">釋義：<span class="mean">文字。</span></span></div>
+</>

@@ -1,0 +1,450 @@
+{
+  "status": "versioned_adapter_sort_lookup_roundtrip_passed_native_and_production_pending_M1_open",
+  "checks": {
+    "unicode16-literal-v1-utf8": {
+      "status": "passed",
+      "records": 166,
+      "queries": 192,
+      "key_blocks": 56,
+      "record_blocks": 33,
+      "sha256": "e9555b895854eea978702a0f1b11409ccbc28d0f1cf8e0d0a0f5a0499507f9e2",
+      "persisted_profile": "unicode16-literal-v1",
+      "reopened_in_separate_process": true,
+      "physical_and_lookup_order_exact": true,
+      "builtin_locator_difference_count": 31,
+      "builtin_locator_difference_examples": [
+        {
+          "query": "οΣ",
+          "adapter": [
+            {
+              "key": "ΟΣ",
+              "text": "<p>PINNED_000</p>"
+            },
+            {
+              "key": "ος",
+              "text": "<p>PINNED_001</p>"
+            },
+            {
+              "key": "ΟΣ",
+              "text": "<p>SIGMA_DUPLICATE</p>"
+            }
+          ],
+          "builtin": [
+            {
+              "key": "ΟΣ",
+              "text": "<p>PINNED_000</p>"
+            },
+            {
+              "key": "ΟΣ",
+              "text": "<p>SIGMA_DUPLICATE</p>"
+            },
+            {
+              "key": "οσ",
+              "text": "<p>PINNED_002</p>"
+            }
+          ]
+        },
+        {
+          "query": "Ος",
+          "adapter": [
+            {
+              "key": "ΟΣ",
+              "text": "<p>PINNED_000</p>"
+            },
+            {
+              "key": "ος",
+              "text": "<p>PINNED_001</p>"
+            },
+            {
+              "key": "ΟΣ",
+              "text": "<p>SIGMA_DUPLICATE</p>"
+            }
+          ],
+          "builtin": [
+            {
+              "key": "ος",
+              "text": "<p>PINNED_001</p>"
+            }
+          ]
+        },
+        {
+          "query": "aΣ",
+          "adapter": [
+            {
+              "key": "AΣ",
+              "text": "<p>PINNED_005</p>"
+            },
+            {
+              "key": "aς",
+              "text": "<p>PINNED_006</p>"
+            }
+          ],
+          "builtin": [
+            {
+              "key": "AΣ",
+              "text": "<p>PINNED_005</p>"
+            },
+            {
+              "key": "aσ",
+              "text": "<p>PINNED_007</p>"
+            }
+          ]
+        },
+        {
+          "query": "a꟏Σ",
+          "adapter": [],
+          "builtin": [
+            {
+              "key": "A꟎Σ",
+              "text": "<p>PINNED_047</p>"
+            }
+          ]
+        }
+      ]
+    },
+    "unicode16-literal-v1-utf16": {
+      "status": "passed",
+      "records": 166,
+      "queries": 192,
+      "key_blocks": 65,
+      "record_blocks": 82,
+      "sha256": "30e152905c1bd84fd3326923e143858bbba659bf7d29462e1332e5bbebf44e63",
+      "persisted_profile": "unicode16-literal-v1",
+      "reopened_in_separate_process": true,
+      "physical_and_lookup_order_exact": true,
+      "builtin_locator_difference_count": 31,
+      "builtin_locator_difference_examples": [
+        {
+          "query": "οΣ",
+          "adapter": [
+            {
+              "key": "ΟΣ",
+              "text": "<p>PINNED_000</p>"
+            },
+            {
+              "key": "ος",
+              "text": "<p>PINNED_001</p>"
+            },
+            {
+              "key": "ΟΣ",
+              "text": "<p>SIGMA_DUPLICATE</p>"
+            }
+          ],
+          "builtin": [
+            {
+              "key": "ΟΣ",
+              "text": "<p>PINNED_000</p>"
+            },
+            {
+              "key": "ΟΣ",
+              "text": "<p>SIGMA_DUPLICATE</p>"
+            },
+            {
+              "key": "οσ",
+              "text": "<p>PINNED_002</p>"
+            }
+          ]
+        },
+        {
+          "query": "Ος",
+          "adapter": [
+            {
+              "key": "ΟΣ",
+              "text": "<p>PINNED_000</p>"
+            },
+            {
+              "key": "ος",
+              "text": "<p>PINNED_001</p>"
+            },
+            {
+              "key": "ΟΣ",
+              "text": "<p>SIGMA_DUPLICATE</p>"
+            }
+          ],
+          "builtin": [
+            {
+              "key": "ος",
+              "text": "<p>PINNED_001</p>"
+            }
+          ]
+        },
+        {
+          "query": "aΣ",
+          "adapter": [
+            {
+              "key": "AΣ",
+              "text": "<p>PINNED_005</p>"
+            },
+            {
+              "key": "aς",
+              "text": "<p>PINNED_006</p>"
+            }
+          ],
+          "builtin": [
+            {
+              "key": "AΣ",
+              "text": "<p>PINNED_005</p>"
+            },
+            {
+              "key": "aσ",
+              "text": "<p>PINNED_007</p>"
+            }
+          ]
+        },
+        {
+          "query": "a꟏Σ",
+          "adapter": [],
+          "builtin": [
+            {
+              "key": "A꟎Σ",
+              "text": "<p>PINNED_047</p>"
+            }
+          ]
+        }
+      ]
+    },
+    "unicode17-literal-comparison-v1-utf8": {
+      "status": "passed",
+      "records": 166,
+      "queries": 192,
+      "key_blocks": 56,
+      "record_blocks": 33,
+      "sha256": "7b6a3022db67a4a065948e18ce9a85d99eec78157513293010c8cbc07fea7b71",
+      "persisted_profile": "unicode17-literal-comparison-v1",
+      "reopened_in_separate_process": true,
+      "physical_and_lookup_order_exact": true,
+      "builtin_locator_difference_count": 3,
+      "builtin_locator_difference_examples": [
+        {
+          "query": "οΣ",
+          "adapter": [
+            {
+              "key": "ΟΣ",
+              "text": "<p>PINNED_000</p>"
+            },
+            {
+              "key": "ος",
+              "text": "<p>PINNED_001</p>"
+            },
+            {
+              "key": "ΟΣ",
+              "text": "<p>SIGMA_DUPLICATE</p>"
+            }
+          ],
+          "builtin": [
+            {
+              "key": "ΟΣ",
+              "text": "<p>PINNED_000</p>"
+            },
+            {
+              "key": "ΟΣ",
+              "text": "<p>SIGMA_DUPLICATE</p>"
+            },
+            {
+              "key": "οσ",
+              "text": "<p>PINNED_002</p>"
+            }
+          ]
+        },
+        {
+          "query": "Ος",
+          "adapter": [
+            {
+              "key": "ΟΣ",
+              "text": "<p>PINNED_000</p>"
+            },
+            {
+              "key": "ος",
+              "text": "<p>PINNED_001</p>"
+            },
+            {
+              "key": "ΟΣ",
+              "text": "<p>SIGMA_DUPLICATE</p>"
+            }
+          ],
+          "builtin": [
+            {
+              "key": "ος",
+              "text": "<p>PINNED_001</p>"
+            }
+          ]
+        },
+        {
+          "query": "aΣ",
+          "adapter": [
+            {
+              "key": "AΣ",
+              "text": "<p>PINNED_005</p>"
+            },
+            {
+              "key": "aς",
+              "text": "<p>PINNED_006</p>"
+            }
+          ],
+          "builtin": [
+            {
+              "key": "AΣ",
+              "text": "<p>PINNED_005</p>"
+            },
+            {
+              "key": "aσ",
+              "text": "<p>PINNED_007</p>"
+            }
+          ]
+        }
+      ]
+    },
+    "unicode17-literal-comparison-v1-utf16": {
+      "status": "passed",
+      "records": 166,
+      "queries": 192,
+      "key_blocks": 65,
+      "record_blocks": 82,
+      "sha256": "40953d7f160c6e24e14435392b96896250496f498cc26f778ef8aa509b9bb75e",
+      "persisted_profile": "unicode17-literal-comparison-v1",
+      "reopened_in_separate_process": true,
+      "physical_and_lookup_order_exact": true,
+      "builtin_locator_difference_count": 3,
+      "builtin_locator_difference_examples": [
+        {
+          "query": "οΣ",
+          "adapter": [
+            {
+              "key": "ΟΣ",
+              "text": "<p>PINNED_000</p>"
+            },
+            {
+              "key": "ος",
+              "text": "<p>PINNED_001</p>"
+            },
+            {
+              "key": "ΟΣ",
+              "text": "<p>SIGMA_DUPLICATE</p>"
+            }
+          ],
+          "builtin": [
+            {
+              "key": "ΟΣ",
+              "text": "<p>PINNED_000</p>"
+            },
+            {
+              "key": "ΟΣ",
+              "text": "<p>SIGMA_DUPLICATE</p>"
+            },
+            {
+              "key": "οσ",
+              "text": "<p>PINNED_002</p>"
+            }
+          ]
+        },
+        {
+          "query": "Ος",
+          "adapter": [
+            {
+              "key": "ΟΣ",
+              "text": "<p>PINNED_000</p>"
+            },
+            {
+              "key": "ος",
+              "text": "<p>PINNED_001</p>"
+            },
+            {
+              "key": "ΟΣ",
+              "text": "<p>SIGMA_DUPLICATE</p>"
+            }
+          ],
+          "builtin": [
+            {
+              "key": "ος",
+              "text": "<p>PINNED_001</p>"
+            }
+          ]
+        },
+        {
+          "query": "aΣ",
+          "adapter": [
+            {
+              "key": "AΣ",
+              "text": "<p>PINNED_005</p>"
+            },
+            {
+              "key": "aς",
+              "text": "<p>PINNED_006</p>"
+            }
+          ],
+          "builtin": [
+            {
+              "key": "AΣ",
+              "text": "<p>PINNED_005</p>"
+            },
+            {
+              "key": "aσ",
+              "text": "<p>PINNED_007</p>"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "adapter_integrated": true,
+  "engine_builtin_locator_changed": false,
+  "native_readers": "NOT_RUN_DO_NOT_IMPORT",
+  "not_proven": [
+    "native_readers_honor_custom_policy",
+    "production_import_paths_and_index_limits",
+    "official_MdxBuilder_comparator",
+    "all_string_Unicode_conformance",
+    "M1_completion"
+  ],
+  "pinned_policy": {
+    "file": "baseline/unicode/unicode16-casing.json",
+    "sha256": "f69d2e55d6b8c8d5fe33f764cc47b829bccc6d73aaff1791e1216328a1c24071",
+    "storage": "compiled embedded data; hash enforced by qualification driver and package checks"
+  },
+  "source_sha256": {
+    "experiments/real-rebuild/src/main.rs": "c1e977b2e69cf402f36cf48d291e0d19139c33aa9d839e16300235f5ee958897",
+    "experiments/real-rebuild/src/casing.rs": "851da9b996f07bde6c60688094bdeece0e389802c6d6e8a62aff41d2dd624465",
+    "experiments/real-rebuild/src/integrated.rs": "0e39d2449aa61c888346bd252b539098af9d216fd5e6692b3e2add4baa63323c",
+    "experiments/real-rebuild/src/strict.rs": "5962ffbc934ecb25e04683cebeb7b4d06b8bd80d23bddccc8d5a8377e998af09",
+    "experiments/real-rebuild/Cargo.lock": "0490f412f73e66fd7b719da2dd71470eeb315aaa9028837ae185f3437a8e867f",
+    "vendor/mdictlib-0.2.8-studio-sort-v6/src/write/mod.rs": "fb7876fbc75d2e4d5ca69b7768afa551d16f6e3ba8fec05eb027b621132560a2",
+    "vendor/mdictlib-0.2.8-studio-sort-v6/src/write/studio_legacy_sort.rs": "96908b9c995cf4f28c89eaef4a15cd96f908e81bc3c73c47f3a5acc066215af5",
+    "scripts/integrated_casing.py": "386b9f534bd641f40e1630f0d7603b5a330f9eabe8c1c6793f9ad3c99aa7b40a",
+    "baseline/unicode/unicode16-casing.json": "f69d2e55d6b8c8d5fe33f764cc47b829bccc6d73aaff1791e1216328a1c24071"
+  },
+  "policy_difference_queries": [
+    "a꟏Σ",
+    "aꟓΣ",
+    "aꟕΣ",
+    "a𖺻Σ",
+    "a𖺼Σ",
+    "a𖺽Σ",
+    "a𖺾Σ",
+    "a𖺿Σ",
+    "a𖻀Σ",
+    "a𖻁Σ",
+    "a𖻂Σ",
+    "a𖻃Σ",
+    "a𖻄Σ",
+    "a𖻅Σ",
+    "a𖻆Σ",
+    "a𖻇Σ",
+    "a𖻈Σ",
+    "a𖻉Σ",
+    "a𖻊Σ",
+    "a𖻋Σ",
+    "a𖻌Σ",
+    "a𖻍Σ",
+    "a𖻎Σ",
+    "a𖻏Σ",
+    "a𖻐Σ",
+    "a𖻑Σ",
+    "a𖻒Σ",
+    "a𖻓Σ"
+  ],
+  "negative_checks": {
+    "wrong_requested_policy": "rejected",
+    "unknown_persisted_policy": "rejected",
+    "wrong_persisted_data_identity": "rejected"
+  }
+}

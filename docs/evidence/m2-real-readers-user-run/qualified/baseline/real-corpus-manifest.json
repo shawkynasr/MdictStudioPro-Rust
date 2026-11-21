@@ -1,0 +1,8 @@
+{
+  "cases": [
+    {"id":"cc-cedict-mdx","path":"../real-corpus-inputs/CC-CEDICT 092026.mdx","tags":["real","Chinese-English","UTF-8","duplicates"],"lookup_keys":["110","字"],"companions":["../real-corpus-inputs/CC-CEDICT 092026.mdd"]},
+    {"id":"cc-cedict-mdd","path":"../real-corpus-inputs/CC-CEDICT 092026.mdd","tags":["real","resources","fonts","CSS"],"lookup_keys":["\\cedict_ts.css","\\HelveticaNowMicroMed.ttf"]},
+    {"id":"almaany-mdx","path":"../real-corpus-inputs/almaanyEnAr-ArEn.mdx","tags":["real","English-Arabic","UTF-8","duplicates"],"lookup_keys":["abacus","abandon"],"companions":["../real-corpus-inputs/almaanyEnAr-ArEn.css","../real-corpus-inputs/fonts/amiri-regular.ttf"]},
+    {"id":"chinese-idioms-mdx","path":"../real-corpus-inputs/新华成语词典（第2版）.mdx","tags":["real","Chinese","UTF-8","external-CSS"],"lookup_keys":["一世之雄","一丘之貉"],"companions":["../real-corpus-inputs/xhcycd.css"]}
+  ]
+}

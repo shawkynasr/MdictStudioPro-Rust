@@ -1,0 +1,231 @@
+{
+  "date": "2026-11-16",
+  "slice": "SQLite to MDX v2 rebuilding",
+  "status": "database_to_mdx_authored_native_check_pending",
+  "first_native_attempt": "blocked_at_offline_metadata_by_uncached_arbitrary_1.5.0_before_tests_or_npm_install",
+  "bootstrap_fix": "--install_fetches_adapter_crates_before_full_locked_offline_metadata_and_tests",
+  "second_native_attempt": "adapter_compiled_3_of_4_tests_passed; unexpected_field_on_poll_accepted_by_unit_variant_decoder",
+  "command_boundary_fix": "empty_struct_variants_for_poll_and_capabilities; unknown_field_and_valid_command_checks_retained; native_rerun_pending",
+  "third_native_attempt": "all_4_adapter_tests_passed; frontend_install_build_and_tauri_info_passed; desktop_compile_failed_on_missing_icon_nonclone_event_payload_and_menu_argument",
+  "desktop_compile_fixes": "bundled_RGBA_icon; cloneable_JSON_shutdown_event_payload; Menu_default_receives_app_handle; native_desktop_recheck_pending",
+  "fourth_native_attempt": "blocked_before_tests_by_seed_lock_normalization_with_locked_on_cached_retry",
+  "cached_retry_fix": "offline_adapter_metadata_may_normalize_only_M3_lock; revalidate_registry_versions_checksums_before_locked_tests",
+  "M2_accepted_sources_changed": false,
+  "M3_complete": false,
+  "native_Rust_tests_run_locally": false,
+  "Svelte_build_run_locally": false,
+  "blockers_in_authoring_environment": [
+    "Rust toolchain absent",
+    "npm registry access returned HTTP 403"
+  ],
+  "local_checks": [
+    "Python contracts",
+    "JSON/TOML parsing",
+    "324 accepted M2 source identities"
+  ],
+  "native_command": "python3 scripts/m3_shell.py --output m3-shell-out-v21",
+  "native_launch": "cd m3/desktop && npm run tauri dev",
+  "deferred": [
+    "advanced plugin options/discovery and Windows process support",
+    "full original GUI parity",
+    "release packaging/signing",
+    "Windows/Linux qualification",
+    "MDX v3",
+    "larger streaming metadata rebuild",
+    "dictionary JavaScript/audio/SVG, CSS imports and multi-volume MDD"
+  ],
+  "successful_native_report": "docs/evidence/m3-shell-first-success/m3-shell-report.json",
+  "native_launch_confirmation": "docs/evidence/m3-shell-first-success/launch-confirmation.json",
+  "UI_alignment": "User screenshots confirm revised native Build layout in Light and System-dark appearance; compact flat select CSS authored",
+  "appearance_evidence": "docs/evidence/m3-ui-light-dark-user-confirmation/confirmation.json",
+  "preview": {
+    "scope": "docs/M3-PREVIEW.md",
+    "native_compilation": "version_122_passed_7_Rust_tests_and_desktop_build",
+    "browser_security_checks": "authored_not_run",
+    "native_visual_checks": "user_screenshots_cover_plain_styles_split_MDD_card_and_Paper; Dark_working_reported",
+    "pure_Node_tests": "4_passed",
+    "M2_caps_changed": false,
+    "build_report": "docs/evidence/m3-preview-native-build/m3-shell-report.json",
+    "paper_polish": "version_123_user_confirmed_warm_canvas_and_tooltip_fix"
+  },
+  "txt_build": {
+    "scope": "docs/M3-TXT-BUILD.md",
+    "default_source": "txt_utf8",
+    "source_profiles": [
+      "canonical_v1",
+      "legacy_body_span_v1"
+    ],
+    "packing_profiles": [
+      "bounded",
+      "block"
+    ],
+    "native_tests_executed_locally": false,
+    "Svelte_build_executed_locally": false,
+    "native_check": "python3 scripts/m3_shell.py --output m3-shell-out-v8",
+    "M2_sources_changed": false,
+    "exclusive_shared_admission": true,
+    "new_coordinator": "m3/txt-runtime; reuses existing M2 modules by path",
+    "reader_confirmation": "user_reports_all_5_records_in_MDict_and_GoldenDict; UTF16_MDX_output_also_passed",
+    "output_extension": "user_confirmed_automatic_MDX_suffix",
+    "user_checks": [
+      "5_records_MDict_and_GoldenDict",
+      "UTF16_output",
+      "Block_spool",
+      "larger_CC_CEDICT_MDX",
+      "destination_exists_refusal",
+      "incomplete_record_refusal_no_new_MDX",
+      "cancelled_before_commit_no_new_MDX"
+    ]
+  },
+  "folder_mdd": {
+    "scope": "docs/M3-FOLDER-MDD.md",
+    "default_source": "resource_folder",
+    "advanced_source": "JSONL_manifest",
+    "native_tests_executed_locally": false,
+    "Svelte_build_executed_locally": false,
+    "check": "python3 scripts/m3_shell.py --output m3-shell-out-v9",
+    "M2_sources_changed": false,
+    "user_checks": [
+      "paired_CC_CEDICT_MDX_MDD_reported_working",
+      "destination_exists_refusal",
+      "cancelled_no_new_MDD",
+      "empty_folder_invalid_input"
+    ]
+  },
+  "extract_gui": {
+    "scope": "docs/M3-EXTRACT-GUI.md",
+    "routes": [
+      "MDX_to_TXT",
+      "MDX_to_JSONL",
+      "MDD_to_new_folder"
+    ],
+    "default_MDX_export_profile": "large_250000_records_96MiB_decoded",
+    "native_tests_executed_locally": false,
+    "Svelte_build_executed_locally": false,
+    "check": "python3 scripts/m3_shell.py --output m3-shell-out-v11",
+    "M2_sources_changed": false,
+    "first_native_run": {
+      "runtime_tests_passed": 50,
+      "adapter_tests_passed": 7,
+      "adapter_tests_failed": 2,
+      "cause": "Large export incorrectly called packing-only CC I/O; corrected with dedicated export-only M3 profile",
+      "report": "docs/evidence/m3-extract-first-native-run/m3-shell-report.json"
+    },
+    "large_export_backend": "m3/export-io; new derived streaming profile; qualification pending",
+    "user_checks": [
+      "5_records_MDX_export_reported_correct",
+      "other_MDX_and_MDD_extraction_reported_working",
+      "17_resource_files_473210_bytes_exact_paths_and_bytes"
+    ]
+  },
+  "metadata_gui": {
+    "scope": "docs/M3-METADATA-GUI.md",
+    "profile": "unchanged M2 mdict-v2-metadata-v1",
+    "limits": {
+      "records": 1000,
+      "decoded_bytes": 8388608,
+      "archive_bytes": 16777216
+    },
+    "native_tests_executed_locally": false,
+    "Svelte_build_executed_locally": false,
+    "check": "python3 scripts/m3_shell.py --output m3-shell-out-v12",
+    "exclusive_shared_admission": true,
+    "M2_sources_changed": false,
+    "user_checks": [
+      "title_and_description_saved_as_new_copy",
+      "MDict_and_GoldenDict_show_new_metadata_and_all_five_records"
+    ]
+  },
+  "redirect_gui": {
+    "scope": "docs/M3-REDIRECTS.md",
+    "profile": "indexed-selected-record-v1",
+    "native_tests_executed_locally": false,
+    "Svelte_build_executed_locally": false,
+    "session_engine": "m3/indexed-sessions; derived actor reuses unchanged M2 indexed engine",
+    "check": "python3 scripts/m3_shell.py --output m3-shell-out-v13",
+    "M2_sources_changed": false,
+    "limits": {
+      "hops": 16,
+      "visits": 4096,
+      "matches_per_lookup": 256,
+      "results": 256,
+      "decoded_lookup_bytes": 8388608,
+      "raw_reply_bytes": 2097152,
+      "serialized_reply_bytes": 2097152
+    },
+    "user_checks": [
+      "alias_and_two_hop_chain_resolve",
+      "both_duplicate_targets_selectable",
+      "redirect_cycle_shown_for_cycle_a",
+      "redirect_missing_shown_for_missing",
+      "native_layout_fix_confirmed"
+    ]
+  },
+  "python_plugins": {
+    "scope": "docs/M3-PYTHON-PLUGINS.md",
+    "profile": "trusted-python-converter-v1",
+    "protocol": "authenticated_loopback_socket_separate_from_stdout_stderr",
+    "input_and_output_encoding": "utf-8",
+    "local_wrapper_tests": 3,
+    "native_tests_executed_locally": false,
+    "Svelte_build_executed_locally": false,
+    "check": "python3 scripts/m3_shell.py --output m3-shell-out-v15",
+    "M2_sources_changed": false,
+    "trusted_code_only": true,
+    "sandboxed": false,
+    "exclusive_shared_admission": true,
+    "limits": {
+      "input_bytes": 67108864,
+      "plugin_bytes": 1048576,
+      "workspace_bytes": 134217728,
+      "paths": 256,
+      "raw_log_bytes_per_stream": 16777216,
+      "subprocess_seconds": 300
+    },
+    "first_native_run": {
+      "report": "docs/evidence/m3-python-bridge-first-native-run/m3-shell-report.json",
+      "blocked_stage": "indexed-sessions-tests",
+      "passed": 12,
+      "failed": 3,
+      "cause": "Redirect fixture lacked Format=Html; fixed fixture only",
+      "plugin_native_tests_executed": false
+    },
+    "user_checks": [
+      "five_records_exported",
+      "uploaded_output_169_bytes_exact_fixture_match",
+      "stdout_includes_Python_prints_and_native_os_write",
+      "expected_stderr_warning",
+      "sidecar_log_preserved",
+      "destination_exists_existing_files_unchanged",
+      "intentional_exception_no_result_folder",
+      "running_cancellation_no_result_folder"
+    ],
+    "GUI_acceptance": "passed_for_original_noisy_failure_and_cancellation_fixtures"
+  },
+  "stylesheet_export": {
+    "scope": "docs/M3-STYLESHEET-EXPORT.md",
+    "profile": "reader-stylesheet-utf8-v1",
+    "source": "verified_cached_MDX_reader_metadata",
+    "publication": "shared_serial_queue_Export_reservation",
+    "native_tests_executed_locally": false,
+    "Svelte_build_executed_locally": false,
+    "check": "python3 scripts/m3_shell.py --output m3-shell-out-v16",
+    "M2_sources_changed": false,
+    "user_check": "uploaded_preview_style_txt_exact_36_byte_UTF8_no_BOM_final_LF_match",
+    "GUI_acceptance": "successful_export_confirmed"
+  },
+  "database_GUI_enabled": true,
+  "database_profile": "studio-sqlite-text-v1",
+  "database_backend_native_tests_passed_on_Mac": 8,
+  "database_GUI_native_checks_passed": false,
+  "database_GUI_conversion_verified": true,
+  "database_snapshot_browsing_enabled": true,
+  "database_snapshot_browsing_native_checks_passed": false,
+  "database_conversion_report": "docs/evidence/m4-database-gui-qualified/m3-shell-report-scoped.json",
+  "database_browsing_GUI_confirmed": true,
+  "mdx_to_database_enabled": true,
+  "mdx_to_database_native_checks_passed": true,
+  "database_to_mdx_enabled": true,
+  "database_to_mdx_native_checks_passed": false,
+  "mdx_import_native_report": "docs/evidence/m4-mdx-import-qualified/m3-shell-report-scoped.json"
+}

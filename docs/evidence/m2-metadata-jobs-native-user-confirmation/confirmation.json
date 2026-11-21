@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-03",
+  "status": "user_confirmed_fresh_packing_native_checklist_passed",
+  "user_statement": "All five entries correct, no crashes or missing entries.",
+  "requested_readers": [
+    "MDict",
+    "GoldenDict"
+  ],
+  "requested_files": [
+    {
+      "path": "background/native-utf16.mdx",
+      "sha256": "a1f0dca935a2a2e01dbf3a2319ae0886c5c7a1e30da9520bfb7a5711ee576ac6"
+    },
+    {
+      "path": "background/native-utf8.mdx",
+      "sha256": "105d7759df97792d2855ceafde625bcea9324fa4691d328cec0a879bce9a7e8c"
+    }
+  ],
+  "requested_checks": [
+    "test UTF-8 and UTF-16 files individually in both readers",
+    "inline-red/marker-red: red bold bordered",
+    "inline-blue/marker-blue: blue underlined",
+    "plain: PLAIN_CONTROL_OK",
+    "all five entries correct after restart, no crashes or missing entries"
+  ],
+  "assessment": "User confirms the immediately preceding two-file/two-reader checklist; individual combinations and restart observations were not separately itemized.",
+  "evidence_type": "user attestation in this conversation, no separate screenshots/logs or dictionary bytes attached",
+  "offline_report": "docs/evidence/m2-metadata-jobs-user-run/m2-metadata-jobs-report.json",
+  "accepted_scope": "bounded mdict-v2-metadata-v1 fresh packing, metadata-only rebuild and serial publication profile",
+  "not_qualified": [
+    "all arbitrary native XML metadata semantics",
+    "production file-size/RSS/index limits",
+    "real-corpus qualification for this pipeline",
+    "M2 completion"
+  ]
+}

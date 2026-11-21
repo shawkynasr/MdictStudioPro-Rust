@@ -1,0 +1,91 @@
+PASS unchanged upload: Cargo.lock
+PASS unchanged upload: report.json
+mdxbuilder:mdx: full_match=False, excluding_backslash_keys=False
+mdxbuilder:mdd: full_match=False, excluding_backslash_keys=False
+mdict-utils:mdx: full_match=False, excluding_backslash_keys=True
+mdict-utils:mdd: full_match=True, excluding_backslash_keys=True
+PASS evidence consistency; no new engine execution performed
+PASS retained sorting report (4 profiles), experiment lock, and Safari report integrity
+PASS historical failed interoperability report preserved
+PASS revision-2 interoperability evidence: 14/14
+PASS original codec evidence retained: 77 passed, 34 failed
+PASS v3 reports/logs retained: 14 interop passes; metadata blocked before observations
+PASS completed v3 codec evidence: 91 passed, 10 stylesheet differences, 2 unsupported, 8 blocked
+PASS local structural-stage evidence: 296110 MDX records, 17 resources; distinct from engine/native qualification
+PASS uploaded Rust/Python corpus evidence: 4 cases, 36 lookups, matching metadata; native rendering remains unrun
+PASS evidence integrity: automated checks retained alongside native import failure; qualification remains blocked
+PASS uploaded v4 aggregate report: 16 wire checks passed; native and stylesheet gates unresolved
+PASS minimal evidence: 58 offline lookup checks; six manual native lookup reports kept separate from visual rendering
+PASS stylesheet evidence integrity: offline passes remain distinct from both native failures; reference kit bound to source
+PASS official reference identity and native reports; new Rust serialization candidate remains untested natively
+PASS corrected synthetic stylesheet results and MDD fixture graph; native MDD rendering remains pending
+PASS synthetic MDD offline and manual native rendering evidence; real rebuild remains untested
+PASS four real rebuilds and 36 lookups; only Amiri completion and native rebuilt rendering remain pending for this gate
+PASS finalized real corpus and separate manual native acceptance; bounded stress results remain pending
+PASS bounded standard stress report and matching source snapshots
+PASS strict checksum matrix, rebuild integration and four real scans; fresh TXT/XLSX pack parity remains open
+PASS fresh physical-row packing subset; header/lookup policy and Rust XLSX conversion remain open
+PASS retained literal/alias results and upstream conflict diagnostic; corrected resume and native checks pending
+PASS finalized header report and separate user native acceptance; broader Unicode qualification pending
+PASS retained Unicode16/17 difference evidence; versioned candidate qualification pending
+PASS casing candidate and pinned reviewed data; adapter integration runtime qualification pending
+PASS integrated versioned adapter results; retained report remains historically native-pending
+PASS focused native Unicode and restart: separate user-reported observations; no local native execution
+PASS retained first closeout failure; original result unchanged
+PASS final user-run eight-gate regression; separate reviewed M1 completion for scoped M2 engine selection
+PASS user-run M2 core foundation: ten commands, two 15-record outputs and exact qualified snapshots; M2 remains partial
+PASS user-run M2 resources: six exact resources, ten successes, three controlled refusals and exact snapshots; Mac scope only
+PASS Mac M2 TXT and CC-CEDICT parity: 38 successes, five controlled refusals, exact snapshots; spreadsheet ports remain pending
+PASS Mac XLSX common-cell profile: exact dependency receipt, 12 matching cases and seven controlled refusals; MOE/date work remains pending
+PASS retained MOE first failure: missing import, no converter comparisons reached; corrected runtime still pending
+PASS retained MOE second failure: compiled, reader tests passed, reference-order assertion failed; full conversion matrix still pending
+PASS Mac five MOE ports: ten synthetic cases, staged TXT publication, deterministic repeats, 31 successes and five controlled refusals; M2 remains partial
+PASS shared application conversion on Mac: 12 converter cases, two workbook boundaries, 39 successes, ten refusals and exact dependency/source receipts; M2 remains partial
+PASS background jobs on Mac: 12 exact outputs, five expected failures, passing test command, source/dependency receipts; 50 events reported, no separate transcript attached
+PASS Mac dictionary background jobs: 12 successes, seven expected failures, independent v2 audits, exact exports and six extracted resources; v3 deferred
+PASS retained first v2 import failure: compiled, five tests passed, MDD root guard failed; corrected profile remains pending
+PASS retained second v2 import failure: corrected source hashes, obsolete binary diagnostics; targeted package rebuild added, runtime pending
+PASS retained third v2 import run: Rust command passed, historical Python fixture failure
+PASS retained fourth v2 import run: Rust command passed, historical Python fixture failure
+PASS accepted bounded ordinary v2 import: 26 cases, 420 MDX query checks; application/background routing still pending
+PASS accepted bounded import application/worker: 56 commands, 27 sync/background cases; M2 metadata and production work remain
+PASS retained metadata first run: Rust tests and first rebuild passed; source-side Python oracle failure, matrix/native pending
+PASS accepted metadata offline batch: 14 rebuilds, 18 expected refusals; two exact native controls remain pending
+PASS retained scoped user confirmation for metadata native controls; general metadata packing/publication remain open
+PASS retained metadata publication test-compile failure: empty-array assertion only, runtime retry pending
+PASS retained second publication run: compiled, 30 tests passed, four packing tests hit builder-owned flag override; retry pending
+PASS metadata packing/publication offline: 20 publications and 36 expected refusals; freshly packed native controls pending
+PASS scoped fresh-packing native user confirmation; metadata profile accepted, production limits and M2 closeout remain
+PASS first sizing failure retained: Rust compiled, MDX fixture Format corrected; measurements pending
+PASS accepted first bounded-reader sizing gate: Rust receipts, 8 scan/query successes, 21 expected refusals; M2 partial
+PASS accepted disk-index gate: 12 builds, 20 query processes, 180 recomputed pages, 23 expected refusals; M2 partial
+PASS accepted sessions gate: Rust command receipts, 5 scenarios, 37 recomputed pages, 497 exchanges; M2 partial
+PASS retained streaming-extractor E0308 failure; explicit core/application conversion fixed, Rust retry pending
+PASS accepted streaming-MDD gate: 4 successful extractions, 4105 recomputed file hashes, 26 expected refusals; M2 partial
+PASS accepted background extraction/shared-admission gate: 3 scenarios, 4101 reported file hashes, 1166 exchanges; M2 partial
+PASS accepted larger packing/export gate: 16 publications, 31 refusals, 327681 reported record fingerprints, 7 recomputed export hashes; M2 partial
+PASS retained publication-runtime E0223 compile failure; isolated one-line test constructor correction verified
+PASS accepted shared publication-runtime gate: 9 publications, 3331 reviewed exchanges, 196608 reported record fingerprints; M2 partial
+PASS retained converter-runtime E0753 compile failure; isolated documentation placement correction verified
+PASS accepted larger converter gate: 6 converters, 68000 independently recomputed Python records, 2964 exchanges; M2 partial
+PASS accepted real-reader gate: 296110 MDX entries, 17 resources, 36 raw-exact pages, 346 exchanges; M2 partial
+PASS full official source inspection and six original Python measurements; Mini/Idioms independently measured Python references retained; M2 partial
+PASS full official Mini/Idioms native gate: 9800 entries, exact Python hashes, 732 reviewed exchanges; M2 partial
+PASS independent full Concise Python references and isolated profile graph; scoped Mac gate recorded separately; M2 partial
+PASS full Concise scoped native gate: 44445 entries, matching normalized Python digest, 893 reviewed exchanges; full-size reader overlap unqualified; M2 partial
+PASS complete CC Python reference and exclusive-profile source/graph isolation; scoped native gate recorded separately; M2 partial
+PASS full CC exclusive native gate: 203362 exact Python-matching entries, 1440 reviewed exchanges, zero final reservations; Revised/WFG and M2 closeout pending
+PASS complete Revised Python row reference and isolated disk-row source/graph checks; scoped native row gate recorded separately; dictionary rendering unqualified; M2 partial
+PASS full Revised disk-row native gate: 163909 rows, 27 reviewed process cases, independently recomputed file extents; rendering/integration unqualified; M2 partial
+PASS complete Revised/WFG Python references and isolated group-render source/graph checks; scoped standalone native gate recorded separately; M2 partial
+PASS full Revised/WFG standalone TXT gates: 162636/161182 entries, 30 reviewed process cases; background/admission integration and M2 closeout pending
+PASS incomplete first integration attempt reviewed: 31 native tests, 3 full cases, 415 exchanges; Concise RSS failed, grouped cases not reached; chunked Concise retry prepared, native retry pending
+PASS second integration attempt retained: 31 native tests passed, reference setup failed before full datasets; test-only profile correction pending Mac retest
+PASS measured Concise memory failure reviewed: 32 native tests passed, 400.74 MiB exceeds target, 624 exchanges reviewed; new disk-backed Concise implementation/native qualification pending
+PASS disk-Concise compile failure retained; helper now binds to renderer module; native compilation and full qualification pending
+PASS all six full converter background profiles: 33 native tests, 2726 exchanges, 282 source identities, independent Concise rows; peak 256.29 MiB, Concise 69.99 MiB; real packing/index-build admission and M2 closeout remain
+PASS real publication preparation: full independent inventory of four dictionaries, three within existing packing caps; exclusive index-build adapter prepared; native qualification pending
+PASS bounded real publication/index admission: 36 native tests, 5 complete packed outputs, 4 complete original indexes, 925 exchanges, 300 source identities; full CC packing remains outside caps; M2 partial
+PASS complete CC packing preparation: isolated block-spooled MDX writer, 300 protected identities, 69-package graph; full native tests, UTF-8/UTF-16 packing and measured RSS pending
+PASS full CC packing: 202884 entries each UTF-8/UTF-16, 44 native tests, 1273 exchanges, 324 identities; runtime RSS 57.23 MiB; M2 closeout review pending
+PASS M2 scoped native backend closeout: five criteria, 23 bound receipts, 324 source identities; ready for Tauri integration, not a production desktop release

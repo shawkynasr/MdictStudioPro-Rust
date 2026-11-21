@@ -1,0 +1,8 @@
+{
+  "date": "2026-11-09",
+  "source": "User message: successful running tauri dev; GUI differs from supplied HTML",
+  "native_window_launch_confirmed": true,
+  "GUI_job_operations_independently_verified": false,
+  "approved_reference": "m3/design/studio-03-approved.html",
+  "reference_is_browser_prototype_not_native_screenshot": true
+}

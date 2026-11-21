@@ -1,0 +1,12 @@
+{
+  "schema": "studio-gui-cancel-check-v1",
+  "status": "filesystem_checks_passed_GUI_state_pending",
+  "source_unchanged": true,
+  "destination_absent": true,
+  "unexpected_result_paths": [],
+  "source_sidecars": [],
+  "GUI_cancel_verified": false,
+  "required_GUI_evidence": "Job shows Cancelled, not Succeeded or Failed",
+  "source_sha256": "5baa4f0152ebcbc2a08c275226c4602d79bd83bc528f1eabfff405500210cdad",
+  "fixture_records": 100000
+}

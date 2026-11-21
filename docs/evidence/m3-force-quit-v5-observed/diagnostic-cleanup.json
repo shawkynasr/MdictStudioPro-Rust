@@ -1,0 +1,7 @@
+{
+  "schema": "studio-force-quit-observation-v1",
+  "recorded_child_was_running": true,
+  "recorded_child_still_running": false,
+  "files_deleted": false,
+  "note": "Explicit diagnostic cleanup, not automatic app recovery; temporary files retained for review"
+}

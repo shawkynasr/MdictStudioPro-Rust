@@ -1,0 +1,7 @@
+test_folder_fixture_has_three_choices_and_one_explicit_import_failure (test_m3_plugin_folder.FolderFixtures.test_folder_fixture_has_three_choices_and_one_explicit_import_failure) ... ok
+test_options_fixture_conversion_has_exact_multilingual_prefix_and_uppercase_source (test_m3_plugin_folder.FolderFixtures.test_options_fixture_conversion_has_exact_multilingual_prefix_and_uppercase_source) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.287s
+
+OK

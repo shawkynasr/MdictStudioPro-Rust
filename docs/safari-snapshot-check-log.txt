@@ -1,0 +1,3 @@
+PASS unchanged reference/safari-mdx at 085d2a77fed2fc43a9a8e58c91bdb3be8aac4880: 47 files
+PASS unchanged reference/safari-mdx-util at 20493d99a5ce508ff400a782fa948e2c7b69115c: 17 files
+PASS manifests and snapshot integrity; Rust runtime checks NOT performed

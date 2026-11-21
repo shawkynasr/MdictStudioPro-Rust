@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-28",
+  "source": "Manual user statements and attached MDict crash report",
+  "MDict": {
+    "version": "2.2.6 (200)",
+    "os": "macOS 15.8.2 (24H232)",
+    "fixture": "04-stylesheet-utf8.mdx",
+    "result": "FAIL_USER_REPORTED_CRASH_ALONE_AND_GROUP",
+    "crash_time": "2026-10-28T12:37:19.0979+03:00",
+    "fault": "EXC_BAD_ACCESS at 0x90",
+    "top_symbols": [
+      "strlen",
+      "vfprintf",
+      "vsnprintf"
+    ],
+    "matching_first_four_MDict_offsets": [
+      1081555,
+      1082292,
+      1173311,
+      1169856
+    ],
+    "cause": "UNCONFIRMED"
+  },
+  "GoldenDict": {
+    "version": "26.6.1-7548db1682 (master)",
+    "result": "FAIL_USER_REPORTED_MARKER_BLUE_PLAIN_BLACK_BOTH_ENCODINGS",
+    "fixture_encodings": [
+      "UTF-8",
+      "UTF-16"
+    ],
+    "inline_blue_followup": "User repeated STYLE_TWO_OK remains plain black after an inline-blue question; exact queried key not separately supplied",
+    "earlier_pass_claim": "CORRECTED_NOT_A_VISUAL_PASS"
+  },
+  "not_proven": [
+    "native stylesheet compatibility",
+    "historical crash cause attribution",
+    "MDD rendering",
+    "production qualification"
+  ]
+}

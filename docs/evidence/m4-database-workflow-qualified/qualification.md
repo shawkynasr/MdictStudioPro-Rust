@@ -1,0 +1,5 @@
+# Combined workflow checkpoint
+
+The package-161 Mac report passes both UTF-8 and UTF-16 pipelines through real MDX packing/import, sequential metadata/edit/rename/add/delete jobs, rebuilding and independent reimport verification. All intermediate oracles pass, with seven final records and three duplicate definitions in order. All 171 matching packaged identities, 324 protected identities and the M4 lock match. Unmatched Mac build/output identities were omitted; the nested shell report was referenced but not separately attached. The original readers-pending status is retained.
+
+The user confirmed testing both rebuilt encodings after receiving the checklist for MDict and GoldenDict. Four reviewed cropped screenshots show the expected duplicate styles/order, combined rendering, multilingual text and seven-entry list with the renamed key. Only UTF-16 titles are visible in the supplied crops; every reader/encoding combination is not independently labeled. Separate reader confirmation preserves that distinction. Checkpoint 1 is accepted on combined automated evidence and user confirmation. Sizing/performance remains pending.

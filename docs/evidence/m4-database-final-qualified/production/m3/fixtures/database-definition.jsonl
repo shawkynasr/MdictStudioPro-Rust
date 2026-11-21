@@ -1,0 +1,10 @@
+{"key":"apple","text":"<div>A fruit.</div>\nNeedle in first."}
+{"key":"apple","text":"Second NEEDLE definition."}
+{"key":"application","text":"A needle in another entry."}
+{"key":"literal","text":"Symbols ? * % _ \\ and `2`marker."}
+{"key":"字","text":"First definition. 中文"}
+{"key":"字","text":"Second definition. 中文"}
+{"key":"مرحبا","text":"<div dir=\"rtl\">أهلاً وسهلاً</div>"}
+{"key":"empty","text":""}
+{"key":"unicode","text":"ÉCOLE ΟΣ İ Straße 𐐀"}
+{"key":"needle","text":"Headword only; unrelated body."}

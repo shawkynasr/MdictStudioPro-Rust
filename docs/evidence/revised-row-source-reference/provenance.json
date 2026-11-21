@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-07",
+  "files": {
+    "reference.json": "5bbfaf5d030ea5876c9414a45631c5b120d422525989985b543619d74ffb0bd5"
+  },
+  "method": "Complete official Revised source inspected with openpyxl read-only/data-only and the captured original normalization helper; every retained row and field hashed in original row order with sorted map keys and explicit length framing. No sampling, source mutation or conversion/rendering claim.",
+  "source_data_or_rows_bundled": false,
+  "native_qualification": false
+}

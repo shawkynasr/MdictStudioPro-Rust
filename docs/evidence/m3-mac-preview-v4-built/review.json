@@ -1,0 +1,14 @@
+{
+  "status": "build_passed_Settings_GUI_defect_reported",
+  "report_sha256": "12a69b273c2600caf7ea9dad351dca99cd4b20ba1508764e474e6ec6e9ee0d28",
+  "source_review_basis": "244 delivered source identities, two previously bound Mac extras, 324 protected sources and seven locks checked before the Settings changes",
+  "executable_sha256": "e52a45dce3f4d5760dbd1da4a9b884650c079e945d6326dffaee563d6db9f398",
+  "copied_bundle_matches": true,
+  "Svelte": "0 errors and 0 warnings",
+  "screenshot_sha256": "4345f6380761b1d66dfa53b0508ae2d10b8ea04eb187019eb4836b29a77d1736",
+  "observed_defect": "Settings panel displayed above Build form; Build heading and selection remain visible",
+  "resolution": "Compact native modal dialog; Mac build and GUI check pending",
+  "GUI_accepted": false,
+  "M3_complete": false,
+  "production_release_ready": false
+}

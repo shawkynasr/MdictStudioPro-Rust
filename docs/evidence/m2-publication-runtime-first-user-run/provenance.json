@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-05",
+  "files": {
+    "m2-publication-runtime-report.json": "22e164c4f16454407dcff0133ac6e18a036e995bd902ceaf24ffb1f3a130e668"
+  },
+  "source_snapshots": {
+    "qualified/m2/publication-runtime/Cargo.toml": "a73fc2877d36759726767dc76d7fe8654aac1f4a10c19b32d5bfc2eaacaec7b8",
+    "qualified/m2/publication-runtime/src/lib.rs": "6530264fd990f80540226799584d861795233435bcc24cab67b38385cbc43c0c",
+    "qualified/m2/publication-runtime/src/main.rs": "0fae16d4a537e44ad8eb2d10eedd19f9f22fb77980fd7b85bfd69067ac393463",
+    "qualified/m2/publication-runtime/src/runner.rs": "3dc3ef04f23e2b35da25a47296d5c0218407c01e1a0d25bac592eb146ce2e6cc",
+    "qualified/m2/publication-runtime/src/tests.rs": "f109b7c971c85b1f11687cdb993237cac2ba2e32a7a3c63a8a15ea5d6d35339c",
+    "qualified/scripts/m2_publication_runtime.py": "e62d1a1e7ad138e20b3e66f8e6bf26ce4ab818b2ef29c3df997d0a896b9cce11",
+    "qualified/scripts/publication_runtime_lock.py": "d099fe9159b77e5b624323295a60cb4fe9825f1b193d0038fa58fff99eb22fbf",
+    "qualified/scripts/test_m2_publication_runtime.py": "540e9ce26f56130ee2e6719ef45286a132f2a0da7e2611f7cc1d23792d7e4d5b",
+    "qualified/m2/publication-runtime/Cargo.lock": "42579c03c1b6354bb0d82a19b94c10df7eeb43fd40557851a9b76f2ecb35357c"
+  },
+  "report_library_file_id": "libfile_e1e334e77dac81919f834a79396e55c7",
+  "result": "m2_publication_runtime_failed",
+  "assessment": "Rust test compilation failed with E0223 at src/tests.rs:47: OpenRequest::Extraction was introduced by an overbroad constructor replacement. OpenRequest is a struct; the test fixture must use OpenRequest {...}. No controller scenario ran. All 190 protected source identities match; the 66-package lock changes ordering only. Existing Copy-closure drop warnings in accepted sessions code are not this compilation failure.",
+  "retry_changes": [
+    "m2/publication-runtime/src/tests.rs: correct reader constructor only",
+    "canonicalize new workspace lock to exact Cargo report ordering"
+  ],
+  "M2_complete": false,
+  "runtime_scenarios_run": false,
+  "Rust_executed_locally": false
+}

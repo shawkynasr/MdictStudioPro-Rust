@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "scope": "GUI numeric stylesheet-copy output retry after frontend paste correction",
+  "records": 7,
+  "copy_sha256": "d564b24100c13af6068bea3f0aaecba52a920d288fee3ef8f78ff2bf2198fad7",
+  "source_sha256": "16f0d7c857375c1cdad6169c3f8f469219c8bdc52ba89ceb52b6722da1586c3b",
+  "rows_sha256": "0510fc0b667d59fb1014cd1d4509991ff51427e09330d6a6f139e53d642c8f8a",
+  "exact_green_stylesheet": true,
+  "title_description_and_other_expected_metadata_preserved": true,
+  "evidence": "Actual uploaded GUI database byte-for-byte matches the previously qualified native UTF-8 stylesheet-copy output. All seven rows match the declarative fixture.",
+  "limitations": [
+    "Original source database was not attached. Source origin matches the qualified native report.",
+    "No separate npm build log was attached for the frontend-only correction. Successful GUI output is confirmed.",
+    "Does not qualify the subsequent selected-definition editor."
+  ]
+}

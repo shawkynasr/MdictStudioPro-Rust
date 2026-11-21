@@ -1,0 +1,40 @@
+{
+  "schema": "studio-mdx-keyinfo-local-v1",
+  "status": "independent_wire_oracle_passed_native_pending",
+  "native_tests_executed": false,
+  "desktop_compile_executed": false,
+  "GUI_smoke_executed": false,
+  "source": {
+    "name": "疑难字三考.mdx",
+    "sha256": "ce87536cbd1e677999f7d3c6569c48e189d247a9678f51e440bdab9a56180143",
+    "bytes": 25636
+  },
+  "records": 1829,
+  "decoded_utf8_bytes": 247834,
+  "duplicate_records_beyond_first": 0,
+  "header_attributes": {
+    "GeneratedByEngineVersion": "2.0",
+    "RequiredEngineVersion": "2.0",
+    "Format": "Html",
+    "KeyCaseSensitive": "No",
+    "StripKey": "No",
+    "Encrypted": "2",
+    "RegisterBy": "EMail",
+    "Description": "2026-11-12  飞梧",
+    "Title": "Title (No HTML code allowed)",
+    "Encoding": "UTF-8",
+    "CreationDate": "2026-11-11",
+    "Compact": "No",
+    "Compat": "No",
+    "Left2Right": "Yes",
+    "DataSourceFormat": "107",
+    "StyleSheet": ""
+  },
+  "records_with_CR": 1829,
+  "checksums": "header, keyword-section, decrypted/decompressed key-index, key blocks, record blocks all verified",
+  "oracle": "scripts/m3_keyinfo_fixture.py",
+  "source_unchanged": true,
+  "protected_source_identities": 324,
+  "M3_complete": false,
+  "production_release_ready": false
+}

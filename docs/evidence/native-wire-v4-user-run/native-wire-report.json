@@ -1,0 +1,1103 @@
+{
+  "status": "offline_checks_passed_native_untested",
+  "suite": "native-wire-revision-4",
+  "native_readers": "NOT_RUN_DO_NOT_IMPORT",
+  "writer_revision": 4,
+  "checks": {
+    "reader-utf16-mdict-utils-crlf.mdd": {
+      "status": "passed",
+      "checks": {
+        "structure": true,
+        "explicit_unencrypted_header": true,
+        "header_CRLF_then_NUL": true,
+        "MDD_has_explicit_empty_encoding": true,
+        "MDD_legacy_metadata_present": true
+      },
+      "sha256": "555fceff42ed445c4ac2b49cc7f2deb5552774e2056a0b5e2e9e8906633e6213",
+      "structural_audit": {
+        "file": "reader-utf16-mdict-utils-crlf.mdd",
+        "sha256": "555fceff42ed445c4ac2b49cc7f2deb5552774e2056a0b5e2e9e8906633e6213",
+        "size_bytes": 1051,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "",
+          "Encrypted": "No",
+          "Compact": "No",
+          "Format": "",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 0,
+        "records": 2,
+        "key_blocks": 1,
+        "record_blocks": 1,
+        "uncompressed_record_bytes": 152,
+        "duplicate_headwords": 0,
+        "sample_keys": [],
+        "script_counts": {},
+        "redirect_records": 0,
+        "style_markers": 0,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [],
+        "resources": [
+          {
+            "path": "\\images\\green.png",
+            "bytes": 87,
+            "sha256": "0a8e85b2c59f3e37e147fe5dae41444ddc88bed32134c026ba8cf782841f14fc"
+          },
+          {
+            "path": "\\styles\\check.css",
+            "bytes": 65,
+            "sha256": "3920b00897b17d7e089cda796d08f10ccc698e331558570df124dfa30431113f",
+            "css_url_references": []
+          }
+        ],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "555fceff42ed445c4ac2b49cc7f2deb5552774e2056a0b5e2e9e8906633e6213"
+      }
+    },
+    "reader-utf16-mdict-utils-crlf.mdx": {
+      "status": "passed",
+      "checks": {
+        "structure": true,
+        "explicit_unencrypted_header": true,
+        "header_CRLF_then_NUL": true,
+        "all_MDX_records_have_encoded_terminal_NUL": true
+      },
+      "sha256": "fa17ae5a60944022124da9432bb4f931098d2650ed21ba6c561647e7fadeeaf1",
+      "structural_audit": {
+        "file": "reader-utf16-mdict-utils-crlf.mdx",
+        "sha256": "fa17ae5a60944022124da9432bb4f931098d2650ed21ba6c561647e7fadeeaf1",
+        "size_bytes": 2812,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "UTF-16",
+          "Encrypted": "No",
+          "Compact": "Yes",
+          "Format": "Html",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 151,
+        "records": 13,
+        "key_blocks": 9,
+        "record_blocks": 9,
+        "uncompressed_record_bytes": 1060,
+        "duplicate_headwords": 1,
+        "sample_keys": [
+          "a-b",
+          "ab",
+          "a b",
+          "duplicate",
+          "duplicate",
+          "redirect",
+          "resource-control",
+          "style-inline-blue"
+        ],
+        "script_counts": {
+          "Arabic_keys": 1,
+          "CJK_keys": 1
+        },
+        "redirect_records": 1,
+        "style_markers": 2,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [
+          "images/green.png",
+          "styles/check.css"
+        ],
+        "resources": [],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "fa17ae5a60944022124da9432bb4f931098d2650ed21ba6c561647e7fadeeaf1"
+      }
+    },
+    "reader-utf16-mdict-utils.mdd": {
+      "status": "passed",
+      "checks": {
+        "structure": true,
+        "explicit_unencrypted_header": true,
+        "header_CRLF_then_NUL": true,
+        "MDD_has_explicit_empty_encoding": true,
+        "MDD_legacy_metadata_present": true
+      },
+      "sha256": "555fceff42ed445c4ac2b49cc7f2deb5552774e2056a0b5e2e9e8906633e6213",
+      "structural_audit": {
+        "file": "reader-utf16-mdict-utils.mdd",
+        "sha256": "555fceff42ed445c4ac2b49cc7f2deb5552774e2056a0b5e2e9e8906633e6213",
+        "size_bytes": 1051,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "",
+          "Encrypted": "No",
+          "Compact": "No",
+          "Format": "",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 0,
+        "records": 2,
+        "key_blocks": 1,
+        "record_blocks": 1,
+        "uncompressed_record_bytes": 152,
+        "duplicate_headwords": 0,
+        "sample_keys": [],
+        "script_counts": {},
+        "redirect_records": 0,
+        "style_markers": 0,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [],
+        "resources": [
+          {
+            "path": "\\images\\green.png",
+            "bytes": 87,
+            "sha256": "0a8e85b2c59f3e37e147fe5dae41444ddc88bed32134c026ba8cf782841f14fc"
+          },
+          {
+            "path": "\\styles\\check.css",
+            "bytes": 65,
+            "sha256": "3920b00897b17d7e089cda796d08f10ccc698e331558570df124dfa30431113f",
+            "css_url_references": []
+          }
+        ],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "555fceff42ed445c4ac2b49cc7f2deb5552774e2056a0b5e2e9e8906633e6213"
+      }
+    },
+    "reader-utf16-mdict-utils.mdx": {
+      "status": "passed",
+      "checks": {
+        "structure": true,
+        "explicit_unencrypted_header": true,
+        "header_CRLF_then_NUL": true,
+        "all_MDX_records_have_encoded_terminal_NUL": true
+      },
+      "sha256": "33774cbce58a9821878dce7056930fe351db8361f73e5c2a4ee3a3a6510a6d61",
+      "structural_audit": {
+        "file": "reader-utf16-mdict-utils.mdx",
+        "sha256": "33774cbce58a9821878dce7056930fe351db8361f73e5c2a4ee3a3a6510a6d61",
+        "size_bytes": 2802,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "UTF-16",
+          "Encrypted": "No",
+          "Compact": "Yes",
+          "Format": "Html",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 146,
+        "records": 13,
+        "key_blocks": 9,
+        "record_blocks": 9,
+        "uncompressed_record_bytes": 1060,
+        "duplicate_headwords": 1,
+        "sample_keys": [
+          "a-b",
+          "ab",
+          "a b",
+          "duplicate",
+          "duplicate",
+          "redirect",
+          "resource-control",
+          "style-inline-blue"
+        ],
+        "script_counts": {
+          "Arabic_keys": 1,
+          "CJK_keys": 1
+        },
+        "redirect_records": 1,
+        "style_markers": 2,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [
+          "images/green.png",
+          "styles/check.css"
+        ],
+        "resources": [],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "33774cbce58a9821878dce7056930fe351db8361f73e5c2a4ee3a3a6510a6d61"
+      }
+    },
+    "reader-utf16-mdxbuilder-crlf.mdd": {
+      "status": "passed",
+      "checks": {
+        "structure": true,
+        "explicit_unencrypted_header": true,
+        "header_CRLF_then_NUL": true,
+        "MDD_has_explicit_empty_encoding": true,
+        "MDD_legacy_metadata_present": true
+      },
+      "sha256": "fb4f0799a95ec2c44d173f8c60345d440ff297a1d019ad504104659677e020f4",
+      "structural_audit": {
+        "file": "reader-utf16-mdxbuilder-crlf.mdd",
+        "sha256": "fb4f0799a95ec2c44d173f8c60345d440ff297a1d019ad504104659677e020f4",
+        "size_bytes": 1049,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "",
+          "Encrypted": "No",
+          "Compact": "No",
+          "Format": "",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 0,
+        "records": 2,
+        "key_blocks": 1,
+        "record_blocks": 1,
+        "uncompressed_record_bytes": 152,
+        "duplicate_headwords": 0,
+        "sample_keys": [],
+        "script_counts": {},
+        "redirect_records": 0,
+        "style_markers": 0,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [],
+        "resources": [
+          {
+            "path": "\\images\\green.png",
+            "bytes": 87,
+            "sha256": "0a8e85b2c59f3e37e147fe5dae41444ddc88bed32134c026ba8cf782841f14fc"
+          },
+          {
+            "path": "\\styles\\check.css",
+            "bytes": 65,
+            "sha256": "3920b00897b17d7e089cda796d08f10ccc698e331558570df124dfa30431113f",
+            "css_url_references": []
+          }
+        ],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "fb4f0799a95ec2c44d173f8c60345d440ff297a1d019ad504104659677e020f4"
+      }
+    },
+    "reader-utf16-mdxbuilder-crlf.mdx": {
+      "status": "passed",
+      "checks": {
+        "structure": true,
+        "explicit_unencrypted_header": true,
+        "header_CRLF_then_NUL": true,
+        "all_MDX_records_have_encoded_terminal_NUL": true
+      },
+      "sha256": "12f296a55d4b5c30339158267aaee0055ee5fbe43214fc04f88df465f8805995",
+      "structural_audit": {
+        "file": "reader-utf16-mdxbuilder-crlf.mdx",
+        "sha256": "12f296a55d4b5c30339158267aaee0055ee5fbe43214fc04f88df465f8805995",
+        "size_bytes": 2810,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "UTF-16",
+          "Encrypted": "No",
+          "Compact": "Yes",
+          "Format": "Html",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 151,
+        "records": 13,
+        "key_blocks": 9,
+        "record_blocks": 9,
+        "uncompressed_record_bytes": 1060,
+        "duplicate_headwords": 1,
+        "sample_keys": [
+          "a-b",
+          "ab",
+          "a b",
+          "duplicate",
+          "duplicate",
+          "redirect",
+          "resource-control",
+          "style-inline-blue"
+        ],
+        "script_counts": {
+          "Arabic_keys": 1,
+          "CJK_keys": 1
+        },
+        "redirect_records": 1,
+        "style_markers": 2,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [
+          "images/green.png",
+          "styles/check.css"
+        ],
+        "resources": [],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "12f296a55d4b5c30339158267aaee0055ee5fbe43214fc04f88df465f8805995"
+      }
+    },
+    "reader-utf16-mdxbuilder.mdd": {
+      "status": "passed",
+      "checks": {
+        "structure": true,
+        "explicit_unencrypted_header": true,
+        "header_CRLF_then_NUL": true,
+        "MDD_has_explicit_empty_encoding": true,
+        "MDD_legacy_metadata_present": true
+      },
+      "sha256": "fb4f0799a95ec2c44d173f8c60345d440ff297a1d019ad504104659677e020f4",
+      "structural_audit": {
+        "file": "reader-utf16-mdxbuilder.mdd",
+        "sha256": "fb4f0799a95ec2c44d173f8c60345d440ff297a1d019ad504104659677e020f4",
+        "size_bytes": 1049,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "",
+          "Encrypted": "No",
+          "Compact": "No",
+          "Format": "",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 0,
+        "records": 2,
+        "key_blocks": 1,
+        "record_blocks": 1,
+        "uncompressed_record_bytes": 152,
+        "duplicate_headwords": 0,
+        "sample_keys": [],
+        "script_counts": {},
+        "redirect_records": 0,
+        "style_markers": 0,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [],
+        "resources": [
+          {
+            "path": "\\images\\green.png",
+            "bytes": 87,
+            "sha256": "0a8e85b2c59f3e37e147fe5dae41444ddc88bed32134c026ba8cf782841f14fc"
+          },
+          {
+            "path": "\\styles\\check.css",
+            "bytes": 65,
+            "sha256": "3920b00897b17d7e089cda796d08f10ccc698e331558570df124dfa30431113f",
+            "css_url_references": []
+          }
+        ],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "fb4f0799a95ec2c44d173f8c60345d440ff297a1d019ad504104659677e020f4"
+      }
+    },
+    "reader-utf16-mdxbuilder.mdx": {
+      "status": "passed",
+      "checks": {
+        "structure": true,
+        "explicit_unencrypted_header": true,
+        "header_CRLF_then_NUL": true,
+        "all_MDX_records_have_encoded_terminal_NUL": true
+      },
+      "sha256": "29aa2b07a47a57e753d1ba665b33fb41afacf36baf548f5c8c3d9bdce11b5fcb",
+      "structural_audit": {
+        "file": "reader-utf16-mdxbuilder.mdx",
+        "sha256": "29aa2b07a47a57e753d1ba665b33fb41afacf36baf548f5c8c3d9bdce11b5fcb",
+        "size_bytes": 2800,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "UTF-16",
+          "Encrypted": "No",
+          "Compact": "Yes",
+          "Format": "Html",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 146,
+        "records": 13,
+        "key_blocks": 9,
+        "record_blocks": 9,
+        "uncompressed_record_bytes": 1060,
+        "duplicate_headwords": 1,
+        "sample_keys": [
+          "a-b",
+          "ab",
+          "a b",
+          "duplicate",
+          "duplicate",
+          "redirect",
+          "resource-control",
+          "style-inline-blue"
+        ],
+        "script_counts": {
+          "Arabic_keys": 1,
+          "CJK_keys": 1
+        },
+        "redirect_records": 1,
+        "style_markers": 2,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [
+          "images/green.png",
+          "styles/check.css"
+        ],
+        "resources": [],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "29aa2b07a47a57e753d1ba665b33fb41afacf36baf548f5c8c3d9bdce11b5fcb"
+      }
+    },
+    "reader-utf8-mdict-utils-crlf.mdd": {
+      "status": "passed",
+      "checks": {
+        "structure": true,
+        "explicit_unencrypted_header": true,
+        "header_CRLF_then_NUL": true,
+        "MDD_has_explicit_empty_encoding": true,
+        "MDD_legacy_metadata_present": true
+      },
+      "sha256": "536a538ee9c5c1362713d479eb30f74ee88f5c619e40f94733b2f58f7fdc3255",
+      "structural_audit": {
+        "file": "reader-utf8-mdict-utils-crlf.mdd",
+        "sha256": "536a538ee9c5c1362713d479eb30f74ee88f5c619e40f94733b2f58f7fdc3255",
+        "size_bytes": 1049,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "",
+          "Encrypted": "No",
+          "Compact": "No",
+          "Format": "",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 0,
+        "records": 2,
+        "key_blocks": 1,
+        "record_blocks": 1,
+        "uncompressed_record_bytes": 152,
+        "duplicate_headwords": 0,
+        "sample_keys": [],
+        "script_counts": {},
+        "redirect_records": 0,
+        "style_markers": 0,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [],
+        "resources": [
+          {
+            "path": "\\images\\green.png",
+            "bytes": 87,
+            "sha256": "0a8e85b2c59f3e37e147fe5dae41444ddc88bed32134c026ba8cf782841f14fc"
+          },
+          {
+            "path": "\\styles\\check.css",
+            "bytes": 65,
+            "sha256": "3920b00897b17d7e089cda796d08f10ccc698e331558570df124dfa30431113f",
+            "css_url_references": []
+          }
+        ],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "536a538ee9c5c1362713d479eb30f74ee88f5c619e40f94733b2f58f7fdc3255"
+      }
+    },
+    "reader-utf8-mdict-utils-crlf.mdx": {
+      "status": "passed",
+      "checks": {
+        "structure": true,
+        "explicit_unencrypted_header": true,
+        "header_CRLF_then_NUL": true,
+        "all_MDX_records_have_encoded_terminal_NUL": true
+      },
+      "sha256": "0f1a5e6cbc99946c745852261370e293d9515ad023cb104cd351334b99a93723",
+      "structural_audit": {
+        "file": "reader-utf8-mdict-utils-crlf.mdx",
+        "sha256": "0f1a5e6cbc99946c745852261370e293d9515ad023cb104cd351334b99a93723",
+        "size_bytes": 2268,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "UTF-8",
+          "Encrypted": "No",
+          "Compact": "Yes",
+          "Format": "Html",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 151,
+        "records": 13,
+        "key_blocks": 5,
+        "record_blocks": 5,
+        "uncompressed_record_bytes": 558,
+        "duplicate_headwords": 1,
+        "sample_keys": [
+          "a-b",
+          "ab",
+          "a b",
+          "duplicate",
+          "duplicate",
+          "redirect",
+          "resource-control",
+          "style-inline-blue"
+        ],
+        "script_counts": {
+          "Arabic_keys": 1,
+          "CJK_keys": 1
+        },
+        "redirect_records": 1,
+        "style_markers": 2,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [
+          "images/green.png",
+          "styles/check.css"
+        ],
+        "resources": [],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "0f1a5e6cbc99946c745852261370e293d9515ad023cb104cd351334b99a93723"
+      }
+    },
+    "reader-utf8-mdict-utils.mdd": {
+      "status": "passed",
+      "checks": {
+        "structure": true,
+        "explicit_unencrypted_header": true,
+        "header_CRLF_then_NUL": true,
+        "MDD_has_explicit_empty_encoding": true,
+        "MDD_legacy_metadata_present": true
+      },
+      "sha256": "536a538ee9c5c1362713d479eb30f74ee88f5c619e40f94733b2f58f7fdc3255",
+      "structural_audit": {
+        "file": "reader-utf8-mdict-utils.mdd",
+        "sha256": "536a538ee9c5c1362713d479eb30f74ee88f5c619e40f94733b2f58f7fdc3255",
+        "size_bytes": 1049,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "",
+          "Encrypted": "No",
+          "Compact": "No",
+          "Format": "",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 0,
+        "records": 2,
+        "key_blocks": 1,
+        "record_blocks": 1,
+        "uncompressed_record_bytes": 152,
+        "duplicate_headwords": 0,
+        "sample_keys": [],
+        "script_counts": {},
+        "redirect_records": 0,
+        "style_markers": 0,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [],
+        "resources": [
+          {
+            "path": "\\images\\green.png",
+            "bytes": 87,
+            "sha256": "0a8e85b2c59f3e37e147fe5dae41444ddc88bed32134c026ba8cf782841f14fc"
+          },
+          {
+            "path": "\\styles\\check.css",
+            "bytes": 65,
+            "sha256": "3920b00897b17d7e089cda796d08f10ccc698e331558570df124dfa30431113f",
+            "css_url_references": []
+          }
+        ],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "536a538ee9c5c1362713d479eb30f74ee88f5c619e40f94733b2f58f7fdc3255"
+      }
+    },
+    "reader-utf8-mdict-utils.mdx": {
+      "status": "passed",
+      "checks": {
+        "structure": true,
+        "explicit_unencrypted_header": true,
+        "header_CRLF_then_NUL": true,
+        "all_MDX_records_have_encoded_terminal_NUL": true
+      },
+      "sha256": "6b3ebb5af475570947193f4d8599e50aa34075394074c739df35ff60bbcc879d",
+      "structural_audit": {
+        "file": "reader-utf8-mdict-utils.mdx",
+        "sha256": "6b3ebb5af475570947193f4d8599e50aa34075394074c739df35ff60bbcc879d",
+        "size_bytes": 2258,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "UTF-8",
+          "Encrypted": "No",
+          "Compact": "Yes",
+          "Format": "Html",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 146,
+        "records": 13,
+        "key_blocks": 5,
+        "record_blocks": 5,
+        "uncompressed_record_bytes": 558,
+        "duplicate_headwords": 1,
+        "sample_keys": [
+          "a-b",
+          "ab",
+          "a b",
+          "duplicate",
+          "duplicate",
+          "redirect",
+          "resource-control",
+          "style-inline-blue"
+        ],
+        "script_counts": {
+          "Arabic_keys": 1,
+          "CJK_keys": 1
+        },
+        "redirect_records": 1,
+        "style_markers": 2,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [
+          "images/green.png",
+          "styles/check.css"
+        ],
+        "resources": [],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "6b3ebb5af475570947193f4d8599e50aa34075394074c739df35ff60bbcc879d"
+      }
+    },
+    "reader-utf8-mdxbuilder-crlf.mdd": {
+      "status": "passed",
+      "checks": {
+        "structure": true,
+        "explicit_unencrypted_header": true,
+        "header_CRLF_then_NUL": true,
+        "MDD_has_explicit_empty_encoding": true,
+        "MDD_legacy_metadata_present": true
+      },
+      "sha256": "8d2b3a26d32292e09e5edd67746283b75eaf31fd389fd801d2e312f5a78c9f59",
+      "structural_audit": {
+        "file": "reader-utf8-mdxbuilder-crlf.mdd",
+        "sha256": "8d2b3a26d32292e09e5edd67746283b75eaf31fd389fd801d2e312f5a78c9f59",
+        "size_bytes": 1047,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "",
+          "Encrypted": "No",
+          "Compact": "No",
+          "Format": "",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 0,
+        "records": 2,
+        "key_blocks": 1,
+        "record_blocks": 1,
+        "uncompressed_record_bytes": 152,
+        "duplicate_headwords": 0,
+        "sample_keys": [],
+        "script_counts": {},
+        "redirect_records": 0,
+        "style_markers": 0,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [],
+        "resources": [
+          {
+            "path": "\\images\\green.png",
+            "bytes": 87,
+            "sha256": "0a8e85b2c59f3e37e147fe5dae41444ddc88bed32134c026ba8cf782841f14fc"
+          },
+          {
+            "path": "\\styles\\check.css",
+            "bytes": 65,
+            "sha256": "3920b00897b17d7e089cda796d08f10ccc698e331558570df124dfa30431113f",
+            "css_url_references": []
+          }
+        ],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "8d2b3a26d32292e09e5edd67746283b75eaf31fd389fd801d2e312f5a78c9f59"
+      }
+    },
+    "reader-utf8-mdxbuilder-crlf.mdx": {
+      "status": "passed",
+      "checks": {
+        "structure": true,
+        "explicit_unencrypted_header": true,
+        "header_CRLF_then_NUL": true,
+        "all_MDX_records_have_encoded_terminal_NUL": true
+      },
+      "sha256": "7e012244d986aa4fba2bd7328f10318b3c2e94412278041cd635a338d0cc2f08",
+      "structural_audit": {
+        "file": "reader-utf8-mdxbuilder-crlf.mdx",
+        "sha256": "7e012244d986aa4fba2bd7328f10318b3c2e94412278041cd635a338d0cc2f08",
+        "size_bytes": 2266,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "UTF-8",
+          "Encrypted": "No",
+          "Compact": "Yes",
+          "Format": "Html",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 151,
+        "records": 13,
+        "key_blocks": 5,
+        "record_blocks": 5,
+        "uncompressed_record_bytes": 558,
+        "duplicate_headwords": 1,
+        "sample_keys": [
+          "a-b",
+          "ab",
+          "a b",
+          "duplicate",
+          "duplicate",
+          "redirect",
+          "resource-control",
+          "style-inline-blue"
+        ],
+        "script_counts": {
+          "Arabic_keys": 1,
+          "CJK_keys": 1
+        },
+        "redirect_records": 1,
+        "style_markers": 2,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [
+          "images/green.png",
+          "styles/check.css"
+        ],
+        "resources": [],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "7e012244d986aa4fba2bd7328f10318b3c2e94412278041cd635a338d0cc2f08"
+      }
+    },
+    "reader-utf8-mdxbuilder.mdd": {
+      "status": "passed",
+      "checks": {
+        "structure": true,
+        "explicit_unencrypted_header": true,
+        "header_CRLF_then_NUL": true,
+        "MDD_has_explicit_empty_encoding": true,
+        "MDD_legacy_metadata_present": true
+      },
+      "sha256": "8d2b3a26d32292e09e5edd67746283b75eaf31fd389fd801d2e312f5a78c9f59",
+      "structural_audit": {
+        "file": "reader-utf8-mdxbuilder.mdd",
+        "sha256": "8d2b3a26d32292e09e5edd67746283b75eaf31fd389fd801d2e312f5a78c9f59",
+        "size_bytes": 1047,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "",
+          "Encrypted": "No",
+          "Compact": "No",
+          "Format": "",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 0,
+        "records": 2,
+        "key_blocks": 1,
+        "record_blocks": 1,
+        "uncompressed_record_bytes": 152,
+        "duplicate_headwords": 0,
+        "sample_keys": [],
+        "script_counts": {},
+        "redirect_records": 0,
+        "style_markers": 0,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [],
+        "resources": [
+          {
+            "path": "\\images\\green.png",
+            "bytes": 87,
+            "sha256": "0a8e85b2c59f3e37e147fe5dae41444ddc88bed32134c026ba8cf782841f14fc"
+          },
+          {
+            "path": "\\styles\\check.css",
+            "bytes": 65,
+            "sha256": "3920b00897b17d7e089cda796d08f10ccc698e331558570df124dfa30431113f",
+            "css_url_references": []
+          }
+        ],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "8d2b3a26d32292e09e5edd67746283b75eaf31fd389fd801d2e312f5a78c9f59"
+      }
+    },
+    "reader-utf8-mdxbuilder.mdx": {
+      "status": "passed",
+      "checks": {
+        "structure": true,
+        "explicit_unencrypted_header": true,
+        "header_CRLF_then_NUL": true,
+        "all_MDX_records_have_encoded_terminal_NUL": true
+      },
+      "sha256": "c740ad5ffce8ad13fdb9c5987d8f99d374d6eb402d61ded86a0377727ba904a3",
+      "structural_audit": {
+        "file": "reader-utf8-mdxbuilder.mdx",
+        "sha256": "c740ad5ffce8ad13fdb9c5987d8f99d374d6eb402d61ded86a0377727ba904a3",
+        "size_bytes": 2256,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "UTF-8",
+          "Encrypted": "No",
+          "Compact": "Yes",
+          "Format": "Html",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 146,
+        "records": 13,
+        "key_blocks": 5,
+        "record_blocks": 5,
+        "uncompressed_record_bytes": 558,
+        "duplicate_headwords": 1,
+        "sample_keys": [
+          "a-b",
+          "ab",
+          "a b",
+          "duplicate",
+          "duplicate",
+          "redirect",
+          "resource-control",
+          "style-inline-blue"
+        ],
+        "script_counts": {
+          "Arabic_keys": 1,
+          "CJK_keys": 1
+        },
+        "redirect_records": 1,
+        "style_markers": 2,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [
+          "images/green.png",
+          "styles/check.css"
+        ],
+        "resources": [],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "c740ad5ffce8ad13fdb9c5987d8f99d374d6eb402d61ded86a0377727ba904a3"
+      }
+    }
+  },
+  "steps": [
+    {
+      "name": "prepare",
+      "returncode": 0,
+      "log": "prepare.log"
+    },
+    {
+      "name": "rust-tests",
+      "returncode": 0,
+      "log": "rust-tests.log"
+    },
+    {
+      "name": "fixture-build",
+      "returncode": 0,
+      "log": "fixture-build.log"
+    },
+    {
+      "name": "interop",
+      "returncode": 0,
+      "log": "interop.log"
+    },
+    {
+      "name": "metadata",
+      "returncode": 1,
+      "log": "metadata.log"
+    }
+  ],
+  "not_proven": [
+    "native_crash_fixed",
+    "native_sort_and_strip_policy_consistency",
+    "generic_XML_stylesheet_semantics",
+    "production_writer_qualification"
+  ],
+  "metadata_result": {
+    "status": "failed",
+    "counts": {
+      "passed": 91,
+      "failed": 10,
+      "unsupported": 2,
+      "blocked": 8
+    },
+    "report": "metadata/metadata-codec-report.json"
+  },
+  "unresolved_stylesheet_checks": [
+    "forward-utf8-mdict-utils-xml",
+    "forward-utf8-mdxbuilder-xml",
+    "forward-utf16le-mdict-utils-xml",
+    "forward-utf16le-mdxbuilder-xml",
+    "forward-big5-mdict-utils-xml",
+    "forward-big5-mdxbuilder-xml",
+    "forward-gbk-mdict-utils-xml",
+    "forward-gbk-mdxbuilder-xml",
+    "forward-gb18030-mdict-utils-xml",
+    "forward-gb18030-mdxbuilder-xml"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "studio-parent-death-standalone-GUI-v1",
+  "date": "2026-11-21",
+  "status": "accepted_scoped_active_Python_force_quit_cleanup_and_reopen",
+  "basis": "User pasted v6 arm/check output, then explicitly confirmed reopening preview v6 normally",
+  "app": "m3-shell-out-mac-preview-v6/Mdict Studio Pro Preview.app",
+  "executable_sha256": "2fdde5759b44256afcf8fddf9e52c2dad59f17c756742e588c478c3bda9b140d",
+  "recorded_bridge_PID": 96320,
+  "diagnostic_output": "m3-shell-out-force-quit-v6-1",
+  "automatic_bridge_and_owned_stage_cleanup_observed": true,
+  "no_output_published": true,
+  "source_and_plugin_unchanged": true,
+  "diagnostic_manual_cleanup_used": false,
+  "reopen_user_confirmed": true,
+  "general_crash_recovery_qualified": false,
+  "old_abandoned_stages_cleaned": false,
+  "M3_complete": false,
+  "production_release_ready": false
+}

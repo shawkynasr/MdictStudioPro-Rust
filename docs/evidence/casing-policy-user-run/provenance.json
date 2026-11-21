@@ -1,0 +1,10 @@
+{
+  "source": "User-uploaded casing report and Unicode16 oracle-derived data; source snapshots matched reported hashes",
+  "local_Rust_execution": false,
+  "policy_sha256": "f69d2e55d6b8c8d5fe33f764cc47b829bccc6d73aaff1791e1216328a1c24071",
+  "files": {
+    "casing-policy-report.json": "3f2110de48e3cd27a392aa714cccbaf0009ca992c305e60eb10c65adf762ec37",
+    "qualified-casing.rs": "ae15590557a3a16a00e67a8ee2f6130f044b19de6ca408d32013f7ca1c8a48b1",
+    "qualified-casing_policy.py": "b4b362ccea477c0b39f444d4b6a1e9f0ed6a1a79582f8a3a087092882720d3cb"
+  }
+}

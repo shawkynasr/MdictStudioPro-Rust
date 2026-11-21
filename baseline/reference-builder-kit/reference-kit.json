@@ -1,0 +1,12 @@
+{
+  "status": "sources_prepared_no_compiler_run",
+  "writer_revision": 5,
+  "encoding": "UTF-16LE with BOM",
+  "source_line_endings": "CRLF",
+  "style_final_newline": false,
+  "files": {
+    "source.txt": "e7d72d68e2af592639d994e16ff15d7ae0f4b47536472cb5cd758bfc34d2ad68",
+    "style.txt": "34c075f8951b6366f2cc7a97d7c6cff8753d5715061d8cd725bcc29c4c824626",
+    "rust-spec.json": "82f45856a240cd3e373c3c13850bb6672a57942a95803a989a357d4bbff20fd6"
+  }
+}

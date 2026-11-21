@@ -1,0 +1,68 @@
+{
+  "schema": "studio-reviewed-Mac-lock-capture-v1",
+  "date": "2026-11-19",
+  "status": "accepted_exact_known_seed_and_resolved_identities",
+  "original_upload_sha256": "b89088cee28aea2b898fa25f04af51258f85f71f8f16fb4d832351e6f27c4644",
+  "capture_report_sha256": "d9bd6f089682fe4cc5fa3fb8aa25820456a318ae7ee46e08ae0373add6788258",
+  "all_seven_lock_bytes_supplied": true,
+  "capture_source_unchanged": true,
+  "protected_source_identities": 324,
+  "finding": "Four M3 locks are exact distributed seeds restored by unzipping; their exact Cargo-normalized alternatives are bound to the passing native receipt. Desktop/frontend and SQLite locks exactly match accepted builds. No registry upgrades approved.",
+  "locks": {
+    "m3/native-adapter/Cargo.lock": {
+      "accepted_sha256": [
+        "6238de1d88365b93a5b5cfcbacbd76e14d94723deac87c3065c01aa18e64bdc7",
+        "50af5b504bb11d8fe387a80c4a411bd50486e7066da0bd0b7eeba9acd89c9ddb"
+      ],
+      "build_sha256": "50af5b504bb11d8fe387a80c4a411bd50486e7066da0bd0b7eeba9acd89c9ddb",
+      "captured_sha256": "6238de1d88365b93a5b5cfcbacbd76e14d94723deac87c3065c01aa18e64bdc7"
+    },
+    "m3/txt-runtime/Cargo.lock": {
+      "accepted_sha256": [
+        "6238de1d88365b93a5b5cfcbacbd76e14d94723deac87c3065c01aa18e64bdc7",
+        "a625ce05b03ba7862f6550b28a6b58a5c965734eebd6371b350717195df57ea7"
+      ],
+      "build_sha256": "a625ce05b03ba7862f6550b28a6b58a5c965734eebd6371b350717195df57ea7",
+      "captured_sha256": "6238de1d88365b93a5b5cfcbacbd76e14d94723deac87c3065c01aa18e64bdc7"
+    },
+    "m3/export-io/Cargo.lock": {
+      "accepted_sha256": [
+        "a04524c89dfeedbd04074766cdd5edb96feb299b7724b56d85bf5ed3cb6b996b",
+        "1ba4cab619a3816b9c18782ac33fd178b28dd5baaf9baf3b3410288011a98e28"
+      ],
+      "build_sha256": "1ba4cab619a3816b9c18782ac33fd178b28dd5baaf9baf3b3410288011a98e28",
+      "captured_sha256": "a04524c89dfeedbd04074766cdd5edb96feb299b7724b56d85bf5ed3cb6b996b"
+    },
+    "m3/indexed-sessions/Cargo.lock": {
+      "accepted_sha256": [
+        "92c4f9704a78ed464e79d17926ac009ec7788a9444eb5700fb06066c815ffb29",
+        "e9a4b52878edc3b45008009f6e08d3d826a169dfe961f2a0433d53d86860513f"
+      ],
+      "build_sha256": "e9a4b52878edc3b45008009f6e08d3d826a169dfe961f2a0433d53d86860513f",
+      "captured_sha256": "92c4f9704a78ed464e79d17926ac009ec7788a9444eb5700fb06066c815ffb29"
+    },
+    "m3/desktop/src-tauri/Cargo.lock": {
+      "accepted_sha256": [
+        "b1a055c2ef077ff79ab61a0a48452e72fe379ef2ff4669b69fc81b31043f01c3"
+      ],
+      "build_sha256": "b1a055c2ef077ff79ab61a0a48452e72fe379ef2ff4669b69fc81b31043f01c3",
+      "captured_sha256": "b1a055c2ef077ff79ab61a0a48452e72fe379ef2ff4669b69fc81b31043f01c3"
+    },
+    "m3/desktop/package-lock.json": {
+      "accepted_sha256": [
+        "2019d255ace7d3316e8f9b4cea1fd3a5a7b93420b55f48b7d13412d36a8809bb"
+      ],
+      "build_sha256": "2019d255ace7d3316e8f9b4cea1fd3a5a7b93420b55f48b7d13412d36a8809bb",
+      "captured_sha256": "2019d255ace7d3316e8f9b4cea1fd3a5a7b93420b55f48b7d13412d36a8809bb"
+    },
+    "m4/database/Cargo.lock": {
+      "accepted_sha256": [
+        "ce7f6c73a782fb9a5e074db6504c33575bcdb5b523490b50d1c773b989dd3bc6"
+      ],
+      "build_sha256": "ce7f6c73a782fb9a5e074db6504c33575bcdb5b523490b50d1c773b989dd3bc6",
+      "captured_sha256": "ce7f6c73a782fb9a5e074db6504c33575bcdb5b523490b50d1c773b989dd3bc6"
+    }
+  },
+  "native_receipt": "docs/evidence/m3-plugin-options-qualified/m3-shell-report.json",
+  "scope": "Preserves resolved desktop/frontend bytes and known seed variants; not a new build, reproducibility guarantee, release approval or platform qualification."
+}

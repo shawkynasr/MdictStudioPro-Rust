@@ -1,0 +1,14 @@
+{
+  "source": "User reply after requested native checks: no any missing or crashes",
+  "result": "PASS_USER_REPORTED_NO_MISSING_OR_CRASHES",
+  "readers": [
+    "MDict for macOS 2.2.6 (build 200)",
+    "GoldenDict 26.6.1-7548db1682 (master)"
+  ],
+  "fixtures": {
+    "07-header-literal-utf8.mdx": "ed6b94c4161616483c63722db8a076b014041c216931c2b2b07228c734713cdd",
+    "07-header-literal-utf16.mdx": "bed0f47e86cea7f24f7c90dbafdf9caf55c64f8ae066fb5b67bf589136aaaf3b"
+  },
+  "scope": "UTF8 and UTF16 literal-header candidates; native acceptance is user-reported, not automated",
+  "restart_check": "not separately stated in user reply"
+}

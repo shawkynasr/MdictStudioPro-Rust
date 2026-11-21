@@ -1,0 +1,24 @@
+{
+  "schema": "studio-plugin-options-gui-output-review-v1",
+  "date": "2026-11-19",
+  "status": "passed",
+  "qualified_native_package_version": 169,
+  "plugin_class": "OptionsPlugin",
+  "options": {
+    "prefix": "字 مرحبا",
+    "uppercase": true
+  },
+  "source_fixture_sha256": "66417f81f2d2da12dcae7635d4458b7e91fff4425bd8d2a960add9740b5f3e96",
+  "plugin_fixture_sha256": "a5afe1dde61ada6ec69c2e7477216280ec394852df97c99faaffbd2268fc2e5e",
+  "output_upload": "output(1).txt",
+  "output_sha256": "737ce0b126a6a952729903c679fb7659121dd7a6d909711a35fa33be67cdb45d",
+  "output_bytes": 203,
+  "expected_sha256": "737ce0b126a6a952729903c679fb7659121dd7a6d909711a35fa33be67cdb45d",
+  "exact_expected_bytes": true,
+  "records": 6,
+  "source_duplicate_definitions_preserved": true,
+  "stdout_upload": "bridge-stdout(1).log",
+  "stdout_sha256": "af714ed031fec153dd28b5652ef6a9e8972a655eccb8e4905a132c8e7ba264f7",
+  "ordinary_stdout_matches_fixture": true,
+  "scope": "User supplied output after correcting Python executable in GUI smoke test; exact fixture output verified. No GUI job receipt or new source identity report supplied; native source binding remains the earlier package-169 report. No claim of arbitrary plugin option compatibility, schema forms or full M3 completion."
+}

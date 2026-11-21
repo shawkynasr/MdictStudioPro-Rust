@@ -1,0 +1,9 @@
+{
+  "source": "User-uploaded aggregate v4 native-wire report",
+  "local_rerun": false,
+  "files": {
+    "native-wire-report.json": "d81f822f9e171437369a535b0219e6a0d2b1bb20d64ba293d9fa934f56f1a9f5"
+  },
+  "nested_reports_and_logs_attached": false,
+  "native_testing": "NOT_RUN_DO_NOT_IMPORT"
+}

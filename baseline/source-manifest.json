@@ -1,0 +1,174 @@
+{
+  "archive_sha256": "0153dfb107d7f43bc9ce66bfe6063774892ced2a1376a2274dfa4987d41a9751",
+  "archive_commit": "6e181e22193472518d7966b66bac4dc2f2b32f83",
+  "files": {
+    "MdictStudio.py": "387fadfc20b1936827b58f40f36fa9f09cc34b43ca984be81ce4eaa1c592e79b",
+    "base_plugin.py": "0620c3d88502191b4b297c918394cc9ae886e943e83b06bf377fa1284b044b49",
+    "excel_utils.py": "b0a837e2197a5d0d42599171716b903ef813dc52512e55c1ccbe93f2f0bd2302",
+    "build.py": "17935d87cdef394df86d78ef52e91572c9bb969ab06f665bf325c0a1ee6edb45",
+    "requirements.txt": "17a54b0a7f2d45f96bc730b18d07604fde2e7030a1d68aaa1dc1b5d58b033c99",
+    "README.md": "f100ccfe86759212f28c9920d07f40675223c7278cd15958a3d2ca76333bae0e",
+    "LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    ".github/workflows/build.yml": "f4a5194f6ba5cccc4f2cb8cfa3105933fa8071f4a60e2b906493844e0e746ffb",
+    "plugins/cccedict_plugin.py": "4c3fc461a044e702678ce7fbf0e2b251969d5932c4bf2d2070d6f58c2eeb139c",
+    "plugins/edudict_plugin.py": "2505bdaf5733f905d8fba1f68dd22e1c7b123484599d1f18bcf7c6cb576aa923",
+    "plugins/WFG_desgin_Plugin.py": "9d476ee0fb38603c7b6e6634c9987ab7a26077dbf15357718e9e93293da09ba2",
+    "plugins/concise_plugin.py": "25b37d4f801e4ddfef03557a54fa8a20ad5bbbac79f8eddc19135ae6562abc6a",
+    "plugins/idiom_plugin.py": "53dce8296c31f92c1e83a4cb7f2773c7e97d6ae85f00811724a11adf83768bc1",
+    "plugins/mini_plugin.py": "aca858af532a8f409b5b55d6d3632b63466d8d67af910390f65e3623561c00f5"
+  },
+  "assets": {
+    "assets/AppIcon.icns": {
+      "bytes": 532125,
+      "sha256": "85ceea396d9f98cc2b261c8d52f94e53613a37e3266a3816a2165495c914fcc3"
+    },
+    "assets/CC-CEDICT/CC-CEDICT_Description file.txt": {
+      "bytes": 900,
+      "sha256": "c3302fbc27a0c96f7f99284dffea74096a1138364ac25af407467e3f01f960f8"
+    },
+    "assets/CC-CEDICT/data/HelveticaNowMicroMed.ttf": {
+      "bytes": 106992,
+      "sha256": "7ba64fd5d6cad5101db018248b0b11950517d05d36e1b6e00a4674063537f866"
+    },
+    "assets/CC-CEDICT/data/HelveticaNowMicroMed.woff": {
+      "bytes": 46900,
+      "sha256": "21105a97204672ffbc8e277886c0520d6b07fc1921f3c5caa77156e5f564c894"
+    },
+    "assets/CC-CEDICT/data/HelveticaNowMicroMed.woff2": {
+      "bytes": 38728,
+      "sha256": "6351f15c0efe7a132516bb6d69e7342e72ed1e11ad85ea054bcb4063d11a71ab"
+    },
+    "assets/CC-CEDICT/data/Merriweather-Italic-py.ttf": {
+      "bytes": 20604,
+      "sha256": "e41011f00557f892f84b2a69cc911e56c11f8045526a53f791fa537fd804653a"
+    },
+    "assets/CC-CEDICT/data/Merriweather-Italic-py.woff": {
+      "bytes": 9880,
+      "sha256": "1b4bd64dc4a11fcefd866b4257e92de8a1776bad88eaae2f92322c19e34b5a1c"
+    },
+    "assets/CC-CEDICT/data/Merriweather-Italic-py.woff2": {
+      "bytes": 7580,
+      "sha256": "f097aa99e5c7b7a8245273a93ceed2f50a706187b84579286b91895e3c9bb5b8"
+    },
+    "assets/CC-CEDICT/data/MyriadPro-Regular.ttf": {
+      "bytes": 114124,
+      "sha256": "67e218cdd684c6495b44e5567d1dff1c1df32b07a2112fe2989ae2f69a73f93f"
+    },
+    "assets/CC-CEDICT/data/MyriadPro-Regular.woff": {
+      "bytes": 48820,
+      "sha256": "d09779b4482b8e780a559d080c1c5c4b74b0e914276251d5a772e1e2f51d26c7"
+    },
+    "assets/CC-CEDICT/data/MyriadPro-Regular.woff2": {
+      "bytes": 39864,
+      "sha256": "c12bd7d1fe8ef34dbd15b1c612b248d57bdbcf94887cd20d65a464decc8ba400"
+    },
+    "assets/CC-CEDICT/data/cedict_ts.css": {
+      "bytes": 5687,
+      "sha256": "86e896de0131073429c1dde0f704d423968f15b7f4d1c09c4fca0e6d457d6e74"
+    },
+    "assets/CC-CEDICT/data/iconfont.eot": {
+      "bytes": 4436,
+      "sha256": "788f7c5ba7b425abe717f98292a11c33950528af2431debb657ec225c7a7622b"
+    },
+    "assets/CC-CEDICT/data/iconfont.svg": {
+      "bytes": 14290,
+      "sha256": "85fce6477d19dcf716264f71a9fb21bf5d96da82b132e78f2364a23f1c341f10"
+    },
+    "assets/CC-CEDICT/data/iconfont.ttf": {
+      "bytes": 4268,
+      "sha256": "8c5ce85b498b80a9da3deb68fb0d4d476d2a5666dfe5f5c9afa27b0de91039aa"
+    },
+    "assets/CC-CEDICT/data/iconfont.woff": {
+      "bytes": 2852,
+      "sha256": "c27b2d9d88cef445a8da2f9e8fe0710b744fe81cb5d48199c05c6d38794fb75b"
+    },
+    "assets/CC-CEDICT/data/iconfont.woff2": {
+      "bytes": 2320,
+      "sha256": "8226f31c1da14de3b81386a4225c951ca7bdf0feb981211f033c7c039cbfc4d0"
+    },
+    "assets/CC-CEDICT/data/mdbg-dic.png": {
+      "bytes": 4246,
+      "sha256": "bd5111e16f77c5bef7a72ab955234305bd69e7f0def3048129c1a894bf38dcb1"
+    },
+    "assets/CC-CEDICT/data/mdbg-logo.png": {
+      "bytes": 1619,
+      "sha256": "3484e8922628227f3c448a6d34538303682e179f93f5e44f094901cc6dd5ae59"
+    },
+    "assets/MyIcon.iconset/icon_128x128.png": {
+      "bytes": 15680,
+      "sha256": "ecbbe1aa45f489531dc92d99516de6f884cc564761a6ae38feb0598524edf8c1"
+    },
+    "assets/MyIcon.iconset/icon_128x128@2x.png": {
+      "bytes": 36817,
+      "sha256": "c182bfb18c2868277be36291b06554c1be6a191ceb5582130c7f277151de5c10"
+    },
+    "assets/MyIcon.iconset/icon_16x16.png": {
+      "bytes": 4150,
+      "sha256": "172b6282248d8958635928a29485f912b2c13debbfca5415d773355cdc6c3151"
+    },
+    "assets/MyIcon.iconset/icon_16x16@2x.png": {
+      "bytes": 4714,
+      "sha256": "a398ba1c01fabd766a1e0372bda13b63efa18103c85e775a205abd38b17af8e2"
+    },
+    "assets/MyIcon.iconset/icon_256x256.png": {
+      "bytes": 36817,
+      "sha256": "c182bfb18c2868277be36291b06554c1be6a191ceb5582130c7f277151de5c10"
+    },
+    "assets/MyIcon.iconset/icon_256x256@2x.png": {
+      "bytes": 92115,
+      "sha256": "4c40d63cd6770fab34764d215edd88160b9e066acc492362a030aa4dd453a056"
+    },
+    "assets/MyIcon.iconset/icon_32x32.png": {
+      "bytes": 4714,
+      "sha256": "a398ba1c01fabd766a1e0372bda13b63efa18103c85e775a205abd38b17af8e2"
+    },
+    "assets/MyIcon.iconset/icon_32x32@2x.png": {
+      "bytes": 5941,
+      "sha256": "34bd24e97b2c941594cf3216e371dd3f9fe982cf60461062e2cedea4d716fa61"
+    },
+    "assets/MyIcon.iconset/icon_512x512.png": {
+      "bytes": 92115,
+      "sha256": "4c40d63cd6770fab34764d215edd88160b9e066acc492362a030aa4dd453a056"
+    },
+    "assets/MyIcon.iconset/icon_512x512@2x.png": {
+      "bytes": 250527,
+      "sha256": "d950e310f7b85a8bdf3698737f0e2b5ada104aeb613509b15b2ea8b7f783432f"
+    },
+    "assets/WFG Style/cbgycd.css": {
+      "bytes": 281447,
+      "sha256": "25694cb25a77bd2e07e33822bf2694ca96b348e081a93dfb8537e6664d00b680"
+    },
+    "assets/WFG Style/cbgycd.js": {
+      "bytes": 112366,
+      "sha256": "771684d3a1c28aca6d8ffc1ef615ad5c95f18c35f2fae7a0852e4357b032949e"
+    },
+    "assets/WFG Style/fonts/FSungLite.woff2": {
+      "bytes": 191072,
+      "sha256": "fc9a62cabc2e06c2d9f504a127542fb39e8a13bb349b2b4248b4bcc83ad0df6c"
+    },
+    "assets/WFG Style/fonts/FZYouSK_508R.woff2": {
+      "bytes": 4893028,
+      "sha256": "82a8d8630da3f9ac1578de45bc7f0d74198b45c993744667d31e814e31dadda2"
+    },
+    "assets/WFG Style/fonts/GentiumPlus.woff2": {
+      "bytes": 310784,
+      "sha256": "120f6d900b1efe40df9d8ac772a62b849d333ca8e3fb7aa016e96e86b95a5870"
+    },
+    "assets/WFG Style/fonts/HYShuSongErS.woff2": {
+      "bytes": 7276024,
+      "sha256": "81eefa905b334593cc1eb6aab0f873aee6fddb3fe2a78d2029462e7cfe11aaa6"
+    },
+    "assets/WFG Style/fonts/Lora-Regular.woff2": {
+      "bytes": 64240,
+      "sha256": "0ea942235c80fcc3e61f67fdec6a3444230915f8147901067dd87798240f8749"
+    },
+    "assets/WFG Style/fonts/OpenSans-Regular.woff2": {
+      "bytes": 50180,
+      "sha256": "893f7f57805f1a70e7cb63621dcc596e49fc87551d1231c7756b7a958bac931b"
+    },
+    "assets/jybcb.css": {
+      "bytes": 10114,
+      "sha256": "ea9fb782b8a64c30292065970e4437db99e7e0c08490c527684a6ca99d61c68c"
+    }
+  }
+}

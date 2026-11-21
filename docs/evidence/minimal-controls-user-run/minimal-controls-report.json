@@ -1,0 +1,500 @@
+{
+  "status": "offline_controls_passed_native_untested",
+  "writer_revision": 5,
+  "profile": "HeaderLiteralC",
+  "native_readers": "NOT_RUN_DO_NOT_IMPORT",
+  "steps": [
+    {
+      "name": "prepare",
+      "returncode": 0,
+      "log": "prepare.log"
+    },
+    {
+      "name": "legacy-regression",
+      "returncode": 0,
+      "log": "legacy-regression.log"
+    },
+    {
+      "name": "controls-build",
+      "returncode": 0,
+      "log": "controls-build.log"
+    }
+  ],
+  "checks": {
+    "01-plain-utf8.mdx": {
+      "status": "passed",
+      "records": 6,
+      "lookups": 7,
+      "key_blocks": 3,
+      "physical_order": [
+        "alpha",
+        "beta",
+        "delta",
+        "gamma",
+        "omega",
+        "zeta"
+      ],
+      "wire": {
+        "status": "passed",
+        "checks": {
+          "structure": true,
+          "explicit_unencrypted_header": true,
+          "header_CRLF_then_NUL": true,
+          "all_MDX_records_have_encoded_terminal_NUL": true
+        },
+        "sha256": "b34cce1645575c34a78513bac67f8aef1b17cc4d5889c3fb0ca09d9d4f564099"
+      },
+      "structural_audit": {
+        "file": "01-plain-utf8.mdx",
+        "sha256": "b34cce1645575c34a78513bac67f8aef1b17cc4d5889c3fb0ca09d9d4f564099",
+        "size_bytes": 993,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "UTF-8",
+          "Encrypted": "No",
+          "Compact": "No",
+          "Format": "Html",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 0,
+        "records": 6,
+        "key_blocks": 3,
+        "record_blocks": 1,
+        "uncompressed_record_bytes": 52,
+        "duplicate_headwords": 0,
+        "sample_keys": [
+          "alpha",
+          "beta",
+          "delta",
+          "gamma",
+          "omega",
+          "zeta"
+        ],
+        "script_counts": {},
+        "redirect_records": 0,
+        "style_markers": 0,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [],
+        "resources": [],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "b34cce1645575c34a78513bac67f8aef1b17cc4d5889c3fb0ca09d9d4f564099"
+      }
+    },
+    "01-plain-utf16.mdx": {
+      "status": "passed",
+      "records": 6,
+      "lookups": 7,
+      "key_blocks": 6,
+      "physical_order": [
+        "alpha",
+        "beta",
+        "delta",
+        "gamma",
+        "omega",
+        "zeta"
+      ],
+      "wire": {
+        "status": "passed",
+        "checks": {
+          "structure": true,
+          "explicit_unencrypted_header": true,
+          "header_CRLF_then_NUL": true,
+          "all_MDX_records_have_encoded_terminal_NUL": true
+        },
+        "sha256": "570a77df9901a22732d105ee50b9ca22a80db3edd9db3beac7b47d0f0f13a562"
+      },
+      "structural_audit": {
+        "file": "01-plain-utf16.mdx",
+        "sha256": "570a77df9901a22732d105ee50b9ca22a80db3edd9db3beac7b47d0f0f13a562",
+        "size_bytes": 1162,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "UTF-16",
+          "Encrypted": "No",
+          "Compact": "No",
+          "Format": "Html",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 0,
+        "records": 6,
+        "key_blocks": 6,
+        "record_blocks": 2,
+        "uncompressed_record_bytes": 104,
+        "duplicate_headwords": 0,
+        "sample_keys": [
+          "alpha",
+          "beta",
+          "delta",
+          "gamma",
+          "omega",
+          "zeta"
+        ],
+        "script_counts": {},
+        "redirect_records": 0,
+        "style_markers": 0,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [],
+        "resources": [],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "570a77df9901a22732d105ee50b9ca22a80db3edd9db3beac7b47d0f0f13a562"
+      }
+    },
+    "02-punctuation-utf8.mdx": {
+      "status": "passed",
+      "records": 11,
+      "lookups": 13,
+      "key_blocks": 6,
+      "physical_order": [
+        "a b",
+        "a!b",
+        "a-b",
+        "a.b",
+        "ab",
+        "Apple",
+        "apple",
+        "APPLE",
+        "duplicate",
+        "duplicate",
+        "zebra"
+      ],
+      "wire": {
+        "status": "passed",
+        "checks": {
+          "structure": true,
+          "explicit_unencrypted_header": true,
+          "header_CRLF_then_NUL": true,
+          "all_MDX_records_have_encoded_terminal_NUL": true
+        },
+        "sha256": "ad83d9b8dccf490f819c2a2cb1e54138062cc3c2198ef22328c1d09e1f202855"
+      },
+      "structural_audit": {
+        "file": "02-punctuation-utf8.mdx",
+        "sha256": "ad83d9b8dccf490f819c2a2cb1e54138062cc3c2198ef22328c1d09e1f202855",
+        "size_bytes": 1269,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "UTF-8",
+          "Encrypted": "No",
+          "Compact": "No",
+          "Format": "Html",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 0,
+        "records": 11,
+        "key_blocks": 6,
+        "record_blocks": 3,
+        "uncompressed_record_bytes": 130,
+        "duplicate_headwords": 1,
+        "sample_keys": [
+          "a b",
+          "a!b",
+          "a-b",
+          "a.b",
+          "ab",
+          "Apple",
+          "apple",
+          "APPLE"
+        ],
+        "script_counts": {},
+        "redirect_records": 0,
+        "style_markers": 0,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [],
+        "resources": [],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "ad83d9b8dccf490f819c2a2cb1e54138062cc3c2198ef22328c1d09e1f202855"
+      }
+    },
+    "02-punctuation-utf16.mdx": {
+      "status": "passed",
+      "records": 11,
+      "lookups": 13,
+      "key_blocks": 9,
+      "physical_order": [
+        "a b",
+        "a!b",
+        "a-b",
+        "a.b",
+        "ab",
+        "Apple",
+        "apple",
+        "APPLE",
+        "duplicate",
+        "duplicate",
+        "zebra"
+      ],
+      "wire": {
+        "status": "passed",
+        "checks": {
+          "structure": true,
+          "explicit_unencrypted_header": true,
+          "header_CRLF_then_NUL": true,
+          "all_MDX_records_have_encoded_terminal_NUL": true
+        },
+        "sha256": "51134d6a62f057049636a9d9e8e50e7a6432759e46657fdce7b1c49a0fa962a2"
+      },
+      "structural_audit": {
+        "file": "02-punctuation-utf16.mdx",
+        "sha256": "51134d6a62f057049636a9d9e8e50e7a6432759e46657fdce7b1c49a0fa962a2",
+        "size_bytes": 1534,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "UTF-16",
+          "Encrypted": "No",
+          "Compact": "No",
+          "Format": "Html",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 0,
+        "records": 11,
+        "key_blocks": 9,
+        "record_blocks": 5,
+        "uncompressed_record_bytes": 260,
+        "duplicate_headwords": 1,
+        "sample_keys": [
+          "a b",
+          "a!b",
+          "a-b",
+          "a.b",
+          "ab",
+          "Apple",
+          "apple",
+          "APPLE"
+        ],
+        "script_counts": {},
+        "redirect_records": 0,
+        "style_markers": 0,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [],
+        "resources": [],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "51134d6a62f057049636a9d9e8e50e7a6432759e46657fdce7b1c49a0fa962a2"
+      }
+    },
+    "03-multilingual-utf8.mdx": {
+      "status": "passed",
+      "records": 8,
+      "lookups": 9,
+      "key_blocks": 4,
+      "physical_order": [
+        "alpha",
+        "Äpfel",
+        "äpfel",
+        "سلام",
+        "مرحبا",
+        "和",
+        "字",
+        "𠀀"
+      ],
+      "wire": {
+        "status": "passed",
+        "checks": {
+          "structure": true,
+          "explicit_unencrypted_header": true,
+          "header_CRLF_then_NUL": true,
+          "all_MDX_records_have_encoded_terminal_NUL": true
+        },
+        "sha256": "00d2e37d143c6434c54912309164a35151c77d82d9930e1c7e0f85805aca86bf"
+      },
+      "structural_audit": {
+        "file": "03-multilingual-utf8.mdx",
+        "sha256": "00d2e37d143c6434c54912309164a35151c77d82d9930e1c7e0f85805aca86bf",
+        "size_bytes": 1286,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "UTF-8",
+          "Encrypted": "No",
+          "Compact": "No",
+          "Format": "Html",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 0,
+        "records": 8,
+        "key_blocks": 4,
+        "record_blocks": 4,
+        "uncompressed_record_bytes": 162,
+        "duplicate_headwords": 0,
+        "sample_keys": [
+          "alpha",
+          "Äpfel",
+          "äpfel",
+          "سلام",
+          "مرحبا",
+          "和",
+          "字",
+          "𠀀"
+        ],
+        "script_counts": {
+          "Arabic_keys": 2,
+          "CJK_keys": 2
+        },
+        "redirect_records": 0,
+        "style_markers": 0,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [],
+        "resources": [],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "00d2e37d143c6434c54912309164a35151c77d82d9930e1c7e0f85805aca86bf"
+      }
+    },
+    "03-multilingual-utf16.mdx": {
+      "status": "passed",
+      "records": 8,
+      "lookups": 9,
+      "key_blocks": 6,
+      "physical_order": [
+        "alpha",
+        "Äpfel",
+        "äpfel",
+        "سلام",
+        "مرحبا",
+        "和",
+        "字",
+        "𠀀"
+      ],
+      "wire": {
+        "status": "passed",
+        "checks": {
+          "structure": true,
+          "explicit_unencrypted_header": true,
+          "header_CRLF_then_NUL": true,
+          "all_MDX_records_have_encoded_terminal_NUL": true
+        },
+        "sha256": "9e10a9c3b96bd00ea4e8a5fc9815d2e369664bc2421057fda734d5d71b4a8104"
+      },
+      "structural_audit": {
+        "file": "03-multilingual-utf16.mdx",
+        "sha256": "9e10a9c3b96bd00ea4e8a5fc9815d2e369664bc2421057fda734d5d71b4a8104",
+        "size_bytes": 1402,
+        "status": "structural_audit_passed",
+        "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+        "header": {
+          "GeneratedByEngineVersion": "2.0",
+          "Encoding": "UTF-16",
+          "Encrypted": "No",
+          "Compact": "No",
+          "Format": "Html",
+          "KeyCaseSensitive": "No",
+          "StripKey": "No"
+        },
+        "embedded_stylesheet_characters": 0,
+        "records": 8,
+        "key_blocks": 6,
+        "record_blocks": 4,
+        "uncompressed_record_bytes": 214,
+        "duplicate_headwords": 0,
+        "sample_keys": [
+          "alpha",
+          "Äpfel",
+          "äpfel",
+          "سلام",
+          "مرحبا",
+          "和",
+          "字",
+          "𠀀"
+        ],
+        "script_counts": {
+          "Arabic_keys": 2,
+          "CJK_keys": 2
+        },
+        "redirect_records": 0,
+        "style_markers": 0,
+        "empty_bodies": 0,
+        "records_without_terminal_null": 0,
+        "local_asset_references": [],
+        "resources": [],
+        "checks": [
+          "header_adler32",
+          "key_section_adler32",
+          "all_key_block_checksums_and_lengths",
+          "physical_key_counts",
+          "key_boundary_summaries",
+          "all_record_block_checksums_and_lengths",
+          "record_offsets",
+          "strict_text_decoding"
+        ],
+        "sha256_after": "9e10a9c3b96bd00ea4e8a5fc9815d2e369664bc2421057fda734d5d71b4a8104"
+      }
+    }
+  },
+  "not_proven": [
+    "native_crash_fixed",
+    "native_lookup_compatibility",
+    "legacy_profiles_native_compatibility",
+    "stylesheet_rendering",
+    "MDD_resource_rendering",
+    "all_Unicode_case_equivalence"
+  ],
+  "source_sha256": {
+    "vendor/mdictlib-0.2.8-studio-sort-v5/src/write/mod.rs": "fb7876fbc75d2e4d5ca69b7768afa551d16f6e3ba8fec05eb027b621132560a2",
+    "vendor/mdictlib-0.2.8-studio-sort-v5/src/write/studio_legacy_sort.rs": "7505500b2f4292adb396092e1d8c85c67136e3257561b3cd3dc67c29323a6456",
+    "experiments/native-controls/src/main.rs": "9fe07e6f85a63e4b0a48a8ff813d2d5814dfdfb69aac92d18cef17d4fc448eaa",
+    "scripts/minimal_reader_controls.py": "17d6c269408fc1170848ee865c9161f080bfe5e1d745e2ccc7bb473f23c246c4",
+    "experiments/native-controls/Cargo.lock": "c42a9cf51935a372e4188ad8c5fa8912ed086e8b6225aa8dccd973b6255c124a"
+  }
+}

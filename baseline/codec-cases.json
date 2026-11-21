@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "Title": "Studio 中文 العربية & \"quotes\" 'apostrophe'",
+    "Description": "<p>中文 / العربية & \"quoted\" > <</p>",
+    "StyleSheet": "1\n<b class=\"sense\">& text\n</b>",
+    "Format": "Html"
+  },
+  "mdd_metadata": {
+    "Title": "Resources 中文 العربية & \"quotes\"",
+    "Description": "<p>Fonts & images</p>"
+  },
+  "encodings": [
+    {"id":"utf8", "rust":"Utf8", "python":"utf-8", "header":"UTF-8", "entries":[
+      {"key":"字", "text":"<p>Chinese 字 & punctuation.</p>"},
+      {"key":"字", "text":"<p>Duplicate entry.</p>"},
+      {"key":"مرحبا", "text":"<p dir=\"rtl\">أهلاً بالعالم</p>"},
+      {"key":"𠀀😀", "text":"<p>Supplementary 𠀀 and emoji 😀</p>"}
+    ]},
+    {"id":"utf16le", "rust":"Utf16Le", "python":"utf-16le", "header":"UTF-16LE", "entries":[
+      {"key":"字", "text":"<p>Chinese 字 & punctuation.</p>"},
+      {"key":"字", "text":"<p>Duplicate entry.</p>"},
+      {"key":"مرحبا", "text":"<p dir=\"rtl\">أهلاً بالعالم</p>"},
+      {"key":"𠀀😀", "text":"<p>Supplementary 𠀀 and emoji 😀</p>"}
+    ]},
+    {"id":"big5", "rust":"Big5", "python":"big5", "header":"BIG5", "entries":[
+      {"key":"字", "text":"<p>文字與傳統。</p>"},
+      {"key":"字", "text":"<p>第二個解釋。</p>"},
+      {"key":"和", "text":"<p>和平。</p>"},
+      {"key":"傳", "text":"<p>傳統。</p>"}
+    ]},
+    {"id":"gbk", "rust":"Gbk", "python":"gbk", "header":"GBK", "entries":[
+      {"key":"字", "text":"<p>文字与传统。</p>"},
+      {"key":"字", "text":"<p>第二个解释。</p>"},
+      {"key":"汉语", "text":"<p>汉语词典。</p>"},
+      {"key":"绿色", "text":"<p>绿色。</p>"}
+    ]},
+    {"id":"gb18030", "rust":"Gb18030", "python":"gb18030", "header":"GB18030", "entries":[
+      {"key":"字", "text":"<p>汉语。</p>"},
+      {"key":"字", "text":"<p>第二个解释。</p>"},
+      {"key":"𠀀", "text":"<p>Supplementary 𠀀</p>"},
+      {"key":"😀", "text":"<p>Emoji 😀</p>"}
+    ]}
+  ],
+  "negative_entries": [
+    {"id":"big5-unencodable-key", "encoding":"Big5", "key":"😀", "text":"body"},
+    {"id":"big5-unencodable-body", "encoding":"Big5", "key":"word", "text":"😀"},
+    {"id":"gbk-unencodable-key", "encoding":"Gbk", "key":"😀", "text":"body"},
+    {"id":"gbk-unencodable-body", "encoding":"Gbk", "key":"word", "text":"😀"},
+    {"id":"utf8-nul-key", "encoding":"Utf8", "key":"a\u0000b", "text":"body"},
+    {"id":"utf16le-nul-key", "encoding":"Utf16Le", "key":"a\u0000b", "text":"body"}
+  ],
+  "resources": [
+    {"key":"\\images\\字.bin", "bytes":[0,255,128,0,13,10]},
+    {"key":"\\fonts\\عربي.bin", "bytes":[1,0,2,0,255]},
+    {"key":"\\supplementary\\𠀀.bin", "bytes":[42,0,42]}
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "status": "fixtures_checked_native_pending",
+  "native_readers": "NOT_RUN",
+  "checks": {
+    "reader-utf16-mdict-utils-crlf": {
+      "status": "passed",
+      "scope": "Rust/Python raw records, MDD bytes, Python stylesheet substitution; no GUI rendering"
+    },
+    "reader-utf16-mdict-utils": {
+      "status": "passed",
+      "scope": "Rust/Python raw records, MDD bytes, Python stylesheet substitution; no GUI rendering"
+    },
+    "reader-utf16-mdxbuilder-crlf": {
+      "status": "passed",
+      "scope": "Rust/Python raw records, MDD bytes, Python stylesheet substitution; no GUI rendering"
+    },
+    "reader-utf16-mdxbuilder": {
+      "status": "passed",
+      "scope": "Rust/Python raw records, MDD bytes, Python stylesheet substitution; no GUI rendering"
+    },
+    "reader-utf8-mdict-utils-crlf": {
+      "status": "passed",
+      "scope": "Rust/Python raw records, MDD bytes, Python stylesheet substitution; no GUI rendering"
+    },
+    "reader-utf8-mdict-utils": {
+      "status": "passed",
+      "scope": "Rust/Python raw records, MDD bytes, Python stylesheet substitution; no GUI rendering"
+    },
+    "reader-utf8-mdxbuilder-crlf": {
+      "status": "passed",
+      "scope": "Rust/Python raw records, MDD bytes, Python stylesheet substitution; no GUI rendering"
+    },
+    "reader-utf8-mdxbuilder": {
+      "status": "passed",
+      "scope": "Rust/Python raw records, MDD bytes, Python stylesheet substitution; no GUI rendering"
+    }
+  },
+  "fixtures": [
+    {
+      "name": "reader-utf16-mdict-utils-crlf",
+      "mdx_sha256": "166064dac8b6c0487ac2fee7f3c3702ad566fbcb1e03eafa2607f9e63e0bde3a",
+      "mdd_sha256": "73511f80b6e3df3d473cbee3b19d298559536a1542f452f238689b80df6679d0"
+    },
+    {
+      "name": "reader-utf16-mdict-utils",
+      "mdx_sha256": "5c904e0823e01c140081a43a5b32ed083bb498406f5babdc30c7669680abee3d",
+      "mdd_sha256": "73511f80b6e3df3d473cbee3b19d298559536a1542f452f238689b80df6679d0"
+    },
+    {
+      "name": "reader-utf16-mdxbuilder-crlf",
+      "mdx_sha256": "9d9d741810b863256837925175e340a77794d7730835bacd0b12d7d2a44701f2",
+      "mdd_sha256": "73511f80b6e3df3d473cbee3b19d298559536a1542f452f238689b80df6679d0"
+    },
+    {
+      "name": "reader-utf16-mdxbuilder",
+      "mdx_sha256": "63647de09222de5dddfda8c0ec0caa9b85ae0da47c37b6079ceef7608c9b0ed8",
+      "mdd_sha256": "73511f80b6e3df3d473cbee3b19d298559536a1542f452f238689b80df6679d0"
+    },
+    {
+      "name": "reader-utf8-mdict-utils-crlf",
+      "mdx_sha256": "a0c7c655ef5d1e4264c48d84e134c90484cb4d249f06049b17047ce35c4007c8",
+      "mdd_sha256": "73511f80b6e3df3d473cbee3b19d298559536a1542f452f238689b80df6679d0"
+    },
+    {
+      "name": "reader-utf8-mdict-utils",
+      "mdx_sha256": "cb95a6357f2dfa046bd0ad866ae8e7267b3e12e14c766ac0db2a2803addc4b22",
+      "mdd_sha256": "73511f80b6e3df3d473cbee3b19d298559536a1542f452f238689b80df6679d0"
+    },
+    {
+      "name": "reader-utf8-mdxbuilder-crlf",
+      "mdx_sha256": "63f4a27d62678b62a119fd28c2fecccd1ead6ee3d03029c9470313ee24741621",
+      "mdd_sha256": "73511f80b6e3df3d473cbee3b19d298559536a1542f452f238689b80df6679d0"
+    },
+    {
+      "name": "reader-utf8-mdxbuilder",
+      "mdx_sha256": "407726f2469301b9eca0d303e7107fa488b9d04959c3dc4012ff9d09b5e824a2",
+      "mdd_sha256": "73511f80b6e3df3d473cbee3b19d298559536a1542f452f238689b80df6679d0"
+    }
+  ],
+  "writer_revision": 3
+}

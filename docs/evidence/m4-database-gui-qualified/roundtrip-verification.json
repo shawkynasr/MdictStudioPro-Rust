@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "database": {
+    "records": 5,
+    "rows_sha256": "78c606c8889bfd49bc2be15bb53fe582a69be8f73a29b5eef2d9c41f83f458eb"
+  },
+  "txt": {
+    "status": "passed",
+    "expected_records": 5,
+    "actual_records": 5,
+    "missing_records": 0,
+    "unexpected_records": 0,
+    "changed_definition_or_duplicate_order_keys": []
+  },
+  "database_sha256": "cce21a54995c4df980523af704f7d3f5186d9a8facf9293e9866416768e08c06",
+  "exported_txt_sha256": "66417f81f2d2da12dcae7635d4458b7e91fff4425bd8d2a960add9740b5f3e96",
+  "package_137_source_identities_matched": 94,
+  "additional_local_source_paths_not_in_package": 1528
+}

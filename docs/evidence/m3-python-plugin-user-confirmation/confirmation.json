@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-15",
+  "basis": "Uploaded output/logs read and compared; user GUI reports of no published failure/cancel folders and unchanged existing result",
+  "output": {
+    "bytes": 169,
+    "sha256": "66417f81f2d2da12dcae7635d4458b7e91fff4425bd8d2a960add9740b5f3e96",
+    "exact_fixture_match": true,
+    "records": 5
+  },
+  "stdout": "Plugin import: ordinary stdout; Native stdout write: not protocol JSON; Conversion debug print",
+  "stderr": "Fixture stderr warning",
+  "sidecar": "Sidecar retained in result bundle",
+  "failures": {
+    "destination_exists": "existing result files unchanged",
+    "intentional_exception": "no output folder",
+    "cancelled_before_publication": "no output folder"
+  },
+  "scope": "GUI acceptance for these fixtures; not a full native shell receipt, arbitrary plugin qualification, hard resource containment or cross-platform qualification."
+}

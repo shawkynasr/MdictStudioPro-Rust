@@ -1,0 +1,33 @@
+{
+  "schema": "studio-builtin-standalone-GUI-v1",
+  "date": "2026-11-20",
+  "status": "accepted_scoped_MOE_Mini_standalone_fixture",
+  "app": "m3-shell-out-mac-preview-v5/Mdict Studio Pro Preview.app",
+  "basis": "User job receipt and attached moe-mini-standalone-v5-1.txt; exact baseline byte comparison passed",
+  "receipt": {
+    "profile": "small_moe",
+    "receipt": {
+      "comments_count": 0,
+      "converter": "moe_mini",
+      "entries": 2,
+      "file_bytes": 2785,
+      "metrics": {
+        "alias_redirects": 0,
+        "primary_entries": 2,
+        "skipped_rows_or_lines": 1,
+        "traditional_entries": 0
+      },
+      "profile": "larger-owned-converters-v1",
+      "source_sha256": "4d16e493d7686aa4db03b2619e023f81bbd93d9940ff4369fed91192c4fd5f1a",
+      "txt_profile": "canonical_v1"
+    }
+  },
+  "exact_expected_output": true,
+  "output_sha256": "0f99434d534f8949d922fffceb012620ef8a64cb783e38325525a71345f888b3",
+  "keys": [
+    "和",
+    "字"
+  ],
+  "M3_complete": false,
+  "production_release_ready": false
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-29",
+  "source": "User report in this conversation after being asked to test rebuilt corpus in both readers",
+  "user_statement": "tested working like charm.",
+  "result": "PASS_USER_REPORTED_REAL_REBUILT_RENDERING_BOTH_READERS",
+  "readers": [
+    "MDict for macOS 2.2.6 (build 200)",
+    "GoldenDict 26.6.1-7548db1682"
+  ],
+  "fixtures": {
+    "CC-CEDICT 092026.mdx": "9cffb9e2a88a89dd7e913cd386f72a26dd46abd3a3c8b8df5d7e7fa76c64a330",
+    "CC-CEDICT 092026.mdd": "136c51a20795ceb060bdda9f6406017a8b2acb389ad42a36956240fd0614ba5e",
+    "almaanyEnAr-ArEn.mdx": "d0fc9bde0291bb7245a586876f2f74a4020af83c75d4312c3a57ec066c7eb925",
+    "新华成语词典（第2版）.mdx": "0f039f507eaa83d376bec4f3aef295e2193e3f7140bfbcf1d21d39d435c5a7ae"
+  },
+  "font_companion_sha256": "8d441c9b07d0ebc200c9752a5ec505eb41a61468fba985b4f6d7c8157cf02da0",
+  "scope": "Manual native acceptance alongside the full offline report; not exhaustive native lookups or instrumented Amiri font selection"
+}

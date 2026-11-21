@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-05",
+  "files": {
+    "m2-extraction-jobs-report.json": "df63f2e4da5ecc3b4359bc8858087fd85f025a0baecb6d75297f719341066794"
+  },
+  "source_snapshots": {
+    "qualified/m2/extraction-jobs/Cargo.toml": "53a233f245ff0689dca0cc5e15e6eea2f5c8d0a7bac7fad52237a96ac2e2e212",
+    "qualified/m2/extraction-jobs/src/lib.rs": "ea9d654b99737ee711c5494f97b78a36446bad5d4759d1a0304314035e2ab2a7",
+    "qualified/m2/extraction-jobs/src/main.rs": "0d128772eb70cf52585459e05f35ac4f08a0637b46cbbc17e33fe682af34c99f",
+    "qualified/m2/extraction-jobs/src/runner.rs": "1746154682d745400d51651a899a1212feab1c6bead72f8ea1c2a8306a1cbc94",
+    "qualified/m2/extraction-jobs/src/tests.rs": "674baa54b8f0675209b7407f42521d834d922068c0b21dbb084749bb9315f278",
+    "qualified/scripts/extraction_jobs_lock.py": "c918afcff3dc9e3357c3e0c5fca055badeb8d664f42f35185567b1a7f326c591",
+    "qualified/scripts/m2_extraction_jobs.py": "8ac98407a8b8ecf74b40c87d0b81b23ddf28caa23039a668dd78dc7f79c77833",
+    "qualified/scripts/test_m2_extraction_jobs.py": "6d199f6f82570de7a7df58bea118d827536a42b825bfa716c2d17f3b00650f8e",
+    "qualified/m2/extraction-jobs/Cargo.lock": "65cc769a15fa48a7975f1318431b3db443d7c4429a3a1f223614daa984aeb851"
+  },
+  "report_library_file_id": "libfile_edf7172bbd888191ab8898c9e53f9737",
+  "result": "m2_background_extraction_shared_admission_passed_larger_paths_pending",
+  "assessment": "First background-extraction/shared-reader-admission gate accepted: successful source-bound Rust test/build receipts, 3 process scenarios, 4101 recomputed reported file hashes and 1166 reviewed controller exchanges. Two readers block extraction; one reader plus extraction was observed in all scenarios, and final reservations/reply retention were zero. All 171 previous source identities match; graph has 65 packages. Maximum observed RSS 6664192 bytes.",
+  "successful_Rust_test_stdout_attached": false,
+  "output_files_attached": false,
+  "note": "Reviewer recomputed reported file recipes and logical/controller state. User output trees and staging cleanup were checked by the exact-source-bound harness, not separately inspected. Deterministic late-commit cancellation/panic cases are represented by the successful test command and matching source, without individual test stdout.",
+  "not_qualified": [
+    "M2 completion",
+    "full source/cache/output ceilings",
+    "hard process RSS/disk quotas",
+    "shared admission with earlier packing/converter runners",
+    "larger packing/converter paths",
+    "representative real corpus pipeline",
+    "GUI event loop and cross-platform runtime qualification"
+  ]
+}

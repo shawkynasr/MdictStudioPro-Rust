@@ -1,0 +1,10 @@
+{
+  "source": "Original attached staging report and unfilled CSV, followed by separate user confirmation",
+  "files": {
+    "native-unicode-report.json": "a329973721295e8d17c499be21518a0f84d263f6f996b5136f2ddc4db7fc5bbe",
+    "checklist.csv": "6fe9cf7a4114b0c6188237dce9d2775b24f2c5072e4f2f62ff92d47c387c0a85",
+    "native-observations.json": "7a0e52bd55e0d493a595dcf49ef73e974e42fe7c7f0ade31793a8df1a2349027"
+  },
+  "integrated_report_sha256": "ebfbfebe1e3b3afb27ce3616492b7dd15ad22e0476e4853ca219ee3856f0de9e",
+  "local_native_execution": false
+}

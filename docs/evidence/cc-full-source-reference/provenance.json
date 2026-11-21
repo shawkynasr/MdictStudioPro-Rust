@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-06",
+  "files": {
+    "reference.json": "c3d8c7696c3ee4c7aa85495a4421b60c9145973b839d1cd21ce4e6cca3ffea11"
+  },
+  "method": "Exact complete original-Python CC-CEDICT output from the attached SHA-bound source; raw file hash and sequential framed record digest rechecked when preparing this batch. Existing captured Python identities retained. No native execution or memory qualification implied.",
+  "source_data_or_dictionary_outputs_bundled": false,
+  "native_qualification": false
+}

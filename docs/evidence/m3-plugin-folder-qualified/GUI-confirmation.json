@@ -1,0 +1,22 @@
+{
+  "schema": "studio-folder-discovery-GUI-v1",
+  "date": "2026-11-20",
+  "status": "accepted_scoped_standalone_folder_inventory_and_error_display",
+  "app": "m3-shell-out-mac-preview-v5/Mdict Studio Pro Preview.app",
+  "basis": "Two user screenshots, including open converter dropdown; reviewed in conversation",
+  "observed": {
+    "candidate_files": 4,
+    "ignored_entries": 0,
+    "selectable_choices": [
+      "copy_a.py · CopyPlugin",
+      "copy_b.py · CopyPlugin",
+      "options.py · OptionsPlugin"
+    ],
+    "duplicate_display_names_distinct": true,
+    "intentional_broken_py_error_visible": true,
+    "trust_unchecked_after_inspection": true
+  },
+  "scope": "Folder inventory, separate choices and per-file error display. No claim of conversion execution from this dropdown; standalone selected-file options conversion has separate exact-output evidence.",
+  "M3_complete": false,
+  "production_release_ready": false
+}

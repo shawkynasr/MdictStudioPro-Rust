@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-16",
+  "evidence": "User screenshots in this conversation",
+  "gui_checks": {
+    "five_records_in_order": true,
+    "pagination_offsets": [
+      0,
+      2,
+      4
+    ],
+    "duplicate_headword_records": 2,
+    "missing_headword_records": 0,
+    "empty_definition_preserved": true
+  },
+  "updated_native_report_received": false
+}

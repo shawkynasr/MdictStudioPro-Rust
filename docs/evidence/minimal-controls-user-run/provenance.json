@@ -1,0 +1,10 @@
+{
+  "source": "User-uploaded aggregate minimal-controls report",
+  "local_rerun": false,
+  "files": {
+    "minimal-controls-report.json": "b66bee2cd986f500a649c70fa5bc0bbe295e49464014c6fa777a90cf76d711b0",
+    "native-observations.json": "a28b3b0773f53178228dbcdc6aaac6fa60aee48273519651f3b9e07e36053e75"
+  },
+  "nested_runtime_logs_attached": false,
+  "native_evidence": "Separate manual user reports captured in native-observations.json"
+}

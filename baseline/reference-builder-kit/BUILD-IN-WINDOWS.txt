@@ -1,0 +1,11 @@
+Use your supplied MdxBuilder Version 3.0 RC1.
+Source: source.txt
+Style: style.txt
+Original format: MDict(Compact HTML)
+Encoding: UTF-16(Unicode)
+Title: 04-stylesheet
+Target: official-stylesheet.mdx
+Data/resource path: leave empty
+Encrypt: unchecked; no password or encryption key
+Build, then return official-stylesheet.mdx. Do not import it into readers yet.
+Do not use MdxBuilder 4.x for this v2 reference.

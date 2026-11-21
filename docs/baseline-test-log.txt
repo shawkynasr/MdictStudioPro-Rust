@@ -1,0 +1,20 @@
+PASS cc_cedict.txt
+PASS moe_concise.txt
+PASS moe_idioms.txt
+PASS moe_mini.txt
+PASS moe_revised.txt
+PASS moe_revised_wfg.txt
+PASS normalization.json
+PASS observations.json
+PASS sort-C-locale.json
+test_all_golden_outputs_reproduce (test_baseline.LegacyCharacterization.test_all_golden_outputs_reproduce) ... ok
+test_c_locale_sort_profiles_differ_on_non_ascii_case (test_baseline.LegacyCharacterization.test_c_locale_sort_profiles_differ_on_non_ascii_case) ... ok
+test_cell_normalization_and_encoding_boundaries (test_baseline.LegacyCharacterization.test_cell_normalization_and_encoding_boundaries) ... ok
+test_known_converter_semantics_and_defect (test_baseline.LegacyCharacterization.test_known_converter_semantics_and_defect) ... ok
+test_missing_and_invalid_input_fail (test_baseline.LegacyCharacterization.test_missing_and_invalid_input_fail) ... ok
+test_snapshot_integrity (test_baseline.LegacyCharacterization.test_snapshot_integrity) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.443s
+
+OK

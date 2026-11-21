@@ -1,0 +1,42 @@
+{
+  "schema": "studio-Mac-preview-GUI-confirmation-v1",
+  "date": "2026-11-19",
+  "status": "accepted_scoped_local_Mac_preview",
+  "build_report": "docs/evidence/m3-mac-preview-build-qualified/report.json",
+  "executable_sha256": "830d10f91f3ed884d210b7bb341864ef066a9fe43acf86bff18f644a3df9d509",
+  "evidence_basis": "User-run preview sequence and supplied screenshots; no independent execution or uploaded app binary inspection by authoring environment.",
+  "checks": {
+    "app_launch": "User opened same preview app following Finder instructions; visible app window",
+    "database": "Eight records visible, including three duplicate entries and empty body",
+    "rendered_combined": "inline-blue and marker-blue visibly blue; marker-bold visibly bold",
+    "rendered_marker": "MARKER_BLUE_OK visibly blue",
+    "settings_restart": "User confirms quit/reopen of same preview app; Arabic and Light remain visible",
+    "empty_body": "Blank rendered preview expected for selected empty record"
+  },
+  "terminal_closed_independently_verified": false,
+  "full_M3_complete": false,
+  "production_release_ready": false,
+  "scope": "Local unsigned Intel Mac preview checkpoint only; not other architectures/platforms, full original-app parity, external Python packaged portability, exhaustive security, signing/notarization or distribution.",
+  "screenshots": [
+    {
+      "name": "截屏2026-11-19 22.37.16.png",
+      "sha256": "51fda453f03e7d4dbba0f71069e607ec2123cb7be0b3fbc0044c1fd88f875151"
+    },
+    {
+      "name": "截屏2026-11-19 22.37.29.png",
+      "sha256": "6de946ac28b90ab778962a49991230c64197d10292913a5f6a555d22d7caff53"
+    },
+    {
+      "name": "截屏2026-11-19 22.39.11.png",
+      "sha256": "cac472d44cfd89a3be81b39d49e9d60bcc5df05f87cefdd6c14a65c5a699c45a"
+    },
+    {
+      "name": "截屏2026-11-19 22.42.30.png",
+      "sha256": "22efce3c668e8914ddbe6fdc04ac72417a09aa0c4476b94fa847d31af8574593"
+    },
+    {
+      "name": "截屏2026-11-19 22.42.40.png",
+      "sha256": "5342f92e13bb23474eb39e850d7439bfaa8b926b8ec785a25b966f2666206d87"
+    }
+  ]
+}

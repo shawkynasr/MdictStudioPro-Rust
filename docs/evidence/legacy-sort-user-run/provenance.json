@@ -1,0 +1,15 @@
+{
+  "source": "User-uploaded sorting report and experiment Cargo.lock",
+  "engine": "mdictlib 0.2.8 with studio-legacy-sort-experiment-v1",
+  "run_date": null,
+  "compiler": null,
+  "local_rerun": false,
+  "files": {
+    "Cargo.lock": "832527875540ca97c9af5ee227c0f38d3f03eed9c16c26a0c63fed51285f7a8e",
+    "sort-report.json": "c90dfd828102c72ac6cc89224031b8d87e38d0b38b5e6c288c9d8821e67cf847"
+  },
+  "limits": [
+    "Path dependency has no registry checksum; Cargo.lock alone does not fingerprint local patched source",
+    "No external reader, non-C-locale or complete Unicode-lowercase compatibility proof"
+  ]
+}

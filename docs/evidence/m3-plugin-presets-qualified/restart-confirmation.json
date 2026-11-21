@@ -1,0 +1,22 @@
+{
+  "schema": "studio-plugin-presets-restart-confirmation-v1",
+  "date": "2026-11-19",
+  "status": "accepted_scoped_preset_restart_check",
+  "preset_name": "Options demo",
+  "class_shown": "NoisyPlugin",
+  "user_reports_quit_reopen_and_load": true,
+  "visible_fields_restored": [
+    "Python executable (.venv/bin/python)",
+    "plugin file (noisy_plugin.py)",
+    "class (NoisyPlugin)"
+  ],
+  "source_and_parent_empty_after_reopen": true,
+  "options_restored_and_trust_unchecked": "User confirmed in response to the explicit combined question; not visible in the screenshot crop.",
+  "user_confirmation": "Yes, when click Options demo",
+  "screenshot_sha256": {
+    "截屏2026-11-19 20.44.41.png": "66541a54cd64c4eedf3f66d9b623fda2918051cfd87eb053f3aa6c6caf67ad8c",
+    "截屏2026-11-19 20.45.25.png": "b1d632017b3395aafaaedbdd90de2f18e6f0329b9112f7e436d4065478f88442"
+  },
+  "excluded_attachment": "The earlier 19.47.27 duplicate shows an old layout and different values; it is not used as restart evidence.",
+  "scope": "User restart/load attestation and reviewed screenshot fields. No new plugin conversion after reload, manual update/delete check, arbitrary preset compatibility or full M3 completion is claimed. Screenshots are not bundled."
+}

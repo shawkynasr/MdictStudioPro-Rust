@@ -1,0 +1,43 @@
+{
+  "schema": "studio-builtin-standalone-GUI-v1",
+  "date": "2026-11-20",
+  "status": "accepted_scoped_standalone_fixture",
+  "app": "m3-shell-out-mac-preview-v5/Mdict Studio Pro Preview.app",
+  "basis": "User receipt and attached TXT reviewed in conversation",
+  "receipt": {
+    "profile": "grouped_moe",
+    "receipt": {
+      "source_sha256": "4d16e493d7686aa4db03b2619e023f81bbd93d9940ff4369fed91192c4fd5f1a",
+      "groups": 2,
+      "primary_entries": 2,
+      "input_rows": 4,
+      "skipped_rows": 1,
+      "pipeline_profile": "moe-grouped-disk-rows-txt-v1",
+      "index_charge_bytes": 66252,
+      "largest_group_input_bytes": 890,
+      "largest_group_rows": 2,
+      "row_spool_bytes": 2102,
+      "row_digest": {
+        "framed_rows_sha256": "4b83247ea165558d8543b67d73d91bc81362ebc155dd37c396320f80be8b1d45",
+        "key_bytes": 1004,
+        "pairs": 96,
+        "rows": 4,
+        "value_bytes": 509
+      },
+      "converter": "moe_revised",
+      "entries": 4,
+      "alias_redirects": 2,
+      "file_bytes": 1925,
+      "body_bytes": 1883,
+      "decoded_bytes": 1901,
+      "key_bytes": 18,
+      "temporary_file_peak_bytes": 9758,
+      "file_sha256": "69388437bd1d9eb34747a68ba6e7942142fad8c5df6c1060db6b8a15d38c5dad",
+      "framed_records_sha256": "1a9f615b18eddedf442c26fcefb4695e99d46246691d2b2a42e83809730876fc"
+    }
+  },
+  "reference_comparison": "All content matches after documented alias-order normalization; receipt file hash matches attachment exactly",
+  "raw_reference_bytes_equal": false,
+  "M3_complete": false,
+  "production_release_ready": false
+}

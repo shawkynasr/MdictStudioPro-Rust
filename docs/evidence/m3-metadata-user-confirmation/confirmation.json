@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-12",
+  "basis": "user reports in this conversation",
+  "operation": "GUI edited title and description, saved as a new MDX copy",
+  "reader_results": {
+    "MDict": "new title and description; all five records correct",
+    "GoldenDict": "new title and description; all five records correct"
+  },
+  "scope": "Confirms this metadata copy and reader rendering. Does not replace a complete native shell report or establish larger-corpus metadata support."
+}

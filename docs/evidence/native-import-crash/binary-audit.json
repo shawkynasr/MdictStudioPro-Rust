@@ -1,0 +1,117 @@
+{
+  "suite": "independent-v2-structural-audit-v1",
+  "cases": [
+    {
+      "file": "reader-utf16-mdxbuilder.mdx",
+      "sha256": "63647de09222de5dddfda8c0ec0caa9b85ae0da47c37b6079ceef7608c9b0ed8",
+      "size_bytes": 2556,
+      "status": "structural_audit_passed",
+      "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+      "header": {
+        "GeneratedByEngineVersion": "2.0",
+        "Encoding": "UTF-16",
+        "Encrypted": null,
+        "Compact": "Yes",
+        "Format": "Html",
+        "KeyCaseSensitive": "No",
+        "StripKey": "No"
+      },
+      "embedded_stylesheet_characters": 146,
+      "records": 13,
+      "key_blocks": 9,
+      "record_blocks": 8,
+      "uncompressed_record_bytes": 1034,
+      "duplicate_headwords": 1,
+      "sample_keys": [
+        "a-b",
+        "ab",
+        "a b",
+        "duplicate",
+        "duplicate",
+        "redirect",
+        "resource-control",
+        "style-inline-blue"
+      ],
+      "script_counts": {
+        "Arabic_keys": 1,
+        "CJK_keys": 1
+      },
+      "redirect_records": 1,
+      "style_markers": 2,
+      "empty_bodies": 0,
+      "records_without_terminal_null": 13,
+      "local_asset_references": [
+        "images/green.png",
+        "styles/check.css"
+      ],
+      "resources": [],
+      "checks": [
+        "header_adler32",
+        "key_section_adler32",
+        "all_key_block_checksums_and_lengths",
+        "physical_key_counts",
+        "key_boundary_summaries",
+        "all_record_block_checksums_and_lengths",
+        "record_offsets",
+        "strict_text_decoding"
+      ],
+      "sha256_after": "63647de09222de5dddfda8c0ec0caa9b85ae0da47c37b6079ceef7608c9b0ed8"
+    },
+    {
+      "file": "reader-utf16-mdxbuilder.mdd",
+      "sha256": "73511f80b6e3df3d473cbee3b19d298559536a1542f452f238689b80df6679d0",
+      "size_bytes": 653,
+      "status": "structural_audit_passed",
+      "scope": "independent structural audit only; no Rust/Python engine comparison or GUI verification",
+      "header": {
+        "GeneratedByEngineVersion": "2.0",
+        "Encoding": null,
+        "Encrypted": null,
+        "Compact": null,
+        "Format": null,
+        "KeyCaseSensitive": "No",
+        "StripKey": "No"
+      },
+      "embedded_stylesheet_characters": 0,
+      "records": 2,
+      "key_blocks": 1,
+      "record_blocks": 1,
+      "uncompressed_record_bytes": 152,
+      "duplicate_headwords": 0,
+      "sample_keys": [],
+      "script_counts": {},
+      "redirect_records": 0,
+      "style_markers": 0,
+      "empty_bodies": 0,
+      "records_without_terminal_null": 0,
+      "local_asset_references": [],
+      "resources": [
+        {
+          "path": "\\images\\green.png",
+          "bytes": 87,
+          "sha256": "0a8e85b2c59f3e37e147fe5dae41444ddc88bed32134c026ba8cf782841f14fc"
+        },
+        {
+          "path": "\\styles\\check.css",
+          "bytes": 65,
+          "sha256": "3920b00897b17d7e089cda796d08f10ccc698e331558570df124dfa30431113f",
+          "css_url_references": []
+        }
+      ],
+      "checks": [
+        "header_adler32",
+        "key_section_adler32",
+        "all_key_block_checksums_and_lengths",
+        "physical_key_counts",
+        "key_boundary_summaries",
+        "all_record_block_checksums_and_lengths",
+        "record_offsets",
+        "strict_text_decoding"
+      ],
+      "sha256_after": "73511f80b6e3df3d473cbee3b19d298559536a1542f452f238689b80df6679d0"
+    }
+  ],
+  "native_readers": "NOT_RUN",
+  "Rust_engine": "NOT_RUN",
+  "mdict_utils": "NOT_RUN"
+}

@@ -1,0 +1,45 @@
+{
+  "status": "qualified_bounded_real_packing_and_exclusive_index_admission",
+  "report_library_file_id": "libfile_ded1ec3018c881919b7bb4e489d6bc70",
+  "files": {
+    "m2-real-publication-report.json": "6c3850f2446b716b75bf13b5d1f660f348680b2fffc02d8a687e1317f0bd4a61"
+  },
+  "source_snapshots": {
+    "qualified/docs/evidence/real-publication-preflight/reference.json": "9ed828530c6edbbd648ef38cdab2b078e3567efc3aa6cd1920d05445e6c742f4",
+    "qualified/m2/real-publication-runtime/Cargo.lock": "edae4fc57087e28389dcc76e1653d5b8dedc0bebbe67194743755c85e6560c6f",
+    "qualified/m2/real-publication-runtime/Cargo.toml": "fc7de43ebe6e45a575f76b83d536e83f311d0e98ed4a771152866a61893f3a57",
+    "qualified/m2/real-publication-runtime/src/concise.rs": "1a6ebd82faf1b9a986f166013f1586f7b4ee10f07dc7a5ed6b94fe832d30c6a5",
+    "qualified/m2/real-publication-runtime/src/concise_disk.rs": "f564c5d7bff6396750c584b5374d9020a4757d7891df92d0bf4663c109076c61",
+    "qualified/m2/real-publication-runtime/src/concise_publication.rs": "80c5cba076d4ea216d45eb9cf33824be2c344cf4464bb8893a21866a2c4d3298",
+    "qualified/m2/real-publication-runtime/src/concise_text.rs": "4d59872ca2c840c946af1208d4084cf1f8da5e93f942d398cb15680e6a6967de",
+    "qualified/m2/real-publication-runtime/src/converters.rs": "93fe1937c7b167485450b1dc4a4e085a0744da22a88951e07732dc6bdfebdaf8",
+    "qualified/m2/real-publication-runtime/src/index_jobs.rs": "ffa1f6c900255292949106be0eb112fe2dfa7266ea8d2fcc4ac99277a3d9a25a",
+    "qualified/m2/real-publication-runtime/src/lib.rs": "bd142fd0a9bec0ffd28edc9ceb01204c9f9c46c990a226c939eb77d3ca2268f5",
+    "qualified/m2/real-publication-runtime/src/main.rs": "17aacd880ca10f0c24880015f881631af89f32efa217b3703dbb3b96c83505b0",
+    "qualified/m2/real-publication-runtime/src/runner.rs": "3dc3ef04f23e2b35da25a47296d5c0218407c01e1a0d25bac592eb146ce2e6cc",
+    "qualified/m2/real-publication-runtime/src/tests.rs": "173ad3ddb786fdfe54cc5d1f289a163574d8bcb287b4cb614093d63a751feb7d",
+    "qualified/m2/real-publication-runtime/src/txt.rs": "59d3b6d40733f770539fbdee6fb31f41deda71d90c0e156b88623d6eac3ae210",
+    "qualified/scripts/m2_real_publication.py": "41001fbc6978f3a93a6cc8f9108d78b8fea747e783100e026fe2881f52e883be",
+    "qualified/scripts/real_publication_lock.py": "4020f081f1206d18e986cb0c8496e3a0eaab0ce6ae209374955d8b072046c220",
+    "qualified/scripts/real_publication_oracle.py": "afa27e2f3ead5d625b6caa84e68ab34cd34979dc6083897bb258329099de3ace",
+    "qualified/scripts/test_real_publication.py": "667ba5a9b5808e7d822bcd302132c7d613f9044be3ace53c8ea7893e3a34d595"
+  },
+  "review_summary": {
+    "status": "bounded_real_packing_and_shared_index_builds_qualified_M2_partial",
+    "native_tests_passed": 36,
+    "native_commands_passed": 3,
+    "original_sources_indexed": 4,
+    "complete_sources_repacked": 3,
+    "packed_outputs": 5,
+    "CC_CEDICT_full_packing": "controlled limit refusal; not qualified",
+    "controller_exchanges": 925,
+    "qualified_source_identities": 300,
+    "dependency_packages": 68,
+    "maximum_runtime_peak_RSS_bytes": 177405952,
+    "maximum_verifier_peak_RSS_bytes": 4055040,
+    "M2_complete": false,
+    "next_scope": "full CC-CEDICT packing capacity, then M2 closeout"
+  },
+  "M2_complete": false,
+  "source_data_or_dictionary_outputs_bundled": false
+}

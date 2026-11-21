@@ -1,0 +1,10 @@
+{
+  "source": "User-uploaded Unicode profile report; qualified source snapshots match reported hashes",
+  "local_Rust_execution": false,
+  "finding": "28 scalar lowercase differences: Python Unicode16 versus Rust Unicode17; selected 45 contextual examples agree; dictionary cases not run",
+  "files": {
+    "unicode-profile-report.json": "562f560eafd7a754b941aae1c9543d802c7d580bdf32dc8a8d6fd67eef159c0a",
+    "qualified-unicode_profiles.py": "26ea7ce43144e5196b918df2e873d048e01b4c26c1b5ada0830ee151073f4296",
+    "qualified-unicode.rs": "01c00df21f37aae7be82590c0ad04b41322452beb5274edae5fe0f8ac90f6acc"
+  }
+}

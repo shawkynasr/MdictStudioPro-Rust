@@ -1,0 +1,17 @@
+{
+  "productName": "Mdict Studio Pro Preview",
+  "identifier": "com.mdictstudio.pro.preview",
+  "bundle": {
+    "active": true,
+    "targets": [
+      "app"
+    ],
+    "icon": [
+      "icons/preview.icns",
+      "icons/icon.png"
+    ],
+    "macOS": {
+      "signingIdentity": null
+    }
+  }
+}

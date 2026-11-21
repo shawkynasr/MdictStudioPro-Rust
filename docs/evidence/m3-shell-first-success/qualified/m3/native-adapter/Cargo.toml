@@ -1,0 +1,20 @@
+[workspace]
+members = ["."]
+resolver = "2"
+
+[package]
+name = "studio-native-adapter"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+studio-cc-pack-runtime = { path = "../../m2/cc-pack-runtime" }
+serde = { version = "=1.0.229", features = ["derive"] }
+serde_json = "=1.0.154"
+
+[dev-dependencies]
+tempfile = "=3.27.0"
+
+[patch.crates-io]
+mdictlib = { path = "../../vendor/mdictlib-0.2.8-studio-sort-v6" }

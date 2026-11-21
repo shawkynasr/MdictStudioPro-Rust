@@ -1,0 +1,14 @@
+{
+  "schema": "studio-stylesheet-roundtrip-v1",
+  "description": "Numeric stylesheet preservation through SQLite; seven records, two duplicate definitions.",
+  "stylesheet": "1\n<strong>\n</strong>\n2\n<span style=\"color:#0000ff\">\n</span>\n",
+  "entries": [
+    {"key":"combined","text":"<span style=\"color:#0000ff\">inline-blue</span><br>\n`2`marker-blue`1` marker-bold"},
+    {"key":"duplicate","text":"`2`DUPLICATE_ONE_BLUE"},
+    {"key":"duplicate","text":"`1`DUPLICATE_TWO_BOLD"},
+    {"key":"empty","text":""},
+    {"key":"inline","text":"<p style=\"color:#0000ff\">INLINE_BLUE_OK</p>"},
+    {"key":"marker","text":"`2`MARKER_BLUE_OK"},
+    {"key":"multilingual","text":"<div>English · 中文 · <span dir=\"rtl\">العربية</span></div>\n`2`MULTILINGUAL_BLUE_OK"}
+  ]
+}

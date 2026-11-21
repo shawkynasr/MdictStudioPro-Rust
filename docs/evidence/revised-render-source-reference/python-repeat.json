@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-07",
+  "source_sha256": "bbbac6a820cac000cabf789d81b88338d94aa14f1d7eea6e16b495cf5c8dfa80",
+  "method": "Fresh full original Revised conversion under PYTHONHASHSEED=17; streaming normalized-record comparison to first full local conversion",
+  "raw_sha256": "1eb791a0d765139facbd58cc87d75a8d086db644605bf71ccaadd5cf9908bfa0",
+  "normalized_record_digest": {
+    "records": 162636,
+    "key_bytes": 1308723,
+    "payload_bytes": 123053248,
+    "framed_records_sha256": "f54fdb3b29b9772dba421c544a7c4119506c7913c160b57534b8aab7ccde7e85"
+  },
+  "native_run": false
+}

@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-02",
+  "files": {
+    "m2-metadata-report.json": "78c45e5622e48336f6831cf1db22d3f96b0d23fbba1d4b3d885a9c706241d500"
+  },
+  "source_snapshots": {
+    "qualified/m2/v2-import/Cargo.lock": "a051908d457e9596c0496a32faca03979e9deb9880ee80129061ad25c2c1f928",
+    "qualified/m2/v2-import/Cargo.toml": "d441b0ce96872fbceb57802f2330a3ddc0c93a1dabd06b62c6f778aba383ef3e",
+    "qualified/m2/v2-import/src/application/metadata.rs": "b5b9685fc5593e637ae1cd28b3d39122b827c0da17ec8c8423c7ead718f486ff",
+    "qualified/m2/v2-import/src/application/runner/tests.rs": "f0f423b54a5190ac0bbabee0d06e0aa83bc93f705d759910387d58161bf222eb",
+    "qualified/m2/v2-import/src/application/runner.rs": "18ec195ae41751217ed65d0c75e8161693592bf9bc8af39f7d5011e1142cb458",
+    "qualified/m2/v2-import/src/application.rs": "85d140aa3df7a95ae82a975df94c09f6cd930d702af8e6c818fd8bb0c969e553",
+    "qualified/m2/v2-import/src/bin/studio-import-jobs.rs": "f9a5c3c505208afadde5c1edeb48d4d5788b41513928b364c328fd8c4d209ff1",
+    "qualified/m2/v2-import/src/bin/studio-metadata-rebuild.rs": "5ae34297d5d74f10134bef794cbeb5f243124f806de20de7c1191a3049fe1721",
+    "qualified/m2/v2-import/src/header.rs": "4baca7c9a063df4d8ea127ce9f6c6b57e695832813ca295cff00529ae12088ee",
+    "qualified/m2/v2-import/src/lib.rs": "5f8e42fcc9db5952eb8b16d773aa171a321d5217d4859c1b6bfcef96a00cc28c",
+    "qualified/m2/v2-import/src/main.rs": "a9b7345656a9dfd95881f46c147ee11b8f696a19ad16c72abe3f285767d9b805",
+    "qualified/m2/v2-import/src/mdd.rs": "f58e26346e3365625930c6b802d8b0f9e48391dc62ef5844c60d3ac79f82be45",
+    "qualified/m2/v2-import/src/mdx.rs": "f5e405bb3380c71c2dc5863a2cc6e01fb0f64d72ff14aef5befe30f7bb50f3c3",
+    "qualified/m2/v2-import/tests/application.rs": "3d90c30847fef356561e81fe81ad6db3b7d78a6acc08eca67eb73caaa5d09bb9",
+    "qualified/m2/v2-import/tests/import.rs": "cbfdbeeb4f3734958bd700bd351d5da5dfd9313736d49467c59d02dbd56dc196",
+    "qualified/m2/v2-import/tests/metadata.rs": "de50ab3dddcfefdcffdd5000e717cfcb0cae565c0cbb6fad73d15207210cb7a4",
+    "qualified/scripts/m2_metadata.py": "a92bf06bcda5f7bc08c42614bd3809fa2d3475e7fedbaf1a681845987c096ea5",
+    "qualified/scripts/test_m2_metadata.py": "2373947ecddb9656d6877713e95de8a14376ab36ddd5112add6f433075414e83"
+  },
+  "report_library_file_id": "libfile_d3f88cb4eff08191976d2637e7bb37a6",
+  "result": "m2_metadata_failed",
+  "diagnosis": "Rust test command and first rebuild passed; source-side Python record oracle crashes parsing numeric LF references in StyleSheet. Rebuilt output was already read successfully by Python before this failure.",
+  "scope": "first case did not complete all comparisons; no metadata runtime qualification claimed",
+  "native_readers": "NOT_RUN_AWAIT_OFFLINE_REVIEW"
+}

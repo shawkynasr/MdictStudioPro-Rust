@@ -1,0 +1,8 @@
+{
+  "source": "User-uploaded finalized report and subsequent manual native acceptance",
+  "local_Rust_or_reader_execution": false,
+  "files": {
+    "real-rebuild-report.json": "5ca05b4b2b7ab87f1ba265212639b26725dc3dcf7fecd4efc77a12eb590cb83d",
+    "native-observations.json": "c3c3dd2eeb9abce5c9555f44ef94d76fad2bbad9c1b0f3826d8119af8040ee77"
+  }
+}

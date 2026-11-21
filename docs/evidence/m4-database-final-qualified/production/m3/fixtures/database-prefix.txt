@@ -1,0 +1,24 @@
+apple
+First apple definition.
+</>
+application
+Application definition.
+</>
+Apple
+Uppercase apple definition.
+</>
+apple
+Second apple definition.
+</>
+a%b
+Literal percent sign.
+</>
+a_b
+Literal underscore.
+</>
+字典
+Chinese definition.
+</>
+مرحبا
+Arabic definition.
+</>

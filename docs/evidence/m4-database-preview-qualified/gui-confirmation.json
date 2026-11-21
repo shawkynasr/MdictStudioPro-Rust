@@ -1,0 +1,14 @@
+{
+  "scope": "User screenshots of database previews, package 146",
+  "confirmed": [
+    "Rendered apple body",
+    "Split preview and literal HTML",
+    "Both distinct 字 definitions",
+    "Arabic RTL",
+    "Original, Paper and Dark appearance",
+    "Blue numeric stylesheet marker with literal source",
+    "Empty entry shows blank preview/source without error"
+  ],
+  "native_report": "native-report-scoped.json",
+  "persistent_reader_qualified": false
+}

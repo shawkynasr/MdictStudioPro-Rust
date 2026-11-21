@@ -1,0 +1,13 @@
+reader,version,os,dictionary,key,check,result,notes,evidence_file
+MDict for macOS,2.2.6 (build 200),macOS,CC-CEDICT 092026,11区,Chinese headword and English definition styled by MDD CSS,NOT_RUN,,
+MDict for macOS,2.2.6 (build 200),macOS,CC-CEDICT 092026,11區,Traditional headword and English definition styled by MDD CSS,NOT_RUN,,
+MDict for macOS,2.2.6 (build 200),macOS,CC-CEDICT 092026,,Bundled fonts/icons load; check case-sensitive Merriweather references and entry-bullet sidecar,NOT_RUN,,
+MDict for macOS,2.2.6 (build 200),macOS,almaanyEnAr-ArEn,abacus,English LTR and Arabic RTL text; confirm Amiri font loads from original companion folder or matching archive,NOT_RUN,,
+MDict for macOS,2.2.6 (build 200),macOS,almaanyEnAr-ArEn,abandon,Arabic text readable and stored duplicate senses accessible,NOT_RUN,,
+MDict for macOS,2.2.6 (build 200),macOS,新华成语词典（第2版）,一世之雄,Chinese content rendered with xhcycd.css and readable pinyin,NOT_RUN,,
+GoldenDict,26.6.1-7548db1682 (master); build 2026-06-29T06:51:41Z,macOS,CC-CEDICT 092026,11区,Chinese headword and English definition styled by MDD CSS,NOT_RUN,,
+GoldenDict,26.6.1-7548db1682 (master); build 2026-06-29T06:51:41Z,macOS,CC-CEDICT 092026,11區,Traditional headword and English definition styled by MDD CSS,NOT_RUN,,
+GoldenDict,26.6.1-7548db1682 (master); build 2026-06-29T06:51:41Z,macOS,CC-CEDICT 092026,,Bundled fonts/icons load; check case-sensitive Merriweather references and entry-bullet sidecar,NOT_RUN,,
+GoldenDict,26.6.1-7548db1682 (master); build 2026-06-29T06:51:41Z,macOS,almaanyEnAr-ArEn,abacus,English LTR and Arabic RTL text; confirm Amiri font loads from original companion folder or matching archive,NOT_RUN,,
+GoldenDict,26.6.1-7548db1682 (master); build 2026-06-29T06:51:41Z,macOS,almaanyEnAr-ArEn,abandon,Arabic text readable and stored duplicate senses accessible,NOT_RUN,,
+GoldenDict,26.6.1-7548db1682 (master); build 2026-06-29T06:51:41Z,macOS,新华成语词典（第2版）,一世之雄,Chinese content rendered with xhcycd.css and readable pinyin,NOT_RUN,,

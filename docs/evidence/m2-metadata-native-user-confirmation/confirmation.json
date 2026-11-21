@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-02",
+  "status": "user_confirmed_requested_native_controls_passed",
+  "user_statement": "Yes, Confirming all five entries work, no crashes",
+  "requested_readers": [
+    "MDict",
+    "GoldenDict"
+  ],
+  "requested_files": [
+    {
+      "path": "native/metadata-utf16.mdx",
+      "sha256": "8e65bd1b7d65b191ed22cafce53fbf50b71480b3745f032de81b294497cf2660"
+    },
+    {
+      "path": "native/metadata-utf8.mdx",
+      "sha256": "07466820880e42d5e8efb98f6ceba13a219c13aae1eac35b85fadc83d7e606f8"
+    }
+  ],
+  "requested_checks": [
+    "one file at a time in each reader",
+    "inline-red and marker-red: red/bold/bordered STYLE_ONE_OK",
+    "inline-blue and marker-blue: blue/underlined STYLE_TWO_OK",
+    "plain: PLAIN_CONTROL_OK",
+    "all five entries after restart, no crashes or missing entries"
+  ],
+  "assessment": "User confirmation interpreted in the scope of the immediately preceding two-file/two-reader checklist. The user explicitly confirms all five entries work and no crashes; individual combinations, colors and restart observations were not separately itemized.",
+  "evidence_type": "user attestation in this conversation; no separate screenshot, log or dictionary bytes attached",
+  "offline_report": "docs/evidence/m2-metadata-user-run/m2-metadata-report.json",
+  "not_qualified": [
+    "general native XML metadata semantics",
+    "new-entry repacking with metadata",
+    "background metadata publication",
+    "M2 completion"
+  ]
+}

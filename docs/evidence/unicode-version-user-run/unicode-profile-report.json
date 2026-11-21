@@ -1,0 +1,527 @@
+{
+  "status": "failed_unicode_profile_qualification",
+  "checks": {},
+  "native_readers": "NOT_RUN",
+  "not_proven": [
+    "native_unicode_lookup",
+    "official_MdxBuilder_Wide_or_Narrow",
+    "full_Unicode_context_conformance",
+    "legacy_native_export",
+    "M1_completion"
+  ],
+  "environment": {
+    "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 17.0.0 (clang-1700.6.4.2)]",
+    "mdict-utils": "1.3.14",
+    "collation": "C"
+  },
+  "source_sha256": {
+    "experiments/real-rebuild/src/main.rs": "fdba29933aa8cbbf5d4525d5fee75f1f5b55a8ec4e1f39739f9e7bddcf6bcaa3",
+    "experiments/real-rebuild/src/unicode.rs": "01c00df21f37aae7be82590c0ad04b41322452beb5274edae5fe0f8ac90f6acc",
+    "experiments/real-rebuild/src/policy.rs": "940b70f40b1ec8ee397d0c0ce45e7f4e7176933bf1b6fdf9e4327e1e30b37c62",
+    "experiments/real-rebuild/src/strict.rs": "5962ffbc934ecb25e04683cebeb7b4d06b8bd80d23bddccc8d5a8377e998af09",
+    "experiments/real-rebuild/Cargo.lock": "0490f412f73e66fd7b719da2dd71470eeb315aaa9028837ae185f3437a8e867f",
+    "vendor/mdictlib-0.2.8-studio-sort-v6/src/write/mod.rs": "fb7876fbc75d2e4d5ca69b7768afa551d16f6e3ba8fec05eb027b621132560a2",
+    "vendor/mdictlib-0.2.8-studio-sort-v6/src/write/studio_legacy_sort.rs": "96908b9c995cf4f28c89eaef4a15cd96f908e81bc3c73c47f3a5acc066215af5",
+    "scripts/unicode_profiles.py": "26ea7ce43144e5196b918df2e873d048e01b4c26c1b5ada0830ee151073f4296"
+  },
+  "lowercase_mapping": {
+    "scalars_compared": 1112064,
+    "python_unicode_version": "16.0.0",
+    "rust_unicode_version": [
+      17,
+      0,
+      0
+    ],
+    "python_changed_scalars": 1460,
+    "rust_changed_scalars": 1488,
+    "differences": [
+      {
+        "codepoint": "U+A7CE",
+        "input": "꟎",
+        "python": "꟎",
+        "rust": "꟏"
+      },
+      {
+        "codepoint": "U+A7D2",
+        "input": "꟒",
+        "python": "꟒",
+        "rust": "ꟓ"
+      },
+      {
+        "codepoint": "U+A7D4",
+        "input": "꟔",
+        "python": "꟔",
+        "rust": "ꟕ"
+      },
+      {
+        "codepoint": "U+16EA0",
+        "input": "𖺠",
+        "python": "𖺠",
+        "rust": "𖺻"
+      },
+      {
+        "codepoint": "U+16EA1",
+        "input": "𖺡",
+        "python": "𖺡",
+        "rust": "𖺼"
+      },
+      {
+        "codepoint": "U+16EA2",
+        "input": "𖺢",
+        "python": "𖺢",
+        "rust": "𖺽"
+      },
+      {
+        "codepoint": "U+16EA3",
+        "input": "𖺣",
+        "python": "𖺣",
+        "rust": "𖺾"
+      },
+      {
+        "codepoint": "U+16EA4",
+        "input": "𖺤",
+        "python": "𖺤",
+        "rust": "𖺿"
+      },
+      {
+        "codepoint": "U+16EA5",
+        "input": "𖺥",
+        "python": "𖺥",
+        "rust": "𖻀"
+      },
+      {
+        "codepoint": "U+16EA6",
+        "input": "𖺦",
+        "python": "𖺦",
+        "rust": "𖻁"
+      },
+      {
+        "codepoint": "U+16EA7",
+        "input": "𖺧",
+        "python": "𖺧",
+        "rust": "𖻂"
+      },
+      {
+        "codepoint": "U+16EA8",
+        "input": "𖺨",
+        "python": "𖺨",
+        "rust": "𖻃"
+      },
+      {
+        "codepoint": "U+16EA9",
+        "input": "𖺩",
+        "python": "𖺩",
+        "rust": "𖻄"
+      },
+      {
+        "codepoint": "U+16EAA",
+        "input": "𖺪",
+        "python": "𖺪",
+        "rust": "𖻅"
+      },
+      {
+        "codepoint": "U+16EAB",
+        "input": "𖺫",
+        "python": "𖺫",
+        "rust": "𖻆"
+      },
+      {
+        "codepoint": "U+16EAC",
+        "input": "𖺬",
+        "python": "𖺬",
+        "rust": "𖻇"
+      },
+      {
+        "codepoint": "U+16EAD",
+        "input": "𖺭",
+        "python": "𖺭",
+        "rust": "𖻈"
+      },
+      {
+        "codepoint": "U+16EAE",
+        "input": "𖺮",
+        "python": "𖺮",
+        "rust": "𖻉"
+      },
+      {
+        "codepoint": "U+16EAF",
+        "input": "𖺯",
+        "python": "𖺯",
+        "rust": "𖻊"
+      },
+      {
+        "codepoint": "U+16EB0",
+        "input": "𖺰",
+        "python": "𖺰",
+        "rust": "𖻋"
+      },
+      {
+        "codepoint": "U+16EB1",
+        "input": "𖺱",
+        "python": "𖺱",
+        "rust": "𖻌"
+      },
+      {
+        "codepoint": "U+16EB2",
+        "input": "𖺲",
+        "python": "𖺲",
+        "rust": "𖻍"
+      },
+      {
+        "codepoint": "U+16EB3",
+        "input": "𖺳",
+        "python": "𖺳",
+        "rust": "𖻎"
+      },
+      {
+        "codepoint": "U+16EB4",
+        "input": "𖺴",
+        "python": "𖺴",
+        "rust": "𖻏"
+      },
+      {
+        "codepoint": "U+16EB5",
+        "input": "𖺵",
+        "python": "𖺵",
+        "rust": "𖻐"
+      },
+      {
+        "codepoint": "U+16EB6",
+        "input": "𖺶",
+        "python": "𖺶",
+        "rust": "𖻑"
+      },
+      {
+        "codepoint": "U+16EB7",
+        "input": "𖺷",
+        "python": "𖺷",
+        "rust": "𖻒"
+      },
+      {
+        "codepoint": "U+16EB8",
+        "input": "𖺸",
+        "python": "𖺸",
+        "rust": "𖻓"
+      }
+    ],
+    "scope": "Exhaustive single-scalar lowercase comparison; not all Unicode strings"
+  },
+  "contexts": [
+    {
+      "scalar_lower": "οσ",
+      "string_lower": "ος",
+      "word": "ΟΣ",
+      "python_string_lower": "ος",
+      "python_scalar_lower": "οσ"
+    },
+    {
+      "scalar_lower": "ος",
+      "string_lower": "ος",
+      "word": "ος",
+      "python_string_lower": "ος",
+      "python_scalar_lower": "ος"
+    },
+    {
+      "scalar_lower": "οσ",
+      "string_lower": "οσ",
+      "word": "οσ",
+      "python_string_lower": "οσ",
+      "python_scalar_lower": "οσ"
+    },
+    {
+      "scalar_lower": "οσα",
+      "string_lower": "οσα",
+      "word": "ΟΣΑ",
+      "python_string_lower": "οσα",
+      "python_scalar_lower": "οσα"
+    },
+    {
+      "scalar_lower": "οσα",
+      "string_lower": "οσα",
+      "word": "οσα",
+      "python_string_lower": "οσα",
+      "python_scalar_lower": "οσα"
+    },
+    {
+      "scalar_lower": "aσ",
+      "string_lower": "aς",
+      "word": "AΣ",
+      "python_string_lower": "aς",
+      "python_scalar_lower": "aσ"
+    },
+    {
+      "scalar_lower": "aς",
+      "string_lower": "aς",
+      "word": "aς",
+      "python_string_lower": "aς",
+      "python_scalar_lower": "aς"
+    },
+    {
+      "scalar_lower": "aσ",
+      "string_lower": "aσ",
+      "word": "aσ",
+      "python_string_lower": "aσ",
+      "python_scalar_lower": "aσ"
+    },
+    {
+      "scalar_lower": "aσa",
+      "string_lower": "aσa",
+      "word": "AΣA",
+      "python_string_lower": "aσa",
+      "python_scalar_lower": "aσa"
+    },
+    {
+      "scalar_lower": "aσ-b",
+      "string_lower": "aς-b",
+      "word": "aΣ-b",
+      "python_string_lower": "aς-b",
+      "python_scalar_lower": "aσ-b"
+    },
+    {
+      "scalar_lower": "i̇",
+      "string_lower": "i̇",
+      "word": "İ",
+      "python_string_lower": "i̇",
+      "python_scalar_lower": "i̇"
+    },
+    {
+      "scalar_lower": "i̇",
+      "string_lower": "i̇",
+      "word": "i̇",
+      "python_string_lower": "i̇",
+      "python_scalar_lower": "i̇"
+    },
+    {
+      "scalar_lower": "i",
+      "string_lower": "i",
+      "word": "I",
+      "python_string_lower": "i",
+      "python_scalar_lower": "i"
+    },
+    {
+      "scalar_lower": "i",
+      "string_lower": "i",
+      "word": "i",
+      "python_string_lower": "i",
+      "python_scalar_lower": "i"
+    },
+    {
+      "scalar_lower": "ı",
+      "string_lower": "ı",
+      "word": "ı",
+      "python_string_lower": "ı",
+      "python_scalar_lower": "ı"
+    },
+    {
+      "scalar_lower": "ß",
+      "string_lower": "ß",
+      "word": "ß",
+      "python_string_lower": "ß",
+      "python_scalar_lower": "ß"
+    },
+    {
+      "scalar_lower": "ß",
+      "string_lower": "ß",
+      "word": "ẞ",
+      "python_string_lower": "ß",
+      "python_scalar_lower": "ß"
+    },
+    {
+      "scalar_lower": "ss",
+      "string_lower": "ss",
+      "word": "ss",
+      "python_string_lower": "ss",
+      "python_scalar_lower": "ss"
+    },
+    {
+      "scalar_lower": "ss",
+      "string_lower": "ss",
+      "word": "SS",
+      "python_string_lower": "ss",
+      "python_scalar_lower": "ss"
+    },
+    {
+      "scalar_lower": "ſ",
+      "string_lower": "ſ",
+      "word": "ſ",
+      "python_string_lower": "ſ",
+      "python_scalar_lower": "ſ"
+    },
+    {
+      "scalar_lower": "s",
+      "string_lower": "s",
+      "word": "s",
+      "python_string_lower": "s",
+      "python_scalar_lower": "s"
+    },
+    {
+      "scalar_lower": "σ",
+      "string_lower": "σ",
+      "word": "Σ",
+      "python_string_lower": "σ",
+      "python_scalar_lower": "σ"
+    },
+    {
+      "scalar_lower": "σ",
+      "string_lower": "σ",
+      "word": "σ",
+      "python_string_lower": "σ",
+      "python_scalar_lower": "σ"
+    },
+    {
+      "scalar_lower": "ς",
+      "string_lower": "ς",
+      "word": "ς",
+      "python_string_lower": "ς",
+      "python_scalar_lower": "ς"
+    },
+    {
+      "scalar_lower": "µ",
+      "string_lower": "µ",
+      "word": "µ",
+      "python_string_lower": "µ",
+      "python_scalar_lower": "µ"
+    },
+    {
+      "scalar_lower": "μ",
+      "string_lower": "μ",
+      "word": "μ",
+      "python_string_lower": "μ",
+      "python_scalar_lower": "μ"
+    },
+    {
+      "scalar_lower": "×",
+      "string_lower": "×",
+      "word": "×",
+      "python_string_lower": "×",
+      "python_scalar_lower": "×"
+    },
+    {
+      "scalar_lower": "÷",
+      "string_lower": "÷",
+      "word": "÷",
+      "python_string_lower": "÷",
+      "python_scalar_lower": "÷"
+    },
+    {
+      "scalar_lower": "",
+      "string_lower": "",
+      "word": "",
+      "python_string_lower": "",
+      "python_scalar_lower": ""
+    },
+    {
+      "scalar_lower": "ａ",
+      "string_lower": "ａ",
+      "word": "Ａ",
+      "python_string_lower": "ａ",
+      "python_scalar_lower": "ａ"
+    },
+    {
+      "scalar_lower": "𐐨",
+      "string_lower": "𐐨",
+      "word": "𐐀",
+      "python_string_lower": "𐐨",
+      "python_scalar_lower": "𐐨"
+    },
+    {
+      "scalar_lower": "𐐨",
+      "string_lower": "𐐨",
+      "word": "𐐨",
+      "python_string_lower": "𐐨",
+      "python_scalar_lower": "𐐨"
+    },
+    {
+      "scalar_lower": "𠀀",
+      "string_lower": "𠀀",
+      "word": "𠀀",
+      "python_string_lower": "𠀀",
+      "python_scalar_lower": "𠀀"
+    },
+    {
+      "scalar_lower": "😀",
+      "string_lower": "😀",
+      "word": "😀",
+      "python_string_lower": "😀",
+      "python_scalar_lower": "😀"
+    },
+    {
+      "scalar_lower": "é",
+      "string_lower": "é",
+      "word": "é",
+      "python_string_lower": "é",
+      "python_scalar_lower": "é"
+    },
+    {
+      "scalar_lower": "é",
+      "string_lower": "é",
+      "word": "é",
+      "python_string_lower": "é",
+      "python_scalar_lower": "é"
+    },
+    {
+      "scalar_lower": "a\\b",
+      "string_lower": "a\\b",
+      "word": "a\\b",
+      "python_string_lower": "a\\b",
+      "python_scalar_lower": "a\\b"
+    },
+    {
+      "scalar_lower": "a-b",
+      "string_lower": "a-b",
+      "word": "a-b",
+      "python_string_lower": "a-b",
+      "python_scalar_lower": "a-b"
+    },
+    {
+      "scalar_lower": "ab",
+      "string_lower": "ab",
+      "word": "ab",
+      "python_string_lower": "ab",
+      "python_scalar_lower": "ab"
+    },
+    {
+      "scalar_lower": "a b",
+      "string_lower": "a b",
+      "word": "a b",
+      "python_string_lower": "a b",
+      "python_scalar_lower": "a b"
+    },
+    {
+      "scalar_lower": "a b",
+      "string_lower": "a b",
+      "word": "a b",
+      "python_string_lower": "a b",
+      "python_scalar_lower": "a b"
+    },
+    {
+      "scalar_lower": "a　b",
+      "string_lower": "a　b",
+      "word": "a　b",
+      "python_string_lower": "a　b",
+      "python_scalar_lower": "a　b"
+    },
+    {
+      "scalar_lower": "中，文",
+      "string_lower": "中，文",
+      "word": "中，文",
+      "python_string_lower": "中，文",
+      "python_scalar_lower": "中，文"
+    },
+    {
+      "scalar_lower": "中文",
+      "string_lower": "中文",
+      "word": "中文",
+      "python_string_lower": "中文",
+      "python_scalar_lower": "中文"
+    },
+    {
+      "scalar_lower": "مرحبا",
+      "string_lower": "مرحبا",
+      "word": "مرحبا",
+      "python_string_lower": "مرحبا",
+      "python_scalar_lower": "مرحبا"
+    }
+  ],
+  "error": "Compiler/Python Unicode scalar mappings differ; inspect report before selecting a frozen policy"
+}

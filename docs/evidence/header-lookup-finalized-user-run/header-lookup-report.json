@@ -1,0 +1,2363 @@
+{
+  "status": "literal_header_lookup_offline_passed_legacy_diagnostics_recorded_native_pending",
+  "checks": {
+    "literal-utf8": {
+      "status": "passed",
+      "records": 77,
+      "lookups": 71,
+      "duplicate_key_blocks": 12,
+      "key_blocks": 68,
+      "record_blocks": 14,
+      "attributes": {
+        "Compact": "No",
+        "Compat": "Yes",
+        "CreationDate": "2026-10-29",
+        "DataSourceFormat": "106",
+        "Description": "Explicit header and lookup qualification",
+        "Encoding": "UTF-8",
+        "Encrypted": "No",
+        "Format": "Html",
+        "GeneratedByEngineVersion": "2.0",
+        "KeyCaseSensitive": "No",
+        "Left2Right": "Yes",
+        "RegisterBy": "",
+        "RequiredEngineVersion": "2.0",
+        "StripKey": "No",
+        "StyleSheet": "",
+        "Title": "07-header-literal-utf8"
+      },
+      "sha256": "ed6b94c4161616483c63722db8a076b014041c216931c2b2b07228c734713cdd"
+    },
+    "literal-utf16": {
+      "status": "passed",
+      "records": 77,
+      "lookups": 71,
+      "duplicate_key_blocks": 12,
+      "key_blocks": 72,
+      "record_blocks": 27,
+      "attributes": {
+        "Compact": "No",
+        "Compat": "Yes",
+        "CreationDate": "2026-10-29",
+        "DataSourceFormat": "106",
+        "Description": "Explicit header and lookup qualification",
+        "Encoding": "UTF-16",
+        "Encrypted": "No",
+        "Format": "Html",
+        "GeneratedByEngineVersion": "2.0",
+        "KeyCaseSensitive": "No",
+        "Left2Right": "Yes",
+        "RegisterBy": "",
+        "RequiredEngineVersion": "2.0",
+        "StripKey": "No",
+        "StyleSheet": "",
+        "Title": "07-header-literal-utf16"
+      },
+      "sha256": "bed0f47e86cea7f24f7c90dbafdf9caf55c64f8ae066fb5b67bf589136aaaf3b"
+    }
+  },
+  "legacy_diagnostics": {
+    "legacy-mdict-utils": {
+      "lookup_differences": [],
+      "ordering_monotonic_under_reference_lookup": false,
+      "attributes": {
+        "Compact": "No",
+        "Compat": "Yes",
+        "CreationDate": "2026-10-29",
+        "DataSourceFormat": "106",
+        "Description": "Explicit header and lookup qualification",
+        "Encoding": "UTF-8",
+        "Encrypted": "No",
+        "Format": "Html",
+        "GeneratedByEngineVersion": "2.0",
+        "KeyCaseSensitive": "No",
+        "Left2Right": "Yes",
+        "RegisterBy": "",
+        "RequiredEngineVersion": "2.0",
+        "StripKey": "Yes",
+        "StyleSheet": "",
+        "Title": "07-header-legacy-mdict-utils"
+      },
+      "resolved_strip": true,
+      "status": "observed_not_native_qualified",
+      "note": "App legacy comparators, backslash regex quirk and reader fallback are separate contracts"
+    },
+    "legacy-mdxbuilder": {
+      "lookup_differences": [],
+      "ordering_monotonic_under_reference_lookup": false,
+      "attributes": {
+        "Compact": "No",
+        "Compat": "Yes",
+        "CreationDate": "2026-10-29",
+        "DataSourceFormat": "106",
+        "Description": "Explicit header and lookup qualification",
+        "Encoding": "UTF-8",
+        "Encrypted": "No",
+        "Format": "Html",
+        "GeneratedByEngineVersion": "2.0",
+        "KeyCaseSensitive": "No",
+        "Left2Right": "Yes",
+        "RegisterBy": "",
+        "RequiredEngineVersion": "2.0",
+        "StripKey": "Yes",
+        "StyleSheet": "",
+        "Title": "07-header-legacy-mdxbuilder"
+      },
+      "resolved_strip": true,
+      "status": "observed_not_native_qualified",
+      "note": "App legacy comparators, backslash regex quirk and reader fallback are separate contracts"
+    }
+  },
+  "alias_checks": {
+    "alias-no": {
+      "status": "passed",
+      "lookup_and_rows_equal": true,
+      "observations": {
+        "attributes": {
+          "Compact": "No",
+          "Compat": "Yes",
+          "CreationDate": "2026-10-29",
+          "DataSourceFormat": "106",
+          "Description": "Explicit header and lookup qualification",
+          "Encoding": "UTF-8",
+          "Encrypted": "No",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "Left2Right": "Yes",
+          "RegisterBy": "",
+          "RequiredEngineVersion": "2.0",
+          "Stripkey": "No",
+          "StyleSheet": "",
+          "Title": "07-header-literal-utf8"
+        },
+        "checksum_policy": "Verify",
+        "lookups": [
+          {
+            "query": "a-b",
+            "rows": [
+              {
+                "key": "a-b",
+                "text": "<p>DASH</p>"
+              }
+            ]
+          },
+          {
+            "query": "ab",
+            "rows": [
+              {
+                "key": "ab",
+                "text": "<p>PLAIN</p>"
+              }
+            ]
+          },
+          {
+            "query": "aa",
+            "rows": [
+              {
+                "key": "aa",
+                "text": "<p>AA_BETWEEN</p>"
+              }
+            ]
+          },
+          {
+            "query": "a b",
+            "rows": [
+              {
+                "key": "a b",
+                "text": "<p>SPACE</p>"
+              }
+            ]
+          },
+          {
+            "query": "a.b",
+            "rows": [
+              {
+                "key": "a.b",
+                "text": "<p>DOT</p>"
+              }
+            ]
+          },
+          {
+            "query": "a!b",
+            "rows": [
+              {
+                "key": "a!b",
+                "text": "<p>EXCLAMATION</p>"
+              }
+            ]
+          },
+          {
+            "query": "a\\b",
+            "rows": [
+              {
+                "key": "a\\b",
+                "text": "<p>BACKSLASH</p>"
+              }
+            ]
+          },
+          {
+            "query": "Apple",
+            "rows": [
+              {
+                "key": "Apple",
+                "text": "<p>TITLE_CASE</p>"
+              }
+            ]
+          },
+          {
+            "query": "apple",
+            "rows": [
+              {
+                "key": "apple",
+                "text": "<p>LOWER_ONE</p>"
+              },
+              {
+                "key": "apple",
+                "text": "<p>LOWER_TWO</p>"
+              }
+            ]
+          },
+          {
+            "query": "APPLE",
+            "rows": [
+              {
+                "key": "APPLE",
+                "text": "<p>UPPER_CASE</p>"
+              }
+            ]
+          },
+          {
+            "query": "Äpfel",
+            "rows": [
+              {
+                "key": "Äpfel",
+                "text": "<p>UMLAUT_TITLE</p>"
+              }
+            ]
+          },
+          {
+            "query": "äpfel",
+            "rows": [
+              {
+                "key": "äpfel",
+                "text": "<p>UMLAUT_LOWER</p>"
+              }
+            ]
+          },
+          {
+            "query": "字",
+            "rows": [
+              {
+                "key": "字",
+                "text": "<p>CHINESE</p>"
+              }
+            ]
+          },
+          {
+            "query": "和",
+            "rows": [
+              {
+                "key": "和",
+                "text": "<p>CHINESE_HE</p>"
+              }
+            ]
+          },
+          {
+            "query": "مرحبا",
+            "rows": [
+              {
+                "key": "مرحبا",
+                "text": "<p>ARABIC</p>"
+              }
+            ]
+          },
+          {
+            "query": "𠀀",
+            "rows": [
+              {
+                "key": "𠀀",
+                "text": "<p>SUPPLEMENTARY</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-000",
+            "rows": [
+              {
+                "key": "edge-000",
+                "text": "<p>EDGE_000</p>"
+              }
+            ]
+          },
+          {
+            "query": "duplicate",
+            "rows": [
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_01</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_02</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_03</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_04</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_05</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_06</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_07</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_08</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_09</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_10</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_11</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_12</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-001",
+            "rows": [
+              {
+                "key": "edge-001",
+                "text": "<p>EDGE_001</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-002",
+            "rows": [
+              {
+                "key": "edge-002",
+                "text": "<p>EDGE_002</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-003",
+            "rows": [
+              {
+                "key": "edge-003",
+                "text": "<p>EDGE_003</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-004",
+            "rows": [
+              {
+                "key": "edge-004",
+                "text": "<p>EDGE_004</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-005",
+            "rows": [
+              {
+                "key": "edge-005",
+                "text": "<p>EDGE_005</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-006",
+            "rows": [
+              {
+                "key": "edge-006",
+                "text": "<p>EDGE_006</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-007",
+            "rows": [
+              {
+                "key": "edge-007",
+                "text": "<p>EDGE_007</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-008",
+            "rows": [
+              {
+                "key": "edge-008",
+                "text": "<p>EDGE_008</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-009",
+            "rows": [
+              {
+                "key": "edge-009",
+                "text": "<p>EDGE_009</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-010",
+            "rows": [
+              {
+                "key": "edge-010",
+                "text": "<p>EDGE_010</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-011",
+            "rows": [
+              {
+                "key": "edge-011",
+                "text": "<p>EDGE_011</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-012",
+            "rows": [
+              {
+                "key": "edge-012",
+                "text": "<p>EDGE_012</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-013",
+            "rows": [
+              {
+                "key": "edge-013",
+                "text": "<p>EDGE_013</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-014",
+            "rows": [
+              {
+                "key": "edge-014",
+                "text": "<p>EDGE_014</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-015",
+            "rows": [
+              {
+                "key": "edge-015",
+                "text": "<p>EDGE_015</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-016",
+            "rows": [
+              {
+                "key": "edge-016",
+                "text": "<p>EDGE_016</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-017",
+            "rows": [
+              {
+                "key": "edge-017",
+                "text": "<p>EDGE_017</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-018",
+            "rows": [
+              {
+                "key": "edge-018",
+                "text": "<p>EDGE_018</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-019",
+            "rows": [
+              {
+                "key": "edge-019",
+                "text": "<p>EDGE_019</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-020",
+            "rows": [
+              {
+                "key": "edge-020",
+                "text": "<p>EDGE_020</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-021",
+            "rows": [
+              {
+                "key": "edge-021",
+                "text": "<p>EDGE_021</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-022",
+            "rows": [
+              {
+                "key": "edge-022",
+                "text": "<p>EDGE_022</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-023",
+            "rows": [
+              {
+                "key": "edge-023",
+                "text": "<p>EDGE_023</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-024",
+            "rows": [
+              {
+                "key": "edge-024",
+                "text": "<p>EDGE_024</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-025",
+            "rows": [
+              {
+                "key": "edge-025",
+                "text": "<p>EDGE_025</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-026",
+            "rows": [
+              {
+                "key": "edge-026",
+                "text": "<p>EDGE_026</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-027",
+            "rows": [
+              {
+                "key": "edge-027",
+                "text": "<p>EDGE_027</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-028",
+            "rows": [
+              {
+                "key": "edge-028",
+                "text": "<p>EDGE_028</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-029",
+            "rows": [
+              {
+                "key": "edge-029",
+                "text": "<p>EDGE_029</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-030",
+            "rows": [
+              {
+                "key": "edge-030",
+                "text": "<p>EDGE_030</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-031",
+            "rows": [
+              {
+                "key": "edge-031",
+                "text": "<p>EDGE_031</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-032",
+            "rows": [
+              {
+                "key": "edge-032",
+                "text": "<p>EDGE_032</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-033",
+            "rows": [
+              {
+                "key": "edge-033",
+                "text": "<p>EDGE_033</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-034",
+            "rows": [
+              {
+                "key": "edge-034",
+                "text": "<p>EDGE_034</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-035",
+            "rows": [
+              {
+                "key": "edge-035",
+                "text": "<p>EDGE_035</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-036",
+            "rows": [
+              {
+                "key": "edge-036",
+                "text": "<p>EDGE_036</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-037",
+            "rows": [
+              {
+                "key": "edge-037",
+                "text": "<p>EDGE_037</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-038",
+            "rows": [
+              {
+                "key": "edge-038",
+                "text": "<p>EDGE_038</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-039",
+            "rows": [
+              {
+                "key": "edge-039",
+                "text": "<p>EDGE_039</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-040",
+            "rows": [
+              {
+                "key": "edge-040",
+                "text": "<p>EDGE_040</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-041",
+            "rows": [
+              {
+                "key": "edge-041",
+                "text": "<p>EDGE_041</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-042",
+            "rows": [
+              {
+                "key": "edge-042",
+                "text": "<p>EDGE_042</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-043",
+            "rows": [
+              {
+                "key": "edge-043",
+                "text": "<p>EDGE_043</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-044",
+            "rows": [
+              {
+                "key": "edge-044",
+                "text": "<p>EDGE_044</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-045",
+            "rows": [
+              {
+                "key": "edge-045",
+                "text": "<p>EDGE_045</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-046",
+            "rows": [
+              {
+                "key": "edge-046",
+                "text": "<p>EDGE_046</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-047",
+            "rows": [
+              {
+                "key": "edge-047",
+                "text": "<p>EDGE_047</p>"
+              }
+            ]
+          },
+          {
+            "query": "missing",
+            "rows": []
+          },
+          {
+            "query": "aPpLe",
+            "rows": [
+              {
+                "key": "Apple",
+                "text": "<p>TITLE_CASE</p>"
+              },
+              {
+                "key": "apple",
+                "text": "<p>LOWER_ONE</p>"
+              },
+              {
+                "key": "APPLE",
+                "text": "<p>UPPER_CASE</p>"
+              },
+              {
+                "key": "apple",
+                "text": "<p>LOWER_TWO</p>"
+              }
+            ]
+          },
+          {
+            "query": "a?b",
+            "rows": []
+          },
+          {
+            "query": "DUPLICATE",
+            "rows": [
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_01</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_02</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_03</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_04</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_05</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_06</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_07</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_08</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_09</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_10</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_11</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_12</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge?031",
+            "rows": []
+          },
+          {
+            "query": "A\\B",
+            "rows": [
+              {
+                "key": "a\\b",
+                "text": "<p>BACKSLASH</p>"
+              }
+            ]
+          }
+        ],
+        "resolved_case_sensitive": false,
+        "resolved_strip": false,
+        "rows": [
+          {
+            "key": "a b",
+            "text": "<p>SPACE</p>"
+          },
+          {
+            "key": "a!b",
+            "text": "<p>EXCLAMATION</p>"
+          },
+          {
+            "key": "a-b",
+            "text": "<p>DASH</p>"
+          },
+          {
+            "key": "a.b",
+            "text": "<p>DOT</p>"
+          },
+          {
+            "key": "a\\b",
+            "text": "<p>BACKSLASH</p>"
+          },
+          {
+            "key": "aa",
+            "text": "<p>AA_BETWEEN</p>"
+          },
+          {
+            "key": "ab",
+            "text": "<p>PLAIN</p>"
+          },
+          {
+            "key": "Apple",
+            "text": "<p>TITLE_CASE</p>"
+          },
+          {
+            "key": "apple",
+            "text": "<p>LOWER_ONE</p>"
+          },
+          {
+            "key": "APPLE",
+            "text": "<p>UPPER_CASE</p>"
+          },
+          {
+            "key": "apple",
+            "text": "<p>LOWER_TWO</p>"
+          },
+          {
+            "key": "duplicate",
+            "text": "<p>DUP_01</p>"
+          },
+          {
+            "key": "duplicate",
+            "text": "<p>DUP_02</p>"
+          },
+          {
+            "key": "duplicate",
+            "text": "<p>DUP_03</p>"
+          },
+          {
+            "key": "duplicate",
+            "text": "<p>DUP_04</p>"
+          },
+          {
+            "key": "duplicate",
+            "text": "<p>DUP_05</p>"
+          },
+          {
+            "key": "duplicate",
+            "text": "<p>DUP_06</p>"
+          },
+          {
+            "key": "duplicate",
+            "text": "<p>DUP_07</p>"
+          },
+          {
+            "key": "duplicate",
+            "text": "<p>DUP_08</p>"
+          },
+          {
+            "key": "duplicate",
+            "text": "<p>DUP_09</p>"
+          },
+          {
+            "key": "duplicate",
+            "text": "<p>DUP_10</p>"
+          },
+          {
+            "key": "duplicate",
+            "text": "<p>DUP_11</p>"
+          },
+          {
+            "key": "duplicate",
+            "text": "<p>DUP_12</p>"
+          },
+          {
+            "key": "edge-000",
+            "text": "<p>EDGE_000</p>"
+          },
+          {
+            "key": "edge-001",
+            "text": "<p>EDGE_001</p>"
+          },
+          {
+            "key": "edge-002",
+            "text": "<p>EDGE_002</p>"
+          },
+          {
+            "key": "edge-003",
+            "text": "<p>EDGE_003</p>"
+          },
+          {
+            "key": "edge-004",
+            "text": "<p>EDGE_004</p>"
+          },
+          {
+            "key": "edge-005",
+            "text": "<p>EDGE_005</p>"
+          },
+          {
+            "key": "edge-006",
+            "text": "<p>EDGE_006</p>"
+          },
+          {
+            "key": "edge-007",
+            "text": "<p>EDGE_007</p>"
+          },
+          {
+            "key": "edge-008",
+            "text": "<p>EDGE_008</p>"
+          },
+          {
+            "key": "edge-009",
+            "text": "<p>EDGE_009</p>"
+          },
+          {
+            "key": "edge-010",
+            "text": "<p>EDGE_010</p>"
+          },
+          {
+            "key": "edge-011",
+            "text": "<p>EDGE_011</p>"
+          },
+          {
+            "key": "edge-012",
+            "text": "<p>EDGE_012</p>"
+          },
+          {
+            "key": "edge-013",
+            "text": "<p>EDGE_013</p>"
+          },
+          {
+            "key": "edge-014",
+            "text": "<p>EDGE_014</p>"
+          },
+          {
+            "key": "edge-015",
+            "text": "<p>EDGE_015</p>"
+          },
+          {
+            "key": "edge-016",
+            "text": "<p>EDGE_016</p>"
+          },
+          {
+            "key": "edge-017",
+            "text": "<p>EDGE_017</p>"
+          },
+          {
+            "key": "edge-018",
+            "text": "<p>EDGE_018</p>"
+          },
+          {
+            "key": "edge-019",
+            "text": "<p>EDGE_019</p>"
+          },
+          {
+            "key": "edge-020",
+            "text": "<p>EDGE_020</p>"
+          },
+          {
+            "key": "edge-021",
+            "text": "<p>EDGE_021</p>"
+          },
+          {
+            "key": "edge-022",
+            "text": "<p>EDGE_022</p>"
+          },
+          {
+            "key": "edge-023",
+            "text": "<p>EDGE_023</p>"
+          },
+          {
+            "key": "edge-024",
+            "text": "<p>EDGE_024</p>"
+          },
+          {
+            "key": "edge-025",
+            "text": "<p>EDGE_025</p>"
+          },
+          {
+            "key": "edge-026",
+            "text": "<p>EDGE_026</p>"
+          },
+          {
+            "key": "edge-027",
+            "text": "<p>EDGE_027</p>"
+          },
+          {
+            "key": "edge-028",
+            "text": "<p>EDGE_028</p>"
+          },
+          {
+            "key": "edge-029",
+            "text": "<p>EDGE_029</p>"
+          },
+          {
+            "key": "edge-030",
+            "text": "<p>EDGE_030</p>"
+          },
+          {
+            "key": "edge-031",
+            "text": "<p>EDGE_031</p>"
+          },
+          {
+            "key": "edge-032",
+            "text": "<p>EDGE_032</p>"
+          },
+          {
+            "key": "edge-033",
+            "text": "<p>EDGE_033</p>"
+          },
+          {
+            "key": "edge-034",
+            "text": "<p>EDGE_034</p>"
+          },
+          {
+            "key": "edge-035",
+            "text": "<p>EDGE_035</p>"
+          },
+          {
+            "key": "edge-036",
+            "text": "<p>EDGE_036</p>"
+          },
+          {
+            "key": "edge-037",
+            "text": "<p>EDGE_037</p>"
+          },
+          {
+            "key": "edge-038",
+            "text": "<p>EDGE_038</p>"
+          },
+          {
+            "key": "edge-039",
+            "text": "<p>EDGE_039</p>"
+          },
+          {
+            "key": "edge-040",
+            "text": "<p>EDGE_040</p>"
+          },
+          {
+            "key": "edge-041",
+            "text": "<p>EDGE_041</p>"
+          },
+          {
+            "key": "edge-042",
+            "text": "<p>EDGE_042</p>"
+          },
+          {
+            "key": "edge-043",
+            "text": "<p>EDGE_043</p>"
+          },
+          {
+            "key": "edge-044",
+            "text": "<p>EDGE_044</p>"
+          },
+          {
+            "key": "edge-045",
+            "text": "<p>EDGE_045</p>"
+          },
+          {
+            "key": "edge-046",
+            "text": "<p>EDGE_046</p>"
+          },
+          {
+            "key": "edge-047",
+            "text": "<p>EDGE_047</p>"
+          },
+          {
+            "key": "Äpfel",
+            "text": "<p>UMLAUT_TITLE</p>"
+          },
+          {
+            "key": "äpfel",
+            "text": "<p>UMLAUT_LOWER</p>"
+          },
+          {
+            "key": "مرحبا",
+            "text": "<p>ARABIC</p>"
+          },
+          {
+            "key": "和",
+            "text": "<p>CHINESE_HE</p>"
+          },
+          {
+            "key": "字",
+            "text": "<p>CHINESE</p>"
+          },
+          {
+            "key": "𠀀",
+            "text": "<p>SUPPLEMENTARY</p>"
+          }
+        ]
+      }
+    },
+    "alias-yes": {
+      "status": "passed",
+      "lookup_and_rows_equal": true,
+      "observations": {
+        "attributes": {
+          "Compact": "No",
+          "Compat": "Yes",
+          "CreationDate": "2026-10-29",
+          "DataSourceFormat": "106",
+          "Description": "Explicit header and lookup qualification",
+          "Encoding": "UTF-8",
+          "Encrypted": "No",
+          "Format": "Html",
+          "GeneratedByEngineVersion": "2.0",
+          "KeyCaseSensitive": "No",
+          "Left2Right": "Yes",
+          "RegisterBy": "",
+          "RequiredEngineVersion": "2.0",
+          "Stripkey": "Yes",
+          "StyleSheet": "",
+          "Title": "07-header-legacy-mdict-utils"
+        },
+        "checksum_policy": "Verify",
+        "lookups": [
+          {
+            "query": "a-b",
+            "rows": [
+              {
+                "key": "a-b",
+                "text": "<p>DASH</p>"
+              }
+            ]
+          },
+          {
+            "query": "ab",
+            "rows": [
+              {
+                "key": "ab",
+                "text": "<p>PLAIN</p>"
+              }
+            ]
+          },
+          {
+            "query": "aa",
+            "rows": [
+              {
+                "key": "aa",
+                "text": "<p>AA_BETWEEN</p>"
+              }
+            ]
+          },
+          {
+            "query": "a b",
+            "rows": [
+              {
+                "key": "a b",
+                "text": "<p>SPACE</p>"
+              }
+            ]
+          },
+          {
+            "query": "a.b",
+            "rows": [
+              {
+                "key": "a.b",
+                "text": "<p>DOT</p>"
+              }
+            ]
+          },
+          {
+            "query": "a!b",
+            "rows": [
+              {
+                "key": "a!b",
+                "text": "<p>EXCLAMATION</p>"
+              }
+            ]
+          },
+          {
+            "query": "a\\b",
+            "rows": [
+              {
+                "key": "a\\b",
+                "text": "<p>BACKSLASH</p>"
+              }
+            ]
+          },
+          {
+            "query": "Apple",
+            "rows": [
+              {
+                "key": "Apple",
+                "text": "<p>TITLE_CASE</p>"
+              }
+            ]
+          },
+          {
+            "query": "apple",
+            "rows": [
+              {
+                "key": "apple",
+                "text": "<p>LOWER_ONE</p>"
+              },
+              {
+                "key": "apple",
+                "text": "<p>LOWER_TWO</p>"
+              }
+            ]
+          },
+          {
+            "query": "APPLE",
+            "rows": [
+              {
+                "key": "APPLE",
+                "text": "<p>UPPER_CASE</p>"
+              }
+            ]
+          },
+          {
+            "query": "Äpfel",
+            "rows": [
+              {
+                "key": "Äpfel",
+                "text": "<p>UMLAUT_TITLE</p>"
+              }
+            ]
+          },
+          {
+            "query": "äpfel",
+            "rows": [
+              {
+                "key": "äpfel",
+                "text": "<p>UMLAUT_LOWER</p>"
+              }
+            ]
+          },
+          {
+            "query": "字",
+            "rows": [
+              {
+                "key": "字",
+                "text": "<p>CHINESE</p>"
+              }
+            ]
+          },
+          {
+            "query": "和",
+            "rows": [
+              {
+                "key": "和",
+                "text": "<p>CHINESE_HE</p>"
+              }
+            ]
+          },
+          {
+            "query": "مرحبا",
+            "rows": [
+              {
+                "key": "مرحبا",
+                "text": "<p>ARABIC</p>"
+              }
+            ]
+          },
+          {
+            "query": "𠀀",
+            "rows": [
+              {
+                "key": "𠀀",
+                "text": "<p>SUPPLEMENTARY</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-000",
+            "rows": [
+              {
+                "key": "edge-000",
+                "text": "<p>EDGE_000</p>"
+              }
+            ]
+          },
+          {
+            "query": "duplicate",
+            "rows": [
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_01</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_02</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_03</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_04</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_05</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_06</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_07</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_08</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_09</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_10</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_11</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_12</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-001",
+            "rows": [
+              {
+                "key": "edge-001",
+                "text": "<p>EDGE_001</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-002",
+            "rows": [
+              {
+                "key": "edge-002",
+                "text": "<p>EDGE_002</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-003",
+            "rows": [
+              {
+                "key": "edge-003",
+                "text": "<p>EDGE_003</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-004",
+            "rows": [
+              {
+                "key": "edge-004",
+                "text": "<p>EDGE_004</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-005",
+            "rows": [
+              {
+                "key": "edge-005",
+                "text": "<p>EDGE_005</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-006",
+            "rows": [
+              {
+                "key": "edge-006",
+                "text": "<p>EDGE_006</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-007",
+            "rows": [
+              {
+                "key": "edge-007",
+                "text": "<p>EDGE_007</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-008",
+            "rows": [
+              {
+                "key": "edge-008",
+                "text": "<p>EDGE_008</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-009",
+            "rows": [
+              {
+                "key": "edge-009",
+                "text": "<p>EDGE_009</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-010",
+            "rows": [
+              {
+                "key": "edge-010",
+                "text": "<p>EDGE_010</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-011",
+            "rows": [
+              {
+                "key": "edge-011",
+                "text": "<p>EDGE_011</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-012",
+            "rows": [
+              {
+                "key": "edge-012",
+                "text": "<p>EDGE_012</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-013",
+            "rows": [
+              {
+                "key": "edge-013",
+                "text": "<p>EDGE_013</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-014",
+            "rows": [
+              {
+                "key": "edge-014",
+                "text": "<p>EDGE_014</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-015",
+            "rows": [
+              {
+                "key": "edge-015",
+                "text": "<p>EDGE_015</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-016",
+            "rows": [
+              {
+                "key": "edge-016",
+                "text": "<p>EDGE_016</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-017",
+            "rows": [
+              {
+                "key": "edge-017",
+                "text": "<p>EDGE_017</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-018",
+            "rows": [
+              {
+                "key": "edge-018",
+                "text": "<p>EDGE_018</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-019",
+            "rows": [
+              {
+                "key": "edge-019",
+                "text": "<p>EDGE_019</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-020",
+            "rows": [
+              {
+                "key": "edge-020",
+                "text": "<p>EDGE_020</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-021",
+            "rows": [
+              {
+                "key": "edge-021",
+                "text": "<p>EDGE_021</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-022",
+            "rows": [
+              {
+                "key": "edge-022",
+                "text": "<p>EDGE_022</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-023",
+            "rows": [
+              {
+                "key": "edge-023",
+                "text": "<p>EDGE_023</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-024",
+            "rows": [
+              {
+                "key": "edge-024",
+                "text": "<p>EDGE_024</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-025",
+            "rows": [
+              {
+                "key": "edge-025",
+                "text": "<p>EDGE_025</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-026",
+            "rows": [
+              {
+                "key": "edge-026",
+                "text": "<p>EDGE_026</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-027",
+            "rows": [
+              {
+                "key": "edge-027",
+                "text": "<p>EDGE_027</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-028",
+            "rows": [
+              {
+                "key": "edge-028",
+                "text": "<p>EDGE_028</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-029",
+            "rows": [
+              {
+                "key": "edge-029",
+                "text": "<p>EDGE_029</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-030",
+            "rows": [
+              {
+                "key": "edge-030",
+                "text": "<p>EDGE_030</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-031",
+            "rows": [
+              {
+                "key": "edge-031",
+                "text": "<p>EDGE_031</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-032",
+            "rows": [
+              {
+                "key": "edge-032",
+                "text": "<p>EDGE_032</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-033",
+            "rows": [
+              {
+                "key": "edge-033",
+                "text": "<p>EDGE_033</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-034",
+            "rows": [
+              {
+                "key": "edge-034",
+                "text": "<p>EDGE_034</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-035",
+            "rows": [
+              {
+                "key": "edge-035",
+                "text": "<p>EDGE_035</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-036",
+            "rows": [
+              {
+                "key": "edge-036",
+                "text": "<p>EDGE_036</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-037",
+            "rows": [
+              {
+                "key": "edge-037",
+                "text": "<p>EDGE_037</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-038",
+            "rows": [
+              {
+                "key": "edge-038",
+                "text": "<p>EDGE_038</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-039",
+            "rows": [
+              {
+                "key": "edge-039",
+                "text": "<p>EDGE_039</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-040",
+            "rows": [
+              {
+                "key": "edge-040",
+                "text": "<p>EDGE_040</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-041",
+            "rows": [
+              {
+                "key": "edge-041",
+                "text": "<p>EDGE_041</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-042",
+            "rows": [
+              {
+                "key": "edge-042",
+                "text": "<p>EDGE_042</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-043",
+            "rows": [
+              {
+                "key": "edge-043",
+                "text": "<p>EDGE_043</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-044",
+            "rows": [
+              {
+                "key": "edge-044",
+                "text": "<p>EDGE_044</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-045",
+            "rows": [
+              {
+                "key": "edge-045",
+                "text": "<p>EDGE_045</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-046",
+            "rows": [
+              {
+                "key": "edge-046",
+                "text": "<p>EDGE_046</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge-047",
+            "rows": [
+              {
+                "key": "edge-047",
+                "text": "<p>EDGE_047</p>"
+              }
+            ]
+          },
+          {
+            "query": "missing",
+            "rows": []
+          },
+          {
+            "query": "aPpLe",
+            "rows": [
+              {
+                "key": "Apple",
+                "text": "<p>TITLE_CASE</p>"
+              },
+              {
+                "key": "apple",
+                "text": "<p>LOWER_ONE</p>"
+              },
+              {
+                "key": "APPLE",
+                "text": "<p>UPPER_CASE</p>"
+              },
+              {
+                "key": "apple",
+                "text": "<p>LOWER_TWO</p>"
+              }
+            ]
+          },
+          {
+            "query": "a?b",
+            "rows": [
+              {
+                "key": "a\\b",
+                "text": "<p>BACKSLASH</p>"
+              },
+              {
+                "key": "a-b",
+                "text": "<p>DASH</p>"
+              },
+              {
+                "key": "ab",
+                "text": "<p>PLAIN</p>"
+              },
+              {
+                "key": "a b",
+                "text": "<p>SPACE</p>"
+              },
+              {
+                "key": "a.b",
+                "text": "<p>DOT</p>"
+              },
+              {
+                "key": "a!b",
+                "text": "<p>EXCLAMATION</p>"
+              }
+            ]
+          },
+          {
+            "query": "DUPLICATE",
+            "rows": [
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_01</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_02</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_03</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_04</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_05</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_06</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_07</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_08</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_09</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_10</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_11</p>"
+              },
+              {
+                "key": "duplicate",
+                "text": "<p>DUP_12</p>"
+              }
+            ]
+          },
+          {
+            "query": "edge?031",
+            "rows": [
+              {
+                "key": "edge-031",
+                "text": "<p>EDGE_031</p>"
+              }
+            ]
+          },
+          {
+            "query": "A\\B",
+            "rows": [
+              {
+                "key": "a\\b",
+                "text": "<p>BACKSLASH</p>"
+              },
+              {
+                "key": "a-b",
+                "text": "<p>DASH</p>"
+              },
+              {
+                "key": "ab",
+                "text": "<p>PLAIN</p>"
+              },
+              {
+                "key": "a b",
+                "text": "<p>SPACE</p>"
+              },
+              {
+                "key": "a.b",
+                "text": "<p>DOT</p>"
+              },
+              {
+                "key": "a!b",
+                "text": "<p>EXCLAMATION</p>"
+              }
+            ]
+          }
+        ],
+        "resolved_case_sensitive": false,
+        "resolved_strip": true,
+        "rows": [
+          {
+            "key": "a\\b",
+            "text": "<p>BACKSLASH</p>"
+          },
+          {
+            "key": "aa",
+            "text": "<p>AA_BETWEEN</p>"
+          },
+          {
+            "key": "a-b",
+            "text": "<p>DASH</p>"
+          },
+          {
+            "key": "ab",
+            "text": "<p>PLAIN</p>"
+          },
+          {
+            "key": "a b",
+            "text": "<p>SPACE</p>"
+          },
+          {
+            "key": "a.b",
+            "text": "<p>DOT</p>"
+          },
+          {
+            "key": "a!b",
+            "text": "<p>EXCLAMATION</p>"
+          },
+          {
+            "key": "Apple",
+            "text": "<p>TITLE_CASE</p>"
+          },
+          {
+            "key": "apple",
+            "text": "<p>LOWER_ONE</p>"
+          },
+          {
+            "key": "APPLE",
+            "text": "<p>UPPER_CASE</p>"
+          },
+          {
+            "key": "apple",
+            "text": "<p>LOWER_TWO</p>"
+          },
+          {
+            "key": "duplicate",
+            "text": "<p>DUP_01</p>"
+          },
+          {
+            "key": "duplicate",
+            "text": "<p>DUP_02</p>"
+          },
+          {
+            "key": "duplicate",
+            "text": "<p>DUP_03</p>"
+          },
+          {
+            "key": "duplicate",
+            "text": "<p>DUP_04</p>"
+          },
+          {
+            "key": "duplicate",
+            "text": "<p>DUP_05</p>"
+          },
+          {
+            "key": "duplicate",
+            "text": "<p>DUP_06</p>"
+          },
+          {
+            "key": "duplicate",
+            "text": "<p>DUP_07</p>"
+          },
+          {
+            "key": "duplicate",
+            "text": "<p>DUP_08</p>"
+          },
+          {
+            "key": "duplicate",
+            "text": "<p>DUP_09</p>"
+          },
+          {
+            "key": "duplicate",
+            "text": "<p>DUP_10</p>"
+          },
+          {
+            "key": "duplicate",
+            "text": "<p>DUP_11</p>"
+          },
+          {
+            "key": "duplicate",
+            "text": "<p>DUP_12</p>"
+          },
+          {
+            "key": "edge-000",
+            "text": "<p>EDGE_000</p>"
+          },
+          {
+            "key": "edge-001",
+            "text": "<p>EDGE_001</p>"
+          },
+          {
+            "key": "edge-002",
+            "text": "<p>EDGE_002</p>"
+          },
+          {
+            "key": "edge-003",
+            "text": "<p>EDGE_003</p>"
+          },
+          {
+            "key": "edge-004",
+            "text": "<p>EDGE_004</p>"
+          },
+          {
+            "key": "edge-005",
+            "text": "<p>EDGE_005</p>"
+          },
+          {
+            "key": "edge-006",
+            "text": "<p>EDGE_006</p>"
+          },
+          {
+            "key": "edge-007",
+            "text": "<p>EDGE_007</p>"
+          },
+          {
+            "key": "edge-008",
+            "text": "<p>EDGE_008</p>"
+          },
+          {
+            "key": "edge-009",
+            "text": "<p>EDGE_009</p>"
+          },
+          {
+            "key": "edge-010",
+            "text": "<p>EDGE_010</p>"
+          },
+          {
+            "key": "edge-011",
+            "text": "<p>EDGE_011</p>"
+          },
+          {
+            "key": "edge-012",
+            "text": "<p>EDGE_012</p>"
+          },
+          {
+            "key": "edge-013",
+            "text": "<p>EDGE_013</p>"
+          },
+          {
+            "key": "edge-014",
+            "text": "<p>EDGE_014</p>"
+          },
+          {
+            "key": "edge-015",
+            "text": "<p>EDGE_015</p>"
+          },
+          {
+            "key": "edge-016",
+            "text": "<p>EDGE_016</p>"
+          },
+          {
+            "key": "edge-017",
+            "text": "<p>EDGE_017</p>"
+          },
+          {
+            "key": "edge-018",
+            "text": "<p>EDGE_018</p>"
+          },
+          {
+            "key": "edge-019",
+            "text": "<p>EDGE_019</p>"
+          },
+          {
+            "key": "edge-020",
+            "text": "<p>EDGE_020</p>"
+          },
+          {
+            "key": "edge-021",
+            "text": "<p>EDGE_021</p>"
+          },
+          {
+            "key": "edge-022",
+            "text": "<p>EDGE_022</p>"
+          },
+          {
+            "key": "edge-023",
+            "text": "<p>EDGE_023</p>"
+          },
+          {
+            "key": "edge-024",
+            "text": "<p>EDGE_024</p>"
+          },
+          {
+            "key": "edge-025",
+            "text": "<p>EDGE_025</p>"
+          },
+          {
+            "key": "edge-026",
+            "text": "<p>EDGE_026</p>"
+          },
+          {
+            "key": "edge-027",
+            "text": "<p>EDGE_027</p>"
+          },
+          {
+            "key": "edge-028",
+            "text": "<p>EDGE_028</p>"
+          },
+          {
+            "key": "edge-029",
+            "text": "<p>EDGE_029</p>"
+          },
+          {
+            "key": "edge-030",
+            "text": "<p>EDGE_030</p>"
+          },
+          {
+            "key": "edge-031",
+            "text": "<p>EDGE_031</p>"
+          },
+          {
+            "key": "edge-032",
+            "text": "<p>EDGE_032</p>"
+          },
+          {
+            "key": "edge-033",
+            "text": "<p>EDGE_033</p>"
+          },
+          {
+            "key": "edge-034",
+            "text": "<p>EDGE_034</p>"
+          },
+          {
+            "key": "edge-035",
+            "text": "<p>EDGE_035</p>"
+          },
+          {
+            "key": "edge-036",
+            "text": "<p>EDGE_036</p>"
+          },
+          {
+            "key": "edge-037",
+            "text": "<p>EDGE_037</p>"
+          },
+          {
+            "key": "edge-038",
+            "text": "<p>EDGE_038</p>"
+          },
+          {
+            "key": "edge-039",
+            "text": "<p>EDGE_039</p>"
+          },
+          {
+            "key": "edge-040",
+            "text": "<p>EDGE_040</p>"
+          },
+          {
+            "key": "edge-041",
+            "text": "<p>EDGE_041</p>"
+          },
+          {
+            "key": "edge-042",
+            "text": "<p>EDGE_042</p>"
+          },
+          {
+            "key": "edge-043",
+            "text": "<p>EDGE_043</p>"
+          },
+          {
+            "key": "edge-044",
+            "text": "<p>EDGE_044</p>"
+          },
+          {
+            "key": "edge-045",
+            "text": "<p>EDGE_045</p>"
+          },
+          {
+            "key": "edge-046",
+            "text": "<p>EDGE_046</p>"
+          },
+          {
+            "key": "edge-047",
+            "text": "<p>EDGE_047</p>"
+          },
+          {
+            "key": "Äpfel",
+            "text": "<p>UMLAUT_TITLE</p>"
+          },
+          {
+            "key": "äpfel",
+            "text": "<p>UMLAUT_LOWER</p>"
+          },
+          {
+            "key": "مرحبا",
+            "text": "<p>ARABIC</p>"
+          },
+          {
+            "key": "和",
+            "text": "<p>CHINESE_HE</p>"
+          },
+          {
+            "key": "字",
+            "text": "<p>CHINESE</p>"
+          },
+          {
+            "key": "𠀀",
+            "text": "<p>SUPPLEMENTARY</p>"
+          }
+        ]
+      }
+    }
+  },
+  "native_readers": "NOT_RUN",
+  "not_proven": [
+    "native_lookup_of_new_candidates",
+    "official_MdxBuilder_comparator",
+    "legacy_export_native_compatibility",
+    "all_Unicode_normalization",
+    "general_stylesheet_serialization",
+    "M1_completion"
+  ],
+  "source_sha256": {
+    "experiments/real-rebuild/src/main.rs": "3d61d77790a49cfe5c2c1e127fd03595d5561bd5613e62c0b682334686d1401b",
+    "experiments/real-rebuild/src/policy.rs": "940b70f40b1ec8ee397d0c0ce45e7f4e7176933bf1b6fdf9e4327e1e30b37c62",
+    "experiments/real-rebuild/src/strict.rs": "5962ffbc934ecb25e04683cebeb7b4d06b8bd80d23bddccc8d5a8377e998af09",
+    "experiments/real-rebuild/Cargo.lock": "0490f412f73e66fd7b719da2dd71470eeb315aaa9028837ae185f3437a8e867f",
+    "vendor/mdictlib-0.2.8-studio-sort-v6/src/write/mod.rs": "fb7876fbc75d2e4d5ca69b7768afa551d16f6e3ba8fec05eb027b621132560a2",
+    "vendor/mdictlib-0.2.8-studio-sort-v6/src/write/studio_legacy_sort.rs": "96908b9c995cf4f28c89eaef4a15cd96f908e81bc3c73c47f3a5acc066215af5",
+    "scripts/header_lookup.py": "d509926fa324f140fc559b39e2560c68fa74f4e559cd4778e3d201453291783e"
+  },
+  "flag_only_negative_control": {
+    "status": "passed_mismatch_detected",
+    "observation": {
+      "lookup_differences": [],
+      "ordering_monotonic_under_reference_lookup": false,
+      "attributes": {
+        "Compact": "No",
+        "Compat": "Yes",
+        "CreationDate": "2026-10-29",
+        "DataSourceFormat": "106",
+        "Description": "Explicit header and lookup qualification",
+        "Encoding": "UTF-8",
+        "Encrypted": "No",
+        "Format": "Html",
+        "GeneratedByEngineVersion": "2.0",
+        "KeyCaseSensitive": "No",
+        "Left2Right": "Yes",
+        "RegisterBy": "",
+        "RequiredEngineVersion": "2.0",
+        "StripKey": "Yes",
+        "StyleSheet": "",
+        "Title": "07-header-literal-utf8"
+      },
+      "resolved_strip": true,
+      "status": "observed_not_native_qualified",
+      "note": "App legacy comparators, backslash regex quirk and reader fallback are separate contracts"
+    }
+  },
+  "conflicting_aliases": {
+    "status": "passed_rejected_before_lookup",
+    "returncode": 1,
+    "stdout_empty": true,
+    "diagnostic": "ERROR: invalid data: conflicting aliases for header attribute StripKey"
+  },
+  "finalization": {
+    "original_report_sha256": "c284690231cdac3b3c0e821657f1683e8c2d96838294e3dffb6ef981a7f04a39",
+    "conflict_rechecked": true,
+    "dictionaries_regenerated": false,
+    "Rust_full_lookup_matrix_repeated": false,
+    "source_sha256": {
+      "scripts/finalize_header_lookup.py": "0318e1c69c68139d35daaa41685b54888c1606793a511980bf046ef513ca7cc0",
+      "scripts/header_lookup.py": "dabb0b0d659cff0c124444b54db50264a462eca71a33165fba7dbd248a50f070"
+    }
+  },
+  "native_candidates": {
+    "07-header-literal-utf8.mdx": "ed6b94c4161616483c63722db8a076b014041c216931c2b2b07228c734713cdd",
+    "07-header-literal-utf16.mdx": "bed0f47e86cea7f24f7c90dbafdf9caf55c64f8ae066fb5b67bf589136aaaf3b"
+  }
+}

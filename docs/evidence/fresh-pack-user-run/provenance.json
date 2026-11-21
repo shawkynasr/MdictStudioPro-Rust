@@ -1,0 +1,12 @@
+{
+  "source": "User-uploaded fresh-pack-report.json; source snapshots matched against reported SHA-256",
+  "local_Rust_execution": false,
+  "scope": "14 UTF8 MDX and two MDD; original six converters and boundary cases; both app legacy C-locale profiles",
+  "metadata_limit": "Only Title and Description compared; StripKey/Stripkey and default format metadata remain different",
+  "files": {
+    "fresh-pack-report.json": "765314e7f00de65d843d6c826cdcd199e814d73b84a95de042da407f8e4b49dd",
+    "qualified-main.rs": "fc525a9233b4cc5acb1b18a3787c1ad2066438a4d7957327bca9b4ab0f139d40",
+    "qualified-fresh.rs": "9160b8b31dbe030d93c3418555c82f2e56608ff80a535e6c4ab9c9d6d848e476",
+    "qualified-fresh_pack.py": "9bd96a76ec400775922a63301077e70f76b0aebdd00bd26944b080cf36dcf40b"
+  }
+}

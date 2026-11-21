@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-01",
+  "files": {
+    "m2-v2-import-report.json": "e8670d4da7aa517f55f0947ff65488d66e9c24e7c986c3ded0f5f9c0a0f715b1"
+  },
+  "source_snapshots": {
+    "qualified/m2/v2-import/Cargo.toml": "d441b0ce96872fbceb57802f2330a3ddc0c93a1dabd06b62c6f778aba383ef3e",
+    "qualified/m2/v2-import/src/header.rs": "4baca7c9a063df4d8ea127ce9f6c6b57e695832813ca295cff00529ae12088ee",
+    "qualified/m2/v2-import/src/lib.rs": "3df560d16dba81d92dc69c9e79ec377b0862dd538f4d4241ed1af29c10ae2392",
+    "qualified/m2/v2-import/src/main.rs": "a9b7345656a9dfd95881f46c147ee11b8f696a19ad16c72abe3f285767d9b805",
+    "qualified/m2/v2-import/src/mdd.rs": "f58e26346e3365625930c6b802d8b0f9e48391dc62ef5844c60d3ac79f82be45",
+    "qualified/m2/v2-import/src/mdx.rs": "f5e405bb3380c71c2dc5863a2cc6e01fb0f64d72ff14aef5befe30f7bb50f3c3",
+    "qualified/m2/v2-import/tests/import.rs": "cbfdbeeb4f3734958bd700bd351d5da5dfd9313736d49467c59d02dbd56dc196",
+    "qualified/scripts/m2_v2_import.py": "2d26b2ac428253343071f776a4b1de0b4d761144c857bc9e296c0daf290193b6",
+    "qualified/scripts/v2_import_fixtures.py": "88b3efb0011898594fc99ca48f8ff5aeff2344ee6454784f357f994cdd635677",
+    "qualified/scripts/v2_import_lock.py": "a154a1b1b6881a5150a9b50c3e521322b4cec1d14a3877141abba5d8d692c632",
+    "qualified/m2/v2-import/Cargo.lock": "a051908d457e9596c0496a32faca03979e9deb9880ee80129061ad25c2c1f928"
+  },
+  "report_library_file_id": "libfile_f398cc6f0804819180e813b938310baa",
+  "result": "Rust test command passed; fixture payload equality failed after Python base-reader invocation",
+  "legacy_writer_matrix_reached": false,
+  "diagnosis_scope": "Legacy reader strips ASCII whitespace from decoded key bytes; raw wire keys must be checked separately; report contains no row diff"
+}

@@ -1,0 +1,16 @@
+apple
+<div>A fruit.</div>
+</>
+字
+<p>First definition.</p>
+
+</>
+字
+<p>Second definition.</p>
+</>
+مرحبا
+<div dir="rtl">أهلاً وسهلاً</div>
+</>
+empty
+
+</>

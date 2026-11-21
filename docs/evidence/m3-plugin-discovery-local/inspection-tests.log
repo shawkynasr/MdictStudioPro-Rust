@@ -1,0 +1,9 @@
+test_choice_numeric_defaults_and_unsupported_schema_fallback (test_m3_plugin_inspection.InspectionTests.test_choice_numeric_defaults_and_unsupported_schema_fallback) ... ok
+test_discovers_all_local_concrete_classes_without_conversion (test_m3_plugin_inspection.InspectionTests.test_discovers_all_local_concrete_classes_without_conversion) ... ok
+test_import_errors_and_too_many_classes_return_no_catalog (test_m3_plugin_inspection.InspectionTests.test_import_errors_and_too_many_classes_return_no_catalog) ... ok
+test_no_constructor_runs_and_abstract_or_imported_classes_are_excluded (test_m3_plugin_inspection.InspectionTests.test_no_constructor_runs_and_abstract_or_imported_classes_are_excluded) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.541s
+
+OK

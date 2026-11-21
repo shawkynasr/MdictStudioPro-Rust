@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-21",
+  "status": "accepted_source_bound_v6_build_force_quit_GUI_pending",
+  "build_stages": 8,
+  "delivered_source_identities": 249,
+  "optional_exact_Mac_files": 2,
+  "protected_identities": 324,
+  "exact_lock_bindings": 7,
+  "bundle_copy_equal": true,
+  "executable_sha256": "2fdde5759b44256afcf8fddf9e52c2dad59f17c756742e588c478c3bda9b140d",
+  "native_implementation_matches_accepted_gate": true,
+  "app_launch_tested": false,
+  "force_quit_tested": false,
+  "M3_complete": false,
+  "production_release_ready": false
+}

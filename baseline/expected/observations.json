@@ -1,0 +1,94 @@
+{
+  "cc_cedict": {
+    "sha256": "8de24ce354f5d017b2e99702d82d2a81c607600386944d0000f2cd9c51ff02d0",
+    "records": 7,
+    "final_progress": 100,
+    "id": null,
+    "registration_key": "CC-CEDICT to MDict (Pro)",
+    "encodings": [
+      "utf-8",
+      "big5",
+      "gb18030"
+    ],
+    "options_schema": [],
+    "empty_error": {
+      "type": "ValueError",
+      "message": "The selected file is empty."
+    }
+  },
+  "moe_revised": {
+    "sha256": "32688acf6251bb8536d585a20e82ae668423184ff7017b7aeed96936bb864a4f",
+    "records": 4,
+    "final_progress": 100,
+    "id": null,
+    "registration_key": "教育部重編國語辭典修訂本 (Excel to MDict)",
+    "encodings": [
+      "utf-8"
+    ],
+    "options_schema": [],
+    "empty_error": {
+      "type": "ValueError",
+      "message": "No valid entries found in the Excel file."
+    }
+  },
+  "moe_revised_wfg": {
+    "sha256": "a955bbdeb60344e79f2127bb4ac19c65ff3c9a24b9162a2b85dbe8dc59bd7c04",
+    "records": 2,
+    "final_progress": 100,
+    "id": null,
+    "registration_key": "教育部重編國語辭典 (WFG Design) (Excel to MDict)",
+    "encodings": [
+      "utf-8"
+    ],
+    "options_schema": [],
+    "empty_error": {
+      "type": "ValueError",
+      "message": "No valid entries found."
+    }
+  },
+  "moe_concise": {
+    "sha256": "d6bffa874e702914802c5e8a574e5d83930ab723f2e4655b739b1555b2e6468a",
+    "records": 2,
+    "final_progress": 100,
+    "id": null,
+    "registration_key": "教育部國語辭典簡編本 (Excel to MDict)",
+    "encodings": [
+      "utf-8"
+    ],
+    "options_schema": [],
+    "empty_error": {
+      "type": "ValueError",
+      "message": "No valid entries found under the '字詞名' column."
+    }
+  },
+  "moe_idioms": {
+    "sha256": "f1e2fdb6ef77bed7aeee1ee66989fa00c3ac662e80a63712c2295916b157ac0c",
+    "records": 2,
+    "final_progress": 100,
+    "id": null,
+    "registration_key": "教育部成語典 (Excel to MDict)",
+    "encodings": [
+      "utf-8"
+    ],
+    "options_schema": [],
+    "empty_error": {
+      "type": "ValueError",
+      "message": "No valid entries found under the '成語' column."
+    }
+  },
+  "moe_mini": {
+    "sha256": "0f99434d534f8949d922fffceb012620ef8a64cb783e38325525a71345f888b3",
+    "records": 2,
+    "final_progress": 100,
+    "id": null,
+    "registration_key": "教育部國語小字典 (Excel to MDict)",
+    "encodings": [
+      "utf-8"
+    ],
+    "options_schema": [],
+    "empty_error": {
+      "type": "ValueError",
+      "message": "No valid entries found under the '單字' column. Please check your Excel headers."
+    }
+  }
+}

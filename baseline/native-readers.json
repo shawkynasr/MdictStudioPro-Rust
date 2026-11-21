@@ -1,0 +1,19 @@
+{
+  "source": "User-reported installed reader versions",
+  "rendering_status": "synthetic_minimal_stylesheet_MDD_rendering_passed_real_rebuild_pending",
+  "readers": [
+    {
+      "name": "MDict for macOS",
+      "version": "2.2.6 (build 200)",
+      "os": "macOS",
+      "result": "MINIMAL_STYLESHEET_AND_SYNTHETIC_MDD_RENDERING_PASS_USER_REPORTED"
+    },
+    {
+      "name": "GoldenDict",
+      "version": "26.6.1-7548db1682 (master)",
+      "build_timestamp": "2026-06-29T06:51:41Z",
+      "os": "macOS",
+      "result": "MINIMAL_STYLESHEET_AND_SYNTHETIC_MDD_RENDERING_PASS_USER_REPORTED"
+    }
+  ]
+}

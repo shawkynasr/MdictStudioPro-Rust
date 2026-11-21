@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-09",
+  "slice": "Tauri shell and native command/job adapter",
+  "status": "authored_pending_native_compilation_and_launch",
+  "first_native_attempt": "blocked_at_offline_metadata_by_uncached_arbitrary_1.5.0_before_tests_or_npm_install",
+  "bootstrap_fix": "--install_fetches_adapter_crates_before_full_locked_offline_metadata_and_tests",
+  "second_native_attempt": "adapter_compiled_3_of_4_tests_passed; unexpected_field_on_poll_accepted_by_unit_variant_decoder",
+  "command_boundary_fix": "empty_struct_variants_for_poll_and_capabilities; unknown_field_and_valid_command_checks_retained; native_rerun_pending",
+  "third_native_attempt": "all_4_adapter_tests_passed; frontend_install_build_and_tauri_info_passed; desktop_compile_failed_on_missing_icon_nonclone_event_payload_and_menu_argument",
+  "desktop_compile_fixes": "bundled_RGBA_icon; cloneable_JSON_shutdown_event_payload; Menu_default_receives_app_handle; native_desktop_recheck_pending",
+  "fourth_native_attempt": "blocked_before_tests_by_seed_lock_normalization_with_locked_on_cached_retry",
+  "cached_retry_fix": "offline_adapter_metadata_may_normalize_only_M3_lock; revalidate_registry_versions_checksums_before_locked_tests",
+  "M2_accepted_sources_changed": false,
+  "M3_complete": false,
+  "native_Rust_tests_run_locally": false,
+  "Svelte_build_run_locally": false,
+  "blockers_in_authoring_environment": ["Rust toolchain absent", "npm registry access returned HTTP 403"],
+  "local_checks": ["Python contracts", "JSON/TOML parsing", "324 accepted M2 source identities"],
+  "native_command": "python3 scripts/m3_shell.py --install --output m3-shell-out",
+  "native_launch": "cd m3/desktop && npm run tauri dev",
+  "deferred": ["isolated rendered dictionary preview", "coordinated metadata/redirect adapters", "Python plugin bridge", "full original GUI parity", "release packaging/signing", "Windows/Linux qualification", "MDX v3"]
+}

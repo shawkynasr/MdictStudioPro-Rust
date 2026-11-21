@@ -1,0 +1,142 @@
+{
+  "status": "m2_resources_passed_remaining_M2_work_pending",
+  "M1": "complete_unchanged",
+  "M2_complete": false,
+  "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 17.0.0 (clang-1700.6.4.2)]",
+  "platform": "macOS-15.8.2-x86_64-i386-64bit-Mach-O",
+  "steps": [
+    {
+      "name": "resource-tests",
+      "returncode": 0,
+      "log": "resource-tests.log"
+    },
+    {
+      "name": "resource-smoke",
+      "returncode": 0,
+      "log": "resource-smoke.log"
+    },
+    {
+      "name": "resource-reopen-0",
+      "returncode": 0,
+      "log": "resource-reopen-0.log"
+    },
+    {
+      "name": "resource-reopen-1",
+      "returncode": 0,
+      "log": "resource-reopen-1.log"
+    },
+    {
+      "name": "resource-reopen-2",
+      "returncode": 0,
+      "log": "resource-reopen-2.log"
+    },
+    {
+      "name": "resource-reopen-3",
+      "returncode": 0,
+      "log": "resource-reopen-3.log"
+    },
+    {
+      "name": "resource-reopen-4",
+      "returncode": 0,
+      "log": "resource-reopen-4.log"
+    },
+    {
+      "name": "resource-reopen-5",
+      "returncode": 0,
+      "log": "resource-reopen-5.log"
+    },
+    {
+      "name": "resource-missing",
+      "returncode": 0,
+      "log": "resource-missing.log"
+    },
+    {
+      "name": "extract-reopen",
+      "returncode": 0,
+      "log": "extract-reopen.log"
+    },
+    {
+      "name": "extract-existing-refused",
+      "returncode": 1,
+      "log": "extract-existing-refused.log",
+      "expected_refusal": "destination_exists"
+    },
+    {
+      "name": "unsafe-refused",
+      "returncode": 1,
+      "log": "unsafe-refused.log",
+      "expected_refusal": "unsafe_path"
+    },
+    {
+      "name": "aliases-refused",
+      "returncode": 1,
+      "log": "aliases-refused.log",
+      "expected_refusal": "path_collision"
+    }
+  ],
+  "checks": {
+    "resources": 6,
+    "mdd_sha256": "6a6f31b93f93c0a7a7ed6aafc503f7e33968597e5daafdd77612ad16ea6fca74",
+    "independent_python_bytes": "passed",
+    "wire_audit": "passed",
+    "separate_process_reopen": "passed",
+    "extraction_inventory": [
+      {
+        "path": "data/all.bin",
+        "bytes": 256,
+        "sha256": "40aff2e9d2d8922e47afd4648e6967497158785fbd1da870e7110266bf944880"
+      },
+      {
+        "path": "data/empty.bin",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "fonts/probe.ttf",
+        "bytes": 1404,
+        "sha256": "bb3f262bf21c6f63eca131f239113797636761a866d39756943ae702a318fb1f"
+      },
+      {
+        "path": "styles/probe.css",
+        "bytes": 74,
+        "sha256": "ac56b03d2f6241baa26a1569854442731650f1bf1ac853c1e00bfb79da2b47c2"
+      },
+      {
+        "path": "العربية/نص.txt",
+        "bytes": 25,
+        "sha256": "9262a0a791605071a500c1a15bef2d5efcc6c8f198567105e9ab364811377e9f"
+      },
+      {
+        "path": "字/说明.txt",
+        "bytes": 12,
+        "sha256": "ce4e2a7478bad66e09e5c41061067e068ba21af8342dff770c69a71216b649da"
+      }
+    ],
+    "existing_destination_preserved": "passed",
+    "unsafe_and_alias_pack_refusals": "passed"
+  },
+  "native_readers": "NOT_REQUESTED",
+  "scope": "bounded versioned MDD, exact resource lookup and staged extraction",
+  "source_sha256": {
+    "m2/Cargo.lock": "52204c28ecb6334cd1bdc16aa92c680094bad032343dac074a2d3f1bacc892b4",
+    "m2/Cargo.toml": "3ae1cbaf4026d1b8afeffc3c9e7a05ad60e34cf8cc116e8d59dbb6576ca547cb",
+    "m2/studio-cli/Cargo.toml": "fda21775f6b11f7e8775a8d50b0078fb22d9142e7ff234c51e42c8e0cb59b4d5",
+    "m2/studio-cli/src/main.rs": "ff5dc7d35a95e44cd3998d2dfa78c5ed2ebf89bd1ea4580c52b6b9a0406b1826",
+    "m2/studio-core/Cargo.toml": "5854ebd0acc2b11f62c8001fece7b89d7451ecbee87f70a3adb66059bbbd45cc",
+    "m2/studio-core/src/casing.rs": "279000271dc5c4c6997df2a138da252293ae7aca6fb742fa2c483641d50a842a",
+    "m2/studio-core/src/engine.rs": "8c516d856847c84a58c0492c8aa1b92ed35aff78f851453389ac796d7fed22ab",
+    "m2/studio-core/src/error.rs": "b91d5a0091e0b5759f617f031974e9c545b68dc39c188282e211b29e72207b5d",
+    "m2/studio-core/src/job.rs": "9cf01d9d51b9593434260664bce37a86359685e3fbc740f1314c6d513894970d",
+    "m2/studio-core/src/lib.rs": "6afe6506fff50e6e8a4b0f8382a55fb7425bf45309884145666861fb2be38aa2",
+    "m2/studio-core/src/model.rs": "be9d0969f5a056550ef943881717398239cc1702756d9b4985461bc69581eeb0",
+    "m2/studio-core/src/resource_paths.rs": "e1d2bbd02ba6b5c9e14210095944c2445b57e226f53310b425e58f7ec80b1cea",
+    "m2/studio-core/src/resources.rs": "563581bb1995c3c71678895ad3abf0332775ba67f73a7d0a6cb45fda8bfa3edf",
+    "m2/studio-core/src/safe_fs.rs": "ae0a71d5358cf3a4824754a6f42cec58cb29e5ba81e3eb0b92d9cf90feb51739",
+    "m2/studio-core/tests/resources.rs": "ac5aa9c6c3b7b648255d25ca4ccf8e4b784a5b350d765a507791c178cdbd6964",
+    "m2/studio-core/tests/workflows.rs": "06bc2c094cd79d852ad61f7a56e167bad6ee3f6d39076f0cdd7bf0693bd9c8d9",
+    "scripts/m2_foundation.py": "ae8a72f053c2c262ca06717154dfd1b5e2948ef1e641c13c1bf167caa5117990",
+    "baseline/unicode/unicode16-casing.json": "f69d2e55d6b8c8d5fe33f764cc47b829bccc6d73aaff1791e1216328a1c24071",
+    "scripts/m2_resources.py": "b82995e769d2943d3d7b107d54b28e7df42d12353151d7cb64363a2f438a9cd2",
+    "baseline/resource-probe/studio-probe.ttf": "bb3f262bf21c6f63eca131f239113797636761a866d39756943ae702a318fb1f"
+  }
+}

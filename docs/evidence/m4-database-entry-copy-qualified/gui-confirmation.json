@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "scope": "selected-definition edit; headword rename remains pending",
+  "package_version": 157,
+  "uploaded_copy_sha256": "5537657c9eb4dd1412cde14a3608584284c6d5c3657eabe274b787c7c88d95e1",
+  "matches_native_utf16_qualified_copy_byte_for_byte": true,
+  "user_source_copy_verifier": {
+    "status": "passed",
+    "records": 7,
+    "source_rowid": "3",
+    "output_rowid": "3",
+    "source_sha256": "226896c56ae298980cc1ed0914201426e5554b27d013ebf7a308bf2eb50b0df9",
+    "copy_sha256": "5537657c9eb4dd1412cde14a3608584284c6d5c3657eabe274b787c7c88d95e1",
+    "rows_sha256": "1f8f46532d0519e8ea67b773ce5e8f3a4238cf67cd132efebcd027d25c6f85f7",
+    "unselected_rows_and_metadata_preserved": true,
+    "source_unchanged": true
+  },
+  "initial_utf8_comparison": "Wrong source fixture; corrected UTF-16 comparison passed."
+}

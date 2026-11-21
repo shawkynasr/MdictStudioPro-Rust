@@ -1,0 +1,8 @@
+{
+  "schema": "studio-m4-native-compile-receipt-v1",
+  "status": "compile_failed_before_tests",
+  "error": "E0277: u64 does not implement FromSql",
+  "lock_sha256": "ce7f6c73a782fb9a5e074db6504c33575bcdb5b523490b50d1c773b989dd3bc6",
+  "fix": "Read SQLite count as i64 and convert to u64 with try_from",
+  "native_tests_passed": false
+}

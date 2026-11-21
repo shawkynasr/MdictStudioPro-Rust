@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-12",
+  "basis": "user screenshots and reports in this conversation",
+  "confirmed": [
+    "alias single-hop resolution",
+    "chain -> alias -> target",
+    "both duplicate target ordinals 7 and 8 selectable",
+    "first and second target rendered alongside source",
+    "redirect_cycle for cycle-a",
+    "redirect_missing for missing",
+    "corrected panel remains visible"
+  ],
+  "scope": "Four explicit GUI cases passed; full native shell report and untested resolver envelopes are not inferred."
+}

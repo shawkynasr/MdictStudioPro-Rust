@@ -1,0 +1,28 @@
+{
+  "source_sha256": "4fe44ade9214315f5f75c6b38d136411c57bbec5cb8f03003cea30813535de7d",
+  "header": {
+    "attributes": {
+      "GeneratedByEngineVersion": "2.0",
+      "RequiredEngineVersion": "2.0",
+      "Format": "Html",
+      "KeyCaseSensitive": "No",
+      "StripKey": "No",
+      "Encrypted": "2",
+      "RegisterBy": "EMail",
+      "Description": "",
+      "Title": "",
+      "Encoding": "UTF-16",
+      "CreationDate": "2026-10-28",
+      "Compact": "Yes",
+      "Compat": "Yes",
+      "Left2Right": "Yes",
+      "DataSourceFormat": "106",
+      "StyleSheet": "1\n<span style=\"color:#9b1c31;font-weight:700;border:2px solid #9b1c31;\">\n</span>\n2\n<span style=\"color:#1d4ed8;text-decoration:underline;\">\n</span>\n"
+    },
+    "header_bytes": 996,
+    "ends_CRLF_NUL": true,
+    "ends_NUL": true,
+    "header_adler32_valid": true
+  },
+  "scope": "Header-only independent inspection; encrypted key index not validated"
+}

@@ -1,0 +1,109 @@
+{
+  "status": "passed",
+  "scope": "Definition-text search GUI checklist",
+  "findings": [
+    {
+      "attachment": "截屏2026-11-18 18.42.30.png",
+      "sha256": "9c018cd0177862dc1a292e371d3ae5dd878c75cbc41507896920e2cf4e89d218",
+      "query": "needle",
+      "matching": "literal",
+      "records": 1,
+      "offset": 0,
+      "rowids": [
+        "3"
+      ],
+      "status": "visually_matches_expected"
+    },
+    {
+      "attachment": "截屏2026-11-18 18.42.53.png",
+      "sha256": "9221abc7ea7685f3cb1cebd3833dfe53811f538a64f8cedc8b23f7e416a66bba",
+      "query": "nEeDlE",
+      "matching": "unicode16_lower",
+      "records": 3,
+      "offset": 0,
+      "rowids": [
+        "1",
+        "2"
+      ],
+      "status": "visually_matches_expected"
+    },
+    {
+      "attachment": "截屏2026-11-18 18.43.02.png",
+      "sha256": "583339377886fb138b57049962a0b99767d462c2cdecca5aa4ea7fed97b2e548",
+      "query": "nEeDlE",
+      "matching": "unicode16_lower",
+      "records": 3,
+      "offset": 2,
+      "rowids": [
+        "3"
+      ],
+      "status": "visually_matches_expected"
+    },
+    {
+      "attachment": "截屏2026-11-18 18.43.24.png",
+      "sha256": "c7ceaface087fae3d8d43d40370b34353ae9053d24d886474fb19895e15425d6",
+      "query": "中文",
+      "matching": "literal",
+      "records": 2,
+      "offset": 0,
+      "rowids": [
+        "5",
+        "6"
+      ],
+      "status": "visually_matches_expected"
+    },
+    {
+      "attachment": "截屏2026-11-18 18.43.38.png",
+      "sha256": "2b2d57b75ea530784e34e6259da570e264fac9be30b6bbff886d76700f474311",
+      "query": "أهلاً",
+      "matching": "literal",
+      "records": 1,
+      "offset": 0,
+      "rowids": [
+        "7"
+      ],
+      "status": "visually_matches_expected"
+    },
+    {
+      "attachment": "截屏2026-11-18 18.43.58.png",
+      "sha256": "8f983f8861501104410ddc6cd0cf0f6026574d4cec221f58a14092bcd69e97b8",
+      "query": "<div",
+      "matching": "literal",
+      "records": 2,
+      "offset": 0,
+      "rowids": [
+        "1",
+        "7"
+      ],
+      "status": "visually_matches_expected"
+    },
+    {
+      "attachment": "截屏2026-11-18 18.44.35.png",
+      "sha256": "89ef24939ecbc971d8f6519c6b247c9d7089c9fec8c9cc3db4e9248ad3422eaa",
+      "query": "? * % _",
+      "matching": "literal",
+      "records": 1,
+      "offset": 0,
+      "rowids": [
+        "4"
+      ],
+      "status": "visually_matches_expected"
+    },
+    {
+      "attachment": "截屏2026-11-18 18.44.48.png",
+      "sha256": "51d0cf8798fe2f0429c38051be00d0ead6c647350ef2676a3f6e505686ae2adf",
+      "query": "missing",
+      "matching": "literal",
+      "records": 0,
+      "offset": 0,
+      "rowids": [],
+      "status": "visually_matches_expected"
+    }
+  ],
+  "notes": [
+    "Eight attached screenshots were visually inspected. They show expected records, physical row IDs, pagination boundaries and source/rendered split views in the dark application appearance.",
+    "Exact-headword cross-check and manual cancellation were not shown in these screenshots; native tests cover separate modes and cancellation recovery.",
+    "This evidence does not qualify the later metadata-copy feature.",
+    "Screenshots are not bundled in the ZIP."
+  ]
+}

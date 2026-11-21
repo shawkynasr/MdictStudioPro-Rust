@@ -1,0 +1,20 @@
+{
+  "source": "User-uploaded revision-3 reports and logs",
+  "local_rerun": false,
+  "files": {
+    "metadata-codec-report.json": "9e7f7b9f9623610a5e74e6623eef88d1c74ceb61e42717541abe37d63b88638e",
+    "metadata-codecs.log": "cc82de468ef38318c3c000fa5d769352b39f9911a8f7ba5564aeb8217bf0e1a0",
+    "interop-report.json": "cc7cca40a8c213079940d28e92bd32d0977a81799dc5d7bcec9e0bfcf99dc8f9",
+    "interop.log": "35a5a714f3d6c525c78891c5549c6dbab859ddb83a92e6b9204d01d7d2020426"
+  },
+  "observed": {
+    "interop_passed": 14,
+    "metadata_status": "blocked",
+    "metadata_observations": 0,
+    "cause": "Harness command arguments shadow argparse Namespace"
+  },
+  "limits": [
+    "Interop suite covers UTF-8 dictionaries; UTF-16 codec suite did not execute",
+    "No candidate writer changes made in the harness hotfix"
+  ]
+}

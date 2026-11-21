@@ -1,0 +1,19 @@
+{
+  "schema": "studio-six-builtins-standalone-v1",
+  "date": "2026-11-20",
+  "status": "accepted_six_scoped_standalone_fixture_checks",
+  "checks": {
+    "moe-revised-wfg": "docs/evidence/m3-builtins-standalone-qualified/moe-revised-wfg.json",
+    "moe-idioms": "docs/evidence/m3-builtins-standalone-qualified/moe-idioms.json",
+    "moe-mini": "docs/evidence/m3-builtins-standalone-qualified/moe-mini.json",
+    "cc-cedict": "docs/evidence/m3-builtins-standalone-qualified/cc-cedict.json",
+    "moe-revised": "docs/evidence/m3-builtins-standalone-qualified/moe-revised.json",
+    "moe-concise": "docs/evidence/m3-builtins-standalone-qualified/moe-concise.json"
+  },
+  "application_changed": false,
+  "native_benchmarks_rerun": false,
+  "retention_full": "User reported retention_full between Revised and WFG. Guidance was to dismiss finished jobs; later WFG succeeded. Exact recovery action was not explicitly confirmed.",
+  "scope": "Existing local Intel preview v5 and tiny known fixtures; no clean machine, public release, all-data or other-platform qualification.",
+  "M3_complete": false,
+  "production_release_ready": false
+}

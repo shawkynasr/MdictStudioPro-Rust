@@ -1,0 +1,6 @@
+[workspace]
+members = ["studio-core", "studio-cli"]
+resolver = "2"
+
+[patch.crates-io]
+mdictlib = { path = "../vendor/mdictlib-0.2.8-studio-sort-v6" }

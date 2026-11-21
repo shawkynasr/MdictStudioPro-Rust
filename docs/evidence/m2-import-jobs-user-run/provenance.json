@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-01",
+  "files": {
+    "m2-import-jobs-report.json": "da0bd6d712bf016f4e2979024d33ea4dec4f74364208341e0cd61a39398b1715"
+  },
+  "source_snapshots": {
+    "qualified/m2/v2-import/Cargo.lock": "a051908d457e9596c0496a32faca03979e9deb9880ee80129061ad25c2c1f928",
+    "qualified/m2/v2-import/Cargo.toml": "d441b0ce96872fbceb57802f2330a3ddc0c93a1dabd06b62c6f778aba383ef3e",
+    "qualified/m2/v2-import/src/application/runner/tests.rs": "f0f423b54a5190ac0bbabee0d06e0aa83bc93f705d759910387d58161bf222eb",
+    "qualified/m2/v2-import/src/application/runner.rs": "18ec195ae41751217ed65d0c75e8161693592bf9bc8af39f7d5011e1142cb458",
+    "qualified/m2/v2-import/src/application.rs": "f0a0bc37dd0c7ee4c73552fd611f0c1d9f1f1d47ee2f693a5bada286e7060049",
+    "qualified/m2/v2-import/src/bin/studio-import-jobs.rs": "f9a5c3c505208afadde5c1edeb48d4d5788b41513928b364c328fd8c4d209ff1",
+    "qualified/m2/v2-import/src/header.rs": "4baca7c9a063df4d8ea127ce9f6c6b57e695832813ca295cff00529ae12088ee",
+    "qualified/m2/v2-import/src/lib.rs": "5f8e42fcc9db5952eb8b16d773aa171a321d5217d4859c1b6bfcef96a00cc28c",
+    "qualified/m2/v2-import/src/main.rs": "a9b7345656a9dfd95881f46c147ee11b8f696a19ad16c72abe3f285767d9b805",
+    "qualified/m2/v2-import/src/mdd.rs": "f58e26346e3365625930c6b802d8b0f9e48391dc62ef5844c60d3ac79f82be45",
+    "qualified/m2/v2-import/src/mdx.rs": "f5e405bb3380c71c2dc5863a2cc6e01fb0f64d72ff14aef5befe30f7bb50f3c3",
+    "qualified/m2/v2-import/tests/application.rs": "3d90c30847fef356561e81fe81ad6db3b7d78a6acc08eca67eb73caaa5d09bb9",
+    "qualified/m2/v2-import/tests/import.rs": "cbfdbeeb4f3734958bd700bd351d5da5dfd9313736d49467c59d02dbd56dc196",
+    "qualified/scripts/m2_import_jobs.py": "634256c43e9ba278387ece62cae49e8d12b5b2df618535e44377a53491c7c636",
+    "qualified/scripts/test_m2_import_jobs.py": "1ffeec818c708a6bf75e2a841bd740f0420ad08ff4d75f4c28b076f57731fa55"
+  },
+  "report_library_file_id": "libfile_cb37abeb80048191848c4d0194c3c2c4",
+  "result": "m2_import_application_background_jobs_passed_remaining_M2_work_pending",
+  "commands": 56,
+  "case_counts": {
+    "sync_background_oracle_passed": 15,
+    "expected_job_failure": 12
+  },
+  "query_counts": {
+    "exact_query_result": 328,
+    "expected_query_error": 92,
+    "resource_queries": 4
+  },
+  "evidence_limits": "Individual actual outputs, generated fixtures and passing Rust logs were not attached; counts describe assertions completed by the fingerprinted runner. Gated cancellation, queue, shutdown and panic tests passed through the Rust test command, without separate trace evidence.",
+  "M2_complete": false
+}

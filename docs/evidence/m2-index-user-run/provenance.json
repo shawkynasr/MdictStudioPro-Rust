@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-03",
+  "files": {
+    "m2-index-report.json": "85ad75978c45fd560bbd5cde1787c235b4759bb850fa3b1803f3d834781c0a47"
+  },
+  "source_snapshots": {
+    "qualified/m2/indexed-engine/Cargo.toml": "8b339faa01f67469900613bcd8b83e033c2204f1ca084feecef7863d27d66f92",
+    "qualified/m2/indexed-engine/src/index.rs": "8b5f3cb6724a5aa4ca610142bd041c040fccd28cde2a76af709b4216c6061f43",
+    "qualified/m2/indexed-engine/src/lib.rs": "80982758cf35485438f1fe926391b92b05e8fa3178d4db5d49f02563267f4da2",
+    "qualified/m2/indexed-engine/src/main.rs": "437227e8a85948cf1828c86cb97ce1114dcb59fea012fb230aa84a3665c581d7",
+    "qualified/m2/indexed-engine/src/sha256.rs": "f1565b6ae0bbe306e6671bcf45e2dc486c7d700d3f1972e3a7719551a3901906",
+    "qualified/m2/indexed-engine/tests/index.rs": "ab340e4631eedd1bb66c4319ec4d1e27583c53035223622470015f10e9dece33",
+    "qualified/scripts/index_engine_lock.py": "4d1a9a4592c449f39fca975637e0f153a482d13ee6effe8d876bedd3d6ccab77",
+    "qualified/scripts/index_fixtures.py": "ff26d66ba0836cb74f14e4b622457edcc248bbba5cd7b5d8863ce14896df9f97",
+    "qualified/scripts/m2_index.py": "1a943e6320c40eacdda66a98ca272dbc3484b35ae74c95d145d805edddd9bfec",
+    "qualified/scripts/test_m2_index.py": "5ca415cb2475d5f1fc64067e3703e2f4a0263c7a4e2accd5855e2a8ce9f4cddc",
+    "qualified/m2/indexed-engine/Cargo.lock": "77dd03dd4fe54950bd88f0fcbb22af4f919c7c80c068f56bdcb68d860fae8991"
+  },
+  "report_library_file_id": "libfile_1378e212db788191b47193eddfc0b73f",
+  "result": "m2_disk_index_paged_lookup_passed_larger_integration_pending",
+  "assessment": "First disk-index/paged-lookup gate accepted: Rust test/build commands succeeded, 12 builds, 20 query processes, 180 embedded pages recomputed, 23 expected refusals; 142 prior sources unchanged. 65536-entry MDX/MDD fixtures; maximum observed RSS 6189056 bytes. Larger application integration, fast startup, full candidate ceilings and M2 completion remain unqualified.",
+  "successful_Rust_test_stdout_attached": false,
+  "note": "Rust test acceptance uses the exact-source-bound successful command receipt; no successful test stdout, native-reader checks or separate cache/input binaries were attached."
+}

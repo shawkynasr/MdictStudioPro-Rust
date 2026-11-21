@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-07",
+  "attached_report_library_file_id": "libfile_53985043605c8191ae1d5d62ced3d4be",
+  "files": {
+    "m2-xlsx-spool-report.json": "d0a4c5a58c9d31bf2be8527a66f50de312305ff2621a9678d2ff7b2651867f5a",
+    "review-oracles.json": "fe515ae6ac27f1ad5f4b4c2d4fc3e78f34f20679c209e743cea22bdf052d2f08"
+  },
+  "source_snapshots": {
+    "qualified/docs/evidence/revised-row-source-reference/reference.json": "5bbfaf5d030ea5876c9414a45631c5b120d422525989985b543619d74ffb0bd5",
+    "qualified/m2/xlsx-spool/Cargo.lock": "59a13a6ef61dba5dc3e1beebfa51fed237537d631eaef5fe42ac78e405f5b3b3",
+    "qualified/m2/xlsx-spool/Cargo.toml": "0b5341c4b914f271a6e803cedc298791cc18b8c76932d0ce52213f97078a6ebd",
+    "qualified/m2/xlsx-spool/src/lib.rs": "b348c6976feaab026ae269f4d0996fe6682f7c4263bbefc155995479a639703c",
+    "qualified/m2/xlsx-spool/src/main.rs": "841a8eea6d0f97a779c94fe99b2e473f94de3188aaead94fb46d51f0622e6156",
+    "qualified/m2/xlsx-spool/src/package.rs": "8336abb56c8719824c654bd996c038e033566bb94e71225e143ecd9fdde984c6",
+    "qualified/m2/xlsx-spool/src/rows.rs": "ef762be07eb1dc58dc6ac3a52dbda1271b80148192d9be753bab0eeb75fc8a65",
+    "qualified/m2/xlsx-spool/tests/compatibility.rs": "f36f789ebc20a8e14ffba799508a0c730d5f81ec4bd6f4cc52edb48aff11883d",
+    "qualified/scripts/m2_xlsx_spool.py": "23e1c62cc93d8ea4baa1f279aff6d7ca845b109f5fd1e260d9a496c2e79fcd8a",
+    "qualified/scripts/test_xlsx_spool.py": "6f4b7ecfa32e12ac721c1016aa495a6239930a5988283cfe8d649820253a84be",
+    "qualified/scripts/xlsx_spool_lock.py": "9fdb2cf6fcc763fe067f04ad3e7f10d521ed794ced3b3fe2641debe0dec767e7",
+    "qualified/scripts/xlsx_spool_oracle.py": "d19c89eb7095b9ad370c467c68b5e81e87f44e21aecf42a69dbc71fdea8607da"
+  },
+  "review_summary": {
+    "full_normalized_rows": 163909,
+    "full_row_pairs": 2950362,
+    "process_cases": 27,
+    "successes": 10,
+    "expected_refusals": 17,
+    "full_process_RSS_bytes": 159842304,
+    "max_observed_RSS_bytes": 164052992,
+    "full_temporary_bytes": 175812245,
+    "shared_strings": 615738,
+    "scope": "Full row digest, nine small original goldens, typed refusals and independently recomputed SST/JSONL extents checked. Native files/cleanup remain assertions of exact Mac harness. Release process measurements; no local Rust execution or Revised/WFG dictionary rendering qualification; M2 partial."
+  },
+  "reviewer": "scripts/check_xlsx_spool_receipt.py",
+  "review_method": "Checked all 27 source-bound process receipts and two successful native command receipts, full/partial fixture rows against captured golden/helper references, all source/lock bindings and exact registry subset. Recomputed every complete source row again with the original helper, plus independent openpyxl shared-string bytes/count and exact JSONL extent. Native files are private: reopen digest comparison, source preservation and cleanup are assertions of the exact matching Mac harness. No Rust execution performed locally.",
+  "qualification_scope": "Release-process normalized worksheet rows only. Full Revised run 152.4375 MiB RSS; maximum all cases 156.453125 MiB below provisional 192 MiB target, not hard RSS enforcement. No Revised/WFG grouping/rendering/publication, application worker/admission integration or reader concurrency qualification.",
+  "source_data_or_rows_bundled": false,
+  "M2_complete": false
+}

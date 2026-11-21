@@ -1,0 +1,25 @@
+{
+  "status": "native_test_setup_failed_no_full_cases_run",
+  "report_library_file_id": "libfile_99c0d44beff88191a6e99ffcc2973ce7",
+  "files": {
+    "m2-full-converters-report.json": "115de0c2f66d30ad20d29d231d22564ab9d2e6f6a97e3653ef030f4b9b44ed57",
+    "attempted/scripts/m2_full_converters.py": "b768eefe6f3062d439cfc70d099d7c2ba795a158e63874ca915c6d9cac5e4fab",
+    "attempted/scripts/full_converter_runtime_lock.py": "a19d605f744871c7186ed4083637fe6760a3032bab261098184a7085adc03b22",
+    "attempted/scripts/test_full_converters.py": "dd8bc5122d3fb35c3f3ea91bbd41347b973fac17292173f3d807ccfa9746305c",
+    "attempted/m2/full-converter-runtime/Cargo.lock": "26067a61d6f6686c0ed17a393ec8154903a16136e2ba32dedb4365733f3f71f5",
+    "attempted/m2/full-converter-runtime/Cargo.toml": "5a533b785bd6a8484aecedf8d0d71e80767436f93254384b8653575b352ea08a",
+    "attempted/m2/full-converter-runtime/src/converters.rs": "8596c7d77c3020347634f26b04a92c4cac74af82af800635c105a20e7051c51e",
+    "attempted/m2/full-converter-runtime/src/main.rs": "476d4565606308bf09e24a3e0b3c075b66c5beed95a77d5b5c9a042e7202d474",
+    "attempted/m2/full-converter-runtime/src/tests.rs": "9dc909c4de742b5f898e89b5308d163c78db2182f428e537472b3067ba6fe082",
+    "attempted/m2/full-converter-runtime/src/txt.rs": "59d3b6d40733f770539fbdee6fb31f41deda71d90c0e156b88623d6eac3ae210",
+    "attempted/m2/full-converter-runtime/src/lib.rs": "8561941403573ba4622a00d463599ede97f5700acac18ff685b5c84f804d8f71",
+    "attempted/m2/full-converter-runtime/src/concise.rs": "81fcf407cfe0325c26066d57856c5bd2c6d76a2c179481f2f203d88714732738",
+    "attempted/m2/full-converter-runtime/src/runner.rs": "3dc3ef04f23e2b35da25a47296d5c0218407c01e1a0d25bac592eb146ce2e6cc",
+    "attempted/docs/evidence/full-converter-runtime-plan/reference.json": "546612138cc113d294050668ec1f4208616da10b5050ce86fe955264a95d3c8f"
+  },
+  "source_identities_matched": 278,
+  "native_tests_passed": 31,
+  "native_tests_failed": 1,
+  "failure": "Reference writer used default 1000-entry MOE cap for 4096-entry fixture",
+  "M2_complete": false
+}

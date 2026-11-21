@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-28",
+  "source": "User statement in this conversation",
+  "user_statement": "Tested with Mdict and Goldendict, working like charm, `inline-blue` and `marker-blue`and rest 5 entry all ok",
+  "fixture_sha256": "4fe44ade9214315f5f75c6b38d136411c57bbec5cb8f03003cea30813535de7d",
+  "reader_results": {
+    "MDict for macOS 2.2.6 (build 200)": "PASS_USER_REPORTED_FIVE_ENTRIES_AND_FORMATTING",
+    "GoldenDict 26.6.1-7548db1682": "PASS_USER_REPORTED_FIVE_ENTRIES_AND_FORMATTING"
+  },
+  "restart_checks": "NOT_SEPARATELY_REPORTED",
+  "does_not_prove": "Rust output compatibility or a specific crash cause"
+}

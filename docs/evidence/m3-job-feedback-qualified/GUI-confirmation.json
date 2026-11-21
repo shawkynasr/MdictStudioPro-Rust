@@ -1,0 +1,27 @@
+{
+  "schema": "studio-job-feedback-GUI-confirmation-v1",
+  "date": "2026-11-19",
+  "status": "accepted_scoped_error_details_cancellation_and_preflight_checks",
+  "failure": {
+    "class": "FailingPlugin",
+    "code": "engine",
+    "detail": "python_plugin",
+    "message_contains": "RuntimeError: Intentional fixture failure",
+    "publication_uncertain": false,
+    "error_details_opened": true
+  },
+  "cancellation": {
+    "class": "SlowPlugin",
+    "code": "cancelled",
+    "detail": "python_plugin",
+    "message": "Python converter cancelled before publication",
+    "publication_uncertain": false,
+    "error_details_opened": true
+  },
+  "interpreter_preflight": {
+    "code": "invalid_input",
+    "message": "Python executable and Plugin .py file point to the same file. Select your Python interpreter (for example .venv/bin/python) in Python executable.",
+    "expected_message_confirmed": true
+  },
+  "scope": "User pasted native error details and exact preflight message. These verify failure/cancellation diagnostics and interpreter selection refusal. No screenshots supplied for colors, no filesystem output inspection, no independent confirmation of job-count stability, and no new native source report claimed. Color mappings are covered by Node tests; visual color acceptance is not asserted."
+}

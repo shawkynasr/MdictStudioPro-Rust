@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-06",
+  "files": {
+    "m2-converter-runtime-report.json": "a8473887a56d67db4d17c58757318c6d529dc8271ae891deb74a53d33e84cf96"
+  },
+  "source_snapshots": {
+    "qualified/m2/converter-runtime/Cargo.toml": "f92dca465ff4f17e8469faef8ad144b7a5dfad48fc511cc8755e1f38bbbb5746",
+    "qualified/m2/converter-runtime/src/converters.rs": "dc63a4e89730734e8e06c5828322f278836dd40e474bdc304aa1ee0ced168fe3",
+    "qualified/m2/converter-runtime/src/lib.rs": "8f56b57fb97479ab66a4ff82dc366edf98070e8d528a9152888c0369d55ae8df",
+    "qualified/m2/converter-runtime/src/main.rs": "e84bfb54d695ffcac23e3e9c90877354430fed3dedf76f4d0287e0a90a9c5c45",
+    "qualified/m2/converter-runtime/src/runner.rs": "3dc3ef04f23e2b35da25a47296d5c0218407c01e1a0d25bac592eb146ce2e6cc",
+    "qualified/m2/converter-runtime/src/tests.rs": "7cd43988b4ae54e82bca6ce7447e8f76445caf160f14af86dac8e6d1ef60ca34",
+    "qualified/scripts/converter_runtime_fixtures.py": "0fc9f473442f32bccda6198c455951a420024dac7a6af6ecd5136c43b5f0a7d0",
+    "qualified/scripts/converter_runtime_lock.py": "5f9ad290c657a2f85f549744f5670f20173ace1ff29bddd270af24d8c2dc89c7",
+    "qualified/scripts/m2_converter_runtime.py": "40a5080216c3712ab0939db71dc433bab8cb10df22da48bb8ef621ec156e2c4f",
+    "qualified/scripts/test_m2_converter_runtime.py": "d4d1e4757313af32cf2dedce2b068f31b52b5760ff06de059ea080bed2ee57e5",
+    "qualified/m2/converter-runtime/Cargo.lock": "e01b9a71f3ce01488d2d7a962285c773df94f13f809f8c2644c48052479f5ad3"
+  },
+  "report_library_file_id": "libfile_92715662c3148191b804e41281e9206d",
+  "result": "m2_converter_runtime_failed",
+  "assessment": "Compilation failed with E0753 at src/lib.rs:2 because pub mod converters preceded an inner crate documentation comment. Move the comment before module declarations; no converter algorithm or runtime logic change. No runtime scenario ran. All 199 protected sources and 11 new source identities match; 66 package identities unchanged, lock canonicalization changes ordering only. Existing accepted session Copy-closure drop warnings are unrelated.",
+  "M2_complete": false,
+  "runtime_scenarios_run": false,
+  "Rust_executed_locally": false
+}

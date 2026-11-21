@@ -1,0 +1,42 @@
+{
+  "schema": "studio-relocated-preview-GUI-v1",
+  "date": "2026-11-21",
+  "status": "accepted_scoped_same_Mac_copied_bundle_launch_and_exact_conversion",
+  "basis": "User supplied successful CC-CEDICT receipt and passed relocated-preview verification, then explicitly confirmed opening app inside mdict-v6-location-check-1 from Finder",
+  "receipt": {
+    "profile": "cc",
+    "receipt": {
+      "comments_count": 0,
+      "converter": "cc_cedict",
+      "entries": 3,
+      "file_bytes": 885,
+      "metrics": {
+        "alias_redirects": 0,
+        "primary_entries": 2,
+        "skipped_rows_or_lines": 0,
+        "traditional_entries": 1
+      },
+      "profile": "cc-cedict-owned-chunked-txt-v1",
+      "source_sha256": "463a04e1ad8ff8c3142e1456dc0fb529de2fa62affbe3dd70d4f70afd8e42dec",
+      "txt_profile": "canonical_v1"
+    }
+  },
+  "verification": {
+    "schema": "studio-relocated-preview-v1",
+    "status": "passed",
+    "bundle_unchanged": true,
+    "input_unchanged": true,
+    "output_bytes": 885,
+    "output_sha256": "83288a2c708f4d03a12d08e72eb7a71af3904d37528447ffc3ee1e95fe8415b1",
+    "Finder_launch_from_copied_path": "requires user confirmation",
+    "development_server_and_Terminal_closed_at_launch": "requires user confirmation",
+    "scope": "Same-Mac relocation only; not clean-machine or signed distribution qualification",
+    "clean_machine_qualified": false,
+    "production_release_ready": false
+  },
+  "Finder_copied_path_explicitly_confirmed": true,
+  "Terminal_and_server_closed": "requested; latest confirmation explicitly names Finder path only",
+  "clean_machine_qualified": false,
+  "M3_complete": false,
+  "production_release_ready": false
+}

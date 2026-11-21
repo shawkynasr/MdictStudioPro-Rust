@@ -1,0 +1,100 @@
+{
+  "checks": {
+    "full_builder_container": {
+      "error": "Invalid parameter: Invalid BCP-47 locale string: root",
+      "execution": "error"
+    },
+    "lookup_classic_v2_mdx": {
+      "execution": "completed",
+      "result": {
+        "failures": [
+          {
+            "key": "a-b",
+            "reason": "not found"
+          },
+          {
+            "key": "ab",
+            "reason": "not found"
+          },
+          {
+            "key": "a b",
+            "reason": "not found"
+          }
+        ],
+        "passed": false,
+        "scope": "one exact spelling/payload per query; not global duplicate lookup equivalence"
+      }
+    },
+    "mb_sort_key_valid_big5_pair": {
+      "execution": "completed",
+      "result": {
+        "actual": [
+          164,
+          64,
+          64
+        ],
+        "identity_when_no_transforms": false,
+        "input": [
+          164,
+          64
+        ]
+      }
+    },
+    "published_writer_header": {
+      "execution": "completed",
+      "result": {
+        "declares_v2": false,
+        "encoding": "UTF-8 header payload",
+        "generated_version": "3.0",
+        "raw_header": "<ZDB GeneratedByEngineVersion=\"3.0\" RequiredEngineVersion=\"3.0\" Compact=\"false\" RegisterBy=\"Yes\" CreationDate=\"2026-10-27\" DataSourceFormat=\"107\" StyleSheet=\"\" UUID=\"6105f4f8-fff9-4283-8f1e-63b85b4f63cd\" ContentType=\"Html\" DefaultSortingLocale=\"root\" />\u0000",
+        "required_version": "3.0"
+      }
+    },
+    "read_classic_v2_mdd": {
+      "execution": "completed",
+      "result": {
+        "passed": true,
+        "resources": 4
+      }
+    },
+    "read_classic_v2_mdx": {
+      "execution": "completed",
+      "result": {
+        "duplicate_payloads_preserved": true,
+        "passed": true,
+        "records": 11
+      }
+    },
+    "source_blank_line_semantics": {
+      "execution": "completed",
+      "result": {
+        "keys": [
+          "word",
+          "line2"
+        ],
+        "preserves_one_entry_with_blank_body_line": false
+      }
+    },
+    "source_delimiter_payload": {
+      "execution": "completed",
+      "result": {
+        "delimiter_removed": true,
+        "payload": "",
+        "records": 1
+      }
+    }
+  },
+  "commit": "085d2a77fed2fc43a9a8e58c91bdb3be8aac4880",
+  "decision": "not_selected_as_classic_v2_writer",
+  "engine": "Safari77/mdx",
+  "not_proven": [
+    "external_readers",
+    "all_legacy_encodings",
+    "all_duplicate_lookup_semantics",
+    "large_files",
+    "cross_platform",
+    "mdx_util_build"
+  ],
+  "status": "observations_only",
+  "version": "0.5.4"
+}

@@ -1,0 +1,51 @@
+{
+  "status": "qualified_scoped_six_full_converter_background_integration",
+  "report_library_file_id": "libfile_89dd9113fd9c8191bea89fefeecadf00",
+  "files": {
+    "m2-full-converters-report.json": "bd0d6441d4367b4dda7feb2a972a9fa4a2f4c0c634a8fc411717e20b4adb4c4c"
+  },
+  "source_snapshots": {
+    "qualified/docs/evidence/full-converter-runtime-plan/concise-rows-reference.json": "fd35dbee7d6c3adb4ed9f1406a8fb4be41c1c7ea5b01524c09aa5830fde6cbfe",
+    "qualified/docs/evidence/full-converter-runtime-plan/reference.json": "546612138cc113d294050668ec1f4208616da10b5050ce86fe955264a95d3c8f",
+    "qualified/m2/full-converter-runtime/Cargo.lock": "fb06418d420939a59ecefe134be8bd34819a388dc1673b09b0b98e320b0f24e2",
+    "qualified/m2/full-converter-runtime/Cargo.toml": "39b681b39af412644c03d76c79c8d573557c14fc5ae1da3ef32ff7f2010c4517",
+    "qualified/m2/full-converter-runtime/src/concise.rs": "1a6ebd82faf1b9a986f166013f1586f7b4ee10f07dc7a5ed6b94fe832d30c6a5",
+    "qualified/m2/full-converter-runtime/src/concise_disk.rs": "f564c5d7bff6396750c584b5374d9020a4757d7891df92d0bf4663c109076c61",
+    "qualified/m2/full-converter-runtime/src/concise_publication.rs": "80c5cba076d4ea216d45eb9cf33824be2c344cf4464bb8893a21866a2c4d3298",
+    "qualified/m2/full-converter-runtime/src/concise_text.rs": "4d59872ca2c840c946af1208d4084cf1f8da5e93f942d398cb15680e6a6967de",
+    "qualified/m2/full-converter-runtime/src/converters.rs": "93fe1937c7b167485450b1dc4a4e085a0744da22a88951e07732dc6bdfebdaf8",
+    "qualified/m2/full-converter-runtime/src/lib.rs": "0a3ea75bbf46fe5c5b3c503cfe5057e45c913a1fdc2d45db2e9aeee96ebc6a1c",
+    "qualified/m2/full-converter-runtime/src/main.rs": "476d4565606308bf09e24a3e0b3c075b66c5beed95a77d5b5c9a042e7202d474",
+    "qualified/m2/full-converter-runtime/src/runner.rs": "3dc3ef04f23e2b35da25a47296d5c0218407c01e1a0d25bac592eb146ce2e6cc",
+    "qualified/m2/full-converter-runtime/src/tests.rs": "41b339d2f6c1d52f915d16dc264ba6efbc1a4df6bb4eb8d30a5028eb1c93f9c8",
+    "qualified/m2/full-converter-runtime/src/txt.rs": "59d3b6d40733f770539fbdee6fb31f41deda71d90c0e156b88623d6eac3ae210",
+    "qualified/scripts/full_converter_runtime_lock.py": "bc61e4d129d94eb0156cebd3d554241981676bddf88750952302a2d83b88ee20",
+    "qualified/scripts/m2_full_converters.py": "4a19ddc1ebd849ece2fc9336ef3ab2d2107e6ae7c403c0becbc2a6520d92bb88",
+    "qualified/scripts/test_full_converters.py": "0b110ed83d3afc37c173265f36b685e9fb30b9eac1bc01a5d1915ab6479d3de4"
+  },
+  "review_summary": {
+    "status": "six_full_converter_integration_qualified_M2_partial",
+    "native_tests_passed": 33,
+    "native_commands_passed": 3,
+    "converter_count": 6,
+    "entry_counts": {
+      "cc_cedict": 203362,
+      "moe_mini": 4311,
+      "moe_idioms": 5489,
+      "moe_concise": 44445,
+      "moe_revised": 162636,
+      "moe_revised_wfg": 161182
+    },
+    "controller_exchanges": 2726,
+    "protected_and_new_source_identities": 282,
+    "dependency_packages": 68,
+    "Concise_normalized_rows": 45178,
+    "Concise_normalized_fields": 677670,
+    "Concise_peak_RSS_bytes": 73392128,
+    "maximum_converter_peak_RSS_bytes": 268738560,
+    "M2_complete": false,
+    "next_scope": "real dictionary packing and index-build admission"
+  },
+  "M2_complete": false,
+  "source_data_or_dictionary_outputs_bundled": false
+}

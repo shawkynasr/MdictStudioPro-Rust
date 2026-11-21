@@ -1,0 +1,12 @@
+和
+<head><meta charset="utf-8"><link rel="stylesheet" type="text/css" href="jybcb.css"><script src="jybcb.js"></script></head><div class="edugycd"><div class="dict-title-group"><span class="index">和</span><span class="radical">口部 部外 5 畫 總筆畫 8 畫</span></div><span class="bopomo">(一) ㄏㄜˊ (二) ㄏㄜˋ</span><span class="hanyu">(一) hé (二) hè</span><span class="article"><span class="mean"><div style='font-weight:bold; color:#B45E13; margin-bottom:4px;'>(一) ㄏㄜˊ</div><div style="margin-top:12px; margin-bottom:4px;"><span class="example">名</span></div><ol style="margin-top:0; padding-left:2em;"><li>平安。</li><li>如：「<span style="color:var(--c-red); font-weight:bold;">和</span>氣」。 <img class="pic-inline" src="sample.png" alt="sample.png"></li></ol></span><span class="mean"><div style='font-weight:bold; color:#B45E13; margin-bottom:4px;'>(二) ㄏㄜˋ</div><div style="margin-top:4px; padding-left:0;"><span class="example">動</span> 隨聲相應。</div></span></span><span class="polyref"><b>相似詞：</b>平和</span><span class="polyref"><b>相反詞：</b>爭</span><span class="polyref"><b>辭條別名：</b>和平；和諧；和平</span></div>
+</>
+和諧
+@@@LINK=和
+</>
+和平
+@@@LINK=和
+</>
+字
+<head><meta charset="utf-8"><link rel="stylesheet" type="text/css" href="jybcb.css"><script src="jybcb.js"></script></head><div class="edugycd"><div class="dict-title-group"><span class="index">字</span></div><span class="bopomo">ㄗˋ</span><span class="hanyu">zì</span><span class="article"><span class="mean"><ol style="margin-top:0; padding-left:2em;"><li>文<span style="color:var(--c-red); font-weight:bold;">字</span>。</li><li><img src="9868._104_0.gif" class="imgchar" alt="未收錄篆<span style="color:var(--c-red); font-weight:bold;">字</span>" /> <img src="4e00_.png" class="imgchar" alt="4e00" /></li></ol></span></span></div>
+</>

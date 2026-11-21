@@ -1,0 +1,546 @@
+{
+  "status": "m2_xlsx_common_cells_passed_MOE_ports_and_date_profile_pending",
+  "M1": "complete_unchanged",
+  "M2_complete": false,
+  "Rust_MOE_converters_ported": false,
+  "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 17.0.0 (clang-1700.6.4.2)]",
+  "platform": "macOS-15.8.2-x86_64-i386-64bit-Mach-O",
+  "steps": [
+    {
+      "name": "reader-lock-resolve",
+      "returncode": 0,
+      "log": "reader-lock-resolve.log"
+    },
+    {
+      "name": "xlsx-tests",
+      "returncode": 0,
+      "log": "xlsx-tests.log"
+    },
+    {
+      "name": "normalization",
+      "returncode": 0,
+      "log": "normalization.log"
+    },
+    {
+      "name": "duplicate-and-typed-headers",
+      "returncode": 0,
+      "log": "duplicate-and-typed-headers.log"
+    },
+    {
+      "name": "active-sheet",
+      "returncode": 0,
+      "log": "active-sheet.log"
+    },
+    {
+      "name": "named-first-sheet",
+      "returncode": 0,
+      "log": "named-first-sheet.log"
+    },
+    {
+      "name": "missing-sheet",
+      "returncode": 1,
+      "log": "missing-sheet.log",
+      "expected_refusal": "sheet_not_found"
+    },
+    {
+      "name": "leading-blank-row-and-columns",
+      "returncode": 0,
+      "log": "leading-blank-row-and-columns.log"
+    },
+    {
+      "name": "cached-and-uncached-formulas",
+      "returncode": 0,
+      "log": "cached-and-uncached-formulas.log"
+    },
+    {
+      "name": "shared-rich-and-empty-strings",
+      "returncode": 0,
+      "log": "shared-rich-and-empty-strings.log"
+    },
+    {
+      "name": "inline-escapes-and-blank-looking-rows",
+      "returncode": 0,
+      "log": "inline-escapes-and-blank-looking-rows.log"
+    },
+    {
+      "name": "numeric-lexemes",
+      "returncode": 0,
+      "log": "numeric-lexemes.log"
+    },
+    {
+      "name": "empty-workbook",
+      "returncode": 0,
+      "log": "empty-workbook.log"
+    },
+    {
+      "name": "captured-MOE-input-rows",
+      "returncode": 0,
+      "log": "captured-MOE-input-rows.log"
+    },
+    {
+      "name": "moderate-2000-row-table",
+      "returncode": 0,
+      "log": "moderate-2000-row-table.log"
+    },
+    {
+      "name": "date-refused",
+      "returncode": 1,
+      "log": "date-refused.log",
+      "expected_refusal": "unsupported_cell"
+    },
+    {
+      "name": "duration-refused",
+      "returncode": 1,
+      "log": "duration-refused.log",
+      "expected_refusal": "unsupported_cell"
+    },
+    {
+      "name": "oversized-rectangle",
+      "returncode": 1,
+      "log": "oversized-rectangle.log",
+      "expected_refusal": "limit_exceeded"
+    },
+    {
+      "name": "dimension-required",
+      "returncode": 1,
+      "log": "dimension-required.log",
+      "expected_refusal": "unsupported_workbook"
+    },
+    {
+      "name": "external-sheet-refused",
+      "returncode": 1,
+      "log": "external-sheet-refused.log",
+      "expected_refusal": "unsupported_workbook"
+    },
+    {
+      "name": "invalid-workbook",
+      "returncode": 1,
+      "log": "invalid-workbook.log",
+      "expected_refusal": "malformed_workbook"
+    }
+  ],
+  "checks": [
+    {
+      "case": "normalization",
+      "status": "exact_rows_and_headers",
+      "sheet_name": "Sheet",
+      "rows": 2,
+      "headers": 5,
+      "input_sha256": "e41b9cb52dc3cabe84a88a696472c072ebf596d024a3f771842e58e493957728",
+      "normalized_rows_sha256": "ecc1541d60634017deaf5b609642c0a46451bd0e1c8d946664294c27ad5dd28c"
+    },
+    {
+      "case": "duplicate-and-typed-headers",
+      "status": "exact_rows_and_headers",
+      "sheet_name": "Sheet",
+      "rows": 1,
+      "headers": 9,
+      "input_sha256": "f417e3e703063b49d5fd05f4b248f69116799d64f3324fcca8ebe47645cf8ed9",
+      "normalized_rows_sha256": "e60a1c13d6078bf137542f138180c817dd1d118eef9aee8ede79bb1e44d41ea8"
+    },
+    {
+      "case": "active-sheet",
+      "status": "exact_rows_and_headers",
+      "sheet_name": "العربية & 字",
+      "rows": 2,
+      "headers": 5,
+      "input_sha256": "2b46e320d3b9a59ea87dab982c542c825a7eee57fbd427797e051fd35e1b16b7",
+      "normalized_rows_sha256": "4e5a4ed74ac17b3149b144eeac464dd4256c4a5c5ddee304805c6d622244667b"
+    },
+    {
+      "case": "named-first-sheet",
+      "status": "exact_rows_and_headers",
+      "sheet_name": "First",
+      "rows": 1,
+      "headers": 1,
+      "input_sha256": "2b46e320d3b9a59ea87dab982c542c825a7eee57fbd427797e051fd35e1b16b7",
+      "normalized_rows_sha256": "b7155d2bbec79d6280bbf507427c1d3f268b41ea4232556bc5db5dddb52bf196"
+    },
+    {
+      "case": "missing-sheet",
+      "status": "expected_refusal",
+      "code": "sheet_not_found",
+      "input_sha256": "2b46e320d3b9a59ea87dab982c542c825a7eee57fbd427797e051fd35e1b16b7"
+    },
+    {
+      "case": "leading-blank-row-and-columns",
+      "status": "exact_rows_and_headers",
+      "sheet_name": "Sheet",
+      "rows": 2,
+      "headers": 4,
+      "input_sha256": "2badcab5d8c03fe95e959bb6d599fca0dc1927caecdfe94d57e45fc925966b67",
+      "normalized_rows_sha256": "55a50b415cbf560a8364e3fd22df85f7ea385eac90b134c8d9722b1a70c70971"
+    },
+    {
+      "case": "cached-and-uncached-formulas",
+      "status": "exact_rows_and_headers",
+      "sheet_name": "Sheet",
+      "rows": 2,
+      "headers": 7,
+      "input_sha256": "b46fd7df0eb20f9324ff53ea80e9f0592a8feb6c8b0a8181f0cc17a1ad846af1",
+      "normalized_rows_sha256": "fe6eb01c3f4706725942e4e1293a76df498bce54949d87ba0303a3be832a1c41"
+    },
+    {
+      "case": "shared-rich-and-empty-strings",
+      "status": "exact_rows_and_headers",
+      "sheet_name": "Sheet",
+      "rows": 4,
+      "headers": 1,
+      "input_sha256": "d95127b70c95b1cd2775cd735b199d354d96e7ea668ce242f400479a8cbebe42",
+      "normalized_rows_sha256": "c881b85e1f888d0c02563e723f6efd1a17f34c3fa05e20839c96c790456ff958"
+    },
+    {
+      "case": "inline-escapes-and-blank-looking-rows",
+      "status": "exact_rows_and_headers",
+      "sheet_name": "Sheet",
+      "rows": 4,
+      "headers": 1,
+      "input_sha256": "1035fb07f69b8162ec63b6bd4064993c9ded7bc7acc8bfbb02696efcbe5b7ca1",
+      "normalized_rows_sha256": "fe768ac4155de0b4dab936f0eed0c1f4c456eab851660b8fb55ece59459356b1"
+    },
+    {
+      "case": "numeric-lexemes",
+      "status": "exact_rows_and_headers",
+      "sheet_name": "Sheet",
+      "rows": 142,
+      "headers": 2,
+      "input_sha256": "7cbb6a3713c8d4d7759f5a6a87b549849fa661a9dd419ec5f92db4d58cc1beec",
+      "normalized_rows_sha256": "07b2f9e002c74f9d1c0334da69d229d23e54b38c06f5b19f44dfc0c1afdf8a73"
+    },
+    {
+      "case": "empty-workbook",
+      "status": "exact_rows_and_headers",
+      "sheet_name": "Sheet",
+      "rows": 0,
+      "headers": 0,
+      "input_sha256": "e89e7d5490d214ff11d1dfbbeb097dfe08ef06a4d43dfaf812e5667643d8052b",
+      "normalized_rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "captured-MOE-input-rows",
+      "status": "exact_rows_and_headers",
+      "sheet_name": "Sheet",
+      "rows": 4,
+      "headers": 24,
+      "input_sha256": "75e84cbf84ff96c5e9de8155df63d9500b68f5b6d14caaed38f5a95853532a02",
+      "normalized_rows_sha256": "0887bb16a8e24518db2650ef3a3cac65a3ce8bccbe282a88bec80aff189d3651"
+    },
+    {
+      "case": "moderate-2000-row-table",
+      "status": "exact_rows_and_headers",
+      "sheet_name": "Sheet",
+      "rows": 2000,
+      "headers": 8,
+      "input_sha256": "30578c84e05b5762bc954599402c737e8659730b7b0d49eebf599c7eb6b68485",
+      "normalized_rows_sha256": "c0278c72e368a9a86451669164494536106be5b51c6f1ee143d89fbbfe03782e"
+    },
+    {
+      "case": "date-refused",
+      "status": "expected_refusal",
+      "code": "unsupported_cell",
+      "input_sha256": "cbfa90a44c9ac719157a758a27d76c1c2867e9a90d05d36a6d75b2d213b9e0e6"
+    },
+    {
+      "case": "duration-refused",
+      "status": "expected_refusal",
+      "code": "unsupported_cell",
+      "input_sha256": "159e2a2b08e63492351cba777b86a9495dbf45fbbaa6035553b2ce44dfcfc773"
+    },
+    {
+      "case": "oversized-rectangle",
+      "status": "expected_refusal",
+      "code": "limit_exceeded",
+      "input_sha256": "f189cc392784ff399640b66d30fa2d0bbd8fec53c87c242a407d816a55e746fe"
+    },
+    {
+      "case": "dimension-required",
+      "status": "expected_refusal",
+      "code": "unsupported_workbook",
+      "input_sha256": "abd0d2f8acf1842ad594ffd1c14bbcce0b05cb2f6fd10a28b549ef3dd4bd89d4"
+    },
+    {
+      "case": "external-sheet-refused",
+      "status": "expected_refusal",
+      "code": "unsupported_workbook",
+      "input_sha256": "ded9e7ee0ef78433da9bab99f68ad24313a0b453703c6fb855fd5a6ba28504a3"
+    },
+    {
+      "case": "invalid-workbook",
+      "status": "expected_refusal",
+      "code": "malformed_workbook",
+      "input_sha256": "a3989126344744ef800dbc88bf7e744853f3f2eac75c9ab3301f4e845ef22078"
+    }
+  ],
+  "scope": "bounded common-cell XLSX compatibility; dates/durations explicitly unsupported",
+  "native_readers": "NOT_REQUESTED",
+  "protected_source_sha256": {
+    "m2/Cargo.lock": "52204c28ecb6334cd1bdc16aa92c680094bad032343dac074a2d3f1bacc892b4",
+    "m2/Cargo.toml": "3ae1cbaf4026d1b8afeffc3c9e7a05ad60e34cf8cc116e8d59dbb6576ca547cb",
+    "m2/studio-cli/Cargo.toml": "fda21775f6b11f7e8775a8d50b0078fb22d9142e7ff234c51e42c8e0cb59b4d5",
+    "m2/studio-cli/src/main.rs": "bf35a6c970224a448906c0ebc1d498d8cff41f3563c905fb2424235e2e5b21d0",
+    "m2/studio-core/Cargo.toml": "5854ebd0acc2b11f62c8001fece7b89d7451ecbee87f70a3adb66059bbbd45cc",
+    "m2/studio-core/src/casing.rs": "279000271dc5c4c6997df2a138da252293ae7aca6fb742fa2c483641d50a842a",
+    "m2/studio-core/src/cedict.rs": "c51b7116ea7d7c6331fa43f8cf820e44664874440e23578c2cff1ae82ab94100",
+    "m2/studio-core/src/engine.rs": "799a776fea81176f135b4f84f543e0c0ce0b2a6a3dba7c0ef416b5fd395ab31e",
+    "m2/studio-core/src/error.rs": "8ea3b09d0f2bbe4b05993e6e3b2189a3cda9c4d3aca1f12022a1e2d046aa3df0",
+    "m2/studio-core/src/job.rs": "219caa620288bc355d3173a2759bcef2ca17167c8e517aa400e6c74cac112334",
+    "m2/studio-core/src/lib.rs": "20a3bdaa8a107bfb76cfa98fea0b4320a2a0fa7530c17f50c1ac278c1311fd88",
+    "m2/studio-core/src/model.rs": "ea349dfa63ae96896f611d39d109111a8e7f0d5a91f2ebada2b9b08f21498404",
+    "m2/studio-core/src/resource_paths.rs": "e1d2bbd02ba6b5c9e14210095944c2445b57e226f53310b425e58f7ec80b1cea",
+    "m2/studio-core/src/resources.rs": "563581bb1995c3c71678895ad3abf0332775ba67f73a7d0a6cb45fda8bfa3edf",
+    "m2/studio-core/src/safe_fs.rs": "ae0a71d5358cf3a4824754a6f42cec58cb29e5ba81e3eb0b92d9cf90feb51739",
+    "m2/studio-core/src/text.rs": "8f3f8d6c9861c8fc8daff58b9eb67c6366f473738788a1f43ab64db315d30ce3",
+    "m2/studio-core/tests/resources.rs": "ac5aa9c6c3b7b648255d25ca4ccf8e4b784a5b350d765a507791c178cdbd6964",
+    "m2/studio-core/tests/text_converters.rs": "d76557f39b08fc78e4eda59421bebf86182a95128d711762fd58c1d1c9688d57",
+    "m2/studio-core/tests/workflows.rs": "06bc2c094cd79d852ad61f7a56e167bad6ee3f6d39076f0cdd7bf0693bd9c8d9",
+    "scripts/m2_foundation.py": "ae8a72f053c2c262ca06717154dfd1b5e2948ef1e641c13c1bf167caa5117990",
+    "baseline/unicode/unicode16-casing.json": "f69d2e55d6b8c8d5fe33f764cc47b829bccc6d73aaff1791e1216328a1c24071",
+    "scripts/m2_text.py": "31dc855b4c0ddc3a8bb6c5f204aac93259b623ebcd86c5c67a0c76483d5b0d1e",
+    "baseline/cases.json": "6755e0e426f3723de47060339404478f1a313c19f073dba12eba03fc6fb1d566",
+    "baseline/source-manifest.json": "1f32ed5a20819ab8e1473e9a30609299815b50761173b83a8999cf513d69001b",
+    "baseline/legacy/plugins/cccedict_plugin.py": "4c3fc461a044e702678ce7fbf0e2b251969d5932c4bf2d2070d6f58c2eeb139c",
+    "baseline/legacy/base_plugin.py": "0620c3d88502191b4b297c918394cc9ae886e943e83b06bf377fa1284b044b49",
+    "baseline/expected/cc_cedict.txt": "8de24ce354f5d017b2e99702d82d2a81c607600386944d0000f2cd9c51ff02d0",
+    "baseline/expected/moe_revised.txt": "32688acf6251bb8536d585a20e82ae668423184ff7017b7aeed96936bb864a4f",
+    "baseline/expected/moe_revised_wfg.txt": "a955bbdeb60344e79f2127bb4ac19c65ff3c9a24b9162a2b85dbe8dc59bd7c04",
+    "baseline/expected/moe_concise.txt": "d6bffa874e702914802c5e8a574e5d83930ab723f2e4655b739b1555b2e6468a",
+    "baseline/expected/moe_idioms.txt": "f1e2fdb6ef77bed7aeee1ee66989fa00c3ac662e80a63712c2295916b157ac0c",
+    "baseline/expected/moe_mini.txt": "0f99434d534f8949d922fffceb012620ef8a64cb783e38325525a71345f888b3",
+    "Cargo.lock": "b1993e21cd4be1fd4937914bb7458cefb730e21927fbe058046e4aee3bd81e35",
+    "experiments/legacy-sort/Cargo.lock": "832527875540ca97c9af5ee227c0f38d3f03eed9c16c26a0c63fed51285f7a8e",
+    "experiments/real-rebuild/Cargo.lock": "0490f412f73e66fd7b719da2dd71470eeb315aaa9028837ae185f3437a8e867f"
+  },
+  "dependency_lock_created": true,
+  "dependency_lock_contents": "# This file is automatically @generated by Cargo.\n# It is not intended for manual editing.\nversion = 4\n\n[[package]]\nname = \"arbitrary\"\nversion = \"1.5.0\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"3bc62ac97cc33321f50863d514c3bc38a453947a8f9e781137e47c7401020aed\"\ndependencies = [\n \"derive_arbitrary\",\n]\n\n[[package]]\nname = \"atoi_simd\"\nversion = \"0.16.1\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"c2a49e05797ca52e312a0c658938b7d00693ef037799ef7187678f212d7684cf\"\ndependencies = [\n \"debug_unsafe\",\n]\n\n[[package]]\nname = \"bumpalo\"\nversion = \"3.20.3\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"72f5acc6cb2ba439de613abc23857ec3d78374d8ed5ac84e9d11336e87da8649\"\n\n[[package]]\nname = \"byteorder\"\nversion = \"1.5.0\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"1fd0f2584146f6f2ef48085050886acf353beff7305ebd1ae69500e27c67f64b\"\n\n[[package]]\nname = \"calamine\"\nversion = \"0.31.0\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"da56b262e8a827c6b12c3dde4ea4622e0ff542bd2e9ea5855e4cb523481d77b7\"\ndependencies = [\n \"atoi_simd\",\n \"byteorder\",\n \"codepage\",\n \"encoding_rs\",\n \"fast-float2\",\n \"log\",\n \"quick-xml\",\n \"serde\",\n \"zip\",\n]\n\n[[package]]\nname = \"cfg-if\"\nversion = \"1.0.5\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"4e7648175b45a9a48536d676f68d918270699102aa8dab5496df06904c914600\"\n\n[[package]]\nname = \"codepage\"\nversion = \"0.1.3\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"bdff162541cd8b79de82e2edcc7eff3a8c2a6dc3d75152636028f96d93de3b26\"\ndependencies = [\n \"encoding_rs\",\n]\n\n[[package]]\nname = \"core_detect\"\nversion = \"1.0.0\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"7f8f80099a98041a3d1622845c271458a2d73e688351bf3cb999266764b81d48\"\n\n[[package]]\nname = \"crc32fast\"\nversion = \"1.5.3\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"0ba106e844045ddc02c20768ac4b0b7cb45f2cc2ecbd833ac9f5dacb183c2055\"\ndependencies = [\n \"cfg-if\",\n]\n\n[[package]]\nname = \"debug_unsafe\"\nversion = \"0.1.4\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"7eed2c4702fa172d1ce21078faa7c5203e69f5394d48cc436d25928394a867a2\"\n\n[[package]]\nname = \"derive_arbitrary\"\nversion = \"1.5.0\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"1b034bd7d5f032402a2479444dcc6f74e36a03f31854d41680fb240ef682a1ac\"\ndependencies = [\n \"proc-macro2\",\n \"quote\",\n \"syn\",\n]\n\n[[package]]\nname = \"encoding_rs\"\nversion = \"0.8.42\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"8e985e0451871ad22fb8d2b6b076e2028a502a0d3950998c2c5c0a4f9b5d9679\"\ndependencies = [\n \"cfg-if\",\n \"core_detect\",\n \"multiversion_no_op\",\n \"rustversion\",\n \"scopeguard\",\n \"simdutf8\",\n]\n\n[[package]]\nname = \"equivalent\"\nversion = \"1.0.3\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"00d174d5400e5e8fd687ad1049e2f578285fa914201b1af7e8b112a4546bd826\"\n\n[[package]]\nname = \"fast-float2\"\nversion = \"0.2.4\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"c6e8948ce679d00a02a94739ea185595dca7118ed04feb991127e443bd3d761f\"\n\n[[package]]\nname = \"flate2\"\nversion = \"1.1.10\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"6e634e2e0ebac1ee034020da1ca582e17ffe4e0f5e985823721e168928136dcb\"\ndependencies = [\n \"zlib-rs\",\n]\n\n[[package]]\nname = \"hashbrown\"\nversion = \"0.17.1\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"ed5909b6e89a2db4456e54cd5f673791d7eca6732202bbf2a9cc504fe2f9b84a\"\n\n[[package]]\nname = \"indexmap\"\nversion = \"2.14.2\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"cc4e190f5d26ca7051642629da2c52fc03bde85a03197c99408dcd291734c855\"\ndependencies = [\n \"equivalent\",\n \"hashbrown\",\n]\n\n[[package]]\nname = \"itoa\"\nversion = \"1.0.18\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"8f42a60cbdf9a97f5d2305f08a87dc4e09308d1276d28c869c684d7777685682\"\n\n[[package]]\nname = \"log\"\nversion = \"0.4.34\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"f9f8bd3e56ce4dfc153cf470fffbfa98c7620958b312ca5c3a4b8d5181fd13c6\"\n\n[[package]]\nname = \"memchr\"\nversion = \"2.8.3\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"cf8baf1c55e62ffcace7a9f06f4bd9cd3f0c4beb022d3b367256b91b87513d98\"\n\n[[package]]\nname = \"multiversion_no_op\"\nversion = \"1.0.0\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"743fb55ba31b18fb1ecef6bdc9aa2743314978ac084044301a7eee33fb99a20d\"\n\n[[package]]\nname = \"proc-macro2\"\nversion = \"1.0.107\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"985e7ec9bb745e6ce6535b544d84d6cd6f7ad8bd711c398938ae983b91a766d9\"\ndependencies = [\n \"unicode-ident\",\n]\n\n[[package]]\nname = \"quick-xml\"\nversion = \"0.38.3\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"42a232e7487fc2ef313d96dde7948e7a3c05101870d8985e4fd8d26aedd27b89\"\ndependencies = [\n \"encoding_rs\",\n \"memchr\",\n]\n\n[[package]]\nname = \"quote\"\nversion = \"1.0.47\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"1fbf4db142a473a8d80c26bbf18454ed458bf8d26c8219c331daecfdbd079001\"\ndependencies = [\n \"proc-macro2\",\n]\n\n[[package]]\nname = \"rustversion\"\nversion = \"1.0.23\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"cf54715a573b99ac80df0bc206da022bcd442c974952c7b9720069370852e21f\"\n\n[[package]]\nname = \"scopeguard\"\nversion = \"1.2.0\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"94143f37725109f92c262ed2cf5e59bce7498c01bcc1502d7b9afe439a4e9f49\"\n\n[[package]]\nname = \"serde\"\nversion = \"1.0.229\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"4148590afebada386688f18773da617792bf2ef03ffc1e4cbd2b1d45b023e0ba\"\ndependencies = [\n \"serde_core\",\n \"serde_derive\",\n]\n\n[[package]]\nname = \"serde_core\"\nversion = \"1.0.229\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"67dca2c9c51e58a4791a4b1ed58308b39c64224d349a935ab5039aa360942a48\"\ndependencies = [\n \"serde_derive\",\n]\n\n[[package]]\nname = \"serde_derive\"\nversion = \"1.0.229\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"e7a5d71263a5a7d47b41f6b3f06ba276f10cc18b0931f1799f710578e2309348\"\ndependencies = [\n \"proc-macro2\",\n \"quote\",\n \"syn\",\n]\n\n[[package]]\nname = \"serde_json\"\nversion = \"1.0.154\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"e7e9cc8b1b85264074fbcc02a88680c4096b1e47df8f739dceb03bf482f04bd6\"\ndependencies = [\n \"itoa\",\n \"memchr\",\n \"serde\",\n \"serde_core\",\n \"zmij\",\n]\n\n[[package]]\nname = \"simd-adler32\"\nversion = \"0.3.10\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"3a219298ac11a56ea9a6d2120044824d6f01aeb034955e7af7bc16858527deea\"\n\n[[package]]\nname = \"simdutf8\"\nversion = \"0.1.5\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"e3a9fe34e3e7a50316060351f37187a3f546bce95496156754b601a5fa71b76e\"\n\n[[package]]\nname = \"studio-xlsx\"\nversion = \"0.1.0\"\ndependencies = [\n \"calamine\",\n \"quick-xml\",\n \"serde\",\n \"serde_json\",\n \"zip\",\n]\n\n[[package]]\nname = \"syn\"\nversion = \"3.0.9\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"d78c8dee4c7bf0e14673097256fed6142ce9d3b85a408189d07482442145823b\"\ndependencies = [\n \"proc-macro2\",\n \"quote\",\n \"unicode-ident\",\n]\n\n[[package]]\nname = \"unicode-ident\"\nversion = \"1.0.27\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"a2c754d6c33795a1c324727428e5a7dedb5b06195f9890bdbcba760d3e246563\"\n\n[[package]]\nname = \"zip\"\nversion = \"4.6.1\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"caa8cd6af31c3b31c6631b8f483848b91589021b28fffe50adada48d4f4d2ed1\"\ndependencies = [\n \"arbitrary\",\n \"crc32fast\",\n \"flate2\",\n \"indexmap\",\n \"memchr\",\n \"zopfli\",\n]\n\n[[package]]\nname = \"zlib-rs\"\nversion = \"0.6.8\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"b268e58e7c693d7c271f93ffc4ba3b380412554231c85bf61ca7af91042a4112\"\n\n[[package]]\nname = \"zmij\"\nversion = \"1.0.23\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"29666d0abbfad1e3dc4dcf6144730dd3a3ab225bbbdac83319345b1b44ccfc1b\"\n\n[[package]]\nname = \"zopfli\"\nversion = \"0.8.4\"\nsource = \"registry+https://github.com/rust-lang/crates.io-index\"\nchecksum = \"aaf7fc5d30c28483d93805c4a5e12b05bbb52407fa67c5f8bd552374cd01fb11\"\ndependencies = [\n \"bumpalo\",\n \"crc32fast\",\n \"log\",\n \"simd-adler32\",\n]\n",
+  "dependency_packages": [
+    {
+      "name": "arbitrary",
+      "version": "1.5.0",
+      "checksum": "3bc62ac97cc33321f50863d514c3bc38a453947a8f9e781137e47c7401020aed"
+    },
+    {
+      "name": "atoi_simd",
+      "version": "0.16.1",
+      "checksum": "c2a49e05797ca52e312a0c658938b7d00693ef037799ef7187678f212d7684cf"
+    },
+    {
+      "name": "bumpalo",
+      "version": "3.20.3",
+      "checksum": "72f5acc6cb2ba439de613abc23857ec3d78374d8ed5ac84e9d11336e87da8649"
+    },
+    {
+      "name": "byteorder",
+      "version": "1.5.0",
+      "checksum": "1fd0f2584146f6f2ef48085050886acf353beff7305ebd1ae69500e27c67f64b"
+    },
+    {
+      "name": "calamine",
+      "version": "0.31.0",
+      "checksum": "da56b262e8a827c6b12c3dde4ea4622e0ff542bd2e9ea5855e4cb523481d77b7"
+    },
+    {
+      "name": "cfg-if",
+      "version": "1.0.5",
+      "checksum": "4e7648175b45a9a48536d676f68d918270699102aa8dab5496df06904c914600"
+    },
+    {
+      "name": "codepage",
+      "version": "0.1.3",
+      "checksum": "bdff162541cd8b79de82e2edcc7eff3a8c2a6dc3d75152636028f96d93de3b26"
+    },
+    {
+      "name": "core_detect",
+      "version": "1.0.0",
+      "checksum": "7f8f80099a98041a3d1622845c271458a2d73e688351bf3cb999266764b81d48"
+    },
+    {
+      "name": "crc32fast",
+      "version": "1.5.3",
+      "checksum": "0ba106e844045ddc02c20768ac4b0b7cb45f2cc2ecbd833ac9f5dacb183c2055"
+    },
+    {
+      "name": "debug_unsafe",
+      "version": "0.1.4",
+      "checksum": "7eed2c4702fa172d1ce21078faa7c5203e69f5394d48cc436d25928394a867a2"
+    },
+    {
+      "name": "derive_arbitrary",
+      "version": "1.5.0",
+      "checksum": "1b034bd7d5f032402a2479444dcc6f74e36a03f31854d41680fb240ef682a1ac"
+    },
+    {
+      "name": "encoding_rs",
+      "version": "0.8.42",
+      "checksum": "8e985e0451871ad22fb8d2b6b076e2028a502a0d3950998c2c5c0a4f9b5d9679"
+    },
+    {
+      "name": "equivalent",
+      "version": "1.0.3",
+      "checksum": "00d174d5400e5e8fd687ad1049e2f578285fa914201b1af7e8b112a4546bd826"
+    },
+    {
+      "name": "fast-float2",
+      "version": "0.2.4",
+      "checksum": "c6e8948ce679d00a02a94739ea185595dca7118ed04feb991127e443bd3d761f"
+    },
+    {
+      "name": "flate2",
+      "version": "1.1.10",
+      "checksum": "6e634e2e0ebac1ee034020da1ca582e17ffe4e0f5e985823721e168928136dcb"
+    },
+    {
+      "name": "hashbrown",
+      "version": "0.17.1",
+      "checksum": "ed5909b6e89a2db4456e54cd5f673791d7eca6732202bbf2a9cc504fe2f9b84a"
+    },
+    {
+      "name": "indexmap",
+      "version": "2.14.2",
+      "checksum": "cc4e190f5d26ca7051642629da2c52fc03bde85a03197c99408dcd291734c855"
+    },
+    {
+      "name": "itoa",
+      "version": "1.0.18",
+      "checksum": "8f42a60cbdf9a97f5d2305f08a87dc4e09308d1276d28c869c684d7777685682"
+    },
+    {
+      "name": "log",
+      "version": "0.4.34",
+      "checksum": "f9f8bd3e56ce4dfc153cf470fffbfa98c7620958b312ca5c3a4b8d5181fd13c6"
+    },
+    {
+      "name": "memchr",
+      "version": "2.8.3",
+      "checksum": "cf8baf1c55e62ffcace7a9f06f4bd9cd3f0c4beb022d3b367256b91b87513d98"
+    },
+    {
+      "name": "multiversion_no_op",
+      "version": "1.0.0",
+      "checksum": "743fb55ba31b18fb1ecef6bdc9aa2743314978ac084044301a7eee33fb99a20d"
+    },
+    {
+      "name": "proc-macro2",
+      "version": "1.0.107",
+      "checksum": "985e7ec9bb745e6ce6535b544d84d6cd6f7ad8bd711c398938ae983b91a766d9"
+    },
+    {
+      "name": "quick-xml",
+      "version": "0.38.3",
+      "checksum": "42a232e7487fc2ef313d96dde7948e7a3c05101870d8985e4fd8d26aedd27b89"
+    },
+    {
+      "name": "quote",
+      "version": "1.0.47",
+      "checksum": "1fbf4db142a473a8d80c26bbf18454ed458bf8d26c8219c331daecfdbd079001"
+    },
+    {
+      "name": "rustversion",
+      "version": "1.0.23",
+      "checksum": "cf54715a573b99ac80df0bc206da022bcd442c974952c7b9720069370852e21f"
+    },
+    {
+      "name": "scopeguard",
+      "version": "1.2.0",
+      "checksum": "94143f37725109f92c262ed2cf5e59bce7498c01bcc1502d7b9afe439a4e9f49"
+    },
+    {
+      "name": "serde",
+      "version": "1.0.229",
+      "checksum": "4148590afebada386688f18773da617792bf2ef03ffc1e4cbd2b1d45b023e0ba"
+    },
+    {
+      "name": "serde_core",
+      "version": "1.0.229",
+      "checksum": "67dca2c9c51e58a4791a4b1ed58308b39c64224d349a935ab5039aa360942a48"
+    },
+    {
+      "name": "serde_derive",
+      "version": "1.0.229",
+      "checksum": "e7a5d71263a5a7d47b41f6b3f06ba276f10cc18b0931f1799f710578e2309348"
+    },
+    {
+      "name": "serde_json",
+      "version": "1.0.154",
+      "checksum": "e7e9cc8b1b85264074fbcc02a88680c4096b1e47df8f739dceb03bf482f04bd6"
+    },
+    {
+      "name": "simd-adler32",
+      "version": "0.3.10",
+      "checksum": "3a219298ac11a56ea9a6d2120044824d6f01aeb034955e7af7bc16858527deea"
+    },
+    {
+      "name": "simdutf8",
+      "version": "0.1.5",
+      "checksum": "e3a9fe34e3e7a50316060351f37187a3f546bce95496156754b601a5fa71b76e"
+    },
+    {
+      "name": "studio-xlsx",
+      "version": "0.1.0",
+      "checksum": null
+    },
+    {
+      "name": "syn",
+      "version": "3.0.9",
+      "checksum": "d78c8dee4c7bf0e14673097256fed6142ce9d3b85a408189d07482442145823b"
+    },
+    {
+      "name": "unicode-ident",
+      "version": "1.0.27",
+      "checksum": "a2c754d6c33795a1c324727428e5a7dedb5b06195f9890bdbcba760d3e246563"
+    },
+    {
+      "name": "zip",
+      "version": "4.6.1",
+      "checksum": "caa8cd6af31c3b31c6631b8f483848b91589021b28fffe50adada48d4f4d2ed1"
+    },
+    {
+      "name": "zlib-rs",
+      "version": "0.6.8",
+      "checksum": "b268e58e7c693d7c271f93ffc4ba3b380412554231c85bf61ca7af91042a4112"
+    },
+    {
+      "name": "zmij",
+      "version": "1.0.23",
+      "checksum": "29666d0abbfad1e3dc4dcf6144730dd3a3ab225bbbdac83319345b1b44ccfc1b"
+    },
+    {
+      "name": "zopfli",
+      "version": "0.8.4",
+      "checksum": "aaf7fc5d30c28483d93805c4a5e12b05bbb52407fa67c5f8bd552374cd01fb11"
+    }
+  ],
+  "source_sha256": {
+    "baseline/cases.json": "6755e0e426f3723de47060339404478f1a313c19f073dba12eba03fc6fb1d566",
+    "baseline/legacy/excel_utils.py": "b0a837e2197a5d0d42599171716b903ef813dc52512e55c1ccbe93f2f0bd2302",
+    "baseline/xlsx-reader-kit/active.xlsx": "14cd7220ebd4a204d1ee1c040d8b239850b8050b65d9cce28436d9dac08f9137",
+    "baseline/xlsx-reader-kit/date.xlsx": "6471da8cfd31b05cea4b337368895d97d9561bed0ee9a85461b9c6e8b2d1bef5",
+    "baseline/xlsx-reader-kit/duration.xlsx": "9d7f914cc909a54da641884e58dc094a1b1e7de5e091ac784766469688774468",
+    "baseline/xlsx-reader-kit/empty.xlsx": "9661fd2c02b0a22c54882e98fce99109013e1ef19025a82a1c047a2360ce0a18",
+    "baseline/xlsx-reader-kit/expected.json": "9f4963e95eda88ff02c04b7cbde5f786d6ebdbe630cde1c40ab000642fc15610",
+    "baseline/xlsx-reader-kit/external.xlsx": "32d56b3587454c78922656f23991899abd319425d57c496b90ca1592901b9841",
+    "baseline/xlsx-reader-kit/formulas.xlsx": "ab483a3ff5511029729637539f72f9b65b7ab6b0469df199b58aae173f6e2670",
+    "baseline/xlsx-reader-kit/headers.xlsx": "00e8e29b07d96047570b2ad250ccbf6c2c101cd08afc62336a7d8783c0b63640",
+    "baseline/xlsx-reader-kit/inline.xlsx": "f31838974f07304b9ee396b920bdc31919d558f74a55b1726a7646145a59d8f8",
+    "baseline/xlsx-reader-kit/invalid.xlsx": "a3989126344744ef800dbc88bf7e744853f3f2eac75c9ab3301f4e845ef22078",
+    "baseline/xlsx-reader-kit/leading.xlsx": "c17f48a55cabb7450264ca3a7b9f3522ceeb7615991aa0c359f19cc7ed938385",
+    "baseline/xlsx-reader-kit/manifest.json": "99b0fc27d71925bcbe7532455c5c0c04d64c8fdde8c2f3c4c5e031bb4996a8a3",
+    "baseline/xlsx-reader-kit/moderate.xlsx": "0cefca1be426be7fbb82bc10b885f7dd2ede473e8f0f02135277fa546465c920",
+    "baseline/xlsx-reader-kit/moe-rows.xlsx": "4d16e493d7686aa4db03b2619e023f81bbd93d9940ff4369fed91192c4fd5f1a",
+    "baseline/xlsx-reader-kit/no-dimension.xlsx": "8e1f8798236f73de5da482844e7dbb5034afedd4270ed0baaa2f00d70196aa60",
+    "baseline/xlsx-reader-kit/normalization.xlsx": "91999a3632fca2f9f8f0491fc1ec940ce6e4e1d4a1b95ebb1f2c34be0834081a",
+    "baseline/xlsx-reader-kit/numbers.xlsx": "7e1e905533434094add4017c921cd12dadd04f6e4aac4bc963f94ba95f500c60",
+    "baseline/xlsx-reader-kit/oversized.xlsx": "753b4bfc03c0a0fbb60855983050307401d22b9d422923f0f55a0943a951f1d0",
+    "baseline/xlsx-reader-kit/shared.xlsx": "f6067f5ab91957f560cd1c5fc0b344349a4d39254d2de4e489ff64b4f15a7fba",
+    "m2/xlsx-reader/Cargo.lock": "cd1e07d14298148b28a05dda63730b3c23337f39a4e5f6f11b3ad7a9c4f33d0b",
+    "m2/xlsx-reader/Cargo.toml": "9f4505aca02e286689f9f5e216c3d96b39d200c6b8d35576b4dbf87357d50cce",
+    "m2/xlsx-reader/src/lib.rs": "eed5160dc4fbab7646df8140318944e9aad8b661d61524db76195a910efdbafa",
+    "m2/xlsx-reader/src/main.rs": "d59522e31ca27a21f1ceabb7a33ba9eb4cd9a145a9a2f7bcf2951fc87d9a0df2",
+    "m2/xlsx-reader/src/numbers.rs": "0b93a8a1b152f72cf084c2db2c59293bdcd002cec03670773671d5fed61d1c16",
+    "m2/xlsx-reader/src/package.rs": "9a63a0f2c8e7bf88fb5866f20b17b10c35d5bb3146dd316567e2f413c5ff87bd",
+    "m2/xlsx-reader/src/reader.rs": "374894357b74baa326c02ae38580e1d271fe454948fe39cf52fd3955821ef122",
+    "m2/xlsx-reader/src/xml.rs": "618c8ada474d72b92fc818c8ac5317d588fa1d1e0bb1a23fa26c02b2df2e3d7c",
+    "m2/xlsx-reader/tests/compatibility.rs": "1290a1664165c7bd6ab4ba3d2940cf1290d933170d612a932f00d28df3fc43fd",
+    "scripts/m2_xlsx.py": "472a31551d81f135cfa73875bb25f785c21b85c0e1165513828d7966df32fb41",
+    "scripts/xlsx_fixtures.py": "50d5fc41ef9ec3a891f928059e210f7ee017034049ad61972913c98a45586746"
+  }
+}

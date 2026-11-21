@@ -1,0 +1,30 @@
+{
+  "schema": "studio-gui-cancel-recovery-evidence-v1",
+  "scope": "GUI SQLite to MDX cancellation and subsequent small conversion in the same session",
+  "GUI_state": "cancelled",
+  "same_session_jobs": {
+    "cancelled": "publish-0000000000000003",
+    "succeeded": "publish-0000000000000004"
+  },
+  "earlier_restart_run_not_used_for_same_session_claim": true,
+  "GUI_evidence": "User screenshot and confirmation; screenshots not copied into package",
+  "post_cancel_report_sha256": "32b1a6f75e269268f60e510ddd1158d95db32d02d52b217ae034444f0fa038a7",
+  "recovery_output": {
+    "uploaded_name": "see.mdx",
+    "sha256": "65d6a7ee969645963689bf8ee603e03546ba76ed5a898c83624ffe38845efc68",
+    "records": 5,
+    "duplicate_chinese_definitions": 2,
+    "title": "dict22",
+    "description": "hi new world",
+    "independent_decoder": "existing stdlib wire_rows plus checked XML header",
+    "comparison_with_uploaded_source_database": {
+      "status": "passed",
+      "records": 5,
+      "duplicate_definitions_preserved": true,
+      "stored_metadata_preserved": true,
+      "encoding": "UTF-8",
+      "title": "dict22"
+    }
+  },
+  "new_prefix_search_qualified": false
+}

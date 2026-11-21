@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-06",
+  "files": {
+    "measurements.json": "459fecd50acf3029d9789869a85b95a350d26a03664904cbcf0ff3d966033078"
+  },
+  "method": "Exact allowlisted main workbook/u8 members extracted from user attachments. Full workbook inspection used Python-only limits of 250000 rows, 5000000 cells, 128 MiB per part and 256 MiB decoded/ZIP. Original captured Python plugins converted complete datasets; canonical output byte/record totals were scanned sequentially. These inspection allowances do not change native limits or qualify native conversion.",
+  "source_data_or_outputs_bundled": false,
+  "native_conversion_qualified": false
+}

@@ -1,0 +1,11 @@
+{
+  "source": "User-uploaded m1-closeout-report(1).json, retained byte-for-byte as m1-closeout-report.json",
+  "files": {
+    "m1-closeout-report.json": "60b4216d8f3010a754567b190c3bfda68f1225d297a4db3e7d1f11093b32ec7e"
+  },
+  "reported_result": "all eight gates passed; engine decision was pending when the report was emitted",
+  "review_decision": "docs/ENGINE-DECISION.md",
+  "local_Rust_execution": false,
+  "individual_final_logs_received": false,
+  "test_counts_inferred_from_process_exit": false
+}

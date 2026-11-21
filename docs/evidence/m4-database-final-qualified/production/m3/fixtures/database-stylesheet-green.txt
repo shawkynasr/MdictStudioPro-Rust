@@ -1,0 +1,6 @@
+1
+<strong>
+</strong>
+2
+<span style="color:#008000">
+</span>

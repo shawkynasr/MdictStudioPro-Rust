@@ -1,0 +1,15 @@
+{
+  "method": "Fresh complete original-helper row pass and independent openpyxl shared-string table; exact sorted-key compact UTF-8 JSONL byte extent recomputed without retaining rows",
+  "source_sha256": "bbbac6a820cac000cabf789d81b88338d94aa14f1d7eea6e16b495cf5c8dfa80",
+  "source_bytes": 31188250,
+  "shared_strings": 615738,
+  "shared_string_bytes": 41823579,
+  "row_spool_bytes": 102800416,
+  "row_digest": {
+    "rows": 163909,
+    "pairs": 2950362,
+    "key_bytes": 40321614,
+    "value_bytes": 44384638,
+    "framed_rows_sha256": "6e1d8eea79e7eb2e8ad513215aa65c30f10ac014c92380f550cefdbf78c8146a"
+  }
+}

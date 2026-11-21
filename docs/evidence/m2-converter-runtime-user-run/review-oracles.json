@@ -1,0 +1,137 @@
+{
+  "method": "Full regenerated fixture files and captured original Python plugins; existing narrowly scoped MOE set-order comparator only",
+  "source_sha256": {
+    "m2/converter-runtime/Cargo.toml": "f92dca465ff4f17e8469faef8ad144b7a5dfad48fc511cc8755e1f38bbbb5746",
+    "m2/converter-runtime/src/converters.rs": "dc63a4e89730734e8e06c5828322f278836dd40e474bdc304aa1ee0ced168fe3",
+    "m2/converter-runtime/src/lib.rs": "b66c656601fe0cc01eb4f6093aa5d3fd4812c8d0fe6363cfce6dbcfe0cdd6c45",
+    "m2/converter-runtime/src/main.rs": "e84bfb54d695ffcac23e3e9c90877354430fed3dedf76f4d0287e0a90a9c5c45",
+    "m2/converter-runtime/src/runner.rs": "3dc3ef04f23e2b35da25a47296d5c0218407c01e1a0d25bac592eb146ce2e6cc",
+    "m2/converter-runtime/src/tests.rs": "7cd43988b4ae54e82bca6ce7447e8f76445caf160f14af86dac8e6d1ef60ca34",
+    "scripts/converter_runtime_fixtures.py": "0fc9f473442f32bccda6198c455951a420024dac7a6af6ecd5136c43b5f0a7d0",
+    "scripts/converter_runtime_lock.py": "5f9ad290c657a2f85f549744f5670f20173ace1ff29bddd270af24d8c2dc89c7",
+    "scripts/m2_converter_runtime.py": "40a5080216c3712ab0939db71dc433bab8cb10df22da48bb8ef621ec156e2c4f",
+    "scripts/test_m2_converter_runtime.py": "d4d1e4757313af32cf2dedce2b068f31b52b5760ff06de059ea080bed2ee57e5",
+    "m2/converter-runtime/Cargo.lock": "e01b9a71f3ce01488d2d7a962285c773df94f13f809f8c2644c48052479f5ad3"
+  },
+  "legacy_oracle_sha256": {
+    "baseline/legacy/base_plugin.py": "0620c3d88502191b4b297c918394cc9ae886e943e83b06bf377fa1284b044b49",
+    "baseline/legacy/excel_utils.py": "b0a837e2197a5d0d42599171716b903ef813dc52512e55c1ccbe93f2f0bd2302",
+    "baseline/legacy/plugins/cccedict_plugin.py": "4c3fc461a044e702678ce7fbf0e2b251969d5932c4bf2d2070d6f58c2eeb139c",
+    "baseline/legacy/plugins/edudict_plugin.py": "2505bdaf5733f905d8fba1f68dd22e1c7b123484599d1f18bcf7c6cb576aa923",
+    "baseline/legacy/plugins/WFG_desgin_Plugin.py": "9d476ee0fb38603c7b6e6634c9987ab7a26077dbf15357718e9e93293da09ba2",
+    "baseline/legacy/plugins/concise_plugin.py": "25b37d4f801e4ddfef03557a54fa8a20ad5bbbac79f8eddc19135ae6562abc6a",
+    "baseline/legacy/plugins/idiom_plugin.py": "53dce8296c31f92c1e83a4cb7f2773c7e97d6ae85f00811724a11adf83768bc1",
+    "baseline/legacy/plugins/mini_plugin.py": "aca858af532a8f409b5b55d6d3632b63466d8d67af910390f65e3623561c00f5"
+  },
+  "cases": {
+    "cc_cedict": {
+      "normalized_record_digest": {
+        "records": 32000,
+        "key_bytes": 256000,
+        "payload_bytes": 12009780,
+        "framed_records_sha256": "714ea99756dadb529d8d8363b9536df8b23827ed7a9aa2c0bb4c79036094185f"
+      },
+      "metrics": {
+        "primary_entries": 16000,
+        "alias_redirects": 0,
+        "traditional_entries": 16000,
+        "skipped_rows_or_lines": 0
+      },
+      "comments_count": 1,
+      "input_rows": 16000,
+      "raw_python_sha256": "aee246c964c3c661c6e61d4a4a8e49d269da53bf86f5944f78420dcbc34985bf",
+      "file_bytes": 12457780,
+      "input_sha256": "4e45699b701c30abe4c887c75524fc0272ae79e6ca71d8d69962818356e823c1"
+    },
+    "moe_revised": {
+      "normalized_record_digest": {
+        "records": 12000,
+        "key_bytes": 96000,
+        "payload_bytes": 7620890,
+        "framed_records_sha256": "2f56b46d3d0627eb7427e3af692f3cdfefd45f75db0181384cc947e441c21496"
+      },
+      "metrics": {
+        "primary_entries": 6000,
+        "alias_redirects": 6000,
+        "traditional_entries": 0,
+        "skipped_rows_or_lines": 0
+      },
+      "comments_count": 0,
+      "input_rows": 12000,
+      "raw_python_sha256": "ec5c90047d2692d26e3a172617a45351d755511582d80eecf0dc586002be462a",
+      "file_bytes": 7788890
+    },
+    "moe_revised_wfg": {
+      "normalized_record_digest": {
+        "records": 6000,
+        "key_bytes": 48000,
+        "payload_bytes": 8250890,
+        "framed_records_sha256": "d060d020c83a5aed73bea68a70e6f2e89e32faf72e2a8684b6aee35c48978b5a"
+      },
+      "metrics": {
+        "primary_entries": 6000,
+        "alias_redirects": 0,
+        "traditional_entries": 0,
+        "skipped_rows_or_lines": 0
+      },
+      "comments_count": 0,
+      "input_rows": 12000,
+      "raw_python_sha256": "4b055006b14ea0366ade5db8466dc7e17cf3c891c2e2a2c10a6396dc02753898",
+      "file_bytes": 8334890
+    },
+    "moe_concise": {
+      "normalized_record_digest": {
+        "records": 6000,
+        "key_bytes": 48000,
+        "payload_bytes": 4872890,
+        "framed_records_sha256": "d8b243ce1437d2704283a47e7aeca5873f8ae576f41a1610af6a4438be86371d"
+      },
+      "metrics": {
+        "primary_entries": 6000,
+        "alias_redirects": 0,
+        "traditional_entries": 0,
+        "skipped_rows_or_lines": 0
+      },
+      "comments_count": 0,
+      "input_rows": 12000,
+      "raw_python_sha256": "cf17e3126bc0a3396561aeffd421661249995526a4b0227b76598f9863003f1d",
+      "file_bytes": 4956890
+    },
+    "moe_idioms": {
+      "normalized_record_digest": {
+        "records": 6000,
+        "key_bytes": 48000,
+        "payload_bytes": 6719335,
+        "framed_records_sha256": "21daf12ffbbc69cdc0a6e7b2d634bb9de5112b3d1739ceb28ace68225fe81d5a"
+      },
+      "metrics": {
+        "primary_entries": 6000,
+        "alias_redirects": 0,
+        "traditional_entries": 0,
+        "skipped_rows_or_lines": 0
+      },
+      "comments_count": 0,
+      "input_rows": 12000,
+      "raw_python_sha256": "86838628d6509c204826c27bd09f9bda39e0614f7a3a8c487c7d63d91bb1de1e",
+      "file_bytes": 6803335
+    },
+    "moe_mini": {
+      "normalized_record_digest": {
+        "records": 6000,
+        "key_bytes": 48000,
+        "payload_bytes": 9060890,
+        "framed_records_sha256": "8bcc85121f180b53548e84b2f20b182dd37d4052dd8798b378f543c5bb6333d9"
+      },
+      "metrics": {
+        "primary_entries": 6000,
+        "alias_redirects": 0,
+        "traditional_entries": 0,
+        "skipped_rows_or_lines": 0
+      },
+      "comments_count": 0,
+      "input_rows": 12000,
+      "raw_python_sha256": "af2b67ca7c068a3629255a1735ad010507040bbe30afe10755c11de1ba69ce4a",
+      "file_bytes": 9144890
+    }
+  }
+}

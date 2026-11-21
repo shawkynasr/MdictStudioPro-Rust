@@ -1,0 +1,36 @@
+{
+  "status": "chunked_owned_Concise_exceeded_RSS_not_qualified",
+  "report_library_file_id": "libfile_cfb8551d91e481919553701bb0e57a59",
+  "files": {
+    "m2-full-converters-report.json": "25c6c0fe70d7ee1694b3cc2b5ff30a3c1d36db2fe4f63d7bf47d3b5084204a05",
+    "attempted/scripts/m2_full_converters.py": "b768eefe6f3062d439cfc70d099d7c2ba795a158e63874ca915c6d9cac5e4fab",
+    "attempted/scripts/full_converter_runtime_lock.py": "a19d605f744871c7186ed4083637fe6760a3032bab261098184a7085adc03b22",
+    "attempted/scripts/test_full_converters.py": "dd8bc5122d3fb35c3f3ea91bbd41347b973fac17292173f3d807ccfa9746305c",
+    "attempted/m2/full-converter-runtime/Cargo.lock": "26067a61d6f6686c0ed17a393ec8154903a16136e2ba32dedb4365733f3f71f5",
+    "attempted/m2/full-converter-runtime/Cargo.toml": "5a533b785bd6a8484aecedf8d0d71e80767436f93254384b8653575b352ea08a",
+    "attempted/m2/full-converter-runtime/src/converters.rs": "93fe1937c7b167485450b1dc4a4e085a0744da22a88951e07732dc6bdfebdaf8",
+    "attempted/m2/full-converter-runtime/src/main.rs": "476d4565606308bf09e24a3e0b3c075b66c5beed95a77d5b5c9a042e7202d474",
+    "attempted/m2/full-converter-runtime/src/tests.rs": "6a6e0c34594b6dc93ae45bff7a27675ca38c7c515b59634a00f32cc995f11950",
+    "attempted/m2/full-converter-runtime/src/txt.rs": "59d3b6d40733f770539fbdee6fb31f41deda71d90c0e156b88623d6eac3ae210",
+    "attempted/m2/full-converter-runtime/src/lib.rs": "8561941403573ba4622a00d463599ede97f5700acac18ff685b5c84f804d8f71",
+    "attempted/m2/full-converter-runtime/src/concise.rs": "b90abaab1f25c7ace8269a2fc1a590bf7f08fb52ffe60f981d2b9587486ade13",
+    "attempted/m2/full-converter-runtime/src/runner.rs": "3dc3ef04f23e2b35da25a47296d5c0218407c01e1a0d25bac592eb146ce2e6cc",
+    "attempted/docs/evidence/full-converter-runtime-plan/reference.json": "546612138cc113d294050668ec1f4208616da10b5050ce86fe955264a95d3c8f"
+  },
+  "protected_sources": 265,
+  "attempted_sources": 13,
+  "native_tests_passed": 32,
+  "Concise_peak_RSS_bytes": 420204544,
+  "Concise_native_output_sha256": "7241c4f36ec7c5ebcac57c7c4f55bd4e1f209c9a1b25ef056f59d3e048ecde72",
+  "M2_complete": false,
+  "review_summary": {
+    "status": "owned_Concise_RSS_failure_reviewed_not_qualified",
+    "native_tests_passed": 32,
+    "full_cases_completed": 3,
+    "Concise_hash_matches": true,
+    "Concise_peak_RSS_bytes": 420204544,
+    "controller_exchanges": 624,
+    "Revised_WFG_integration": "not reached",
+    "M2_complete": false
+  }
+}

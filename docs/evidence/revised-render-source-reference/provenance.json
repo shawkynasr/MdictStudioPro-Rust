@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-07",
+  "files": {
+    "reference.json": "21e08d839d0a7e99f9a4225f70e061bdb88731672cb3d42be2291d1a0549e893",
+    "python-repeat.json": "bdec79d031ac161ce9fe348957bc5cf60be35333d4e618e9e243f7f09e5ad521"
+  },
+  "method": "Full existing original Python outputs scanned with bounded record iterators. A fresh complete Revised conversion under PYTHONHASHSEED=17 reproduced the same accepted normalized digest despite a different raw hash. No dataset or dictionary contents bundled.",
+  "native_qualification": false,
+  "source_data_or_dictionary_outputs_bundled": false
+}

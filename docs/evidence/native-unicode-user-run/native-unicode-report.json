@@ -1,0 +1,901 @@
+{
+  "status": "native_unicode_inputs_prepared_native_untested",
+  "source_report_sha256": "ebfbfebe1e3b3afb27ce3616492b7dd15ad22e0476e4853ca219ee3856f0de9e",
+  "dictionaries_rebuilt": false,
+  "native_apps_launched": false,
+  "native_observations": "PENDING",
+  "cases": [
+    {
+      "folder": "01-unicode16-utf8",
+      "file": "09-unicode16-utf8.mdx",
+      "profile": "unicode16-literal-v1",
+      "encoding": "utf8",
+      "sha256": "e9555b895854eea978702a0f1b11409ccbc28d0f1cf8e0d0a0f5a0499507f9e2",
+      "records": 166,
+      "checks": [
+        {
+          "kind": "stored definition access",
+          "query": "ΟΣ",
+          "codepoints": "U+039F U+03A3",
+          "required_markers": [
+            "PINNED_000",
+            "SIGMA_DUPLICATE"
+          ],
+          "adapter_reference": [
+            "PINNED_000",
+            "SIGMA_DUPLICATE"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "ος",
+          "codepoints": "U+03BF U+03C2",
+          "required_markers": [
+            "PINNED_001"
+          ],
+          "adapter_reference": [
+            "PINNED_001"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "οσ",
+          "codepoints": "U+03BF U+03C3",
+          "required_markers": [
+            "PINNED_002"
+          ],
+          "adapter_reference": [
+            "PINNED_002"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "duplicate",
+          "codepoints": "U+0064 U+0075 U+0070 U+006C U+0069 U+0063 U+0061 U+0074 U+0065",
+          "required_markers": [
+            "DUP_01",
+            "DUP_02",
+            "DUP_03",
+            "DUP_04",
+            "DUP_05",
+            "DUP_06",
+            "DUP_07",
+            "DUP_08"
+          ],
+          "adapter_reference": [
+            "DUP_01",
+            "DUP_02",
+            "DUP_03",
+            "DUP_04",
+            "DUP_05",
+            "DUP_06",
+            "DUP_07",
+            "DUP_08"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "İ",
+          "codepoints": "U+0130",
+          "required_markers": [
+            "PINNED_010"
+          ],
+          "adapter_reference": [
+            "PINNED_010"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "i̇",
+          "codepoints": "U+0069 U+0307",
+          "required_markers": [
+            "PINNED_011"
+          ],
+          "adapter_reference": [
+            "PINNED_011"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "é",
+          "codepoints": "U+00E9",
+          "required_markers": [
+            "PINNED_034"
+          ],
+          "adapter_reference": [
+            "PINNED_034"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "é",
+          "codepoints": "U+0065 U+0301",
+          "required_markers": [
+            "PINNED_035"
+          ],
+          "adapter_reference": [
+            "PINNED_035"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "Ａ",
+          "codepoints": "U+FF21",
+          "required_markers": [
+            "PINNED_029"
+          ],
+          "adapter_reference": [
+            "PINNED_029"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "𐐀",
+          "codepoints": "U+10400",
+          "required_markers": [
+            "PINNED_030"
+          ],
+          "adapter_reference": [
+            "PINNED_030"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "꟎",
+          "codepoints": "U+A7CE",
+          "required_markers": [
+            "PINNED_045"
+          ],
+          "adapter_reference": [
+            "PINNED_045"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "꟏",
+          "codepoints": "U+A7CF",
+          "required_markers": [
+            "PINNED_046"
+          ],
+          "adapter_reference": [
+            "PINNED_046"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "A꟎Σ",
+          "codepoints": "U+0041 U+A7CE U+03A3",
+          "required_markers": [
+            "PINNED_047"
+          ],
+          "adapter_reference": [
+            "PINNED_047"
+          ]
+        },
+        {
+          "kind": "reader behavior observation",
+          "query": "οΣ",
+          "codepoints": "U+03BF U+03A3",
+          "required_markers": [],
+          "adapter_reference": [
+            "PINNED_000",
+            "PINNED_001",
+            "SIGMA_DUPLICATE"
+          ]
+        },
+        {
+          "kind": "reader behavior observation",
+          "query": "Ος",
+          "codepoints": "U+039F U+03C2",
+          "required_markers": [],
+          "adapter_reference": [
+            "PINNED_000",
+            "PINNED_001",
+            "SIGMA_DUPLICATE"
+          ]
+        },
+        {
+          "kind": "reader behavior observation",
+          "query": "aΣ",
+          "codepoints": "U+0061 U+03A3",
+          "required_markers": [],
+          "adapter_reference": [
+            "PINNED_005",
+            "PINNED_006"
+          ]
+        },
+        {
+          "kind": "reader behavior observation",
+          "query": "a꟏Σ",
+          "codepoints": "U+0061 U+A7CF U+03A3",
+          "required_markers": [],
+          "adapter_reference": []
+        },
+        {
+          "kind": "reader behavior observation",
+          "query": "a?b",
+          "codepoints": "U+0061 U+003F U+0062",
+          "required_markers": [],
+          "adapter_reference": []
+        },
+        {
+          "kind": "reader behavior observation",
+          "query": "missing-policy",
+          "codepoints": "U+006D U+0069 U+0073 U+0073 U+0069 U+006E U+0067 U+002D U+0070 U+006F U+006C U+0069 U+0063 U+0079",
+          "required_markers": [],
+          "adapter_reference": []
+        }
+      ]
+    },
+    {
+      "folder": "02-unicode16-utf16",
+      "file": "09-unicode16-utf16.mdx",
+      "profile": "unicode16-literal-v1",
+      "encoding": "utf16",
+      "sha256": "30e152905c1bd84fd3326923e143858bbba659bf7d29462e1332e5bbebf44e63",
+      "records": 166,
+      "checks": [
+        {
+          "kind": "stored definition access",
+          "query": "ΟΣ",
+          "codepoints": "U+039F U+03A3",
+          "required_markers": [
+            "PINNED_000",
+            "SIGMA_DUPLICATE"
+          ],
+          "adapter_reference": [
+            "PINNED_000",
+            "SIGMA_DUPLICATE"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "ος",
+          "codepoints": "U+03BF U+03C2",
+          "required_markers": [
+            "PINNED_001"
+          ],
+          "adapter_reference": [
+            "PINNED_001"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "οσ",
+          "codepoints": "U+03BF U+03C3",
+          "required_markers": [
+            "PINNED_002"
+          ],
+          "adapter_reference": [
+            "PINNED_002"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "duplicate",
+          "codepoints": "U+0064 U+0075 U+0070 U+006C U+0069 U+0063 U+0061 U+0074 U+0065",
+          "required_markers": [
+            "DUP_01",
+            "DUP_02",
+            "DUP_03",
+            "DUP_04",
+            "DUP_05",
+            "DUP_06",
+            "DUP_07",
+            "DUP_08"
+          ],
+          "adapter_reference": [
+            "DUP_01",
+            "DUP_02",
+            "DUP_03",
+            "DUP_04",
+            "DUP_05",
+            "DUP_06",
+            "DUP_07",
+            "DUP_08"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "İ",
+          "codepoints": "U+0130",
+          "required_markers": [
+            "PINNED_010"
+          ],
+          "adapter_reference": [
+            "PINNED_010"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "i̇",
+          "codepoints": "U+0069 U+0307",
+          "required_markers": [
+            "PINNED_011"
+          ],
+          "adapter_reference": [
+            "PINNED_011"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "é",
+          "codepoints": "U+00E9",
+          "required_markers": [
+            "PINNED_034"
+          ],
+          "adapter_reference": [
+            "PINNED_034"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "é",
+          "codepoints": "U+0065 U+0301",
+          "required_markers": [
+            "PINNED_035"
+          ],
+          "adapter_reference": [
+            "PINNED_035"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "Ａ",
+          "codepoints": "U+FF21",
+          "required_markers": [
+            "PINNED_029"
+          ],
+          "adapter_reference": [
+            "PINNED_029"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "𐐀",
+          "codepoints": "U+10400",
+          "required_markers": [
+            "PINNED_030"
+          ],
+          "adapter_reference": [
+            "PINNED_030"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "꟎",
+          "codepoints": "U+A7CE",
+          "required_markers": [
+            "PINNED_045"
+          ],
+          "adapter_reference": [
+            "PINNED_045"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "꟏",
+          "codepoints": "U+A7CF",
+          "required_markers": [
+            "PINNED_046"
+          ],
+          "adapter_reference": [
+            "PINNED_046"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "A꟎Σ",
+          "codepoints": "U+0041 U+A7CE U+03A3",
+          "required_markers": [
+            "PINNED_047"
+          ],
+          "adapter_reference": [
+            "PINNED_047"
+          ]
+        },
+        {
+          "kind": "reader behavior observation",
+          "query": "οΣ",
+          "codepoints": "U+03BF U+03A3",
+          "required_markers": [],
+          "adapter_reference": [
+            "PINNED_000",
+            "PINNED_001",
+            "SIGMA_DUPLICATE"
+          ]
+        },
+        {
+          "kind": "reader behavior observation",
+          "query": "Ος",
+          "codepoints": "U+039F U+03C2",
+          "required_markers": [],
+          "adapter_reference": [
+            "PINNED_000",
+            "PINNED_001",
+            "SIGMA_DUPLICATE"
+          ]
+        },
+        {
+          "kind": "reader behavior observation",
+          "query": "aΣ",
+          "codepoints": "U+0061 U+03A3",
+          "required_markers": [],
+          "adapter_reference": [
+            "PINNED_005",
+            "PINNED_006"
+          ]
+        },
+        {
+          "kind": "reader behavior observation",
+          "query": "a꟏Σ",
+          "codepoints": "U+0061 U+A7CF U+03A3",
+          "required_markers": [],
+          "adapter_reference": []
+        },
+        {
+          "kind": "reader behavior observation",
+          "query": "a?b",
+          "codepoints": "U+0061 U+003F U+0062",
+          "required_markers": [],
+          "adapter_reference": []
+        },
+        {
+          "kind": "reader behavior observation",
+          "query": "missing-policy",
+          "codepoints": "U+006D U+0069 U+0073 U+0073 U+0069 U+006E U+0067 U+002D U+0070 U+006F U+006C U+0069 U+0063 U+0079",
+          "required_markers": [],
+          "adapter_reference": []
+        }
+      ]
+    },
+    {
+      "folder": "03-unicode17-comparison-utf8",
+      "file": "09-unicode17-comparison-utf8.mdx",
+      "profile": "unicode17-literal-comparison-v1",
+      "encoding": "utf8",
+      "sha256": "7b6a3022db67a4a065948e18ce9a85d99eec78157513293010c8cbc07fea7b71",
+      "records": 166,
+      "checks": [
+        {
+          "kind": "stored definition access",
+          "query": "ΟΣ",
+          "codepoints": "U+039F U+03A3",
+          "required_markers": [
+            "PINNED_000",
+            "SIGMA_DUPLICATE"
+          ],
+          "adapter_reference": [
+            "PINNED_000",
+            "SIGMA_DUPLICATE"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "ος",
+          "codepoints": "U+03BF U+03C2",
+          "required_markers": [
+            "PINNED_001"
+          ],
+          "adapter_reference": [
+            "PINNED_001"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "οσ",
+          "codepoints": "U+03BF U+03C3",
+          "required_markers": [
+            "PINNED_002"
+          ],
+          "adapter_reference": [
+            "PINNED_002"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "duplicate",
+          "codepoints": "U+0064 U+0075 U+0070 U+006C U+0069 U+0063 U+0061 U+0074 U+0065",
+          "required_markers": [
+            "DUP_01",
+            "DUP_02",
+            "DUP_03",
+            "DUP_04",
+            "DUP_05",
+            "DUP_06",
+            "DUP_07",
+            "DUP_08"
+          ],
+          "adapter_reference": [
+            "DUP_01",
+            "DUP_02",
+            "DUP_03",
+            "DUP_04",
+            "DUP_05",
+            "DUP_06",
+            "DUP_07",
+            "DUP_08"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "İ",
+          "codepoints": "U+0130",
+          "required_markers": [
+            "PINNED_010"
+          ],
+          "adapter_reference": [
+            "PINNED_010"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "i̇",
+          "codepoints": "U+0069 U+0307",
+          "required_markers": [
+            "PINNED_011"
+          ],
+          "adapter_reference": [
+            "PINNED_011"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "é",
+          "codepoints": "U+00E9",
+          "required_markers": [
+            "PINNED_034"
+          ],
+          "adapter_reference": [
+            "PINNED_034"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "é",
+          "codepoints": "U+0065 U+0301",
+          "required_markers": [
+            "PINNED_035"
+          ],
+          "adapter_reference": [
+            "PINNED_035"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "Ａ",
+          "codepoints": "U+FF21",
+          "required_markers": [
+            "PINNED_029"
+          ],
+          "adapter_reference": [
+            "PINNED_029"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "𐐀",
+          "codepoints": "U+10400",
+          "required_markers": [
+            "PINNED_030"
+          ],
+          "adapter_reference": [
+            "PINNED_030"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "꟎",
+          "codepoints": "U+A7CE",
+          "required_markers": [
+            "PINNED_045"
+          ],
+          "adapter_reference": [
+            "PINNED_045"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "꟏",
+          "codepoints": "U+A7CF",
+          "required_markers": [
+            "PINNED_046"
+          ],
+          "adapter_reference": [
+            "PINNED_046"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "A꟎Σ",
+          "codepoints": "U+0041 U+A7CE U+03A3",
+          "required_markers": [
+            "PINNED_047"
+          ],
+          "adapter_reference": [
+            "PINNED_047"
+          ]
+        },
+        {
+          "kind": "reader behavior observation",
+          "query": "οΣ",
+          "codepoints": "U+03BF U+03A3",
+          "required_markers": [],
+          "adapter_reference": [
+            "PINNED_000",
+            "PINNED_001",
+            "SIGMA_DUPLICATE"
+          ]
+        },
+        {
+          "kind": "reader behavior observation",
+          "query": "Ος",
+          "codepoints": "U+039F U+03C2",
+          "required_markers": [],
+          "adapter_reference": [
+            "PINNED_000",
+            "PINNED_001",
+            "SIGMA_DUPLICATE"
+          ]
+        },
+        {
+          "kind": "reader behavior observation",
+          "query": "aΣ",
+          "codepoints": "U+0061 U+03A3",
+          "required_markers": [],
+          "adapter_reference": [
+            "PINNED_005",
+            "PINNED_006"
+          ]
+        },
+        {
+          "kind": "reader behavior observation",
+          "query": "a꟏Σ",
+          "codepoints": "U+0061 U+A7CF U+03A3",
+          "required_markers": [],
+          "adapter_reference": [
+            "PINNED_047"
+          ]
+        },
+        {
+          "kind": "reader behavior observation",
+          "query": "a?b",
+          "codepoints": "U+0061 U+003F U+0062",
+          "required_markers": [],
+          "adapter_reference": []
+        },
+        {
+          "kind": "reader behavior observation",
+          "query": "missing-policy",
+          "codepoints": "U+006D U+0069 U+0073 U+0073 U+0069 U+006E U+0067 U+002D U+0070 U+006F U+006C U+0069 U+0063 U+0079",
+          "required_markers": [],
+          "adapter_reference": []
+        }
+      ]
+    },
+    {
+      "folder": "04-unicode17-comparison-utf16",
+      "file": "09-unicode17-comparison-utf16.mdx",
+      "profile": "unicode17-literal-comparison-v1",
+      "encoding": "utf16",
+      "sha256": "40953d7f160c6e24e14435392b96896250496f498cc26f778ef8aa509b9bb75e",
+      "records": 166,
+      "checks": [
+        {
+          "kind": "stored definition access",
+          "query": "ΟΣ",
+          "codepoints": "U+039F U+03A3",
+          "required_markers": [
+            "PINNED_000",
+            "SIGMA_DUPLICATE"
+          ],
+          "adapter_reference": [
+            "PINNED_000",
+            "SIGMA_DUPLICATE"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "ος",
+          "codepoints": "U+03BF U+03C2",
+          "required_markers": [
+            "PINNED_001"
+          ],
+          "adapter_reference": [
+            "PINNED_001"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "οσ",
+          "codepoints": "U+03BF U+03C3",
+          "required_markers": [
+            "PINNED_002"
+          ],
+          "adapter_reference": [
+            "PINNED_002"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "duplicate",
+          "codepoints": "U+0064 U+0075 U+0070 U+006C U+0069 U+0063 U+0061 U+0074 U+0065",
+          "required_markers": [
+            "DUP_01",
+            "DUP_02",
+            "DUP_03",
+            "DUP_04",
+            "DUP_05",
+            "DUP_06",
+            "DUP_07",
+            "DUP_08"
+          ],
+          "adapter_reference": [
+            "DUP_01",
+            "DUP_02",
+            "DUP_03",
+            "DUP_04",
+            "DUP_05",
+            "DUP_06",
+            "DUP_07",
+            "DUP_08"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "İ",
+          "codepoints": "U+0130",
+          "required_markers": [
+            "PINNED_010"
+          ],
+          "adapter_reference": [
+            "PINNED_010"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "i̇",
+          "codepoints": "U+0069 U+0307",
+          "required_markers": [
+            "PINNED_011"
+          ],
+          "adapter_reference": [
+            "PINNED_011"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "é",
+          "codepoints": "U+00E9",
+          "required_markers": [
+            "PINNED_034"
+          ],
+          "adapter_reference": [
+            "PINNED_034"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "é",
+          "codepoints": "U+0065 U+0301",
+          "required_markers": [
+            "PINNED_035"
+          ],
+          "adapter_reference": [
+            "PINNED_035"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "Ａ",
+          "codepoints": "U+FF21",
+          "required_markers": [
+            "PINNED_029"
+          ],
+          "adapter_reference": [
+            "PINNED_029"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "𐐀",
+          "codepoints": "U+10400",
+          "required_markers": [
+            "PINNED_030"
+          ],
+          "adapter_reference": [
+            "PINNED_030"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "꟎",
+          "codepoints": "U+A7CE",
+          "required_markers": [
+            "PINNED_045"
+          ],
+          "adapter_reference": [
+            "PINNED_045"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "꟏",
+          "codepoints": "U+A7CF",
+          "required_markers": [
+            "PINNED_046"
+          ],
+          "adapter_reference": [
+            "PINNED_046"
+          ]
+        },
+        {
+          "kind": "stored definition access",
+          "query": "A꟎Σ",
+          "codepoints": "U+0041 U+A7CE U+03A3",
+          "required_markers": [
+            "PINNED_047"
+          ],
+          "adapter_reference": [
+            "PINNED_047"
+          ]
+        },
+        {
+          "kind": "reader behavior observation",
+          "query": "οΣ",
+          "codepoints": "U+03BF U+03A3",
+          "required_markers": [],
+          "adapter_reference": [
+            "PINNED_000",
+            "PINNED_001",
+            "SIGMA_DUPLICATE"
+          ]
+        },
+        {
+          "kind": "reader behavior observation",
+          "query": "Ος",
+          "codepoints": "U+039F U+03C2",
+          "required_markers": [],
+          "adapter_reference": [
+            "PINNED_000",
+            "PINNED_001",
+            "SIGMA_DUPLICATE"
+          ]
+        },
+        {
+          "kind": "reader behavior observation",
+          "query": "aΣ",
+          "codepoints": "U+0061 U+03A3",
+          "required_markers": [],
+          "adapter_reference": [
+            "PINNED_005",
+            "PINNED_006"
+          ]
+        },
+        {
+          "kind": "reader behavior observation",
+          "query": "a꟏Σ",
+          "codepoints": "U+0061 U+A7CF U+03A3",
+          "required_markers": [],
+          "adapter_reference": [
+            "PINNED_047"
+          ]
+        },
+        {
+          "kind": "reader behavior observation",
+          "query": "a?b",
+          "codepoints": "U+0061 U+003F U+0062",
+          "required_markers": [],
+          "adapter_reference": []
+        },
+        {
+          "kind": "reader behavior observation",
+          "query": "missing-policy",
+          "codepoints": "U+006D U+0069 U+0073 U+0073 U+0069 U+006E U+0067 U+002D U+0070 U+006F U+006C U+0069 U+0063 U+0079",
+          "required_markers": [],
+          "adapter_reference": []
+        }
+      ]
+    }
+  ]
+}

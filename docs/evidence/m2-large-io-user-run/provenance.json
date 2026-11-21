@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-05",
+  "files": {
+    "m2-large-io-report.json": "a223d6203f4de6907fc2f50e7ef23183c4268ff6524ba61df5b5ce46881cd431"
+  },
+  "source_snapshots": {
+    "qualified/m2/large-io/Cargo.toml": "262412d6466f3ebea268b1c4018abef06c3f008a3a2fecf4fa72c5369b080cd0",
+    "qualified/m2/large-io/src/io.rs": "d2798f47fd4909a5530be10be4ebf6919bf8717e2febaec0a76e6b1537612e1d",
+    "qualified/m2/large-io/src/lib.rs": "0daf85d1a007f3859b279c942d5290a253193675a896d54271416039f92dfac7",
+    "qualified/m2/large-io/src/main.rs": "5309eb782819fa017beca8c1ecd481c15ccb1866f6def235b441c062087959ca",
+    "qualified/m2/large-io/src/tests.rs": "9d8c5e9f9a50f0562013be5b75caf7b610c27658eabef8ef158c5f8fc01ad369",
+    "qualified/scripts/large_io_lock.py": "fabc7baf34ad20ef15260347f3b957ad937aa210cbace03f757b7b346ff96f31",
+    "qualified/scripts/large_io_oracle.py": "b201edb06a65651a6eb4da5d9609c82bc3d2c33de2b7e2c0e9320ef7ba8262b0",
+    "qualified/scripts/m2_large_io.py": "ba2e85c64d0afce60d9a53f8a3c8f7afccf3e1686747efbc95c48e56780754e3",
+    "qualified/scripts/test_m2_large_io.py": "41bd756212a4de17bcb50dde85e9a985922cfbb9f554fb3c68fe3c2044dc70d8",
+    "qualified/m2/large-io/Cargo.lock": "8a501ec14d9cc08dbcce8874d56f1733d44679de0c20363c0e4e590bde0b0211"
+  },
+  "report_library_file_id": "libfile_bb75d8d5ce9c8191ad98e7d7729e9e73",
+  "result": "m2_larger_packing_export_first_gate_passed_runtime_integration_pending",
+  "assessment": "First larger owned-builder packing/streaming-export gate accepted: source-bound Rust test/build receipts; 47 process cases, 16 publications and 31 expected refusals. Reviewed report recipes cover 327681 physical records and 7 independently recomputed export hashes. Both MDX encodings and MDD have 65536 records/resources; the definition boundary is 1 MiB. All 180 prior sources and 10 new source identities match; 62 dependency packages. Cargo lock canonicalization changes package ordering only. Maximum RSS is 105115648 bytes (100.25 MiB rounded); export maximum 4231168 bytes (4.04 MiB rounded).",
+  "review_summary": {
+    "process_cases": 47,
+    "successful_publications": 16,
+    "expected_refusals": 31,
+    "wire_records_recomputed": 327681,
+    "export_file_hashes_recomputed": 7,
+    "large_MDX_records_each_encoding": 65536,
+    "MDD_resources": 65536,
+    "boundary_definition_bytes": 1048576,
+    "max_observed_RSS_bytes": 105115648,
+    "max_export_RSS_bytes": 4231168,
+    "review": "reported recipe digests and export hashes recomputed; successful Rust stdout and user output files not attached; cleanup/full wire checks represented by exact-source-bound harness"
+  },
+  "successful_Rust_test_stdout_attached": false,
+  "output_files_attached": false,
+  "note": "The report is attached; actual dictionaries, exports and successful test stdout are not. Full wire decoding, no-clobber publication and cleanup were performed by the exact-source-bound Mac harness. Reviewer independently recomputed the recipe digests/export hashes and cross-checked pipeline file identities, metadata, counters, requests, typed failures and RSS receipts.",
+  "not_qualified": [
+    "M2 completion",
+    "all candidate cap combinations",
+    "hard process memory or disk limits",
+    "streaming dictionary writer",
+    "shared runtime integration of new packing/export path",
+    "larger converter paths",
+    "representative real-input pipelines",
+    "GUI or cross-platform runtime qualification"
+  ]
+}

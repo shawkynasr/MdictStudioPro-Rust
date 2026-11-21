@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "scope": "JSONL to SQLite GUI output check",
+  "independent_uploaded_database_and_jsonl_check": {
+    "status": "passed",
+    "records": 8,
+    "source_sha256": "d9f66f78478d768bf8ecb2931f0bff8c66ff1d028e2b7313d3c89c3dd86277fa",
+    "rows_sha256": "28b954eb69af2807d5f1901b98f71700cc1ce1c3a324b42fbca97f7fa368db2c",
+    "bytes": 390,
+    "dictionary_metadata_in_jsonl": false
+  },
+  "user_run_verifier_result": "Matches the independent result including both SHA-256 values, eight records and 390 JSONL bytes.",
+  "import_origin_matches_jsonl_sha256": true,
+  "no_dictionary_metadata_inferred": true,
+  "limitations": [
+    "No GUI screenshot attached for this operation.",
+    "Does not qualify the later definition search feature."
+  ]
+}

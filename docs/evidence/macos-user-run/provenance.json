@@ -1,0 +1,26 @@
+{
+  "source": "Files attached by user after local Mac execution; test transcript supplied in chat",
+  "run_date": null,
+  "platform": "macOS (user reported)",
+  "os_version": null,
+  "architecture": null,
+  "rustc_version": null,
+  "cargo_version": null,
+  "rust_tests_passed_user_reported": 5,
+  "local_rust_rerun": false,
+  "files": {
+    "Cargo.lock": {
+      "path_from_project_root": "Cargo.lock",
+      "sha256": "b1993e21cd4be1fd4937914bb7458cefb730e21927fbe058046e4aee3bd81e35"
+    },
+    "report.json": {
+      "path_from_project_root": "docs/evidence/macos-user-run/report.json",
+      "sha256": "31b50cd91fec14f72b3ca404eeced16e22103833201fca978bb0eedb526af3b5"
+    }
+  },
+  "limits": [
+    "Uploaded artifacts do not include generated MDX/MDD files or a standalone test log",
+    "Dependency lock does not identify the compiler version or target triple",
+    "Report is synthetic-subset evidence, not full reader compatibility"
+  ]
+}

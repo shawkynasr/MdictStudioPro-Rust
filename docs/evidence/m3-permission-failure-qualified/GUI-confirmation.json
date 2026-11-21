@@ -1,0 +1,61 @@
+{
+  "schema": "studio-permission-failure-GUI-v1",
+  "date": "2026-11-21",
+  "status": "accepted_scoped_output_permission_error_unlock_retry_exact_output",
+  "app": "preview v6",
+  "basis": "User supplied permission-denied error, unlock result, initial premature failed verification, successful receipt, and final passed verification",
+  "error": {
+    "code": "io",
+    "detail": "io",
+    "limit": null,
+    "message": "Permission denied (os error 13) at path \"/Users/shawky/Downloads/mdict-studio-m0-m1/m3-shell-out-permission-1/locked/.tmpEbmHDq\"",
+    "publication_uncertain": false
+  },
+  "unlock": {
+    "schema": "studio-output-permission-check-v1",
+    "output_existed_after_failure": false,
+    "entries_after_failure": [],
+    "entry_count_after_failure": 0,
+    "source_unchanged": true,
+    "test_directory_unlocked": true
+  },
+  "premature_verification": "No regular output yet; not an application recovery failure. User was instructed to preserve report-before-retry.json.",
+  "successful_receipt": {
+    "profile": "cc",
+    "receipt": {
+      "comments_count": 0,
+      "converter": "cc_cedict",
+      "entries": 3,
+      "file_bytes": 885,
+      "metrics": {
+        "alias_redirects": 0,
+        "primary_entries": 2,
+        "skipped_rows_or_lines": 0,
+        "traditional_entries": 1
+      },
+      "profile": "cc-cedict-owned-chunked-txt-v1",
+      "source_sha256": "463a04e1ad8ff8c3142e1456dc0fb529de2fa62affbe3dd70d4f70afd8e42dec",
+      "txt_profile": "canonical_v1"
+    }
+  },
+  "verification": {
+    "schema": "studio-output-permission-check-v1",
+    "status": "passed",
+    "output_bytes": 885,
+    "output_sha256": "83288a2c708f4d03a12d08e72eb7a71af3904d37528447ffc3ee1e95fe8415b1",
+    "source_unchanged": true,
+    "initial_failure_observation": {
+      "schema": "studio-output-permission-check-v1",
+      "output_existed_after_failure": false,
+      "entries_after_failure": [],
+      "entry_count_after_failure": 0,
+      "source_unchanged": true,
+      "test_directory_unlocked": true
+    },
+    "permission_error_text_and_same_session": "require user GUI confirmation",
+    "production_release_ready": false
+  },
+  "same_session_basis": "Checklist sequence; no restart was requested or reported; not independently measured",
+  "M3_complete": false,
+  "production_release_ready": false
+}

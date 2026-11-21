@@ -1,0 +1,134 @@
+{
+  "status": "regression_passed_engine_decision_pending",
+  "M1_complete": false,
+  "engine_selected": false,
+  "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 17.0.0 (clang-1700.6.4.2)]",
+  "platform": "macOS-15.8.2-x86_64-i386-64bit-Mach-O",
+  "steps": [
+    {
+      "name": "evidence",
+      "command": [
+        "/Users/shawky/Downloads/mdict-studio-m0-m1/.venv/bin/python",
+        "scripts/validate_evidence.py"
+      ],
+      "log": "evidence.log",
+      "status": "passed",
+      "returncode": 0
+    },
+    {
+      "name": "vendor-v2",
+      "command": [
+        "/Users/shawky/Downloads/mdict-studio-m0-m1/.venv/bin/python",
+        "scripts/prepare_sort_experiment.py",
+        "--revision",
+        "2",
+        "--reuse"
+      ],
+      "log": "vendor-v2.log",
+      "status": "passed",
+      "returncode": 0
+    },
+    {
+      "name": "vendor-v6",
+      "command": [
+        "/Users/shawky/Downloads/mdict-studio-m0-m1/.venv/bin/python",
+        "scripts/prepare_sort_experiment.py",
+        "--revision",
+        "6",
+        "--reuse"
+      ],
+      "log": "vendor-v6.log",
+      "status": "passed",
+      "returncode": 0
+    },
+    {
+      "name": "baseline",
+      "command": [
+        "/Users/shawky/Downloads/mdict-studio-m0-m1/.venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "baseline",
+        "-v"
+      ],
+      "log": "baseline.log",
+      "status": "passed",
+      "returncode": 0
+    },
+    {
+      "name": "python-contracts",
+      "command": [
+        "/Users/shawky/Downloads/mdict-studio-m0-m1/.venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "log": "python-contracts.log",
+      "status": "passed",
+      "returncode": 0
+    },
+    {
+      "name": "rust-root",
+      "command": [
+        "/usr/local/bin/cargo",
+        "test",
+        "--locked",
+        "--workspace"
+      ],
+      "log": "rust-root.log",
+      "status": "passed",
+      "returncode": 0
+    },
+    {
+      "name": "rust-legacy-sort",
+      "command": [
+        "/usr/local/bin/cargo",
+        "test",
+        "--locked",
+        "--manifest-path",
+        "experiments/legacy-sort/Cargo.toml"
+      ],
+      "log": "rust-legacy-sort.log",
+      "status": "passed",
+      "returncode": 0
+    },
+    {
+      "name": "rust-adapter",
+      "command": [
+        "/usr/local/bin/cargo",
+        "test",
+        "--locked",
+        "--manifest-path",
+        "experiments/real-rebuild/Cargo.toml"
+      ],
+      "log": "rust-adapter.log",
+      "status": "passed",
+      "returncode": 0
+    }
+  ],
+  "native_tests_repeated": false,
+  "corpus_or_casing_regenerated": false,
+  "scope_document": "docs/M1-CLOSEOUT.md",
+  "qualified_source_sha256": {
+    "experiments/real-rebuild/src/main.rs": "c1e977b2e69cf402f36cf48d291e0d19139c33aa9d839e16300235f5ee958897",
+    "experiments/real-rebuild/src/casing.rs": "851da9b996f07bde6c60688094bdeece0e389802c6d6e8a62aff41d2dd624465",
+    "experiments/real-rebuild/src/integrated.rs": "0e39d2449aa61c888346bd252b539098af9d216fd5e6692b3e2add4baa63323c",
+    "experiments/real-rebuild/src/strict.rs": "5962ffbc934ecb25e04683cebeb7b4d06b8bd80d23bddccc8d5a8377e998af09",
+    "experiments/real-rebuild/Cargo.lock": "0490f412f73e66fd7b719da2dd71470eeb315aaa9028837ae185f3437a8e867f",
+    "vendor/mdictlib-0.2.8-studio-sort-v6/src/write/mod.rs": "fb7876fbc75d2e4d5ca69b7768afa551d16f6e3ba8fec05eb027b621132560a2",
+    "vendor/mdictlib-0.2.8-studio-sort-v6/src/write/studio_legacy_sort.rs": "96908b9c995cf4f28c89eaef4a15cd96f908e81bc3c73c47f3a5acc066215af5",
+    "scripts/integrated_casing.py": "386b9f534bd641f40e1630f0d7603b5a330f9eabe8c1c6793f9ad3c99aa7b40a",
+    "baseline/unicode/unicode16-casing.json": "f69d2e55d6b8c8d5fe33f764cc47b829bccc6d73aaff1791e1216328a1c24071"
+  },
+  "lock_sha256": {
+    "Cargo.lock": "b1993e21cd4be1fd4937914bb7458cefb730e21927fbe058046e4aee3bd81e35",
+    "experiments/legacy-sort/Cargo.lock": "832527875540ca97c9af5ee227c0f38d3f03eed9c16c26a0c63fed51285f7a8e",
+    "experiments/real-rebuild/Cargo.lock": "0490f412f73e66fd7b719da2dd71470eeb315aaa9028837ae185f3437a8e867f"
+  }
+}

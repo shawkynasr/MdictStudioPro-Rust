@@ -1,0 +1,36 @@
+{
+  "schema": "studio-mdx-v1-ascii-local-v1",
+  "status": "independent_wire_oracle_passed_Mac_native_pending",
+  "source": {
+    "name": "法学拉丁语小词典(1).mdx",
+    "sha256": "d3f9ba094f76d20bf5ddc06249a619d8dc0efec149285241e14aaa688bf0ca35",
+    "bytes": 17631
+  },
+  "records": 310,
+  "decoded_ascii_bytes": 31593,
+  "duplicate_records_beyond_first": 1,
+  "all_keys_and_definitions_ASCII": true,
+  "records_with_CR": 310,
+  "header_attributes": {
+    "GeneratedByEngineVersion": "1.2",
+    "RequiredEngineVersion": "1.2",
+    "Encrypted": "No",
+    "Encoding": "ISO8859-1",
+    "Format": "Html",
+    "Compact": "Yes",
+    "Compat": "Yes",
+    "KeyCaseSensitive": "No",
+    "Description": "<br><center><font size=7 color=blue><b>¤ Legal Latin ¤</b></font><br><br><font size=2 color=black>Latin terms & Legal Maxims for Lawyers and Law Students</font><br><br><br><br><font size=2 color=black>Compiled by <b>skidmarkharvey™</b></font><br><font size=1 color=red>skidmarkharvey@airfagev.com</font>",
+    "Title": "Legal Latin",
+    "DataSourceFormat": "106",
+    "StyleSheet": "1\n<font color=blue size=4><b>\n</b></font><br><br>\n2\n<font color=#009999>\n</font><br><br>\n3\n<font color=#009999 face=\"Arial\">[\n]</font><br>\n4\n<font color=black>\n</font><br>\n"
+  },
+  "checksums": "header, all key and record blocks verified; full index/offset geometry and EOF verified",
+  "source_unchanged": true,
+  "protected_source_identities": 324,
+  "native_tests_executed": false,
+  "desktop_compile_executed": false,
+  "GUI_smoke_executed": false,
+  "M3_complete": false,
+  "production_release_ready": false
+}

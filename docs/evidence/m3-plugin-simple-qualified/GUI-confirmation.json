@@ -1,0 +1,29 @@
+{
+  "schema": "studio-plugin-simple-GUI-v1",
+  "status": "accepted_scoped_one_file_plugin_workflow",
+  "date": "2026-11-20",
+  "basis": [
+    "Uploaded settings screenshots and output(4).txt",
+    "User confirmed quit/reopen retains Configured Python setup and resets trust",
+    "User confirmed Choose plugin file",
+    "User confirmed Finder drag selects options.py without running; Import plugin used only after checking trust"
+  ],
+  "output": {
+    "bytes": 203,
+    "sha256": "737ce0b126a6a952729903c679fb7659121dd7a6d909711a35fa33be67cdb45d",
+    "records": 6,
+    "prefix": "字 مرحبا",
+    "uppercase": true,
+    "exact_expected_output": true,
+    "both_duplicate_definitions_preserved": true
+  },
+  "screenshots": {
+    "截屏2026-11-20 14.07.35.png": "a2f0ab1b69389289d82a707068bc30889e33018c81236a1df96b9cf72bd66eb6",
+    "截屏2026-11-20 14.08.08.png": "29c0eeefdfb0edd156849d8b7d4610fcd6de56d1b857defdfa368ee1390da79e"
+  },
+  "native_drag_basis": "user attestation",
+  "restart_basis": "user attestation",
+  "python_bundled": false,
+  "M3_complete": false,
+  "production_release_ready": false
+}

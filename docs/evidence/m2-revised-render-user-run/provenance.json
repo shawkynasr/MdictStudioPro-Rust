@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-07",
+  "attached_report_library_file_id": "libfile_9415593061b08191815f2b32a64f040b",
+  "files": {
+    "m2-revised-render-report.json": "8ee417cb22aa9bb9a391269b7fe2d4de1fef9969236afa2ffd67362b35137ee3",
+    "review-oracles.json": "3d8a6b756aa793cb3939af25feb4fc7fb12bc33aa5f24639cceef42c236504e6"
+  },
+  "source_snapshots": {
+    "qualified/docs/evidence/revised-render-source-reference/reference.json": "21e08d839d0a7e99f9a4225f70e061bdb88731672cb3d42be2291d1a0549e893",
+    "qualified/m2/revised-render/Cargo.lock": "0d28ea8fd4c8d6d0e99421b51114a067634273b16399afbfd84e63e4447e0700",
+    "qualified/m2/revised-render/Cargo.toml": "f0ef5fd94c274cf2ca947a210ddff3e3e6e9bed95da0c2bd844e211cb887f4e0",
+    "qualified/m2/revised-render/src/lib.rs": "ea79d95b88d43abe5e4c4c42f5c2a0bcc99a0245f8be8ade99fc7ca2ba17a060",
+    "qualified/m2/revised-render/src/main.rs": "1c526efc52f47475e81044348d25f97f09387b2e92ceda60799a92126d08384f",
+    "qualified/m2/revised-render/src/publication.rs": "63046be511db6f00f05bae640bb4d890425604f838545aee1aa64ad748c1ab74",
+    "qualified/m2/revised-render/tests/fixtures/groups.xlsx": "3764c3f2bedaf81b82a436f612f6141bdd20fd3970afaeed2d798fbe3d75f245",
+    "qualified/m2/revised-render/tests/render.rs": "5782175282337d73688cfcdcb20503425c031b12d51c7ce50bce01f3f59e4960",
+    "qualified/scripts/m2_revised_render.py": "6576b9ad4b95db3e4980a775e4f7ee536c5d2bb22ff365b77b5d9089a892a3c9",
+    "qualified/scripts/revised_render_lock.py": "05d0b33ee25e0920fc598154fc55e8b335dff6a7485cfb4d3cd6fb96b8d96f52",
+    "qualified/scripts/revised_render_oracle.py": "13ad3181c6ed328d86f40686ae515121ea47743b5a0740491cd4194820ed9577",
+    "qualified/scripts/test_revised_render.py": "a3a741f7ae5047913035836fc07b3a78d8a1d9ec3b42831ebf196470bfc995ae"
+  },
+  "review_summary": {
+    "process_cases": 30,
+    "successful_publications": 6,
+    "expected_refusals": 24,
+    "full_Revised_entries": 162636,
+    "full_WFG_entries": 161182,
+    "records_compared": 323854,
+    "full_Revised_RSS_bytes": 168136704,
+    "full_WFG_RSS_bytes": 164143104,
+    "max_observed_RSS_bytes": 168136704,
+    "scope": "Complete normalized digests match independent local original Python; WFG raw bytes also exact. Small oracles and full source group plan independently recomputed. Native record/reopen comparisons, cleanup and no-clobber checks represented by source-bound Mac harness; actual native TXT files not attached, no local Rust execution. Standalone converters only; background/admission integration and M2 closeout pending."
+  },
+  "reviewer": "scripts/check_revised_render_receipt.py",
+  "review_method": "Checked all 30 process requests/receipts and two successful native test/build receipts; exact protected/new/legacy source and registry identities; full normalized digests against complete local original Python references and repeat run; exact WFG raw hash. Recomputed small captured Python outputs and complete-source group plan independently, including group counts, index charge and largest group. Native TXT files are not attached; whole-record comparison, strict reopen, no-clobber publication, source preservation and private cleanup are assertions of the exact Mac harness. No native execution locally.",
+  "qualification_scope": "Standalone Revised/WFG TXT conversion/library only; release process measurements, not hard RSS enforcement. Application background/admission integration, reader concurrency, real MDX packing workflows and final M2 closeout unqualified.",
+  "source_data_or_dictionary_outputs_bundled": false,
+  "M2_complete": false
+}

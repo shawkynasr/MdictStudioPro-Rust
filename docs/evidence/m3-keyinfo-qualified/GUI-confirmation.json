@@ -1,0 +1,22 @@
+{
+  "schema": "studio-mdx-keyinfo-GUI-v1",
+  "status": "accepted_scoped_encrypted_index_JSONL_and_SQLite",
+  "date": "2026-11-20",
+  "basis": "User supplied GUI job receipts for large_export/export_jsonl and database/mdx_to_db",
+  "source_sha256": "ce87536cbd1e677999f7d3c6569c48e189d247a9678f51e440bdab9a56180143",
+  "records": 1829,
+  "JSONL": {
+    "bytes": 299397,
+    "key_bytes": 11299,
+    "payload_bytes": 236535,
+    "framed_records_sha256": "c9309d03f97d4bd32e1ed5c92f8631353060bc42ab9d0e1f23dcd374cbc5cf06"
+  },
+  "SQLite": {
+    "bytes": 331776,
+    "rows_sha256": "132699900b84b9eb67b320dfacc32c79da58e33b2cd993b0c12f4b047894c87d",
+    "sqlite_version": "3.54.1"
+  },
+  "original_metadata_preserved": true,
+  "M3_complete": false,
+  "production_release_ready": false
+}

@@ -1,0 +1,11 @@
+{
+  "status": "accepted_scoped_local_Intel_Mac_preview_v3",
+  "report_sha256": "0d3dfb66f35a5061f6a27420257811479cf5081e32dc9f2d0c67fe1d73e2796b",
+  "source_identities_matched": 243,
+  "protected_source_identities": 324,
+  "seven_resolved_locks_exact": true,
+  "copied_bundle_matches": true,
+  "executable_sha256": "32eab5285ccec57decb42fc3ee9a8043a36c4592018b9b3ac324476693fda002",
+  "M3_complete": false,
+  "production_release_ready": false
+}

@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-09",
+  "source": "User provided native application screenshots labelled light and dark mode",
+  "scope": "Build screen layout and appearance only; no GUI job or reader-interaction verification inferred",
+  "light_theme_visible": true,
+  "dark_appearance_with_System_selection_visible": true,
+  "explicit_Dark_selection_independently_verified": false,
+  "remaining_visual_mismatch": "Native select gradient and full-row width; corrected in CSS; updated appearance pending user check",
+  "image_identities": {
+    "截屏2026-11-09 14.14.42.png": "0ba2e4d622cab7fb57e28cbd37d1df579f4aa284e6d75ebc645709ad7eafb4a8",
+    "截屏2026-11-09 14.14.27.png": "1a05c41ead79e405cabe116c1320ed45c7572f125dd7826dba678d2dd03497c3"
+  }
+}
