@@ -2,13 +2,15 @@
 
 A Rust/Tauri refactor of [MdictStudioPro](https://github.com/shawkynasr/MdictStudioPro), with new features and improvements and English, Chinese and Arabic UI options. The Rust refactor repository is [MdictStudioPro-Rust](https://github.com/shawkynasr/MdictStudioPro-Rust).
 
-GitHub Actions preparation now targets **Windows x64, macOS Intel, macOS Apple Silicon and Linux x64**. The new workflow builds installers from a fresh checkout and creates a **draft prerelease** for preview tags after all four builds pass. These CI builds have not run yet. Earlier local evidence covers Intel macOS only; community testing will establish results for the new artifacts.
+GitHub Actions preparation now targets **Windows x64, macOS Intel, macOS Apple Silicon and Linux x64**. The new workflow builds installers from a fresh checkout and creates a **draft prerelease** for preview tags after all four builds pass. The first hosted matrix run succeeded for all four targets, as shown in the user-provided run screenshots. Installation and launch of these new installers remain untested. Earlier local runtime evidence covers Intel macOS only; community testing will establish results for the new artifacts.
 
 Read the [new repository setup guide](docs/GITHUB-PREVIEWS.md), [draft release notes](docs/releases/v0.1.0-preview.1.md), [tester guide](docs/PRERELEASE-TESTING.md) and [publishing checklist](docs/releases/PUBLISHING-CHECKLIST.md). Windows Python plugins and some Unix-only resource operations are currently unsupported. Full original-app parity, full M3 and stable-release readiness remain open.
 
 M2 is complete for its tested native backend foundation, and bounded M4 Database closeout is accepted. Scoped standalone Mac checks cover all six built-in converter fixtures, optional trusted Python conversion, folder inventory/error display, focused Settings keyboard/draft behavior, normal Quit, active idle-Python force-quit cleanup/reopen, missing-input handling, permission-denied retry and same-Mac app relocation. Each remains limited to its recorded profiles and evidence; see the [current release checklist](docs/M3-FIRST-RELEASE-CHECKLIST.md).
 
 Optional plugins require an external Python interpreter and dependencies. They execute with the user's permissions after explicit trust. General crash recovery, older abandoned-stage cleanup, broader compatibility and morphology remain open/deferred. Historical reports retain their original status; later acceptance is recorded separately. M0's full GUI runtime capture remains partial.
+
+The sidebar About dialog includes author credit, app version and official repository/release links. Updates are currently installed manually; see [About and update delivery](docs/ABOUT-AND-UPDATES.md). This addition needs a new CI build and GUI check.
 
 ## Current documentation
 

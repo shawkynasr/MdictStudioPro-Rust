@@ -2,3 +2,8 @@
 identifier = "studio-native"
 description = "Invoke the bounded native adapter from the local main webview."
 commands.allow = ["studio_call"]
+
+[[permission]]
+identifier = "studio-project-links"
+description = "Open only the fixed official project repository or release page from the local main webview."
+commands.allow = ["studio_open_project"]

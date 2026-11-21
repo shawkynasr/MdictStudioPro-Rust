@@ -89,7 +89,7 @@ class ShellContracts(unittest.TestCase):
         self.assertIn('studio-native',cap['permissions'])
         self.assertNotIn('core:default',cap['permissions'])
         build=(DESKTOP/'src-tauri/build.rs').read_text()
-        self.assertIn('.commands(&["studio_call"])',build)
+        self.assertIn('.commands(&["studio_call", "studio_open_project"])',build)
 
     def test_isolated_graph_does_not_upgrade_backend(self):
         self.assertTrue(check_adapter_lock()['no_unapproved_registry_versions'])

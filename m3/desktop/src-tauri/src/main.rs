@@ -33,6 +33,56 @@ async fn studio_call(
     }).await.map_err(|e| ApiError { code: ApiCode::Internal, message: format!("Command task failed: {e}") })?
 }
 
+// Deliberately no caller-supplied URL, file path, executable or arguments.
+fn project_url(target: &str) -> Result<&'static str, String> {
+    match target {
+        "repository" => Ok("https://github.com/shawkynasr/MdictStudioPro-Rust"),
+        "releases" => Ok("https://github.com/shawkynasr/MdictStudioPro-Rust/releases"),
+        _ => Err("Unknown project link".into()),
+    }
+}
+
+#[tauri::command]
+fn studio_open_project(window: tauri::WebviewWindow, target: String) -> Result<(), String> {
+    if window.label() != "main" { return Err("Only the main app webview may open project links".into()); }
+    let url = project_url(&target)?;
+    #[cfg(target_os = "macos")]
+    let mut command = std::process::Command::new("/usr/bin/open");
+    #[cfg(target_os = "linux")]
+    let mut command = std::process::Command::new("xdg-open");
+    #[cfg(target_os = "windows")]
+    let mut command = {
+        let system = std::env::var_os("SYSTEMROOT").ok_or("SYSTEMROOT unavailable")?;
+        let mut command = std::process::Command::new(std::path::PathBuf::from(system).join("System32/rundll32.exe"));
+        command.arg("url.dll,FileProtocolHandler");
+        command
+    };
+    #[cfg(not(any(target_os = "macos", target_os = "linux", target_os = "windows")))]
+    return Err("Project links are unavailable on this platform".into());
+    #[cfg(any(target_os = "macos", target_os = "linux", target_os = "windows"))]
+    {
+        let mut child = command.arg(url).stdin(std::process::Stdio::null())
+            .stdout(std::process::Stdio::null()).stderr(std::process::Stdio::null())
+            .spawn().map_err(|error| format!("Could not open project link: {error}"))?;
+        // Reap without blocking the UI while a platform opener is running.
+        std::thread::spawn(move || { let _ = child.wait(); });
+        Ok(())
+    }
+}
+
+#[cfg(test)]
+mod project_link_tests {
+    use super::project_url;
+    #[test]
+    fn only_fixed_official_targets_are_admitted() {
+        assert_eq!(project_url("repository").unwrap(), "https://github.com/shawkynasr/MdictStudioPro-Rust");
+        assert_eq!(project_url("releases").unwrap(), "https://github.com/shawkynasr/MdictStudioPro-Rust/releases");
+        for value in ["", "https://example.org", "file:///tmp/a", "../releases", "releases;bad"] {
+            assert!(project_url(value).is_err());
+        }
+    }
+}
+
 fn request_exit(app: &tauri::AppHandle) {
     let desktop = app.state::<Desktop>();
     if desktop.lifecycle.compare_exchange(0, 1, Ordering::AcqRel, Ordering::Acquire).is_err() { return; }
@@ -63,7 +113,7 @@ fn main() {
             app.set_menu(tauri::menu::Menu::default(app.handle())?)?;
             Ok(())
         })
-        .invoke_handler(tauri::generate_handler![studio_call])
+        .invoke_handler(tauri::generate_handler![studio_call, studio_open_project])
         .on_window_event(|window, event| {
             if let tauri::WindowEvent::CloseRequested { api, .. } = event {
                 if window.state::<Desktop>().lifecycle.load(Ordering::Acquire) != 2 {

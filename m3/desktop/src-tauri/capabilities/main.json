@@ -2,7 +2,18 @@
   "$schema": "../gen/schemas/desktop-schema.json",
   "identifier": "main",
   "description": "Local main app only; no remote origins, filesystem, shell or HTTP plugin.",
-  "windows": ["main"],
+  "windows": [
+    "main"
+  ],
   "local": true,
-  "permissions": ["studio-native", "dialog:allow-open", "dialog:allow-save", "core:window:allow-start-dragging", "core:event:allow-listen", "core:event:allow-unlisten"]
+  "permissions": [
+    "studio-native",
+    "dialog:allow-open",
+    "dialog:allow-save",
+    "core:window:allow-start-dragging",
+    "core:event:allow-listen",
+    "core:event:allow-unlisten",
+    "studio-project-links",
+    "core:app:allow-version"
+  ]
 }

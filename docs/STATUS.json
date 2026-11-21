@@ -1512,10 +1512,10 @@
     "documentation": "docs/M3-COMPLETION-REVIEW.md",
     "scope_note": "Older per-slice pending fields are historical. Full M3/original GUI parity and platform release qualification remain open.",
     "current_slice": {
-      "feature": "Four-target GitHub Actions preview builds for separate Rust refactor repository",
-      "status": "prepared_CI_execution_pending_no_remote_actions",
-      "documentation": "docs/GITHUB-PREVIEWS.md",
-      "application_code_changed": false,
+      "feature": "About dialog, author credit, version and manual official release access",
+      "status": "implemented_local_checks_pending_new_CI_and_GUI_test",
+      "documentation": "docs/ABOUT-AND-UPDATES.md",
+      "application_code_changed": true,
       "routine_rebuild_required": true,
       "clean_machine_qualified": false,
       "M3_complete": false,
@@ -1778,13 +1778,21 @@
       "clean_machine_qualified": false
     },
     "experimental_prerelease": {
-      "status": "four_target_workflow_prepared_not_executed_or_published",
+      "status": "four_target_build_success_observed_runtime_testing_and_publication_pending",
       "proposed_tag": "v0.1.0-preview.1",
       "documentation": "docs/releases/PUBLISHING-CHECKLIST.md",
       "platform_scope": "Windows x64; macOS Intel and ARM; Linux x64 — CI and runtime qualification pending",
       "remote_actions_performed": false,
       "workflow": ".github/workflows/preview-builds.yml",
-      "repository_url": "https://github.com/shawkynasr/MdictStudioPro-Rust"
+      "repository_url": "https://github.com/shawkynasr/MdictStudioPro-Rust",
+      "user_pushed_repository": true,
+      "ci_review": "docs/evidence/ci-first-preview-run/review.json",
+      "about_and_updates": {
+        "about_dialog": "implemented_pending_GUI_test",
+        "update_mode": "manual_releases_page",
+        "automatic_update_notifications": false,
+        "automatic_installation": false
+      }
     }
   },
   "M4": {

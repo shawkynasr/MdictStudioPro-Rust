@@ -1,4 +1,7 @@
 <script lang="ts">
+  import { getVersion } from '@tauri-apps/api/app';
+  import { invoke } from '@tauri-apps/api/core';
+  import { project, aboutLabel } from './about';
   import {getCurrentWebview} from '@tauri-apps/api/webview';
   import {PLUGIN_PYTHON_KEY,checkedPythonPath,pluginDrop,pluginOutputSelection,samePluginImport,importedPlugin} from './plugin-simple';
   import type {ImportContext} from './plugin-simple';
@@ -53,6 +56,12 @@
   let settingsDialog = $state<HTMLDialogElement>();
   let settingsButton = $state<HTMLButtonElement>();
   let settingsOpen = $state(false);
+  let aboutDialog = $state<HTMLDialogElement>();
+  let aboutButton = $state<HTMLButtonElement>();
+  let aboutOpen = $state(false);
+  let appVersion = $state('');
+  let aboutLinkError = $state(false);
+  let aboutOpening = $state(false);
   let converterSetup = $state(false);
   let preferencesReady = $state(false);
   let pluginPython = $state('');
@@ -470,6 +479,19 @@
   const fileName = (path:string) => path.split(/[\\/]/).pop() || '';
   const viewLabel = (key:View) => key === 'plugins' ? y('heading') : key === 'database' || key === 'morphology' ? u(key) : t(key);
   function selectView(key:View) { view=key; alert=null; if(key === 'converters')converterSetup=false; }
+  const a = (key: Parameters<typeof aboutLabel>[1]) => aboutLabel(locale,key);
+  async function openAbout() {
+    if(!aboutDialog || aboutDialog.open)return;
+    aboutLinkError=false;
+    aboutDialog.showModal();aboutOpen=true;
+    if(!appVersion){try{appVersion=await getVersion();}catch{appVersion='';}}
+  }
+  function aboutClosed(){aboutOpen=false;aboutButton?.focus();}
+  async function openProject(target:'repository'|'releases') {
+    aboutOpening=true;aboutLinkError=false;
+    try{await invoke('studio_open_project',{target});}catch{aboutLinkError=true;}
+    finally{aboutOpening=false;}
+  }
   function openSettings() { if(settingsDialog&&!settingsDialog.open){settingsDialog.showModal();settingsOpen=true;} }
   function closeSettings() { settingsDialog?.close(); }
   function settingsClosed() { settingsOpen=false;settingsButton?.focus(); }
@@ -753,6 +775,22 @@
   <div class="settings-actions"><button class="primary" type="button" onclick={closeSettings}>{t('done')}</button></div>
 </dialog>
 
+<dialog class="settings-dialog about-dialog" bind:this={aboutDialog} aria-labelledby="about-heading" aria-describedby="about-description" onclose={aboutClosed}>
+  <h2 id="about-heading">{project.name}</h2>
+  <p id="about-description">{a('refactor')}</p>
+  <dl class="about-details">
+    <dt>{a('version')}</dt><dd dir="ltr">{appVersion || a('unavailable')}</dd>
+    <dt>{a('author')}</dt><dd><bdi>{project.author}</bdi><br/><span dir="ltr">{project.email}</span></dd>
+    <dt>GitHub</dt><dd><button type="button" class="about-link" disabled={aboutOpening} onclick={()=>openProject('repository')}>{a('repository')}</button><br/><span class="about-address" dir="ltr">{project.repository}</span></dd>
+  </dl>
+  <h3>{a('updates')}</h3>
+  <p>{a('manual')}</p>
+  <button type="button" class="about-link" disabled={aboutOpening} onclick={()=>openProject('releases')}>{a('releases')}</button>
+  <p class="about-address" dir="ltr">{project.releases}</p>
+  {#if aboutLinkError}<p role="alert">{a('openFailed')}</p>{/if}
+  <div class="settings-actions"><button class="primary" type="button" onclick={()=>aboutDialog?.close()}>{t('done')}</button></div>
+</dialog>
+
 <div class="window" class:macos={platform === 'macos'}>
   <header class="titlebar" dir="ltr" data-tauri-drag-region>
     <div class="windowidentity" data-tauri-drag-region><span class="appname" data-tauri-drag-region>Mdict Studio Pro</span></div>
@@ -778,6 +816,7 @@
       <div class="sidebarbottom">
         <button class="nav" class:active={view === 'jobs'} aria-current={view === 'jobs' ? 'page' : undefined} onclick={() => selectView('jobs')} title={t('jobs')}><Icon name="jobs"/><span class="navtext">{t('jobs')}</span>{#if activeJob}<span class="job-dot"></span>{/if}</button>
         <button class="nav" bind:this={settingsButton} onclick={openSettings} title={t('settings')} aria-haspopup="dialog" aria-expanded={settingsOpen}><Icon name="settings"/><span class="navtext">{t('settings')}</span></button>
+        <button class="nav" bind:this={aboutButton} onclick={openAbout} title={a('about')} aria-haspopup="dialog" aria-expanded={aboutOpen}><Icon name="info"/><span class="navtext">{a('about')}</span></button>
         <div class="local"><span class="dot"></span><span>{u('local')}</span></div>
       </div>
     </aside>

@@ -315,3 +315,10 @@ html[dir=rtl] .settings-dialog select,html[dir=rtl] .advanced-content select{bac
 .plugin-simple .plugin-advanced>summary,.plugin-simple .plugin-python-setup>summary{cursor:pointer;color:var(--muted)}
 .plugin-simple .fields{margin-block:20px}
 .plugin-simple output{overflow-wrap:anywhere;min-width:0;color:var(--muted)}
+
+.about-dialog h3{font-size:14px;margin-block:20px 8px}
+.about-details{display:grid;grid-template-columns:auto minmax(0,1fr);gap:15px 20px;margin-block:22px;font-size:13px}
+.about-details dt{color:var(--muted)}
+.about-details dd{margin:0;overflow-wrap:anywhere;line-height:1.7}
+.about-dialog button.about-link{float:none;margin:0;text-align:start;color:var(--accent);text-decoration:underline}
+.about-address{font-size:11px;overflow-wrap:anywhere;user-select:text}

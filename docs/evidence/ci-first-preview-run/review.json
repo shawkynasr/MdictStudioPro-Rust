@@ -1,0 +1,28 @@
+{
+  "schema": "studio-ci-first-run-review-v1",
+  "source_commit_short_from_screenshots": "7dbb2fe",
+  "preview_run": "https://github.com/shawkynasr/MdictStudioPro-Rust/actions/runs/44875862636",
+  "qualification_run": "https://github.com/shawkynasr/MdictStudioPro-Rust/actions/runs/44875862614",
+  "preview_build_jobs_observed_passed": 4,
+  "preview_artifacts_observed": 4,
+  "evidence_basis": "User screenshots for preview result; user-attached legacy-interop.zip for diagnostics. Remote API access unavailable.",
+  "installer_bytes_downloaded_or_runtime_tested": false,
+  "legacy_diagnostic_matches_exact_archived_check_outcomes": true,
+  "legacy_metadata_qualification_claimed": false,
+  "new_workflow_native_rerun_pending": true,
+  "production_release_ready": false,
+  "report_sha256": {
+    "metadata-codec-report.json": "981d490c7e5add5816a04e1ae91c74f08586d2903236540bfc596fd72e529dc3",
+    "interop-report.json": "37c6b4371a46eeed060f2f7d0b147fed87c851256c5d6ac2dfddfd555c26bb9e"
+  },
+  "second_run_commit_short_from_screenshots": "6d71581",
+  "second_run_both_workflows_observed_success": true,
+  "ci_intel_conversion_receipt": {
+    "entries": 3,
+    "file_bytes": 885,
+    "source_sha256": "463a04e1ad8ff8c3142e1456dc0fb529de2fa62affbe3dd70d4f70afd8e42dec"
+  },
+  "ci_intel_output_sha256": "83288a2c708f4d03a12d08e72eb7a71af3904d37528447ffc3ee1e95fe8415b1",
+  "ci_intel_output_verified_locally": true,
+  "ci_intel_reopen_confirmation_received": false
+}
