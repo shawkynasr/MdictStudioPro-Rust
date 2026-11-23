@@ -72,9 +72,9 @@ jobs:
       - name: Test fixed project-link boundary
         run: python scripts/ci_test_desktop.py --target '${{ matrix.target }}'
       - name: Test export limits, extended streaming and atomic publication
-        run: cargo test --manifest-path m3/export-io/Cargo.toml --target '${{ matrix.target }}' --locked
+        run: python scripts/ci_test_exports.py --target '${{ matrix.target }}' --suite export
       - name: Test explicit export request selection
-        run: cargo test --manifest-path m3/txt-runtime/Cargo.toml --target '${{ matrix.target }}' --locked large_export::tests
+        run: python scripts/ci_test_exports.py --target '${{ matrix.target }}' --suite runtime
       - name: Bundle preview
         working-directory: m3/desktop
         env:

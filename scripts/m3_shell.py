@@ -41,15 +41,16 @@ def sources():
     paths += [ROOT/'scripts/m3_parent_death.py',ROOT/'scripts/test_m3_parent_death.py',ROOT/'docs/M3-PARENT-DEATH.md']
     return {str(p.relative_to(ROOT)): sha(p) for p in sorted(paths)}
 
-def check_adapter_lock(path=None):
+def check_adapter_lock(path=None, root=None):
+    root = ROOT if root is None else Path(root)
     def registry(path):
         return {(p['name'], p['version']): p.get('checksum') for p in tomllib.loads(path.read_text())['package'] if p.get('source')}
-    expected = registry(ROOT / 'm2/cc-pack-runtime/Cargo.lock')
-    lock_path = path or ROOT / 'm3/native-adapter/Cargo.lock'
+    expected = registry(root / 'm2/cc-pack-runtime/Cargo.lock')
+    lock_path = path or root / 'm3/native-adapter/Cargo.lock'
     actual = registry(lock_path)
     allowed=dict(expected)
-    if lock_path in [ROOT/'m3/native-adapter/Cargo.lock',ROOT/'m3/txt-runtime/Cargo.lock']:
-        additions=json.loads((ROOT/'m4/sqlite-registry.json').read_text())['registry_packages']
+    if lock_path in [root/'m3/native-adapter/Cargo.lock',root/'m3/txt-runtime/Cargo.lock']:
+        additions=json.loads((root/'m4/sqlite-registry.json').read_text())['registry_packages']
         base_names={name for name,_ in expected}
         assert all(p['name'] not in base_names for p in additions),'SQLite additions cannot upgrade existing M2 crates'
         allowed.update({(p['name'],p['version']):p['checksum'] for p in additions})

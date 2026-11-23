@@ -1,0 +1,24 @@
+{
+  "schema": "studio-ci-seed-lock-fix-v1",
+  "date": "2026-11-23",
+  "reported_failure": "Standalone runtime test step cannot update seed Cargo.lock while --locked is passed",
+  "cause": "CI test commands omitted isolated seed-edge normalization already performed by m3_shell.py",
+  "correction": "Offline metadata normalization plus dependency version/checksum checks before locked offline tests",
+  "observed_test_targets": [
+    "aarch64-apple-darwin",
+    "x86_64-apple-darwin",
+    "x86_64-pc-windows-msvc"
+  ],
+  "wrapper_regression_checks_passed": 4,
+  "regression_scope": "All four target/suite command sequences, altered seed rejection, post-resolution pin drift rejection, missing-cache failure propagation; subprocesses simulated",
+  "Rust_executed_locally": false,
+  "native_CI_retry_passed": false,
+  "committed_Cargo_lockfiles_unchanged": 82,
+  "source_sha256": {
+    ".github/workflows/preview-builds.yml": "d8f2887810c1ed2754405d5d895dec706cc777a872e5693504ee3716c8a036c5",
+    "scripts/ci_test_exports.py": "b7c18e450ed69c40e3404459017d484ce157cc39e6969b5c4438ac60acc292bc",
+    "scripts/test_ci_test_exports.py": "3232691b5e056648e6932037e2572950ce668996b4d793e1e54ea986e40044ff",
+    "scripts/m3_shell.py": "941be42e02217538e6ed93a61f4d4ae2fa5525af18c75f2a340d430401a98f7b",
+    "docs/PREVIEW-2-FEEDBACK.md": "048fddd162cab2b154c4f308492d63eb736bb579ee974102fd0e0ea1bb559601"
+  }
+}

@@ -1834,6 +1834,12 @@
     "explicit_256_MiB_export_added": true,
     "native_extended_export_qualified": false,
     "SQLite_and_build_limits_changed": false,
-    "published_preview_1_changed": false
+    "published_preview_1_changed": false,
+    "CI_seed_lock_fix": {
+      "status": "wrapper_regression_passed_native_CI_retry_pending",
+      "evidence": "docs/evidence/preview-feedback-ci-lock-fix/review.json",
+      "dependency_versions_changed": false,
+      "committed_lockfiles_changed": false
+    }
   }
 }

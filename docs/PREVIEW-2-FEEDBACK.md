@@ -51,3 +51,7 @@ After CI succeeds, install a new preview build and check:
 3. Export the supplied dictionary with Extended to a fresh TXT path. Its source SHA-256 must be `a95b898276c4f3f90598f38ffa2ed7eb177904700e40bd7bd16316069b37761c`. Expected result: 64,364 records, 150,693,048 TXT bytes, SHA-256 `34c11c552159aaad978f943dec3f104f173a17a9c6a6f65a77ac9ce2e18f6f6e`. The independent expected framed-record digest is `0ed77eb39780fb6319e0a526777c4b3a42dd14e31fe74edc57035eeb7b1123e9`.
 
 The supplied dictionary and its extracted contents are not included in the source ZIP or CI fixtures.
+
+## CI seed-lock correction (2026-11-23)
+
+The first CI attempt stopped before `large_export::tests` because `--locked` rejected the standalone runtime seed lock. The direct test commands had omitted the existing local shell workflow’s seed-normalization step. Both new standalone CI test steps now use `scripts/ci_test_exports.py`: verify accepted registry versions/checksums, resolve the isolated M3 lock’s local edges offline, verify pins again, then execute `cargo test --offline --locked`. Metadata failure or registry drift stops the run before testing. No committed lockfile or dependency version was changed by this correction. Native success remains pending a new CI run.

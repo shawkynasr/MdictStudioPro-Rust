@@ -25,3 +25,7 @@ docs/screenshots/preview-1-build-zh.png
 docs/evidence/preview-feedback-2026-11-23/review.json
 docs/evidence/m3-desktop-audit/audit.json
 docs/PREVIEW-2-FILES.txt
+scripts/ci_test_exports.py
+scripts/test_ci_test_exports.py
+scripts/m3_shell.py
+docs/evidence/preview-feedback-ci-lock-fix/review.json
