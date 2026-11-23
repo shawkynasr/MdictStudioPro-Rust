@@ -12,6 +12,7 @@ import time
 import traceback
 from m2_closeout import inventory
 from m3_shell import sources,check_adapter_lock,check_structure
+from m3_pack_lock_edge import matches_reviewed_lock
 
 ROOT=Path(__file__).resolve().parents[1]
 DESKTOP=ROOT/'m3/desktop'
@@ -28,7 +29,9 @@ def lock_state(root,bindings,resolved=False):
         p=root/name
         assert p.is_file() and not p.is_symlink(),f'Missing or symlinked lock: {name}'
         h=digest(p)
-        assert h in ([item['build_sha256']] if resolved else item['accepted_sha256']),f'Unreviewed lock identity: {name}'
+        accepted=[item['build_sha256']] if resolved else item['accepted_sha256']
+        raw=p.read_bytes()
+        assert h==hashlib.sha256(raw).hexdigest() and matches_reviewed_lock(name,raw,accepted),f'Unreviewed lock identity: {name}'
         actual[name]=h
     return actual
 

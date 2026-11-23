@@ -329,7 +329,6 @@ html[dir=rtl] .settings-dialog select,html[dir=rtl] .advanced-content select{bac
 
 /* Text scaling changes text, not the native window or dictionary content. */
 .sidebar{overflow-y:auto;min-height:0}
-.navtext{overflow-wrap:anywhere}
 .field{flex-wrap:wrap}
 .field label,.field-label{width:clamp(100px,9rem,180px)}
 .primary{white-space:normal;line-height:1.5}
@@ -337,3 +336,15 @@ html[dir=rtl] .settings-dialog select,html[dir=rtl] .advanced-content select{bac
 .controls{justify-content:flex-end}
 .stat{flex-wrap:wrap}
 @media(max-width:740px){.field label,.field-label{width:auto;max-width:100%}.nav{min-height:44px}}
+
+/* Readable desktop navigation at every text size, in LTR and RTL. */
+@media(min-width:741px){.shell{grid-template-columns:clamp(210px,16rem,340px) minmax(0,1fr)}}
+.nav{min-height:44px;align-items:center}
+.navtext{min-width:0;flex:1;overflow-wrap:normal;word-break:normal;white-space:normal;text-align:start;line-height:1.45}
+.brandcopy{min-width:0}
+.section{letter-spacing:.04em;line-height:1.45}
+html[dir=rtl] .section{letter-spacing:normal}
+
+.packing-profile-field{align-items:flex-start}
+.packing-profile-field label{width:100%}
+.packing-profile-field select{flex:1 1 100%;max-width:100%;text-align:start;text-align-last:start}

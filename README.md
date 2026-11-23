@@ -12,7 +12,7 @@ Optional plugins require an external Python interpreter and dependencies. They e
 
 The sidebar About dialog includes author credit, app version and official repository/release links. Updates are currently installed manually; see [About and update delivery](docs/ABOUT-AND-UPDATES.md). This addition needs a new CI build and GUI check.
 
-For the next preview’s readability fixes, clearer rebuild destinations and explicit 256 MiB export option, see the [community-feedback update](docs/PREVIEW-2-FEEDBACK.md). Native validation is pending.
+For the next preview’s readability fixes, clearer rebuild destinations and explicit 256 MiB export/TXT-build options, see the [community-feedback update](docs/PREVIEW-2-FEEDBACK.md). Native validation is pending.
 
 ## 界面预览 / Screenshots
 

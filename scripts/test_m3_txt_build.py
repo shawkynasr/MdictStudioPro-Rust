@@ -18,6 +18,6 @@ class TxtBuildContracts(unittest.TestCase):
   self.assertNotIn("{t('inputHint')}",app)
  def test_streaming_preparation_and_commit_contract(self):
   code=(ROOT/'m3/txt-runtime/src/txt_packing.rs').read_text()
-  for text in ['INPUT_CAP:u64=128*1024*1024','LINE_COUNT:usize=8_000_000','reader.fill_buf()','tempfile::NamedTempFile::new()','spool_bytes+json.len() as u64+1>INPUT_CAP','studio_large_io::execute','studio_cc_pack_io::execute','source_sha256:prepared.digest','matches_core_for_duplicates_crlf_bom','packing_share_exclusive_admission_with_readers']:self.assertIn(text,code)
+  for text in ['INPUT_CAP:u64=128*1024*1024','LINE_COUNT:usize=8_000_000','reader.fill_buf()','tempfile::NamedTempFile::new()','spool_bytes+json.len() as u64+1>input_cap','studio_large_io::execute','studio_cc_pack_io::execute','source_sha256:prepared.digest','matches_core_for_duplicates_crlf_bom','packing_share_exclusive_admission_with_readers']:self.assertIn(text,code)
   self.assertNotIn('read_to_string',code.split('#[cfg(test)]')[0]);self.assertNotIn('Command::new',code)
 if __name__=='__main__':unittest.main()

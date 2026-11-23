@@ -48,8 +48,12 @@ class ExtractGuiChecks(unittest.TestCase):
    matches=list(re.finditer(r'^fn (\w+)\(',text,re.M))
    return {m[1]:text[m.start():matches[i+1].start() if i+1<len(matches) else len(text)].strip() for i,m in enumerate(matches)}
   old,new=functions(original),functions(current)
-  for name in ['key','txt_row','parse_txt','pack']:
+  for name in ['key','txt_row','parse_txt']:
    self.assertEqual(new[name],old[name],name)
+  # Extended packing adds disk-spooled emission; the inherited metadata,
+  # readback verification and final no-clobber publication remain identical.
+  suffix=' job.tick("encoded_dictionary",1,1)?;'
+  self.assertEqual(new['pack'][new['pack'].index(suffix):].replace('profile:packing_profile','profile:crate::PROFILE'),old['pack'][old['pack'].index(suffix):])
   self.assertIn('if !matches!(request,Request::ExportTxt {..}|Request::ExportJsonl {..})',current)
   self.assertIn('execute_profile(request,limits,ExportProfile::Large,job)',current)
   self.assertIn('limits.validate(profile)?',current)

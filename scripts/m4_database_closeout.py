@@ -8,6 +8,7 @@ import sys
 import traceback
 from m2_closeout import inventory
 from m3_shell import ROOT,sources
+from m3_pack_lock_edge import matches_reviewed_lock
 
 MANIFEST='docs/evidence/m4-database-closeout-review/manifest.json'
 # A nested archive extraction was present in Mac receipts; it is not a build input.
@@ -39,7 +40,14 @@ def audit(manifest,root=ROOT,production=None,protected=None):
             for name,values in variants.items():
                 assert len(values)==2 and len(set(values))==2 and manifest[group][name] in values,'Invalid seed/resolved lock pair'
         for name,expected in manifest[group].items():
-            assert digest(path(name)) in variants.get(name,[expected]),f'{group} changed: {name}' 
+            accepted=variants.get(name,[expected])
+            observed=digest(path(name))
+            unchanged=observed in accepted
+            if group=='locks_sha256' and not unchanged:
+                raw=path(name).read_bytes()
+                unchanged=(observed==hashlib.sha256(raw).hexdigest() and
+                           matches_reviewed_lock(name,raw,accepted))
+            assert unchanged,f'{group} changed: {name}'
     actual=dict(production_sources() if production is None else production)
     optional_present=[]
     if manifest.get('optional_platform_bindings'):

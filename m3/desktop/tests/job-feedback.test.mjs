@@ -62,3 +62,11 @@ test('destination display omits fictitious line zero without changing diagnostic
   assert.equal(jobFailureHint(error,'python_converter'),'destination');
   for(const locale of ['en','zh','ar'])assert.ok(jobFeedbackLabel(locale,'rebuildDestination'));
 });
+
+test('TXT build-limit hints name the separate packing profile and do not suggest widening the extended cap',()=>{
+  const issue={code:'limit_exceeded',message:'TXT input cap',limit:{name:'txt_input_bytes',value:150693048,max:134217728}};
+  assert.equal(jobFailureHint(issue,'pack_txt_mdx'),'packingLimit');
+  assert.equal(jobFailureHint({...issue,limit:{...issue.limit,max:536870912}},'pack_txt_mdx'),'limit');
+  assert.equal(jobFailureHint(issue,'mdx_to_db'),'limit');
+  for(const locale of ['en','zh','ar'])assert.ok(jobFeedbackLabel(locale,'packingLimit'));
+});

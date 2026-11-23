@@ -1,0 +1,98 @@
+{
+  "schema": "studio-sidebar-and-extended-txt-build-v1",
+  "date": "2026-11-23",
+  "status": "source_prepared_native_CI_and_layout_checks_pending",
+  "user_Mac_extended_export": "export-observation.json",
+  "sidebar": {
+    "morphology_hidden_from_navigation": true,
+    "width": "clamp(210px,16rem,340px) above 740 CSS px",
+    "word_break": "normal; no forced anywhere wrapping",
+    "native_updated_layout_verified": false
+  },
+  "packing": {
+    "profile": "studio-m3-mdx-block-spool-256-v1",
+    "explicit_TXT_only": true,
+    "decoded_bytes": 268435456,
+    "records": 250000,
+    "TXT_and_prepared_JSONL_cap_bytes": 536870912,
+    "output_MDX_cap_bytes": 536870912,
+    "default_bounded_and_block_caps_changed": false,
+    "SQLite_caps_changed": false,
+    "source_block_writer": "m2/cc-pack-io/src/block_writer.rs reused by path without edits",
+    "native_tests_added": "145 MiB TXT to UTF-8/UTF-16 MDX, small-file byte equality against existing writer, cancellation stages, destination race, malformed TXT and 512 MiB input ceiling",
+    "native_tests_executed_locally": false
+  },
+  "dependency_edges": [
+    {
+      "path": "m3/export-io/Cargo.lock",
+      "before_sha256": "a04524c89dfeedbd04074766cdd5edb96feb299b7724b56d85bf5ed3cb6b996b",
+      "after_sha256": "1bfc38e8b7e0b46dfbc8abf636a6b6a93e70ee9eb5e2b1980228ba1b45482c23",
+      "registry_packages_versions_and_checksums_unchanged": true
+    },
+    {
+      "path": "m3/txt-runtime/Cargo.lock",
+      "before_sha256": "6238de1d88365b93a5b5cfcbacbd76e14d94723deac87c3065c01aa18e64bdc7",
+      "after_sha256": "a40077a63865d9499197f235b1e61497328793e6d58ae6d7d06a75e3e339cb7d",
+      "registry_packages_versions_and_checksums_unchanged": true
+    },
+    {
+      "path": "m3/indexed-sessions/Cargo.lock",
+      "before_sha256": "92c4f9704a78ed464e79d17926ac009ec7788a9444eb5700fb06066c815ffb29",
+      "after_sha256": "eaeaf3e6f34bf3c14a9077f8ef8513642fe881d77bbe05d518ded39976dcd7a7",
+      "registry_packages_versions_and_checksums_unchanged": true
+    },
+    {
+      "path": "m3/native-adapter/Cargo.lock",
+      "before_sha256": "6238de1d88365b93a5b5cfcbacbd76e14d94723deac87c3065c01aa18e64bdc7",
+      "after_sha256": "a40077a63865d9499197f235b1e61497328793e6d58ae6d7d06a75e3e339cb7d",
+      "registry_packages_versions_and_checksums_unchanged": true
+    },
+    {
+      "path": "m3/desktop/src-tauri/Cargo.lock",
+      "before_sha256": "b1a055c2ef077ff79ab61a0a48452e72fe379ef2ff4669b69fc81b31043f01c3",
+      "after_sha256": "0f4a1bcfae834767df8aa7937b088363be17670fc6b19e5ee5a17d4d563f673c",
+      "registry_packages_versions_and_checksums_unchanged": true
+    }
+  ],
+  "dependency_note": "miniz_oxide =0.9.1 already existed through the old block packer; now also direct for the M3 writer. No new registry version/checksum. Exact historical lock identities remain anchored after removing only this single known edge; this does not qualify new native code.",
+  "local_validation": {
+    "JavaScript_checks": 57,
+    "Python_checks": 351
+  },
+  "production_release_ready": false,
+  "source_sha256": {
+    ".github/workflows/preview-builds.yml": "dd175ca2f7d6d3f39c527f88dbf329639a64b3507426156f0ee63147aa81932d",
+    "m3/desktop/src/App.svelte": "f35852cfb6ae65c539d185472bc49d3b68707dcaff062d1c6cfd080e0934c381",
+    "m3/desktop/src/style.css": "47d19d7fd492170db6ab0e2f7586a4af7f039c02fb6764c96848449a8a0c2897",
+    "m3/desktop/src/readability.ts": "0d5ff5dabe1d825484b0a963e227f7fac7db5c6ac69185c6c1006e44a9f050e4",
+    "m3/desktop/src/output-path.ts": "7459c8b4cad0fffeba07897e5c30161a0b7ee13b0502dfa008cc469aa21048d3",
+    "m3/desktop/src/job-feedback.ts": "f63854e703c9526dba54adf87bde2d4f4e0c2acc9a9c9b826988d0ae843bbb3e",
+    "m3/desktop/src/extract-labels.ts": "a506fd85014f8d38130df1cb2530d9872ce20eb4075725f6480dec1102be381c",
+    "m3/desktop/src/bridge.ts": "db740e2f6d5c31e029333545360b11e95c71b3ea60860e13cd3d761b573e7d0f",
+    "m3/desktop/tests/readability.test.mjs": "5ca20e16aab91e29c2a2342c197851e0fab260b314063f51cf51de50e7210942",
+    "m3/desktop/tests/job-feedback.test.mjs": "7daa137802d1ed52ba59162e2db78fa1b8e7217e087489203e33c41c83d4ec4c",
+    "m3/export-io/src/io.rs": "ede37abeb3324117e43dee1a93eec1f4c23b1164e4789b30b90ca36767a3a948",
+    "m3/export-io/src/lib.rs": "e96f3058f769080050293ce686966f5f44b18605f963aba212c28439b03818fb",
+    "m3/export-io/src/tests.rs": "b99c067329fa6b3a7ae42dbd8bce97a93b0623f1af17ed5502cc6feed17ea42c",
+    "m3/txt-runtime/src/large_export.rs": "77f8bf9c7cbd4e958ef2bb2711fec7b35c36723738dc1294d4732774f11dc356",
+    "m3/fixtures/extended-export/synthetic-145.mdx": "407ca32ec3d625ebc2db7291028a92757384108766881e8d67a638fe87e9720c",
+    "scripts/test_m3_extract_gui.py": "311a0fe4073b522e3bb91efff7578061f51ba78b2c4c08868c116d34b5fe940b",
+    "scripts/m3_extended_export_fixture.py": "5d8c16fc3f0296dedaf2d527a2b83960c3fdb60d2bae1a187385c5336ab726c7",
+    "scripts/ci_test_exports.py": "e08588f113d96c4545703a6525576e90bbae486414c41a832c5c0acb322bf3f0",
+    "scripts/test_ci_test_exports.py": "7ab7183eeb22c88986bfc10d7b42c5ab44a9fc0bb1464492e8429651204ec902",
+    "scripts/m3_shell.py": "74cd6cf567003259e67fad57dd29a4318e97fdcb027245ee80b379da74796f71",
+    "m3/export-io/Cargo.toml": "fb688a496d2155950a494d70656f88d4c47cfa57e8fd430668bce7457564cd8f",
+    "m3/export-io/Cargo.lock": "1bfc38e8b7e0b46dfbc8abf636a6b6a93e70ee9eb5e2b1980228ba1b45482c23",
+    "m3/txt-runtime/Cargo.lock": "a40077a63865d9499197f235b1e61497328793e6d58ae6d7d06a75e3e339cb7d",
+    "m3/indexed-sessions/Cargo.lock": "eaeaf3e6f34bf3c14a9077f8ef8513642fe881d77bbe05d518ded39976dcd7a7",
+    "m3/native-adapter/Cargo.lock": "a40077a63865d9499197f235b1e61497328793e6d58ae6d7d06a75e3e339cb7d",
+    "m3/desktop/src-tauri/Cargo.lock": "0f4a1bcfae834767df8aa7937b088363be17670fc6b19e5ee5a17d4d563f673c",
+    "m3/txt-runtime/src/txt_packing.rs": "c197491ba4e70519ed303f3884daae1590b2abcb7c3180ba93a874f9387fe722",
+    "m3/desktop/src/build-labels.ts": "575b471f52d1dff5b65148c6fbe2be2b134cfa5e5b8c5499cc800ede8c29c221",
+    "scripts/test_m3_txt_build.py": "71b3d06d9ab13347b40d629e7d9f43bfb229ac7afe74183d9ee495b293ce01a0",
+    "scripts/m3_pack_lock_edge.py": "9935b69b1ec3a05fe03888c7ba6294d54565ff8fd91a66a7ada23cdb2765d37c",
+    "scripts/test_m3_pack_lock_edge.py": "545040d0adb02b889f0c973ad48302b26da938ba56af84fed7a0f93f043bfdd6",
+    "scripts/m3_mac_preview.py": "666571b8895a2503205e83ff259c10d704514614fda79f9b4cb45f69ec16dd44",
+    "scripts/m4_database_closeout.py": "b006bea8f3af8e74ff3e805651071608056724698ade8f78a4a69567e6e8ff36"
+  }
+}

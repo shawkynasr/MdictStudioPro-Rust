@@ -84,14 +84,26 @@ pub fn execute(request:&Request,limits:&IoLimits,job:&mut ImportJob<'_>)->Result
 pub fn execute_profile(request:&Request,limits:&IoLimits,profile:ExportProfile,job:&mut ImportJob<'_>)->Result<Summary> {
  job.check()?;limits.validate(profile)?;if !matches!(request,Request::ExportTxt {..}|Request::ExportJsonl {..}) {return Err(crate::unsupported("This profile accepts MDX TXT/JSONL exports only"));}destination(request.destination())?;
  match request {
-  Request::PackMdx {source,destination,encoding,metadata}=>pack(source,destination,None,Some(*encoding),metadata,limits,job),
-  Request::PackMdd {source,resource_root,destination,metadata}=>pack(source,destination,Some(resource_root),None,metadata,limits,job),
+  Request::PackMdx {source,destination,encoding,metadata}=>pack(source,destination,None,Some(*encoding),metadata,limits,false,crate::PROFILE,job),
+  Request::PackMdd {source,resource_root,destination,metadata}=>pack(source,destination,Some(resource_root),None,metadata,limits,false,crate::PROFILE,job),
   Request::ExportJsonl {source,destination}=>export(source,destination,false,limits,profile,job),Request::ExportTxt {source,destination}=>export(source,destination,true,limits,profile,job),
  }
 }
-fn pack(source:&Path,destination:&Path,root:Option<&Path>,encoding:Option<studio_core::Encoding>,metadata:&Metadata,limits:&IoLimits,job:&mut ImportJob<'_>)->Result<Summary> {
+/// Separate opt-in packing route; export defaults and M2 profiles are unchanged.
+pub fn execute_extended_packing(request:&Request,job:&mut ImportJob<'_>)->Result<Summary> {
+ job.check()?;
+ let Request::PackMdx {source,destination:target,encoding,metadata}=request else {return Err(crate::unsupported("Extended packing accepts MDX input entries only"));};
+ let mut limits=IoLimits::for_profile(ExportProfile::Extended);
+ limits.max_input_bytes=512*1024*1024;limits.max_plan_charge=48*1024*1024;
+ limits.reader.validate()?;destination(target)?;
+ pack(source,target,None,Some(*encoding),metadata,&limits,true,"studio-m3-mdx-block-spool-256-v1",job)
+}
+#[path="../../../m2/cc-pack-io/src/block_writer.rs"]mod block_writer;
+fn pack(source:&Path,destination:&Path,root:Option<&Path>,encoding:Option<studio_core::Encoding>,metadata:&Metadata,limits:&IoLimits,block_spool:bool,packing_profile:&'static str,job:&mut ImportJob<'_>)->Result<Summary> {
  let kind=if root.is_some(){FileKind::Mdd}else{FileKind::Mdx};let edits=metadata.attributes(kind)?;let(mut spool,rows,source_sha)=load(source,root,&metadata.stylesheet,limits,job)?;let options=WriteOptions::new().with_legacy_sort(LegacySort::PreserveInput).with_compression(WriteCompression::Zlib).with_key_block_target_bytes(16*1024).with_record_block_target_bytes(64*1024);let mut raw=tempfile::NamedTempFile::new()?;let mut expected=Digest::default();
- if let Some(encoding)=encoding {
+ if block_spool {
+  block_writer::write_mdx(&mut spool,&rows,encoding.ok_or_else(||invalid("packing","MDX encoding required"))?,raw.as_file_mut(),limits,job,&mut expected)?;
+ } else if let Some(encoding)=encoding {
   let options=options.with_encoding(match encoding {studio_core::Encoding::Utf8=>WriteEncoding::Utf8,studio_core::Encoding::Utf16=>WriteEncoding::Utf16Le});let mut builder=MdxBuilder::with_options(options);for(k,v) in [("Format","Html"),("Compact","No"),("Compat","Yes"),("StyleSheet","")] {builder.header_attribute(k,v)?;}
   for (i,row) in rows.iter().enumerate() {job.tick("builder_entries",i,rows.len())?;let p=payload(&mut spool,row)?;builder.add_entry(&row.key,std::str::from_utf8(&p).map_err(|_|integrity("Spool UTF-8 changed"))?)?;expected.row(&row.key,&p);}
   job.tick("encode_dictionary",0,1)?;let mut out=Output {file:raw.as_file_mut(),bytes:0,cap:limits.max_output_bytes,exceeded:false};let result=builder.finish(&mut out);if out.exceeded {return Err(budget("Encoded dictionary exceeds output cap"));}result?;
@@ -106,7 +118,7 @@ fn pack(source:&Path,destination:&Path,root:Option<&Path>,encoding:Option<studio
  let(verified,check_header)=crate::header::snapshot(output.path(),filekind,&limits.reader,job)?;if check_header.attributes!=attrs||check_header.raw_utf16le!=xml {return Err(integrity("Packed metadata differs"));}let options=OpenOptions::new().with_checksum_policy(ChecksumPolicy::Verify).with_limits(limits.reader.engine.clone());let mut actual=Digest::default();
  if root.is_none() {let file=MdxFile::open_with_options(verified.path(),&options)?;for(i,entry) in file.entries().enumerate() {job.tick("verify_records",i,rows.len())?;let e=entry?;let row=rows.get(i).ok_or_else(||integrity("Extra packed record"))?;let p=payload(&mut spool,row)?;if e.ordinal().get()!=i as u64||e.key()!=row.key||e.text().as_bytes()!=p {return Err(integrity("Packed MDX record differs"));}actual.row(e.key(),e.text().as_bytes());}if file.memory_usage()?.locator_bytes()!=0 {return Err(integrity("Packing verifier allocated locator"));}}
  else {let file=MddFile::open_with_options(verified.path(),&options)?;for(i,entry) in file.resources().enumerate() {job.tick("verify_records",i,rows.len())?;let e=entry?;let row=rows.get(i).ok_or_else(||integrity("Extra packed resource"))?;let p=payload(&mut spool,row)?;if e.ordinal().get()!=i as u64||e.key()!=row.key||e.bytes()!=p {return Err(integrity("Packed MDD record differs"));}actual.row(e.key(),e.bytes());}if file.memory_usage()?.locator_bytes()!=0 {return Err(integrity("Packing verifier allocated locator"));}}
- let expected=expected.finish();let found=actual.finish();if expected!=found||found.0!=rows.len() {return Err(integrity("Incomplete packed record set"));}let bytes=output.as_file().metadata()?.len();let result=Summary {profile:crate::PROFILE,operation:if root.is_some(){"pack_mdd"}else{"pack_mdx"},records:found.0,key_bytes:found.1,payload_bytes:found.2,framed_records_sha256:found.3,file_bytes:bytes,source_sha256:source_sha,metadata:attrs};publish(output,destination,job)?;Ok(result)
+ let expected=expected.finish();let found=actual.finish();if expected!=found||found.0!=rows.len() {return Err(integrity("Incomplete packed record set"));}let bytes=output.as_file().metadata()?.len();let result=Summary {profile:packing_profile,operation:if root.is_some(){"pack_mdd"}else{"pack_mdx"},records:found.0,key_bytes:found.1,payload_bytes:found.2,framed_records_sha256:found.3,file_bytes:bytes,source_sha256:source_sha,metadata:attrs};publish(output,destination,job)?;Ok(result)
 }
 fn txt_row(key:&str,text:&str,first:bool)->Result<()> {
  if key.contains(['\r','\n'])||key=="</>"||first&&key.starts_with('\u{feff}')||text.contains('\r')||text.split('\n').any(|line|line=="</>") {return Err(Error::new(ErrorCode::UnrepresentableSource,"txt_grammar","Canonical TXT cannot represent this key/body without changing it"));}Ok(())

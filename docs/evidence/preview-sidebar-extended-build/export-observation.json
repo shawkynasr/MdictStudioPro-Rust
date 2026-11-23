@@ -1,0 +1,17 @@
+{
+  "schema": "studio-user-reported-export-v1",
+  "reported_platform": "macOS",
+  "application_build_identity": "not supplied",
+  "kind": "large_export",
+  "profile": "studio-m3-stream-export-256-v1",
+  "operation": "export_txt",
+  "file_bytes": 150693048,
+  "framed_records_sha256": "0ed77eb39780fb6319e0a526777c4b3a42dd14e31fe74edc57035eeb7b1123e9",
+  "key_bytes": 701816,
+  "payload_bytes": 149605048,
+  "records": 64364,
+  "source_sha256": "a95b898276c4f3f90598f38ffa2ed7eb177904700e40bd7bd16316069b37761c",
+  "matches_independent_wire_scan_counts_and_framed_digest": true,
+  "actual_TXT_file_sha256_independently_checked": false,
+  "scope": "One user-reported native Mac export; no whole-platform or rebuilt-MDX qualification claim"
+}

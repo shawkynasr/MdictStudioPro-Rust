@@ -8,6 +8,7 @@ from m3_shell import check_adapter_lock
 SUITES = {
     'export': ('m3/export-io/Cargo.toml', None),
     'runtime': ('m3/txt-runtime/Cargo.toml', 'large_export::tests'),
+    'packing': ('m3/txt-runtime/Cargo.toml', 'txt_packing::tests::extended_'),
 }
 
 

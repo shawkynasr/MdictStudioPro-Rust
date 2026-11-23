@@ -9,34 +9,39 @@ const LINE_COUNT:usize=8_000_000;
 #[derive(Clone,Copy,Debug,Deserialize,Serialize,PartialEq,Eq)]
 #[serde(rename_all="snake_case")]pub enum Profile {CanonicalV1,LegacyBodySpanV1}
 #[derive(Clone,Copy,Debug,Deserialize,Serialize)]
-#[serde(rename_all="snake_case")]pub enum Packing {Bounded,Block}
+#[serde(rename_all="snake_case")]pub enum Packing {Bounded,Block,Extended}
 #[derive(Debug,Deserialize)]#[serde(deny_unknown_fields)]pub struct Request {
  pub source:PathBuf,pub destination:PathBuf,pub encoding:studio_cc_pack_io::Encoding,
  pub metadata:studio_large_io::Metadata,pub profile:Profile,pub packing:Packing,
 }
 #[derive(Debug,Serialize)]#[serde(tag="kind",content="receipt",rename_all="snake_case")]
-pub enum Packed {Bounded(studio_large_io::Summary),Block(studio_cc_pack_io::Summary)}
+pub enum Packed {Bounded(studio_large_io::Summary),Block(studio_cc_pack_io::Summary),Extended(studio_export_io::Summary)}
 #[derive(Debug,Serialize)]pub struct Receipt {
  pub source_format:&'static str,pub source_profile:Profile,pub source_sha256:String,
  pub input_bytes:u64,pub records:usize,pub packing:Packed,
 }
 struct Prepared {file:tempfile::NamedTempFile,digest:String,bytes:u64,records:usize}
-fn fail(code:ErrorCode,line:usize,message:impl Into<String>)->Error {Error {code,detail:"txt_source",message:format!("Line {line}: {}",message.into()),limit:None}}
+fn fail(code:ErrorCode,line:usize,message:impl Into<String>)->Error {Error {code,detail:"txt_source",message:if line==0 {message.into()}else{format!("Line {line}: {}",message.into())},limit:None}}
 fn invalid(line:usize,message:&str)->Error {fail(ErrorCode::InvalidInput,line,message)}
 fn limit(line:usize,message:&str)->Error {fail(ErrorCode::LimitExceeded,line,message)}
+fn measured_limit(line:usize,name:&'static str,value:u64,max:u64)->Error {
+ let mut error=fail(ErrorCode::LimitExceeded,line,format!("{name} exceeds selected TXT packing profile ({value} > {max})"));
+ error.limit=Some(studio_large_io::LimitFailure {name,value,max});error
+}
+fn input_cap(packing:Packing)->u64 {if matches!(packing,Packing::Extended){512*1024*1024}else{INPUT_CAP}}
 fn check(job:&ImportJob<'_>)->Result<()> {if job.token.is_cancelled() {Err(fail(ErrorCode::Cancelled,0,"TXT build cancelled before commit"))}else{Ok(())}}
 fn progress(job:&mut ImportJob<'_>,phase:&str,done:usize,total:usize)->Result<()> {
  check(job)?;(job.progress)(Progress {job_id:job.id.into(),stage:studio_application::Stage::Converting,phase:phase.into(),completed:done,total});check(job)
 }
 // Bounded even when an input has no line breaks. Hash each byte exactly once,
 // including the optional UTF-8 BOM and original CRLF separators.
-fn line(reader:&mut impl BufRead,hash:&mut sha256::Sha256,bytes:&mut u64,job:&ImportJob<'_>,number:usize)->Result<Option<Vec<u8>>> {
+fn line(reader:&mut impl BufRead,hash:&mut sha256::Sha256,bytes:&mut u64,job:&ImportJob<'_>,number:usize,input_cap:u64)->Result<Option<Vec<u8>>> {
  let mut out=Vec::new();
  loop {
   check(job)?;let buf=reader.fill_buf()?;
   if buf.is_empty() {return Ok(if out.is_empty(){None}else{Some(out)});}
   let n=buf.iter().position(|b|*b==b'\n').map_or(buf.len(),|p|p+1);
-  if out.len()+n>LINE_CAP || *bytes+n as u64>INPUT_CAP {return Err(limit(number,"TXT input or line exceeds profile"));}
+  if out.len()+n>LINE_CAP || *bytes+n as u64>input_cap {return Err(limit(number,"TXT input or line exceeds profile"));}
   out.extend_from_slice(&buf[..n]);hash.update(&buf[..n]);*bytes+=n as u64;reader.consume(n);
   if out.last()==Some(&b'\n') {return Ok(Some(out));}
  }
@@ -44,13 +49,14 @@ fn line(reader:&mut impl BufRead,hash:&mut sha256::Sha256,bytes:&mut u64,job:&Im
 fn prepare(request:&Request,job:&mut ImportJob<'_>)->Result<Prepared> {
  check(job)?;let file=File::open(&request.source)?;let meta=file.metadata()?;
  if !meta.is_file() {return Err(invalid(0,"Expected a regular TXT source"));}
- if meta.len()>INPUT_CAP {return Err(limit(0,"TXT input exceeds 128 MiB"));}
- let (max_records,max_decoded)=match request.packing {Packing::Bounded=>(100000,32*1024*1024),Packing::Block=>(250000,96*1024*1024)};
+ let input_cap=input_cap(request.packing);
+ if meta.len()>input_cap {return Err(measured_limit(0,"txt_input_bytes",meta.len(),input_cap));}
+ let (max_records,max_decoded)=match request.packing {Packing::Bounded=>(100000,32*1024*1024),Packing::Block=>(250000,96*1024*1024),Packing::Extended=>(250000,256*1024*1024)};
  let mut input=BufReader::with_capacity(65536,file);let mut hash=sha256::Sha256::new();let mut bytes=0;
  let mut output=tempfile::NamedTempFile::new()?;let mut spool_bytes=0u64;
  let(mut head,mut body,mut body_lines,mut records,mut decoded,mut number)=(None::<String>,String::new(),0usize,0usize,0usize,0usize);
  progress(job,"txt_prepare",0,meta.len() as usize)?;
- while let Some(raw)=line(&mut input,&mut hash,&mut bytes,job,number+1)? {
+ while let Some(raw)=line(&mut input,&mut hash,&mut bytes,job,number+1,input_cap)? {
   number+=1;if number>LINE_COUNT {return Err(limit(number,"TXT source exceeds 8 million lines"));}
   if number%256==0 {progress(job,"txt_prepare",bytes as usize,meta.len() as usize)?;}
   let decoded_line=std::str::from_utf8(&raw).map_err(|_|fail(ErrorCode::InvalidEncoding,number,"TXT source must be UTF-8 (optional UTF-8 BOM); output encoding is a separate option"))?;
@@ -67,9 +73,9 @@ fn prepare(request:&Request,job:&mut ImportJob<'_>)->Result<Prepared> {
    if request.profile==Profile::CanonicalV1 {if !body.ends_with('\n'){return Err(invalid(number,"Missing body separator"));}body.pop();}
    if body.len()>1024*1024 {return Err(limit(number,"Definition exceeds 1 MiB"));}
    let key=head.take().unwrap();decoded+=key.len()+body.len();
-   if decoded>max_decoded {return Err(limit(number,"Decoded entries exceed selected packing profile"));}
+   if decoded>max_decoded {return Err(measured_limit(number,"decoded_text_bytes",decoded as u64,max_decoded as u64));}
    let json=serde_json::to_vec(&serde_json::json!({"key":key,"text":body})).map_err(|e|invalid(number,&e.to_string()))?;
-   if spool_bytes+json.len() as u64+1>INPUT_CAP {return Err(limit(number,"Prepared JSONL exceeds 128 MiB"));}
+   if spool_bytes+json.len() as u64+1>input_cap {return Err(measured_limit(number,"prepared_jsonl_bytes",spool_bytes+json.len() as u64+1,input_cap));}
    for chunk in json.chunks(65536) {check(job)?;output.write_all(chunk)?;}output.write_all(b"\n")?;
    spool_bytes+=json.len() as u64+1;body.clear();body_lines=0;records+=1;
   } else {
@@ -95,6 +101,11 @@ pub(crate) fn execute(r:&Request,job:&mut ImportJob<'_>)->Result<Receipt> {
   Packing::Bounded=>{
    let request=studio_large_io::Request::PackMdx {source,destination:r.destination.clone(),encoding:r.encoding,metadata:r.metadata.clone()};
    Packed::Bounded(studio_large_io::execute(&request,&studio_large_io::IoLimits::default(),&mut studio_large_io::ImportJob::new(job.id,job.token,&mut *job.progress))?)
+  },
+  Packing::Extended=>{
+   let m=&r.metadata;
+   let request=studio_export_io::Request::PackMdx {source,destination:r.destination.clone(),encoding:r.encoding,metadata:studio_export_io::Metadata {title:m.title.clone(),description:m.description.clone(),stylesheet:m.stylesheet.clone(),extra:m.extra.clone()}};
+   Packed::Extended(studio_export_io::execute_extended_packing(&request,&mut studio_export_io::ImportJob::new(job.id,job.token,&mut *job.progress)).map_err(|e|Error {code:e.code,detail:e.detail,message:e.message,limit:e.limit.map(|l|studio_large_io::LimitFailure {name:l.name,value:l.value,max:l.max})})?)
   },
   Packing::Block=>{
    let m=&r.metadata;let request=studio_cc_pack_io::Request::PackMdx {source,destination:r.destination.clone(),encoding:r.encoding,metadata:studio_cc_pack_io::Metadata {title:m.title.clone(),description:m.description.clone(),stylesheet:m.stylesheet.clone(),extra:m.extra.clone()}};
@@ -164,4 +175,59 @@ pub(crate) fn validate_plugin_output(source:PathBuf,job:&mut ImportJob<'_>)->Res
   let id=r.submit(Work::TxtPacking(request(d.path(),Packing::Bounded,Profile::CanonicalV1))).unwrap();assert_eq!(wait(&r,&id).error.unwrap().detail,"resource_admission");assert!(!d.path().join("result.mdx").exists());drop(reader);
   let id=r.submit(Work::TxtPacking(request(d.path(),Packing::Bounded,Profile::CanonicalV1))).unwrap();assert_eq!(wait(&r,&id).state,runner::State::Succeeded);assert_eq!(budget.snapshot().active_operations,0);r.join().unwrap();
  }
+ #[test]fn extended_roundtrip_rebuilds_txt_beyond_128_mib_for_both_encodings() {
+  use mdictlib::{MdxFile,OpenOptions,ChecksumPolicy};
+  let d=tempfile::tempdir().unwrap();let source=d.path().join("source.txt");
+  let mut out=File::create(&source).unwrap();let body="x".repeat(1024*1024);
+  for i in 0..145 {writeln!(out,"entry-{i:03}\n{body}\n</>").unwrap();}out.flush().unwrap();drop(out);
+  let original_bytes=std::fs::metadata(&source).unwrap().len();assert!(original_bytes>128*1024*1024);
+  let token=CancellationToken::default();
+  let old=request(d.path(),Packing::Block,Profile::CanonicalV1);
+  let error=execute(&old,&mut ImportJob::new("old-cap",&token,&mut |_|{})).unwrap_err();
+  assert_eq!(error.code,ErrorCode::LimitExceeded);assert_eq!(error.limit.unwrap().max,128*1024*1024);assert!(!old.destination.exists());
+  for encoding in [studio_cc_pack_io::Encoding::Utf8,studio_cc_pack_io::Encoding::Utf16] {
+   let mut r=request(d.path(),Packing::Extended,Profile::CanonicalV1);r.encoding=encoding;
+   r.destination=d.path().join(match encoding {studio_cc_pack_io::Encoding::Utf8=>"extended-utf8.mdx",_=>"extended-utf16.mdx"});
+   let receipt=execute(&r,&mut ImportJob::new("extended-roundtrip",&token,&mut |_|{})).unwrap();
+   assert_eq!(receipt.records,145);assert_eq!(receipt.input_bytes,original_bytes);
+   let summary=match receipt.packing {Packed::Extended(v)=>v,_=>panic!("Expected extended receipt")};
+   assert_eq!(summary.profile,"studio-m3-mdx-block-spool-256-v1");assert_eq!(summary.payload_bytes,145*1024*1024);
+   let options=OpenOptions::new().with_checksum_policy(ChecksumPolicy::Verify).with_limits(studio_export_io::Limits::default().engine);
+   let mdx=MdxFile::open_with_options(&r.destination,&options).unwrap();let mut count=0;
+   for entry in mdx.entries() {let entry=entry.unwrap();assert_eq!(entry.key(),format!("entry-{count:03}"));assert_eq!(entry.text(),body);count+=1;}
+   assert_eq!(count,145);assert_eq!(mdx.memory_usage().unwrap().locator_bytes(),0);
+  }
+  assert_eq!(std::fs::metadata(source).unwrap().len(),original_bytes);
+ }
+ #[test]fn extended_small_rebuild_matches_existing_block_writer_exactly() {
+  let d=tempfile::tempdir().unwrap();
+  std::fs::write(d.path().join("source.txt"),"字\n<b>first</b>\n</>\n字\n\n</>\nمرحبا\n<div>hello</div>\n</>\n").unwrap();
+  let token=CancellationToken::default();
+  for encoding in [studio_cc_pack_io::Encoding::Utf8,studio_cc_pack_io::Encoding::Utf16] {
+   let mut a=request(d.path(),Packing::Block,Profile::CanonicalV1);a.encoding=encoding;a.destination=d.path().join("block.mdx");
+   execute(&a,&mut ImportJob::new("block",&token,&mut |_|{})).unwrap();let expected=std::fs::read(&a.destination).unwrap();std::fs::remove_file(&a.destination).unwrap();
+   a.packing=Packing::Extended;
+   execute(&a,&mut ImportJob::new("extended",&token,&mut |_|{})).unwrap();assert_eq!(std::fs::read(&a.destination).unwrap(),expected);std::fs::remove_file(&a.destination).unwrap();
+  }
+ }
+ #[test]fn extended_cancellation_and_destination_races_do_not_replace_outputs() {
+  for phase in ["txt_prepare","txt_prepared","input_snapshot","load_records","block_entries","block_compress","assemble_dictionary","verify_records","publish_file"] {
+   let d=tempfile::tempdir().unwrap();std::fs::write(d.path().join("source.txt"),"word\nbody\n</>\n").unwrap();
+   let r=request(d.path(),Packing::Extended,Profile::CanonicalV1);let token=CancellationToken::default();let cancel=token.clone();
+   let mut callback=|p:Progress|if p.phase==phase {cancel.cancel();};
+   assert_eq!(execute(&r,&mut ImportJob::new("cancel",&token,&mut callback)).unwrap_err().code,ErrorCode::Cancelled, "{phase}");assert!(!r.destination.exists());
+  }
+  let d=tempfile::tempdir().unwrap();std::fs::write(d.path().join("source.txt"),"word\nbody\n</>\n").unwrap();let r=request(d.path(),Packing::Extended,Profile::CanonicalV1);let token=CancellationToken::default();
+  let mut callback=|p:Progress|if p.phase=="publish_file" {std::fs::write(&r.destination,b"keep existing").unwrap();};
+  assert_eq!(execute(&r,&mut ImportJob::new("race",&token,&mut callback)).unwrap_err().code,ErrorCode::DestinationExists);assert_eq!(std::fs::read(&r.destination).unwrap(),b"keep existing");
+ }
+ #[test]fn extended_input_ceiling_and_invalid_txt_remain_bounded() {
+  let d=tempfile::tempdir().unwrap();let source=d.path().join("source.txt");let token=CancellationToken::default();
+  let file=File::create(&source).unwrap();file.set_len(512*1024*1024+1).unwrap();drop(file);
+  let r=request(d.path(),Packing::Extended,Profile::CanonicalV1);let error=execute(&r,&mut ImportJob::new("cap",&token,&mut |_|{})).unwrap_err();assert_eq!(error.limit.unwrap().max,512*1024*1024);assert!(!r.destination.exists());
+  for bytes in [b"word\nunterminated".as_slice(),b"word\n</>\n",b"word\n\xff\n</>\n"] {
+   std::fs::write(&source,bytes).unwrap();assert!(execute(&r,&mut ImportJob::new("invalid",&token,&mut |_|{})).is_err());assert!(!r.destination.exists());
+  }
+ }
+
 }

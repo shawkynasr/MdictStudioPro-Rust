@@ -676,6 +676,7 @@ dependencies = [
 name = "studio-export-io"
 version = "0.1.0"
 dependencies = [
+ "miniz_oxide",
  "studio-cc-pack-io",
  "libc",
  "mdictlib",

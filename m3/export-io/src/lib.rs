@@ -76,5 +76,5 @@ fn core_error(e:studio_core::Error)->Error {let e:studio_application::Error=e.in
 #[path="../../../m2/studio-core/src/casing.rs"]mod casing;
 #[path="../../../m2/indexed-engine/src/sha256.rs"]mod sha256;
 mod io;
-pub use io::{Request,Metadata,IoLimits,Summary,execute,execute_profile};
+pub use io::{Request,Metadata,IoLimits,Summary,execute,execute_profile,execute_extended_packing};
 #[cfg(test)]mod tests;

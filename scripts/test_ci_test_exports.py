@@ -6,12 +6,12 @@ import tempfile
 import unittest
 from unittest.mock import patch
 from ci_collect_preview import ROOT, TARGETS
-from ci_test_exports import run_tests
+from ci_test_exports import run_tests, SUITES
 
 
 class ExportTestPreparation(unittest.TestCase):
     def fixture(self, root, suite):
-        relative = 'm3/txt-runtime' if suite == 'runtime' else 'm3/export-io'
+        relative = 'm3/txt-runtime' if suite in ['runtime','packing'] else 'm3/export-io'
         for name in ['m2/cc-pack-runtime/Cargo.lock', 'm4/sqlite-registry.json',
                      relative + '/Cargo.lock']:
             dest = root / name
@@ -21,7 +21,7 @@ class ExportTestPreparation(unittest.TestCase):
 
     def test_all_targets_normalize_each_seed_before_locked_offline_tests(self):
         for target in TARGETS:
-            for suite in ['export', 'runtime']:
+            for suite in SUITES:
                 with self.subTest(target=target, suite=suite), tempfile.TemporaryDirectory() as tmp:
                     root = Path(tmp)
                     lock = self.fixture(root, suite)
@@ -51,7 +51,7 @@ class ExportTestPreparation(unittest.TestCase):
                     with patch('ci_test_exports.subprocess.run', side_effect=execute):
                         self.assertEqual(run_tests(root, target, suite), 0)
                     self.assertEqual([c[1] for c in calls], ['fetch', 'metadata', 'test'])
-                    self.assertEqual('large_export::tests' in calls[-1], suite == 'runtime')
+                    self.assertEqual(calls[-1][-1],SUITES[suite][1] or target)
 
     def test_registry_drift_after_metadata_stops_before_compilation(self):
         with tempfile.TemporaryDirectory() as tmp:

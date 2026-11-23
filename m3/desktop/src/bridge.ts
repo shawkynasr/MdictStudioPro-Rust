@@ -23,7 +23,7 @@ export type NativeRequest =
   | { kind: 'metadata'; request: { source: string; destination: string; kind: 'mdx'|'mdd'; edits: {title?:string; description?:string; stylesheet?:string} } }
   | { kind: 'large_export'; request: { source: string; destination: string; format: 'txt'|'jsonl'; profile?:'large'|'extended' } }
   | { kind: 'folder_packing'; request: { resource_root: string; destination: string; metadata: Metadata } }
-  | { kind: 'txt_packing'; request: { source: string; destination: string; encoding: Encoding; metadata: Metadata; profile: TxtProfile; packing: 'bounded' | 'block' } }
+  | { kind: 'txt_packing'; request: { source: string; destination: string; encoding: Encoding; metadata: Metadata; profile: TxtProfile; packing: 'bounded' | 'block' | 'extended' } }
   | { kind: 'dictionary'; request: DictionaryRequest }
   | { kind: 'cc_packing'; request: { source: string; destination: string; encoding: Encoding; metadata: Metadata } }
   | { kind: 'extraction'; request: { source: string; destination: string } }

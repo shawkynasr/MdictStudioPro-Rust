@@ -479,7 +479,7 @@
   const b = (key: Parameters<typeof buildLabel>[1]) => buildLabel(locale,key);
   const u = (key: StudioLabel) => studioLabel(locale,key);
   const workspaceNav: [View,string][] = [['build','box'],['extract','extract'],['converters','convert']];
-  const dataNav: [View,string][] = [['database','database'],['morphology','leaf']];
+  const dataNav: [View,string][] = [['database','database']];
   const activeJob = $derived(poll?.jobs.find(job => !terminal(job.state)));
   const fileName = (path:string) => path.split(/[\\/]/).pop() || '';
   const viewLabel = (key:View) => key === 'plugins' ? y('heading') : key === 'database' || key === 'morphology' ? u(key) : t(key);
@@ -557,6 +557,7 @@
     let request: NativeRequest;
     const metadata = { title, description, stylesheet: view === 'build' && pack === 'mdd' ? '' : stylesheet, extra: {} };
     if (view === 'build') {
+      if(pack==='extended' && sourceFormat!=='txt')throw {code:'invalid_input',message:b('extendedTxtOnly')};
       if (pack === 'mdd') {
         if (!resourceRoot) throw { code: 'invalid_input', message: t('resourceRoot') };
         if(mddInput==='folder') {
@@ -565,7 +566,7 @@
         } else request = { kind:'dictionary', request:{ operation:'pack_mdd', source, destination, resource_root:resourceRoot, metadata } };
       } else if (sourceFormat === 'txt') {
         if(sessionId || mddId)throw {code:'not_ready',message:b('closeHint')};
-        request={kind:'txt_packing',request:{source,destination,encoding,metadata,profile:txtProfile,packing:pack==='block'?'block':'bounded'}};
+        request={kind:'txt_packing',request:{source,destination,encoding,metadata,profile:txtProfile,packing:pack==='extended'?'extended':pack==='block'?'block':'bounded'}};
       } else if (pack === 'block') request = { kind:'cc_packing', request:{ source, destination, encoding, metadata } };
       else request = { kind:'dictionary', request:{ operation:'pack_mdx', source, destination, encoding, metadata } };
     } else if (view === 'extract') {
@@ -818,7 +819,7 @@
       {/each}
       <div class="section">{u('data')}</div>
       {#each dataNav as [key,icon]}
-        <button class="nav" class:active={view === key} aria-current={view === key ? 'page' : undefined} onclick={() => selectView(key)} title={viewLabel(key)}><Icon name={icon}/><span class="navtext">{viewLabel(key)}</span>{#if key === 'morphology'}<span class="soon">{u('later')}</span>{/if}</button>
+        <button class="nav" class:active={view === key} aria-current={view === key ? 'page' : undefined} onclick={() => selectView(key)} title={viewLabel(key)}><Icon name={icon}/><span class="navtext">{viewLabel(key)}</span></button>
       {/each}
       <div class="section">{u('inspect')}</div>
       <button class="nav" class:active={view === 'tools'} aria-current={view === 'tools' ? 'page' : undefined} onclick={() => selectView('tools')} title={t('tools')}><Icon name="book"/><span class="navtext">{t('tools')}</span></button>
@@ -849,6 +850,7 @@
                     <div class="field"><label for="dictionary-name">{u('name')}</label><input id="dictionary-name" bind:value={title} autocomplete="off" /></div>
                     <div class="field"><label for="dictionary-format">{u('format')}</label><select id="dictionary-format" value={pack === 'mdd' ? 'mdd' : 'mdx'} onchange={e => pack=e.currentTarget.value === 'mdd' ? 'mdd' : 'generic'}><option value="mdx">MDX</option><option value="mdd">MDD</option></select></div>
                     {#if pack !== 'mdd'}<div class="field"><label for="dictionary-encoding">{b('outputEncoding')}</label><select id="dictionary-encoding" bind:value={encoding}><option value="utf8">UTF-8</option><option value="utf16">UTF-16</option></select></div>{/if}
+                    {#if view==='build' && pack!=='mdd'}<div class="field packing-profile-field"><label for="pack-profile">{u('profile')}</label><select id="pack-profile" bind:value={pack}><option value="generic">{b('boundedPacking')}</option><option value="block">{b('blockPacking')}</option><option value="extended" disabled={sourceFormat!=='txt'}>{b('extended')}</option></select></div>{/if}
                   {:else if view === 'extract'}
                     <div class="field"><label for="extract-operation">{t('operation')}</label><select id="extract-operation" value={extraction} onchange={e=>changeExtraction(e.currentTarget.value as ExtractOperation)}><option value="txt">{t('exportTxt')}</option><option value="jsonl">{t('exportJsonl')}</option><option value="mdd">{t('extractMdd')}</option></select></div>
                   {:else}
@@ -863,13 +865,14 @@
                   {/if}
                   <div class="field path-field"><label for="output-path">{u('saveTo')}</label><input id="output-path" bind:value={destination} readonly={view==='extract' && extraction==='mdd'} required dir="auto" placeholder={u('chooseDestination')}/><button type="button" class="smallbutton iconbutton" aria-label={t('destination')} onclick={() => action(() => pickOutput())}>…</button></div>
                 </div>
+                {#if view==='build' && pack!=='mdd'}<p class="note">{b('packingHint')}</p>{/if}
                 {#if view==='extract' && extraction!=='mdd'}
                   <div class="field"><label for="export-profile">{x('profile')}</label><select id="export-profile" bind:value={exportProfile}><option value="large">{x('large')}</option><option value="extended">{x('extended')}</option><option value="bounded">{x('bounded')}</option></select></div>
                   <p class="note">{x('sizeHint')}</p>
                 {/if}
                 {#if view==='extract'}<p class="note">{x(extraction==='mdd'?'folderHint':extraction==='txt'?'txtHint':'jsonlHint')}</p>{#if extraction!=='mdd'}<p class="note">{x('metadata')}</p>{/if}{/if}
                 <details class="advanced">
-                  <summary>{u('more')}{#if view === 'build' && pack !== 'mdd'}<span class="profile-caption"> · {u(pack === 'block' ? 'block' : 'bounded')}</span>{/if}</summary>
+                  <summary>{u('more')}{#if view === 'build' && pack !== 'mdd'}<span class="profile-caption"> · {pack==='extended'?b('extended'):u(pack === 'block' ? 'block' : 'bounded')}</span>{/if}</summary>
                   <div class="advanced-content">
                     <label for="source-path">{folderBuild()?m('folder'):u('inputDetails')}</label>{#if folderBuild()}<input id="source-path" bind:value={resourceRoot} dir="auto" />{:else}<input id="source-path" bind:value={source} dir="auto" />{/if}
                     {#if view === 'build'}
@@ -878,7 +881,7 @@
                         <label for="source-format">{b('format')}</label><select id="source-format" bind:value={sourceFormat}><option value="txt">{b('txtOption')}</option><option value="jsonl">{b('jsonlOption')}</option></select>
                         {#if sourceFormat==='txt'}<label for="txt-profile">{b('profile')}</label><select id="txt-profile" bind:value={txtProfile}><option value="canonical_v1">{b('canonical')}</option><option value="legacy_body_span_v1">{b('legacy')}</option></select><p class="note">{b('profileHint')}</p>{/if}
                       {/if}
-                      {#if pack !== 'mdd'}<label for="pack-profile">{u('profile')}</label><select id="pack-profile" bind:value={pack}><option value="generic">{t('buildGeneric')}</option><option value="block">{t('buildBlock')}</option></select>{/if}
+                      
                       <label for="dictionary-description">{t('description')}</label><textarea id="dictionary-description" bind:value={description} rows="3"></textarea>
                       {#if pack !== 'mdd'}<label for="dictionary-stylesheet">{t('stylesheet')}</label><textarea id="dictionary-stylesheet" bind:value={stylesheet} rows="4" dir="ltr"></textarea>{/if}
                       {#if folderBuild()}<p class="note">{m('close')}</p>{:else if pack!=='mdd' && sourceFormat==='txt'}<p class="note">{b('hint')}</p><pre class="manifest-help">{b('sample')}</pre><p class="note">{b('closeHint')}</p>{:else}<p class="note">{b('jsonlHint')}</p><pre class="manifest-help">{t('manifestHint')}</pre>{/if}
@@ -896,7 +899,7 @@
               <h2>{u('output')}</h2><div class="outputtile"><Icon name={view === 'extract' ? 'extract' : 'book'}/><b><bdi>{fileName(destination) || u('noOutput')}</bdi></b><small>{outputKind()}</small></div>
               <div class="stat"><span>{u('format')}</span><bdi>{outputFormat()}</bdi></div><div class="stat"><span>{t('encoding')}</span><bdi>{outputEncoding()}</bdi></div><div class="stat"><span>{u('location')}</span><span>{u('localFolder')}</span></div>
               {#if view==='extract' && extraction!=='mdd'}<div class="stat"><span>{x('profile')}</span><span>{x(exportProfile)}</span></div>{/if}
-              {#if view === 'build' && pack !== 'mdd'}<div class="stat"><span>{u('profile')}</span><span>{u(pack === 'block' ? 'block' : 'bounded')}</span></div>{/if}
+              {#if view === 'build' && pack !== 'mdd'}<div class="stat"><span>{u('profile')}</span><span>{pack==='extended'?b('extended'):u(pack === 'block' ? 'block' : 'bounded')}</span></div>{/if}
               <div class="checklist">{#if view === 'build'}<p><Icon name="check"/><span>{u('duplicate')}</span></p>{/if}<p><Icon name="check"/><span>{u('noClobber')}</span></p><p><Icon name="check"/><span>{u('background')}</span></p></div><p class="note" style="margin-top:25px">{u('outputHint')}</p>
             </aside>
           </div>

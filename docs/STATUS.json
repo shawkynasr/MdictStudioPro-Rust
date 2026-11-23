@@ -1841,6 +1841,13 @@
       "dependency_versions_changed": false,
       "committed_lockfiles_changed": false,
       "fresh_runner_dependency_fetch_added": true
+    },
+    "sidebar_and_extended_TXT_build": {
+      "status": "source_prepared_native_CI_pending",
+      "evidence": "docs/evidence/preview-sidebar-extended-build/review.json",
+      "morphology_hidden": true,
+      "explicit_extended_TXT_build_added": true,
+      "one_user_Mac_export_receipt_matches_independent_oracle": true
     }
   }
 }

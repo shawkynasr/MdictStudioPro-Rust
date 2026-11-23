@@ -36,7 +36,7 @@ Both routes use the existing snapshot, sequential reader, disk staging, strict r
 
 Structured limit failures now carry the observed value and selected ceiling. The UI recommends Extended only for decoded-text limits at or below 96 MiB on export operations, not for SQLite, build, or already-extended operations.
 
-**Extended is export-only.** It does not expand SQLite or MDX build caps and does not promise that this 143.3 MiB dictionary can be rebuilt in the current packing profiles. MDX v3 and password-protected dictionaries remain outside this change.
+The original Extended option was export-only. A separate Extended TXT build route is now prepared below; the two choices are independent. Existing Standard/Block build and SQLite caps stay fixed. MDX v3 and password-protected dictionaries remain outside this change.
 
 ## Validation and next native check
 
@@ -59,3 +59,15 @@ The first CI attempt stopped before `large_export::tests` because `--locked` rej
 ### Fresh-runner cache follow-up
 
 The next CI attempt found `crc32fast v1.5.3` missing from the standalone export test cache. Building the desktop graph does not guarantee all standalone test/development archives are cached. The wrapper now checks the seed pins, runs `cargo fetch` for the selected standalone manifest and target, checks pins again, performs offline metadata normalization, checks pins again, and only then runs offline locked tests. Fetch may normalize local seed edges but does not compile code; unapproved registry versions/checksums stop the run before compilation. Both export and runtime suites use this sequence. Six wrapper regression checks pass locally; native CI success remains pending.
+
+## Sidebar and extended TXT build follow-up
+
+The user reported a successful Mac export whose 64,364 records, decoded byte counts, 150,693,048 output bytes and framed digest match the independent wire scan exactly. The reported receipt is retained without dictionary contents in [the scoped observation](evidence/preview-sidebar-extended-build/export-observation.json). The built application identity was not supplied, and the TXT file itself was not rehashed here.
+
+Morphology is hidden from navigation while deferred. Desktop sidebar width now scales with UI text size (16 rem, bounded between 210 and 340 CSS px), and labels use normal word wrapping in both directions. Existing navigation and narrow-window icon behavior are retained. Native appearance at all sizes still needs confirmation.
+
+A separate explicit **Extended TXT** build option is visible in the main Build form. It accepts up to 250,000 entries, 256 MiB decoded key/text, 512 MiB source TXT, 512 MiB prepared JSONL and 512 MiB output MDX. Per-entry, headword and engine block ceilings stay fixed. It reuses the accepted disk-spooled block writer by path, keeps the existing exclusive memory/temporary reservation, performs readback/digest verification, and commits without replacing outputs. No new whole-dictionary builder or buffer is added. TXT exports do not include original metadata or MDD resources; rebuilding still requires configuring those separately, and packing applies its documented literal-key sorting/policy rather than reproducing the source MDX bytes/header.
+
+The direct `miniz_oxide =0.9.1` dependency was already present through the existing block packer. Five M3 lockfiles add only that direct edge for `studio-export-io`; all registry packages, versions and checksums remain identical. Historical lock checks recognize this exact edge only when removing its single line restores an already bound hash. Other changes remain rejected; old native reports are not relabelled as new-profile qualification.
+
+CI now separately runs the new TXT build tests for both encodings, including a 145 MiB round trip, small-file byte equivalence to the existing block writer, cancellation, malformed input, the explicit input ceiling and destination races. These native tests and updated sidebar appearance remain pending.
