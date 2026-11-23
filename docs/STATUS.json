@@ -1839,7 +1839,8 @@
       "status": "wrapper_regression_passed_native_CI_retry_pending",
       "evidence": "docs/evidence/preview-feedback-ci-lock-fix/review.json",
       "dependency_versions_changed": false,
-      "committed_lockfiles_changed": false
+      "committed_lockfiles_changed": false,
+      "fresh_runner_dependency_fetch_added": true
     }
   }
 }

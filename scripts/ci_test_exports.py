@@ -22,6 +22,13 @@ def run_tests(root, target, suite):
     # Check their registry pins before resolution and reject new versions or
     # checksum changes after resolution, before compiling or executing tests.
     check_adapter_lock(lock, root)
+    # A fresh runner may have the desktop graph cached but not this standalone
+    # test graph (including its dev dependencies). Fetch before going offline.
+    # Cargo may normalize seed edges here; no compilation occurs, and the same
+    # accepted version/checksum check must pass before any subsequent step.
+    subprocess.run(['cargo', 'fetch', '--manifest-path', str(manifest), '--target', target],
+                   cwd=root, check=True)
+    check_adapter_lock(lock, root)
     subprocess.run(['cargo', 'metadata', '--offline', '--format-version', '1',
                     '--manifest-path', str(manifest), '--filter-platform', target],
                    cwd=root, stdout=subprocess.DEVNULL, check=True)

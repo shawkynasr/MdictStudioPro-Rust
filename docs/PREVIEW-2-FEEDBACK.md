@@ -55,3 +55,7 @@ The supplied dictionary and its extracted contents are not included in the sourc
 ## CI seed-lock correction (2026-11-23)
 
 The first CI attempt stopped before `large_export::tests` because `--locked` rejected the standalone runtime seed lock. The direct test commands had omitted the existing local shell workflow’s seed-normalization step. Both new standalone CI test steps now use `scripts/ci_test_exports.py`: verify accepted registry versions/checksums, resolve the isolated M3 lock’s local edges offline, verify pins again, then execute `cargo test --offline --locked`. Metadata failure or registry drift stops the run before testing. No committed lockfile or dependency version was changed by this correction. Native success remains pending a new CI run.
+
+### Fresh-runner cache follow-up
+
+The next CI attempt found `crc32fast v1.5.3` missing from the standalone export test cache. Building the desktop graph does not guarantee all standalone test/development archives are cached. The wrapper now checks the seed pins, runs `cargo fetch` for the selected standalone manifest and target, checks pins again, performs offline metadata normalization, checks pins again, and only then runs offline locked tests. Fetch may normalize local seed edges but does not compile code; unapproved registry versions/checksums stop the run before compilation. Both export and runtime suites use this sequence. Six wrapper regression checks pass locally; native CI success remains pending.
