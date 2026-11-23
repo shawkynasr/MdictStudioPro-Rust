@@ -1,5 +1,46 @@
 use super::*;
 use std::{fs,io::{Write,BufRead,BufReader},path::Path};
+
+#[test]fn extended_export_streams_beyond_96_mib_and_keeps_default_failure_atomic() {
+ let d=tempfile::tempdir().unwrap();let source=d.path().join("extended.mdx");
+ fs::write(&source,include_bytes!("../../fixtures/extended-export/synthetic-145.mdx")).unwrap();
+ let body="x".repeat(1024*1024);
+ let token=CancellationToken::default();
+ let blocked=d.path().join("blocked.jsonl");
+ let error=execute(&Request::ExportJsonl {source:source.clone(),destination:blocked.clone()},&IoLimits::default(),&mut ImportJob::new("default",&token,&mut |_|{})).unwrap_err();
+ assert_eq!(error.code,ErrorCode::LimitExceeded);let limit=error.limit.unwrap();assert_eq!(limit.name,"decoded_text_bytes");assert_eq!(limit.max,96*1024*1024);assert!(limit.value>limit.max);assert!(!blocked.exists());
+ for txt in [false,true] {
+  let destination=d.path().join(if txt {"extended.txt"}else{"extended.jsonl"});
+  let request=if txt {Request::ExportTxt {source:source.clone(),destination:destination.clone()}}else{Request::ExportJsonl {source:source.clone(),destination:destination.clone()}};
+  let receipt=execute_profile(&request,&IoLimits::for_profile(ExportProfile::Extended),ExportProfile::Extended,&mut ImportJob::new("extended",&token,&mut |_|{})).unwrap();
+  assert_eq!(receipt.profile,"studio-m3-stream-export-256-v1");assert_eq!(receipt.records,145);assert_eq!(receipt.payload_bytes,145*1024*1024);
+  if !txt {
+   let mut rows=0;
+   for line in BufReader::new(fs::File::open(&destination).unwrap()).lines() {let row:serde_json::Value=serde_json::from_str(&line.unwrap()).unwrap();assert_eq!(row["text"].as_str().unwrap(),body);rows+=1;}
+   assert_eq!(rows,145);
+  }
+ }
+ assert_eq!(fs::read_dir(d.path()).unwrap().count(),3); // source + two complete exports, no failed stages
+}
+
+#[test]fn extended_export_lowered_cap_cancellation_and_no_clobber_stay_atomic() {
+ let d=tempfile::tempdir().unwrap();let source=fixture(d.path());let token=CancellationToken::default();
+ let destination=d.path().join("existing.jsonl");fs::write(&destination,b"keep").unwrap();
+ let request=Request::ExportJsonl {source:source.clone(),destination:destination.clone()};
+ assert_eq!(execute_profile(&request,&IoLimits::for_profile(ExportProfile::Extended),ExportProfile::Extended,&mut ImportJob::new("existing",&token,&mut |_|{})).unwrap_err().code,ErrorCode::DestinationExists);
+ assert_eq!(fs::read(&destination).unwrap(),b"keep");
+ let mut limits=IoLimits::for_profile(ExportProfile::Extended);limits.max_decoded_bytes=1;
+ let cap=d.path().join("cap.jsonl");
+ let error=execute_profile(&Request::ExportJsonl {source:source.clone(),destination:cap.clone()},&limits,ExportProfile::Extended,&mut ImportJob::new("cap",&token,&mut |_|{})).unwrap_err();
+ assert_eq!(error.limit.unwrap().max,1);assert!(!cap.exists());
+ let mut raised=IoLimits::for_profile(ExportProfile::Extended);raised.max_decoded_bytes+=1;
+ assert!(execute_profile(&request,&raised,ExportProfile::Extended,&mut ImportJob::new("raised",&token,&mut |_|{})).is_err());
+ for phase in ["export_records","publish_file"] {
+  let token=CancellationToken::default();let cancel=token.clone();let mut cb=|p:Progress|if p.phase==phase {cancel.cancel();};
+  let destination=d.path().join("cancel.txt");
+  assert_eq!(execute_profile(&Request::ExportTxt {source:source.clone(),destination:destination.clone()},&IoLimits::for_profile(ExportProfile::Extended),ExportProfile::Extended,&mut ImportJob::new("cancel",&token,&mut cb)).unwrap_err().code,ErrorCode::Cancelled);assert!(!destination.exists());
+ }
+}
 fn fixture(dir:&Path)->std::path::PathBuf {
  let source=dir.join("source.jsonl");fs::write(&source,"{\"key\":\"字\",\"text\":\"first\\n\"}\n{\"key\":\"字\",\"text\":\"\"}\n").unwrap();
  let mdx=dir.join("source.mdx");let token=CancellationToken::default();

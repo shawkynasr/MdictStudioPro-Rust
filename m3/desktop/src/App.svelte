@@ -28,7 +28,9 @@
   import { exportFilePath, sourceParent, resourceFolderName, resourceDestination } from './extract-path';
   import type { ExtractOperation } from './extract-path';
   import { mddLabel } from './mdd-labels';
-  import { dictionaryOutputPath } from './output-path';
+  import { dictionaryOutputPath, suggestedDictionaryPath } from './output-path';
+  import {textSizePreference,readabilityLabel} from './readability';
+  import type {TextSize} from './readability';
   import { buildLabel } from './build-labels';
   import { onMount } from 'svelte';
   import { renderPreview, resourceCandidates } from './preview';
@@ -47,6 +49,8 @@
   type View = 'build' | 'extract' | 'converters' | 'tools' | 'jobs' | 'database' | 'morphology' | 'plugins';
   let locale = $state<Locale>('en');
   let theme = $state('system');
+  let textSize = $state<TextSize>('standard');
+  const r = (key:Parameters<typeof readabilityLabel>[1])=>readabilityLabel(locale,key);
   let view = $state<View>('build');
   let platform = $state('');
   let connected = $state(false);
@@ -313,6 +317,7 @@
 
   let source = $state('');
   let destination = $state('');
+  let destinationContext:View = 'build';
   let resourceRoot = $state('');
   let mddInput = $state<'folder'|'manifest'>('folder');
   let title = $state('');
@@ -323,7 +328,7 @@
   let sourceFormat = $state<'txt'|'jsonl'>('txt');
   let txtProfile = $state<TxtProfile>('canonical_v1');
   let extraction = $state<ExtractOperation>('txt');
-  let exportProfile = $state<'large'|'bounded'>('large');
+  let exportProfile = $state<'large'|'bounded'|'extended'>('large');
   let extractParent = $state('');
   let extractFolder = $state('resources');
   $effect(()=>{if(view==='extract' && extraction==='mdd')destination=resourceDestination(extractParent,extractFolder) || '';});
@@ -478,7 +483,7 @@
   const activeJob = $derived(poll?.jobs.find(job => !terminal(job.state)));
   const fileName = (path:string) => path.split(/[\\/]/).pop() || '';
   const viewLabel = (key:View) => key === 'plugins' ? y('heading') : key === 'database' || key === 'morphology' ? u(key) : t(key);
-  function selectView(key:View) { view=key; alert=null; if(key === 'converters')converterSetup=false; }
+  function selectView(key:View) { if(['build','extract','converters'].includes(key) && key!==destinationContext){destination='';destinationContext=key;} view=key; alert=null; if(key === 'converters')converterSetup=false; }
   const a = (key: Parameters<typeof aboutLabel>[1]) => aboutLabel(locale,key);
   async function openAbout() {
     if(!aboutDialog || aboutDialog.open)return;
@@ -512,9 +517,10 @@
     document.documentElement.lang = locale === 'zh' ? 'zh-Hans' : locale;
     document.documentElement.dir = locale === 'ar' ? 'rtl' : 'ltr';
     document.documentElement.dataset.os=platform;
+    document.documentElement.dataset.textSize=textSize;
     applyAppearance();
     if (!preferencesReady) return;
-    try { localStorage.setItem('studio-ui', JSON.stringify({ locale, theme })); } catch { /* optional preference persistence */ }
+    try { localStorage.setItem('studio-ui', JSON.stringify({ locale, theme, textSize })); } catch { /* optional preference persistence */ }
   });
   async function action(work: () => Promise<void>) {
     if (shuttingDown) return;
@@ -525,7 +531,7 @@
   async function pickInput(target: 'source' | 'dictionary' | 'artifact' | 'root' | 'mddSource' | 'mddIndex') {
     const result = await open({ directory: target === 'root', multiple: false, ...(target==='source' && view==='extract'?{filters:[{name:'MDX / MDD',extensions:['mdx','mdd']}]}:{}) });
     if (typeof result !== 'string') return;
-    if (target === 'source') {source = result;if(view==='extract'){destination='';if(/\.mdd$/i.test(result)){extraction='mdd';extractParent=sourceParent(result);extractFolder=resourceFolderName(result);}else if(/\.mdx$/i.test(result) && extraction==='mdd'){extraction='txt';}}if(view==='build' && pack!=='mdd') {if(/\.jsonl$/i.test(result))sourceFormat='jsonl';else if(/\.txt$/i.test(result))sourceFormat='txt';}}
+    if (target === 'source') {source = result;if(view==='extract'){destination='';if(/\.mdd$/i.test(result)){extraction='mdd';extractParent=sourceParent(result);extractFolder=resourceFolderName(result);}else if(/\.mdx$/i.test(result) && extraction==='mdd'){extraction='txt';}}if(view==='build' && pack!=='mdd') {destination='';if(/\.jsonl$/i.test(result))sourceFormat='jsonl';else if(/\.txt$/i.test(result))sourceFormat='txt';}}
     else if (target === 'dictionary') dictionary = result;
     else if (target === 'artifact') artifact = result;
     else if(target === 'mddSource') mddSource=result;
@@ -540,7 +546,7 @@
     const format=pack==='mdd'?'mdd':'mdx';
     const archive=view==='build' && !index;
     const result = await save({ title: index ? t('index') : t('destination'),
-      ...(archive ? {filters:[{name:format.toUpperCase(),extensions:[format]}],defaultPath:dictionaryOutputPath(destination || 'dictionary',format)} : entryExport ? {filters:[{name:extraction.toUpperCase(),extensions:[extraction]}],defaultPath:exportFilePath(destination || fileName(source) || 'dictionary',extraction as 'txt'|'jsonl')} : {}) });
+      ...(archive ? {filters:[{name:format.toUpperCase(),extensions:[format]}],defaultPath:dictionaryOutputPath(destination || suggestedDictionaryPath(selectedSource(),format),format)} : entryExport ? {filters:[{name:extraction.toUpperCase(),extensions:[extraction]}],defaultPath:exportFilePath(destination || fileName(source) || 'dictionary',extraction as 'txt'|'jsonl')} : {}) });
     if (result) { if (index) artifact = result; else destination = archive ? dictionaryOutputPath(result,format) : entryExport ? exportFilePath(result,extraction as 'txt'|'jsonl') : result; }
   }
   async function submit() {
@@ -563,9 +569,9 @@
       } else if (pack === 'block') request = { kind:'cc_packing', request:{ source, destination, encoding, metadata } };
       else request = { kind:'dictionary', request:{ operation:'pack_mdx', source, destination, encoding, metadata } };
     } else if (view === 'extract') {
-      if(extraction!=='mdd' && exportProfile==='large') {
+      if(extraction!=='mdd' && exportProfile!=='bounded') {
         if(sessionId || mddId)throw {code:'not_ready',message:x('close')};
-        request={kind:'large_export',request:{source,destination,format:extraction}};
+        request={kind:'large_export',request:{source,destination,format:extraction,profile:exportProfile==='extended'?'extended':'large'}};
       } else request = extraction === 'mdd' ? { kind:'extraction', request:{ source, destination } }
         : { kind:'dictionary', request:{ operation:extraction === 'txt' ? 'export_txt' : 'export_jsonl', source, destination } };
     } else {
@@ -730,6 +736,7 @@
       const stored = JSON.parse(localStorage.getItem('studio-ui') || '{}');
       if (['en','zh','ar'].includes(stored.locale)) locale=stored.locale;
       if (['system','light','dark'].includes(stored.theme)) theme=stored.theme;
+      textSize=textSizePreference(stored.textSize);
     } catch { /* use defaults */ }
     try{pluginPython=checkedPythonPath(localStorage.getItem(PLUGIN_PYTHON_KEY));}catch{/* first use asks for Python */}
     try{pluginPresets=decodePluginPresets(localStorage.getItem(PLUGIN_PRESETS_KEY));}catch{pluginPresetStorageError=true;}
@@ -771,6 +778,8 @@
     <select id="settings-language" bind:value={locale}><option value="en">English</option><option value="zh">中文</option><option value="ar">العربية</option></select>
     <label for="settings-theme">{t('appearance')}</label>
     <select id="settings-theme" bind:value={theme}><option value="system">{t('system')}</option><option value="light">{t('light')}</option><option value="dark">{t('dark')}</option></select>
+    <label for="settings-text-size">{r('textSize')}</label>
+    <select id="settings-text-size" bind:value={textSize}><option value="standard">{r('standard')}</option><option value="large">{r('large')}</option><option value="larger">{r('larger')}</option></select>
   </div>
   <div class="settings-actions"><button class="primary" type="button" onclick={closeSettings}>{t('done')}</button></div>
 </dialog>
@@ -854,6 +863,10 @@
                   {/if}
                   <div class="field path-field"><label for="output-path">{u('saveTo')}</label><input id="output-path" bind:value={destination} readonly={view==='extract' && extraction==='mdd'} required dir="auto" placeholder={u('chooseDestination')}/><button type="button" class="smallbutton iconbutton" aria-label={t('destination')} onclick={() => action(() => pickOutput())}>…</button></div>
                 </div>
+                {#if view==='extract' && extraction!=='mdd'}
+                  <div class="field"><label for="export-profile">{x('profile')}</label><select id="export-profile" bind:value={exportProfile}><option value="large">{x('large')}</option><option value="extended">{x('extended')}</option><option value="bounded">{x('bounded')}</option></select></div>
+                  <p class="note">{x('sizeHint')}</p>
+                {/if}
                 {#if view==='extract'}<p class="note">{x(extraction==='mdd'?'folderHint':extraction==='txt'?'txtHint':'jsonlHint')}</p>{#if extraction!=='mdd'}<p class="note">{x('metadata')}</p>{/if}{/if}
                 <details class="advanced">
                   <summary>{u('more')}{#if view === 'build' && pack !== 'mdd'}<span class="profile-caption"> · {u(pack === 'block' ? 'block' : 'bounded')}</span>{/if}</summary>
@@ -869,12 +882,12 @@
                       <label for="dictionary-description">{t('description')}</label><textarea id="dictionary-description" bind:value={description} rows="3"></textarea>
                       {#if pack !== 'mdd'}<label for="dictionary-stylesheet">{t('stylesheet')}</label><textarea id="dictionary-stylesheet" bind:value={stylesheet} rows="4" dir="ltr"></textarea>{/if}
                       {#if folderBuild()}<p class="note">{m('close')}</p>{:else if pack!=='mdd' && sourceFormat==='txt'}<p class="note">{b('hint')}</p><pre class="manifest-help">{b('sample')}</pre><p class="note">{b('closeHint')}</p>{:else}<p class="note">{b('jsonlHint')}</p><pre class="manifest-help">{t('manifestHint')}</pre>{/if}
-                    {:else if view==='extract'}{#if extraction!=='mdd'}<label for="export-profile">{x('profile')}</label><select id="export-profile" bind:value={exportProfile}><option value="large">{x('large')}</option><option value="bounded">{x('bounded')}</option></select>{#if exportProfile==='large'}<p class="note">{x('close')}</p>{/if}{/if}<p class="note">{x(extraction==='mdd'?'mddHint':extraction==='txt'?'txtHint':'jsonlHint')}</p>{/if}
+                    {:else if view==='extract'}<p class="note">{x(extraction==='mdd'?'mddHint':extraction==='txt'?'txtHint':'jsonlHint')}</p>{/if}
                   </div>
                 </details>
                 {#if view==='extract' && extraction!=='mdd'}<p class="note">{x('compatibility')}</p>{/if}
                 <p class="note publication-note">{t('noOverwrite')}</p>{#if view==='build' && pack!=='mdd' && sourceFormat==='txt' && (sessionId || mddId)}<p class="note">{b('closeHint')}</p>{/if}
-                {#if view==='extract' && extraction!=='mdd' && exportProfile==='large' && (sessionId || mddId)}<p class="note">{x('close')}</p>{/if}
+                {#if view==='extract' && extraction!=='mdd' && exportProfile!=='bounded' && (sessionId || mddId)}<p class="note">{x('close')}</p>{/if}
                 {#if folderBuild() && (sessionId || mddId)}<p class="note">{m('close')}</p>{/if}
                 <div class="actions"><span class="note">{u('local')}</span><button class="primary" type="submit">{view==='extract'?x(extraction==='mdd'?'extract':'export'):u(view==='build'?'buildTitle':'convertTitle')}</button></div>
               </fieldset>

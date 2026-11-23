@@ -1,5 +1,5 @@
 //! M3 export-only profile derived from accepted M2 streaming I/O.
-//! This new 96 MiB profile requires its own native qualification.
+//! The default 96 MiB profile is retained; the explicit 256 MiB extension requires new native qualification.
 mod header;
 pub use header::{Header,Kind};
 pub use studio_v2_import::{CancellationToken,ErrorCode,Progress,Stage};
@@ -7,6 +7,13 @@ use serde::Serialize;
 use std::fmt;
 
 pub const PROFILE:&str="studio-m3-stream-export-96-v1";
+/// Explicit export-only selection; the existing default and M2 limits stay fixed.
+#[derive(Clone,Copy,Debug,Default,serde::Deserialize)]
+#[serde(rename_all="snake_case")]
+pub enum ExportProfile {#[default] Large,Extended}
+impl ExportProfile {
+    fn name(self)->&'static str {match self {Self::Large=>PROFILE,Self::Extended=>"studio-m3-stream-export-256-v1"}}
+}
 #[derive(Debug,Serialize)]
 pub struct LimitFailure {pub name:&'static str,pub value:u64,pub max:u64}
 #[derive(Debug,Serialize)]
@@ -69,5 +76,5 @@ fn core_error(e:studio_core::Error)->Error {let e:studio_application::Error=e.in
 #[path="../../../m2/studio-core/src/casing.rs"]mod casing;
 #[path="../../../m2/indexed-engine/src/sha256.rs"]mod sha256;
 mod io;
-pub use io::{Request,Metadata,IoLimits,Summary,execute};
+pub use io::{Request,Metadata,IoLimits,Summary,execute,execute_profile};
 #[cfg(test)]mod tests;

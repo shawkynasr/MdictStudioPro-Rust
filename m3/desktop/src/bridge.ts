@@ -21,7 +21,7 @@ export type NativeRequest =
   | { kind:'python_inspection';request:{python:string;plugin:string;destination:string;trusted:boolean}}
   | { kind:'python_plugin'; request:{python:string; plugin:string; class_name:string; source:string; destination:string; trusted:boolean; expected_plugin_sha256?:string; options?:Record<string,string|number|boolean>} }
   | { kind: 'metadata'; request: { source: string; destination: string; kind: 'mdx'|'mdd'; edits: {title?:string; description?:string; stylesheet?:string} } }
-  | { kind: 'large_export'; request: { source: string; destination: string; format: 'txt'|'jsonl' } }
+  | { kind: 'large_export'; request: { source: string; destination: string; format: 'txt'|'jsonl'; profile?:'large'|'extended' } }
   | { kind: 'folder_packing'; request: { resource_root: string; destination: string; metadata: Metadata } }
   | { kind: 'txt_packing'; request: { source: string; destination: string; encoding: Encoding; metadata: Metadata; profile: TxtProfile; packing: 'bounded' | 'block' } }
   | { kind: 'dictionary'; request: DictionaryRequest }

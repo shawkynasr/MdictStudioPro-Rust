@@ -1,0 +1,69 @@
+{
+  "schema": "studio-preview-feedback-review-v1",
+  "date": "2026-11-23",
+  "status": "source_changes_prepared_native_checks_pending",
+  "dictionary_wire_scan": {
+    "source_sha256": "a95b898276c4f3f90598f38ffa2ed7eb177904700e40bd7bd16316069b37761c",
+    "source_bytes": 17375077,
+    "records": 64364,
+    "key_bytes": 701816,
+    "payload_bytes": 149605048,
+    "decoded_text_bytes": 150306864,
+    "largest_definition_bytes": 151491,
+    "record_block_decompressed_bytes": 149669412,
+    "txt_incompatible_definitions": 0,
+    "first_record_exceeding_mib": {
+      "32": 15023,
+      "96": 41928
+    },
+    "all_block_checksums_valid": true,
+    "scope": "Independent stdlib unencrypted UTF-8 v2 wire scan; not Rust export or reader-compatibility qualification",
+    "expected_framed_records_sha256": "0ed77eb39780fb6319e0a526777c4b3a42dd14e31fe74edc57035eeb7b1123e9",
+    "expected_txt_sha256": "34c11c552159aaad978f943dec3f104f173a17a9c6a6f65a77ac9ce2e18f6f6e",
+    "expected_txt_bytes": 150693048,
+    "source_unchanged": true
+  },
+  "extended_export_native_executed": false,
+  "Svelte_build_executed": false,
+  "native_GUI_executed": false,
+  "existing_default_export_decoded_cap_bytes": 100663296,
+  "new_explicit_export_decoded_cap_bytes": 268435456,
+  "SQLite_and_build_profiles_expanded": false,
+  "dictionary_contents_distributed": false,
+  "production_release_ready": false,
+  "validation": {
+    "node_tests_passed": 56,
+    "node_test_scope": "helpers, error hints, filename suggestions and text contrast; no browser/native rendering claim",
+    "Python_contracts": "343 passed in final package verification",
+    "native_tests": "added to CI; not executed locally"
+  },
+  "source_sha256": {
+    ".github/workflows/preview-builds.yml": "7dd175d8d332b95a778e4b84c5f3e29aa21baa8410d76e49399c05dd54487a08",
+    "m3/desktop/src/App.svelte": "c2b95e578ab7b03da7d0b9e8278f23bdbc22fe59536e7242998606cb9e9410f0",
+    "m3/desktop/src/style.css": "6652ac6c19064cc68b3e9591b3800dcab4f4c2e6a83dc6f8b036c1a362df6f8a",
+    "m3/desktop/src/readability.ts": "0d5ff5dabe1d825484b0a963e227f7fac7db5c6ac69185c6c1006e44a9f050e4",
+    "m3/desktop/src/output-path.ts": "7459c8b4cad0fffeba07897e5c30161a0b7ee13b0502dfa008cc469aa21048d3",
+    "m3/desktop/src/job-feedback.ts": "eec00a36afde1747f317d04c8890447a98ba3186e8deac33421803cfb2b2c2ce",
+    "m3/desktop/src/extract-labels.ts": "a506fd85014f8d38130df1cb2530d9872ce20eb4075725f6480dec1102be381c",
+    "m3/desktop/src/bridge.ts": "fefdd46f77d66230c041fce5031fe3eb1870218225554de92304403b2b636e28",
+    "m3/desktop/tests/readability.test.mjs": "5ca20e16aab91e29c2a2342c197851e0fab260b314063f51cf51de50e7210942",
+    "m3/desktop/tests/job-feedback.test.mjs": "a120d4055a791bf76338a1dd21af2ac83316d0e641db27c932a456a52e03d241",
+    "m3/export-io/src/io.rs": "44431821306c35aaad4d2f738779f6fccf1ff356c5608fd302bc34600bd46d21",
+    "m3/export-io/src/lib.rs": "9443b40a9c8ce909f23916f20a872c3711d34d902c5d7251c815488a5baa76c5",
+    "m3/export-io/src/tests.rs": "b99c067329fa6b3a7ae42dbd8bce97a93b0623f1af17ed5502cc6feed17ea42c",
+    "m3/txt-runtime/src/large_export.rs": "77f8bf9c7cbd4e958ef2bb2711fec7b35c36723738dc1294d4732774f11dc356",
+    "scripts/test_m3_extract_gui.py": "bde9506a879d2b34ebf11654a7df58fabce4b5cf97ada34a416af10f2185e32b",
+    "README.md": "ec6ec0a3ccfe6fdb9b4d4bee0a314d60bfaceb88cbec65cef6fefc97bca447b8",
+    "docs/QUICK-START.zh-CN.md": "1726a67c4ffa329dbd5b420242c6f659cf986ada553022a3380724c4253b1d92",
+    "docs/PREVIEW-2-FEEDBACK.md": "103d95295ee1657db04bbc83aef94cf09294a4b01ecacb1b4391e7df5e20d751",
+    "scripts/m3_extended_export_fixture.py": "5d8c16fc3f0296dedaf2d527a2b83960c3fdb60d2bae1a187385c5336ab726c7",
+    "m3/fixtures/extended-export/synthetic-145.mdx": "407ca32ec3d625ebc2db7291028a92757384108766881e8d67a638fe87e9720c"
+  },
+  "synthetic_fixture": {
+    "path": "m3/fixtures/extended-export/synthetic-145.mdx",
+    "generator": "scripts/m3_extended_export_fixture.py",
+    "records": 145,
+    "payload_bytes": 152043520,
+    "source": "synthetic ASCII only; generated without Rust reader/writer"
+  }
+}

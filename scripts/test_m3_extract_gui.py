@@ -31,21 +31,35 @@ class ExtractGuiChecks(unittest.TestCase):
   app=(ROOT/'m3/desktop/src/App.svelte').read_text()
   for text in ['chooseExtractParent','resourceDestination(extractParent,extractFolder)',"destination=exportFilePath(destination,extraction)","operation:extraction === 'txt' ? 'export_txt' : 'export_jsonl'","{ kind:'extraction', request:{ source, destination } }",'id="extract-folder"','id="extract-parent"']:self.assertIn(text,app)
   self.assertIn('resourceFolderName(result)',app)
-  self.assertIn("exportProfile = $state<'large'|'bounded'>('large')",app)
+  self.assertIn("exportProfile = $state<'large'|'bounded'|'extended'>('large')",app)
   self.assertIn("request={kind:'large_export'",app)
   runtime=(ROOT/'m3/txt-runtime/src/lib.rs').read_text()
   self.assertIn('Self::LargeExport(_)=>Operation::CcPacking',runtime)
   backend=(ROOT/'m3/txt-runtime/src/large_export.rs').read_text()
-  self.assertIn('studio_export_io::IoLimits::default()',backend)
+  self.assertIn('studio_export_io::IoLimits::for_profile(r.profile)',backend)
   self.assertIn('studio_export_io::execute',backend)
  def test_large_export_is_derived_from_streaming_io_with_an_export_only_guard(self):
   original=(ROOT/'m2/large-io/src/io.rs').read_text()
-  expected=original.replace('max_records:100000,max_decoded_bytes:32*1024*1024','max_records:250000,max_decoded_bytes:96*1024*1024').replace('job.check()?;limits.validate()?;destination(request.destination())?;', 'job.check()?;limits.validate()?;if !matches!(request,Request::ExportTxt {..}|Request::ExportJsonl {..}) {return Err(crate::unsupported("This profile accepts MDX TXT/JSONL exports only"));}destination(request.destination())?;')
-  # The v1 ASCII view is an additive, checksum-preserving decoder adapter.
-  # Keep the full derivation check and bind its two exact export-only edits.
-  expected=expected.replace('let file=MdxFile::open_with_options(snapshot.path(),&options)?;if file.len()>limits.max_records as u64','let legacy=crate::header::legacy_ascii_view(&snapshot,&header,job)?;let file=MdxFile::open_with_options(legacy.as_ref().map_or(snapshot.path(),|f|f.path()),&options)?;if file.len()>limits.max_records as u64')
-  expected=expected.replace('let e=entry?;if e.ordinal().get()!=expected.records as u64','let e=entry?;if legacy.is_some()&&(!e.key().is_ascii()||!e.text().is_ascii()){return Err(crate::unsupported("Non-ASCII v1.2 ISO8859-1 content requires a separately qualified encoding profile"));}if e.ordinal().get()!=expected.records as u64')
-  self.assertEqual((ROOT/'m3/export-io/src/io.rs').read_text(),expected)
+  current=(ROOT/'m3/export-io/src/io.rs').read_text()
+  # Shared parser, snapshot, hashing, staging and no-clobber helpers stay exact.
+  # Export execution, row-limit reporting and profile selection are now explicit M3 additions.
+  import re
+  def functions(text):
+   matches=list(re.finditer(r'^fn (\w+)\(',text,re.M))
+   return {m[1]:text[m.start():matches[i+1].start() if i+1<len(matches) else len(text)].strip() for i,m in enumerate(matches)}
+  old,new=functions(original),functions(current)
+  for name in ['key','txt_row','parse_txt','pack']:
+   self.assertEqual(new[name],old[name],name)
+  self.assertIn('if !matches!(request,Request::ExportTxt {..}|Request::ExportJsonl {..})',current)
+  self.assertIn('execute_profile(request,limits,ExportProfile::Large,job)',current)
+  self.assertIn('limits.validate(profile)?',current)
+  self.assertIn('max_records:250000,max_decoded_bytes:96*1024*1024',current)
+  self.assertIn('limits.max_decoded_bytes=256*1024*1024',current)
+  self.assertIn('limits.max_output_bytes=512*1024*1024',current)
+  self.assertIn('expected.records as u64!=file.len()||file.memory_usage()?.locator_bytes()!=0',current)
+  self.assertIn('if found!=digest||want!=(found.0,found.1,found.2)',current)
+  self.assertIn('legacy.is_some()&&(!e.key().is_ascii()||!e.text().is_ascii())',current)
+  self.assertIn('extended_export_streams_beyond_96_mib_and_keeps_default_failure_atomic',(ROOT/'m3/export-io/src/tests.rs').read_text())
   self.assertIn('streaming_export_really_exceeds_old_32_mib_ceiling',(ROOT/'m3/export-io/src/tests.rs').read_text())
   from m3_shell import check_adapter_lock
   self.assertTrue(check_adapter_lock(ROOT/'m3/export-io/Cargo.lock')['no_unapproved_registry_versions'])

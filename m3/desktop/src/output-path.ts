@@ -8,3 +8,10 @@ export function dictionaryOutputPath(path: string, format: 'mdx' | 'mdd'): strin
   if(/\.(mdx|mdd)$/i.test(path))return path.replace(/\.(mdx|mdd)$/i,'.'+format);
   return path+'.'+format;
 }
+
+/** A rebuild is a new file. Do not offer the original MDX name by default. */
+export function suggestedDictionaryPath(source:string,format:'mdx'|'mdd'):string {
+  if(!source)return 'dictionary.'+format;
+  const stem=source.replace(/\.(mdx|mdd|txt|jsonl)$/i,'');
+  return stem+'-rebuilt.'+format;
+}

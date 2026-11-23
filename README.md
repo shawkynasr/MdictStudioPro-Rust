@@ -12,6 +12,22 @@ Optional plugins require an external Python interpreter and dependencies. They e
 
 The sidebar About dialog includes author credit, app version and official repository/release links. Updates are currently installed manually; see [About and update delivery](docs/ABOUT-AND-UPDATES.md). This addition needs a new CI build and GUI check.
 
+For the next preview’s readability fixes, clearer rebuild destinations and explicit 256 MiB export option, see the [community-feedback update](docs/PREVIEW-2-FEEDBACK.md). Native validation is pending.
+
+## 界面预览 / Screenshots
+
+首次使用请看 [中文图文入门指南](docs/QUICK-START.zh-CN.md)。内置转换器无需安装 Python。
+
+Chinese interface / 中文界面：
+
+![Windows Chinese Build interface](docs/screenshots/preview-1-build-zh.png)
+
+English interface / 英文界面：
+
+![Windows English Build interface](docs/screenshots/preview-1-build-en.png)
+
+These are actual first-preview Windows screenshots supplied in user feedback, before the readability update. The next preview increases text size and contrast and adds a saved interface text-size setting. The screenshots show navigation and workflow, not the updated typography.
+
 ## License and author
 
 Copyright (c) 2026 **Shawky Nasr** <shawkynasr@126.com> for new project-authored code, except where another notice applies. The new Rust/Tauri implementation is licensed under **AGPL-3.0-only**; see [LICENSE](LICENSE) and [third-party notices](THIRD_PARTY_NOTICES.md). Historical baseline and reference files retain their own terms, including the documented original README/LICENSE discrepancy.

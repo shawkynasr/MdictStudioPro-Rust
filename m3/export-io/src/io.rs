@@ -1,4 +1,4 @@
-use crate::{Result,Error,ErrorCode,Limits,ImportJob,Kind,invalid,budget,integrity,core_error,casing::Casing,sha256::{Sha256,hex}};
+use crate::{Result,Error,ErrorCode,Limits,ImportJob,Kind,invalid,budget,integrity,core_error,casing::Casing,sha256::{Sha256,hex},ExportProfile,LimitFailure};
 use serde::{Serialize,Deserialize};
 use std::{collections::{BTreeMap,BTreeSet},fs::File,io::{Read,Write,BufRead,BufReader,Seek,SeekFrom},path::{Path,PathBuf}};
 use mdictlib::{MdxFile,MddFile,OpenOptions,ChecksumPolicy,WriteOptions,WriteEncoding,WriteCompression,LegacySort,MdxBuilder,MddBuilder};
@@ -18,7 +18,9 @@ impl Metadata {fn attributes(&self,kind:FileKind)->Result<BTreeMap<String,String
 impl Request {fn destination(&self)->&Path {match self {Self::PackMdx {destination,..}|Self::PackMdd {destination,..}|Self::ExportJsonl {destination,..}|Self::ExportTxt {destination,..}=>destination}}}
 #[derive(Clone,Debug)]pub struct IoLimits {pub reader:Limits,pub max_records:usize,pub max_decoded_bytes:usize,pub max_entry_bytes:usize,pub max_plan_charge:usize,pub max_input_bytes:u64,pub max_output_bytes:u64}
 impl Default for IoLimits {fn default()->Self {Self {reader:Limits::default(),max_records:250000,max_decoded_bytes:96*1024*1024,max_entry_bytes:1024*1024,max_plan_charge:16*1024*1024,max_input_bytes:128*1024*1024,max_output_bytes:128*1024*1024}}}
-impl IoLimits {fn validate(&self)->Result<()> {self.reader.validate()?;let c=Self::default();if self.max_records>c.max_records||self.max_decoded_bytes>c.max_decoded_bytes||self.max_entry_bytes>c.max_entry_bytes||self.max_plan_charge>c.max_plan_charge||self.max_input_bytes>c.max_input_bytes||self.max_output_bytes>c.max_output_bytes {return Err(invalid("limits","Only lower IO ceilings are supported"));}Ok(())}}
+impl IoLimits {
+ pub fn for_profile(profile:ExportProfile)->Self {let mut limits=Self::default();if matches!(profile,ExportProfile::Extended) {limits.max_decoded_bytes=256*1024*1024;limits.max_output_bytes=512*1024*1024;}limits}
+ fn validate(&self,profile:ExportProfile)->Result<()> {self.reader.validate()?;let c=Self::for_profile(profile);if self.max_records>c.max_records||self.max_decoded_bytes>c.max_decoded_bytes||self.max_entry_bytes>c.max_entry_bytes||self.max_plan_charge>c.max_plan_charge||self.max_input_bytes>c.max_input_bytes||self.max_output_bytes>c.max_output_bytes {return Err(invalid("limits","Only lower IO ceilings are supported"));}Ok(())}}
 #[derive(Debug,Serialize)]pub struct Summary {pub profile:&'static str,pub operation:&'static str,pub records:usize,pub key_bytes:u64,pub payload_bytes:u64,pub framed_records_sha256:String,pub file_bytes:u64,pub source_sha256:String,pub metadata:BTreeMap<String,String>}
 #[derive(Default)]struct Digest {records:usize,key_bytes:u64,payload_bytes:u64,sha:Option<Sha256>}
 impl Digest {
@@ -31,7 +33,17 @@ struct Descriptor {key:String,sort:String,ordinal:usize,offset:u64,length:usize}
 fn key(value:&str)->Result<()> {if value.is_empty()||value.contains('\0') {return Err(invalid("key","Require nonempty NUL-free key"));}if value.len()>4096 {return Err(budget("Key exceeds 4 KiB"));}Ok(())}
 fn markers(body:&str,ids:&BTreeSet<String>)->Result<()> {let b=body.as_bytes();let mut i=0;while i<b.len() {if b[i]==b'`' {let start=i+1;let mut end=start;while end<b.len()&&b[end].is_ascii_digit() {end+=1;}if end>start&&end<b.len()&&b[end]==b'`' {if !ids.contains(&body[start..end]) {return Err(invalid("stylesheet_marker","Numeric definition marker has no stylesheet rule"));}i=end;}}i+=1;}Ok(())}
 fn rule_ids(style:&str)->BTreeSet<String> {if style.is_empty() {BTreeSet::new()}else{style.strip_suffix('\n').unwrap_or(style).split('\n').step_by(3).map(str::to_string).collect()}}
-fn check_row(k:&str,payload:&[u8],count:usize,total:&mut usize,limits:&IoLimits)->Result<()> {key(k)?;if count>=limits.max_records||payload.len()>limits.max_entry_bytes {return Err(budget("Record count or payload cap exceeded"));}*total=total.checked_add(k.len()).and_then(|n|n.checked_add(payload.len())).ok_or_else(||budget("Decoded byte overflow"))?;if *total>limits.max_decoded_bytes {return Err(budget("Aggregate decoded key/payload cap exceeded"));}Ok(())}
+fn export_limit(name:&'static str,value:usize,max:usize)->Error {
+ let mut error=budget(&format!("{name}: observed {value} bytes/records; selected profile permits {max}"));
+ error.limit=Some(LimitFailure {name,value:value as u64,max:max as u64});error
+}
+fn check_row(k:&str,payload:&[u8],count:usize,total:&mut usize,limits:&IoLimits)->Result<()> {
+ key(k)?;
+ if count>=limits.max_records {return Err(export_limit("records",count+1,limits.max_records));}
+ if payload.len()>limits.max_entry_bytes {return Err(export_limit("definition_bytes",payload.len(),limits.max_entry_bytes));}
+ *total=total.checked_add(k.len()).and_then(|n|n.checked_add(payload.len())).ok_or_else(||budget("Decoded byte overflow"))?;
+ if *total>limits.max_decoded_bytes {return Err(export_limit("decoded_text_bytes",*total,limits.max_decoded_bytes));}Ok(())
+}
 fn read_line(input:&mut impl BufRead,cap:usize)->Result<Option<Vec<u8>>> {let mut out=Vec::new();loop {let b=input.fill_buf()?;if b.is_empty() {return if out.is_empty(){Ok(None)}else{Err(invalid("source_line","Every source record/line requires a final LF"))};}let n=b.iter().position(|b|*b==b'\n').map_or(b.len(),|p|p+1);if out.len()+n>cap {return Err(budget("Source line exceeds byte cap"));}out.extend_from_slice(&b[..n]);input.consume(n);if out.last()==Some(&b'\n') {return Ok(Some(out));}}}
 fn hash_file(f:&mut File,job:&mut ImportJob<'_>)->Result<String> {f.seek(SeekFrom::Start(0))?;let mut h=Sha256::new();let mut b=[0;65536];loop {job.check()?;let n=f.read(&mut b)?;if n==0 {break;}h.update(&b[..n]);}Ok(hex(&h.finish()))}
 fn snapshot(path:&Path,cap:u64,job:&mut ImportJob<'_>)->Result<tempfile::NamedTempFile> {let mut f=File::open(path)?;if !f.metadata()?.is_file() {return Err(invalid("source","Expected regular input file"));}if f.metadata()?.len()>cap {return Err(budget("Input file exceeds cap"));}let mut out=tempfile::NamedTempFile::new()?;let mut count=0u64;let mut b=[0;65536];loop {job.tick("input_snapshot",count as usize,cap as usize)?;let n=f.read(&mut b)?;if n==0 {break;}count+=n as u64;if count>cap {return Err(budget("Input grew past cap"));}out.write_all(&b[..n])?;}out.flush()?;out.seek(SeekFrom::Start(0))?;Ok(out)}
@@ -67,11 +79,14 @@ fn destination(path:&Path)->Result<()> {if path.as_os_str().is_empty()||path.as_
 fn stage(path:&Path)->Result<tempfile::NamedTempFile> {Ok(tempfile::NamedTempFile::new_in(path.parent().filter(|p|!p.as_os_str().is_empty()).unwrap_or(Path::new(".")))?)}
 fn publish(file:tempfile::NamedTempFile,path:&Path,job:&mut ImportJob<'_>)->Result<()> {job.tick("publish_file",0,1)?;file.persist_noclobber(path).map_err(|e|if e.error.kind()==std::io::ErrorKind::AlreadyExists {Error::new(ErrorCode::DestinationExists,"destination_exists","Destination exists")}else{e.error.into()})?;Ok(())}
 pub fn execute(request:&Request,limits:&IoLimits,job:&mut ImportJob<'_>)->Result<Summary> {
- job.check()?;limits.validate()?;if !matches!(request,Request::ExportTxt {..}|Request::ExportJsonl {..}) {return Err(crate::unsupported("This profile accepts MDX TXT/JSONL exports only"));}destination(request.destination())?;
+ execute_profile(request,limits,ExportProfile::Large,job)
+}
+pub fn execute_profile(request:&Request,limits:&IoLimits,profile:ExportProfile,job:&mut ImportJob<'_>)->Result<Summary> {
+ job.check()?;limits.validate(profile)?;if !matches!(request,Request::ExportTxt {..}|Request::ExportJsonl {..}) {return Err(crate::unsupported("This profile accepts MDX TXT/JSONL exports only"));}destination(request.destination())?;
  match request {
   Request::PackMdx {source,destination,encoding,metadata}=>pack(source,destination,None,Some(*encoding),metadata,limits,job),
   Request::PackMdd {source,resource_root,destination,metadata}=>pack(source,destination,Some(resource_root),None,metadata,limits,job),
-  Request::ExportJsonl {source,destination}=>export(source,destination,false,limits,job),Request::ExportTxt {source,destination}=>export(source,destination,true,limits,job),
+  Request::ExportJsonl {source,destination}=>export(source,destination,false,limits,profile,job),Request::ExportTxt {source,destination}=>export(source,destination,true,limits,profile,job),
  }
 }
 fn pack(source:&Path,destination:&Path,root:Option<&Path>,encoding:Option<studio_core::Encoding>,metadata:&Metadata,limits:&IoLimits,job:&mut ImportJob<'_>)->Result<Summary> {
@@ -105,13 +120,13 @@ fn parse_txt(path:&Path,limits:&IoLimits,job:&mut ImportJob<'_>)->Result<Digest>
   else {if body.len()+s.len()>limits.max_entry_bytes+1 {return Err(budget("TXT definition cap exceeded"));}body.push_str(s);}
  }if current.is_some() {return Err(integrity("Unterminated staged TXT record"));}Ok(result)
 }
-fn export(source:&Path,destination:&Path,txt:bool,limits:&IoLimits,job:&mut ImportJob<'_>)->Result<Summary> {
- let(snapshot,header)=crate::header::snapshot(source,Kind::Mdx,&limits.reader,job)?;let mut input=File::open(snapshot.path())?;let source_sha=hash_file(&mut input,job)?;let options=OpenOptions::new().with_checksum_policy(ChecksumPolicy::Verify).with_limits(limits.reader.engine.clone());let legacy=crate::header::legacy_ascii_view(&snapshot,&header,job)?;let file=MdxFile::open_with_options(legacy.as_ref().map_or(snapshot.path(),|f|f.path()),&options)?;if file.len()>limits.max_records as u64 {return Err(budget("Export record count exceeds cap"));}
+fn export(source:&Path,destination:&Path,txt:bool,limits:&IoLimits,profile:ExportProfile,job:&mut ImportJob<'_>)->Result<Summary> {
+ let(snapshot,header)=crate::header::snapshot(source,Kind::Mdx,&limits.reader,job)?;let mut input=File::open(snapshot.path())?;let source_sha=hash_file(&mut input,job)?;let options=OpenOptions::new().with_checksum_policy(ChecksumPolicy::Verify).with_limits(limits.reader.engine.clone());let legacy=crate::header::legacy_ascii_view(&snapshot,&header,job)?;let file=MdxFile::open_with_options(legacy.as_ref().map_or(snapshot.path(),|f|f.path()),&options)?;if file.len()>limits.max_records as u64 {return Err(export_limit("records",file.len() as usize,limits.max_records));}
  let mut output=stage(destination)?;let mut cap=Output {file:output.as_file_mut(),bytes:0,cap:limits.max_output_bytes,exceeded:false};let(mut expected,mut total)=(Digest::default(),0usize);
  for entry in file.entries() {job.tick("export_records",expected.records,file.len() as usize)?;let e=entry?;if legacy.is_some()&&(!e.key().is_ascii()||!e.text().is_ascii()){return Err(crate::unsupported("Non-ASCII v1.2 ISO8859-1 content requires a separately qualified encoding profile"));}if e.ordinal().get()!=expected.records as u64 {return Err(integrity("Export physical ordinals differ"));}check_row(e.key(),e.text().as_bytes(),expected.records,&mut total,limits)?;if e.text().contains('\0') {return Err(invalid("definition","NUL definition is outside this profile"));}
   let result=if txt {txt_row(e.key(),e.text(),expected.records==0)?;cap.write_all(e.key().as_bytes()).and_then(|_|cap.write_all(b"\n")).and_then(|_|cap.write_all(e.text().as_bytes())).and_then(|_|cap.write_all(b"\n</>\n"))}else {serde_json::to_writer(&mut cap,&ExportRow {key:e.key(),text:e.text()}).map_err(std::io::Error::other).and_then(|_|cap.write_all(b"\n"))};
   if let Err(e)=result {if cap.exceeded {return Err(budget("Export output cap exceeded"));}return Err(e.into());}expected.row(e.key(),e.text().as_bytes());
  }cap.flush()?;drop(cap);output.as_file().sync_all()?;if expected.records as u64!=file.len()||file.memory_usage()?.locator_bytes()!=0 {return Err(integrity("Incomplete export or locator allocated"));}let want=(expected.records,expected.key_bytes,expected.payload_bytes);let digest=expected.finish();
  let actual=if txt {parse_txt(output.path(),limits,job)?}else {let mut r=BufReader::new(File::open(output.path())?);let mut d=Digest::default();let mut total=0;while let Some(line)=read_line(&mut r,8*1024*1024)? {job.check()?;let row:InputRow=serde_json::from_slice(&line).map_err(|_|integrity("Invalid staged JSONL"))?;let text=row.text.ok_or_else(||integrity("Missing staged body"))?;if row.file.is_some() {return Err(integrity("Unexpected resource field in JSONL"));}check_row(&row.key,text.as_bytes(),d.records,&mut total,limits)?;d.row(&row.key,text.as_bytes());}d};
- let found=actual.finish();if found!=digest||want!=(found.0,found.1,found.2) {return Err(integrity("Export strict reparse differs"));}let bytes=output.as_file().metadata()?.len();let result=Summary {profile:crate::PROFILE,operation:if txt {"export_txt"}else{"export_jsonl"},records:found.0,key_bytes:found.1,payload_bytes:found.2,framed_records_sha256:found.3,file_bytes:bytes,source_sha256:source_sha,metadata:header.attributes};publish(output,destination,job)?;Ok(result)
+ let found=actual.finish();if found!=digest||want!=(found.0,found.1,found.2) {return Err(integrity("Export strict reparse differs"));}let bytes=output.as_file().metadata()?.len();let result=Summary {profile:profile.name(),operation:if txt {"export_txt"}else{"export_jsonl"},records:found.0,key_bytes:found.1,payload_bytes:found.2,framed_records_sha256:found.3,file_bytes:bytes,source_sha256:source_sha,metadata:header.attributes};publish(output,destination,job)?;Ok(result)
 }

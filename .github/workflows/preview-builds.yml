@@ -71,6 +71,10 @@ jobs:
         run: python scripts/ci_collect_notices.py --target '${{ matrix.target }}' --fetch-upstream
       - name: Test fixed project-link boundary
         run: python scripts/ci_test_desktop.py --target '${{ matrix.target }}'
+      - name: Test export limits, extended streaming and atomic publication
+        run: cargo test --manifest-path m3/export-io/Cargo.toml --target '${{ matrix.target }}' --locked
+      - name: Test explicit export request selection
+        run: cargo test --manifest-path m3/txt-runtime/Cargo.toml --target '${{ matrix.target }}' --locked large_export::tests
       - name: Bundle preview
         working-directory: m3/desktop
         env:

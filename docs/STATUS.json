@@ -1825,5 +1825,15 @@
     "decision": "docs/evidence/m4-database-final-qualified/decision.json",
     "final_regression": "All native commands/workflows passed; final seed lock hash refusal separately resolved by reviewed exact normalization variants",
     "routine_native_rerun_required": false
+  },
+  "community_preview_feedback_2026_11_23": {
+    "status": "source_changes_prepared_native_checks_pending",
+    "documentation": "docs/PREVIEW-2-FEEDBACK.md",
+    "evidence": "docs/evidence/preview-feedback-2026-11-23/review.json",
+    "readability_and_screenshots": true,
+    "explicit_256_MiB_export_added": true,
+    "native_extended_export_qualified": false,
+    "SQLite_and_build_limits_changed": false,
+    "published_preview_1_changed": false
   }
 }

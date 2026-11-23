@@ -44,3 +44,21 @@ test('all feedback labels and hints have English, Chinese and Arabic strings',()
   const keys=['queued','running','succeeded','failed','cancelled','cancelling','unknown','details','pythonSelection','pythonPermission','permission','destination','limit','uncertain'];
   for(const locale of ['en','zh','ar'])for(const key of keys)assert.ok(jobFeedbackLabel(locale,key)?.length>0);
 });
+
+test('decoded export limits give an actionable profile hint without widening other operations',()=>{
+  const error={code:'limit_exceeded',message:'decoded limit',limit:{name:'decoded_text_bytes',value:100663297,max:100663296}};
+  assert.equal(jobFailureHint(error,'export_large_txt'),'exportLimit');
+  assert.equal(jobFailureHint({...error,limit:{...error.limit,max:268435456}},'export_large_txt'),'limit');
+  assert.equal(jobFailureHint(error,'mdx_to_db'),'limit');
+  assert.equal(jobFailureHint({code:'limit_exceeded',message:'Aggregate decoded key/payload cap exceeded'},'export_txt'),'exportLimit');
+  assert.equal(jobFailureHint({...error,publication_uncertain:true},'export_large_txt'),'uncertain');
+  for(const locale of ['en','zh','ar'])assert.ok(jobFeedbackLabel(locale,'exportLimit'));
+});
+test('destination display omits fictitious line zero without changing diagnostics',()=>{
+  const error={code:'destination_exists',message:'Line 0: Destination exists'};
+  assert.equal(jobFailureMessage(error,'failed'),'destination_exists: Destination exists');
+  assert.equal(error.message,'Line 0: Destination exists');
+  assert.equal(jobFailureHint(error,'pack_txt_mdx'),'rebuildDestination');
+  assert.equal(jobFailureHint(error,'python_converter'),'destination');
+  for(const locale of ['en','zh','ar'])assert.ok(jobFeedbackLabel(locale,'rebuildDestination'));
+});

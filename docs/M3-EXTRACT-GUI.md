@@ -191,3 +191,7 @@ retained under docs/evidence/m3-extract-first-native-run. No reinstall or old
 M1/M2 reader batch is required. Re-run the normal script with output v11; it may
 spend longer in export-io-tests because of the new 33 MiB boundary case. New Rust
 execution remains pending in the authoring environment.
+
+## Next-preview feedback update (2026-11-23)
+
+The explicit 256 MiB export extension and new visible profile selector are prepared in source, with native CI/GUI qualification pending. The existing 96 MiB default and M2 sources stay fixed. See [scope and validation](PREVIEW-2-FEEDBACK.md). Earlier qualification below/above remains limited to its recorded version and profile.
