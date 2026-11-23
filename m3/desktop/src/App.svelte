@@ -50,7 +50,7 @@
   let locale = $state<Locale>('en');
   let theme = $state('system');
   let textSize = $state<TextSize>('standard');
-  const r = (key:Parameters<typeof readabilityLabel>[1])=>readabilityLabel(locale,key);
+  const readabilityText = (key:Parameters<typeof readabilityLabel>[1])=>readabilityLabel(locale,key);
   let view = $state<View>('build');
   let platform = $state('');
   let connected = $state(false);
@@ -778,8 +778,8 @@
     <select id="settings-language" bind:value={locale}><option value="en">English</option><option value="zh">中文</option><option value="ar">العربية</option></select>
     <label for="settings-theme">{t('appearance')}</label>
     <select id="settings-theme" bind:value={theme}><option value="system">{t('system')}</option><option value="light">{t('light')}</option><option value="dark">{t('dark')}</option></select>
-    <label for="settings-text-size">{r('textSize')}</label>
-    <select id="settings-text-size" bind:value={textSize}><option value="standard">{r('standard')}</option><option value="large">{r('large')}</option><option value="larger">{r('larger')}</option></select>
+    <label for="settings-text-size">{readabilityText('textSize')}</label>
+    <select id="settings-text-size" bind:value={textSize}><option value="standard">{readabilityText('standard')}</option><option value="large">{readabilityText('large')}</option><option value="larger">{readabilityText('larger')}</option></select>
   </div>
   <div class="settings-actions"><button class="primary" type="button" onclick={closeSettings}>{t('done')}</button></div>
 </dialog>
